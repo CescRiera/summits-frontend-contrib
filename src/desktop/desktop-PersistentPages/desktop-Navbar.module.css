@@ -1,0 +1,283 @@
+/* Sidebar Base */
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--c-white);
+  border-right: 1px solid var(--c-gray-200);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(var(--rgb-black), 0.05);
+  overflow: hidden;
+}
+
+/* Header Section */
+.navbar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--c-gray-200);
+  min-height: 80px;
+}
+
+.navbar--collapsed .navbar__header {
+  padding: 1.5rem 0.75rem;
+  transition: padding 0.25s ease;
+}
+
+.navbar__brand-button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: var(--c-gray-900);
+  margin-left: 0.75rem;
+  white-space: nowrap;
+  overflow: visible;
+  pointer-events: none;
+  font-family: "Media Gothic", "Montserrat", "Nunito Sans", "Segoe UI", Arial,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 10px;
+}
+
+.navbar__toggle-button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  color: var(--c-gray-600);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar__toggle-button:hover {
+  background: var(--c-gray-100);
+  color: var(--c-gray-900);
+}
+
+/* Navigation Section */
+.navbar__nav {
+  flex: 1;
+  overflow-y: auto;
+  /* Hide horizontal scrollbar while still allowing vertical */
+  overflow-x: hidden;
+  padding: 1rem 0;
+  scrollbar-width: thin;
+}
+
+.navbar__nav::-webkit-scrollbar {
+  height: 0 !important; /* Hide horizontal scrollbar (Webkit/Blink) */
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0 0.75rem;
+  list-style: none;
+}
+
+.navbar__item {
+  display: flex;
+}
+
+.navbar__button {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  justify-content: flex-start;
+  transition: padding 0.25s ease, gap 0.25s ease, background 0.15s ease,
+    color 0.15s ease;
+}
+
+.navbar--collapsed .navbar__button {
+  padding: 0.75rem;
+  gap: 0;
+}
+
+.navbar__button:hover {
+background: var(--c-gray-200);
+  color: var(--c-gray-900);
+}
+.navbar__button:active {
+  transform: scale(0.98);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar__button--active {
+  background: var(--c-gray-200);
+  color: var(--c-gray-900);
+}
+
+.navbar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar__label {
+  display: inline-block;
+}
+
+/* User Routes and Peaks Section */
+.navbar__user-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 3rem 0.75rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--c-gray-200);
+}
+
+.navbar__user-button {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  justify-content: flex-start;
+  transition: padding 0.25s ease, gap 0.25s ease, background 0.15s ease,
+    color 0.15s ease;
+}
+
+.navbar--collapsed .navbar__user-button {
+  padding: 0.75rem;
+  gap: 0;
+}
+
+.navbar__user-button:hover {
+  background: var(--c-gray-100);
+  color: var(--c-gray-900);
+}
+
+.navbar__user-button:active {
+  transform: scale(0.98);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Auth Section */
+.navbar__auth {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.75rem;
+  border-top: 1px solid var(--c-gray-200);
+  gap: 0.5rem;
+}
+
+.navbar--collapsed .navbar__auth {
+  padding: 1rem 0.75rem;
+  transition: padding 0.25s ease;
+}
+
+.navbar__login-button {
+  background: var(--c-gray-100);
+  color: var(--c-gray-900);
+  border: 1px solid var(--c-gray-200);
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  justify-content: flex-start;
+  transition: padding 0.25s ease, gap 0.25s ease, background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.navbar--collapsed .navbar__login-button {
+  padding: 0.75rem;
+  gap: 0;
+}
+
+.navbar__login-button:hover {
+  background: var(--c-gray-200);
+  border-color: var(--c-gray-400);
+}
+
+.navbar__avatar-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  justify-content: flex-start;
+  transition: padding 0.25s ease, gap 0.25s ease, background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.navbar--collapsed .navbar__avatar-button {
+  gap: 0;
+  transition: padding 0.25s ease;
+}
+
+.navbar__avatar-button:hover {
+  background: var(--c-gray-100);
+  transform: scale(1.02);
+}
+
+.navbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--c-gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--c-gray-900);
+  font-weight: 600;
+  border: 2px solid var(--c-gray-200);
+  flex-shrink: 0;
+}
+
+.navbar__avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar__avatar-label {
+  display: inline-block;
+  color: var(--c-gray-900);
+  font-size: 0.875rem;
+}

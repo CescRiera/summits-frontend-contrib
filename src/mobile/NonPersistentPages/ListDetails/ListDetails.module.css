@@ -1,0 +1,309 @@
+/* Block: listDetails */
+.listDetails {
+  min-height: 100dvh;
+  background: var(--c-gray-100);
+  top: env(safe-area-inset-top);
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  position: relative;
+}
+
+
+
+/* Element: listDetails content */
+.listDetails__content {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.listDetails__userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(var(--rgb-black), 0.1);
+  flex-shrink: 0;
+}
+
+.listDetails__headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.listDetails__creatorBadge {
+  margin: 8px 16px 0;
+  align-self: flex-start;
+}
+
+.listDetails__creatorBadge > span {
+  max-width: 100%;
+}
+
+/* Element: listDetails header names */
+.listDetails__headerNames {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Element: listDetails header name */
+.listDetails__headerName {
+  color: var(--c-gray-900);
+}
+
+/* Element: listDetails filter navbar */
+.listDetails__filterNavbar {
+  background: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+/* Element: listDetails filter button */
+.listDetails__filterBtn {
+  background: var(--c-gray-50);
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64748b;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+/* Modifier: listDetails filter button hover */
+
+/* Modifier: listDetails filter button active */
+.listDetails__filterBtn--active {
+  background: #0a2540;
+  border-color: #0a2540;
+  color: white;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.3);
+}
+
+/* Element: listDetails peaks container */
+.listDetails__peaksContainer {
+  padding: 20px;
+  max-height: calc(100dvh - 300px);
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar for peaks container */
+.listDetails__peaksContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.listDetails__peaksContainer::-webkit-scrollbar-track {
+  background: var(--c-gray-100);
+  border-radius: 4px;
+}
+
+.listDetails__peaksContainer::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Element: listDetails peak card */
+.listDetails__peakCard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.15);
+}
+
+/* Modifier: listDetails peak card hover */
+
+/* Modifier: listDetails peak card completed */
+.listDetails__peakCard--completed {
+  border: 3px solid #22c55e;
+}
+
+/* Element: listDetails peak card overlay */
+.listDetails__peakCardOverlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--rgb-black), 0.7) 0%,
+    rgba(var(--rgb-black), 0.4) 50%,
+    rgba(var(--rgb-black), 0.8) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  min-height: 200px;
+}
+
+/* Element: listDetails peak card content */
+.listDetails__peakCardContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Element: listDetails peak card icon */
+.listDetails__peakCardIcon {
+  background: rgba(var(--rgb-white), 0.2);
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  backdrop-filter: blur(5px);
+  flex-shrink: 0;
+}
+
+/* Element: listDetails peak card text */
+.listDetails__peakCardText {
+  flex: 1;
+  color: white;
+}
+
+/* Element: listDetails peak name */
+.listDetails__peakName {
+  margin: 0 0 6px 0;
+}
+
+/* Element: listDetails peak location */
+.listDetails__peakLocation {
+  opacity: 0.9;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Element: listDetails peak elevation */
+.listDetails__peakElevation {
+  opacity: 0.9;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Element: listDetails completion badge */
+.listDetails__completionBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #00ae21 0%, #00ae21 100%);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+/* Element: listDetails peak row */
+.listDetails__peakRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Element: listDetails peak column */
+.listDetails__peakColumn {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 0;
+}
+
+/* Element: listDetails loading container */
+.listDetails__loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Element: listDetails error container */
+.listDetails__errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Element: listDetails loading spinner */
+.listDetails__loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--c-gray-200);
+  border-top: 4px solid #0a2540;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Element: listDetails error container paragraph */
+.listDetails__errorContainer p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Element: listDetails retry button */
+.listDetails__retryButton {
+  background: #0a2540;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Modifier: listDetails retry button hover */
+/* Element: listDetails join button */
+.listDetails__joinButton {
+  background: #0a2540;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Modifier: listDetails join button following */
+.listDetails__joinButton--following {
+  background: rgba(10, 37, 64, 0.1);
+  color: #0a2540;
+  border: 1px solid rgba(10, 37, 64, 0.2);
+}

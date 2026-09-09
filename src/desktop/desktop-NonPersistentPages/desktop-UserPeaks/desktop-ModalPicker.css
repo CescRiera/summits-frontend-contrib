@@ -1,0 +1,169 @@
+/* ModalPicker.css - For SingleDatePicker component */
+
+/* Default trigger button (not used in filter context) */
+.trigger-button {
+  border-radius: 0.375rem;
+  background-color: rgba(var(--rgb-white), 0.8);
+  padding: 0.5rem 1rem;
+  color: var(--c-black);
+  border: 1px solid var(--c-gray-200);
+
+  height: 48px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Filter context styles - date range picker buttons */
+.userPeaks__date-range-container .trigger-button {
+  margin-left: 0;
+  background-color: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  color: var(--c-black);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-align: left;
+  justify-content: flex-start;
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.userPeaks__date-range-container .trigger-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0a2540, 0 0 0 4px rgba(10, 37, 64, 0.1);
+  border-color: #0a2540;
+}
+
+.userPeaks__date-range-container .trigger-button--active {
+  background-color: #e6f0ff;
+  border-color: #0a2540;
+  color: #0a2540;
+}
+
+/* Button content styles */
+.button-label {
+  color: inherit;
+}
+
+.button-date {
+  color: var(--c-black);
+}
+
+.userPeaks__date-range-container .trigger-button--active .button-date {
+  color: #1d4ed8;
+}
+
+/* Dialog overlay and container */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(var(--rgb-black), 0.25);
+  z-index: 25000; /* Above AppModal (20000) */
+}
+
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 25001; /* Above AppModal (20000) */
+}
+
+.dialog-content {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dialog-panel {
+  width: 100%;
+  max-width: 28rem;
+  transform: translateZ(0);
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  text-align: left;
+  vertical-align: middle;
+  box-shadow: 0 25px 50px -12px rgba(var(--rgb-black), 0.25);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 25002;
+}
+
+.dialog-title {
+  color: #0a2540;
+  margin: 0;
+}
+
+/* Picker container and items */
+.picker-container {
+  margin-top: 0.5rem;
+}
+
+.picker-item {
+  display: block;
+}
+
+.picker-item-selected {
+  color: #0a2540;
+}
+
+.picker-item-unselected {
+  color: #64748b;
+}
+
+/* Button container and buttons */
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.ok-button {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1px solid #0a2540;
+  background-color: #0a2540;
+  padding: 0.5rem 1rem;
+  color: white;
+
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.ok-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0a2540, 0 0 0 4px rgba(10, 37, 64, 0.1);
+}
+
+.clear-button {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1px solid var(--c-gray-200);
+  background-color: white;
+  padding: 0.5rem 1rem;
+  color: #64748b;
+
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.clear-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0a2540, 0 0 0 4px rgba(10, 37, 64, 0.1);
+}

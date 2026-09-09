@@ -1,0 +1,322 @@
+.create-edit-club {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-edit-club__container {
+  width: min(1000px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.create-edit-club__header {
+  margin-bottom: 8px;
+}
+
+.create-edit-club__title {
+  margin: 0;
+  color: #0f172a;
+}
+
+.create-edit-club__subtitle {
+  margin: 8px 0 0;
+  color: #64748b;
+  max-width: 600px;
+}
+
+.create-edit-club__form {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.create-edit-club__card {
+  background: rgba(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+    0 10px 15px -3px rgba(0, 0, 0, 0.03),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.create-edit-club__image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-edit-club__image-preview-container {
+  position: relative;
+  width: min(240px, 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #e2e8f0;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease;
+  margin: 0 auto;
+}
+
+.create-edit-club__image-preview-container:hover {
+  transform: scale(1.01);
+}
+
+.create-edit-club__image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.create-edit-club__image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #94a3b8;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  transition: all 0.2s ease;
+}
+
+.create-edit-club__image-placeholder:hover {
+  color: #475569;
+  background: linear-gradient(135deg, #eef2f7 0%, #dae1e7 100%);
+}
+
+.create-edit-club__image-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.create-edit-club__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-edit-club__label {
+  color: #475569;
+  margin-left: 4px;
+}
+
+.create-edit-club__input,
+.create-edit-club__textarea,
+.create-edit-club__select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  transition: all 0.2s ease;
+}
+
+.create-edit-club__input:focus,
+.create-edit-club__textarea:focus,
+.create-edit-club__select:focus {
+  outline: none;
+  border-color: #c2cf94;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(194, 207, 148, 0.2);
+}
+
+.create-edit-club__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-edit-club__error-text {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.create-edit-club__error-box {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #991b1b;
+  margin-bottom: 8px;
+}
+
+.create-edit-club__admin-search-container {
+  position: relative;
+  width: 100%;
+}
+
+.create-edit-club__admin-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f1f5f9;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+}
+
+.create-edit-club__admin-chip-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: none;
+  background: rgba(15, 23, 42, 0.05);
+  color: #64748b;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.create-edit-club__admin-chip-remove:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.create-edit-club__admin-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+}
+
+.create-edit-club__admin-dropdown-item {
+  width: 100%;
+  padding: 12px 18px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.create-edit-club__admin-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.create-edit-club__admin-dropdown-item:hover {
+  background: #f8fafc;
+}
+
+.create-edit-club__admin-dropdown-item--muted {
+  color: #94a3b8;
+  text-align: center;
+  cursor: default;
+}
+
+.create-edit-club__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.create-edit-club__button {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.create-edit-club__button--primary {
+  background: #c2cf94;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(194, 207, 148, 0.4);
+}
+
+.create-edit-club__button--primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(194, 207, 148, 0.5);
+  background: #b8c686;
+}
+
+.create-edit-club__button--danger {
+  background: #ffffff;
+  color: #ef4444;
+  border: 1px solid #fee2e2;
+}
+
+.create-edit-club__button--danger:hover:not(:disabled) {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.create-edit-club__button--ghost {
+  background: rgba(15, 23, 42, 0.05);
+  color: #475569;
+}
+
+.create-edit-club__button--ghost:hover:not(:disabled) {
+  background: rgba(15, 23, 42, 0.1);
+  color: #1e293b;
+}
+
+.create-edit-club__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.create-edit-club__delete-modal {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 440px;
+  text-align: center;
+}
+
+.create-edit-club__delete-modal-title {
+  margin: 0;
+  color: #1e293b;
+}
+
+.create-edit-club__delete-modal-message {
+  margin: 0;
+  color: #64748b;
+}
+
+.create-edit-club__delete-modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .create-edit-club__form {
+    grid-template-columns: 1fr;
+  }
+  
+  .create-edit-club {
+    padding: 24px 16px;
+  }
+}

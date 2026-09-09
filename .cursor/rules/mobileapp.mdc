@@ -1,0 +1,5 @@
+---
+alwaysApply: false
+---
+
+This is a **mobile-first WebApp**. All UI work must be optimized for small screens and should look great on phones.

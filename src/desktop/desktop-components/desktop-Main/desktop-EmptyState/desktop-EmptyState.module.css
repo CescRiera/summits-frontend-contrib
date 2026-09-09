@@ -1,0 +1,26 @@
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: var(--c-white);
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.04);
+}
+
+.empty-state__icon {
+  margin-bottom: 1rem;
+}
+
+.empty-state__title {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.empty-state__subtitle {
+  color: var(--c-gray-600);
+  text-align: center;
+}

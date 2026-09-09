@@ -1,0 +1,88 @@
+/* PeakDetails.module.css - Main container styles only */
+
+.peakDetails {
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: var(--c-gray-100);
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.savedBtn {
+  border: none;
+  background: none;
+  padding: 8px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.savedBtn:hover {
+  transform: scale(1.1);
+}
+
+.savedBtn:disabled {
+  opacity: 0.5;
+  transform: none;
+}
+
+.loadingHeader {
+  padding: 24px 16px;
+  margin-bottom: 12px;
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-200);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  color: var(--c-gray-400);
+  font-style: italic;
+}
+
+/* Content */
+.content {
+  padding-bottom: 32px;
+  flex: 1;
+}
+
+/* No Data State */
+.noData {
+  text-align: center;
+  color: var(--c-gray-400);
+  font-style: italic;
+  padding: 32px 16px;
+  background: var(--c-white);
+  border-radius: 12px;
+  margin: 16px;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 480px) {
+  .content {
+    padding-bottom: 24px;
+  }
+}
+

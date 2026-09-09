@@ -1,0 +1,72 @@
+/* LogoutPopup.module.css - Logout confirmation popup */
+
+.logout-popup__content {
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.logout-popup__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logout-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.logout-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.logout-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.logout-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logout-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+}
+
+.logout-popup__button--confirm {
+  background: #fbbf24;
+  color: #0f172a;
+}
+
+.logout-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .logout-popup__content {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .logout-popup__title {
+  }
+
+  .logout-popup__message {
+  }
+
+  .logout-popup__actions {
+    flex-direction: column;
+  }
+
+  .logout-popup__button {
+    width: 100%;
+  }
+}

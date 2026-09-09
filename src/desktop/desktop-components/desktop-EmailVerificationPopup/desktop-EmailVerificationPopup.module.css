@@ -1,0 +1,84 @@
+.email-verification-popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(var(--rgb-black), 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.email-verification-popup {
+  background-color: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(var(--rgb-black), 0.15);
+}
+
+.email-verification-popup__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(15, 23, 42, 0.6);
+  transition: color 0.2s;
+}
+
+.email-verification-popup__close:hover {
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.email-verification-popup__content {
+  padding: 40px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.email-verification-popup__icon {
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.email-verification-popup__title {
+  margin: 0 0 16px;
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.email-verification-popup__message {
+  margin: 0 0 28px;
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.email-verification-popup__button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.email-verification-popup__button:hover {
+  background-color: #2563eb;
+}
+
+.email-verification-popup__button:active {
+  background-color: #1d4ed8;
+}
+

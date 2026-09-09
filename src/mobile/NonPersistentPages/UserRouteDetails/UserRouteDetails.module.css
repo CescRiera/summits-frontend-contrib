@@ -1,0 +1,331 @@
+.userRouteDetails {
+  position: fixed;
+
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  background: var(--c-black);
+}
+
+.mapContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Top Overlay */
+.topOverlay {
+  position: absolute;
+  top: env(safe-area-inset-top);
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: none;
+  pointer-events: none;
+}
+
+.topOverlay > * {
+  pointer-events: auto;
+}
+
+.headerDate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(var(--rgb-white), 1);
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.8);
+}
+
+/* Route Stats Card */
+.routeStatsCard {
+  background: rgba(var(--rgb-black), 0.8);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.3);
+  border: 1px solid rgba(var(--rgb-white), 0.1);
+  margin: 0 16px 16px 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.routeStatsCard.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.routeStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.routeStats.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  transform: translateY(-10px);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statIcon svg {
+  color: white;
+  width: 18px;
+  height: 18px;
+}
+
+.statLabel {
+  color: rgba(var(--rgb-white), 0.7);
+  text-transform: uppercase;
+}
+
+.statValue {
+  color: white;
+  white-space: nowrap;
+}
+
+/* Additional Info Row */
+.additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(var(--rgb-white), 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.additionalInfo.collapsed {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.additionalInfoLeft {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.peaksInfo,
+.activityInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+
+.peaksInfo svg,
+.activityInfo svg {
+  color: rgba(var(--rgb-white), 0.8);
+}
+
+/* Collapse Button */
+.collapseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 4px;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: rgba(var(--rgb-white), 0.8);
+
+  transition: all 0.2s ease;
+}
+
+/* Error State */
+.errorOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--rgb-black), 0.8);
+  gap: 16px;
+  padding: 20px;
+}
+
+.errorMessage {
+  padding: 20px;
+  color: #ff6b6b;
+  text-align: center;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 12px;
+  margin: 0;
+}
+
+.retryButton {
+  padding: 12px 24px;
+  color: var(--c-white);
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+
+  transition: all 0.2s ease;
+}
+
+.retryButton:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.retryButton:disabled {
+  background: var(--c-gray-600);
+  transform: none;
+}
+
+/* Bottom Overlay */
+.bottomOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(
+    to top,
+    rgba(var(--rgb-black), 0.7) 0%,
+    rgba(var(--rgb-black), 0.4) 50%,
+    transparent 100%
+  );
+  padding: 16px;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bottomOverlay > * {
+  pointer-events: auto;
+}
+
+.bottomOverlay.faded {
+  opacity: 0;
+  z-index: 0;
+}
+
+.bottomOverlay.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+
+
+/* Action Buttons Container */
+.actionButtons {
+  position: absolute;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  left: 20px;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.actionButtons.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+/* Download Route Button */
+.downloadRouteButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  border-radius: 12px;
+  color: var(--c-black);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.3);
+}
+
+.downloadRouteButton:active {
+  transform: translateY(0);
+  background: rgba(var(--rgb-black), 0.7);
+}
+
+/* Share Route Button */
+.shareRouteButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  border-radius: 12px;
+  color: var(--c-black);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.3);
+}
+
+.shareRouteButton:active {
+  transform: translateY(0);
+  background: rgba(var(--rgb-black), 0.7);
+  color: var(--c-white);
+}
+
+/* Create Animation Button */
+.animationButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  border-radius: 12px;
+  color: var(--c-black);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.3);
+  }
+
+.animationButton:active {
+  transform: translateY(0);
+  background: rgba(var(--rgb-black), 0.7);
+  color: var(--c-white);
+}
+

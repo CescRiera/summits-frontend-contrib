@@ -1,0 +1,124 @@
+.add-route-modal {
+  max-width: 450px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.add-route-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px 16px;
+}
+
+.add-route-modal__title {
+  color: #111827;
+  margin: 0;
+}
+
+.add-route-modal__close {
+  background: none;
+  border: none;
+  color: #6b7280;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-route-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 24px;
+}
+
+.add-route-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-route-modal__label {
+  color: #374151;
+}
+
+.add-route-modal__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 8px;
+  background: white;
+  color: #111827;
+}
+
+.add-route-modal__input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.add-route-modal__file-input {
+  display: none;
+}
+
+.add-route-modal__file-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border: 2px dashed var(--c-gray-300);
+  border-radius: 12px;
+  background: var(--c-gray-50);
+  color: #6b7280;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+.add-route-modal__file-button span {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.add-route-modal__error {
+  color: #dc2626;
+  margin: 0;
+}
+
+.add-route-modal__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.add-route-modal__submit,
+.add-route-modal__cancel {
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 16px;
+}
+
+.add-route-modal__submit {
+  background: #3b82f6;
+  color: white;
+}
+
+.add-route-modal__submit:disabled {
+  opacity: 0.6;
+}
+
+.add-route-modal__cancel {
+  background: white;
+  color: #374151;
+  border: 2px solid var(--c-gray-200);
+}

@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "Aplikatu",
+    "details": "Xehetasunak",
+    "filters": "Filtroak",
+    "seeRanking": "Sailkapena ikusi",
+    "time": {
+      "years": "urteak",
+      "days": "egunak",
+      "hours": "orduak",
+      "minutes": "minutuak",
+      "seconds": "segundoak"
+    },
+    "loading": "Kargatzen...",
+    "loadingRouteData": "Zure ibilbide datuak kargatzen ari gara, segundo batzuk behar ditu",
+    "error": "Errorea",
+    "retry": "Saiatu berriro",
+    "cancel": "Utzi",
+    "save": "Gorde",
+    "delete": "Ezabatu",
+    "edit": "Editatu",
+    "list": "Zerrenda",
+    "map": "Mapa",
+    "close": "Itxi",
+    "back": "Atzera",
+    "goBack": "Itzuli",
+    "next": "Hurrengoa",
+    "previous": "Aurrekoa",
+    "search": "Bilatu",
+    "searching": "Bilatzen...",
+    "clear": "Garbitu",
+    "filter": "Iragazi",
+    "sort": "Ordenatu",
+    "refresh": "Freskatu",
+    "min": "Min",
+    "max": "Max",
+    "country": "Herrialdea",
+    "region": "Eskualdea",
+    "location": "Kokapena",
+    "chooseCountry": "Aukeratu herrialde bat",
+    "chooseRegion": "Aukeratu eskualde bat",
+    "allCountries": "Herrialde guztiak",
+    "allRegions": "Eskualde guztiak",
+    "seeAll": "Ikusi denak",
+    "seeOnMap": "Ikusi mapan",
+    "showLess": "Gutxiago erakutsi",
+    "moreInfo": "Informazio gehiago",
+    "create": "Sortu",
+    "follow": "Jarraitu",
+    "following": "Jarraituz",
+    "join": "Batu",
+    "leave": "Utzi",
+    "seeMore": "Gehiago ikusi",
+    "select": "Hautatu",
+    "send": "Bidali",
+    "timeUnits": {
+      "yearShort": "u",
+      "dayShort": "e",
+      "hourShort": "o",
+      "minuteShort": "m",
+      "secondShort": "s"
+    },
+    "ranking": "Sailkapena",
+    "share": "Share",
+    "deleting": "Ezabatzen...",
+    "seeLess": "Gutxiago ikusi"
+  },
+  "desktopWarning": {
+    "title": "Deskargatu Summits-en mugikor bertsioa",
+    "subtitle": "Gozatu summits-en mugikor bertsioa, eskaneatu QR kodea eta jarraitu landing orrian ikusiko dituzun urratsak aplikazioa deskargatzeko!",
+    "scanQR": "Eskaneatu QR kode hau zure mugikor gailua erabiliz",
+    "mobileSubtitle": "Eskaneatu beheko QR kode dagokiona zure telefonoaren sistema eragilearen arabera eta deskargatu aplikazioa Android edo iOS-en zure gailuetatik jarraitzeko!"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "Hasi saioa klub bateko kide izateko.",
+      "title": "Saioa hasi behar da",
+      "message": "Mesedez, hasi saioa mapan zure gailur pertsonalak ikusteko.",
+      "viewCompletedPeaks": "Mesedez, hasi saioa osatutako eta falta diren gailurrak ikusteko.",
+      "filterPeaks": "Mesedez, hasi saioa gailurrak osatze-egoeraren arabera iragazteko.",
+      "sortByDate": "Mesedez, hasi saioa gailurrak osatze-dataren arabera ordenatzeko.",
+      "myPeaks": "Mesedez, hasi saioa zure gailur pertsonalak ikusteko.",
+      "myRoutes": "Mesedez, hasi saioa zure ibilbide pertsonalak ikusteko.",
+      "followingMode": "Mesedez, hasi saioa jarraitutako erabiltzaileen azken jarduerak ikusteko.",
+      "savedPeaks": "Mesedez, hasi saioa zure gordetako gailurrak ikusteko.",
+      "savedShelters": "Mesedez, hasi saioa zure gordetako aterpeak ikusteko.",
+      "followUser": "Mesedez, hasi saioa erabiltzaileei jarraitu eta haien profilak ikusteko.",
+      "joinChallenge": "Mesedez, hasi saioa erronka batean batzeko edo jarraitzeko.",
+      "cancel": "Utzi",
+      "login": "Hasi saioa"
+    },
+    "welcome": "Ongi etorri Summits-era",
+    "signIn": "Hasi saioa zure kontuan",
+    "email": "Posta elektronikoa",
+    "name": "Izena",
+    "password": "Pasahitza",
+    "signInButton": "Hasi saioa",
+    "noAccount": "Ez duzu konturik? Erregistratu",
+    "signUp": "Erregistratu",
+    "signUpOrLogin": "Erregistratu / Hasi saioa",
+    "createAccount": "Sortu zure kontua",
+    "confirmPassword": "Berretsi pasahitza",
+    "signUpButton": "Sortu kontua",
+    "hasAccount": "Jadanik kontu bat duzu? Hasi saioa",
+    "fillAllFields": "Mesedez, bete eremu guztiak",
+    "loginFailed": "Saio-hastea huts egin du",
+    "registrationFailed": "Erregistrazioa huts egin du",
+    "passwordsNotMatch": "Pasahitzak ez datoz bat",
+    "passwordMin": "Pasahitzak gutxienez 6 karaktere izan behar ditu.",
+    "acceptTerms": "Onartzen dut",
+    "termsOfService": "erabilera-baldintzak",
+    "and": "eta",
+    "privacyPolicy": "pribatutasun-politika",
+    "acceptTermsRequired": "Erabilera-baldintzak onartu behar dituzu",
+    "receiveNotificationsOnPeaks": "Jaso jakinarazpenak gailurrak osatzean",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "Kontua arrakastaz sortu da! Mesedez, hasi saioa.",
+    "stravaRegisteredSuccess": "Zure kontua behar bezala erregistratu da Strava-rekin. Mesedez, hasi saioa.",
+    "backToSelection": "Itzuli hautaketara",
+    "backToLogin": "Itzuli saio-hasiera orrira",
+    "emailVerification": {
+      "title": "Egiaztatu zure posta elektronikoa",
+      "message": "6 digituko egiaztapen-kode bat bidali dizugu zure posta elektronikoaren helbidera. Mesedez, begiratu zure sarrera-ontzia eta sartu beheko kodea.",
+      "messageWithEmail": "6 digituko egiaztapen-kode bat bidali dizugu {email} helbidera. Mesedez, begiratu zure sarrera-ontzia eta sartu beheko kodea.",
+      "openGmail": "Ireki Gmail",
+      "success": "Zure posta elektronikoa arrakastaz egiaztatu da! Zure kontua erabiltzeko prest dago.",
+      "authenticated": "Zure kontua autentifikatu da. Orain hasi dezakezu saioa.",
+      "verifying": "Egiaztatzen...",
+      "error": "Posta elektronikoaren egiaztapenak huts egin du. Kodea iraungi edo baliogabea izan daiteke. Mesedez, saiatu berriro edo jarri harremanetan laguntza taldearekin.",
+      "codePlaceholder": "Sartu 6 digituko kodea",
+      "verifyButton": "Egiaztatu posta elektronikoa",
+      "verifyingButton": "Egiaztatzen...",
+      "resendCode": "Birbidali kodea",
+      "resendSuccess": "Egiaztapen-kodea berriro bidali zaio zure posta elektronikoari.",
+      "codeError": "Egiaztapen-kode baliogabea edo iraungita",
+      "codeRequired": "Mesedez, sartu 6 digituko kodea",
+      "link": "Egiaztatu posta elektronikoa?"
+    },
+    "forgotPassword": {
+      "title": "Pasahitza ahaztu dut",
+      "link": "Pasahitza ahaztu duzu?",
+      "instructions": "Sartu zure posta elektronikoaren helbidea eta pasahitza berrezartzeko 6 digituko kode bat bidaliko dizugu.",
+      "sendEmail": "Bidali berrezartzeko kodea",
+      "success": "Helbide horrekin kontu bat badago, pasahitza berrezartzeko kode bat bidali dizugu. Mesedez, begiratu zure sarrera-ontzia.",
+      "error": "Pasahitza berrezartzeko posta elektronikoa bidaltzeak huts egin du. Mesedez, saiatu berriro."
+    },
+    "resetPassword": {
+      "title": "Berrezarri pasahitza",
+      "instructions": "6 digituko egiaztapen-kode bat bidali dizugu zure posta elektronikoaren helbidera. Mesedez, begiratu zure sarrera-ontzia eta sartu beheko kodea.",
+      "messageWithEmail": "6 digituko egiaztapen-kode bat bidali dizugu {email} helbidera. Mesedez, begiratu zure sarrera-ontzia eta sartu beheko kodea.",
+      "codePlaceholder": "Sartu 6 digituko kodea",
+      "codeRequired": "Mesedez, sartu 6 digituko kodea",
+      "emailRequired": "Mesedez, sartu zure posta elektronikoaren helbidea",
+      "submit": "Berrezarri pasahitza",
+      "successTitle": "Pasahitza arrakastaz berrezarri da",
+      "successMessage": "Zure pasahitza arrakastaz berrezarri da. Orain hasi dezakezu saioa pasahitz berriarekin.",
+      "error": "Pasahitza berrezartzeak huts egin du. Kodea iraungi edo baliogabea izan daiteke. Mesedez, eskatu pasahitza berrezartzeko kode berri bat.",
+      "resendCode": "Birbidali kodea",
+      "resendSuccess": "Pasahitza berrezartzeko kodea berriro bidali zaio zure posta elektronikoari.",
+      "resendError": "Pasahitza berrezartzeko kodea birbidaltzeaz huts egin du. Mesedez, saiatu berriro.",
+      "invalidToken": "Berrezartzeko token baliogabea edo falta da. Mesedez, eskatu pasahitza berrezartzeko esteka berri bat."
+    },
+    "loginHint": "Ongi etorri berriro! Sartu zure kredentzialak zure profilera sartzeko.",
+    "goToLogin": "Joan saio-hasierara",
+    "welcomeMessage": "Mesedez, hasi saioa edo sortu kontu berri bat zure profilerako sarbidea izateko eta zure jarduerak sinkronizatzeko.",
+    "noAccountQuestion": "Ez duzu konturik?",
+    "hasAccountQuestion": "Jadanik kontu bat duzu?",
+    "or": "edo",
+    "orSignInWith": "edo hasi saioa honekin",
+    "loginWithStrava": "Hasi saioa Strava-rekin",
+    "loginWithSuunto": "Hasi saioa Suunto-rekin",
+    "chooseProvider": "Aukeratu hornitzaile bat zure kontua sortzeko:",
+    "backToProviderSelection": "Itzuli hornitzaile hautaketara",
+    "wikiloc": {
+      "enterUsername": "Sartu Wikiloc erabiltzaile-izen bat bilatzeko.",
+      "noUsers": "Ez da Wikiloc erabiltzailerik aurkitu izen horrekin.",
+      "searchFailed": "Wikiloc erabiltzaileak bilatzeak huts egin du.",
+      "selectUserToContinue": "Hautatu zure erabiltzailea jarraitzeko",
+      "trails": "Ibilbideak",
+      "selected": "Hautatuta"
+    },
+    "register": {
+      "title": "Sortu zure kontua",
+      "subtitle": "Zure gailurrak sinkronizatzeko, erregistra zaitezke zure posta elektronikoaren bidez edo konektatu Strava, Suunto, Garmin edo Wikiloc bidez. Strava edo Suunto gomendatzen ditugu konfigurazio azkarrena eta errazena lortzeko.",
+      "choosePlatform": "Aukeratu zure plataforma",
+      "noPlatformOption": "Ez dut horietako konturik",
+      "registerWith": "Erregistratu honekin",
+      "connectingToWikiloc": {
+        "before": "Wikiloc-ekin harremanetan jartzen saiatzen ari naiz",
+        "appName": "Summits",
+        "after": "kontua zure Wikiloc kontua erabiliz erregistratzeko"
+      },
+      "connectingToStrava": {
+        "before": "Strava-rekin harremanetan jartzen saiatzen ari naiz",
+        "appName": "Summits",
+        "after": "kontua zure Strava kontua erabiliz erregistratzeko"
+      },
+      "providerDescription": {
+        "wikiloc": "Sinkronizatu Wikiloc-ekin zure gailurren aurrerapenak jarraitzeko",
+        "strava": "Sinkronizatu Strava-rekin zure gailurren aurrerapenak jarraitzeko",
+        "garmin": "Sinkronizatu Garmin Connect-ekin zure gailurren aurrerapenak jarraitzeko",
+        "default": "Sortu Summits kontu bat zure posta elektroniko eta pasahitzarekin"
+      },
+      "default": {
+        "label": "Posta elektronikoa",
+        "title": "Sortu Summits kontua"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "Erregistratu Wikiloc-ekin",
+        "searchPlaceholder": "Bilatu zure Wikiloc erabiltzaile-izena",
+        "enterUsername": "Sartu Wikiloc erabiltzaile-izen bat bilatzeko.",
+        "noUsers": "Ez da Wikiloc erabiltzailerik aurkitu izen horrekin.",
+        "searchFailed": "Wikiloc erabiltzaileak bilatzeak huts egin du.",
+        "warning": "Wikiloc-etik ibilbideak lortzea ASKOZ motelago da Strava, Garmin edo Suunto baino. Horietako bat baduzu, erabili hori!",
+        "trails": "Ibilbideak",
+        "selected": "Hautatuta"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "Erregistratu Strava-rekin",
+        "connecting": "Strava-rekin konektatzen...",
+        "submit": "Erregistratu Strava-rekin",
+        "warning": "Strava-k sinkronizatu daitezkeen ibilbide-kopuruan muga du. Garmin kontua baduzu zure ibilbideekin, mesedez kontuan hartu hori sinkronizazio-gaitasun hobea lortzeko."
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "Erregistratu Garmin Connect-ekin",
+        "connecting": "Garmin Connect-ekin erregistratzen...",
+        "submit": "Erregistratu Garmin Connect-ekin",
+        "warning": "Garmin Connect-ek muga batzuk ditu. Jarduera guztiak ikusten ez badituzu, nirekin jar zaitezke harremanetan laguntza lortzeko."
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "Erregistratu Suunto-rekin",
+        "connecting": "Suunto-rekin konektatzen...",
+        "submit": "Jarraitu Suunto-rekin",
+        "warning": "Konektatu zure Suunto kontua zure jarduerak Summits-en sinkronizatzeko."
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "Errore bat gertatu da Strava erregistrazioan. Mesedez, saiatu berriro.",
+        "emailAlreadyExists": "Posta elektroniko horrekin kontu bat jadanik existitzen da. Mesedez, erabili beste bat edo hasi saioa.",
+        "accountAlreadyLinked": "Strava kontu hau beste kontu batekin estekatu da jadanik.",
+        "registrationFailed": "Erregistrazioak huts egin du. Mesedez, saiatu berriro.",
+        "emailCheckFailed": "Posta elektronikoaren egiaztatzeaz huts egin du. Mesedez, saiatu berriro.",
+        "internalError": "Barne errore bat gertatu da. Mesedez, saiatu berriro geroago."
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "Garmin kontu hau beste kontu batekin estekatu da jadanik.",
+        "emailCheckFailed": "Posta elektronikoaren egiaztatzeak huts egin du. Mesedez, saiatu berriro.",
+        "generic": "Errore bat gertatu da Garmin erregistrazioan. Mesedez, saiatu berriro.",
+        "internalError": "Barne errore bat gertatu da. Mesedez, saiatu berriro geroago.",
+        "registrationFailed": "Erregistrazioak huts egin du. Mesedez, saiatu berriro."
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "Errore bat gertatu da saioa hastean. Mesedez, saiatu berriro.",
+        "timeout": "Saioa hasteko denbora agortu da. Mesedez, saiatu berriro."
+      }
+    }
+  },
+  "navigation": {
+    "home": "Hasiera",
+    "discover": "Aurkitu",
+    "leaderboard": "Erronkak",
+    "map": "Mapa",
+    "profile": "Profila",
+    "contact": "Kontaktua",
+    "userProfile": "Erabiltzaile-profila",
+    "routeDetails": "Ibilbidearen xehetasunak",
+    "peakDetails": "Gailurraren xehetasunak"
+  },
+  "contact": {
+    "getInTouchWithMe": "JARRI HARREMANETAN GARATZAILEAREKIN",
+    "phoneNumber": "Telefono-zenbakia",
+    "emailAddress": "Posta elektronikoaren helbidea",
+    "emailPlaceholder": "Posta elektronikoa"
+  },
+  "main": {
+    "totalPeaks": "Gailur kopuru",
+    "totalAscents": "Igoera kopuru osoa",
+    "scrapingMessage": "🔄 Zure ibilbideetako gailurrak kargatzen jarraitzen du...",
+    "failedToRefresh": "Datuak freskatzeak huts egin du",
+    "completedPeaksInList": "Erronka honetan {total} gailurretatik {completed} osatu dituzu.",
+    "allPeaks": "Gailur guztiak",
+    "loading": "Kargatzen...",
+    "completed": "Osatuta",
+    "seeMore": "Gehiago ikusi",
+    "seeLess": "Gutxiago ikusi",
+    "myPeaks": "Zure gailurrak",
+    "swipeProgressHint": "Lerratu erronka ezberdinen zehar zure aurrerapena ezagutzeko",
+    "swipeDiscoverHint": "Lerratu munduko erronka harrigarriak aurkitzeko",
+    "yourHighestPeaks": "Zure gailurrik altuenak",
+    "yourHighestPeaksDesc": "Zure eskalada-bidaian menperatutako mendi altuenak",
+    "communityHighestPeaks": "Komunitatearen gailurrik altuenak",
+    "communityHighestPeaksDesc": "Gure komunitate-kideek lortutako gailurrik ikusgarrienak",
+    "loadNewPeaks": "Kargatu gailur berriak",
+    "refreshUserData": "Freskatu erabiltzaile-datuak",
+    "scrapingInProgress": "Hau denbora bat behar dezake ibilbide asko badituzu, lasai esploratu aplikazioaren gainerakoa bitartean!",
+    "allPeaksList": {
+      "nameLoggedIn": "Zure ibilbidea",
+      "nameGuest": "Aurkitu munduko gailurrak",
+      "descriptionLoggedIn": "Lortzen duzun gailur bakoitzak aztarna iraunkorra uzten du zure bidaian. Jarraitu zure igoerei Himalaia-tik Alpe-etara — mugak gainditzen, urrats bat aldi batean.",
+      "descriptionGuest": "Everest-etik Mont Blanc-era, esploratu munduko mendi harrigarri batzuk. Batu milaka eskalatzaileekin, igoera bakoitzaren erronka eta abentura onartzen baitituzte — egiten dugunaren oihartzuna eternitatean dago."
+    }
+  },
+  "peakDetails": {
+    "description": "Deskribapena",
+    "searchRoutesFor": "Bilatu ibilbideak honetan",
+    "findHikingRoutesOnWikiloc": "Aurkitu mendi-ibilbideak Wikiloc-en",
+    "expand": "Zabaldu",
+    "loadError": "Errorea tontorraren xehetasunak kargatzean"
+  },
+  "peaks": {
+    "count": "gailurrak",
+    "noPeaksFound": "Ez da gailurrik aurkitu",
+    "peakInfo": "Gailurraren informazioa",
+    "information": "Informazioa",
+    "elevation": "Altuera",
+    "description": "Deskribapena",
+    "noDescription": "Ez dago deskribapenik erabilgarri",
+    "noPeaksNearCoordinates": "Ez da gailurrik aurkitu koordenatu hauen inguruan",
+    "images": "Irudiak",
+    "userPeakDescriptionSingle": "{country}-ko {region} eskualdeko {name} gailurra {dates} datan igon zenuen <b>{routes}</b> ibilbidearekin.",
+    "userPeakDescriptionMultiple": "{country}-ko {region} eskualdeko {name} gailurra data hauetan igon zenuen: {dates}, ibilbide hauekin: <b>{routes}</b>."
+  },
+  "map": {
+    "noRoutes": "Ez dago ibilbiderik erabilgarri",
+    "loadingRoutes": "Ibilbideak kargatzen...",
+    "mapView": "Mapa-ikuspegia",
+    "controls": {
+      "title": "Maparen kontrolak",
+      "globeView": "3D globo-ikuspegia",
+      "outdoors": "Kanpoa",
+      "satellite": "Satelitea",
+      "terrainView": "3D lurra"
+    },
+    "visiblePeaks": {
+      "title": "Ikusgai dauden gailurrak",
+      "subtitle": "Uneko ikuspegiaren eta iragazkien emaitzak",
+      "layerLabel": "Geruza:",
+      "tilesLayerLabel": "Tile-geruza",
+      "listLayerLabel": "Zerrenda-geruza",
+      "userLayerLabel": "Zure gailurren geruza",
+      "enableHint": "Gaitu etengailua gailurrak zerrendatzeko",
+      "empty": "Ez da gailurrik hauteman uneko ikuspegia.",
+      "footer": "Eguneratzen da mapa 1 segundo geldirik egon eta gero.",
+      "loadMore": "Ikusi {remaining} gailur gehiago"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "Klubak arakatu",
+      "createClub": "Kluba sortu",
+      "myClubs": "Nire klubak",
+      "browseTitle": "Klubak arakatu",
+      "joinClub": "Klubera batu",
+      "myClubsDescription": "Kide zaren klubak."
+    },
+    "userProfile": "Erabiltzaile-profila",
+    "settings": "Ezarpenak",
+    "logout": "Saioa itxi",
+    "language": "Hizkuntza",
+    "about": "Honi buruz",
+    "version": "Bertsioa",
+    "statistics": "Estatistikak",
+    "savedPeaks": "Gordetako gailurrak",
+    "yourRoutes": "Zure ibilbideak",
+    "yourPeaks": "Zure gailurrak",
+    "yourRoutesWithCount": "Zure {count} ibilbideak",
+    "yourPeaksWithCount": "Zure {count} gailurrak",
+    "savedPeaksWithCount": "Zure {count} gordetako gailurrak",
+    "savedShelters": "Gordetako aterpeak",
+    "savedSheltersWithCount": "Zure {count} gordetako aterpeak",
+    "viewYourRoutes": "Ikusi zure ibilbideak",
+    "viewYourPeaks": "Ikusi zure gailurrak",
+    "viewAllStats": "Ikusi nire estatistika guztiak",
+    "seeAllSavedPeaks": "Ikusi gordetako gailur guztiak",
+    "changeLanguage": "Aldatu hizkuntza",
+    "unitSystem": "Neurri-sistema",
+    "unitSystemMessage": "Hautatu zure neurri-sistema gogokoa",
+    "metricSystem": "Metrikoa (km, m)",
+    "imperialSystem": "Inperiala (mi, ft)",
+    "helpTutorials": "Laguntza eta tutorialak",
+    "needHelp": "Laguntza behar duzu?",
+    "sendSuggestionsReportErrors": "Bidali iradokizunak / Jakinarazi erroreak",
+    "contactDeveloper": "Jarri harremanetan garatzailearekin",
+    "donate": "Dohaintza egin",
+    "donateQuestion": "Dohaintza egin?",
+    "donateTitle": "Lagundu Summits-i",
+    "donateMessage": "Summits nire diru propioarekin finantzatzen dudan irabazi pertsonaleko proiektu bat da. Edozein dohaintza eskertzen da eta aplikazioa hobetzen eta mantentzen lagunduko du. Eskerrik asko erabiltzeagatik!",
+    "donateButton": "Dohaintza egin",
+    "donateAmount": "EURetan zenbatekoa",
+    "donateAmountPlaceholder": "adib. 5.00",
+    "wikilocImport": "Wikiloc-etik inportatu",
+    "wikilocImportTitle": "Inportatu ibilbideak Wikiloc-etik",
+    "wikilocImportDescription": "Bilatu Wikiloc profil bat eta inportatu bere ibilbide guztiak zure kontura.",
+    "wikilocImportSearchPlaceholder": "Bilatu Wikiloc erabiltzaile-izen bat...",
+    "wikilocImportButton": "Inportatu ibilbideak",
+    "wikilocImportStarted": "Inportazioa hasita! WebSocket bidez jasoko dituzu eguneraketak.",
+    "wikilocImportQueued": "#{position} zara ilaran. WebSocket bidez jasoko dituzu eguneraketak.",
+    "wikilocImportAlreadyInProgress": "Wikiloc inportazioa martxan dago jada erabiltzaile honentzat.",
+    "wikilocImportServerBusy": "Zerbitzaria lanpetuta dago beste eskaera batzuk prozesatzen. Saiatu berriro minutu batzuetan.",
+    "wikilocImportCompleted": "Inportazioa osatuta! {count} ibilbide prozesatu dira.",
+    "wikilocImportError": "Inportazioak huts egin du. Saiatu berriro.",
+    "wikilocNoUsersFound": "Ez da Wikiloc erabiltzailerik aurkitu izen horrekin.",
+    "wikilocSearchFailed": "Wikiloc erabiltzaileen bilaketak huts egin du.",
+    "wikilocEnterUsername": "Mesedez, sartu Wikiloc erabiltzaile-izen bat bilatzeko.",
+    "wikilocSelectUser": "Hautatu erabiltzaile bat ibilbideak inportatzeko:",
+    "wikilocSelectedUser": "Hautatua: {name}",
+    "deleteAccount": "Ezabatu",
+    "accountSettings": "Kontuaren ezarpenak",
+    "nameRequired": "Izena beharrezkoa da",
+    "nameTooLong": "Izenak 100 karaktere edo gutxiago eduki behar ditu",
+    "nameUpdateFailed": "Izena eguneratzeak huts egin du",
+    "editName": "Editatu izena",
+    "saveName": "Gorde izena",
+    "cancelEditName": "Utzi izena editatzeari",
+    "logoutConfirmation": "Ziur zaude saioa itxi nahi duzula?",
+    "languageChangeMessage": "Hautatu zure hizkuntza gogokoa",
+    "deleteAccountConfirmation": "Ziur zaude zure kontua ezabatu nahi duzula? Ekintza hau ezin da desegin.",
+    "contactDeveloperMessage": "Jarri harremanetan garatzailearekin laguntza, akatsen txostenak edo galdera orokorretarako.",
+    "suggestionsMessage": "Partekatu zure ideiak eta iradokizunak aplikazioa hobetzen laguntzeko.",
+    "subject": "Gaia",
+    "subjectPlaceholder": "Sartu gai bat...",
+    "message": "Mezua",
+    "messagePlaceholder": "Sartu zure mezua...",
+    "yourSuggestion": "Zure iradokizuna",
+    "suggestionPlaceholder": "Partekatu zure ideiak eta iradokizunak...",
+    "sendMessage": "Bidali",
+    "sendSuggestion": "Bidali",
+    "suggestionSentSuccessfully": "Iradokizuna arrakastaz bidali da!",
+    "messageSentSuccessfully": "Zure mezua behar bezala bidali da!",
+    "follows": {
+      "followers": "Jarraitzaileak",
+      "following": "Jarraituz",
+      "peaks": "Gailurrak",
+      "followRequests": "Jarraitze-eskaerak",
+      "noPendingRequests": "Ez dago eskaera zain",
+      "noPendingRequestsMessage": "Une honetan ez duzu jarraitze-eskaera zain.",
+      "noFollowers": "Ez dago jarraitzailerik",
+      "noFollowersMessage": "Oraindik ez duzu jarraitzailerik.",
+      "notFollowingAnyone": "Ez zaio inori jarraitzen",
+      "notFollowingAnyoneMessage": "Oraindik ez zara inori jarraitzen.",
+      "accept": "Onartu",
+      "reject": "Ukatu",
+      "unfollow": "Jarraitzari utzi",
+      "loading": "Kargatzen...",
+      "error": "Errorea datuak kargatzen",
+      "pendingRequests": "Eskaera zain daude"
+    },
+    "notifications": {
+      "notifications": "Jakinarazpenak",
+      "notificationsEnabled": "Gaituta",
+      "notificationsDisabled": "Desgaituta",
+      "notificationsPermissionDenied": "Baimena ukatua",
+      "notificationsNotSupported": "Ez da onartzen",
+      "waitingForPermission": "Baimenaren zain"
+    },
+    "privacy": {
+      "profileStatus": "Profilaren egoera",
+      "public": "Publikoa",
+      "private": "Pribatua"
+    },
+    "challenges": {
+      "joinChallenge": "Batu erronkara",
+      "createChallenge": "Sortu erronka",
+      "editMyChallenges": "Editatu nire erronkak",
+      "browseTitle": "Arakatu erronkak",
+      "follow": "Jarraitu",
+      "following": "Jarraituz",
+      "unfollowChallenge": "Utzi erronkari jarraitzen",
+      "editChallenge": "Editatu erronka",
+      "leave": "Utzi erronka",
+      "leaveConfirmTitle": "Utzi erronka",
+      "leaveConfirmMessage": "Utzi nahi duzu '{name}' erronka? Zure aurrerapenak ez dira galduko eta edozein momentutan berriro batu zaitezke.",
+      "noCreatedChallenges": "Oraindik ez duzu erronkarik sortu."
+    }
+  },
+  "externalProfile": {
+    "userClubs": "{userName}-(r)en klubak",
+    "unknownUser": "Erabiltzaile ezezaguna",
+    "userNotFound": "Erabiltzailea ez da aurkitu",
+    "userNotFoundMessage": "Bilatzen ari zaren erabiltzailea ez da existitzen edo ezabatu egin da.",
+    "follow": "Jarraitu",
+    "following": "Jarraituz",
+    "privateProfile": "Profil pribatua",
+    "privateProfileMessage": "Erabiltzaile honek bere profila pribatu gisa ezarri du. Jarraitu iezaiozu haien estatistikak eta jarduerak ikusteko.",
+    "rankTitle": "{userName}-ren sailkapena",
+    "rankDescription": "Igotako gailur gehien dituzten <strong>{totalUsers}</strong> erabiltzaileetatik <strong>{rank}</strong>. postuan",
+    "userPeaks": "{userName}-ren gailurrak",
+    "userRoutes": "{userName}-ren ibilbideak",
+    "userPeaksWithCount": "{userName}-ren {count} gailurrak",
+    "userRoutesWithCount": "{userName}-ren {count} ibilbideak",
+    "userPeakLists": "{userName}-ren gailur-erronkak",
+    "peakListProgress": "{completed} / {total} osatuta",
+    "performanceOverview": "Errendimenduen ikuspegi orokorra",
+    "distanceKm": "Distantzia (km)",
+    "elevationM": "Altuera (m)",
+    "totalTime": "Denbora osoa",
+    "peaksConquered": "Gailurrak menperatu",
+    "routesCompleted": "Ibilbideak osatu",
+    "movingTime": "Mugimenduzko denbora",
+    "viewStatsTitle": "Ikusi {userName}-ren estatistikak",
+    "viewStatsSubtitle": "Grafika eta metrika interaktiboak",
+    "requestPending": "Eskatuta"
+  },
+  "help": {
+    "subtitle": "Ikasi Summits-en etekinik handiena nola atera eta aurkitu bere eginbide guztiak",
+    "faq": {
+      "installApp": {
+        "question": "Nola instala dezaket aplikazioa?",
+        "answer": "Summits aplikazioa instalatzeko, zure sistema eragilearen araberakoa da (iOS edo Android) edo erabiltzen duzun arakatzaile bertsioa.\n\nJarraian instalatzeko botoia eta urratsak aurkituko dituzu zure gailuaren arabera (landing orrian egiten dugun bezala, diseinua sinpleagoa bada ere)"
+      },
+      "newPeaks": {
+        "question": "Ibilbide berrietako gailurrak ez dira agertzen",
+        "answer": "Zure ibilbideetako azken gailurrak agertzen ez badira, saiatu hasiera pantailako (goiko eskuinean) \"Kargatu gailur berriak\" botoia erabiltzen.\n\nHonek ez badio funtzionatzen edo errorerik badago, zure profiletik nirekin jar zaitezke harremanetan, \"Jarri harremanetan garatzailearekin\" atalean."
+      },
+      "incorrectPeaks": {
+        "question": "Erakusten du igoera egin gabeko gailurrak igo ditudala (edo alderantziz)",
+        "answer": "Zure gailurrak kalkulatzeko, aplikazioak zure ibilbideen koordenatuk egiaztatzen ditu eta zeharkatu dituzun puntuak zehazten ditu.\n\nAltueraren zehaztasun txikia dela eta, ezin da beti ziurtasunez finkatu gailur bat igo duzun ala gertutik edo behean pasa zarenetz. Hau gailur-dentsitate altuko eremuetan gerta daiteke, Montserrat-en bezala, igo ez dituzun gailurrak igo dituzula iruditu daitekeen.\n\nKasu aurkakoan —gailur bat igo duzulakoan zaude baina ez da agertzen—, posible da GPS-ak huts egin duela edo ibilbidea errore-marjin txiki batekin grabatu duela. Gomendatzen dut mapa gainean zure ibilbidea ikustea eta GPS-ak grabatutako lerroa egiaztatzea.\n\nOraindik errore bat dela uste baduzu, zure profileko \"Jarri harremanetan garatzailearekin\" ataletik nirekin jar zaitezke harremanetan."
+      },
+      "missingRoutes": {
+        "question": "Ez dira nire ibilbide guztiak edo egindako ibilbide berriak agertzen",
+        "answer": "Ibilbideak alferrik aztertzea saihesteko, Summits-ek mendiko jarduerarekin lotutako kategoria espezifikotako ibilbideak bakarrik aztertzen ditu (mendizaletasuna, alpinismoa, trail lasterketa...). Horrela, ibilbide-karga handia saihesten da eta mendirik ez duten jarduera hauek aztertzea saihesten da: igeriketa, korrika, txirrindularitza, gimnasio...\n\nZure ibilbideak aztertuko direla ziurtatzeko, egiaztatu mota baliozkoa dutela. Honekin lotutako arazorik baduzu, zure profileko \"Jarri harremanetan garatzailearekin\" atalean jar zaitezke nirekin harremanetan."
+      },
+      "historicalData": {
+        "question": "Ezin ditut nire datu historikoak ikusi (iraganeko ibilbideetan egindako gailurrak)",
+        "answer": "Atzekaldeko datuekin arazo batzuk daude. Mesedez, erabili beheko formularioa garatzailearekin harremanetan jartzeko."
+      }
+    },
+    "mapNavigation": {
+      "title": "Maparen nabigazioa",
+      "pinchZoom": "Handitu eta txikitu mapan hatzekin konprimatzeko",
+      "dragPan": "Arrastatu mapan mugitzeko",
+      "tapPeak": "Sakatu gailurretan xehetasunak ikusteko",
+      "layers": "Aldatu mapa-geruza ezberdinen artean"
+    },
+    "userFeatures": {
+      "title": "Erabiltzaile-eginbideak",
+      "savedPeaks": "Gorde zure gailur gogokoenak sarbide azkarrerako",
+      "routes": "Sortu eta kudeatu zure eskalada-ibilbideak",
+      "statistics": "Jarraitu zure eskalada-aurrerapena eta lorpenak",
+      "profile": "Kudeatu zure kontua eta hobespenak"
+    },
+    "leaderboard": {
+      "title": "Sailkapena",
+      "ranking": "Lehiatu munduko beste eskalatzaileekin",
+      "categories": "Ikusi sailkapenak kategoria ezberdinen arabera",
+      "filters": "Iragazi emaitzak herrialdeen, eskualdeen edo zailtasunaren arabera",
+      "achievements": "Desblokeatu lorpenak eta txapak"
+    },
+    "settings": {
+      "title": "Ezarpenak eta hobespenak",
+      "language": "Aldatu aplikazioaren hizkuntza",
+      "notifications": "Kudeatu jakinarazpen-hobespenak",
+      "privacy": "Kontrolatu zure pribatutasun-ezarpenak",
+      "data": "Kudeatu zure datuak eta kontua"
+    }
+  },
+  "errors": {
+    "networkError": "Sare-errorea",
+    "serverError": "Zerbitzari-errorea",
+    "timeoutError": "Eskaeraren denbora-muga",
+    "unknownError": "Errore ezezaguna gertatu da"
+  },
+  "search": {
+    "searchPeaks": "Bilatu gailurrak izenaren edo ibilbide IDaren arabera...",
+    "searching": "Bilatzen...",
+    "searchForPeaks": "Bilatu gailurrak, erabiltzaileak, eskualdeak...",
+    "searchLabel": "Bilatu",
+    "closeSearch": "Itxi bilaketa",
+    "elevationIcon": "Altuera-ikonoa",
+    "peaks": "gailurrak",
+    "noPeaksOrUsersFound": "Ez da gailurrik edo erabiltzailerik aurkitu \"{query}\" bilaketarako",
+    "noPeaksFound": "Ez da gailurrik aurkitu \"{query}\" bilaketarako",
+    "searchPeaksAndUsers": "Bilatu gailurrak, erabiltzaileak, eskualdeak...",
+    "discoverPeaksAndUsers": "Aurkitu gailur harrigarriak eta konektatu beste eskalatzaileekin. Idatzi mendi-izen, eskualde, herrialde edo erabiltzaile-izen bat hasteko.",
+    "discoverPeaks": "Aurkitu gailur harrigarriak munduan zehar. Idatzi mendi-izen, eskualde edo herrialde bat hasteko.",
+    "recentSearches": "Azken bilaketak",
+    "clearRecentSearches": "Garbitu azken bilaketak",
+    "clearSearch": "Garbitu bilaketa"
+  },
+  "peaksList": {
+    "yourPeaks": "Zure gailurrak",
+    "noPeaksMatchingSearch": "Ez da zure bilaketa bat datorren gailurrik aurkitu",
+    "noPeaksInRoutes": "Ez da gailurrik aurkitu zure ibilbideetan",
+    "loadingPeaksData": "Gailur-datuak kargatzen...",
+    "loadingPeaksMetadata": "Gailurren metadatuak kargatzen...",
+    "noPeaksDataAvailable": "Ez dago gailur-daturik erabilgarri"
+  },
+  "gallery": {
+    "media": "Multimedia-galeria",
+    "noMedia": "Ez dago multimedia-edukia erabilgarri",
+    "videoError": "Errorea bideoa kargatzen",
+    "photos": "Argazkiak",
+    "videos": "Bideoak",
+    "video": "Bideoa",
+    "photo": "Argazkia",
+    "openVideoMessage": "Pexels-en bideoa ikusi nahi duzu?",
+    "openVideo": "Ikusi bideoa",
+    "watchVideo": "Ikusi bideoa",
+    "viewOnPexels": "Ikusi Pexels-en",
+    "addImage": "Gehitu irudia",
+    "addImageSuccess": "Zure irudia berrikusteko bidali da. Onartutakoan agertuko da.",
+    "addImageError": "Irudia gehitzeak huts egin du",
+    "replaceImage": "Ordezkatu irudia"
+  },
+  "filters": {
+    "filters": "Iragazkiak",
+    "altitude": "Altuera",
+    "content": "Edukia",
+    "shelterType": "Aterpe mota",
+    "modeAll": "Denak",
+    "modePeaks": "Tontorrak",
+    "modeShelters": "Aterpeak",
+    "all": "Denak",
+    "location": "Kokapena",
+    "clear": "Garbitu iragazkiak",
+    "showFilters": "Erakutsi iragazkiak",
+    "hideFilters": "Ezkutatu iragazkiak",
+    "filterByElevation": "Iragazi altueraren arabera",
+    "nearbyPeaks": "Inguruko gailurrak",
+    "currentFilter": "Uneko iragazkia",
+    "choosePeakList": "Aukeratu erronka",
+    "chooseListOfSummits": "Aukeratu erronka",
+    "yourPeaks": "Zure gailurrak"
+  },
+  "leaderboard": {
+    "clubsTab": "Klubak",
+    "browseClubs": "Klubak arakatu",
+    "totalClubs": "Klubak",
+    "totalCountries": "Herrialdeak",
+    "exploreClubs": "Klubak esploratu",
+    "clubsFilterPrefix": "Klubak hauekin...",
+    "rank": "Sailk.",
+    "club": "Kluba",
+    "errorLoadingClubs": "Ezin izan da kluben sailkapena kargatu.",
+    "noClubsFound": "Ez da klubik aurkitu kategoria honetan.",
+    "clubsFilters": {
+      "most_users": "kide gehien",
+      "most_peaks": "mendi gehien",
+      "most_distance": "distantzia gehien",
+      "most_elevation": "desnibela gehien",
+      "most_time": "denbora gehien",
+      "most_active_last_30d": "aktiboena (30 egun)",
+      "newest": "Berrienak"
+    },
+    "metrics": {
+      "member_count": "Kideak",
+      "distinct_peak_count": "Tontorrak",
+      "total_distance_km": "Distantzia",
+      "total_elevation_gain": "Desnibela",
+      "total_moving_time": "Denbora"
+    },
+    "clubsCategories": {
+      "mostPeaks": "Mendi gehien",
+      "mostDistance": "Distantzia gehien",
+      "mostElevation": "Desnibela gehien",
+      "mostTime": "Denbora gehien",
+      "mostUsers": "Kide gehien"
+    },
+    "exploreChallenges": "Erronkak esploratu",
+    "noFollowing": "Oraindik ez diozu inori jarraitzen.",
+    "title": "Erronkak",
+    "peaksTab": "Gailurrak",
+    "usersTab": "Erabiltzaileak",
+    "listsTab": "Erronkak",
+    "worldChallengeTab": "Munduko erronka",
+    "userChallengesTab": "Erabiltzaileen erronkak",
+    "worldTab": "Mundua",
+    "forYouTab": "Zuretzat",
+    "totalWorldPeaks": "Munduko gailur kopuru osoa",
+    "communityCompleted": "Komunitateak osatuta",
+    "youCompleted": "Zuk osatuta",
+    "shortTotal": "Osoa",
+    "shortCommunity": "Komunitatea",
+    "shortMe": "Zu",
+    "shortExpand": "Zabaldu",
+    "shortMinimize": "Itxi",
+    "sortByHighest": "Gailurrik altuenak",
+    "sortByContributors": "Kolaboratzaile nagusiak",
+    "expandMap": "Zabaldu mapa",
+    "seeMoreAboutList": "Gehiago ikusi erronka honi buruz",
+    "sortBy": "Ordenatu honen arabera",
+    "activity": "Jarduera",
+    "allActivities": "Jarduera guztiak",
+    "distance": "Distantzia",
+    "elevation": "Altuera",
+    "routes": "Ibilbideak",
+    "peaks": "Gailurrak",
+    "peak": "Gailurra",
+    "time": "Denbora",
+    "climbedBy": "Igotakoa",
+    "seeAll": "Ikusi denak",
+    "loadMorePeaks": "Kargatu gailur gehiago",
+    "loadMoreUsers": "Kargatu erabiltzaile gehiago",
+    "loading": "Kargatzen...",
+    "distanceChampion": "Distantzia-txapelduna",
+    "elevationMaster": "Altuera-maisua",
+    "routeExplorer": "Ibilbide-esploratzailea",
+    "peakConqueror": "Gailur-konkistatzailea",
+    "enduranceKing": "Iraunkortasun-erregea",
+    "topPerformer": "Errendimendu onena",
+    "listChampion": "Erronkako txapelduna",
+    "peakListParticipant": "Erronkako partaidea",
+    "badges": {
+      "distanceChampion": "Distantzia-txapelduna",
+      "elevationMaster": "Altuera-maisua",
+      "routeExplorer": "Ibilbide-esploratzailea",
+      "peakConqueror": "Gailur-konkistatzailea",
+      "enduranceKing": "Iraunkortasun-erregea",
+      "topPerformer": "Errendimendu onena"
+    },
+    "filters": {
+      "sortBy": "Ordenatu honen arabera",
+      "activity": "Jarduera"
+    },
+    "completed": "Osatuta",
+    "progress": "Aurrerapen",
+    "hours": "Orduak",
+    "selectList": "Hautatu erronka:",
+    "participants": "partaideak",
+    "peakLists": "Erronken sailkapena",
+    "peakListsDescription": "Lehiatu beste eskalatzaileekin hainbat erronkatan",
+    "errorLoadingLists": "Erronkak kargatzeak huts egin du",
+    "noParticipants": "Oraindik ez dago partaiderik erronka honetan. Batu lehena!",
+    "topPerformers": "Errendimendu onenak",
+    "allRankings": "Sailkapen guztiak",
+    "noListSelected": "Hautatu erronka sailkapenak ikusteko",
+    "noMorePeaks": "Ez dago kargatzeko gailur gehiagorik",
+    "noUsersFound": "Ez da erabiltzailerik aurkitu",
+    "searchLocationPlaceholder": "Bilatu herrialdea edo eskualdea",
+    "noLocationsFound": "Ez da herrialde edo eskualderik aurkitu \"{query}\" bilaketarako",
+    "locationSearchLabel": "Bilatu kokapena",
+    "total": "Osoa",
+    "user": "Erabiltzailea",
+    "peakList": "Erronka",
+    "tryAgain": "Saiatu berriro",
+    "elevationGain": "Altuera-irabazia",
+    "climbers": "Eskalatzaileak",
+    "topClimber": "Eskalatzaile nagusia",
+    "unknown": "Ezezaguna",
+    "notAvailable": "-",
+    "more": "gehiago",
+    "location": "Kokapena",
+    "uniqueClimbers": "Eskalatzaile bereziak",
+    "description": "Komunitateak gidatutako erronka bat, non munduko, zure herrialdeko edo zure eskualdeko gailurren burutzapenak esploratu ahal dituzun, zure ekarpena jarraitzen duzun bitartean.",
+    "errorLoadingUsers": "Erabiltzaileak kargatzeak huts egin du",
+    "onlyMyPeaks": "Nire gailurrak soilik",
+    "community": "Komunitatea",
+    "you": "Zu",
+    "inPastYear": "{year}ean ",
+    "inYear": "{year}ean"
+  },
+  "landing": {
+    "subtitle": "Jarraitu zure gailurrak, esploratu komunitatearena eta aurkitu berriak!",
+    "description": "Everest-etik Mont Blanc-era, esploratu munduko mendi harrigarri batzuk. Batu milaka eskalatzaileekin, igoera bakoitzaren erronka eta abentura onartzen baitituzte — egiten dugunaren oihartzuna eternitatean dago.",
+    "loginPrompt": "Zure aurrerapenak aurreratu nahi dituzu?",
+    "wikilocText": "Erregistratu zure Wikiloc, Strava, Garmin edo Suunto kontua erabiliz zure ibilbide guztietan igon dituzun gailurrak ikusteko!",
+    "startExploring": "Esploratu",
+    "forFullExperience": "Esperientzia osoa lortzeko:",
+    "home": "Hasiera",
+    "explore": "Aurkitu",
+    "map": "Mapa",
+    "leaderboards": "Erronkak",
+    "signIn": "Hasi saioa",
+    "navIntro": "Erabili botoi hauek nabigatzeko eta esploratzen hasteko!",
+    "desktopWarning": {
+      "title": "Summits hobekien funtzionatzen du mugikorrean",
+      "subtitle": "Esperientzia osoa lortzeko, deskargatu gure mugikor-aplikazioa."
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "Zure errekordak",
+    "personalClimbingAchievements": "Eskalada-lorpen pertsonalak",
+    "seeAll": "Ikusi denak",
+    "highestPeak": "Gailurrik altuena",
+    "ascent": "igoera",
+    "ascents": "igoerак",
+    "otherAchievements": "Beste lorpenak",
+    "viewPeak": "Ikusi gailurra",
+    "emptyTitle": "Hasi zure bidaia",
+    "emptySubtitle": "Erregistratu zure lehen igoera hemen zure errekord pertsonalak ikusteko!"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "Zure ibilbide gogorrenak",
+    "mostDemandingChallenges": "Erronka zaileenak",
+    "seeAll": "Ikusi denak",
+    "hardestRoute": "Muturrekoena",
+    "elevationGain": "Altuera-irabazia",
+    "time": "Denbora",
+    "movingTime": "Mugimenduzko denbora",
+    "distance": "Distantzia",
+    "emptyTitle": "Hasi zure bidaia",
+    "emptySubtitle": "Osatu zure lehen ibilbidea hemen zure erronka gogorrenak ikusteko!"
+  },
+  "recentPeaks": {
+    "title": "Azken gailurrak",
+    "subtitle": "Azken gailur-burutzapenak",
+    "filter": {
+      "community": "Komunitatea",
+      "following": "Jarraituz",
+      "user": "Zu"
+    }
+  },
+  "recentRoutes": {
+    "title": "Azken ibilbideak",
+    "subtitle": "Azken ibilbide-burutzapenak",
+    "elevationGain": "Altuera",
+    "time": "Denbora",
+    "distance": "Distantzia",
+    "peaks": "Gailurrak",
+    "filter": {
+      "community": "Komunitatea",
+      "following": "Jarraituz",
+      "user": "Zu"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "Estatistikak ezkutatuta daude blokeatutako erabiltzaileentzat.",
+    "reportContent": "Salatu edukia",
+    "reportUser": "Salatu erabiltzailea",
+    "blockUser": "Blokeatu erabiltzailea",
+    "unblockUser": "Desblokeatu erabiltzailea",
+    "userBlocked": "Erabiltzailea blokeatuta",
+    "contentReported": "Edukia salatuta",
+    "userReported": "Erabiltzailea salatuta",
+    "actionCompleted": "Ekintza osatuta",
+    "userBlockedMessage": "{userName} blokeatu duzu. Haien edukia ezkutatuta egongo da.",
+    "contentReportedMessage": "Eskerrik asko zure salaketa egiteagatik. Laster aztertuko dugu.",
+    "userReportedMessage": "Eskerrik asko erabiltzaile hau salatzeagatik. Laster aztertuko dugu.",
+    "actionCompletedMessage": "Ekintza arrakastaz osatu da.",
+    "unblockInfo": "Erabiltzaile hau edozein momentutan desblokeatu dezakezu.",
+    "blockInfo": "Erabiltzaile bat blokeatzeak haien eduki guztia zureganako ezkutatuko du.",
+    "blockedUser": "Erabiltzaile blokeatua",
+    "blockedRoute": "Ibilbide blokeatua",
+    "blockedProfile": "Erabiltzaile blokeatua",
+    "blockedProfileMessage": "Erabiltzaile hau blokeatu duzu. Haien edukia zuregatik ezkutatuta dago."
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "Munduko azken ibilbideak eta gailurrak",
+      "subtitle": "Ikusi komunitate-kideek, zure lagunek edo zuk bertatik osatutako azken ibilbideak eta gailurrak"
+    },
+    "challenges": {
+      "title": "Erronka nagusiak",
+      "subtitle": "Ikusi eta osatu munduko erronka handienak",
+      "allPeaksDescriptionLoggedIn": "Esploratu komunitateak igotako gailur guztiak eta jarraitu zure ekarpena!",
+      "allPeaksDescriptionGuest": "Esploratu komunitateak igotako gailur guztiak. Erregistratu zure ekarpena jarraitzeko!",
+      "statTotal": "Osoa",
+      "statCompleted": "Igota",
+      "statByMe": "Nire aldetik"
+    },
+    "showMore": "Gehiago erakutsi",
+    "showLess": "Gutxiago erakutsi"
+  },
+  "recentCommunityPeaks": {
+    "title": "Komunitatearen azken gailurrak",
+    "subtitle": "Komunitateak menperatutako azken gailurrak",
+    "elevation": "Altuera",
+    "location": "Kokapena"
+  },
+  "recentCommunityRoutes": {
+    "title": "Komunitatearen azken ibilbideak",
+    "subtitle": "Komunitateak osatutako azken ibilbideak",
+    "elevationGain": "Altuera",
+    "time": "Denbora",
+    "distance": "Distantzia",
+    "peaks": "Gailurrak"
+  },
+  "weather": {
+    "title": "Eguraldia",
+    "weatherDataUnavailable": "Eguraldi-datuak ez daude erabilgarri",
+    "feelsLike": "Sentitzen da",
+    "temperature": "Tenperatura",
+    "wind": "Haizea",
+    "precipitation": "Prezipitazioa",
+    "snow": "Elurra",
+    "uvIndex": "UV indizea",
+    "sunrise": "Egunsentia",
+    "sunset": "Ilunabarra",
+    "hourlyForecast": "Orduko iragarpena",
+    "closeHourlyForecast": "Itxi orduko iragarpena",
+    "showHourlyForecastForToday": "Erakutsi gaurko orduko iragarpena",
+    "showHourlyForecastFor": "Erakutsi {date}rako orduko iragarpena",
+    "kmh": "km/h",
+    "mm": "mm",
+    "cm": "cm",
+    "hours": "o"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "Interes-lekuak",
+    "noDataForPeak": "Ez dago azpiegitura-daturik erabilgarri gailur honetarako.",
+    "noNearbyWithin5km": "Ez da inguruko azpiegiturarik aurkitu gailur honen 5km barruan.",
+    "allInfrastructure": "Azpiegitura guztia",
+    "location": "Kokapena",
+    "details": "Xehetasunak",
+    "visitWebsite": "Bisitatu webgunea",
+    "kmFromPeak": "km gailurretik",
+    "openMaps": "Ireki mapak",
+    "viewInMaps": "Ikusi mapetan",
+    "category": {
+      "hut": "Mendi-aterpetxea",
+      "shelter": "Aterpea",
+      "campsite": "Kanpalekua",
+      "naturalFeature": "Natura-ezaugarria",
+      "waterSource": "Ur-iturria",
+      "other": "Beste bat"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "Inguruko gailurrak",
+    "noData": "Ez da inguruko gailurrik aurkitu"
+  },
+  "userPeaks": {
+    "title": "Zure gailurrak",
+    "userTitle": "{userName}-ren gailurrak",
+    "description": "Osatutako {count} gailurren zure bilduma pertsonala. Gailur bakoitzak bidai bat, gainditu den erronka bat eta betirako iraunduko duen oroitzapen bat irudikatzen du.",
+    "userDescription": "{userName}-ren {count} osatutako gailurren bilduma pertsonala. Gailur bakoitzak bidai bat, gainditu den erronka bat eta betirako iraunduko duen oroitzapen bat irudikatzen du.",
+    "noPeaks": "Oraindik ez duzu gailurrik osatu. Hasi zure abentura!",
+    "loading": "Zure gailurrak kargatzen...",
+    "error": "Zure gailurrak kargatzeak huts egin du",
+    "addPeaks": "Gehitu gailurrak",
+    "timeline": "Denbora-lerroa",
+    "openPeak": "Ireki gailurra",
+    "summary": {
+      "baseText": "Osatu duzu",
+      "userBaseText": "{userName}-k osatu du",
+      "timeSingular": "aldi",
+      "timePlural": "aldiz",
+      "in": "hemen",
+      "on": "egunean",
+      "and": "eta",
+      "singleRoute": "{peakName} gailurra {countText} osatu duzu {routeName} ibilbidean {date} datan",
+      "twoRoutes": "{peakName} gailurra {countText} osatu duzu {routeNames} ibilbideetan {dates} datetan",
+      "multipleRoutes": "{peakName} gailurra {countText} osatu duzu {routeNames} ibilbideetan {dates} datetan",
+      "oneRoute": "1 ibilbide",
+      "multipleRoutesCount": "{count} ibilbide",
+      "seeMore": "Gehiago ikusi",
+      "seeLess": "Gutxiago ikusi"
+    },
+    "grid": "Sarea",
+    "filters": "Iragazkiak",
+    "advancedFilters": "Iragazki aurreratuak",
+    "searchPeaks": "Bilatu gailurrak",
+    "searchPlaceholder": "Bilatu izenaren, herrialdearen, eskualdearen arabera...",
+    "dateRange": "Data-tartea",
+    "startDate": "Hasiera-data",
+    "endDate": "Amaiera-data",
+    "elevationRange": "Altuera-tartea",
+    "country": "Herrialdea",
+    "region": "Eskualdea",
+    "allCountries": "Herrialde guztiak",
+    "allRegions": "Eskualde guztiak",
+    "clearAll": "Garbitu denak",
+    "applyFilters": "Aplikatu iragazkiak",
+    "noResults": "Ez da zure iragazkiekin bat datorren gailurrik aurkitu.",
+    "peaks": "gailurrak",
+    "showMore": "{count} gehiago erakutsi",
+    "showLess": "Gutxiago erakutsi",
+    "wrongPeak": "Okerra?",
+    "deleteConfirmation": {
+      "title": "Ezabatu gailurra",
+      "message": "{peakName} ezabatu nahi duzu? Inoiz igo ez bazenu bezala agertuko da",
+      "confirm": "Ezabatu",
+      "cancel": "Utzi"
+    },
+    "yourAscensions": "Zure igoerak",
+    "peakDetails": "Tontor-xehetasunak",
+    "peakInfo": {
+      "title": "Tontor infoa",
+      "loading": "Tontor infoa kargatzen...",
+      "error": "Errorea tontor infoa kargatzean",
+      "ascensions": "Igoerak",
+      "unlinked": "Lotu gabe",
+      "youAscended": "Info gabe.",
+      "unknownRoute": "Bidea ezezaguna",
+      "unlinkedPrompt": "Lotu gabeko {count} igoera dituzu. Lotu bide batera edo data batera:",
+      "linkToRoute": "Bidea",
+      "selectRoute": "Aukeratu bidea...",
+      "linkToDate": "Data",
+      "link": "Lotu",
+      "editLink": "Editatu lotura",
+      "moving": "mugitzen",
+      "deleteAscension": "Ezabatu igoera",
+      "linkAscension": "Lotu igoera",
+      "deletePeak": "Ezabatu tontorra",
+      "confirmDeletePeak": "{peakName} ezabatu? Honek igoera guztiak kenduko ditu.",
+      "confirmDeleteAscension": "Ziur zaude igoera hau ezabatu nahi duzula?",
+      "deleting": "Ezabatzen...",
+      "yesDelete": "Bai, ezabatu",
+      "cancel": "Utzi",
+      "close": "Itxi",
+      "noAscensions": "Ez da igoera erregistrorik"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "Gordetako gailurrak",
+    "description": "Gordetako {count} gailurren zure bilduma. Igo edo berriro bisitatu nahi dituzun gailurren jarraipena egin.",
+    "noPeaks": "Oraindik ez duzu gailurrik gorde. Hasi esploratzen!",
+    "loading": "Zure gordetako gailurrak kargatzen...",
+    "error": "Zure gordetako gailurrak kargatzeak huts egin du",
+    "filters": "Iragazkiak",
+    "advancedFilters": "Iragazki aurreratuak",
+    "searchPlaceholder": "Bilatu izenaren, herrialdearen, eskualdearen arabera...",
+    "dateRange": "Data-tartea",
+    "startDate": "Hasiera-data",
+    "endDate": "Amaiera-data",
+    "elevationRange": "Altuera-tartea",
+    "country": "Herrialdea",
+    "region": "Eskualdea",
+    "allCountries": "Herrialde guztiak",
+    "allRegions": "Eskualde guztiak",
+    "clearAll": "Garbitu denak",
+    "applyFilters": "Aplikatu iragazkiak",
+    "noResults": "Ez da zure iragazkiekin bat datorren gordetako gailurrik aurkitu.",
+    "sorting": {
+      "savedDate": "Gordetzeko data"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Berriena lehenik",
+      "savedDateOldest": "Zaharrena lehenik"
+    }
+  },
+  "userSavedShelters": {
+    "title": "Gordetako aterpeak",
+    "totalLabel": "Aterpeak kopuru",
+    "description": "{count} gordetako aterpeen bilduma. Jarraitu bisitatu nahi dituzun aterpeei.",
+    "noShelters": "Oraindik ez duzu aterperik gorde. Hasi esploratzen!",
+    "loading": "Zure gordetako aterpeak kargatzen...",
+    "error": "Ezin izan dira zure gordetako aterpeak kargatu",
+    "filters": "Iragazkiak",
+    "advancedFilters": "Iragazki aurreratuak",
+    "searchPlaceholder": "Bilatu izenaren, herrialdearen, eskualdearen arabera...",
+    "dateRange": "Data-tartea",
+    "startDate": "Hasiera-data",
+    "endDate": "Amaiera-data",
+    "elevationRange": "Altitude-tartea",
+    "country": "Herrialdea",
+    "region": "Eskualdea",
+    "allCountries": "Herrialde guztiak",
+    "allRegions": "Eskualde guztiak",
+    "clearAll": "Garbitu dena",
+    "applyFilters": "Aplikatu iragazkiak",
+    "noResults": "Ez da zure iragazkiekin bat datorren aterperik aurkitu.",
+    "typeFilter": "Aterpe mota",
+    "typeOptions": {
+      "all": "Mota guztiak"
+    },
+    "savedOn": "Gordeta",
+    "unsave": "Kendu aterpea",
+    "sorting": {
+      "savedDate": "Gordetze-data"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Berrienak lehen",
+      "savedDateOldest": "Zaharrenak lehen"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "Oraindik ez duzu gailurrik osatu erronka honetan. Hasi zure abentura!",
+    "loading": "Kargatzen...",
+    "noSearchResults": "Ez da gailurrik aurkitu \"{query}\" bilaketarako. Saiatu bilaketa-termino ezberdinekin.",
+    "search": {
+      "placeholder": "Bilatu gailurrak izenaren, eskualdearen edo herrialdearen arabera..."
+    },
+    "filters": {
+      "label": "Iragazi:",
+      "all": "Denak",
+      "completed": "Osatuta",
+      "missing": "Falta"
+    },
+    "sorting": {
+      "label": "Ordenatu:",
+      "name": "Izena",
+      "elevation": "Altuera",
+      "date": "Data",
+      "ascents": "Igoerак"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Z",
+      "nameDesc": "Z → A",
+      "elevationAsc": "Baxutik → Altua",
+      "elevationDesc": "Altuatik → Baxua",
+      "dateNewest": "Berriena lehenik",
+      "dateOldest": "Zaharrena lehenik",
+      "ascentsMost": "Igoera gehien",
+      "ascentsLeast": "Igoera gutxien"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "Ibilbidea ezabatu",
+    "deleteConfirmTitle": "Ibilbidea ezabatu?",
+    "deleteConfirmMessage": "Ziur al zaude bide hau ezabatu nahi duzula? Ekintza hau betirako da eta zure tontor kopurua gutxituko du.",
+    "deleteSuccess": "Ibilbidea ondo ezabatu da",
+    "deleteError": "Ezin izan da bidea ezabatu. Saiatu berriro.",
+    "unnamedRoute": "Izenik gabeko ibilbidea",
+    "metrics": {
+      "distance": "Distantzia",
+      "elevationGain": "Desnibela",
+      "time": "Denbora"
+    },
+    "title": "Zure ibilbideak",
+    "userTitle": "{userName}-ren ibilbideak",
+    "description": "{totalRoutes} ibilbide osatu dituzu {totalPeaks} gailur igoz.",
+    "userDescription": "{userName}-k {totalRoutes} ibilbide osatu ditu {totalPeaks} gailur igoz.",
+    "routes": "Ibilbideak",
+    "addRoute": "Gehitu ibilbidea",
+    "addRouteTitle": "Gehitu GPX ibilbidea",
+    "addRouteNameLabel": "Ibilbidearen izena",
+    "addRouteNamePlaceholder": "Sartu ibilbide-izen bat",
+    "addRouteFileLabel": "GPX fitxategia",
+    "addRouteFilePlaceholder": "Hautatu GPX fitxategi bat",
+    "addRouteSubmit": "Gehitu ibilbidea",
+    "addRouteSubmitting": "Ibilbidea gehitzen...",
+    "addRouteErrors": {
+      "name": "Mesedez, sartu ibilbide-izen bat.",
+      "file": "Mesedez, hautatu GPX fitxategi bat.",
+      "submit": "Ibilbidea gehitzeak huts egin du. Mesedez, saiatu berriro."
+    },
+    "searchPlaceholder": "Bilatu ibilbideak...",
+    "filters": "Iragazkiak",
+    "advancedFilters": "Iragazki aurreratuak",
+    "sortBy": "Ordenatu honen arabera",
+    "date": "Data",
+    "peaks": "Gailurrak",
+    "sortOptions": {
+      "dateNewest": "Data (Berriena)",
+      "dateOldest": "Data (Zaharrena)",
+      "peaksMost": "Gailur gehien",
+      "peaksLeast": "Gailur gutxien"
+    },
+    "loadingRoutes": "Ibilbideak kargatzen...",
+    "loadingMore": "Ibilbide gehiago kargatzen...",
+    "loadingCountries": "Herrialdeak eta eskualdeak kargatzen...",
+    "noResults": "Ez da zure irizpideekin bat datorren ibilbiderik aurkitu.",
+    "endMessage": "Zure ibilbideen amaierara iritsi zara",
+    "paginationError": "Ibilbide gehiago kargatzeak huts egin du",
+    "tryAgain": "Saiatu berriro",
+    "clearAll": "Garbitu denak",
+    "applyFilters": "Aplikatu iragazkiak",
+    "dateRange": "Data-tartea",
+    "startDate": "Hasiera-data",
+    "endDate": "Amaiera-data",
+    "country": "Herrialdea",
+    "region": "Eskualdea",
+    "allCountries": "Herrialde guztiak",
+    "allRegions": "Eskualde guztiak",
+    "peaksCount": "gailurrak",
+    "noPeaksOnRoute": "Ez da gailurrik burutu ibilbide honetan",
+    "seeOnMap": "Ikusi mapan",
+    "ascent": "igoera",
+    "ascents": "igoerак",
+    "peaksInRoute": "Ibilbide honetako gailurrak"
+  },
+  "addManualPeaks": {
+    "title": "Gehitu gailurrak eskuz",
+    "subtitle": "Aurkitu eta gehitu gailurrak zure profilera. Bilatu, iragazi, hautatu hainbat gailur eta lotu zure ibilbideekin.",
+    "listView": "Zerrenda",
+    "mapView": "Mapa",
+    "filters": "Iragazkiak",
+    "peakName": "Gailurraren izena",
+    "searchPlaceholder": "Bilatu gailurrak (gutxienez 2 karaktere)...",
+    "elevation": "Altuera",
+    "minElevation": "Gutxieneko altuera (m)",
+    "maxElevation": "Gehieneko altuera (m)",
+    "country": "Herrialdea",
+    "allCountries": "Herrialde guztiak",
+    "region": "Eskualdea",
+    "allRegions": "Eskualde guztiak",
+    "clearFilters": "Garbitu iragazkiak",
+    "loading": "Gailurrak kargatzen...",
+    "loadingMap": "Mapa kargatzen...",
+    "noPeaks": "Ez da gailurrik aurkitu. Saiatu iragazkiak aldatzen.",
+    "mapPlaceholder": "Mapa hemen agertuko da. Hautatu gailurrak mapan ikusteko.",
+    "associatedRoute": "Ibilbidearekin lotuta",
+    "selected": "hautatuta",
+    "selectedCount_one": "{{count}} gailur hautatuta",
+    "selectedCount_other": "{{count}} gailurrak hautatuta",
+    "submit_one": "Gehitu {{count}} gailurra",
+    "submit_other": "Gehitu {{count}} gailurrak",
+    "submitting": "Gailurrak gehitzen...",
+    "noSelection": "Mesedez, hautatu gutxienez gailur bat.",
+    "fetchError": "Gailurrak kargatzeak huts egin du. Mesedez, saiatu berriro.",
+    "submitError": "Gailurrak gehitzeak huts egin du. Mesedez, saiatu berriro.",
+    "addSuccess_one": "{{count}} gailurra arrakastaz gehitu da!",
+    "addSuccess_other": "{{count}} gailurrak arrakastaz gehitu dira!",
+    "routeExistence": {
+      "question": "Gailur hau lehendik dagoen ibilbide bati dagokio?",
+      "subtitle": "Hautatu aukera bat jarraitzeko",
+      "hasRoute": "Bai, hautatu ibilbide bat",
+      "noRoute": "Ez, gehitu bakarka",
+      "addWithDate": "Gehitu datarekin"
+    },
+    "selectRoute": "Hautatu {peakName}-rako ibilbide bat",
+    "routeAssociation": {
+      "title": "Berretsi lotura",
+      "message": "{peakName} {routeName} ibilbidearekin lotu nahi duzu?",
+      "confirm": "Berretsi",
+      "cancel": "Utzi"
+    },
+    "submitOptions": {
+      "title": "Berrikusi zure gailurrak",
+      "date": "Data",
+      "routeHint": "lotu ibilbide bat",
+      "dateHint": "ezarri data bat"
+    }
+  },
+  "userStats": {
+    "title": "Estatistikak",
+    "activityType": "Jarduera-mota",
+    "totalPeaks": "Gailur guztiak",
+    "totalRoutes": "Ibilbide guztiak",
+    "peakLists": {
+      "title": "Erronken aurrerapen",
+      "completedDescription": "{total} gailurretatik {completed} osatu dituzu."
+    },
+    "statistics": "Estatistikak",
+    "globalStats": "Estatistika orokorrak",
+    "byActivity": "Jardueraren arabera",
+    "graph": "Denboraren araberako aurrerapenaren grafikoa",
+    "openGraph": "Klik egin grafika xehatua ikusteko",
+    "viewInCharts": "Ikusi grafiketan",
+    "progressChart": "Aurrerapenaren grafikoa",
+    "rotate": "Biratu gailua ikuspegi hobea izateko",
+    "rank": {
+      "yourRank": "Zure sailkapena",
+      "rankDescription": "Gailur gehien dituzten {totalUsers} erabiltzaileetatik {rank}. zara",
+      "noRank": "Ez dago sailkapenik"
+    },
+    "moreInformation": "Informazio gehiago",
+    "peakListsDescription": "Klik egin beheko erronketako edozeinetan xehetasunak sartzeko",
+    "statisticsDescription": "Bistaratu zure estatistikak",
+    "openGraphDescription": "Ireki grafika interaktiboa esploratzeko",
+    "metrics": {
+      "distance": "Distantzia",
+      "elevationGain": "Altuera-irabazia",
+      "time": "Denbora",
+      "totalTime": "Denbora osoa",
+      "movingTime": "Mugimenduzko denbora",
+      "peaks": "Gailurrak",
+      "routes": "Ibilbideak"
+    },
+    "timeAggregation": {
+      "daily": "Ibilbide-eguna",
+      "weekly": "Astero",
+      "monthly": "Hilero",
+      "yearly": "Urtero",
+      "custom": "Tarte pertsonalizatua"
+    },
+    "controls": {
+      "groupBy": "Taldekatu honen arabera",
+      "activityType": "Jarduera-mota",
+      "startDate": "Hasiera-data",
+      "endDate": "Amaiera-data",
+      "apply": "Aplikatu"
+    },
+    "chart": {
+      "noDataAvailable": "Ez dago daturik erabilgarri jarduera honetarako"
+    },
+    "rotatePhone": "Mesedez, biratu zure telefonoa horizontalki grafikoa ikusteko",
+    "activityFilter": {
+      "all": "Jarduera guztiak",
+      "unknown": "Ezezaguna"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "Gehitu igoera gisa",
+    "title": "Komunitatea",
+    "completedBy": "Igoa",
+    "totalCompletions": "Igoera guztiak",
+    "uniqueUsers": "Erabiltzaile bereziak",
+    "timeSingle": "aldi",
+    "timePlural": "aldiz",
+    "seeMore": "Gehiago ikusi",
+    "more": "gehiago",
+    "yourProgress": "Zure aurrerapen",
+    "completed": "Igota",
+    "notCompleted": "Ez igota",
+    "lastCompleted": "Azken igoera",
+    "youHaveCompleted": "Igon duzu",
+    "routes": "Ibilbideak",
+    "peaks": "Gailurrak",
+    "filterAll": "Guztiak",
+    "filterClubRelated": "Clubarekin erlazionatuta",
+    "filterMyClubs": "Nire clubak"
+  },
+  "listOverlay": {
+    "chooseList": "Aukeratu erronka",
+    "completedLabel": "{completed}/{total} osatuta"
+  },
+  "exploreOverlay": {
+    "title": "Arrastatu / Lerratu ezkerrera",
+    "subtitle": "mapa interaktiboa aurkitzeko"
+  },
+  "og": {
+    "title": "Summits - Jarraitu zure mendi-gailurrak",
+    "description": "Jarraitu zure gailur-lorpenak, partekatu gailurrak komunitatearekin eta aurkitu munduko beste mendizaleen igoerak."
+  },
+  "routeDetails": {
+    "downloadRoute": "Deskargatu ibilbidea",
+    "sendToDevice": "Gailura bidali",
+    "showStats": "Erakutsi estatistikak",
+    "hideStats": "Ezkutatu estatistikak",
+    "shareRoute": "Partekatu"
+  },
+  "routeAnimation": {
+    "title": "Sortu animazioa",
+    "createAnimation": "Sortu animazioa",
+    "description": "Sortu zure ibilbidearen 3D filmeko garaipena. Kamerak zure bidea jarraituko du ikuspegi dramatiko batekin.",
+    "hint": "Grabazioa lurraldea guztiz kargatu ondoren hasiko da.",
+    "duration": "Bideoaren iraupena",
+    "seconds": "seg",
+    "durationHint": "Luzeagoa = motelago eta zinematikoagoa",
+    "elevation": "Altuera",
+    "elevationGain": "Altuera-irabazia",
+    "distance": "Distantzia",
+    "preparing": "3D lurraldea prestatzen...",
+    "recording": "Grabatzen...",
+    "recordingHint": "Mesedez, itxaron animazioa grabatzen den bitartean. Ez aldatu fitxak.",
+    "complete": "Animazioa osatuta! Zure bideoa deskargatzeko prest dago.",
+    "fileSize": "Fitxategi-tamaina",
+    "download": "Deskargatu bideoa",
+    "start": "Hasi grabazioа",
+    "retry": "Saiatu berriro",
+    "error": "Errore bat gertatu da animazioa sortzen.",
+    "errorNoRoute": "Ez dago animaziorako ibilbide-daturik erabilgarri.",
+    "errorUnknown": "Errore ezezaguna gertatu da.",
+    "notSupported": "Bideo-grabazioa ez da onartzen zure arakatzailean. Mesedez, saiatu Chrome, Firefox edo Edge-rekin.",
+    "videoDownloaded": "Bideoa deskargatuta",
+    "videoSavedToGallery": "Bideoa zure galerian gordeta",
+    "speed": "Abiadura",
+    "speedHint": "Erabili +/- botoiak grabazioan zehar abiadura doitzeko: 1x → 3x → 5x → 10x → 0,5x → 1x",
+    "speedDurationHint": "Bideoaren iraupena aukeratzen dituzun abiaden araberakoa da",
+    "save": "Gorde galerian"
+  },
+  "routeAssociation": {
+    "authRequired": "Hasi saioa tontor hau ibilbide batekin lotzeko.",
+    "confirm": "Berretsi",
+    "fetchError": "Ezin izan dira zure ibilbideak kargatu.",
+    "loading": "Ibilbideak kargatzen...",
+    "noRoute": "Saltatu (ibilbiderik gabe)",
+    "noRoutes": "Ez da ibilbiderik aurkitu",
+    "peaks_one": "{count} tontor ibilbide honetan",
+    "peaks_other": "{count} tontor ibilbide honetan",
+    "subtitle": "Hautatu ibilbide bat {peakName}rako",
+    "title": "Lotu ibilbidea"
+  },
+  "terms": {
+    "title": "Summits – Erabilera-baldintzak (Kanpoko plataforma-datuen erabilera)",
+    "lastUpdated": "Azken eguneraketa: 2025eko urria",
+    "introduction": {
+      "title": "Sarrera",
+      "content": "Summits mendi-gailurren eskalada-esperientziak jarraitu eta partekatzeko plataforma bat da. Zerbitzu hau emateko, Summits-ek hirugarrenen plataformekin integratzen da, Garmin Connect, Strava eta Wikiloc barne (kolektiboki, \"Kanpoko plataformak\") zure kanpoko jarduera-datuak inportatu eta aztertzeko. Summits-en erabiliz eta Kanpoko Plataforma kontuekin erregistratuz, erabilera-baldintza hauetara onartzen zara zure datuen erabilerari dagokionez."
+    },
+    "dataCollection": {
+      "title": "1. Datuen bilketa eta prozesatzea",
+      "whatData": {
+        "title": "1.1 Zer datu sartzen ditugu",
+        "intro": "Kanpoko Plataforma kontuak Summits-era konektatzen dituzunean, datu mota hauetara sartzen gara:",
+        "fromWikiloc": "Wikiloc-etik:",
+        "wikiloc": {
+          "activity": "Jarduera eta ibilbide-datuak (GPX fitxategiak, ibilbide-erregistroak)",
+          "timestamps": "Jardueren denbora-zigiluak eta datak",
+          "elevation": "Altuera-profilak eta koordenatu geografikoak",
+          "routeNames": "Ibilbideen izenak eta deskribapenak",
+          "activityTypes": "Jarduera-motak (mendizaletasuna, eskalada, etab.)",
+          "profile": "Profil-informazio publikoa"
+        },
+        "fromStrava": "Strava-tik:",
+        "strava": {
+          "activity": "Jarduera-datuak, ibilbideak eta pistak barne",
+          "timestamps": "Denbora-zigiluak eta jarduera-iraupena",
+          "elevation": "Altuera-irabazia, distantzia eta iraupena neurtzeko",
+          "coordinates": "Koordenatu geografikoak eta altuera-profilak",
+          "activityTypes": "Jarduera-motak eta kirolak",
+          "profile": "Oinarrizko profil-informazioa (izena, erabiltzaile-izena, profil-argazkia)"
+        },
+        "fromGarmin": "Garmin Connect-etik:",
+        "garmin": {
+          "activity": "Garmin gailuetatik jarduera-erregistroak",
+          "gps": "GPS jarraipena eta ibilbideak",
+          "elevation": "Altuera, distantzia eta denbora-datuak",
+          "summaries": "Jarduera-laburpenak eta estatistikak",
+          "location": "Kokapen geografikoko datuak",
+          "profile": "Oinarrizko profil-informazioa (izena, erabiltzaile-izena, profil-argazkia)"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 Nola erabiltzen ditugu zure datuak",
+        "intro": "Kanpoko Plataformetako datuak hauetarako erabiltzen ditugu:",
+        "identifyPeaks": "Zein gailur igo dituzun identifikatzeko",
+        "trackProgress": "Zure mendizaletasun-aurrerapenak jarraitzeko",
+        "displayHistory": "Zure eskalada-historia mapa interaktiboetan erakusteko",
+        "calculateStats": "Zure igotako gailur-kopuru osoa eta beste estatistikak kalkulatzeko",
+        "enableSharing": "Lorpenak beste erabiltzaileekin partekatzeko (pribatutasun-ezarpenen arabera)",
+        "leaderboards": "Zure estatistikak komunitate-sailkapenetan sartzeko",
+        "analyzeRoutes": "Identifikatutako gailurrekin zure ibilbideak aztertu eta gordetzeko"
+      }
+    },
+    "thirdParty": {
+      "title": "2. Hirugarrenen plataformen erabilera-baldintzak",
+      "compliance": {
+        "title": "2.1 Kanpoko plataformen politikekiko betetze",
+        "intro": "Kanpoko Plataforma kontuak Summits-era konektatuz, onartzen duzu:",
+        "readAgree": "Plataforma bakoitzaren Erabilera-baldintzak irakurri eta betetzea onartzen duzula",
+        "apiTerms": "Zure datuetara soilik sartzen gara ematen dituzun baimenen eta plataforma bakoitzaren API baldintzen arabera",
+        "devPolicies": "Garmin-en, Strava-ren eta Wikiloc-en garatzaile eta pribatutasun-politikak betetzen ditugu",
+        "noCredentials": "Ez ditugu zure saio-hasierako kredentzialak partekatzen",
+        "secureTokens": "Sarbide-tokenak modu seguruan gordetzen ditugu eta jarduera-datuak inportatzeko bakarrik erabiltzen ditugu"
+      },
+      "scope": {
+        "title": "2.2 Baimenen esparrua",
+        "intro": "Summits baimenaz, baimena ematen duzu:",
+        "readStore": "Zure jarduera-datuak irakurtzeko, gordetzeko eta prozesatzeko",
+        "analyzeTransform": "Zure datuak aztertzeko eta gailurrak identifikatzeko eraldatzeko",
+        "notDo": {
+          "intro": "Ez dugu:",
+          "modify": "Zure izenean jarduerak aldatzen, ezabatzen edo argitaratzen",
+          "share": "Zure datuak iragartzaileekin edo hirugarrenekin partekatzen (4. atalean deskribatutakoaz gain)",
+          "sell": "Zure datu pertsonalak saltzen"
+        }
+      },
+      "revocation": {
+        "title": "2.3 Sarbidea baliogabetzea",
+        "content": "Summits-en sarbidea edonoiz baliogabetu dezakezu Kanpoko Plataforma kontuen ezarpenen bidez. Baliogabetutakoan, datu berririk ez da inportatuko. Aurretik inportatutako datuak mantentzen dira ezabatzea eskatzen ez baduzu."
+      }
+    },
+    "dataStorage": {
+      "title": "3. Datuen biltegiratzea eta segurtasuna",
+      "retention": {
+        "title": "3.1 Datuen iraupena",
+        "active": "Inportatutako datuak zure Summits kontua aktibo dagoen bitartean gordetzen dira.",
+        "deleted": "Ezabatutako kontuak eta datuak 30 egun barruan betirako ezabatzen dira.",
+        "matching": "Gailurrak bat egitearen informazioa prozesatze-errendimendua hobetzeko gordetzen da."
+      },
+      "security": {
+        "title": "3.2 Datuen segurtasuna",
+        "intro": "Zure datuak industria-mailako neurrien bidez babestea dugu, hauek barne:",
+        "encryption": "Enkriptatzea (HTTPS/TLS eta gordetakoan)",
+        "access": "Baimendutako pertsonalera mugatutako sarbide-kontrolak",
+        "infrastructure": "Hodei-biltegiratzeko azpiegitura segurua",
+        "updates": "Ohiko segurtasun-eguneraketak eta konponketak"
+      },
+      "location": {
+        "title": "3.3 Datuen kokapena",
+        "content": "Zure datuak aplikagarri diren datuen babeseko legeekin bat datozen hodei-zerbitzarien eskualdeetan gordetzen dira. Summits erabiliz, transferentzia eta prozesatze hau onartzen duzu."
+      }
+    },
+    "dataSharing": {
+      "title": "4. Datuen partekatzea eta zabalkundea",
+      "public": {
+        "title": "4.1 Informazio publikoa",
+        "intro": "Zure profila publikoa bada, beste erabiltzaileek ikusgai egon daiteke:",
+        "statistics": "Zure gailur-estatistikak eta burutzapen-kopuruak",
+        "username": "Zure erabiltzaile-izena eta profil-argazkia",
+        "rankings": "Zure sailkapenak zerrendetan",
+        "profile": "Zure profila bilaketetan eta zerrendetan"
+      },
+      "private": {
+        "title": "4.2 Informazio pribatua",
+        "intro": "Hauek beti pribatu mantentzen dira:",
+        "routes": "Ibilbide-pisten eta koordenatuen zehaztasuna",
+        "elevation": "Altuera-profil zehatzak",
+        "times": "Jardueren hasiera/amaiera orduak",
+        "email": "Posta elektronikoa eta identifikatzaile pertsonalak",
+        "followers": "Jarraitzaileen eta jarraitutako erabiltzaileen zerrendak (publikoa ez bada)"
+      },
+      "thirdParties": {
+        "title": "4.3 Hirugarrenekin datuen partekatzea",
+        "noSell": "Ez dugu datu pertsonalik saltzen.",
+        "aggregated": "Analitika edo ikerketarako datu agregatuak eta anonimizatuak parteka ditzakegu.",
+        "shareWith": "Datuak honelako kasuetan bakarrik partekatzen ditugu:",
+        "serviceProviders": "Plataformaren eragiketak laguntzen dituzten zerbitzu-hornitzaileak",
+        "authorities": "Agintariak, legeak hala eskatzen duenean",
+        "safety": "Erabiltzaileen segurtasuna bermatzeko alderdi garrantzitsuak"
+      }
+    },
+    "rights": {
+      "title": "5. Zure eskubideak eta kontrolak",
+      "correction": {
+        "title": "5.1 Datuen zuzenketa",
+        "content": "Aplikazioan gailurren identifikazio oker edo txosten deitzeko aukera duzu. Egiaztatutako zuzenketak berrikusi eta eguneratuko dira."
+      },
+      "deletion": {
+        "title": "5.2 Kontuaren ezabatzea",
+        "content": "Summits kontua edonoiz ezabatu dezakezu. Inportatutako datu guztiak eta sare-konexio guztiak 30 egun barruan kenduko dira. Summits kontua ezabatzeak ez du eragiten zure Kanpoko Plataforma kontuetan."
+      },
+      "privacy": {
+        "title": "5.3 Pribatutasun-ezarpenak",
+        "content": "Ikusgarritasuna, partekatzeko aukerak eta gizarte-eginbideak zuzenean kudeatu ditzakezu aplikazioaren pribatutasun-ezarpenetan."
+      }
+    },
+    "accuracy": {
+      "title": "6. Datuen zehaztasuna eta mugak",
+      "peakIdentification": {
+        "title": "6.1 Gailurren identifikazioa",
+        "algorithmic": "Gailurren identifikazioa algoritmikoa da eta ez da beti zehatza.",
+        "errors": "Erroreak jakinaraz daitezke etorkizuneko zehaztasuna hobetzeko."
+      },
+      "routeData": {
+        "title": "6.2 Ibilbide-datuen kalitatea",
+        "accuracy": "Zehaztasuna Kanpoko Plataformetako GPS datuen araberakoa da.",
+        "incomplete": "Datu osatugabeak edo falta direnak prozesatzea eragin dezake.",
+        "delays": "Dataset handiek atzerapenak jasan ditzakete."
+      },
+      "warranty": {
+        "title": "6.3 Berme-ezespena",
+        "intro": "Summits-ek ez du bermerik ematen honekiko:",
+        "accuracy": "Gailur edo ibilbide-datuen zehaztasuna edo osotasuna",
+        "reliability": "Kanpoko Plataforma APIen fidagarritasuna",
+        "uptime": "Zerbitzuaren funtzionamendu-denbora edo etenik gabeko sarbidea",
+        "disclaimer": "Erabili Summits zure arriskupean."
+      }
+    },
+    "changes": {
+      "title": "7. Baldintza hauen aldaketak",
+      "modifications": {
+        "title": "7.1 Aldaketak",
+        "content": "Erabilera-baldintza hauek edozein momentutan alda ditzakegu. Eguneraketak aplikazioan edo gure webgunean argitaratzean indarrean sartzen dira."
+      },
+      "continuedUse": {
+        "title": "7.2 Jarraipena erabilera",
+        "content": "Eguneraketen ondorengo jarraipena onartzea dakar. Ez bazatoz ados, utzi erabiltzeari eta ezabatu zure kontua."
+      }
+    },
+    "termination": {
+      "title": "8. Zerbitzuaren bukaera",
+      "serviceTermination": {
+        "title": "8.1 Zerbitzuaren bukaera",
+        "intro": "Kontuak eten edo amaitu ditzakegu hauetarako:",
+        "violation": "Baldintza hauen edo Kanpoko Plataformen baldintzen urraketa",
+        "fraudulent": "Iruzurreko edo abusuzko jarduera",
+        "legal": "Lege edo arau-eskakizunak"
+      },
+      "effect": {
+        "title": "8.2 Bukaearen ondorioa",
+        "content": "Sarbidea berehala baliogabetuko da eta datuak iraupena-politikaren arabera ezabatuko dira."
+      }
+    },
+    "indemnification": {
+      "title": "9. Kalte-ordaina",
+      "intro": "Hauek direla eta sortutako erreklamazioetaz edo galerei buruz Summits kalterik gabe eta kalte-ordain gabe mantentzea onartzen duzu:",
+      "violations": "Baldintza hauen urraketa",
+      "platformPolicies": "Kanpoko Plataformen politiken urraketa",
+      "misuse": "Datuen aurkezpen iruzurrezkoa edo gaizki erabiltzea",
+      "disputes": "Beste erabiltzaileekin gatazkak"
+    },
+    "liability": {
+      "title": "10. Erantzukizun-muga",
+      "intro": "Legeak onartzen duen neurri onenean:",
+      "asIs": "Summits \"egoera honetan\" eskaintzen da bermerik gabe.",
+      "notLiable": "Ez gara zeharkako, gertaerako edo ondoriozko kalteen erantzule.",
+      "platformDowntime": "Ez gara Kanpoko Plataformen geldialdi edo API aldaketen erantzule."
+    },
+    "disputes": {
+      "title": "11. Gatazkak eta arau-esparrua",
+      "governingLaw": {
+        "title": "11.1 Arau-esparrua",
+        "content": "Baldintza hauek [ZURE JURISDIKZIOA]-ko legeek arautzen dituzte, lege-gatazkako printzipioak kanpoan utzita."
+      },
+      "resolution": {
+        "title": "11.2 Gatazken konponketa",
+        "negotiation": "Fede oneko negoziazioa",
+        "mediation": "Bitartekaritza negoziazioa huts egiten badu",
+        "arbitration": "Konpondutakoan loteslea den arbitrajea"
+      },
+      "classAction": {
+        "title": "11.3 Talde-ekintzaren uko egitea",
+        "content": "Gatazka guztiak banaka konpondu behar dira; ez da onartzen talde-ekintzarik."
+      }
+    },
+    "contact": {
+      "title": "12. Kontaktu-informazioa",
+      "intro": "Galderak badituzu, jarri harremanetan:",
+      "email": "Posta elektronikoa: cesc.riera@summitstracker.com",
+      "website": "Webgunea: summitstracker.com",
+      "support": "Laguntza: Aplikazio barneko laguntza eta laguntza eginbideen bidez eskuragarri"
+    },
+    "acknowledgment": {
+      "title": "13. Onarpena",
+      "intro": "Summits erabiliz eta Garmin, Strava edo Wikiloc kontuak konektatuz:",
+      "read": "Baldintza hauek irakurri eta ulertu dituzu",
+      "consent": "Deskribatutako datuen erabilerarekin bat zatoz",
+      "capacity": "Akordatzeko legezko gaitasuna duzu",
+      "comply": "Aplikagarri diren legeei men egingo diezu",
+      "responsible": "Zure kontuen segurtasuna mantentzeaz erantzule zara",
+      "footer": "Summits erabiltzen jarraitzean, Erabilera-baldintza hauetara onartzen zara. Ez bazatoz ados, utzi erabiltzeari eta ezabatu zure kontua."
+    }
+  },
+  "privacy": {
+    "title": "Pribatutasun-politika",
+    "lastUpdated": "Azken eguneraketa: 2025eko urtarrila",
+    "introduction": {
+      "title": "1. Sarrera",
+      "content": "Summits-ek (\"gu\", \"gure\" edo \"geurea\") zure pribatutasuna babesteko konpromisoa du. Pribatutasun-politika honek azaltzen du nola bildu, erabili, zabaldu eta babestzen ditugun zure informazioa gure mugikor-aplikazioa eta webgunea (kolektiboki, \"Zerbitzua\") erabiltzen duzunean. Zerbitzua erabiliz, politika honetan deskribatutako datu-jardunbideei onartzen diezu."
+    },
+    "dataController": {
+      "title": "2. Datuen kontrolatzailea",
+      "content": "Zure informazio pertsonalaren erantzule den datuen kontrolatzailea da:",
+      "email": "Posta elektronikoa: cesc.riera@summitstracker.com",
+      "website": "Webgunea: summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. Biltzen dugun informazioa",
+      "personalData": {
+        "title": "3.1 Informazio pertsonala",
+        "intro": "Kontu bat sortzen duzunean, hauek biltzen ditugu:",
+        "account": "Kontuaren informazioa (posta elektronikoaren helbidea, erabiltzaile-izena, pasahitza)",
+        "profile": "Profil-informazioa (izena, profil-argazkia, biografia)",
+        "preferences": "Aplikazioaren hobespenak eta ezarpenak"
+      },
+      "activityData": {
+        "title": "3.2 Hirugarrenen plataformetako jarduera-datuak",
+        "intro": "Wikiloc, Strava edo Garmin kontuak konektatzen dituzunean, hauek biltzen ditugu:",
+        "fromWikiloc": "Wikiloc-etik:",
+        "wikiloc": {
+          "activity": "Jarduera-datuak (ibilbideak, pistak, GPS koordenatуак)",
+          "timestamps": "Jardueren denbora-zigiluak (hasiera-ordua, amaiera-ordua, iraupena)",
+          "elevation": "Altuera-datuak eta profilak",
+          "routeNames": "Ibilbideen izenak eta deskribapenak",
+          "activityTypes": "Jarduera-motak (mendizaletasuna, txirrindularitza, etab.)",
+          "profile": "Profil-informazio publikoa"
+        },
+        "fromStrava": "Strava-tik:",
+        "strava": {
+          "activity": "Jarduera-datuak (ibilbideak, pistak, GPS koordenatуак)",
+          "timestamps": "Jardueren denbora-zigiluak (hasiera-ordua, amaiera-ordua, iraupena)",
+          "elevation": "Altuera-datuak eta profilak",
+          "coordinates": "GPS koordenatуак eta ibilbide-pistak",
+          "activityTypes": "Jarduera-motak (korrika, txirrindularitza, mendizaletasuna, etab.)",
+          "profile": "Profil-informazio publikoa"
+        },
+        "fromGarmin": "Garmin-etik:",
+        "garmin": {
+          "activity": "Garmin Connect-eko jarduera-datuak",
+          "gps": "GPS pistak eta koordenatуак",
+          "elevation": "Altuera-datuak eta bihotz-maiztasunaren informazioa",
+          "summaries": "Jarduera-laburpenak eta estatistikak",
+          "location": "Kokapen-datuak",
+          "profile": "Profil-informazio publikoa"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 Informazio teknikoa",
+        "intro": "Automatikoki biltzen dugu:",
+        "device": "Gailuaren informazioa (gailuu-mota, sistema eragilea, gailuaren identifikatzaile bereziak)",
+        "ip": "IP helbidea eta kokapen-datuak",
+        "browser": "Arakatzaile-mota eta bertsioa",
+        "logs": "Erabilera-erregistroak eta analitika-datuak"
+      }
+    },
+    "dataUsage": {
+      "title": "4. Nola erabiltzen dugun zure informazioa",
+      "purposes": {
+        "title": "4.1 Prozesatzearen xedeak",
+        "intro": "Zure informazioa hauetarako erabiltzen dugu:",
+        "service": "Zerbitzua emateko eta mantentzeko",
+        "peakIdentification": "Jarduera-datuetatik burutu dituzun gailurrak identifikatzeko",
+        "progress": "Zure aurrerapenak jarraitzeko eta estatistikak sortzeko",
+        "statistics": "Zure estatistika eta lorpen pertsonalak kalkulatu eta erakusteko",
+        "community": "Gizarte-eginbideak, sailkapenak eta komunitate-elkarrekintzak ahalbidetuko",
+        "communication": "Jakinarazpenak, eguneraketak eta laguntza-komunikazioak bidaltzeko",
+        "improvement": "Zerbitzua hobetzeko, pertsonalizatzeko eta garatzeko",
+        "security": "Arazo teknikoak eta segurtasun-mehatxuak detektatzeko, prebenitzeko eta konpontzeko"
+      },
+      "legalBasis": {
+        "title": "4.2 Prozesatzearen oinarri legala",
+        "intro": "Zure datu pertsonalak hauetan oinarrituz prozesatzen ditugu:",
+        "consent": "Hirugarrenen kontuak konektatzen dituzunean zure baimena",
+        "contract": "Gurekin Zerbitzua emateko kontratuaren betearazpena",
+        "legitimate": "Zerbitzua eragiltzeko eta hobetzeko gure interes legitimoak",
+        "legal": "Legezko betebeharrekiko betetzea"
+      }
+    },
+    "dataSharing": {
+      "title": "5. Datuen partekatzea eta zabalkundea",
+      "thirdParties": {
+        "title": "5.1 Hirugarrenen zerbitzu-hornitzaileak",
+        "intro": "Zure informazioa honetan laguntzen diguten zerbitzu-hornitzaile fidagarriekin parteka dezakegu:",
+        "serviceProviders": "Ostatu eta azpiegitura-zerbitzuak",
+        "analytics": "Analitika eta errendimendu-monitorizazioa",
+        "cloud": "Hodei-biltegiratzea eta datuen prozesatzea"
+      },
+      "publicData": {
+        "title": "5.2 Informazio publikoa",
+        "intro": "Honako informazioa publikoki ikusgai egon daiteke:",
+        "statistics": "Estatistika agregatuak eta lorpenak",
+        "username": "Zure erabiltzaile-izena eta profil publikoa",
+        "rankings": "Sailkapenetan zure posizioa",
+        "profile": "Partekatzea aukeratutako profil-informazio publikoa"
+      },
+      "legal": {
+        "title": "5.3 Lege-eskakizunak",
+        "content": "Zure informazioa zabaldu dezakegu legeak, auzitegiko aginduak edo gobernuaren agintaritzak eskatzen badu, edo gure eskubideak, ondasunak edo segurtasuna, edo gure erabiltzaileenak babesteko."
+      }
+    },
+    "dataStorage": {
+      "title": "6. Datuen biltegiratzea eta segurtasuna",
+      "location": {
+        "title": "6.1 Datuen kokapena",
+        "content": "Zure datuak Europar Batasunean eta Estatu Batuetan kokatutako zerbitzari seguruan gordetzen dira. Zerbitzua erabiliz, zure datuen transferentziari kokaleku horietara onartzen diozu."
+      },
+      "retention": {
+        "title": "6.2 Datuen iraupena",
+        "intro": "Zure datuak mantentzen ditugu:",
+        "active": "Zure kontua aktibo dagoen bitartean eta Zerbitzua emateko beharrezkoa den arte",
+        "deleted": "Kontu-ezabaketaren ondorengo 30 egun arte, ondoren betirako kenduko dira",
+        "legal": "Aplikagarri diren legek eta arauek eskatzen duten arabera"
+      },
+      "security": {
+        "title": "6.3 Segurtasun-neurriak",
+        "intro": "Zure datuak babesteko neurri tekniko eta antolakuntza egokiak ezartzen ditugu:",
+        "encryption": "Transmisioan eta gordetakoan datuen enkriptatzea",
+        "access": "Sarbide-kontrolak eta autentifikazioaren mekanismoak",
+        "infrastructure": "Azpiegitura segurua eta ohiko segurtasun-ikuskaritzak",
+        "updates": "Ohiko segurtasun-eguneraketak eta konponketak"
+      }
+    },
+    "userRights": {
+      "title": "7. Zure eskubideak (GDPR/CCPA)",
+      "access": {
+        "title": "7.1 Sartzeko eskubidea",
+        "content": "Zure datu pertsonaletara sartzeko eskabidea egiteko eta guk gordetako datuen kopia bat jasotzeko eskubidea duzu."
+      },
+      "rectification": {
+        "title": "7.2 Zuzentzearen eskubidea",
+        "content": "Informazio pertsonal zehaztugabea edo osatugabearen zuzentzea eskatu dezakezu."
+      },
+      "erasure": {
+        "title": "7.3 Ezabatzearen eskubidea",
+        "content": "Zure datu pertsonalen ezabatzea eskatu dezakezu. Zure kontua edozein momentutan ezabatu dezakezu aplikazioaren ezarpenen bidez."
+      },
+      "restriction": {
+        "title": "7.4 Murriztearen eskubidea",
+        "content": "Zure datu pertsonalen prozesatzearen murriztapena eskatu dezakezu zenbait kasutan."
+      },
+      "portability": {
+        "title": "7.5 Datuen eramangarritasunaren eskubidea",
+        "content": "Zure datuen kopia bat egitura antolatu, makinaz irakurgarri diren formatuan eskatu dezakezu."
+      },
+      "objection": {
+        "title": "7.6 Aurkaratzeko eskubidea",
+        "content": "Interes legitimoetan oinarritutako zure datu pertsonalen prozesatzeari aurkaratu diezaiokezu."
+      },
+      "withdraw": {
+        "title": "7.7 Baimena kentzeko eskubidea",
+        "content": "Edozein momentutan zure baimena ken dezakezu hirugarrenen kontuak deskonektatuz edo zure kontua ezabatuz."
+      },
+      "complaint": {
+        "title": "7.8 Kexa aurkezteko eskubidea",
+        "content": "Zure eskubideak urratzen direla uste baduzu, zure tokiko datuak babesteko agintaritzara kexa bat aurkezteko eskubidea duzu."
+      }
+    },
+    "cookies": {
+      "title": "8. Cookieak eta jarraipen-teknologiak",
+      "intro": "Cookieak eta antzeko jarraipen-teknologiak erabiltzen ditugu gure Zerbitzuan jarduera jarraitzeko eta informazio jakin bat gordetzeko.",
+      "types": {
+        "title": "8.1 Cookie motak",
+        "essential": "Zerbitzua funtzionatzeko beharrezkoak diren cookie funtsezkoak",
+        "analytics": "Erabiltzaileek Zerbitzuarekin nola interaktuatzen duten ulertzeko analitika-cookieak",
+        "functional": "Zure hobespenak gogoratzeko funtzio-cookieak"
+      },
+      "management": {
+        "title": "8.2 Cookieen kudeaketa",
+        "content": "Cookieak zure arakatzailearen ezarpenen bidez kontrolatu ditzakezu. Hala ere, cookieak desgaitzeak Zerbitzuaren funtzionaltasunean eragin dezake."
+      }
+    },
+    "children": {
+      "title": "9. Haurren pribatutasuna",
+      "content": "Gure Zerbitzua edozein adineko haurrek erabil dezakete. Haurren eta erabiltzaile guztien pribatutasuna babesteko konpromisoa dugu. Gure Zerbitzua erabiltzen duten haurren segurtasuna eta pribatutasuna bermatzeko neurri egokiak ezartzen ditugu. Zure seme-alabaren gure Zerbitzuaren erabilerari buruzko kezkak badituzu, jarri harremanetan gurekin."
+    },
+    "international": {
+      "title": "10. Nazioarteko datuen transferentziak",
+      "content": "Zure informazioa zure bizilekuko herrialdez bestelako herrialdeetan transferitu eta prozesatu daiteke. Herrialde horiek zure herrialdeko datuen babeseko legeetatik ezberdinak diren legeak izan ditzakete. Zure datuak babesteko neurri egokiak daudela bermatzen dugu."
+    },
+    "changes": {
+      "title": "11. Pribatutasun-politika honen aldaketak",
+      "content": "Pribatutasun-politika hau noizean behin eguneratu dezakegu. Aldaketak orrialde honetan Pribatutasun-politika berria argitaratuz eta \"Azken eguneraketa\" data eguneratuz jakinaraziko dizugu. Pribatutasun-politika hau aldian behin berrikustea gomendatzen dizugu."
+    },
+    "contact": {
+      "title": "12. Jarri harremanetan gurekin",
+      "intro": "Pribatutasun-politika honi buruzko galderak badituzu edo zure eskubideak erabili nahi badituzu, jarri harremanetan gurekin:",
+      "email": "Posta elektronikoa: cesc.riera@summitstracker.com",
+      "website": "Webgunea: summitstracker.com",
+      "support": "Laguntza: Aplikazio barneko laguntza eta laguntza eginbideen bidez eskuragarri"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "Klubeko erronka",
+    "clubChallengeDescription": "Erronka hau klub bati lotuta dago eta kideentzat soilik egongo da ikusgai.",
+    "clubPrivateHelp": "Klubeko erronkak beti dira publikoak kideentzat eta ezin dira pribatuak izan.",
+    "createTitle": "Sortu erronka",
+    "editTitle": "Editatu erronka",
+    "name": "Erronkaren izena",
+    "namePlaceholder": "Sartu zure erronkaren izen bat...",
+    "description": "Deskribapena",
+    "descriptionPlaceholder": "Zertarako da erronka hau?",
+    "isPrivate": "Erronka pribatua",
+    "privateHelp": "Erronka pribatuak zugatik soilik ikusgai daude.",
+    "challengeConstraints": "Erronkaren mugak",
+    "startDate": "Hasiera-data",
+    "endDate": "Amaiera-data",
+    "dateRangeHelp": "Utzi bi datak hutsik edozein burutzapen-data onartzeko.",
+    "maxDuration": "Iraupena muga (orduak)",
+    "maxDurationPlaceholder": "adib. 24",
+    "maxDurationHelp": "Utzi hutsik lehen eta azken gailurraren arteko denbora-mugarik ez izateko.",
+    "timeLimit": "Denbora-muga",
+    "dateRange": "Baliozko",
+    "starts": "Hasten da",
+    "ends": "Amaitzen da",
+    "primaryImage": "Azaleko irudia",
+    "addImage": "Gehitu azaleko irudia",
+    "noImage": "Ez da irudirik eman",
+    "imageUrlPlaceholder": "Itsatsi irudi URL bat (adib., https://...)",
+    "peaks": "Gailurrak",
+    "addPeaks": "Gehitu gailurrak",
+    "selectPeaks": "Hautatu gailurrak",
+    "selectedPeaks": "Hautatutako gailurrak",
+    "noPeaksSelected": "Oraindik ez da gailurrik hautatu. Bilatu eta hautatu gailurrak zure erronkara gehitzeko.",
+    "saveSuccess": "Erronka arrakastaz gorde da!",
+    "saveError": "Erronka gordetzeak huts egin du. Mesedez, saiatu berriro.",
+    "loadError": "Erronka kargatzeak huts egin du. Mesedez, saiatu berriro.",
+    "validation": {
+      "nameRequired": "Erronkaren izena beharrezkoa da.",
+      "descriptionRequired": "Deskribapena beharrezkoa da.",
+      "imageRequired": "Azaleko irudia beharrezkoa da.",
+      "peaksRequired": "Hautatu gutxienez gailur bat.",
+      "startDateInvalid": "Sartu hasiera-data baliodun bat.",
+      "endDateInvalid": "Sartu amaiera-data baliodun bat.",
+      "endDateBeforeStart": "Amaiera-data hasiera-dataren ostekoa izan behar da.",
+      "maxDurationInvalid": "Sartu 0 baino handiagoa den iraupen gehieneko balioduна bat."
+    },
+    "challenges": "Erronkak",
+    "available_challenges": "erronka erabilgarriak",
+    "searchPlaceholder": "Bilatu izenaren edo sortzailearen arabera",
+    "emptySearchTitle": "Ez da erronkarik aurkitu",
+    "emptySearchMessage": "Saiatu beste izen edo sortzaile-izen batekin.",
+    "worldPeaks": "Munduko gailurrak",
+    "worldPeaksDescription": "Esploratu munduko gailur guztiak",
+    "join": "Batu",
+    "leave": "Utzi",
+    "joined": "Hautatuta",
+    "deleteList": "Ezabatu erronka",
+    "deleteSuccess": "Erronka arrakastaz ezabatu da",
+    "deleteError": "Erronka ezabatzeak huts egin du",
+    "deleteConfirmTitle": "Erronka ezabatu?",
+    "deleteConfirmMessage": "Ziur zaude erronka hau ezabatu nahi duzula? Ekintza hau ezin da desegin.",
+    "inviteToChallenge": "Gonbidatu erronkara",
+    "inviteHelp": "Bilatu erabiltzaileak zure erronkara gonbidatzeko."
+  },
+  "forceUpdate": {
+    "title": "Bertsio berria erabilgarri!",
+    "subtitle": "Mesedez, eguneratu Summits-en azken bertsiora aplikazioa erabiltzen jarraitzeko.",
+    "button": "Eguneratu orain",
+    "version": "Bertsioa",
+    "continue": "Jarraitu eguneratu gabe"
+  },
+  "appInstallBanner": {
+    "title": "Lortu aplikazio natiboa",
+    "subtitle": "Instalatu Summits mugikorreko esperientzia azkarragoa eta osoagoa lortzeko.",
+    "button": "Instalatu aplikazioa",
+    "dismiss": "Baztertu instalazio-oihartzuna",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "clubs": {
+    "availableClubs": "Klub eskuragarriak",
+    "common": {
+      "creator": "Sortzailea"
+    },
+    "browse": {
+      "title": "Klubak arakatu",
+      "subtitle": "Esploratu tontorren aurrerapen partekatuan oinarritutako komunitate publiko eta pribatuak.",
+      "searchPlaceholder": "Klubak bilatu",
+      "searchPlaceholderUnified": "Klubak edo eskualdeak bilatu...",
+      "emptyTitle": "Ondikoz ez dago klubik",
+      "emptyMessage": "Saiatu bilaketa zabalagoa edo sortu klub berri bat zure mendi taldearentzat.",
+      "emptySearchTitle": "Ez da klubik aurkitu",
+      "emptySearchMessage": "Saiatu beste izenburu edo eskualde batekin."
+    },
+    "details": {
+      "title": "Klubaren xehetasunak",
+      "statistics": "Estatistikak",
+      "restrictedTitle": "Klub pribatuaren aurrebista",
+      "restrictedMessage": "Onartutako kideek soilik ikus ditzakete klub honen sailkapena, kideak eta jarduera."
+    },
+    "myClubs": {
+      "title": "Nire klubak",
+      "subtitle": "Kudeatu sortu dituzun, batu zaren edo sarbidea eskatu duzun klubak.",
+      "created": "sortua",
+      "joined": "batua",
+      "pending": "zain",
+      "createdSection": "Nik sortuak",
+      "createdDescription": "Zureak diren eta osorik kudeatu ditzakezun klubak.",
+      "joinedSection": "Batutako klubak",
+      "joinedDescription": "Kideentzako soilik diren aurrerapenak eta jarduerak ikus ditzakezun klubak.",
+      "pendingSection": "Zain dauden eskaerak",
+      "pendingDescription": "Sortzailearen onarpenaren zain dauden klub pribatuak.",
+      "emptyTitle": "Oraindik ez zara inongo klubeko kide",
+      "emptyMessage": "Arakatu klubak batera batzeko edo sortu talde pribatu bat zure mendizale taldearentzat.",
+      "emptySection": "Atal honetan ez dago klubik oraindik."
+    },
+    "create": {
+      "title": "Kluba sortu",
+      "subtitle": "Ezarri kideek lehenik ikusiko duten klubaren identitatea, ikusgarritasuna eta azaleko irudia.",
+      "submit": "Kluba sortu"
+    },
+    "edit": {
+      "title": "Kluba aldatu"
+    },
+    "leaderboard": {
+      "subtitle": "Ikusi zein klub ari diren azkarren hazten eta tontor aurrerapen gehien erregistratzen."
+    },
+    "filters": {
+      "allVisibility": "Ikusgarritasun guztiak",
+      "period": "Aldia",
+      "sortBy": "Ordenatu honen arabera",
+      "highestClimb": "Igoera altuena",
+      "activity": "Jarduera",
+      "allCategories": "Kategoria guztiak",
+      "routes": "Ibilbideak",
+      "sort": "Ordenatu honela"
+    },
+    "period": {
+      "thisYear": "Aurten",
+      "lastYear": "Iaz",
+      "allTime": "Guztira",
+      "custom": "Pertsonalizatua",
+      "dateFrom": "Hondik",
+      "dateTo": "Hona"
+    },
+    "visibility": {
+      "public": "Publikoa",
+      "private": "Pribatua"
+    },
+    "sort": {
+      "mostUsers": "Kide gehien",
+      "mostPeaks": "Mendi gehien",
+      "mostDistance": "Distantzia gehien",
+      "mostElevation": "Desnibela gehien",
+      "mostTime": "Denbora gehien",
+      "newest": "Berrienak",
+      "oldest": "Zaharrenak",
+      "recentActivity": "Azken jarduera",
+      "joinedAt": "Batu zinen data",
+      "name": "Izena",
+      "mostActiveLast30d": "Aktiboena (30 egun)"
+    },
+    "metrics": {
+      "members": "Kideak",
+      "peaks": "Tontorrak",
+      "distinctPeaks": "Mendiak",
+      "totalAscents": "Igoerak guztira",
+      "highestPeak": "Tontor altuena",
+      "recentDistinctPeaks": "Azken mendiak",
+      "activeMembers30d": "Aktiboak (30 egun)",
+      "totalRoutes": "Ibilbideak",
+      "distance": "Distantzia",
+      "totalDistanceKm": "Distantzia",
+      "totalElevationGain": "Desnibela",
+      "totalTime": "Denbora guztira",
+      "totalMovingTime": "Mugimendu denbora",
+      "topMember": "Kide nagusia"
+    },
+    "tabs": {
+      "summary": "Laburpena",
+      "members": "Kideak",
+      "leaderboard": "Sailkapena",
+      "activity": "Jarduera",
+      "requests": "Eskaerak"
+    },
+    "activity": {
+      "allRoutes": "Ibilbide guztiak",
+      "withPeaks": "Tontorrekin",
+      "noPeak": "Tontorrik gabe",
+      "peaksDone": "Ibilbide honetan egindako tontorrak",
+      "xMore": "gehiago",
+      "latestRoutes": "Klubaren azken ibilbideak",
+      "empty": "Oraindik ez dago jarduerarik."
+    },
+    "challenges": {
+      "title": "Klubeko erronkak",
+      "subtitle": "Klub honi lotutako erronkak kideentzat ikusgai daude.",
+      "membersOnly": "Batu klub honetara klubeko erronkak ikusteko eta sortzeko.",
+      "create": "Erronka sortu",
+      "empty": "Oraindik ez dago klubeko erronkarik.",
+      "emptyRestricted": "Ez dago erronka ikusgairik. Batu klubera kideentzako erronkak desblokeatzeko.",
+      "itemFallback": "Erronka",
+      "total": "guztira",
+      "completed": "osatua",
+      "viewProgress": "Klubeko erronken aurrerapena ikusi"
+    },
+    "actions": {
+      "manageMyClubs": "Nire klubak kudeatu",
+      "signInToJoin": "Saioa hasi batzeko",
+      "joinClub": "Klubera batu",
+      "requestToJoin": "Batzeko eskaera egin",
+      "requestPending": "Eskaera zain",
+      "leaveClub": "Kluba utzi",
+      "editClub": "Kluba aldatu",
+      "manageClub": "Kluba kudeatu",
+      "viewClub": "Kluba ikusi",
+      "cancelRequest": "Eskaera bertan behera utzi",
+      "loadMore": "Gehiago kargatu",
+      "leaveConfirm": "Kluba utzi nahi duzu? Geroago berriro batu zaitezke.",
+      "leaveConfirmTitle": "Kluba utzi",
+      "leaveConfirmMessage": "Ziur al zaude '{name}' kluba utzi nahi duzula? Geroago berriro batu zaitezke.",
+      "joinConfirmTitle": "Klubera batu",
+      "joinConfirmMessage": "Eman nahi duzu izena '{name}' klubean? Bere sailkapena eta jarduera ikusi ahal izango dituzu.",
+      "removeMember": "Kendu",
+      "removeMemberConfirm": "Kide hau kendu nahi duzu?",
+      "acceptRequest": "Onartu",
+      "rejectRequest": "Ukatu",
+      "deleteConfirmTitle": "Kluba ezabatu?",
+      "deleteConfirmMessage": "Ziur al zaude klub hau ezabatu nahi duzula? Ekintza hau betirako da eta ezin da desegin.",
+      "deleteSuccess": "Kluba ondo ezabatu da",
+      "leave": "Kluba utzi",
+      "selectClub": "Hautatu klub bat"
+    },
+    "badges": {
+      "creator": "Sortzailea",
+      "member": "Kidea",
+      "requestPending": "Zain",
+      "privateClub": "Klub pribatua",
+      "restricted": "Mugatua"
+    },
+    "status": {
+      "joined": "Batua",
+      "pending": "Zain"
+    },
+    "roles": {
+      "creator": "Sortzailea",
+      "member": "Kidea"
+    },
+    "members": {
+      "joinedLabel": "Batua",
+      "none": "Ez da kiderik aurkitu",
+      "empty": "Ez da kiderik aurkitu"
+    },
+    "requests": {
+      "requestedOn": "Eskatua",
+      "pending": "Eskaera zain",
+      "none": "Ez dago zain dagoen eskaerarik"
+    },
+    "messages": {
+      "actionFailed": "Ezin izan da kluba eguneratu une honetan.",
+      "loadFailed": "Ezin izan da kluba kargatu une honetan.",
+      "saveFailed": "Ezin izan da kluba gorde.",
+      "deleteFailed": "Ezin izan da kluba ezabatu.",
+      "imageFailed": "Ezin izan da irudi hori irakurri.",
+      "leaveConfirmation": "Ziur zaude klub hau utzi nahi duzula?"
+    },
+    "validation": {
+      "nameRequired": "Klubaren izena beharrezkoa da",
+      "descriptionRequired": "Klubaren deskribapena beharrezkoa da",
+      "visibilityRequired": "Klubaren ikusgarritasuna beharrezkoa da",
+      "imageRequired": "Klubaren logoa beharrezkoa da",
+      "regionRequired": "Klubaren eskualdea beharrezkoa da"
+    },
+    "form": {
+      "image": "Klubaren logoa",
+      "changeImage": "Logoa aldatu",
+      "uploadImage": "Logoa igo",
+      "name": "Klubaren izena",
+      "namePlaceholder": "Pirinioetako Gailurzaleak",
+      "description": "Deskribapena",
+      "descriptionPlaceholder": "Deskribatu zure kluba laburki",
+      "visibility": "Ikusgarritasuna",
+      "region": "Eskualdea",
+      "regionPlaceholder": "Bilatu herrialde edo eskualde bat...",
+      "regionSearching": "Bilatzen...",
+      "regionNoResults": "Ez da eskualderik aurkitu",
+      "regionClear": "Eskualdea kendu",
+      "previewTitle": "Klubaren aurrebista",
+      "previewMessage": "Gehitu klubaren logo bat zure klubak identitate argia izan dezan bilaketa emaitzetan.",
+      "cropDescription": "Kokatu eta egin zoom logotipoan zirkulu-formako avatarra aurreikusteko.",
+      "cropTitle": "Clubaren logotipoa doitu",
+      "cropZoom": "Zoom"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "lastUpdate": {
+    "title": "Aterpeak Summits-era heltzen dira",
+    "close": "Onena!",
+    "refugios": {
+      "headline": "80.000+ Aterpe",
+      "subtitle": "Gordeta eta libre dauden aterpeak mundu osoan, orain Summits-en.",
+      "findOnMap": "Aurkitu maparen edo arakatu orriaren bidez.",
+      "addManually": "Falta da bat? Gehitu eskuz maparen orritik.",
+      "saveFavorites": "Gorde gogokoetan beti eskura izateko.",
+      "community": "Edozein ekarpen estimatzen da eta komunitateari laguntzen dio."
+    }
+  },
+  "manualPeaks": {
+    "fetchError": "Ezin izan dira tontorrak kargatu. Saiatu berriro."
+  },
+  "offline": {
+    "banner": "Lineaz kanpo zaude — eginbide batzuk mugatuta egon daitezke",
+    "bannerCached": "Linez kanpo – cachetako mapa-datuak eskuragarri",
+    "bannerNoCache": "Linez kanpo – ez dago cachetako mapa-daturik",
+    "title": "Lineaz kanpoko mapak",
+    "area": "Lineaz kanpoko eremua",
+    "empty": "Oraindik ez dago lineaz kanpoko eremurik. Deskargatu mapa-eremu bat interneteko konexiorik gabe eskuragarri izateko.",
+    "newArea": "Deskargatu eremu berria",
+    "downloading": "Deskargatzen",
+    "ready": "Prest",
+    "failed": "Huts egin du",
+    "cancelled": "Bertan behera utzita",
+    "tiles": "laukitzak",
+    "zoom": "zoom {min}-{max}",
+    "goTo": "Joan eremura",
+    "delete": "Ezabatu",
+    "drawHint": "Sakatu mapan ertz-puntuak jartzeko eta, ondoren, sakatu Amaitu eremua ixteko.",
+    "undo": "Desegin",
+    "clear": "Garbitu",
+    "finish": "Amaitu",
+    "configName": "Eremuaren izena",
+    "namePlaceholder": "adib. Tatra Garaiak",
+    "maxZoomLabel": "Gehieneko zoom (xehetasuna)",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "17-18 zoom-mailak oso gutxitan behar dira eta oso garestiak dira: maila bakoitzak laukoiztu egiten du deskargaren tamaina. Zoom 14 da gehienez gomendatutakoa.",
+    "estimate": "~{count} laukitza (~{size})",
+    "eta": "~{eta} falta dira",
+    "keepOpen": "Mantendu aplikazioa irekita deskargatzen ari zaren bitartean; ixten baduzu, deskarga gelditu egingo da.",
+    "redraw": "Berriro marraztu",
+    "download": "Deskargatu eremua",
+    "starting": "Hasten...",
+    "errorResolve": "Ezin izan da mapa-estiloa konpondu. Ziurtatu linean zaudela.",
+    "errorNoSources": "Hautatu gutxienez datu-iturri bat.",
+    "errorDownload": "Deskargak huts egin du.",
+    "deleteTitle": "Konexiorik gabeko eremua ezabatu?",
+    "deleteMessage": "Ezabatu \"{name}\"? Horrek {tiles} tile ({size}) behin betiko kenduko ditu gailu honetatik. Ezin da desegin.",
+    "deleteCancel": "Utzi",
+    "deleteConfirm": "Ezabatu",
+    "deleting": "Ezabatzen..."
+  },
+  "peakChange": {
+    "createTitle": "Bidali Gailur Berria",
+    "editTitle": "Editatu Gailurra",
+    "successTitle": "Gailurra Bidalia",
+    "successMessage": "Zure gailurra berrikusteko bidali da. 3 eguneko epean onartu edo ukatuko da. Ez duzu jakinarazpenik jasoko, beraz, egiaztatu berriro geroago emaitza ikusteko.",
+    "successSubmessage": "Galderarik baduzu, jar zaitez harremanetan gurekin zure profilatik.",
+    "close": "Itxi",
+    "name": "Izena",
+    "namePlaceholder": "Gailurraren izena",
+    "englishName": "Ingelesezko Izena",
+    "englishNamePlaceholder": "Ingelesezko izena (aukerakoa)",
+    "coordinates": "Koordenatuak",
+    "latitude": "Latitudea",
+    "longitude": "Longitudea",
+    "coordsEditHint": "Hutsik utzi oraingo posizioa mantentzeko",
+    "pickOnMap": "Aukeratu mapan",
+    "clickMapInstruction": "Egin klik mapan gailurraren kokapena ezartzeko",
+    "acceptLocation": "Onartu",
+    "elevation": "Altuera (m)",
+    "elevationPlaceholder": "Altuera metrotan",
+    "minZoomLevel": "Zoom Maila Minimoa",
+    "selectVisibility": "-- Hautatu ikusgarritasuna --",
+    "minZoomHelp": "Zenbaki baxuagoa = urrunduta agertzen da (mundu mailako gailurrak). Zenbaki altuagoa = soilik hurbilduta ikusgai (tokiko muinoak).",
+    "wikipediaUrl": "Wikipedia URLa",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "reason": "Aldaketaren Arrazoia",
+    "reasonPlaceholder": "Arrazoi aukerakoa eskaera honetarako",
+    "image": "Irudia",
+    "chooseImage": "Aukeratu irudia",
+    "submitCreate": "Bidali Gailurra Berrikusteko",
+    "submitEdit": "Bidali Aldaketak Berrikusteko",
+    "submitting": "Bidaltzen...",
+    "errorPeakIdMissing": "Gailurraren IDa falta da",
+    "errorNameRequired": "Izena beharrezkoa da",
+    "errorCoordinatesRequired": "Koordenatuak beharrezkoak dira",
+    "errorElevationRequired": "Altuera beharrezkoa da",
+    "errorMinZoomRequired": "Zoom maila minimoa beharrezkoa da",
+    "errorGeneric": "Bidalketak huts egin du. Saiatu berriro.",
+    "tabPeak": "Gailurra",
+    "tabShelter": "Aterpetxea",
+    "currentData": "Uneko datuak",
+    "versionName": "Izena",
+    "versionElevation": "Altuera",
+    "versionWikipedia": "Wikipedia",
+    "versionWikipediaYes": "bai",
+    "mapButtonLabel": "Bidali gailur berria",
+    "email": "Helbide elektronikoa (aukerakoa)",
+    "emailPlaceholder": "zure@helbidea.eus",
+    "emailHelp": "Jaso jakinarazpena zure eskaera onartua edo ukatua denean"
+  },
+  "shelterChange": {
+    "createTitle": "Bidali Aterpetxe Berria",
+    "editTitle": "Editatu Aterpetxea",
+    "successTitle": "Aterpetxea Bidalia",
+    "successMessage": "Zure aterpetxea berrikusteko bidali da. 3 eguneko epean onartu edo ukatuko da. Ez duzu jakinarazpenik jasoko, beraz, egiaztatu berriro geroago emaitza ikusteko.",
+    "successSubmessage": "Galderarik baduzu, jar zaitez harremanetan gurekin zure profilatik.",
+    "close": "Itxi",
+    "name": "Izena",
+    "namePlaceholder": "Aterpetxearen izena",
+    "englishName": "Ingelesezko Izena",
+    "englishNamePlaceholder": "Ingelesezko izena (aukerakoa)",
+    "shelterType": "Aterpetxe Mota",
+    "selectType": "-- Hautatu mota --",
+    "coordinates": "Koordenatuak",
+    "latitude": "Latitudea",
+    "longitude": "Longitudea",
+    "coordsEditHint": "Hutsik utzi oraingo posizioa mantentzeko",
+    "pickOnMap": "Aukeratu mapan",
+    "acceptLocation": "Onartu",
+    "clickMapInstruction": "Egin klik mapan aterpetxearen kokapena ezartzeko",
+    "elevation": "Altuera (m)",
+    "elevationPlaceholder": "Altuera metrotan",
+    "wikipediaUrl": "Wikipedia URLa",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "tagsTitle": "Instalazioak eta Zerbitzuak",
+    "tagsHint": "Bete aterpetxe honi dagokiona soilik",
+    "tags": {
+      "capacity": "Edukiera (pertsonak)",
+      "beds": "Oheak",
+      "toilets": "Komunak",
+      "drinking_water": "Edateko ura",
+      "fireplace": "Tximinia",
+      "heating": "Berokuntza",
+      "electricity": "Elektrizitatea",
+      "shower": "Dutxa",
+      "kitchen": "Sukaldea",
+      "lit": "Argiztapena",
+      "outdoor_seating": "Kanpoko eserlekuak",
+      "picnic_table": "Piknik mahaia",
+      "bench": "Bankuak",
+      "covered": "Estalitako eremua",
+      "pets": "Maskotak onartuta",
+      "dog": "Txakurrak onartuta",
+      "internet_access": "Interneteko sarbidea",
+      "smoking": "Erretzea",
+      "website": "Webgunea",
+      "websitePlaceholder": "https://...",
+      "description": "Deskribapena",
+      "descriptionPlaceholder": "Aterpetxearen deskribapen laburra"
+    },
+    "tagValues": {
+      "yes": "Bai",
+      "no": "Ez",
+      "wifi": "WiFi",
+      "outside": "Kanpoan bakarrik",
+      "isolated": "Eremu isolatua"
+    },
+    "reason": "Aldaketaren Arrazoia",
+    "reasonPlaceholder": "Arrazoi aukerakoa eskaera honetarako",
+    "email": "Helbide elektronikoa (aukerakoa)",
+    "emailPlaceholder": "zure@helbidea.eus",
+    "emailHelp": "Jaso jakinarazpena zure eskaera onartua edo ukatua denean",
+    "image": "Irudia",
+    "chooseImage": "Aukeratu irudia",
+    "submitCreate": "Bidali Aterpetxea Berrikusteko",
+    "submitEdit": "Bidali Aldaketak Berrikusteko",
+    "submitting": "Bidaltzen...",
+    "errorShelterIdMissing": "Aterpetxearen IDa falta da",
+    "errorNameRequired": "Izena beharrezkoa da",
+    "errorTypeRequired": "Aterpetxe mota beharrezkoa da",
+    "errorCoordinatesRequired": "Koordenatuak beharrezkoak dira",
+    "errorGeneric": "Bidalketak huts egin du. Saiatu berriro.",
+    "tabPeak": "Gailurra",
+    "tabShelter": "Aterpetxea"
+  },
+  "singleDatePicker": {
+    "chooseDate": "Aukeratu {label}",
+    "close": "Itxi",
+    "apply": "Aplikatu"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "mandatu gabeko mendiko aterpea",
+      "wilderness_hut": "mandatu gabeko aterpe urruna",
+      "shelter": "larrialdiko aterpea"
+    },
+    "intro": {
+      "default": "Hau da {type} bat.",
+      "withOperator": "Hau {operator}k kudeatutako {type} bat da.",
+      "withHours": "Irekita {hours}.",
+      "free": "Doakoa da.",
+      "paid": "Ordainketa behar du.",
+      "paidAmount": "Tarifa {charge} da.",
+      "reservationsRequired": "Erreserba derrigorrezkoa da.",
+      "reservationsOptional": "Erreserba aukerakoa da.",
+      "accessPublic": "Sarrera publikoa da.",
+      "accessPrivate": "Sarrera pribatua da.",
+      "accessMembers": "Sarrera kideentzat bakarrik da."
+    },
+    "capacity": {
+      "bedsAndCapacity": "{beds} ohe ditu {capacity} pertsonarentzako edukierarekin.",
+      "bedsOnly": "{beds} ohe ditu.",
+      "capacityOnly": "{capacity} pertsonarentzako edukiera du."
+    },
+    "services": {
+      "title": "Eskaintzen du:",
+      "toilets": "komunak",
+      "drinking_water": "edateko ura",
+      "fireplace": "su-galerna",
+      "stove": "berogailua",
+      "heating": "berogailua",
+      "electricity": "elektrizitatea",
+      "shower": "dutxak",
+      "kitchen": "sukaldea",
+      "lit": "argiztapena",
+      "internet": "internet sarrera",
+      "outdoor_seating": "aire zabaleko eserlekuak",
+      "picnic_table": "piknik mahaia",
+      "bench": "aulkiak",
+      "covered": "estalitako eremua",
+      "pets": "maskotak onartzen dira",
+      "smoking_free": "ez erre"
+    },
+    "website": "Webgunea bisitatu",
+    "noInfo": "Ez dago informazio gehiago eskuragarri aterpe honentzat.",
+    "nearbyShelters": "Inguruko aterpetxeak",
+    "nearbySheltersNoData": "Ez da inguruko aterpetxerik aurkitu",
+    "unnamedShelter": "Izenik gabeko aterpetxea",
+    "unknownShelter": "Aterpetxe ezezaguna",
+    "invalidShelterId": "Aterpetxearen ID baliogabea",
+    "suggestEdit": "Proposatu edizioa",
+    "source": "Iturria: {source}",
+    "searchRoutesFor": "Bilatu ibilbideak honetan",
+    "findHikingRoutesOnWikiloc": "Aurkitu mendi-ibilbideak Wikiloc-en",
+    "openImageGallery": "Irudien galeria ireki",
+    "previousImage": "Aurreko irudia",
+    "nextImage": "Hurrengo irudia",
+    "searchRoutesAria": "Bilatu ibilbideak {name} Wikiloc-en"
+  }
+}

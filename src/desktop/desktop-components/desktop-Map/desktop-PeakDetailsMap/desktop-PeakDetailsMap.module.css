@@ -1,0 +1,175 @@
+/* PeakDetailsMap.module.css - Map-specific peak details styles */
+
+.peakDetailsMap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--c-white, var(--c-white));
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Peak Details Header */
+.peakDetailsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px 4px 16px;
+  background: var(--c-white, var(--c-white));
+}
+
+.peak-details-map__button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.peak-details-map__edit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  padding: 6px;
+  cursor: pointer;
+  color: var(--c-gray-500);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.peak-details-map__edit-btn:hover {
+  opacity: 1;
+  background: var(--c-gray-100);
+}
+
+.peak-details-map__expand-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+.peak-details-map__expand-button:hover {
+  background: var(--color-surface-alt, var(--c-gray-100));
+  box-shadow: 0 2px 8px 0 rgba(40, 76, 100, 0.09);
+}
+
+/* Location Block */
+.locationBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  min-width: 0;
+  gap: 8px;
+  flex-shrink: 1;
+}
+
+.locationIcon {
+  display: flex;
+  align-items: center;
+}
+
+.locationText {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.locationCity,
+.locationRegion,
+.locationCountry {
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.locationCity {
+  color: var(--c-gray-900);
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.locationRegion {
+  font-style: italic;
+  color: var(--c-gray-600);
+}
+
+.locationCountry {
+  font-style: normal;
+  color: var(--c-gray-400);
+  opacity: 0.85;
+  margin-left: 0.45em;
+}
+
+/* Saved Button */
+.savedBtn {
+  border: none;
+  background: none;
+  padding: 8px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.savedBtn:hover {
+  transform: scale(1.1);
+}
+
+.savedBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Content */
+
+/* No Data State */
+.noData {
+  text-align: center;
+  color: var(--c-gray-400, var(--c-gray-600));
+  font-style: italic;
+  padding: 32px 16px;
+  background: var(--c-gray-100, var(--c-gray-50));
+  border-radius: 12px;
+  margin: 16px;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 480px) {
+  .content {
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,526 @@
+/* Back Button (top-left on steps) */
+.landing-overlay__back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  background-color: rgba(var(--rgb-black), 0.2);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+/* Landing Page Overlay - appears over everything */
+.landing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 100vw;
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(var(--rgb-black), 0.6), rgba(var(--rgb-black), 0.6)),
+    url("/icons/peaklist/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: stretch;
+  justify-content: flex-start;
+  z-index: 999999;
+  animation: landing-fade-in 200ms ease;
+}
+
+.landing-overlay--closing {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+/* Close Button (top-right) */
+.landing-overlay__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  text-decoration: none;
+  outline: none;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.landing-overlay__close svg {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Install Header */
+.landing-overlay__install-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.landing-overlay__install-subtitle {
+  margin: 0;
+  color: rgba(var(--rgb-white), 0.8);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.landing-overlay__btn-install-header {
+  background: var(--c-gray-200);
+  color: var(--c-black);
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px -1px rgba(var(--rgb-black), 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  min-width: fit-content;
+}
+
+.landing-overlay__btn-install-header:active {
+  transform: translateY(0);
+}
+
+.landing-overlay__btn-install-header svg {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content Container */
+.landing-overlay__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding: clamp(1rem, 4dvh, 2rem) 1rem 1rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+
+.landing-overlay__content--steps {
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Main Content Area */
+.landing-overlay__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
+  padding: 10dvh 0 0 0;
+}
+
+/* Header Section */
+.landing-overlay__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  min-height: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.landing-overlay__title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.landing-overlay__title {
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.3);
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.landing-overlay__subtitle {
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.2);
+  padding: 0;
+  color: rgba(var(--rgb-white), 0.8);
+}
+
+.landing-overlay__btn-explore {
+  background: rgba(var(--rgb-white), 0.1);
+  color: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.landing-overlay__btn-explore:active {
+  transform: translateY(0);
+}
+
+.landing-overlay__btn-explore svg {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Action Buttons */
+
+.landing-overlay__btn-install {
+  background: var(--c-gray-200);
+  color: var(--c-black);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px -2px rgba(var(--rgb-black), 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.landing-overlay__btn-install:active {
+  transform: translateY(0);
+}
+
+.landing-overlay__btn-install svg {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Install Steps */
+.landing-overlay__install-steps {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 4dvh, 1.5rem);
+  max-width: min(400px, 90vw);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.landing-overlay__steps-title {
+  margin: 0 0 0.5rem 0;
+  color: white;
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.2);
+}
+
+.landing-overlay__steps-subtitle {
+  opacity: 0.9;
+  margin: 0 0 1rem 0;
+  color: rgba(var(--rgb-white), 0.9);
+}
+
+.landing-overlay__platform-toggle {
+  display: flex;
+  background: rgba(var(--rgb-white), 0.1);
+  border-radius: 8px;
+  padding: 0.25rem;
+  margin: 0 0 1.5rem 0;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-overlay__toggle-option {
+  background: transparent;
+  border: none;
+  color: rgba(var(--rgb-white), 0.7);
+  padding: clamp(0.5rem, 1.5dvh, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+  border-radius: 6px;
+
+  transition: all 0.2s ease;
+
+  width: clamp(96px, 28vw, 120px);
+  text-align: center;
+}
+
+.landing-overlay__toggle-option--active {
+  background: rgba(var(--rgb-white), 0.2);
+  color: white;
+}
+
+.landing-overlay__steps {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3dvh, 1.5rem);
+  text-align: left;
+}
+
+.landing-overlay__step {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: clamp(0.75rem, 2dvh, 1rem);
+  background: rgba(var(--rgb-black), 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+}
+
+.landing-overlay__step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(20px, 5vw, 28px);
+  height: clamp(20px, 5vw, 28px);
+  flex-shrink: 0;
+  margin-right: clamp(0.75rem, 3vw, 1.25rem);
+  color: var(--c-white);
+}
+
+.landing-overlay__step-number {
+  color: white;
+  min-width: clamp(1.2rem, 4vw, 1.5rem);
+  margin-right: clamp(0.4rem, 1.5vw, 0.6rem);
+}
+
+.landing-overlay__step-text {
+  color: rgba(var(--rgb-white), 0.9);
+  flex: 1;
+}
+
+/* Register Section */
+.landing-overlay__register-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.landing-overlay__register-text {
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--rgb-white), 0.9);
+  max-width: min(320px, 85vw);
+}
+
+.landing-overlay__register-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-overlay__button-divider {
+  width: 1px;
+  height: 2rem;
+  background-color: var(--c-white);
+  margin: 0 0.5rem;
+}
+
+.landing-overlay__btn-primary {
+  background: rgba(var(--rgb-white), 0.1);
+  color: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.landing-overlay__btn-primary:active {
+  transform: translateY(0);
+}
+
+.landing-overlay__btn-primary--compact {
+  width: auto;
+  align-self: center;
+  margin: clamp(0.75rem, 2dvh, 1rem) auto 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: clamp(0.7rem, 2dvh, 1rem) clamp(1rem, 4vw, 1.6rem);
+}
+
+.landing-overlay__btn-primary svg {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animations */
+@keyframes landing-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes content-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Very Small Mobile Devices (less than 360px) */
+@media (max-width: 359px) {
+  .landing-overlay__content {
+    padding: 0.5rem;
+  }
+
+  .landing-overlay__content--steps {
+    padding: 0.5rem;
+  }
+
+  .landing-overlay__btn-explore {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .landing-overlay__btn-install-header {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Small Mobile Devices (360px to 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .landing-overlay__content {
+    padding: 1rem;
+  }
+
+  .landing-overlay__content--steps {
+    padding: 1rem;
+  }
+
+  .landing-overlay__btn-explore {
+    padding: 0.9rem 1.7rem;
+  }
+
+  .landing-overlay__btn-install-header {
+    padding: 0.6rem 1.1rem;
+  }
+}
+
+/* Medium Mobile Devices (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .landing-overlay__content {
+    padding: 1rem;
+  }
+
+  .landing-overlay__content--steps {
+    padding: 1rem;
+  }
+
+  .landing-overlay__btn-explore {
+    padding: 1rem 2rem;
+  }
+
+  .landing-overlay__btn-install-header {
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+/* Height-based media queries for very short screens */
+@media (max-height: 600px) {
+  .landing-overlay__btn-explore {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .landing-overlay__main-content {
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+}
+
+/* Height-based media queries for screens below 700px */
+@media (max-height: 699px) {
+  .landing-overlay__btn-install-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .landing-overlay__btn-primary {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .landing-overlay__register-section {
+    padding: 0.5rem 0;
+  }
+
+  .landing-overlay__main-content {
+    padding: 1.5rem 0;
+  }
+}
+
+/* Height-based media queries for very tall screens */
+@media (min-height: 900px) {
+}

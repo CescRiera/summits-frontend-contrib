@@ -1,0 +1,74 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--c-white);
+  z-index: 10000; /* Extremely high to cover everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  text-align: center;
+}
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconWrapper {
+  margin-bottom: 0.5rem;
+  color: var(--c-gray-900);
+}
+
+.title {
+  color: var(--c-gray-900);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--c-gray-600);
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.updateButton {
+  width: 100%;
+  background: var(--c-gray-900);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 1.2rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 20px rgba(var(--rgb-black), 0.1);
+}
+
+.updateButton:active {
+  transform: scale(0.96);
+  background: var(--c-black);
+}
+
+.versionText {
+  color: var(--c-gray-400);
+}

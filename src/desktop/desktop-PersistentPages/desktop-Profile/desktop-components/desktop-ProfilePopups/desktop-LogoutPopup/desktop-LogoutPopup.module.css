@@ -1,0 +1,117 @@
+/* LogoutPopup.module.css - Logout confirmation popup */
+
+.logout-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background: rgba(var(--rgb-black), 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.logout-popup__content {
+  background: rgba(var(--rgb-white), 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 25px -5px rgba(var(--rgb-black), 0.1),
+    0 10px 10px -5px rgba(var(--rgb-black), 0.04);
+  backdrop-filter: blur(5px);
+  animation: logout-popup__slide-in 0.2s ease-out;
+}
+
+@keyframes logout-popup__slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.logout-popup__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logout-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.logout-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.logout-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.logout-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.logout-popup__button--cancel:hover:not(:disabled) {
+  background: rgba(15, 23, 42, 0.15);
+  transform: translateY(-1px);
+}
+
+.logout-popup__button--confirm {
+  background: #fbbf24;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.logout-popup__button--confirm:hover:not(:disabled) {
+  background: #f59e0b;
+  transform: translateY(-1px);
+}
+
+.logout-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .logout-popup__content {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .logout-popup__title {
+  }
+
+  .logout-popup__message {
+  }
+
+  .logout-popup__actions {
+    flex-direction: column;
+  }
+
+  .logout-popup__button {
+    width: 100%;
+  }
+}

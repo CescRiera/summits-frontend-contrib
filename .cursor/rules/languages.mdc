@@ -1,0 +1,5 @@
+---
+alwaysApply: false
+---
+
+When asked for translations you must use add them to the .json files of the locales folder

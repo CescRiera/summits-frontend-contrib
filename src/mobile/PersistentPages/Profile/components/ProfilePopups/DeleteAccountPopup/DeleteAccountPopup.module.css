@@ -1,0 +1,97 @@
+/* DeleteAccountPopup.module.css - Delete account confirmation popup */
+
+.delete-popup__content {
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.delete-popup__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.delete-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.delete-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.delete-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.delete-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.delete-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  border: 1.5px solid rgba(15, 23, 42, 0.7);
+}
+
+.delete-popup__button--confirm {
+  background: #ef4444;
+  color: white;
+  border: 1.5px solid #dc2626;
+}
+
+.delete-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+.delete-popup__button--confirm:disabled {
+  background: #cbd5e1;
+  border: 1px solid #94a3b8;
+  transform: none;
+}
+
+.delete-popup__loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: delete-popup__spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes delete-popup__spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .delete-popup__content {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .delete-popup__title {
+  }
+
+  .delete-popup__message {
+  }
+
+  .delete-popup__actions {
+    flex-direction: column;
+  }
+}

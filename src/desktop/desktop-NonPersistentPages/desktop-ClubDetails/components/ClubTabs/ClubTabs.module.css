@@ -1,0 +1,21 @@
+.club-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.club-tabs__button {
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 10px;
+  background: rgba(var(--rgb-white), 0.82);
+  color: rgba(15, 23, 42, 0.72);
+  padding: 11px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.club-tabs__button--active {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #f8fafc;
+}

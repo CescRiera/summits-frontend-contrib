@@ -1,0 +1,305 @@
+/* SearchAndFilters.module.css - Search and Filters Component with BEM naming */
+
+/* Block: searchAndFilters */
+.searchAndFilters {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Element: topRow */
+.searchAndFilters__topRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Element: searchWrapper */
+.searchAndFilters__searchWrapper {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Element: searchInputContainer */
+.searchAndFilters__searchInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Element: searchIcon */
+.searchAndFilters__searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Element: searchInput */
+.searchAndFilters__searchInput {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: rgba(241, 245, 249, 0.8);
+  color: #1e293b;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  min-height: 48px;
+}
+
+/* Modifier: searchInput focused */
+.searchAndFilters__searchInput:focus {
+  outline: none;
+  border-color: #0a2540;
+  box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.1);
+}
+
+/* Element: searchInput placeholder */
+.searchAndFilters__searchInput::placeholder {
+  color: #94a3b8;
+}
+
+/* Element: searchClearButton */
+.searchAndFilters__searchClearButton {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.searchAndFilters__searchClearButton:hover {
+  background: var(--c-gray-100);
+  color: #475569;
+}
+
+/* Modifier: searchClearButton active */
+.searchAndFilters__searchClearButton:active {
+  transform: scale(0.95);
+}
+
+/* Element: sortRow */
+.searchAndFilters__sortRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Element: filterGroup */
+.searchAndFilters__filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Element: sortGroup */
+.searchAndFilters__sortGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Element: groupLabel */
+.searchAndFilters__groupLabel {
+  color: #64748b;
+  white-space: nowrap;
+  min-width: 60px;
+}
+
+/* Element: filterButtons */
+.searchAndFilters__filterButtons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Element: filterButton */
+.searchAndFilters__filterButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: rgba(241, 245, 249, 0.8);
+  color: #64748b;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.searchAndFilters__filterButton:hover:not(:disabled) {
+  background-color: rgba(226, 232, 240, 0.8);
+}
+
+/* Modifier: filterButton active */
+.searchAndFilters__filterButton--active {
+  background-color: #0f172a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.searchAndFilters__filterButton--active:hover:not(:disabled) {
+  background-color: #1e293b;
+}
+
+/* Modifier: filterButton disabled */
+.searchAndFilters__filterButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Element: sortButtons */
+.searchAndFilters__sortButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Element: sortField */
+.searchAndFilters__sortField {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: rgba(241, 245, 249, 0.8);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modifier: sortField disabled */
+.searchAndFilters__sortField--disabled {
+  opacity: 0.5;
+}
+
+/* Element: sortFieldLabel */
+.searchAndFilters__sortFieldLabel {
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* Element: sortDirectionButtons */
+.searchAndFilters__sortDirectionButtons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* Element: sortButton */
+.searchAndFilters__sortButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #64748b;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.searchAndFilters__sortButton:hover:not(:disabled) {
+  background-color: rgba(226, 232, 240, 0.8);
+}
+
+/* Modifier: sortButton active */
+.searchAndFilters__sortButton--active {
+  background-color: white;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchAndFilters__sortButton--active:hover:not(:disabled) {
+  background-color: white;
+}
+
+/* Modifier: sortButton disabled */
+.searchAndFilters__sortButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Element: loadingSpinner */
+.searchAndFilters__loadingSpinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .searchAndFilters {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .searchAndFilters__searchInputContainer {
+    max-width: 100%;
+  }
+
+  .searchAndFilters__filtersRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .searchAndFilters__filterGroup,
+  .searchAndFilters__sortGroup {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .searchAndFilters__filterButtons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .searchAndFilters__sortButtons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

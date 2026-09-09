@@ -1,0 +1,144 @@
+/* DeleteAccountPopup.module.css - Delete account confirmation popup */
+
+.delete-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background: rgba(var(--rgb-black), 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.delete-popup__content {
+  background: rgba(var(--rgb-white), 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 25px -5px rgba(var(--rgb-black), 0.1),
+    0 10px 10px -5px rgba(var(--rgb-black), 0.04);
+  backdrop-filter: blur(5px);
+  animation: delete-popup__slide-in 0.2s ease-out;
+}
+
+@keyframes delete-popup__slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.delete-popup__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.delete-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.delete-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.delete-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.delete-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  border: 1.5px solid rgba(15, 23, 42, 0.7);
+  cursor: pointer;
+}
+
+.delete-popup__button--cancel:hover:not(:disabled) {
+  background: rgba(15, 23, 42, 0.15);
+  border-color: rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+}
+
+.delete-popup__button--confirm {
+  background: #ef4444;
+  color: white;
+  border: 1.5px solid #dc2626;
+  cursor: pointer;
+}
+
+.delete-popup__button--confirm:hover:not(:disabled) {
+  background: #dc2626;
+  border-color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.delete-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+.delete-popup__button--confirm:disabled {
+  background: #cbd5e1;
+  border: 1px solid #94a3b8;
+  transform: none;
+}
+
+.delete-popup__loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: delete-popup__spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes delete-popup__spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .delete-popup__content {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .delete-popup__title {
+  }
+
+  .delete-popup__message {
+  }
+
+  .delete-popup__actions {
+    flex-direction: column;
+  }
+}

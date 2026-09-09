@@ -1,0 +1,199 @@
+.verify-email {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-gray-100);
+}
+
+.verify-email__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  padding-top: 0;
+}
+
+.verify-email__card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-background-secondary);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.1);
+}
+
+.verify-email__icon-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.15);
+}
+
+.verify-email__icon {
+  color: white;
+}
+
+.verify-email__title {
+  margin: 0 0 16px 0;
+  color: var(--c-gray-900);
+}
+
+.verify-email__message {
+  margin: 0 0 32px 0;
+  color: var(--c-gray-600);
+}
+
+.verify-email__gmail-button {
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+}
+
+.verify-email__gmail-button:active {
+  transform: translateY(0);
+}
+
+.verify-email__login-button {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.verify-email__login-button:active {
+  transform: scale(0.98);
+}
+
+.verify-email__verify-button {
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+}
+
+.verify-email__verify-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.verify-email__verify-button:disabled {
+  opacity: 0.6;
+}
+
+.verify-email__resend-button {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.verify-email__resend-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.verify-email__resend-button:disabled {
+  opacity: 0.6;
+}
+
+.verify-email__error {
+  color: var(--color-error, #d32f2f);
+  margin: 12px 0;
+  text-align: center;
+  padding: 8px 12px;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.verify-email__success {
+  color: var(--color-success, #2e7d32);
+  margin: 12px 0;
+  text-align: center;
+  padding: 8px 12px;
+  background: rgba(46, 125, 50, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.verify-email__verifying {
+  color: var(--c-gray-600);
+  margin: 12px 0;
+  text-align: center;
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.verify-email__code-section {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.verify-email__code-label {
+  margin: 0 0 12px 0;
+  color: var(--c-gray-600);
+  text-align: center;
+}
+
+.verify-email__email-section {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.verify-email__email-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  background: var(--color-background-secondary);
+  color: var(--c-gray-900);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.verify-email__email-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb, 0, 0, 0), 0.1);
+}
+
+.verify-email__email-input:disabled {
+  opacity: 0.6;
+}

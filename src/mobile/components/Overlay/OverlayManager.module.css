@@ -1,0 +1,18 @@
+.overlay-root {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.overlay-root__page {
+  position: absolute;
+  inset: 0;
+  background: var(--app-background, var(--c-black));
+  pointer-events: auto;
+  overflow: auto;
+}
+
+.overlay-root__page--hidden {
+  visibility: hidden;
+}

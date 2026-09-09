@@ -1,0 +1,163 @@
+/* SimpleSheet.module.css - Handmade bottom sheet styles */
+
+/* Container - full screen overlay */
+.simple-sheet__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  pointer-events: none;
+  /* Prevent body scroll when sheet is open */
+  overscroll-behavior: contain;
+}
+
+/* Backdrop overlay */
+.simple-sheet__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* The actual sheet */
+.simple-sheet__sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 1px 2px 0 rgba(var(--rgb-black), 0.05);
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 95dvh;
+  min-height: 60dvh;
+  overflow: hidden;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+/* Content area - scrollable */
+.simple-sheet__content-area {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  /* Prevent pull-to-refresh when at top */
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Header styles - entire header is draggable */
+.sheetHeader {
+  /* APPEARANCE */
+  border-bottom: 1px solid var(--c-gray-200, var(--c-gray-200));
+  border-radius: 16px 16px 0 0;
+  background: var(--c-white, var(--c-white));
+
+  /* INNER-LAYOUT */
+  padding: 0 16px 16px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 12px;
+  flex-shrink: 0;
+
+  /* INTERACTIVITY - entire header is draggable */
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  }
+
+.sheetHeader:active {
+  }
+
+.sheetHandle {
+  /* SELF-LAYOUT */
+  width: 50px;
+  height: 4px;
+  margin-top: 16px;
+  justify-self: center;
+  align-self: start;
+
+  /* APPEARANCE */
+  border: 0;
+  border-radius: 9999px;
+  background-color: var(--c-gray-200);
+
+  /* No touch handling needed - parent header handles it */
+}
+
+.peakInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.peakNames {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.peakNameRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.peakName {
+  color: var(--c-gray-900, #2c3e50);
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  /* No ellipsis here: allow full name, can wrap if needed */
+  overflow: visible;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+.peakNameEn {
+  color: var(--c-gray-600, var(--c-gray-600));
+  opacity: 0.8;
+  font-style: italic;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.elevationInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.elevationIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Desktop styles */
+@media (min-width: 800px) {
+  .simple-sheet__sheet {
+    /* APPEARANCE */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 24px;
+  }
+}
+

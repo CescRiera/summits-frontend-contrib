@@ -1,0 +1,17 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.controls__search {
+  width: 100%;
+}
+
+.controls__row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  width: 100%;
+}

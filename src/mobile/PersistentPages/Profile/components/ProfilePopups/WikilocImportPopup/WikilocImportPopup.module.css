@@ -1,0 +1,196 @@
+.wikiloc-popup__content {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.wikiloc-popup__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wikiloc-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.wikiloc-popup__description {
+  color: #64748b;
+  margin: 0;
+  text-align: left;
+}
+
+.wikiloc-popup__search-section {
+  margin-bottom: 16px;
+}
+
+.wikiloc-popup__search-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.wikiloc-popup__input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 8px;
+  color: #0f172a;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.wikiloc-popup__input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.wikiloc-popup__input:disabled {
+  opacity: 0.5;
+}
+
+.wikiloc-popup__search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-accent-dark);
+  background: var(--color-accent);
+  color: var(--color-primary);
+  transition: all 0.2s ease;
+}
+
+.wikiloc-popup__search-btn:disabled {
+  opacity: 0.5;
+}
+
+.wikiloc-popup__selected-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 8px;
+  color: #0f172a;
+}
+
+.wikiloc-popup__clear-btn {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  padding: 4px 8px;
+}
+
+.wikiloc-popup__results {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wikiloc-popup__results-label {
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.wikiloc-popup__user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: white;
+  transition: background 0.15s ease;
+  color: #0f172a;
+  text-align: left;
+}
+
+.wikiloc-popup__user-item:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.wikiloc-popup__trails {
+  color: #64748b;
+}
+
+.wikiloc-popup__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.05);
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.wikiloc-popup__status-icon {
+  flex-shrink: 0;
+}
+
+.wikiloc-popup__status-icon--success {
+  flex-shrink: 0;
+  color: #16a34a;
+}
+
+.wikiloc-popup__status-icon--error {
+  flex-shrink: 0;
+  color: #dc2626;
+}
+
+.wikiloc-popup__progress {
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  color: #64748b;
+  text-align: center;
+}
+
+.wikiloc-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.wikiloc-popup__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-accent-dark);
+  background: var(--color-accent);
+  color: var(--color-primary);
+  transition: all 0.2s ease;
+  min-width: 100px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.wikiloc-popup__button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.wikiloc-popup__button--secondary {
+  border: 1.5px solid rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+}
+
+.wikiloc-popup__button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+@media (max-width: 375px) {
+  .wikiloc-popup__content {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .wikiloc-popup__actions {
+    flex-direction: column;
+  }
+}

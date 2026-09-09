@@ -1,0 +1,5 @@
+---
+alwaysApply: false
+---
+
+**Do not add any `:hover` pseudo-class** styles anywhere in the repo. **Do not use `cursor: pointer`** or any `cursor` CSS property anywhere.

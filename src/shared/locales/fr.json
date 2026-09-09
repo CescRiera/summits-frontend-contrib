@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "Appliquer",
+    "details": "Détails",
+    "filters": "Filtres",
+    "seeRanking": "Voir le classement",
+    "time": {
+      "years": "années",
+      "days": "jours",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes"
+    },
+    "loading": "Chargement...",
+    "loadingRouteData": "Nous chargeons actuellement les données de votre itinéraire, cela peut prendre quelques secondes",
+    "error": "Erreur",
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Éditer",
+    "list": "Liste",
+    "map": "Carte",
+    "close": "Fermer",
+    "back": "Retour",
+    "goBack": "Retourner",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "searching": "Recherche...",
+    "clear": "Effacer",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "refresh": "Actualiser",
+    "min": "Min",
+    "max": "Max",
+    "country": "Pays",
+    "region": "Région",
+    "location": "Emplacement",
+    "chooseCountry": "Choisir un pays",
+    "chooseRegion": "Choisir une région",
+    "allCountries": "Tous les pays",
+    "allRegions": "Toutes les régions",
+    "seeAll": "Voir tout",
+    "seeOnMap": "Voir carte",
+    "showLess": "Afficher moins",
+    "moreInfo": "Plus d'infos",
+    "create": "Créer",
+    "follow": "Suivre",
+    "following": "Suivi",
+    "join": "Rejoindre",
+    "leave": "Quitter",
+    "seeMore": "Voir plus",
+    "select": "Sélectionner",
+    "send": "Envoyer",
+    "timeUnits": {
+      "yearShort": "a",
+      "dayShort": "j",
+      "hourShort": "h",
+      "minuteShort": "m",
+      "secondShort": "s"
+    },
+    "ranking": "Classement",
+    "share": "Share",
+    "deleting": "Suppression...",
+    "seeLess": "Voir moins"
+  },
+  "desktopWarning": {
+    "title": "Téléchargez la version mobile de Summits",
+    "subtitle": "Profitez de la version mobile de summits, scannez le code qr et suivez les étapes que vous verrez sur la page d'accueil pour télécharger l'application !",
+    "scanQR": "Scannez ce code QR avec votre appareil mobile",
+    "mobileSubtitle": "Scannez le code QR correspondant ci-dessous selon le système d'exploitation de votre téléphone et téléchargez l'application sur Android ou iOS pour suivre vos sommets en déplacement !"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "Connectez-vous pour rejoindre un club.",
+      "title": "Connexion requise",
+      "message": "Veuillez vous connecter pour voir vos sommets personnels sur la carte.",
+      "viewCompletedPeaks": "Connectez-vous pour voir vos sommets complétés",
+      "filterPeaks": "Veuillez vous connecter pour filtrer les sommets par statut de finalisation.",
+      "sortByDate": "Veuillez vous connecter pour trier les sommets par date de finalisation.",
+      "myPeaks": "Veuillez vous connecter pour voir vos sommets personnels.",
+      "myRoutes": "Veuillez vous connecter pour voir vos itinéraires personnels.",
+      "followingMode": "Veuillez vous connecter pour voir l'activité récente des utilisateurs que vous suivez.",
+      "savedPeaks": "Veuillez vous connecter pour voir vos sommets sauvegardés.",
+      "savedShelters": "Veuillez vous connecter pour voir vos abris enregistrés.",
+      "followUser": "Veuillez vous connecter pour suivre des utilisateurs et voir leurs profils.",
+      "joinChallenge": "Veuillez vous connecter pour rejoindre ou suivre un défi.",
+      "cancel": "Annuler",
+      "login": "Se connecter"
+    },
+    "welcome": "Bienvenue sur Summits",
+    "signIn": "Connectez-vous à votre compte",
+    "email": "E-mail",
+    "name": "Nom",
+    "password": "Mot de passe",
+    "signInButton": "Se connecter",
+    "noAccount": "Pas de compte ?",
+    "signUp": "S'inscrire",
+    "signUpOrLogin": "S'inscrire / Se connecter",
+    "createAccount": "Créer un compte",
+    "confirmPassword": "Confirmez le mot de passe",
+    "signUpButton": "Créer un compte",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "fillAllFields": "Veuillez remplir tous les champs",
+    "loginFailed": "Échec de la connexion",
+    "registrationFailed": "Échec de l'inscription",
+    "passwordsNotMatch": "Les mots de passe ne correspondent pas",
+    "passwordMin": "Le mot de passe doit contenir au moins 6 caractères.",
+    "acceptTerms": "J'accepte les",
+    "termsOfService": "conditions générales",
+    "and": "et",
+    "privacyPolicy": "politique de confidentialité",
+    "acceptTermsRequired": "Vous devez accepter les conditions générales",
+    "receiveNotificationsOnPeaks": "Recevoir des notifications lors de l'ascension de sommets",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "Compte créé avec succès ! Veuillez vous connecter.",
+    "stravaRegisteredSuccess": "Votre compte a été enregistré avec Strava. Veuillez vous connecter.",
+    "backToSelection": "Retour à la sélection",
+    "backToLogin": "Retour à la connexion",
+    "emailVerification": {
+      "title": "Vérifiez votre e-mail",
+      "message": "Nous avons envoyé un code de vérification à 6 chiffres à votre adresse e-mail. Veuillez vérifier votre boîte de réception et saisir le code ci-dessous.",
+      "messageWithEmail": "Nous avons envoyé un code de vérification à 6 chiffres à {email}. Veuillez vérifier votre boîte de réception et saisir le code ci-dessous.",
+      "openGmail": "Ouvrir Gmail",
+      "success": "Votre e-mail a été vérifié avec succès ! Votre compte est maintenant prêt à être utilisé.",
+      "authenticated": "Votre compte a été authentifié. Vous pouvez maintenant vous connecter.",
+      "verifying": "Vérification...",
+      "error": "La vérification de l'e-mail a échoué. Le code peut avoir expiré ou être invalide. Veuillez réessayer ou contacter le support.",
+      "codePlaceholder": "Saisir le code à 6 chiffres",
+      "verifyButton": "Vérifier l'e-mail",
+      "verifyingButton": "Vérification...",
+      "resendCode": "Renvoyer le code",
+      "resendSuccess": "Le code de vérification a été renvoyé à votre e-mail.",
+      "codeError": "Code de vérification invalide ou expiré",
+      "codeRequired": "Veuillez saisir le code à 6 chiffres",
+      "link": "Vérifier l'e-mail ?"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "link": "Mot de passe oublié ?",
+      "instructions": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "sendEmail": "Envoyer le lien de réinitialisation",
+      "success": "Si un compte avec cet e-mail existe, nous vous avons envoyé un lien de réinitialisation de mot de passe. Veuillez vérifier votre boîte de réception.",
+      "error": "Échec de l'envoi de l'e-mail de réinitialisation du mot de passe. Veuillez réessayer."
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le mot de passe",
+      "instructions": "Entrez votre nouveau mot de passe ci-dessous. Assurez-vous qu'il contient au moins 6 caractères.",
+      "messageWithEmail": "Nous avons envoyé un code à {email}",
+      "codePlaceholder": "Code de vérification",
+      "codeRequired": "Le code est requis",
+      "emailRequired": "L'email est requis",
+      "submit": "Réinitialiser le mot de passe",
+      "successTitle": "Mot de passe réinitialisé avec succès",
+      "successMessage": "Votre mot de passe a été réinitialisé avec succès. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.",
+      "error": "Échec de la réinitialisation du mot de passe. Le lien peut avoir expiré ou être invalide. Veuillez demander un nouveau lien de réinitialisation de mot de passe.",
+      "resendCode": "Renvoyer le code",
+      "resendSuccess": "Code renvoyé",
+      "resendError": "Erreur lors du renvoi",
+      "invalidToken": "Token de réinitialisation invalide ou manquant. Veuillez demander un nouveau lien de réinitialisation de mot de passe."
+    },
+    "loginHint": "Bon retour ! Entrez vos identifiants pour accéder à votre profil.",
+    "goToLogin": "Aller à la Connexion",
+    "welcomeMessage": "Veuillez vous connecter ou créer un nouveau compte pour accéder à votre profil et synchroniser vos activités.",
+    "noAccountQuestion": "Vous n'avez pas de compte ?",
+    "hasAccountQuestion": "Vous avez déjà un compte ?",
+    "or": "ou",
+    "orSignInWith": "ou se connecter avec",
+    "loginWithStrava": "Se connecter avec Strava",
+    "loginWithSuunto": "Se connecter avec Suunto",
+    "chooseProvider": "Choisissez un fournisseur pour créer votre compte :",
+    "backToProviderSelection": "Retour à la sélection du fournisseur",
+    "wikiloc": {
+      "enterUsername": "Veuillez entrer un utilisateur Wikiloc à rechercher.",
+      "noUsers": "Aucun utilisateur Wikiloc trouvé avec ce nom.",
+      "searchFailed": "Échec de la recherche d'utilisateurs Wikiloc.",
+      "selectUserToContinue": "Sélectionnez votre utilisateur pour continuer",
+      "trails": "Itinéraires",
+      "selected": "Sélectionné"
+    },
+    "register": {
+      "title": "Créez votre compte",
+      "subtitle": "Pour synchroniser vos sommets, créez votre compte avec Strava, Suunto, Garmin Connect ou Wikiloc. Je recommande Strava ou Suunto car ce sont les options les plus rapides et les plus simples.",
+      "choosePlatform": "Choisissez votre plateforme",
+      "noPlatformOption": "Je n'ai aucun de ces comptes",
+      "registerWith": "S'inscrire avec",
+      "connectingToWikiloc": {
+        "before": "J'essaie de contacter Wikiloc pour rendre possible l'enregistrement d'un compte",
+        "appName": "Summits",
+        "after": "en utilisant votre compte Wikiloc"
+      },
+      "connectingToStrava": {
+        "before": "J'essaie de contacter Strava pour rendre possible l'enregistrement d'un compte",
+        "appName": "Summits",
+        "after": "en utilisant votre compte Strava"
+      },
+      "providerDescription": {
+        "wikiloc": "Synchronisez avec Wikiloc pour suivre vos progrès sur les sommets",
+        "strava": "Synchronisez avec Strava pour suivre vos progrès sur les sommets",
+        "garmin": "Synchronisez avec Garmin Connect pour suivre vos progrès sur les sommets",
+        "default": "Créez un compte Summits avec votre e-mail et votre mot de passe"
+      },
+      "default": {
+        "label": "E-mail",
+        "title": "Créer un compte Summits"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "S'inscrire avec Wikiloc",
+        "searchPlaceholder": "Recherchez votre nom d'utilisateur Wikiloc",
+        "enterUsername": "Veuillez entrer un utilisateur Wikiloc à rechercher.",
+        "noUsers": "Aucun utilisateur Wikiloc trouvé avec ce nom.",
+        "searchFailed": "Échec de la recherche d'utilisateurs Wikiloc.",
+        "warning": "La récupération des itinéraires depuis Wikiloc est BEAUCOUP plus lente qu'avec Strava, Garmin ou Suunto. Si vous avez un compte chez l'un d'eux, utilisez-le !",
+        "trails": "Itinéraires",
+        "selected": "Sélectionné"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "Inscription avec Strava",
+        "connecting": "Connexion à Strava...",
+        "submit": "S'inscrire avec Strava",
+        "warning": "Strava a une limite sur le nombre de routes qui peuvent être synchronisées. Si vous avez un compte Garmin avec vos routes, veuillez considérer l'utiliser pour de meilleures capacités de synchronisation."
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "Inscription avec Garmin",
+        "connecting": "Inscription avec Garmin Connect...",
+        "submit": "S'inscrire avec Garmin Connect",
+        "warning": "Garmin Connect présente certaines limitations. Si vous ne voyez pas toutes les activités, vous pouvez me contacter pour obtenir de l'aide."
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "Inscription avec Suunto",
+        "connecting": "Connexion à Suunto...",
+        "submit": "Continuer avec Suunto",
+        "warning": "Connectez votre compte Suunto pour synchroniser vos activités dans Summits."
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "Une erreur s'est produite lors de l'inscription avec Strava. Veuillez réessayer.",
+        "emailAlreadyExists": "Un compte avec cet e-mail existe déjà. Veuillez utiliser un e-mail différent ou vous connecter.",
+        "accountAlreadyLinked": "Ce compte Strava est déjà lié à un autre compte.",
+        "registrationFailed": "L'inscription a échoué. Veuillez réessayer.",
+        "emailCheckFailed": "La vérification de l'e-mail a échoué. Veuillez réessayer.",
+        "internalError": "Une erreur interne s'est produite. Veuillez réessayer plus tard."
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "Ce compte Garmin est déjà lié à un autre compte.",
+        "emailCheckFailed": "La vérification de l'e-mail a échoué. Veuillez réessayer.",
+        "generic": "Une erreur s'est produite lors de l'inscription avec Garmin. Veuillez réessayer.",
+        "internalError": "Une erreur interne s'est produite. Veuillez réessayer plus tard.",
+        "registrationFailed": "L'inscription a échoué. Veuillez réessayer."
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "Une erreur s'est produite lors de la connexion. Veuillez réessayer.",
+        "timeout": "La connexion a expiré. Veuillez réessayer."
+      }
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "discover": "Découvrir",
+    "leaderboard": "Défis",
+    "map": "Carte",
+    "profile": "Profil",
+    "contact": "Contact",
+    "userProfile": "Profil utilisateur",
+    "routeDetails": "Détails de l'itinéraire",
+    "peakDetails": "Détails du sommet"
+  },
+  "contact": {
+    "getInTouchWithMe": "ENTRER EN CONTACT AVEC LE DÉVELOPPEUR",
+    "phoneNumber": "Numéro de Téléphone",
+    "emailAddress": "Adresse Email",
+    "emailPlaceholder": "Email"
+  },
+  "main": {
+    "totalPeaks": "Total des sommets",
+    "totalAscents": "Total des ascensions",
+    "scrapingMessage": "🔄 Chargement des sommets...",
+    "failedToRefresh": "Échec de l'actualisation",
+    "completedPeaksInList": "Vous avez complété {completed} sur {total} sommets de cette liste.",
+    "allPeaks": "Tous les sommets",
+    "loading": "Chargement...",
+    "completed": "Terminé",
+    "seeMore": "Voir plus",
+    "seeLess": "Voir moins",
+    "myPeaks": "Tes sommets",
+    "swipeProgressHint": "Balayez pour voir votre progression",
+    "swipeDiscoverHint": "Balayez pour découvrir des listes",
+    "yourHighestPeaks": "Vos plus hauts sommets",
+    "yourHighestPeaksDesc": "Les plus hautes montagnes conquises",
+    "communityHighestPeaks": "Sommets les plus hauts de la communauté",
+    "communityHighestPeaksDesc": "Les sommets impressionnants atteints par la communauté",
+    "loadNewPeaks": "Charger de nouveaux Sommets",
+    "refreshUserData": "Actualiser les données utilisateur",
+    "scrapingInProgress": "Cela peut prendre du temps si vous avez beaucoup d'itinéraires, n'hésitez pas à explorer le reste de l'application en attendant !",
+    "allPeaksList": {
+      "nameLoggedIn": "Votre trajectoire",
+      "nameGuest": "Découvrez les Sommets du Monde",
+      "descriptionLoggedIn": "Chaque sommet que vous atteignez laisse une marque durable dans votre parcours. Suivez vos ascensions à travers des chaînes emblématiques, de l'Himalaya aux Alpes — vous surpassant un pas à la fois.",
+      "descriptionGuest": "De l'Everest au Mont Blanc, explorez certaines des montagnes les plus impressionnantes du monde. Rejoignez des milliers d'alpinistes qui embrassent le défi et l'aventure de chaque ascension — car ce que nous faisons dans la vie résonne dans l'éternité."
+    }
+  },
+  "peakDetails": {
+    "description": "Description",
+    "searchRoutesFor": "Rechercher des itinéraires pour",
+    "findHikingRoutesOnWikiloc": "Trouvez des itinéraires de randonnée sur Wikiloc",
+    "expand": "Développer",
+    "loadError": "Erreur lors du chargement des détails du sommet"
+  },
+  "peaks": {
+    "count": "sommets",
+    "noPeaksFound": "Aucun sommet trouvé",
+    "peakInfo": "Infos du sommet",
+    "information": "Information",
+    "elevation": "Altitude",
+    "description": "Description",
+    "noDescription": "Aucune description disponible",
+    "noPeaksNearCoordinates": "Aucun sommet proche de ces coordonnées",
+    "images": "Images",
+    "userPeakDescriptionSingle": "Le sommet {name} dans la région {region} de {country} que vous avez gravi le {dates} avec l'itinéraire <b>{routes}</b>.",
+    "userPeakDescriptionMultiple": "Le sommet {name} dans la région {region} de {country} que vous avez gravi à ces dates : {dates} avec ces itinéraires : <b>{routes}</b>."
+  },
+  "map": {
+    "noRoutes": "Aucun itinéraire disponible",
+    "loadingRoutes": "Chargement des itinéraires...",
+    "mapView": "Vue carte",
+    "controls": {
+      "title": "Contrôles de la Carte",
+      "globeView": "Vue Globe 3D",
+      "outdoors": "Extérieur",
+      "satellite": "Satellite",
+      "terrainView": "Terrain 3D"
+    },
+    "visiblePeaks": {
+      "title": "Sommets visibles",
+      "subtitle": "Résultats de la vue et des filtres actuels",
+      "layerLabel": "Couche :",
+      "tilesLayerLabel": "Couche tuiles",
+      "listLayerLabel": "Couche liste",
+      "userLayerLabel": "Votre couche de sommets",
+      "enableHint": "Activez l'interrupteur pour lister les sommets",
+      "empty": "Aucun sommet détecté dans la vue actuelle.",
+      "footer": "Se met à jour lorsque la carte reste immobile pendant 1 seconde.",
+      "loadMore": "Voir {remaining} sommets de plus"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "Parcourir les clubs",
+      "createClub": "Créer un club",
+      "myClubs": "Mes clubs",
+      "browseTitle": "Parcourir les clubs",
+      "joinClub": "Rejoindre le club",
+      "myClubsDescription": "Clubs dont vous êtes membre."
+    },
+    "userProfile": "Profil utilisateur",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "language": "Langue",
+    "about": "À propos",
+    "version": "Version",
+    "statistics": "Statistiques",
+    "savedPeaks": "Sommets Sauvegardés",
+    "yourRoutes": "Vos Itinéraires",
+    "yourPeaks": "Vos Sommets",
+    "yourRoutesWithCount": "Vos {count} itinéraires",
+    "yourPeaksWithCount": "Vos {count} sommets",
+    "savedPeaksWithCount": "Vos {count} sommets sauvegardés",
+    "savedShelters": "Abris enregistrés",
+    "savedSheltersWithCount": "Vos {count} abris enregistrés",
+    "viewYourRoutes": "Voir vos itinéraires",
+    "viewYourPeaks": "Voir vos sommets",
+    "viewAllStats": "Voir toutes mes statistiques",
+    "seeAllSavedPeaks": "Voir tous les sommets sauvegardés",
+    "changeLanguage": "Changer de Langue",
+    "unitSystem": "Système d'unités",
+    "unitSystemMessage": "Sélectionnez votre système d'unités préféré",
+    "metricSystem": "Métrique (km, m)",
+    "imperialSystem": "Impérial (mi, ft)",
+    "helpTutorials": "Aide et Tutoriels",
+    "needHelp": "Besoin d'aide ?",
+    "sendSuggestionsReportErrors": "Envoyer des suggestions / Signaler des erreurs",
+    "contactDeveloper": "Contacter le Développeur",
+    "donate": "Faire un don",
+    "donateQuestion": "Faire un don ?",
+    "donateTitle": "Soutenir Summits",
+    "donateMessage": "Summits est un projet personnel qui ne génère aucun bénéfice et que je finance avec mon propre argent. Toute donation sera appréciée et aidera à améliorer et maintenir l’application. Merci de l’utiliser !",
+    "donateButton": "Faire un don",
+    "donateAmount": "Montant en EUR",
+    "donateAmountPlaceholder": "ex. 5,00",
+    "wikilocImport": "Importer depuis Wikiloc",
+    "wikilocImportTitle": "Importer les itinéraires depuis Wikiloc",
+    "wikilocImportDescription": "Recherchez un profil Wikiloc et importez tous ses itinéraires dans votre compte.",
+    "wikilocImportSearchPlaceholder": "Rechercher un nom d'utilisateur Wikiloc...",
+    "wikilocImportButton": "Importer les itinéraires",
+    "wikilocImportStarted": "Importation lancée ! Vous recevrez des mises à jour via WebSocket.",
+    "wikilocImportQueued": "Vous êtes #{position} dans la file d'attente. Vous recevrez des mises à jour via WebSocket.",
+    "wikilocImportAlreadyInProgress": "L'importation Wikiloc est déjà en cours pour cet utilisateur.",
+    "wikilocImportServerBusy": "Le serveur est occupé. Veuillez réessayer dans quelques minutes.",
+    "wikilocImportCompleted": "Importation terminée ! {count} itinéraires traités.",
+    "wikilocImportError": "L'importation a échoué. Veuillez réessayer.",
+    "wikilocNoUsersFound": "Aucun utilisateur Wikiloc trouvé avec ce nom.",
+    "wikilocSearchFailed": "Échec de la recherche d'utilisateurs Wikiloc.",
+    "wikilocEnterUsername": "Veuillez entrer un nom d'utilisateur Wikiloc pour rechercher.",
+    "wikilocSelectUser": "Sélectionnez un utilisateur dont importer les itinéraires :",
+    "wikilocSelectedUser": "Sélectionné : {name}",
+    "deleteAccount": "Supprimer",
+    "accountSettings": "Paramètres du compte",
+    "nameRequired": "Le nom est requis",
+    "nameTooLong": "Le nom doit comporter 100 caractères ou moins",
+    "nameUpdateFailed": "Échec de la mise à jour du nom",
+    "editName": "Modifier le nom",
+    "saveName": "Enregistrer le nom",
+    "cancelEditName": "Annuler l'édition",
+    "logoutConfirmation": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "languageChangeMessage": "Sélectionnez votre langue préférée",
+    "deleteAccountConfirmation": "Êtes-vous sûr de vouloir supprimer votre compte ? Cette action ne peut pas être annulée.",
+    "contactDeveloperMessage": "Contactez le développeur pour obtenir de l'aide, signaler des erreurs ou poser des questions générales.",
+    "suggestionsMessage": "Partagez vos idées et suggestions pour améliorer l'app.",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Entrez un sujet...",
+    "message": "Message",
+    "messagePlaceholder": "Entrez votre message...",
+    "yourSuggestion": "Votre suggestion",
+    "suggestionPlaceholder": "Partagez vos idées et suggestions...",
+    "sendMessage": "Envoyer",
+    "sendSuggestion": "Envoyer",
+    "suggestionSentSuccessfully": "Suggestion envoyée avec succès !",
+    "messageSentSuccessfully": "Votre message a été envoyé correctement !",
+    "follows": {
+      "followers": "Abonnés",
+      "following": "Abonnements",
+      "peaks": "Sommets",
+      "followRequests": "Demandes d'Abonnement",
+      "noPendingRequests": "Aucune Demande en Attente",
+      "noPendingRequestsMessage": "Vous n'avez aucune demande d'abonnement en attente pour le moment.",
+      "noFollowers": "Aucun Abonné",
+      "noFollowersMessage": "Vous n'avez encore aucun abonné.",
+      "notFollowingAnyone": "N'abonne à Personne",
+      "notFollowingAnyoneMessage": "Vous ne vous abonnez encore à personne.",
+      "accept": "Accepter",
+      "reject": "Refuser",
+      "unfollow": "Ne plus suivre",
+      "loading": "Chargement...",
+      "error": "Erreur de chargement",
+      "pendingRequests": "Demandes en attente"
+    },
+    "notifications": {
+      "notifications": "Notifications",
+      "notificationsEnabled": "Activées",
+      "notificationsDisabled": "Désactivées",
+      "notificationsPermissionDenied": "Permission refusée",
+      "notificationsNotSupported": "Non pris en charge",
+      "waitingForPermission": "En attente d'autorisation"
+    },
+    "privacy": {
+      "profileStatus": "Statut du Profil",
+      "public": "Public",
+      "private": "Privé"
+    },
+    "challenges": {
+      "joinChallenge": "Rejoindre le Défi",
+      "createChallenge": "Créer un Défi",
+      "editMyChallenges": "Modifier mes défis",
+      "browseTitle": "Parcourir les Défis",
+      "follow": "Suivre",
+      "following": "Abonné",
+      "unfollowChallenge": "Ne plus suivre le Défi",
+      "editChallenge": "Modifier le Défi",
+      "leave": "Quitter le Défi",
+      "leaveConfirmTitle": "Quitter le Défi",
+      "leaveConfirmMessage": "Voulez-vous quitter le défi '{name}' ? Vos progrès ne seront pas perdus et vous pourrez le rejoindre à tout moment.",
+      "noCreatedChallenges": "Vous n'avez pas encore créé de défi."
+    }
+  },
+  "externalProfile": {
+    "userClubs": "Clubs de {userName}",
+    "unknownUser": "Utilisateur inconnu",
+    "userNotFound": "Utilisateur Non Trouvé",
+    "userNotFoundMessage": "L'utilisateur que vous recherchez n'existe pas ou a été supprimé.",
+    "follow": "Suivre",
+    "following": "Suivi",
+    "privateProfile": "Profil Privé",
+    "privateProfileMessage": "Cet utilisateur a configuré son profil comme privé. Suivez-le pour voir ses statistiques et son activité.",
+    "rankTitle": "Rang de {userName}",
+    "rankDescription": "Classé <strong>{rank}</strong> sur <strong>{totalUsers}</strong> utilisateurs avec le plus de sommets escaladés",
+    "userPeaks": "Sommets de {userName}",
+    "userRoutes": "Itinéraires de {userName}",
+    "userPeaksWithCount": "Les {count} sommets de {userName}",
+    "userRoutesWithCount": "Les {count} itinéraires de {userName}",
+    "userPeakLists": "Défis de Sommets de {userName}",
+    "peakListProgress": "{completed} / {total} terminé",
+    "performanceOverview": "Aperçu des Performances",
+    "distanceKm": "Distance (km)",
+    "elevationM": "Altitude (m)",
+    "totalTime": "Temps total",
+    "peaksConquered": "Sommets conquis",
+    "routesCompleted": "Itinéraires Complétés",
+    "movingTime": "Temps de Mouvement",
+    "viewStatsTitle": "Voir les Statistiques de {userName}",
+    "viewStatsSubtitle": "Graphiques interactifs et métriques",
+    "requestPending": "Demandé"
+  },
+  "help": {
+    "subtitle": "Apprenez à tirer le meilleur parti de Summits",
+    "faq": {
+      "installApp": {
+        "question": "Comment puis-je installer l'application ?",
+        "answer": "Pour installer l'application Summits, cela dépend de votre système d'exploitation (iOS ou Android) ou de la version du navigateur que vous utilisez.\n\nCi-dessous vous trouverez le bouton d'installation et les étapes selon votre appareil (comme nous le faisons sur la page d'accueil, mais avec un design plus simple)"
+      },
+      "newPeaks": {
+        "question": "Les sommets des nouvelles routes n'apparaissent pas",
+        "answer": "Si les sommets les plus récents de vos itinéraires n'apparaissent pas, essayez d'utiliser le bouton sur l'écran d'accueil (en haut à droite) qui dit \"Charger plus de sommets\".\n\nSi cela ne fonctionne pas ou s'il y a une erreur, vous pouvez me contacter depuis votre profil, dans la section \"Contacter le développeur\"."
+      },
+      "incorrectPeaks": {
+        "question": "Il apparaît que j'ai gravi des sommets que je n'ai pas vraiment gravis (ou vice versa)",
+        "answer": "Pour calculer vos sommets, l'application vérifie les coordonnées de vos itinéraires et détermine les points par lesquels vous êtes passé.\n\nEn raison de la faible précision de l'altitude, il n'est pas toujours possible d'établir avec certitude si vous avez gravi un sommet ou si vous êtes simplement passé à proximité ou en dessous. Cela peut arriver particulièrement dans les zones à forte densité de sommets, comme Montserrat, où il peut sembler que vous ayez gravi des sommets que vous n'avez pas réellement escaladés.\n\nDans le cas contraire —si vous pensez avoir gravi un sommet mais qu'il n'apparaît pas—, il est possible que le GPS ait échoué ou ait enregistré l'itinéraire avec une petite marge d'erreur. Je vous recommande de visualiser votre itinéraire sur la carte et de vérifier la ligne que le GPS a enregistrée.\n\nSi vous pensez toujours que c'est une erreur, vous pouvez me contacter depuis la section \"Contacter le développeur\" de votre profil."
+      },
+      "missingRoutes": {
+        "question": "Tous mes itinéraires ou nouveaux itinéraires que j'ai faits n'apparaissent pas",
+        "answer": "Pour éviter d'analyser des itinéraires inutilement, Summits n'analyse que les itinéraires de catégories spécifiques liées aux activités de montagne (randonnée, alpinisme, trail running...). De cette façon, on évite une grande charge d'itinéraires et on n'analyse pas ceux qui n'ont très probablement aucune activité de montagne comme par exemple : natation, course, vélo, gym...\n\nPour vous assurer que vos itinéraires seront analysés, vérifiez qu'ils ont un type valide. Si vous avez un problème lié à cela, vous pouvez me contacter dans la section \"Contacter le développeur\"."
+      },
+      "historicalData": {
+        "question": "Je ne peux pas voir mes données historiques (sommets faits sur des itinéraires passés)",
+        "answer": "Il y a quelques problèmes avec les données de rétroaction. Veuillez utiliser le formulaire ci-dessous pour contacter le développeur."
+      }
+    },
+    "mapNavigation": {
+      "title": "Navigation sur la carte",
+      "pinchZoom": "Pincez pour zoomer",
+      "dragPan": "Faites glisser pour vous déplacer",
+      "tapPeak": "Appuyez sur les sommets pour voir les détails",
+      "layers": "Changez de calque"
+    },
+    "userFeatures": {
+      "title": "Fonctionnalités utilisateur",
+      "savedPeaks": "Enregistrez vos sommets favoris",
+      "routes": "Créez et gérez vos itinéraires",
+      "statistics": "Suivez vos progrès et réalisations",
+      "profile": "Gérez votre compte et préférences"
+    },
+    "leaderboard": {
+      "title": "Classement",
+      "ranking": "Affrontez d'autres grimpeurs",
+      "categories": "Voir les classements par catégories",
+      "filters": "Filtrer les résultats",
+      "achievements": "Débloquez des succès"
+    },
+    "settings": {
+      "title": "Paramètres et Préférences",
+      "language": "Changer la langue",
+      "notifications": "Gérer les notifications",
+      "privacy": "Contrôler la confidentialité",
+      "data": "Gérer les données et le compte"
+    }
+  },
+  "errors": {
+    "networkError": "Erreur réseau",
+    "serverError": "Erreur du serveur",
+    "timeoutError": "Délai d'attente dépassé",
+    "unknownError": "Erreur inconnue"
+  },
+  "search": {
+    "searchPeaks": "Rechercher Sommets",
+    "searching": "Recherche...",
+    "searchForPeaks": "Rechercher des sommets, des utilisateurs, des régions...",
+    "searchLabel": "Rechercher",
+    "closeSearch": "Fermer la recherche",
+    "elevationIcon": "Icône d'élévation",
+    "peaks": "sommets",
+    "noPeaksOrUsersFound": "Aucun sommet ou utilisateur trouvé pour \"{query}\"",
+    "noPeaksFound": "Aucun sommet trouvé pour \"{query}\"",
+    "searchPeaksAndUsers": "Rechercher des sommets, des utilisateurs, des régions...",
+    "discoverPeaksAndUsers": "Découvrez des sommets incroyables et connectez-vous avec d'autres grimpeurs. Tapez un nom de montagne, région, pays ou nom d'utilisateur pour commencer.",
+    "discoverPeaks": "Découvrez des sommets incroyables du monde entier. Tapez un nom de montagne, région ou pays pour commencer.",
+    "recentSearches": "Recherches Récentes",
+    "clearRecentSearches": "Effacer les recherches récentes",
+    "clearSearch": "Effacer la recherche"
+  },
+  "peaksList": {
+    "yourPeaks": "Vos sommets",
+    "noPeaksMatchingSearch": "Aucun sommet correspondant",
+    "noPeaksInRoutes": "Aucun sommet trouvé dans vos itinéraires",
+    "loadingPeaksData": "Chargement des données...",
+    "loadingPeaksMetadata": "Chargement des métadonnées...",
+    "noPeaksDataAvailable": "Aucune donnée disponible"
+  },
+  "gallery": {
+    "media": "Média",
+    "noMedia": "Aucun média",
+    "videoError": "Erreur vidéo",
+    "photos": "Photos",
+    "videos": "Vidéos",
+    "video": "Vidéo",
+    "photo": "Photo",
+    "openVideoMessage": "Ouvrir la vidéo",
+    "openVideo": "Ouvrir",
+    "watchVideo": "Regarder la vidéo",
+    "viewOnPexels": "Voir sur Pexels",
+    "addImage": "Ajouter une image",
+    "addImageSuccess": "Votre image a été soumise pour examen. Elle apparaîtra une fois approuvée.",
+    "addImageError": "Échec de l'ajout de l'image",
+    "replaceImage": "Remplacer l'image"
+  },
+  "filters": {
+    "filters": "Filtres",
+    "altitude": "Altitude",
+    "content": "Contenu",
+    "shelterType": "Type de refuge",
+    "modeAll": "Tout",
+    "modePeaks": "Sommets",
+    "modeShelters": "Refuges",
+    "all": "Tout",
+    "location": "Emplacement",
+    "clear": "Effacer les Filtres",
+    "showFilters": "Afficher les Filtres",
+    "hideFilters": "Masquer les Filtres",
+    "filterByElevation": "Filtrer par élévation",
+    "nearbyPeaks": "Sommets à proximité",
+    "currentFilter": "Filtre actuel",
+    "choosePeakList": "Choisir un défi",
+    "chooseListOfSummits": "Choisir un défi",
+    "yourPeaks": "Vos sommets"
+  },
+  "leaderboard": {
+    "clubsTab": "Clubs",
+    "browseClubs": "Parcourir les clubs",
+    "totalClubs": "Clubs",
+    "totalCountries": "Pays",
+    "exploreClubs": "Explorer les clubs",
+    "clubsFilterPrefix": "Les clubs avec...",
+    "rank": "Rang",
+    "club": "Club",
+    "errorLoadingClubs": "Échec du chargement du classement des clubs.",
+    "noClubsFound": "Aucun club trouvé dans cette catégorie.",
+    "clubsFilters": {
+      "most_users": "le plus de membres",
+      "most_peaks": "plus de sommets",
+      "most_distance": "le plus de distance",
+      "most_elevation": "le plus de dénivelé",
+      "most_time": "le plus de temps",
+      "most_active_last_30d": "le plus actif (30j)",
+      "newest": "Plus récents"
+    },
+    "metrics": {
+      "member_count": "Membres",
+      "distinct_peak_count": "Sommets",
+      "total_distance_km": "Distance",
+      "total_elevation_gain": "Dénivelé",
+      "total_moving_time": "Temps"
+    },
+    "clubsCategories": {
+      "mostPeaks": "Plus de sommets",
+      "mostDistance": "Le plus de distance",
+      "mostElevation": "Le plus de dénivelé",
+      "mostTime": "Le plus de temps",
+      "mostUsers": "Le plus de membres"
+    },
+    "exploreChallenges": "Explorer les défis",
+    "noFollowing": "Vous ne suivez encore personne.",
+    "title": "Défis",
+    "peaksTab": "Pics",
+    "usersTab": "Utilisateurs",
+    "listsTab": "Défis",
+    "worldChallengeTab": "Défi Mondial",
+    "userChallengesTab": "Défis des Utilisateurs",
+    "worldTab": "Monde",
+    "forYouTab": "Pour vous",
+    "totalWorldPeaks": "Pics totaux du monde",
+    "communityCompleted": "Complétés par la communauté",
+    "youCompleted": "Complétés par vous",
+    "shortTotal": "Total",
+    "shortCommunity": "Communauté",
+    "shortMe": "Toi",
+    "shortExpand": "Agrandir",
+    "shortMinimize": "Fermer",
+    "sortByHighest": "Pics les plus hauts",
+    "sortByContributors": "Meilleurs contributeurs",
+    "expandMap": "Agrandir la carte",
+    "seeMoreAboutList": "Voir plus sur ce défi",
+    "sortBy": "Trier par",
+    "activity": "Activité",
+    "allActivities": "Toutes les activités",
+    "distance": "Distance",
+    "elevation": "Élévation",
+    "routes": "Itinéraires",
+    "peaks": "Pics",
+    "peak": "Pic",
+    "time": "Temps",
+    "climbedBy": "Escaladé par",
+    "seeAll": "Voir tout",
+    "loadMorePeaks": "Charger plus",
+    "loadMoreUsers": "Charger plus d'utilisateurs",
+    "loading": "Chargement...",
+    "distanceChampion": "Champion de distance",
+    "elevationMaster": "Maître du dénivelé",
+    "routeExplorer": "Explorateur d'itinéraires",
+    "peakConqueror": "Conquérant de sommets",
+    "enduranceKing": "Roi de l'endurance",
+    "topPerformer": "Meilleure performance",
+    "listChampion": "Champion du défi",
+    "peakListParticipant": "Participant au Défi",
+    "badges": {
+      "distanceChampion": "Champion de distance",
+      "elevationMaster": "Maître du dénivelé",
+      "routeExplorer": "Explorateur d'itinéraires",
+      "peakConqueror": "Conquérant de sommets",
+      "enduranceKing": "Roi de l'endurance",
+      "topPerformer": "Meilleure performance"
+    },
+    "filters": {
+      "sortBy": "Trier par",
+      "activity": "Activité"
+    },
+    "completed": "Complété",
+    "progress": "Progression",
+    "hours": "Heures",
+    "selectList": "Sélectionner Défi :",
+    "participants": "participants",
+    "peakLists": "Classement des Défis",
+    "peakListsDescription": "Affrontez-vous sur divers défis",
+    "errorLoadingLists": "Échec du chargement des défis",
+    "noParticipants": "Aucun participant dans ce défi pour le moment. Soyez le premier à rejoindre !",
+    "topPerformers": "Meilleures performances",
+    "allRankings": "Tous les classements",
+    "noListSelected": "Sélectionnez un défi pour voir les classements",
+    "noMorePeaks": "Aucun sommet supplémentaire à charger",
+    "noUsersFound": "Aucun utilisateur trouvé",
+    "searchLocationPlaceholder": "Rechercher un pays ou une région",
+    "noLocationsFound": "Aucun pays ou région trouvé pour \"{query}\"",
+    "locationSearchLabel": "Rechercher un lieu",
+    "total": "Total",
+    "user": "Utilisateur",
+    "peakList": "Défi",
+    "tryAgain": "Réessayer",
+    "elevationGain": "D.É.",
+    "climbers": "Grimpeurs",
+    "topClimber": "Meilleur grimpeur",
+    "unknown": "Inconnu",
+    "notAvailable": "-",
+    "more": "de plus",
+    "location": "Emplacement",
+    "uniqueClimbers": "Grimpeurs uniques",
+    "description": "Un défi communautaire qui vous permet de voir combien de sommets ont été gravis dans le monde entier, dans votre pays ou votre région, tout en suivant vos propres contributions.",
+    "errorLoadingUsers": "Échec du chargement des utilisateurs",
+    "onlyMyPeaks": "Seulement mes sommets",
+    "community": "Communauté",
+    "you": "Vous",
+    "inPastYear": "en {year} ",
+    "inYear": "en {year}"
+  },
+  "landing": {
+    "subtitle": "Suis tes sommets, explore ceux de la communauté et découvre-en de nouveaux !",
+    "description": "De l'Everest au Mont Blanc, explorez certaines des montagnes les plus impressionnantes du monde. Rejoignez des milliers d'alpinistes qui embrassent le défi et l'aventure de chaque ascension — car ce que nous faisons dans la vie résonne dans l'éternité.",
+    "loginPrompt": "Aller plus loin ?",
+    "wikilocText": "Inscrivez-vous avec votre compte Wikiloc, Strava, Garmin ou Suunto pour voir quels sommets vous avez escaladés dans tous vos itinéraires !",
+    "startExploring": "Explorer",
+    "forFullExperience": "Pour la meilleure expérience :",
+    "home": "Accueil",
+    "explore": "Découvrir",
+    "map": "Carte",
+    "leaderboards": "Défis",
+    "signIn": "Se connecter",
+    "navIntro": "Utilisez ces boutons pour explorer !",
+    "desktopWarning": {
+      "title": "Summits fonctionne mieux sur mobile",
+      "subtitle": "Pour l'expérience complète, téléchargez notre application mobile."
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "Vos records",
+    "personalClimbingAchievements": "Réalisations personnelles d'escalade",
+    "seeAll": "Voir tout",
+    "highestPeak": "Pic le plus haut",
+    "ascent": "ascension",
+    "ascents": "ascensions",
+    "otherAchievements": "Autres réalisations",
+    "viewPeak": "Voir le pic",
+    "emptyTitle": "Commencez votre voyage",
+    "emptySubtitle": "Enregistrez votre première ascension pour voir vos records personnels ici"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "Vos routes les plus difficiles",
+    "mostDemandingChallenges": "Défis les plus exigeants",
+    "seeAll": "Voir tout",
+    "hardestRoute": "Plus Extrême",
+    "elevationGain": "Déniv.",
+    "time": "Temps",
+    "movingTime": "Temps de Mouvement",
+    "distance": "Distance",
+    "emptyTitle": "Commencez votre voyage",
+    "emptySubtitle": "Complétez votre première route pour voir vos défis les plus difficiles ici"
+  },
+  "recentPeaks": {
+    "title": "Pics Récents",
+    "subtitle": "Dernières conquêtes de pics",
+    "filter": {
+      "community": "Communauté",
+      "following": "Abonnements",
+      "user": "Vous"
+    }
+  },
+  "recentRoutes": {
+    "title": "Routes Récentes",
+    "subtitle": "Dernières routes complétées",
+    "elevationGain": "Dénivelé",
+    "time": "Temps",
+    "distance": "Distance",
+    "peaks": "Pics",
+    "filter": {
+      "community": "Communauté",
+      "following": "Abonnements",
+      "user": "Vous"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "Les statistiques sont masquées pour les utilisateurs bloqués.",
+    "reportContent": "Signaler le Contenu",
+    "reportUser": "Signaler l'Utilisateur",
+    "blockUser": "Bloquer l'Utilisateur",
+    "unblockUser": "Débloquer l'Utilisateur",
+    "userBlocked": "Utilisateur Bloqué",
+    "contentReported": "Contenu Signalé",
+    "userReported": "Utilisateur Signalé",
+    "actionCompleted": "Action Terminée",
+    "userBlockedMessage": "Vous avez bloqué {userName}. Leur contenu sera masqué.",
+    "contentReportedMessage": "Merci pour votre signalement. Nous l'examinerons sous peu.",
+    "userReportedMessage": "Merci d'avoir signalé cet utilisateur. Nous l'examinerons sous peu.",
+    "actionCompletedMessage": "Action terminée avec succès.",
+    "unblockInfo": "Vous pouvez débloquer cet utilisateur à tout moment.",
+    "blockInfo": "Bloquer un utilisateur masquera tout son contenu pour vous.",
+    "blockedUser": "Utilisateur Bloqué",
+    "blockedRoute": "Route Bloquée",
+    "blockedProfile": "Utilisateur Bloqué",
+    "blockedProfileMessage": "Vous avez bloqué cet utilisateur. Son contenu est masqué pour vous."
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "Dernières Routes et Pics du Monde",
+      "subtitle": "Visualisez les dernières routes et pics complétés par les membres de la communauté, vos amis ou vous-même"
+    },
+    "challenges": {
+      "title": "Top défis",
+      "subtitle": "Consultez et relevez les plus grands défis du monde",
+      "allPeaksDescriptionLoggedIn": "Explorez tous les sommets gravis par la communauté et suivez votre contribution !",
+      "allPeaksDescriptionGuest": "Explorez tous les sommets gravis par la communauté. Inscrivez-vous pour suivre votre contribution !",
+      "statTotal": "Total",
+      "statCompleted": "Gravis",
+      "statByMe": "Par Toi"
+    },
+    "showMore": "Afficher plus",
+    "showLess": "Afficher moins"
+  },
+  "recentCommunityPeaks": {
+    "title": "Sommets Récents",
+    "subtitle": "Derniers sommets conquis",
+    "elevation": "Élévation",
+    "location": "Lieu"
+  },
+  "recentCommunityRoutes": {
+    "title": "Itinéraires Récents",
+    "subtitle": "Derniers itinéraires complétés",
+    "elevationGain": "Dénivelé",
+    "time": "Temps",
+    "distance": "Distance",
+    "peaks": "Sommets"
+  },
+  "weather": {
+    "title": "Météo",
+    "weatherDataUnavailable": "Météo indisponible",
+    "feelsLike": "Ressenti",
+    "temperature": "Température",
+    "wind": "Vent",
+    "precipitation": "Précipitations",
+    "snow": "Neige",
+    "uvIndex": "Indice UV",
+    "sunrise": "Lever du soleil",
+    "sunset": "Coucher du soleil",
+    "hourlyForecast": "Prévisions horaires",
+    "closeHourlyForecast": "Fermer les prévisions horaires",
+    "showHourlyForecastForToday": "Afficher les prévisions horaires pour aujourd'hui",
+    "showHourlyForecastFor": "Afficher les prévisions horaires pour {date}",
+    "kmh": "km/h",
+    "mm": "mm",
+    "cm": "cm",
+    "hours": "h"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "Lieux d'intérêt",
+    "noDataForPeak": "Pas de données d'infrastructure",
+    "noNearbyWithin5km": "Pas d'infrastructure proche (5km)",
+    "allInfrastructure": "Toutes les infrastructures",
+    "location": "Emplacement",
+    "details": "Détails",
+    "visitWebsite": "Visiter le site web",
+    "kmFromPeak": "km du sommet",
+    "openMaps": "Ouvrir dans Maps",
+    "viewInMaps": "Voir dans Maps",
+    "category": {
+      "hut": "Refuge de montagne",
+      "shelter": "Abri",
+      "campsite": "Camping",
+      "naturalFeature": "Élément naturel",
+      "waterSource": "Source d'eau",
+      "other": "Autre"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "Tous les sommets",
+    "noData": "Sommets à proximité"
+  },
+  "userPeaks": {
+    "title": "Tes sommets",
+    "userTitle": "Sommets de {userName}",
+    "description": "Votre collection personnelle de {count} sommets complétés. Chaque sommet représente un voyage, un défi relevé et un souvenir qui durera pour toujours.",
+    "userDescription": "La collection personnelle de {userName} de {count} sommets complétés. Chaque sommet représente un voyage, un défi relevé et un souvenir qui durera pour toujours.",
+    "noPeaks": "Vous n'avez pas encore de sommet. Commencez l'aventure !",
+    "loading": "Chargement de vos sommets...",
+    "error": "Erreur de chargement",
+    "addPeaks": "Ajouter des sommets",
+    "timeline": "Chronologie",
+    "openPeak": "Ouvrir le Sommet",
+    "summary": {
+      "baseText": "Vous avez complété",
+      "userBaseText": "{userName} a complété",
+      "timeSingular": "fois",
+      "timePlural": "fois",
+      "in": "en",
+      "on": "le",
+      "and": "et",
+      "singleRoute": "Complété {peakName} {countText} sur {routeName} le {date}",
+      "twoRoutes": "Complété {peakName} {countText} sur {routeNames} le {dates}",
+      "multipleRoutes": "Complété {peakName} {countText} sur {routeNames} le {dates}",
+      "oneRoute": "1 itinéraire",
+      "multipleRoutesCount": "{count} itinéraires",
+      "seeMore": "Voir plus",
+      "seeLess": "Voir moins"
+    },
+    "grid": "Grille",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avancés",
+    "searchPeaks": "Rechercher des sommets",
+    "searchPlaceholder": "Rechercher par nom, pays, région...",
+    "dateRange": "Plage de dates",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "elevationRange": "Plage d'altitude",
+    "country": "Pays",
+    "region": "Région",
+    "allCountries": "Tous les pays",
+    "allRegions": "Toutes les régions",
+    "clearAll": "Tout effacer",
+    "applyFilters": "Appliquer les filtres",
+    "noResults": "Aucun sommet trouvé correspondant à vos filtres.",
+    "peaks": "sommets",
+    "showMore": "Afficher {count} de plus",
+    "showLess": "Afficher moins",
+    "wrongPeak": "Incorrect ?",
+    "deleteConfirmation": {
+      "title": "Supprimer le sommet",
+      "message": "Voulez-vous supprimer {peakName} ? Il apparaîtra comme si vous ne l'aviez jamais gravi",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    },
+    "yourAscensions": "Vos ascensions",
+    "peakDetails": "Détails du sommet",
+    "peakInfo": {
+      "title": "Info du sommet",
+      "loading": "Chargement des infos du sommet...",
+      "error": "Erreur lors du chargement des infos du sommet",
+      "ascensions": "Ascensions",
+      "unlinked": "Non liées",
+      "youAscended": "Aucune info.",
+      "unknownRoute": "Route inconnue",
+      "unlinkedPrompt": "Vous avez {count} ascension(s) non liée(s). Liez-les à une route ou une date :",
+      "linkToRoute": "Route",
+      "selectRoute": "Sélectionnez une route...",
+      "linkToDate": "Date",
+      "link": "Lier",
+      "editLink": "Modifier le lien",
+      "moving": "en mouvement",
+      "deleteAscension": "Supprimer l'ascension",
+      "linkAscension": "Lier l'ascension",
+      "deletePeak": "Supprimer le sommet",
+      "confirmDeletePeak": "Supprimer {peakName} ? Cela supprimera toutes les ascensions.",
+      "confirmDeleteAscension": "Êtes-vous sûr de vouloir supprimer cette ascension ?",
+      "deleting": "Suppression...",
+      "yesDelete": "Oui, supprimer",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "noAscensions": "Aucune ascension enregistrée"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "Sommets Sauvegardés",
+    "description": "Votre collection de {count} sommets sauvegardés. Suivez les sommets que vous voulez escalader ou revisiter.",
+    "noPeaks": "Aucun sommet enregistré.",
+    "loading": "Chargement...",
+    "error": "Erreur de chargement",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avancés",
+    "searchPlaceholder": "Rechercher par nom, pays, région...",
+    "dateRange": "Plage de dates",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "elevationRange": "Plage d'altitude",
+    "country": "Pays",
+    "region": "Région",
+    "allCountries": "Tous les pays",
+    "allRegions": "Toutes les régions",
+    "clearAll": "Tout effacer",
+    "applyFilters": "Appliquer",
+    "noResults": "Aucun sommet sauvegardé trouvé correspondant à vos filtres.",
+    "sorting": {
+      "savedDate": "Date de sauvegarde"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Plus récents en premier",
+      "savedDateOldest": "Plus anciens en premier"
+    }
+  },
+  "userSavedShelters": {
+    "title": "Abris enregistrés",
+    "totalLabel": "Total des abris",
+    "description": "Votre collection de {count} abris enregistrés. Gardez une trace des abris que vous souhaitez visiter.",
+    "noShelters": "Vous n'avez encore enregistré aucun abri. Commencez à explorer !",
+    "loading": "Chargement de vos abris enregistrés...",
+    "error": "Impossible de charger vos abris enregistrés",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avancés",
+    "searchPlaceholder": "Rechercher par nom, pays, région...",
+    "dateRange": "Période",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "elevationRange": "Plage d'altitude",
+    "country": "Pays",
+    "region": "Région",
+    "allCountries": "Tous les pays",
+    "allRegions": "Toutes les régions",
+    "clearAll": "Tout effacer",
+    "applyFilters": "Appliquer les filtres",
+    "noResults": "Aucun abri enregistré ne correspond à vos filtres.",
+    "typeFilter": "Type d'abri",
+    "typeOptions": {
+      "all": "Tous les types"
+    },
+    "savedOn": "Enregistré le",
+    "unsave": "Retirer l'abri",
+    "sorting": {
+      "savedDate": "Date d'enregistrement"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Plus récents d'abord",
+      "savedDateOldest": "Plus anciens d'abord"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "Vous n'avez encore complété aucun sommet de cette liste. Commencez votre aventure!",
+    "loading": "Chargement...",
+    "noSearchResults": "Aucun sommet trouvé pour \"{query}\". Essayez un autre terme de recherche.",
+    "search": {
+      "placeholder": "Rechercher des sommets par nom, région ou pays..."
+    },
+    "filters": {
+      "label": "Filtrer:",
+      "all": "Tous",
+      "completed": "Complétés",
+      "missing": "Manquants"
+    },
+    "sorting": {
+      "label": "Trier:",
+      "name": "Nom",
+      "elevation": "Altitude",
+      "date": "Date",
+      "ascents": "Ascensions"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Z",
+      "nameDesc": "Z → A",
+      "elevationAsc": "Basse → Haute",
+      "elevationDesc": "Haute → Basse",
+      "dateNewest": "Plus Récents",
+      "dateOldest": "Plus anciens",
+      "ascentsMost": "Plus d'Ascensions",
+      "ascentsLeast": "Moins d'Ascensions"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "Supprimer l'itinéraire",
+    "deleteConfirmTitle": "Supprimer l'itinéraire ?",
+    "deleteConfirmMessage": "Êtes-vous sûr de vouloir supprimer cet itinéraire ? Cette action est permanente et réduira votre nombre de sommets gravis.",
+    "deleteSuccess": "Itinéraire supprimé avec succès",
+    "deleteError": "Impossible de supprimer l'itinéraire. Veuillez réessayer.",
+    "unnamedRoute": "Itinéraire sans nom",
+    "metrics": {
+      "distance": "Distance",
+      "elevationGain": "Dénivelé",
+      "time": "Temps"
+    },
+    "title": "Tes itinéraires",
+    "userTitle": "Itinéraires de {userName}",
+    "description": "Vous avez complété {totalRoutes} itinéraires avec {totalPeaks} sommets au total escaladés.",
+    "userDescription": "{userName} a complété {totalRoutes} itinéraires avec {totalPeaks} sommets au total escaladés.",
+    "routes": "itinéraires",
+    "addRoute": "Ajouter un itinéraire",
+    "addRouteTitle": "Ajouter un itinéraire GPX",
+    "addRouteNameLabel": "Nom de l'itinéraire",
+    "addRouteNamePlaceholder": "Saisissez un nom d'itinéraire",
+    "addRouteFileLabel": "Fichier GPX",
+    "addRouteFilePlaceholder": "Sélectionnez un fichier GPX",
+    "addRouteSubmit": "Ajouter l'itinéraire",
+    "addRouteSubmitting": "Ajout de l'itinéraire...",
+    "addRouteErrors": {
+      "name": "Veuillez saisir un nom d'itinéraire.",
+      "file": "Veuillez sélectionner un fichier GPX.",
+      "submit": "Impossible d'ajouter l'itinéraire. Veuillez réessayer."
+    },
+    "searchPlaceholder": "Rechercher des itinéraires...",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avancés",
+    "sortBy": "Trier par",
+    "date": "Date",
+    "peaks": "Sommets",
+    "sortOptions": {
+      "dateNewest": "Date (Plus récents)",
+      "dateOldest": "Date (Plus anciens)",
+      "peaksMost": "Plus de Sommets",
+      "peaksLeast": "Moins de Sommets"
+    },
+    "loadingRoutes": "Chargement des itinéraires...",
+    "loadingMore": "Chargement de plus d'itinéraires...",
+    "loadingCountries": "Chargement des pays...",
+    "noResults": "Aucun itinéraire trouvé correspondant à vos critères.",
+    "endMessage": "Vous avez atteint la fin de vos itinéraires",
+    "paginationError": "Impossible de charger plus d'itinéraires",
+    "tryAgain": "Réessayer",
+    "clearAll": "Tout effacer",
+    "applyFilters": "Appliquer les filtres",
+    "dateRange": "Plage de dates",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "country": "Pays",
+    "region": "Région",
+    "allCountries": "Tous les pays",
+    "allRegions": "Toutes les régions",
+    "peaksCount": "sommets",
+    "noPeaksOnRoute": "Aucun sommet n'a été fait sur cet itinéraire",
+    "seeOnMap": "Voir carte",
+    "ascent": "ascension",
+    "ascents": "ascensions",
+    "peaksInRoute": "Sommets sur cet itinéraire"
+  },
+  "addManualPeaks": {
+    "title": "Ajouter des sommets Manuellement",
+    "subtitle": "Découvrez et ajoutez des sommets à votre profil. Recherchez, filtree, sélectionnez plusieurs sommets et associez-les à vos itinéraires.",
+    "listView": "Liste",
+    "mapView": "Carte",
+    "filters": "Filtres",
+    "peakName": "Nom du sommet",
+    "searchPlaceholder": "Rechercher des sommets (min 2 caractères)...",
+    "elevation": "Altitude",
+    "minElevation": "Altitude min (m)",
+    "maxElevation": "Altitude max (m)",
+    "country": "Pays",
+    "allCountries": "Tous les pays",
+    "region": "Région",
+    "allRegions": "Toutes les régions",
+    "clearFilters": "Effacer les filtres",
+    "loading": "Chargement des sommets...",
+    "loadingMap": "Chargement de la carte...",
+    "noPeaks": "Aucun sommet trouvé. Essayez d'ajuster vos filtres.",
+    "mapPlaceholder": "La carte apparaîtra ici. Sélectionnez des sommets pour les voir sur la carte.",
+    "associatedRoute": "Associé à l'itinéraire",
+    "selected": "sélectionné",
+    "selectedCount_one": "{{count}} sommet sélectionné",
+    "selectedCount_other": "{{count}} sommets sélectionnés",
+    "submit_one": "Ajouter {{count}} sommet",
+    "submit_other": "Ajouter {{count}} sommets",
+    "submitting": "Ajout des sommets...",
+    "noSelection": "Veuillez sélectionner au moins un sommet.",
+    "fetchError": "Échec du chargement des sommets. Veuillez réessayer.",
+    "submitError": "Échec de l'ajout des sommets. Veuillez réessayer.",
+    "addSuccess_one": "{{count}} sommet ajouté avec succès !",
+    "addSuccess_other": "{{count}} sommets ajoutés avec succès !",
+    "routeExistence": {
+      "question": "Ce sommet appartient-il à un itinéraire existant ?",
+      "subtitle": "Sélectionnez une option pour continuer",
+      "hasRoute": "Oui, sélectionner un itinéraire",
+      "noRoute": "Non, ajouter comme indépendant",
+      "addWithDate": "Ajouter avec une date"
+    },
+    "selectRoute": "Sélectionner un itinéraire pour {peakName}",
+    "routeAssociation": {
+      "title": "Confirmer l'Association",
+      "message": "Voulez-vous associer {peakName} à l'itinéraire {routeName} ?",
+      "confirm": "Confirmer",
+      "cancel": "Annuler"
+    },
+    "submitOptions": {
+      "title": "Vérifiez vos sommets",
+      "date": "Date",
+      "routeHint": "lier un itinéraire",
+      "dateHint": "définir une date"
+    }
+  },
+  "userStats": {
+    "title": "Statistiques",
+    "activityType": "Type d'activité",
+    "totalPeaks": "Total de Sommets",
+    "totalRoutes": "Total de Routes",
+    "peakLists": {
+      "title": "Progrès des Défis",
+      "completedDescription": "Vous avez complété {completed} sur {total} sommets."
+    },
+    "statistics": "Statistiques",
+    "globalStats": "Stats globales",
+    "byActivity": "Par activité",
+    "graph": "Graphique de Progrès au Fil du Temps",
+    "openGraph": "Cliquez pour voir le graphique détaillé",
+    "viewInCharts": "Voir dans les graphiques",
+    "progressChart": "Graphique de progression",
+    "rotate": "Tournez l'appareil",
+    "rank": {
+      "yourRank": "Votre rang",
+      "rankDescription": "Vous êtes l'utilisateur {rank} sur {totalUsers} utilisateurs avec plus de sommets totaux",
+      "noRank": "Aucun rang"
+    },
+    "moreInformation": "Plus d'informations",
+    "peakListsDescription": "Cliquez sur l'un des défis ci-dessous pour accéder à ses détails",
+    "statisticsDescription": "Visualisez vos statistiques",
+    "openGraphDescription": "Ouvrez pour explorer le graphique interactif",
+    "metrics": {
+      "distance": "Distance",
+      "elevationGain": "Dénivelé Positif",
+      "time": "Temps",
+      "totalTime": "Temps total",
+      "movingTime": "Temps en mouv.",
+      "peaks": "Sommets",
+      "routes": "Routes"
+    },
+    "timeAggregation": {
+      "daily": "Jour de Route",
+      "weekly": "Hebdomadaire",
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "custom": "Plage Personnalisée"
+    },
+    "controls": {
+      "groupBy": "Grouper par",
+      "activityType": "Type d'Activité",
+      "startDate": "Date de Début",
+      "endDate": "Date de Fin",
+      "apply": "Appliquer"
+    },
+    "chart": {
+      "noDataAvailable": "Aucune donnée disponible pour cette activité"
+    },
+    "rotatePhone": "Veuillez faire pivoter votre téléphone en mode horizontal pour voir le graphique",
+    "activityFilter": {
+      "all": "Toutes les Activités",
+      "unknown": "Inconnu"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "Ajouter comme gravi",
+    "title": "Communauté",
+    "completedBy": "Ascensionné par",
+    "totalCompletions": "Ascensions totales",
+    "uniqueUsers": "Utilisateurs uniques",
+    "timeSingle": "fois",
+    "timePlural": "fois",
+    "seeMore": "Voir plus",
+    "more": "plus",
+    "yourProgress": "Votre progression",
+    "completed": "Ascensionné",
+    "notCompleted": "Non Ascensionné",
+    "lastCompleted": "Dernière complétée",
+    "youHaveCompleted": "Vous avez ascensionné",
+    "routes": "Itinéraires",
+    "peaks": "Sommets",
+    "filterAll": "Tout",
+    "filterClubRelated": "Lié au club",
+    "filterMyClubs": "Mes clubs"
+  },
+  "listOverlay": {
+    "chooseList": "Choisissez un défi",
+    "completedLabel": "{completed}/{total} terminé"
+  },
+  "exploreOverlay": {
+    "title": "Glissez / Faites glisser vers la gauche",
+    "subtitle": "pour découvrir la carte interactive"
+  },
+  "og": {
+    "title": "Summits - Suivez Vos Sommets de Montagne",
+    "description": "Suivez vos réalisations de sommets, partagez des pics avec la communauté et découvrez les ascensions d'autres alpinistes du monde entier."
+  },
+  "routeDetails": {
+    "downloadRoute": "Télécharger l'itinéraire",
+    "sendToDevice": "Envoyer à l'appareil",
+    "showStats": "Afficher les statistiques",
+    "hideStats": "Masquer les statistiques",
+    "shareRoute": "Partager"
+  },
+  "routeAnimation": {
+    "title": "Créer une Animation",
+    "createAnimation": "Créer une Animation",
+    "description": "Générez une vidéo cinématique en 3D de votre itinéraire. La caméra suivra votre parcours avec une perspective dramatique de poursuite.",
+    "hint": "L'enregistrement commencera après le chargement complet du terrain.",
+    "duration": "Durée de la Vidéo",
+    "seconds": "sec",
+    "durationHint": "Plus long = plus lent et cinématique",
+    "elevation": "Dénivelé",
+    "elevationGain": "Dénivelé Positif",
+    "distance": "Distance",
+    "preparing": "Préparation du terrain 3D...",
+    "recording": "Enregistrement...",
+    "recordingHint": "Veuillez patienter pendant l'enregistrement de l'animation. Ne changez pas d'onglet.",
+    "complete": "Animation terminée ! Votre vidéo est prête à télécharger.",
+    "fileSize": "Taille du fichier",
+    "download": "Télécharger la Vidéo",
+    "start": "Démarrer l'Enregistrement",
+    "retry": "Réessayer",
+    "error": "Une erreur s'est produite lors de la création de l'animation.",
+    "errorNoRoute": "Aucune donnée d'itinéraire disponible pour l'animation.",
+    "errorUnknown": "Une erreur inconnue s'est produite.",
+    "notSupported": "L'enregistrement vidéo n'est pas pris en charge par votre navigateur. Veuillez utiliser Chrome, Firefox ou Edge.",
+    "videoDownloaded": "Vidéo téléchargée",
+    "videoSavedToGallery": "Vidéo enregistrée dans votre galerie",
+    "speed": "Vitesse",
+    "speedHint": "Utilisez les boutons +/- pendant l'enregistrement pour ajuster la vitesse : 1x → 3x → 5x → 10x → 0.5x → 1x",
+    "speedDurationHint": "La durée de la vidéo dépend des vitesses que vous choisissez",
+    "save": "Enregistrer dans la galerie"
+  },
+  "routeAssociation": {
+    "authRequired": "Connectez-vous pour associer ce sommet à un itinéraire.",
+    "confirm": "Confirmer",
+    "fetchError": "Impossible de charger vos itinéraires.",
+    "loading": "Chargement des itinéraires...",
+    "noRoute": "Ignorer (sans itinéraire)",
+    "noRoutes": "Aucun itinéraire trouvé",
+    "peaks_one": "{count} sommet sur cet itinéraire",
+    "peaks_other": "{count} sommets sur cet itinéraire",
+    "subtitle": "Sélectionnez un itinéraire pour {peakName}",
+    "title": "Associer un itinéraire"
+  },
+  "terms": {
+    "title": "Summits – Conditions d'Utilisation (Utilisation des Données des Plateformes Externes)",
+    "lastUpdated": "Dernière mise à jour : Octobre 2025",
+    "introduction": {
+      "title": "Introduction",
+      "content": "Summits est une plateforme qui aide à suivre et partager des expériences d'escalade de sommets montagneux. Pour fournir ce service, Summits s'intègre avec des plateformes tierces, notamment Garmin Connect, Strava et Wikiloc (collectivement, \"Plateformes Externes\") pour importer et analyser vos données d'activités de plein air. En utilisant Summits et en vous inscrivant avec vos comptes de Plateformes Externes, vous acceptez ces Conditions d'Utilisation concernant l'utilisation de vos données."
+    },
+    "dataCollection": {
+      "title": "1. Collecte et Traitement des Données",
+      "whatData": {
+        "title": "1.1 Quelles Données Nous Accédons",
+        "intro": "Lorsque vous connectez vos comptes de Plateformes Externes à Summits, nous accédons aux types de données suivants :",
+        "fromWikiloc": "De Wikiloc :",
+        "wikiloc": {
+          "activity": "Données d'activités et d'itinéraires (fichiers GPX, traces)",
+          "timestamps": "Horodatages et dates des activités",
+          "elevation": "Profils d'élévation et coordonnées géographiques",
+          "routeNames": "Noms et descriptions des itinéraires",
+          "activityTypes": "Types d'activités (randonnée, escalade, etc.)",
+          "profile": "Informations de profil public"
+        },
+        "fromStrava": "De Strava :",
+        "strava": {
+          "activity": "Données d'activités incluant itinéraires et traces",
+          "timestamps": "Horodatages et durées des activités",
+          "elevation": "Métriques de dénivelé, distance et durée",
+          "coordinates": "Coordonnées géographiques et profils d'élévation",
+          "activityTypes": "Types d'activités et sports",
+          "profile": "Informations de base du profil (nom, nom d'utilisateur, photo de profil)"
+        },
+        "fromGarmin": "De Garmin Connect :",
+        "garmin": {
+          "activity": "Enregistrements d'activités des appareils Garmin",
+          "gps": "Données de suivi GPS et itinéraires",
+          "elevation": "Données d'élévation, distance et temps",
+          "summaries": "Résumés et statistiques des activités",
+          "location": "Données de localisation géographique",
+          "profile": "Informations de base du profil (nom, nom d'utilisateur, photo de profil)"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 Comment Nous Utilisons Vos Données",
+        "intro": "Nous utilisons les données des Plateformes Externes pour :",
+        "identifyPeaks": "Identifier quels sommets montagneux vous avez escaladés",
+        "trackProgress": "Suivre vos progrès en alpinisme",
+        "displayHistory": "Afficher votre historique d'escalades sur des cartes interactives",
+        "calculateStats": "Calculer votre total de sommets escaladés et d'autres statistiques",
+        "enableSharing": "Permettre le partage de réalisations avec d'autres utilisateurs (sous réserve des paramètres de confidentialité)",
+        "leaderboards": "Inclure vos statistiques dans les classements communautaires",
+        "analyzeRoutes": "Analyser et stocker vos itinéraires avec des sommets identifiés"
+      }
+    },
+    "thirdParty": {
+      "title": "2. Conditions d'Utilisation des Plateformes Tierces",
+      "compliance": {
+        "title": "2.1 Conformité aux Politiques des Plateformes Externes",
+        "intro": "En connectant vos comptes de Plateformes Externes à Summits, vous reconnaissez que :",
+        "readAgree": "Vous avez lu et acceptez de respecter les Conditions d'Utilisation de chaque plateforme",
+        "apiTerms": "Nous accédons à vos données uniquement selon les permissions que vous accordez et les termes de l'API de chaque plateforme",
+        "devPolicies": "Nous respectons les politiques des développeurs et de confidentialité de Garmin, Strava et Wikiloc",
+        "noCredentials": "Nous ne partageons pas vos identifiants de connexion",
+        "secureTokens": "Nous stockons de manière sécurisée les jetons d'accès et les utilisons uniquement pour importer des données d'activités"
+      },
+      "scope": {
+        "title": "2.2 Portée de l'Autorisation",
+        "intro": "En autorisant Summits, vous accordez la permission de :",
+        "readStore": "Lire, stocker et traiter vos données d'activité",
+        "analyzeTransform": "Analyser et transformer vos données pour identifier les sommets",
+        "notDo": {
+          "intro": "Nous ne :",
+          "modify": "Modifions, supprimons ou publions des activités en votre nom",
+          "share": "Partageons vos données avec des annonceurs ou des tiers (sauf comme décrit dans la Section 4)",
+          "sell": "Vendons vos données personnelles"
+        }
+      },
+      "revocation": {
+        "title": "2.3 Révocation de l'Accès",
+        "content": "Vous pouvez révoquer l'accès de Summits à tout moment via les paramètres de votre compte de Plateforme Externe. Une fois révoqué, aucune nouvelle donnée ne sera importée. Les données précédemment importées restent sauf si vous demandez leur suppression."
+      }
+    },
+    "dataStorage": {
+      "title": "3. Stockage et Sécurité des Données",
+      "retention": {
+        "title": "3.1 Conservation des Données",
+        "active": "Les données importées sont stockées tant que votre compte Summits est actif.",
+        "deleted": "Les comptes et données supprimés sont définitivement effacés dans les 30 jours.",
+        "matching": "Les informations de correspondance des sommets sont stockées pour améliorer les performances de traitement."
+      },
+      "security": {
+        "title": "3.2 Sécurité des Données",
+        "intro": "Nous protégeons vos données avec des mesures standard de l'industrie, incluant :",
+        "encryption": "Chiffrement (HTTPS/TLS et au repos)",
+        "access": "Contrôles d'accès limités au personnel autorisé",
+        "infrastructure": "Infrastructure de stockage cloud sécurisée",
+        "updates": "Mises à jour et correctifs de sécurité réguliers"
+      },
+      "location": {
+        "title": "3.3 Localisation des Données",
+        "content": "Vos données sont stockées sur des serveurs cloud dans des régions conformes aux lois de protection des données applicables. En utilisant Summits, vous consentez à ce transfert et traitement."
+      }
+    },
+    "dataSharing": {
+      "title": "4. Partage et Divulgation des Données",
+      "public": {
+        "title": "4.1 Informations Publiques",
+        "intro": "Si votre profil est public, les autres utilisateurs peuvent voir :",
+        "statistics": "Vos statistiques de sommets et compteurs d'achèvement",
+        "username": "Votre nom d'utilisateur et photo de profil",
+        "rankings": "Vos classements dans les tableaux de classement",
+        "profile": "Votre profil dans les résultats de recherche et listes"
+      },
+      "private": {
+        "title": "4.2 Informations Privées",
+        "intro": "Ce qui suit reste toujours privé :",
+        "routes": "Traces exactes des itinéraires et coordonnées",
+        "elevation": "Profils d'élévation détaillés",
+        "times": "Heures de début/fin des activités",
+        "email": "Email et identifiants personnels",
+        "followers": "Listes de followers et utilisateurs suivis (sauf s'ils sont publics)"
+      },
+      "thirdParties": {
+        "title": "4.3 Partage de Données avec des Tiers",
+        "noSell": "Nous ne vendons pas de données personnelles.",
+        "aggregated": "Nous pouvons partager des données agrégées et anonymisées pour l'analyse ou la recherche.",
+        "shareWith": "Nous pouvons partager des données uniquement avec :",
+        "serviceProviders": "Prestataires de services soutenant les opérations de la plateforme",
+        "authorities": "Autorités, lorsque requis par la loi",
+        "safety": "Parties pertinentes pour assurer la sécurité des utilisateurs"
+      }
+    },
+    "rights": {
+      "title": "5. Vos Droits et Contrôles",
+      "correction": {
+        "title": "5.1 Correction des Données",
+        "content": "Vous pouvez vérifier ou signaler des identifications incorrectes de sommets dans l'application. Les corrections vérifiées seront examinées et mises à jour."
+      },
+      "deletion": {
+        "title": "5.2 Suppression du Compte",
+        "content": "Vous pouvez supprimer votre compte Summits à tout moment. Toutes les données importées et connexions sociales seront supprimées dans les 30 jours. La suppression de votre compte Summits n'affecte pas vos comptes de Plateformes Externes."
+      },
+      "privacy": {
+        "title": "5.3 Paramètres de Confidentialité",
+        "content": "Vous pouvez gérer la visibilité, les options de partage et les fonctionnalités sociales directement dans les paramètres de confidentialité de l'application."
+      }
+    },
+    "accuracy": {
+      "title": "6. Précision et Limitations des Données",
+      "peakIdentification": {
+        "title": "6.1 Identification des Sommets",
+        "algorithmic": "L'identification des sommets est algorithmique et peut ne pas toujours être précise.",
+        "errors": "Les erreurs peuvent être signalées pour améliorer la précision future."
+      },
+      "routeData": {
+        "title": "6.2 Qualité des Données d'Itinéraires",
+        "accuracy": "La précision dépend de vos données GPS des Plateformes Externes.",
+        "incomplete": "Les données incomplètes ou manquantes peuvent affecter le traitement.",
+        "delays": "Les grands ensembles de données peuvent subir des retards."
+      },
+      "warranty": {
+        "title": "6.3 Avertissement de Garantie",
+        "intro": "Summits ne fournit aucune garantie concernant :",
+        "accuracy": "Précision ou exhaustivité des données de sommets ou d'itinéraires",
+        "reliability": "Fiabilité des API des Plateformes Externes",
+        "uptime": "Temps de fonctionnement du service ou accès ininterrompu",
+        "disclaimer": "Utilisez Summits à vos propres risques."
+      }
+    },
+    "changes": {
+      "title": "7. Modifications de Ces Conditions",
+      "modifications": {
+        "title": "7.1 Modifications",
+        "content": "Nous pouvons modifier ces Conditions d'Utilisation à tout moment. Les mises à jour sont effectives lors de leur publication dans l'application ou sur notre site web."
+      },
+      "continuedUse": {
+        "title": "7.2 Utilisation Continue",
+        "content": "L'utilisation continue après les mises à jour constitue une acceptation. Si vous n'êtes pas d'accord, cessez d'utiliser et supprimez votre compte."
+      }
+    },
+    "termination": {
+      "title": "8. Résiliation du Service",
+      "serviceTermination": {
+        "title": "8.1 Résiliation du Service",
+        "intro": "Nous pouvons suspendre ou résilier les comptes pour :",
+        "violation": "Violation de ces conditions ou conditions des Plateformes Externes",
+        "fraudulent": "Activité frauduleuse ou abusive",
+        "legal": "Exigences légales ou réglementaires"
+      },
+      "effect": {
+        "title": "8.2 Effet de la Résiliation",
+        "content": "L'accès sera révoqué immédiatement et les données seront supprimées selon la politique de conservation."
+      }
+    },
+    "indemnification": {
+      "title": "9. Indemnisation",
+      "intro": "Vous acceptez d'indemniser et de maintenir Summits indemne de toute réclamation ou perte résultant de :",
+      "violations": "Violations de ces Conditions",
+      "platformPolicies": "Violations des politiques des Plateformes Externes",
+      "misuse": "Utilisation abusive ou soumissions de données frauduleuses",
+      "disputes": "Litiges avec d'autres utilisateurs"
+    },
+    "liability": {
+      "title": "10. Limitation de Responsabilité",
+      "intro": "Dans la mesure maximale permise par la loi :",
+      "asIs": "Summits est fourni \"tel quel\" sans garanties.",
+      "notLiable": "Nous ne sommes pas responsables des dommages indirects, incidents ou consécutifs.",
+      "platformDowntime": "Nous ne sommes pas responsables des temps d'arrêt des Plateformes Externes ou des changements d'API."
+    },
+    "disputes": {
+      "title": "11. Litiges et Loi Applicable",
+      "governingLaw": {
+        "title": "11.1 Loi Applicable",
+        "content": "Ces Conditions sont régies par les lois de [VOTRE JURIDICTION], excluant les principes de conflit de lois."
+      },
+      "resolution": {
+        "title": "11.2 Résolution des Litiges",
+        "negotiation": "Négociation de bonne foi",
+        "mediation": "Médiation si la négociation échoue",
+        "arbitration": "Arbitrage contraignant pour les litiges non résolus"
+      },
+      "classAction": {
+        "title": "11.3 Renonciation à l'Action Collective",
+        "content": "Tous les litiges doivent être résolus individuellement ; aucune action collective n'est permise."
+      }
+    },
+    "contact": {
+      "title": "12. Informations de Contact",
+      "intro": "Si vous avez des questions, contactez-nous :",
+      "email": "Email : cesc.riera@summitstracker.com",
+      "website": "Site web : summitstracker.com",
+      "support": "Support : Disponible via l'aide intégrée dans l'application et les fonctionnalités de support"
+    },
+    "acknowledgment": {
+      "title": "13. Reconnaissance",
+      "intro": "En utilisant Summits et en connectant des comptes Garmin, Strava ou Wikiloc :",
+      "read": "Vous avez lu et comprenez ces Conditions",
+      "consent": "Vous consentez à l'utilisation des données décrite",
+      "capacity": "Vous avez la capacité légale d'accepter",
+      "comply": "Vous vous conformerez aux lois applicables",
+      "responsible": "Vous êtes responsable de maintenir la sécurité de vos comptes",
+      "footer": "En continuant à utiliser Summits, vous acceptez ces Conditions d'Utilisation. Si vous n'êtes pas d'accord, veuillez cesser d'utiliser et supprimer votre compte."
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : Janvier 2025",
+    "introduction": {
+      "title": "1. Introduction",
+      "content": "Summits (\"nous,\" \"notre\" ou \"nos\") s'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre application mobile et site web (collectivement, le \"Service\"). En utilisant le Service, vous consentez aux pratiques de données décrites dans cette politique."
+    },
+    "dataController": {
+      "title": "2. Responsable du Traitement des Données",
+      "content": "Le responsable du traitement de vos données personnelles est :",
+      "email": "Email : cesc.riera@summitstracker.com",
+      "website": "Site web : summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. Informations que Nous Collectons",
+      "personalData": {
+        "title": "3.1 Informations Personnelles",
+        "intro": "Lorsque vous créez un compte, nous collectons :",
+        "account": "Informations du compte (adresse e-mail, nom d'utilisateur, mot de passe)",
+        "profile": "Informations du profil (nom, photo de profil, biographie)",
+        "preferences": "Préférences et paramètres de l'application"
+      },
+      "activityData": {
+        "title": "3.2 Données d'Activité des Plateformes Tiers",
+        "intro": "Lorsque vous connectez vos comptes Wikiloc, Strava ou Garmin, nous collectons :",
+        "fromWikiloc": "De Wikiloc :",
+        "wikiloc": {
+          "activity": "Données d'activité (itinéraires, traces GPS, coordonnées)",
+          "timestamps": "Horodatages d'activité (heure de début, heure de fin, durée)",
+          "elevation": "Données d'élévation et profils",
+          "routeNames": "Noms et descriptions d'itinéraires",
+          "activityTypes": "Types d'activité (randonnée, cyclisme, etc.)",
+          "profile": "Informations du profil public"
+        },
+        "fromStrava": "De Strava :",
+        "strava": {
+          "activity": "Données d'activité (itinéraires, traces GPS, coordonnées)",
+          "timestamps": "Horodatages d'activité (heure de début, heure de fin, durée)",
+          "elevation": "Données d'élévation et profils",
+          "coordinates": "Coordonnées GPS et traces d'itinéraires",
+          "activityTypes": "Types d'activité (course, cyclisme, randonnée, etc.)",
+          "profile": "Informations du profil public"
+        },
+        "fromGarmin": "De Garmin :",
+        "garmin": {
+          "activity": "Données d'activité de Garmin Connect",
+          "gps": "Traces GPS et coordonnées",
+          "elevation": "Données d'élévation et informations de fréquence cardiaque",
+          "summaries": "Résumés et statistiques d'activité",
+          "location": "Données de localisation",
+          "profile": "Informations du profil public"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 Informations Techniques",
+        "intro": "Nous collectons automatiquement :",
+        "device": "Informations sur l'appareil (type d'appareil, système d'exploitation, identifiants uniques de l'appareil)",
+        "ip": "Adresse IP et données de localisation",
+        "browser": "Type et version du navigateur",
+        "logs": "Journaux d'utilisation et données d'analyse"
+      }
+    },
+    "dataUsage": {
+      "title": "4. Comment Nous Utilisons Vos Informations",
+      "purposes": {
+        "title": "4.1 Finalités du Traitement",
+        "intro": "Nous utilisons vos informations pour :",
+        "service": "Fournir et maintenir le Service",
+        "peakIdentification": "Identifier les sommets que vous avez complétés à partir de vos données d'activité",
+        "progress": "Suivre vos progrès et générer des statistiques",
+        "statistics": "Calculer et afficher vos statistiques personnelles et réalisations",
+        "community": "Activer les fonctionnalités sociales, classements et interactions communautaires",
+        "communication": "Vous envoyer des notifications, mises à jour et communications de support",
+        "improvement": "Améliorer, personnaliser et développer le Service",
+        "security": "Détecter, prévenir et résoudre les problèmes techniques et menaces de sécurité"
+      },
+      "legalBasis": {
+        "title": "4.2 Base Légale du Traitement",
+        "intro": "Nous traitons vos données personnelles sur la base de :",
+        "consent": "Votre consentement lorsque vous connectez des comptes tiers",
+        "contract": "L'exécution de notre contrat avec vous pour fournir le Service",
+        "legitimate": "Nos intérêts légitimes dans l'exploitation et l'amélioration du Service",
+        "legal": "Le respect des obligations légales"
+      }
+    },
+    "dataSharing": {
+      "title": "5. Partage et Divulgation des Données",
+      "thirdParties": {
+        "title": "5.1 Prestataires de Services Tiers",
+        "intro": "Nous pouvons partager vos informations avec des prestataires de services de confiance qui nous aident à :",
+        "serviceProviders": "Services d'hébergement et d'infrastructure",
+        "analytics": "Analyse et surveillance des performances",
+        "cloud": "Stockage cloud et traitement des données"
+      },
+      "publicData": {
+        "title": "5.2 Informations Publiques",
+        "intro": "Les informations suivantes peuvent être visibles publiquement :",
+        "statistics": "Statistiques agrégées et réalisations",
+        "username": "Votre nom d'utilisateur et profil public",
+        "rankings": "Votre position dans les classements",
+        "profile": "Informations du profil public que vous choisissez de partager"
+      },
+      "legal": {
+        "title": "5.3 Exigences Légales",
+        "content": "Nous pouvons divulguer vos informations si la loi, une ordonnance judiciaire ou une autorité gouvernementale l'exige, ou pour protéger nos droits, propriété ou sécurité, ou ceux de nos utilisateurs."
+      }
+    },
+    "dataStorage": {
+      "title": "6. Stockage et Sécurité des Données",
+      "location": {
+        "title": "6.1 Localisation des Données",
+        "content": "Vos données sont stockées sur des serveurs sécurisés situés dans l'Union Européenne et aux États-Unis. En utilisant le Service, vous consentez au transfert de vos données vers ces emplacements."
+      },
+      "retention": {
+        "title": "6.2 Conservation des Données",
+        "intro": "Nous conservons vos données :",
+        "active": "Tant que votre compte est actif et aussi longtemps que nécessaire pour fournir le Service",
+        "deleted": "Jusqu'à 30 jours après la suppression du compte, après quoi elles sont définitivement supprimées",
+        "legal": "Conformément aux lois et réglementations applicables"
+      },
+      "security": {
+        "title": "6.3 Mesures de Sécurité",
+        "intro": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données :",
+        "encryption": "Chiffrement des données en transit et au repos",
+        "access": "Contrôles d'accès et mécanismes d'authentification",
+        "infrastructure": "Infrastructure sécurisée et audits de sécurité réguliers",
+        "updates": "Mises à jour et correctifs de sécurité réguliers"
+      }
+    },
+    "userRights": {
+      "title": "7. Vos Droits (RGPD/CCPA)",
+      "access": {
+        "title": "7.1 Droit d'Accès",
+        "content": "Vous avez le droit de demander l'accès à vos données personnelles et de recevoir une copie des données que nous détenons sur vous."
+      },
+      "rectification": {
+        "title": "7.2 Droit de Rectification",
+        "content": "Vous pouvez demander la correction de données personnelles inexactes ou incomplètes."
+      },
+      "erasure": {
+        "title": "7.3 Droit à l'Effacement",
+        "content": "Vous pouvez demander la suppression de vos données personnelles. Vous pouvez supprimer votre compte à tout moment via les paramètres de l'application."
+      },
+      "restriction": {
+        "title": "7.4 Droit à la Limitation",
+        "content": "Vous pouvez demander la limitation du traitement de vos données personnelles dans certaines circonstances."
+      },
+      "portability": {
+        "title": "7.5 Droit à la Portabilité des Données",
+        "content": "Vous pouvez demander une copie de vos données dans un format structuré et lisible par machine."
+      },
+      "objection": {
+        "title": "7.6 Droit d'Opposition",
+        "content": "Vous pouvez vous opposer au traitement de vos données personnelles basé sur des intérêts légitimes."
+      },
+      "withdraw": {
+        "title": "7.7 Droit de Retirer le Consentement",
+        "content": "Vous pouvez retirer votre consentement à tout moment en déconnectant les comptes tiers ou en supprimant votre compte."
+      },
+      "complaint": {
+        "title": "7.8 Droit de Déposer une Plainte",
+        "content": "Vous avez le droit de déposer une plainte auprès de votre autorité locale de protection des données si vous estimez que vos droits ont été violés."
+      }
+    },
+    "cookies": {
+      "title": "8. Cookies et Technologies de Suivi",
+      "intro": "Nous utilisons des cookies et des technologies de suivi similaires pour suivre l'activité sur notre Service et stocker certaines informations.",
+      "types": {
+        "title": "8.1 Types de Cookies",
+        "essential": "Cookies essentiels nécessaires au fonctionnement du Service",
+        "analytics": "Cookies d'analyse pour comprendre comment les utilisateurs interagissent avec le Service",
+        "functional": "Cookies fonctionnels pour mémoriser vos préférences"
+      },
+      "management": {
+        "title": "8.2 Gestion des Cookies",
+        "content": "Vous pouvez contrôler les cookies via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter la fonctionnalité du Service."
+      }
+    },
+    "children": {
+      "title": "9. Confidentialité des Enfants",
+      "content": "Notre Service peut être utilisé par les enfants de tous âges. Nous nous engageons à protéger la vie privée des enfants et de tous les utilisateurs. Nous mettons en place des mesures de protection appropriées pour garantir la sécurité et la confidentialité des enfants utilisant notre Service. Si vous avez des préoccupations concernant l'utilisation de notre Service par votre enfant, contactez-nous."
+    },
+    "international": {
+      "title": "10. Transferts Internationaux de Données",
+      "content": "Vos informations peuvent être transférées et traitées dans des pays autres que votre pays de résidence. Ces pays peuvent avoir des lois sur la protection des données qui diffèrent de celles de votre pays. Nous veillons à ce que des garanties appropriées soient en place pour protéger vos données."
+    },
+    "changes": {
+      "title": "11. Modifications de Cette Politique de Confidentialité",
+      "content": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de Confidentialité sur cette page et en mettant à jour la date de \"Dernière mise à jour\". Il est conseillé de consulter périodiquement cette Politique de Confidentialité."
+    },
+    "contact": {
+      "title": "12. Contactez-Nous",
+      "intro": "Si vous avez des questions sur cette Politique de Confidentialité ou souhaitez exercer vos droits, contactez-nous :",
+      "email": "Email : cesc.riera@summitstracker.com",
+      "website": "Site web : summitstracker.com",
+      "support": "Support : Disponible via l'aide intégrée dans l'application et les fonctionnalités de support"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "Défi de club",
+    "clubChallengeDescription": "Ce défi est lié à un club et ne sera visible que par ses membres.",
+    "clubPrivateHelp": "Les défis de club sont toujours publics pour les membres et ne peuvent pas être privés.",
+    "createTitle": "Créer un défi",
+    "editTitle": "Modifier le défi",
+    "name": "Nom du défi",
+    "namePlaceholder": "Entrez un nom pour votre défi...",
+    "description": "Description",
+    "descriptionPlaceholder": "De quoi parle ce défi ?",
+    "isPrivate": "Défi privé",
+    "privateHelp": "Les défis privés ne sont visibles que par vous.",
+    "challengeConstraints": "Contraintes du défi",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "dateRangeHelp": "Laissez les deux dates vides pour autoriser n'importe quelle date de réalisation.",
+    "maxDuration": "Durée max (heures)",
+    "maxDurationPlaceholder": "ex: 24",
+    "maxDurationHelp": "Laissez vide pour aucune limite de temps entre le premier et le dernier sommet.",
+    "timeLimit": "Limite de temps",
+    "dateRange": "Valide",
+    "starts": "Commence",
+    "ends": "Se termine",
+    "primaryImage": "Image de couverture",
+    "addImage": "Ajouter une image de couverture",
+    "noImage": "Aucune image fournie",
+    "imageUrlPlaceholder": "Collez une URL d'image (ex: https://...)",
+    "peaks": "Sommets",
+    "addPeaks": "Ajouter des sommets",
+    "selectPeaks": "Sélectionner des sommets",
+    "selectedPeaks": "Sommets sélectionnés",
+    "noPeaksSelected": "Aucun sommet sélectionné pour le moment. Recherchez et sélectionnez des sommets pour les ajouter à votre défi.",
+    "saveSuccess": "Défi enregistré avec succès !",
+    "saveError": "Échec de l'enregistrement du défi. Veuillez réessayer.",
+    "loadError": "Impossible de charger le defi. Veuillez reessayer.",
+    "validation": {
+      "nameRequired": "Le nom du defi est obligatoire.",
+      "descriptionRequired": "La description est obligatoire.",
+      "imageRequired": "L'image de couverture est obligatoire.",
+      "peaksRequired": "Selectionnez au moins un sommet.",
+      "startDateInvalid": "Saisissez une date de debut valide.",
+      "endDateInvalid": "Saisissez une date de fin valide.",
+      "endDateBeforeStart": "La date de fin doit etre posterieure a la date de debut.",
+      "maxDurationInvalid": "Saisissez une duree maximale valide superieure a 0."
+    },
+    "challenges": "Défis",
+    "available_challenges": "défis disponibles",
+    "searchPlaceholder": "Rechercher par titre ou créateur",
+    "emptySearchTitle": "Aucun défi trouvé",
+    "emptySearchMessage": "Essayez un autre titre ou nom de créateur.",
+    "worldPeaks": "Sommets du Monde",
+    "worldPeaksDescription": "Explorez tous les sommets du monde",
+    "join": "Rejoindre",
+    "leave": "Quitter",
+    "joined": "Sélectionné",
+    "deleteList": "Supprimer le défi",
+    "deleteSuccess": "Défi supprimé avec succès",
+    "deleteError": "Échec de la suppression du défi",
+    "deleteConfirmTitle": "Supprimer le défi ?",
+    "deleteConfirmMessage": "Êtes-vous sûr de vouloir supprimer ce défi ? Cette action est irréversible.",
+    "inviteToChallenge": "Inviter au défi",
+    "inviteHelp": "Recherchez des utilisateurs pour les inviter à votre défi."
+  },
+  "forceUpdate": {
+    "title": "Nouvelle version disponible !",
+    "subtitle": "Veuillez mettre à jour vers la dernière version de Summits pour continuer à utiliser l'application.",
+    "button": "Mettre à jour maintenant",
+    "version": "Version",
+    "continue": "Continuer sans mettre à jour"
+  },
+  "appInstallBanner": {
+    "title": "Ouvrez l'app native",
+    "subtitle": "Installez Summits pour une experience mobile plus rapide et complete.",
+    "button": "Installer l'app",
+    "dismiss": "Fermer la banniere d'installation",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "clubs": {
+    "availableClubs": "Clubs disponibles",
+    "common": {
+      "creator": "Créateur"
+    },
+    "browse": {
+      "title": "Parcourir les clubs",
+      "subtitle": "Explorez les communautés publiques et privées autour du progrès partagé sur les sommets.",
+      "searchPlaceholder": "Rechercher des clubs",
+      "searchPlaceholderUnified": "Rechercher des clubs ou régions...",
+      "emptyTitle": "Pas encore de clubs",
+      "emptyMessage": "Essayez une recherche plus large ou créez un nouveau club pour votre groupe de montagne.",
+      "emptySearchTitle": "Aucun club trouvé",
+      "emptySearchMessage": "Essayez un autre titre ou une autre région."
+    },
+    "details": {
+      "title": "Détails du club",
+      "statistics": "Statistiques",
+      "restrictedTitle": "Aperçu de club privé",
+      "restrictedMessage": "Seuls les membres acceptés peuvent voir le classement, les membres et l'activité de ce club."
+    },
+    "myClubs": {
+      "title": "Mes clubs",
+      "subtitle": "Gérez les clubs que vous avez créés, rejoints ou pour lesquels vous avez demandé l'accès.",
+      "created": "créé",
+      "joined": "rejoint",
+      "pending": "en attente",
+      "createdSection": "Créés par moi",
+      "createdDescription": "Clubs dont vous êtes propriétaire et que vous pouvez gérer totalement.",
+      "joinedSection": "Clubs rejoints",
+      "joinedDescription": "Clubs où vous pouvez voir les progrès et activités réservés aux membres.",
+      "pendingSection": "Demandes en attente",
+      "pendingDescription": "Clubs privés en attente d'approbation par le créateur.",
+      "emptyTitle": "Vous ne faites encore partie d'aucun club",
+      "emptyMessage": "Parcourez les clubs pour en rejoindre un ou créez un groupe privé pour vos compagnons de randonnée.",
+      "emptySection": "Aucun club dans cette section pour l'instant."
+    },
+    "create": {
+      "title": "Créer un club",
+      "subtitle": "Définissez l'identité, la visibilité et l'image de couverture du club que vos membres verront en premier.",
+      "submit": "Créer le club"
+    },
+    "edit": {
+      "title": "Modifier le club"
+    },
+    "leaderboard": {
+      "subtitle": "Découvrez quels clubs grandissent le plus vite et enregistrent le plus de sommets."
+    },
+    "filters": {
+      "allVisibility": "Toute visibilité",
+      "period": "Période",
+      "sortBy": "Trier par",
+      "highestClimb": "Plus haute ascension",
+      "activity": "Activité",
+      "allCategories": "Toutes les catégories",
+      "routes": "Itinéraires",
+      "sort": "Trier par"
+    },
+    "period": {
+      "thisYear": "Cette année",
+      "lastYear": "L'année dernière",
+      "allTime": "Tout le temps",
+      "custom": "Personnalisé",
+      "dateFrom": "Du",
+      "dateTo": "Au"
+    },
+    "visibility": {
+      "public": "Public",
+      "private": "Privé"
+    },
+    "sort": {
+      "mostUsers": "Plus de membres",
+      "mostPeaks": "Plus de sommets",
+      "mostDistance": "Plus de distance",
+      "mostElevation": "Plus de dénivelé",
+      "mostTime": "Plus de temps",
+      "newest": "Plus récents",
+      "oldest": "Plus anciens",
+      "recentActivity": "Activité récente",
+      "joinedAt": "Date d'adhésion",
+      "name": "Nom",
+      "mostActiveLast30d": "Le plus actif (30j)"
+    },
+    "metrics": {
+      "members": "Membres",
+      "peaks": "Sommets",
+      "distinctPeaks": "Sommets",
+      "totalAscents": "Total ascensions",
+      "highestPeak": "Plus haut sommet",
+      "recentDistinctPeaks": "Sommets récents",
+      "activeMembers30d": "Actif (30j)",
+      "totalRoutes": "Itinéraires",
+      "distance": "Distance",
+      "totalDistanceKm": "Distance",
+      "totalElevationGain": "Dénivelé",
+      "totalTime": "Temps total",
+      "totalMovingTime": "Temps en mouvement",
+      "topMember": "Meilleur membre"
+    },
+    "tabs": {
+      "summary": "Résumé",
+      "members": "Membres",
+      "leaderboard": "Classement",
+      "activity": "Activité",
+      "requests": "Demandes"
+    },
+    "activity": {
+      "allRoutes": "Tous les itinéraires",
+      "withPeaks": "Avec sommets",
+      "noPeak": "Sans sommets",
+      "peaksDone": "Sommets gravis sur cet itinéraire",
+      "xMore": "de plus",
+      "latestRoutes": "Dernières routes du club",
+      "empty": "Aucune activité pour le moment."
+    },
+    "challenges": {
+      "title": "Défis de club",
+      "subtitle": "Les défis liés à ce club sont visibles par les membres.",
+      "membersOnly": "Rejoignez ce club pour voir et créer des défis de club.",
+      "create": "Créer un défi",
+      "empty": "Pas encore de défis de club.",
+      "emptyRestricted": "Aucun défi visible. Rejoignez le club pour débloquer les défis membres.",
+      "itemFallback": "Défi",
+      "total": "total",
+      "completed": "terminé",
+      "viewProgress": "Voir la progression des défis du club"
+    },
+    "actions": {
+      "manageMyClubs": "Gérer mes clubs",
+      "signInToJoin": "Se connecter pour rejoindre",
+      "joinClub": "Rejoindre le club",
+      "requestToJoin": "Demander à rejoindre",
+      "requestPending": "Demande en attente",
+      "leaveClub": "Quitter le club",
+      "editClub": "Modifier le club",
+      "manageClub": "Gérer le club",
+      "viewClub": "Voir le club",
+      "cancelRequest": "Annuler la demande",
+      "loadMore": "Charger plus",
+      "leaveConfirm": "Quitter ce club ? Vous pourrez toujours le rejoindre plus tard.",
+      "leaveConfirmTitle": "Quitter le club",
+      "leaveConfirmMessage": "Êtes-vous sûr de vouloir quitter le club '{name}' ? Vous pourrez toujours le rejoindre plus tard.",
+      "joinConfirmTitle": "Rejoindre le club",
+      "joinConfirmMessage": "Voulez-vous rejoindre le club '{name}' ? Vous pourrez voir son classement et son activité.",
+      "removeMember": "Supprimer",
+      "removeMemberConfirm": "Supprimer ce membre ?",
+      "acceptRequest": "Accepter",
+      "rejectRequest": "Refuser",
+      "deleteConfirmTitle": "Supprimer le club ?",
+      "deleteConfirmMessage": "Êtes-vous sûr de vouloir supprimer ce club ? Cette action est permanente et irréversible.",
+      "deleteSuccess": "Club supprimé avec succès",
+      "leave": "Quitter le club",
+      "selectClub": "Sélectionner un club"
+    },
+    "badges": {
+      "creator": "Créateur",
+      "member": "Membre",
+      "requestPending": "En attente",
+      "privateClub": "Club privé",
+      "restricted": "Restreint"
+    },
+    "status": {
+      "joined": "Inscrit",
+      "pending": "En attente"
+    },
+    "roles": {
+      "creator": "Créateur",
+      "member": "Membre"
+    },
+    "members": {
+      "joinedLabel": "Inscrit",
+      "none": "Aucun membre trouvé",
+      "empty": "Aucun membre trouvé"
+    },
+    "requests": {
+      "requestedOn": "Demandé le",
+      "pending": "Demande en attente",
+      "none": "Aucune demande en attente"
+    },
+    "messages": {
+      "actionFailed": "Impossible de mettre à jour ce club pour le moment.",
+      "loadFailed": "Impossible de charger ce club pour le moment.",
+      "saveFailed": "Impossible d'enregistrer ce club.",
+      "deleteFailed": "Impossible de supprimer ce club.",
+      "imageFailed": "Impossible de lire cette image.",
+      "leaveConfirmation": "Voulez-vous vraiment quitter ce club ?"
+    },
+    "validation": {
+      "nameRequired": "Le nom du club est requis",
+      "descriptionRequired": "La description du club est requise",
+      "visibilityRequired": "La visibilité du club est requise",
+      "imageRequired": "Un logo de club est requis",
+      "regionRequired": "Une région de club est requise"
+    },
+    "form": {
+      "image": "Logo du club",
+      "changeImage": "Changer de logo",
+      "uploadImage": "Télécharger un logo",
+      "name": "Nom du club",
+      "namePlaceholder": "Les Aventuriers des Sommets",
+      "description": "Description",
+      "descriptionPlaceholder": "Décrivez brièvement votre club",
+      "visibility": "Visibilité",
+      "region": "Région",
+      "regionPlaceholder": "Rechercher un pays ou une région...",
+      "regionSearching": "Recherche...",
+      "regionNoResults": "Aucune région trouvée",
+      "regionClear": "Supprimer la région",
+      "previewTitle": "Aperçu du club",
+      "previewMessage": "Ajoutez un logo pour donner à votre club une identité claire dans les résultats de recherche.",
+      "cropDescription": "Positionnez et zoomez sur votre logo pour prévisualiser l'avatar circulaire.",
+      "cropTitle": "Ajuster le logo du club",
+      "cropZoom": "Zoom"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "lastUpdate": {
+    "title": "Les refuges arrivent sur Summits",
+    "close": "Super !",
+    "refugios": {
+      "headline": "80 000+ Refuges",
+      "subtitle": "Des refuges enregistrés et libres du monde entier, maintenant sur Summits.",
+      "findOnMap": "Trouvez-les sur la carte ou sur la page explorer.",
+      "addManually": "Il en manque un ? Ajoutez-le manuellement depuis la carte.",
+      "saveFavorites": "Ajoutez-les à vos favoris pour les garder à portée de main.",
+      "community": "Toute contribution est appréciée et aide la communauté."
+    }
+  },
+  "manualPeaks": {
+    "fetchError": "Échec du chargement des sommets. Veuillez réessayer."
+  },
+  "offline": {
+    "banner": "Vous êtes hors ligne — certaines fonctionnalités peuvent être limitées",
+    "bannerCached": "Hors ligne – données cartographiques en cache disponibles",
+    "bannerNoCache": "Hors ligne – aucune donnée cartographique en cache",
+    "title": "Cartes hors ligne",
+    "area": "Zone hors ligne",
+    "empty": "Aucune zone hors ligne pour le moment. Téléchargez une zone de carte pour la garder disponible sans connexion internet.",
+    "newArea": "Télécharger une nouvelle zone",
+    "downloading": "Téléchargement",
+    "ready": "Prêt",
+    "failed": "Échec",
+    "cancelled": "Annulé",
+    "tiles": "tuiles",
+    "zoom": "zoom {min}-{max}",
+    "goTo": "Aller à la zone",
+    "delete": "Supprimer",
+    "drawHint": "Touchez la carte pour placer les points des coins, puis touchez Terminer pour fermer la zone.",
+    "undo": "Annuler",
+    "clear": "Effacer",
+    "finish": "Terminer",
+    "configName": "Nom de la zone",
+    "namePlaceholder": "p. ex. Hautes Tatras",
+    "maxZoomLabel": "Zoom max (détail)",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "Les zooms 17-18 sont rarement nécessaires et très coûteux – chaque niveau quadruple la taille du téléchargement. Le zoom 14 est le maximum recommandé.",
+    "estimate": "~{count} tuiles (~{size})",
+    "eta": "~{eta} restantes",
+    "keepOpen": "Gardez l'application ouverte pendant le téléchargement – la fermer met le téléchargement en pause.",
+    "redraw": "Redessiner",
+    "download": "Télécharger la zone",
+    "starting": "Démarrage...",
+    "errorResolve": "Impossible de résoudre le style de la carte. Assurez-vous d'être en ligne.",
+    "errorNoSources": "Sélectionnez au moins une source de données.",
+    "errorDownload": "Échec du téléchargement.",
+    "deleteTitle": "Supprimer la zone hors ligne ?",
+    "deleteMessage": "Supprimer \"{name}\" ? Cela supprime définitivement {tiles} tuiles ({size}) de cet appareil. Cette action est irréversible.",
+    "deleteCancel": "Annuler",
+    "deleteConfirm": "Supprimer",
+    "deleting": "Suppression..."
+  },
+  "peakChange": {
+    "createTitle": "Soumettre un nouveau sommet",
+    "editTitle": "Modifier le sommet",
+    "successTitle": "Sommet soumis",
+    "successMessage": "Votre sommet a été envoyé pour examen. Il sera accepté ou refusé sous 3 jours. Vous ne recevrez pas de notification, alors revenez plus tard pour voir le résultat.",
+    "successSubmessage": "Si vous avez des questions, contactez-nous depuis votre profil.",
+    "close": "Fermer",
+    "name": "Nom",
+    "namePlaceholder": "Nom du sommet",
+    "englishName": "Nom anglais",
+    "englishNamePlaceholder": "Nom anglais (facultatif)",
+    "coordinates": "Coordonnées",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "coordsEditHint": "Laisser vide pour conserver la position actuelle",
+    "pickOnMap": "Choisir sur la carte",
+    "clickMapInstruction": "Cliquez sur la carte pour définir l'emplacement du sommet",
+    "acceptLocation": "Accepter",
+    "elevation": "Altitude (m)",
+    "elevationPlaceholder": "Altitude en mètres",
+    "minZoomLevel": "Niveau de zoom min",
+    "selectVisibility": "-- Choisir la visibilité --",
+    "minZoomHelp": "Nombre faible = apparaît dézoomé (sommets mondiaux). Nombre élevé = visible seulement en zoom avant (collines locales).",
+    "wikipediaUrl": "URL Wikipedia",
+    "wikipediaPlaceholder": "https://fr.wikipedia.org/wiki/...",
+    "reason": "Motif de la modification",
+    "reasonPlaceholder": "Motif facultatif pour cette demande",
+    "image": "Image",
+    "chooseImage": "Choisir une image",
+    "submitCreate": "Soumettre le sommet pour examen",
+    "submitEdit": "Soumettre les modifications pour examen",
+    "submitting": "Soumission...",
+    "errorPeakIdMissing": "L'ID du sommet est manquant",
+    "errorNameRequired": "Le nom est requis",
+    "errorCoordinatesRequired": "Les coordonnées sont requises",
+    "errorElevationRequired": "L'altitude est requise",
+    "errorMinZoomRequired": "Le niveau de zoom min est requis",
+    "errorGeneric": "Échec de la soumission. Veuillez réessayer.",
+    "tabPeak": "Sommet",
+    "tabShelter": "Refuge",
+    "currentData": "Données actuelles",
+    "versionName": "Nom",
+    "versionElevation": "Altitude",
+    "versionWikipedia": "Wikipedia",
+    "versionWikipediaYes": "oui",
+    "mapButtonLabel": "Soumettre un nouveau sommet",
+    "email": "E-mail (facultatif)",
+    "emailPlaceholder": "votre@email.com",
+    "emailHelp": "Soyez notifié lorsque votre demande est approuvée ou rejetée"
+  },
+  "shelterChange": {
+    "createTitle": "Soumettre un nouveau refuge",
+    "editTitle": "Modifier le refuge",
+    "successTitle": "Refuge soumis",
+    "successMessage": "Votre refuge a été envoyé pour examen. Il sera accepté ou refusé sous 3 jours. Vous ne recevrez pas de notification, alors revenez plus tard pour voir le résultat.",
+    "successSubmessage": "Si vous avez des questions, contactez-nous depuis votre profil.",
+    "close": "Fermer",
+    "name": "Nom",
+    "namePlaceholder": "Nom du refuge",
+    "englishName": "Nom anglais",
+    "englishNamePlaceholder": "Nom anglais (facultatif)",
+    "shelterType": "Type de refuge",
+    "selectType": "-- Choisir le type --",
+    "coordinates": "Coordonnées",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "coordsEditHint": "Laisser vide pour conserver la position actuelle",
+    "pickOnMap": "Choisir sur la carte",
+    "acceptLocation": "Accepter",
+    "clickMapInstruction": "Cliquez sur la carte pour définir l'emplacement du refuge",
+    "elevation": "Altitude (m)",
+    "elevationPlaceholder": "Altitude en mètres",
+    "wikipediaUrl": "URL Wikipedia",
+    "wikipediaPlaceholder": "https://fr.wikipedia.org/wiki/...",
+    "tagsTitle": "Équipements et services",
+    "tagsHint": "Renseignez uniquement ce qui s'applique à ce refuge",
+    "tags": {
+      "capacity": "Capacité (personnes)",
+      "beds": "Lits",
+      "toilets": "Toilettes",
+      "drinking_water": "Eau potable",
+      "fireplace": "Cheminée",
+      "heating": "Chauffage",
+      "electricity": "Électricité",
+      "shower": "Douche",
+      "kitchen": "Cuisine",
+      "lit": "Éclairage",
+      "outdoor_seating": "Sièges en plein air",
+      "picnic_table": "Table de pique-nique",
+      "bench": "Bancs",
+      "covered": "Zone couverte",
+      "pets": "Animaux admis",
+      "dog": "Chiens admis",
+      "internet_access": "Accès internet",
+      "smoking": "Fumer",
+      "website": "Site web",
+      "websitePlaceholder": "https://...",
+      "description": "Description",
+      "descriptionPlaceholder": "Brève description du refuge"
+    },
+    "tagValues": {
+      "yes": "Oui",
+      "no": "Non",
+      "wifi": "WiFi",
+      "outside": "Extérieur uniquement",
+      "isolated": "Zone isolée"
+    },
+    "reason": "Motif de la modification",
+    "reasonPlaceholder": "Motif facultatif pour cette demande",
+    "email": "E-mail (facultatif)",
+    "emailPlaceholder": "votre@email.com",
+    "emailHelp": "Soyez notifié lorsque votre demande est approuvée ou rejetée",
+    "image": "Image",
+    "chooseImage": "Choisir une image",
+    "submitCreate": "Soumettre le refuge pour examen",
+    "submitEdit": "Soumettre les modifications pour examen",
+    "submitting": "Soumission...",
+    "errorShelterIdMissing": "L'ID du refuge est manquant",
+    "errorNameRequired": "Le nom est requis",
+    "errorTypeRequired": "Le type de refuge est requis",
+    "errorCoordinatesRequired": "Les coordonnées sont requises",
+    "errorGeneric": "Échec de la soumission. Veuillez réessayer.",
+    "tabPeak": "Sommet",
+    "tabShelter": "Refuge"
+  },
+  "singleDatePicker": {
+    "chooseDate": "Choisissez {label}",
+    "close": "Fermer",
+    "apply": "Appliquer"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "refuge gardé",
+      "wilderness_hut": "refuge non gardé",
+      "shelter": "abri d'urgence"
+    },
+    "intro": {
+      "default": "Il s'agit d'un {type}.",
+      "withOperator": "Il s'agit d'un {type} géré par {operator}.",
+      "withHours": "Ouvert {hours}.",
+      "free": "L'accès est gratuit.",
+      "paid": "L'accès est payant.",
+      "paidAmount": "Le tarif est de {charge}.",
+      "reservationsRequired": "Réservation obligatoire.",
+      "reservationsOptional": "Réservation facultative.",
+      "accessPublic": "L'accès est public.",
+      "accessPrivate": "L'accès est privé.",
+      "accessMembers": "L'accès est réservé aux membres."
+    },
+    "capacity": {
+      "bedsAndCapacity": "Il dispose de {beds} places avec une capacité pour {capacity} personnes.",
+      "bedsOnly": "Il dispose de {beds} places.",
+      "capacityOnly": "Il a une capacité pour {capacity} personnes."
+    },
+    "services": {
+      "title": "Il propose :",
+      "toilets": "toilettes",
+      "drinking_water": "eau potable",
+      "fireplace": "cheminée",
+      "stove": "poêle",
+      "heating": "chauffage",
+      "electricity": "électricité",
+      "shower": "douches",
+      "kitchen": "cuisine",
+      "lit": "éclairage",
+      "internet": "accès internet",
+      "outdoor_seating": "places en plein air",
+      "picnic_table": "table de pique-nique",
+      "bench": "bancs",
+      "covered": "espace couvert",
+      "pets": "animaux acceptés",
+      "smoking_free": "non-fumeur"
+    },
+    "website": "Visiter le site web",
+    "noInfo": "Aucune information supplémentaire disponible pour ce refuge.",
+    "nearbyShelters": "Refuges à proximité",
+    "nearbySheltersNoData": "Aucun refuge à proximité trouvé",
+    "unnamedShelter": "Refuge sans nom",
+    "unknownShelter": "Refuge inconnu",
+    "invalidShelterId": "ID de refuge invalide",
+    "suggestEdit": "Suggérer une modification",
+    "source": "Source : {source}",
+    "searchRoutesFor": "Rechercher des itinéraires pour",
+    "findHikingRoutesOnWikiloc": "Trouvez des itinéraires de randonnée sur Wikiloc",
+    "openImageGallery": "Ouvrir la galerie d'images",
+    "previousImage": "Image précédente",
+    "nextImage": "Image suivante",
+    "searchRoutesAria": "Rechercher des itinéraires pour {name} sur Wikiloc"
+  }
+}

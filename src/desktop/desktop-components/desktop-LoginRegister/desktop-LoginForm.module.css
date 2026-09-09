@@ -1,0 +1,221 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.login-form__title {
+  color: var(--auth-panel-text, var(--c-gray-900));
+  margin: 0;
+  text-align: center;
+}
+
+.login-form__hint {
+  color: var(--auth-panel-muted, var(--c-gray-600));
+  text-align: center;
+  margin: 0;
+}
+
+.login-form__error {
+  color: var(--color-danger);
+  background: rgba(226, 98, 95, 0.12);
+  border: 1px solid rgba(226, 98, 95, 0.3);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+}
+
+.login-form__input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.78rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid var(--auth-input-border, var(--c-gray-200));
+  background: var(--auth-input-bg, var(--c-white));
+  color: var(--auth-panel-text, var(--c-gray-900));
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.login-form__input::placeholder {
+  color: var(--auth-panel-muted, rgba(15, 23, 42, 0.48));
+}
+
+.login-form__input:focus {
+  border-color: rgba(194, 207, 148, 0.7);
+  box-shadow: 0 0 0 3px var(--auth-focus-ring, rgba(75, 140, 46, 0.1));
+}
+
+.login-form__button {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  background: var(--auth-primary-bg, #0a2540);
+  color: var(--c-gray-50);
+  border: none;
+  border-radius: 14px;
+  padding: 0.78rem 1rem;
+  margin-top: 0.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 0 8px var(--auth-focus-ring, rgba(10, 37, 64, 0.15));
+}
+
+.login-form__button:hover:not(:disabled) {
+  background: var(--auth-primary-hover, #0d3254);
+  transform: translateY(-1px);
+}
+
+.login-form__button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-form__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.15rem;
+  width: 100%;
+}
+
+.login-form__forgot-password {
+  background: none;
+  border: none;
+  color: var(--auth-panel-muted, var(--c-gray-600));
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  text-align: right;
+  transition: color 0.2s;
+}
+
+.login-form__forgot-password:hover {
+  color: var(--auth-panel-text, var(--c-gray-900));
+}
+
+.login-form__verify-email {
+  background: none;
+  border: none;
+  color: var(--auth-panel-muted, var(--c-gray-600));
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  transition: color 0.2s;
+}
+
+.login-form__verify-email:hover {
+  color: var(--auth-panel-text, var(--c-gray-900));
+}
+
+.login-form__back-to-login {
+  background: none;
+  border: none;
+  color: var(--auth-panel-muted, var(--c-gray-600));
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  transition: color 0.2s;
+  width: 100%;
+}
+
+.login-form__back-to-login:hover {
+  color: var(--auth-panel-text, var(--c-gray-900));
+}
+
+.login-form__success {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-form__success-text {
+  color: var(--color-success);
+  text-align: center;
+  padding: 1rem;
+  background: rgba(75, 140, 46, 0.12);
+  border: 1px solid rgba(75, 140, 46, 0.25);
+  border-radius: 12px;
+}
+
+.login-form__field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.login-form__divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--auth-panel-muted, var(--c-gray-500));
+  margin-top: 0.15rem;
+  text-transform: none;
+}
+
+.login-form__divider::before,
+.login-form__divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--auth-panel-divider, var(--c-gray-200));
+}
+
+.login-form__social-buttons {
+  display: flex;
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.login-form__strava-card {
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  display: block;
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-form__strava-card:active {
+  transform: scale(0.98);
+}
+
+.login-form__strava-card:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+.login-form__strava-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--auth-focus-ring, rgba(10, 37, 64, 0.15));
+}
+
+.login-form__strava-card:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.login-form__strava-image {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+

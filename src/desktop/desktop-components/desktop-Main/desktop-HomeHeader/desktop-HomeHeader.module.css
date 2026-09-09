@@ -1,0 +1,139 @@
+/* Home Header Component */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 16px;
+  gap: 24px;
+}
+
+.home-header--switch-below {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.home-header--switch-below .home-header__content {
+  width: 100%;
+}
+
+.home-header--switch-below .home-header__right {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.home-header__content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.home-header__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home-header__icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.home-header__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-header__title {
+  color: var(--c-gray-900);
+  margin: 0;
+  margin-bottom: 4px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.home-header__title--no-subtitle {
+  margin-bottom: 0;
+}
+
+.home-header__subtitle {
+  color: var(--c-gray-600);
+  margin: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.home-header__right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* See All Link Styles */
+.home-header__see-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--c-gray-600);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.home-header__see-all:hover {
+  color: var(--c-gray-900);
+}
+
+.home-header__see-all span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-header__see-all svg {
+  transition: transform 0.2s ease;
+}
+
+.home-header__see-all:hover svg {
+  transform: translateX(2px);
+}
+
+/* Switch/Toggle Container */
+.home-header__switch-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--c-gray-100);
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--c-gray-200);
+}
+
+.home-header__switch-option {
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.home-header__switch-option:hover {
+  color: var(--c-gray-900);
+  background: var(--c-white);
+}
+
+.home-header__switch-option-active {
+  background: var(--c-white);
+  color: var(--c-gray-900);
+  box-shadow: 0 2px 4px rgba(var(--rgb-black), 0.08);
+}

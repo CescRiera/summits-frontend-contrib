@@ -1,0 +1,171 @@
+.nearby-shelters {
+  animation: fadeInUp 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nearby-shelters__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nearby-shelters__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.nearby-shelters__icon {
+  opacity: 1;
+}
+
+.nearby-shelters__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nearby-shelters__card {
+  width: 100%;
+  height: 125px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.18), 0 1px 4px rgba(var(--rgb-black), 0.12);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.nearby-shelters__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(var(--rgb-black), 0.2), 0 2px 6px rgba(var(--rgb-black), 0.15);
+}
+
+.nearby-shelters__card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--rgb-black), 0) 0%,
+    rgba(var(--rgb-black), 0.3) 50%,
+    rgba(var(--rgb-black), 0.6) 75%,
+    rgba(var(--rgb-black), 0.9) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nearby-shelters__card-content {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.nearby-shelters__card-info-row {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.5);
+}
+
+.nearby-shelters__card-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-shelters__card-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.nearby-shelters__card-elevation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nearby-shelters__card-elevation span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-shelters__card-distance {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nearby-shelters__card-distance svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.nearby-shelters__card-distance span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-shelters__card-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nearby-shelters__no-data {
+  text-align: center;
+  color: var(--c-gray-400);
+  font-style: italic;
+  padding: 32px 16px;
+  background: var(--c-gray-100);
+  border-radius: 12px;
+}

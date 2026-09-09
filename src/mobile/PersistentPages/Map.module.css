@@ -1,0 +1,492 @@
+/* Page Layout Override - Map page is special, no padding */
+.persistent-pages__page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-gray-50);
+  padding: 0; /* No padding - map fills edge-to-edge */
+  margin: 0 !important;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Map Container - True fullscreen, fills edge-to-edge */
+.map__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+  background: transparent;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: none;
+}
+
+.map__header-left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map__header-left:has(.map__searchbar-animated) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.map__header-center {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateX(0);
+  flex-shrink: 0;
+}
+
+.map__header-center--hidden {
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  flex: 0 0 0;
+  overflow: hidden;
+}
+
+.map__header-right {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateX(0);
+  flex-shrink: 0;
+}
+
+.map__header-right--hidden {
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+  flex: 0 0 0;
+  overflow: hidden;
+}
+
+.map__search-icon-btn {
+  background: rgba(var(--rgb-white), 0.9);
+  border: 2px solid rgba(43, 122, 120, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  color: var(--c-gray-900, #1f2937);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08);
+}
+
+.map__searchbar-expanded {
+  min-width: 220px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.map__filters-panel {
+  position: relative;
+  z-index: 40;
+  width: 100%;
+  background: var(--c-white);
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.04);
+  padding-bottom: 8px;
+}
+
+.map__filters-panel-absolute {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  animation: filtersSlideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes filtersSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.map__searchbar-animated {
+  width: 100%;
+  max-width: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  background: rgba(var(--rgb-white), 0.98);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08);
+  padding: 0;
+  position: relative;
+  z-index: 1003;
+  animation: searchExpand 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+@keyframes searchExpand {
+  from {
+    width: 60px;
+    opacity: 0.8;
+    transform: scale(0.95);
+    flex: 0;
+    border-radius: 50%;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+    transform: scale(1);
+    flex: 1;
+    border-radius: 4px;
+  }
+}
+
+.map__mapbox-container {
+  position: relative;
+  flex: 1 1 0%;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Popup Container */
+.map__popup-container {
+  position: absolute;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.map__filters-icon-btn {
+  background: rgba(var(--rgb-white), 0.9);
+  border: 2px solid rgba(43, 122, 120, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  color: var(--c-gray-900, #1f2937);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08);
+  position: relative;
+}
+
+/* Error Container */
+.map__error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--c-gray-50);
+  padding: 2rem;
+}
+
+.map__error-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.map__error-title {
+  color: var(--c-gray-900, #0a2540);
+  margin: 0;
+}
+
+.map__error-message {
+  color: var(--c-gray-600, var(--c-gray-600));
+  margin: 0;
+}
+
+.map__error-link {
+  color: var(--color-primary, #1976d2);
+  text-decoration: underline;
+  margin: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.map__error-instructions {
+  text-align: left;
+  background: var(--color-background-secondary, var(--c-gray-100));
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.map__error-instructions-title {
+  color: var(--c-gray-900, #0a2540);
+  margin: 0;
+}
+
+.map__error-instructions-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--c-gray-600, var(--c-gray-600));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.map__error-instructions-note {
+  color: var(--c-gray-600, var(--c-gray-600));
+  font-style: italic;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.map__error-retry {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary, #1976d2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.map__error-retry:active {
+  background: var(--color-primary-darker, #0d47a1);
+}
+
+.map__nearby-toggle {
+  position: absolute;
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  left: 16px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(var(--rgb-white), 0.9);
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.map__nearby-toggle--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+.map__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #5f7440;
+}
+
+.map__label {
+  color: var(--c-gray-900);
+}
+
+/* Peak Location Confirm Bar */
+.map__pick-confirm {
+  position: absolute;
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  left: 16px;
+  right: 16px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(var(--rgb-white), 0.95);
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.map__pick-confirm-coords {
+  color: var(--c-gray-900);
+}
+
+.map__pick-confirm-accept {
+  padding: 8px 20px;
+  background: var(--color-primary, #1976d2);
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.map__pick-confirm-accept:active {
+  background: var(--color-primary-darker, #0d47a1);
+}
+
+/* Submit Peak Button */
+.map__submit-peak-btn {
+  position: absolute;
+  bottom: calc(188px + env(safe-area-inset-bottom));
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map__submit-peak-btn--hidden {
+  opacity: 0;
+  transform: translateX(100px);
+  pointer-events: none;
+}
+
+.map__submit-peak-btn__button {
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  padding: 12px;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.08), 0 2px 8px rgba(var(--rgb-black), 0.05),
+    inset 0 1px 0 rgba(var(--rgb-white), 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.map__submit-peak-btn__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(16, 185, 129, 0.08) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.map__submit-peak-btn__button:active {
+  transform: scale(0.95);
+}
+
+/* Offline Maps Button (dark navy, distinct from submit-peak, left side) */
+.map__offline-btn {
+  position: absolute;
+  bottom: calc(134px + env(safe-area-inset-bottom));
+  left: 20px;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map__offline-btn--hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  pointer-events: none;
+}
+
+.map__offline-btn__button {
+  background: var(--c-gray-800);
+  border: 1px solid var(--c-gray-800);
+  border-radius: 50%;
+  padding: 12px;
+  color: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12), 0 2px 8px rgba(var(--rgb-black), 0.08);
+}
+
+.map__offline-btn__button:active {
+  transform: scale(0.95);
+}
+
+/* Compass — hidden when north, fades in on rotation/tilt */
+:global(.mapboxgl-ctrl-top-right) {
+  top: var(--compass-top, 132px);
+  right: 16px;
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+:global(.mapboxgl-ctrl-top-right:not([data-compass-visible="true"])) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group) {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.98);
+  margin: 0;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group button) {
+  width: 36px;
+  height: 36px;
+}
+

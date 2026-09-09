@@ -1,0 +1,271 @@
+
+.desktop-add-manual-peaks {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--c-gray-50);
+}
+
+.desktop-add-manual-peaks__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--c-gray-200);
+  background-color: var(--c-white);
+}
+
+.desktop-add-manual-peaks__title {
+  margin: 0 0 8px;
+  color: var(--c-gray-900);
+}
+
+.desktop-add-manual-peaks__subtitle {
+  margin: 0;
+  color: var(--c-gray-600);
+}
+
+.desktop-add-manual-peaks__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--c-gray-600);
+  border-radius: 6px;
+  transition: all 0.2s;
+  margin-left: 24px;
+}
+
+.desktop-add-manual-peaks__close:hover {
+  background-color: var(--c-gray-100);
+  color: var(--c-gray-900);
+}
+
+.desktop-add-manual-peaks__container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--c-gray-50);
+  will-change: width; /* Optimization for sidebar transitions */
+}
+
+.desktop-add-manual-peaks__left {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-gray-50);
+  overflow: hidden;
+  border-right: 1px solid var(--c-gray-200);
+}
+
+.desktop-add-manual-peaks__right {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.desktop-add-manual-peaks__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+  color: var(--c-gray-600);
+}
+
+.desktop-add-manual-peaks__spinner {
+  animation: spin 1s linear infinite;
+  color: var(--color-primary);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer Loading State */
+.desktop-add-manual-peaks__shimmer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  width: 100%;
+}
+
+.desktop-add-manual-peaks__shimmer-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background: var(--c-white);
+  border-radius: 12px;
+  border: 1px solid var(--c-gray-100);
+}
+
+.desktop-add-manual-peaks__shimmer-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--c-gray-100) 25%, var(--c-gray-200) 50%, var(--c-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmerMove 1.5s infinite;
+  flex-shrink: 0;
+}
+
+.desktop-add-manual-peaks__shimmer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.desktop-add-manual-peaks__shimmer-title {
+  height: 16px;
+  width: 60%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--c-gray-100) 25%, var(--c-gray-200) 50%, var(--c-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmerMove 1.5s infinite;
+}
+
+.desktop-add-manual-peaks__shimmer-subtitle {
+  height: 12px;
+  width: 40%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--c-gray-100) 25%, var(--c-gray-200) 50%, var(--c-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmerMove 1.5s infinite;
+}
+
+@keyframes shimmerMove {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.desktop-add-manual-peaks__error {
+  padding: 24px;
+  margin: 16px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  color: var(--color-error);
+  text-align: center;
+}
+
+.desktop-add-manual-peaks__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--c-gray-600);
+  text-align: center;
+  padding: 32px;
+}
+
+.desktop-add-manual-peaks__load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: var(--c-gray-600);
+  border-top: 1px solid var(--c-gray-200);
+  background-color: var(--c-white);
+}
+
+.desktop-add-manual-peaks__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 32px;
+  border-top: 1px solid var(--c-gray-200);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.desktop-add-manual-peaks__footer-info {
+  flex: 1;
+  min-width: 0;
+  color: var(--c-gray-600);
+}
+
+.desktop-add-manual-peaks__submit {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.desktop-add-manual-peaks__submit:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.desktop-add-manual-peaks__submit:active:not(:disabled) {
+  opacity: 0.8;
+}
+
+.desktop-add-manual-peaks__submit:disabled,
+.desktop-add-manual-peaks__submit--disabled {
+  background-color: var(--c-gray-200);
+  color: var(--c-gray-400);
+  cursor: not-allowed;
+}
+
+.desktop-add-manual-peaks__toast {
+  position: fixed;
+  bottom: 0; /* Align to bottom instead of top for desktop usually? No, user requested "bottom" or "top"? Mobile uses top toast logic in bottom of screen? */
+  /* Mobile implementation: bottom: 0? No, let's check code again.
+     Mobile AddManualPeaks.tsx: styles["add-manual-peaks__toast"]
+     Let's put it top center for desktop or bottom center.
+     Typically success toasts are top or bottom right.
+     The user mentioned a success toast notification replacing redirection.
+     I put it roughly in the center bottom in the JSX: bottom: 40px effectively if relative to container?
+     The container is relative likely.
+     Let's position it absolute to the page container.
+  */
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.desktop-add-manual-peaks__toast-content {
+  background-color: var(--c-gray-800); /* Dark background */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

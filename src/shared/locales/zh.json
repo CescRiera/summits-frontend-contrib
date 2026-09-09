@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "应用",
+    "details": "详情",
+    "filters": "筛选",
+    "seeRanking": "查看排名",
+    "time": {
+      "years": "年",
+      "days": "天",
+      "hours": "小时",
+      "minutes": "分钟",
+      "seconds": "秒"
+    },
+    "loading": "加载中...",
+    "loadingRouteData": "正在加载您的路线数据，可能需要几秒钟",
+    "error": "错误",
+    "retry": "重试",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "list": "列表",
+    "map": "地图",
+    "close": "关闭",
+    "back": "返回",
+    "goBack": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜索",
+    "searching": "搜索中...",
+    "clear": "清除",
+    "filter": "筛选",
+    "sort": "排序",
+    "refresh": "刷新",
+    "min": "最小",
+    "max": "最大",
+    "country": "国家",
+    "region": "地区",
+    "location": "地点",
+    "chooseCountry": "选择国家",
+    "chooseRegion": "选择地区",
+    "allCountries": "所有国家",
+    "allRegions": "所有地区",
+    "seeAll": "查看全部",
+    "seeOnMap": "在地图上查看",
+    "showLess": "显示更少",
+    "moreInfo": "更多信息",
+    "create": "创建",
+    "follow": "关注",
+    "following": "已关注",
+    "join": "加入",
+    "leave": "离开",
+    "seeMore": "查看更多",
+    "select": "选择",
+    "send": "发送",
+    "timeUnits": {
+      "yearShort": "年",
+      "dayShort": "天",
+      "hourShort": "时",
+      "minuteShort": "分",
+      "secondShort": "秒"
+    },
+    "ranking": "排名",
+    "share": "Share",
+    "deleting": "删除中...",
+    "seeLess": "显示更少"
+  },
+  "desktopWarning": {
+    "title": "下载Summits移动版",
+    "subtitle": "享受Summits移动版，扫描二维码并按照落地页上的步骤下载应用程序！",
+    "scanQR": "用您的移动设备扫描此二维码",
+    "mobileSubtitle": "根据您的手机操作系统扫描下方相应的二维码，下载Android或iOS应用程序，随时追踪您的山峰！"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "登录以加入俱乐部。",
+      "title": "需要登录",
+      "message": "请登录以在地图上查看您的个人山峰。",
+      "viewCompletedPeaks": "请登录以查看已完成和未完成的山峰。",
+      "filterPeaks": "请登录以按完成状态筛选山峰。",
+      "sortByDate": "请登录以按完成日期对山峰排序。",
+      "myPeaks": "请登录以查看您的个人山峰。",
+      "myRoutes": "请登录以查看您的个人路线。",
+      "followingMode": "请登录以查看您关注的用户的最新活动。",
+      "savedPeaks": "请登录以查看您保存的山峰。",
+      "savedShelters": "请登录以查看您保存的庇护所。",
+      "followUser": "请登录以关注用户并查看他们的个人资料。",
+      "joinChallenge": "请登录以加入或关注挑战。",
+      "cancel": "取消",
+      "login": "登录"
+    },
+    "welcome": "欢迎使用Summits",
+    "signIn": "登录您的账户",
+    "email": "电子邮件",
+    "name": "姓名",
+    "password": "密码",
+    "signInButton": "登录",
+    "noAccount": "没有账户？立即注册",
+    "signUp": "注册",
+    "signUpOrLogin": "注册 / 登录",
+    "createAccount": "创建您的账户",
+    "confirmPassword": "确认密码",
+    "signUpButton": "创建账户",
+    "hasAccount": "已有账户？登录",
+    "fillAllFields": "请填写所有字段",
+    "loginFailed": "登录失败",
+    "registrationFailed": "注册失败",
+    "passwordsNotMatch": "密码不匹配",
+    "passwordMin": "密码至少需要6个字符。",
+    "acceptTerms": "我接受",
+    "termsOfService": "服务条款",
+    "and": "和",
+    "privacyPolicy": "隐私政策",
+    "acceptTermsRequired": "您必须接受服务条款",
+    "receiveNotificationsOnPeaks": "完成山峰时接收通知",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "账户创建成功！请登录。",
+    "stravaRegisteredSuccess": "您的账户已通过Strava成功注册。请登录。",
+    "backToSelection": "返回选择",
+    "backToLogin": "返回登录",
+    "emailVerification": {
+      "title": "验证您的电子邮件",
+      "message": "我们已向您的邮箱地址发送了6位验证码。请查看收件箱并在下方输入验证码。",
+      "messageWithEmail": "我们已向{email}发送了6位验证码。请查看收件箱并在下方输入验证码。",
+      "openGmail": "打开Gmail",
+      "success": "您的邮箱已成功验证！您的账户现在可以使用。",
+      "authenticated": "您的账户已通过身份验证。您现在可以登录。",
+      "verifying": "验证中...",
+      "error": "邮箱验证失败。验证码可能已过期或无效。请重试或联系支持。",
+      "codePlaceholder": "输入6位验证码",
+      "verifyButton": "验证邮箱",
+      "verifyingButton": "验证中...",
+      "resendCode": "重新发送验证码",
+      "resendSuccess": "验证码已重新发送到您的邮箱。",
+      "codeError": "无效或已过期的验证码",
+      "codeRequired": "请输入6位验证码",
+      "link": "验证邮箱？"
+    },
+    "forgotPassword": {
+      "title": "忘记密码",
+      "link": "忘记密码？",
+      "instructions": "输入您的邮箱地址，我们将向您发送6位验证码来重置密码。",
+      "sendEmail": "发送重置码",
+      "success": "如果该邮箱存在账户，我们已向您发送了密码重置码。请查看收件箱。",
+      "error": "发送密码重置邮件失败。请重试。"
+    },
+    "resetPassword": {
+      "title": "重置密码",
+      "instructions": "我们已向您的邮箱地址发送了6位验证码。请查看收件箱并在下方输入验证码。",
+      "messageWithEmail": "我们已向{email}发送了6位验证码。请查看收件箱并在下方输入验证码。",
+      "codePlaceholder": "输入6位验证码",
+      "codeRequired": "请输入6位验证码",
+      "emailRequired": "请输入您的邮箱地址",
+      "submit": "重置密码",
+      "successTitle": "密码重置成功",
+      "successMessage": "您的密码已成功重置。您现在可以使用新密码登录。",
+      "error": "密码重置失败。验证码可能已过期或无效。请请求新的重置码。",
+      "resendCode": "重新发送验证码",
+      "resendSuccess": "密码重置码已重新发送到您的邮箱。",
+      "resendError": "重新发送密码重置码失败。请重试。",
+      "invalidToken": "无效或缺失的重置令牌。请请求新的重置链接。"
+    },
+    "loginHint": "欢迎回来！输入您的凭据以访问您的个人资料。",
+    "goToLogin": "前往登录",
+    "welcomeMessage": "请登录或创建新账户以访问您的个人资料并同步您的活动。",
+    "noAccountQuestion": "没有账户？",
+    "hasAccountQuestion": "已有账户？",
+    "or": "或",
+    "orSignInWith": "或使用以下方式登录",
+    "loginWithStrava": "使用Strava登录",
+    "loginWithSuunto": "使用Suunto登录",
+    "chooseProvider": "选择提供商以创建您的账户：",
+    "backToProviderSelection": "返回提供商选择",
+    "wikiloc": {
+      "enterUsername": "输入Wikiloc用户名进行搜索。",
+      "noUsers": "未找到具有该名称的Wikiloc用户。",
+      "searchFailed": "搜索Wikiloc用户失败。",
+      "selectUserToContinue": "选择您的用户以继续",
+      "trails": "步道",
+      "selected": "已选择"
+    },
+    "register": {
+      "title": "创建您的账户",
+      "subtitle": "要同步您的山峰，您可以使用邮箱注册或通过Strava、Suunto、Garmin或Wikiloc连接。我们推荐Strava或Suunto以获得最快最简单的设置体验。",
+      "choosePlatform": "选择您的平台",
+      "noPlatformOption": "我没有这些账户之一",
+      "registerWith": "使用以下方式注册",
+      "connectingToWikiloc": {
+        "before": "我正在尝试联系Wikiloc，以便能够注册一个",
+        "appName": "Summits",
+        "after": "账户使用您的Wikiloc账户"
+      },
+      "connectingToStrava": {
+        "before": "我正在尝试联系Strava，以便能够注册一个",
+        "appName": "Summits",
+        "after": "账户使用您的Strava账户"
+      },
+      "providerDescription": {
+        "wikiloc": "与Wikiloc同步以追踪您的山峰进度",
+        "strava": "与Strava同步以追踪您的山峰进度",
+        "garmin": "与Garmin Connect同步以追踪您的山峰进度",
+        "default": "使用您的邮箱和密码创建Summits账户"
+      },
+      "default": {
+        "label": "邮箱",
+        "title": "创建Summits账户"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "使用Wikiloc注册",
+        "searchPlaceholder": "搜索您的Wikiloc用户名",
+        "enterUsername": "输入Wikiloc用户名进行搜索。",
+        "noUsers": "未找到具有该名称的Wikiloc用户。",
+        "searchFailed": "搜索Wikiloc用户失败。",
+        "warning": "从Wikiloc获取路线要比Strava、Garmin或Suunto慢得多！如果您有其中任何一个账户，请使用那个！",
+        "trails": "步道",
+        "selected": "已选择"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "使用Strava注册",
+        "connecting": "正在连接Strava...",
+        "submit": "使用Strava注册",
+        "warning": "Strava对可同步的路线的数量有限制。如果您有包含路线的Garmin账户，请考虑使用它以获得更好的同步功能。"
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "使用Garmin Connect注册",
+        "connecting": "正在注册Garmin Connect...",
+        "submit": "使用Garmin Connect注册",
+        "warning": "Garmin Connect有一些限制。如果您看不到所有活动，您可以联系我寻求帮助。"
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "使用Suunto注册",
+        "connecting": "正在连接Suunto...",
+        "submit": "继续使用Suunto",
+        "warning": "连接您的Suunto账户以将您的活动同步到Summits。"
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "Strava注册期间发生错误。请重试。",
+        "emailAlreadyExists": "此邮箱已存在账户。请使用不同的邮箱或登录。",
+        "accountAlreadyLinked": "此Strava账户已链接到另一个账户。",
+        "registrationFailed": "注册失败。请重试。",
+        "emailCheckFailed": "邮箱验证失败。请重试。",
+        "internalError": "发生内部错误。请稍后重试。"
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "此Garmin账户已链接到另一个账户。",
+        "emailCheckFailed": "邮箱验证失败。请重试。",
+        "generic": "Garmin注册期间发生错误。请重试。",
+        "internalError": "发生内部错误。请稍后重试。",
+        "registrationFailed": "注册失败。请重试。"
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "登录期间发生错误。请重试。",
+        "timeout": "登录超时。请重试。"
+      }
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "discover": "发现",
+    "leaderboard": "挑战",
+    "map": "地图",
+    "profile": "个人资料",
+    "contact": "联系",
+    "userProfile": "用户资料",
+    "routeDetails": "路线详情",
+    "peakDetails": "山峰详情"
+  },
+  "contact": {
+    "getInTouchWithMe": "联系开发者",
+    "phoneNumber": "电话号码",
+    "emailAddress": "邮箱地址",
+    "emailPlaceholder": "邮箱"
+  },
+  "main": {
+    "totalPeaks": "山峰总数",
+    "totalAscents": "登顶总数",
+    "scrapingMessage": "🔄 仍在从您的路线加载山峰...",
+    "failedToRefresh": "刷新数据失败",
+    "completedPeaksInList": "您在此挑战中已完成{completed}座，共{total}座山峰。",
+    "allPeaks": "所有山峰",
+    "loading": "加载中...",
+    "completed": "已完成",
+    "seeMore": "查看更多",
+    "seeLess": "查看更少",
+    "myPeaks": "您的山峰",
+    "swipeProgressHint": "滑动以探索不同挑战中的进度",
+    "swipeDiscoverHint": "滑动以发现世界各地的精彩挑战",
+    "yourHighestPeaks": "您的最高峰",
+    "yourHighestPeaksDesc": "您在登山旅程中征服的最高山脉",
+    "communityHighestPeaks": "社区的最高峰",
+    "communityHighestPeaksDesc": "我们社区成员到达的最令人印象深刻的峰顶",
+    "loadNewPeaks": "加载新山峰",
+    "refreshUserData": "刷新用户数据",
+    "scrapingInProgress": "如果您有很多路线，这可能需要一段时间，您可以自由探索应用程序的其他部分！",
+    "allPeaksList": {
+      "nameLoggedIn": "您的轨迹",
+      "nameGuest": "探索世界山峰",
+      "descriptionLoggedIn": "您到达的每个峰顶都会在您的旅程中留下持久的印记。追踪您从喜马拉雅到阿尔卑斯山脉的攀登——超越极限，一步一步前进。",
+      "descriptionGuest": "从珠穆朗玛峰到勃朗峰，探索世界上一些最令人惊叹的山脉。加入成千上万接受攀登挑战和冒险的登山者——因为我们在生活中所做的一切都会在永恒中回响。"
+    }
+  },
+  "peakDetails": {
+    "description": "描述",
+    "searchRoutesFor": "搜索路线",
+    "findHikingRoutesOnWikiloc": "在Wikiloc上查找徒步路线",
+    "expand": "展开",
+    "loadError": "加载峰值详细信息时出错"
+  },
+  "peaks": {
+    "count": "座山峰",
+    "noPeaksFound": "未找到山峰",
+    "peakInfo": "山峰信息",
+    "information": "信息",
+    "elevation": "海拔",
+    "description": "描述",
+    "noDescription": "暂无描述",
+    "noPeaksNearCoordinates": "在这些坐标附近未找到山峰",
+    "images": "图片",
+    "userPeakDescriptionSingle": "您在{date}通过路线<b>{routes}</b>攀登了{country}{region}的{name}峰。",
+    "userPeakDescriptionMultiple": "您在以下日期：{dates}通过以下路线：<b>{routes}</b>攀登了{country}{region}的{name}峰。"
+  },
+  "map": {
+    "noRoutes": "无可用路线",
+    "loadingRoutes": "加载路线中...",
+    "mapView": "地图视图",
+    "controls": {
+      "title": "地图控制",
+      "globeView": "3D地球视图",
+      "outdoors": "户外",
+      "satellite": "卫星",
+      "terrainView": "3D地形"
+    },
+    "visiblePeaks": {
+      "title": "可见山峰",
+      "subtitle": "当前视图和筛选的结果",
+      "layerLabel": "图层：",
+      "tilesLayerLabel": "瓦片图层",
+      "listLayerLabel": "列表图层",
+      "userLayerLabel": "您的山峰图层",
+      "enableHint": "启用开关以列出山峰",
+      "empty": "当前视图中未检测到山峰。",
+      "footer": "当地图静止1秒后更新。",
+      "loadMore": "查看另外{remaining}座山峰"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "浏览俱乐部",
+      "createClub": "创建俱乐部",
+      "myClubs": "我的俱乐部",
+      "browseTitle": "浏览俱乐部",
+      "joinClub": "加入俱乐部",
+      "myClubsDescription": "您所在的俱乐部。"
+    },
+    "userProfile": "用户资料",
+    "settings": "设置",
+    "logout": "退出登录",
+    "language": "语言",
+    "about": "关于",
+    "version": "版本",
+    "statistics": "统计",
+    "savedPeaks": "已保存的山峰",
+    "yourRoutes": "您的路线",
+    "yourPeaks": "您的山峰",
+    "yourRoutesWithCount": "您的{count}条路线",
+    "yourPeaksWithCount": "您的{count}座山峰",
+    "savedPeaksWithCount": "您的{count}座已保存山峰",
+    "savedShelters": "已保存的庇护所",
+    "savedSheltersWithCount": "您的{count}座已保存庇护所",
+    "viewYourRoutes": "查看您的路线",
+    "viewYourPeaks": "查看您的山峰",
+    "viewAllStats": "查看我的所有统计",
+    "seeAllSavedPeaks": "查看所有已保存的山峰",
+    "changeLanguage": "更改语言",
+    "unitSystem": "单位系统",
+    "unitSystemMessage": "选择您首选的单位系统",
+    "metricSystem": "公制（公里，米）",
+    "imperialSystem": "英制（英里，英尺）",
+    "helpTutorials": "帮助和教程",
+    "needHelp": "需要帮助？",
+    "sendSuggestionsReportErrors": "发送建议 / 报告错误",
+    "contactDeveloper": "联系开发者",
+    "donate": "捐赠",
+    "donateQuestion": "捐赠？",
+    "donateTitle": "支持Summits",
+    "donateMessage": "Summits是一个不产生利润的个人项目，由我自掏腰包资助。任何捐赠都将不胜感激，并将帮助改进和维护应用程序。感谢您的使用！",
+    "donateButton": "捐赠",
+    "donateAmount": "金额（欧元）",
+    "donateAmountPlaceholder": "例如 5.00",
+    "wikilocImport": "从Wikiloc导入",
+    "wikilocImportTitle": "从Wikiloc导入路线",
+    "wikilocImportDescription": "搜索Wikiloc个人资料并将其所有路线导入到您的账户。",
+    "wikilocImportSearchPlaceholder": "搜索Wikiloc用户名...",
+    "wikilocImportButton": "导入路线",
+    "wikilocImportStarted": "导入已开始！您将通过WebSocket收到进度更新。",
+    "wikilocImportQueued": "您在队列中排在第#{position}位。您将通过WebSocket收到进度更新。",
+    "wikilocImportAlreadyInProgress": "该用户的Wikiloc导入已在进行中。",
+    "wikilocImportServerBusy": "服务器正忙，请几分钟后再试。",
+    "wikilocImportCompleted": "导入完成！已处理{count}条路线。",
+    "wikilocImportError": "导入失败，请重试。",
+    "wikilocNoUsersFound": "未找到该名称的Wikiloc用户。",
+    "wikilocSearchFailed": "搜索Wikiloc用户失败。",
+    "wikilocEnterUsername": "请输入要搜索的Wikiloc用户名。",
+    "wikilocSelectUser": "选择要从中导入路线的用户：",
+    "wikilocSelectedUser": "已选择：{name}",
+    "deleteAccount": "删除",
+    "accountSettings": "账户设置",
+    "nameRequired": "姓名为必填项",
+    "nameTooLong": "姓名不能超过100个字符",
+    "nameUpdateFailed": "更新姓名失败",
+    "editName": "编辑姓名",
+    "saveName": "保存姓名",
+    "cancelEditName": "取消编辑姓名",
+    "logoutConfirmation": "您确定要退出登录吗？",
+    "languageChangeMessage": "选择您的首选语言",
+    "deleteAccountConfirmation": "您确定要删除您的账户吗？此操作无法撤销。",
+    "contactDeveloperMessage": "联系开发者获取支持、错误报告或一般咨询。",
+    "suggestionsMessage": "分享您的想法和建议以帮助改进应用程序。",
+    "subject": "主题",
+    "subjectPlaceholder": "输入主题...",
+    "message": "消息",
+    "messagePlaceholder": "输入您的消息...",
+    "yourSuggestion": "您的建议",
+    "suggestionPlaceholder": "分享您的想法和建议...",
+    "sendMessage": "发送",
+    "sendSuggestion": "发送",
+    "suggestionSentSuccessfully": "建议发送成功！",
+    "messageSentSuccessfully": "您的消息已成功发送！",
+    "follows": {
+      "followers": "粉丝",
+      "following": "关注",
+      "peaks": "山峰",
+      "followRequests": "关注请求",
+      "noPendingRequests": "无待处理请求",
+      "noPendingRequestsMessage": "您目前没有待处理的关注请求。",
+      "noFollowers": "无粉丝",
+      "noFollowersMessage": "您还没有粉丝。",
+      "notFollowingAnyone": "未关注任何人",
+      "notFollowingAnyoneMessage": "您还没有关注任何人。",
+      "accept": "接受",
+      "reject": "拒绝",
+      "unfollow": "取消关注",
+      "loading": "加载中...",
+      "error": "加载数据错误",
+      "pendingRequests": "待处理请求"
+    },
+    "notifications": {
+      "notifications": "通知",
+      "notificationsEnabled": "已启用",
+      "notificationsDisabled": "已禁用",
+      "notificationsPermissionDenied": "权限被拒绝",
+      "notificationsNotSupported": "不支持",
+      "waitingForPermission": "等待授权"
+    },
+    "privacy": {
+      "profileStatus": "资料状态",
+      "public": "公开",
+      "private": "私密"
+    },
+    "challenges": {
+      "joinChallenge": "加入挑战",
+      "createChallenge": "创建挑战",
+      "editMyChallenges": "编辑我的挑战",
+      "browseTitle": "浏览挑战",
+      "follow": "关注",
+      "following": "已关注",
+      "unfollowChallenge": "取消关注挑战",
+      "editChallenge": "编辑挑战",
+      "leave": "离开挑战",
+      "leaveConfirmTitle": "离开挑战",
+      "leaveConfirmMessage": "您想要离开'{name}'挑战吗？您的进度不会丢失，您可以随时重新加入。",
+      "noCreatedChallenges": "您还没有创建任何挑战。"
+    }
+  },
+  "externalProfile": {
+    "userClubs": "{userName} 的俱乐部",
+    "unknownUser": "未知用户",
+    "userNotFound": "未找到用户",
+    "userNotFoundMessage": "您查找的用户不存在或已被删除。",
+    "follow": "关注",
+    "following": "已关注",
+    "privateProfile": "私密资料",
+    "privateProfileMessage": "此用户已将其资料设置为私密。关注他们以查看他们的统计和活动。",
+    "rankTitle": "{userName}的排名",
+    "rankDescription": "在攀登最多山峰的用户中排名第<strong>{rank}</strong>位，共<strong>{totalUsers}</strong>位用户",
+    "userPeaks": "{userName}的山峰",
+    "userRoutes": "{userName}的路线",
+    "userPeaksWithCount": "{userName}的{count}座山峰",
+    "userRoutesWithCount": "{userName}的{count}条路线",
+    "userPeakLists": "{userName}的山峰挑战",
+    "peakListProgress": "{completed} / {total}已完成",
+    "performanceOverview": "绩效概览",
+    "distanceKm": "距离（公里）",
+    "elevationM": "海拔（米）",
+    "totalTime": "总时间",
+    "peaksConquered": "已征服山峰",
+    "routesCompleted": "已完成的路线",
+    "movingTime": "移动时间",
+    "viewStatsTitle": "查看{userName}的统计",
+    "viewStatsSubtitle": "交互式图表和指标",
+    "requestPending": "待处理"
+  },
+  "help": {
+    "subtitle": "了解如何充分利用Summits并发现所有功能",
+    "faq": {
+      "installApp": {
+        "question": "如何安装应用程序？",
+        "answer": "安装Summits应用程序取决于您的操作系统（iOS或Android）或您使用的浏览器版本。\n\n下方您将找到根据您的设备的安装按钮和步骤（就像我们在落地页上一样，但设计更简单）"
+      },
+      "newPeaks": {
+        "question": "新路线的山峰不显示",
+        "answer": "如果您路线中最新的山峰不显示，请尝试使用首页右上角的按钮，上面写着\"加载更多山峰\"。\n\n如果这不起作用或出现任何错误，您可以通过个人资料中的\"联系开发者\"部分联系我。"
+      },
+      "incorrectPeaks": {
+        "question": "显示我攀登了我实际上没有攀登的山峰（或相反）",
+        "answer": "为了计算您的山峰，应用程序会检查您路线的坐标并确定您经过的点。\n\n由于海拔精度较低，不可能总是确定性地判断您是攀登了一座山峰还是只是从附近或下方经过。这种情况尤其可能发生在山峰密度高的地区，如蒙塞拉特，在那里看起来您攀登了实际上没有攀登的山峰。\n\n在相反的情况下——如果您认为您攀登了一座山峰但它没有出现——可能是GPS失败或以小误差记录了路线。我建议您在地图上查看您的路线并检查GPS记录的线路。\n\n如果您仍然认为这是错误，您可以通过个人资料中的\"联系开发者\"部分联系我。"
+      },
+      "missingRoutes": {
+        "question": "我所有的路线或我做的新路线都没有显示",
+        "answer": "为了避免不必要的路线分析，Summits只分析来自与山地活动相关的特定类别的路线（徒步、登山、越野跑...）。这样，它可以避免大量的路线负载，并且不分析那些很可能没有任何山地活动的路线，如：游泳、跑步、骑行、健身房...\n\n为确保您的路线将被分析，请检查它们是否具有有效类型。如果您有任何与此相关的问题，您可以通过\"联系开发者\"部分联系我。"
+      },
+      "historicalData": {
+        "question": "我看不到我的历史数据（过去路线上的山峰）",
+        "answer": "回填数据存在一些问题。请使用下方的表格联系开发者。"
+      }
+    },
+    "mapNavigation": {
+      "title": "地图导航",
+      "pinchZoom": "双指缩放地图",
+      "dragPan": "拖动平移地图",
+      "tapPeak": "点击山峰查看详情",
+      "layers": "在不同地图图层之间切换"
+    },
+    "userFeatures": {
+      "title": "用户功能",
+      "savedPeaks": "保存您喜爱的山峰以便快速访问",
+      "routes": "创建和管理您的登山路线",
+      "statistics": "追踪您的登山进度和成就",
+      "profile": "管理您的账户和偏好"
+    },
+    "leaderboard": {
+      "title": "排行榜",
+      "ranking": "与世界各地的其他登山者竞争",
+      "categories": "按不同类别查看排名",
+      "filters": "按国家、地区或难度筛选结果",
+      "achievements": "解锁成就和徽章"
+    },
+    "settings": {
+      "title": "设置和偏好",
+      "language": "更改应用程序语言",
+      "notifications": "管理通知偏好",
+      "privacy": "控制您的隐私设置",
+      "data": "管理您的数据和账户"
+    }
+  },
+  "errors": {
+    "networkError": "网络错误",
+    "serverError": "服务器错误",
+    "timeoutError": "请求超时",
+    "unknownError": "发生未知错误"
+  },
+  "search": {
+    "searchPeaks": "按名称或路线ID搜索山峰...",
+    "searching": "搜索中...",
+    "searchForPeaks": "搜索山峰、用户、地区...",
+    "searchLabel": "搜索",
+    "closeSearch": "关闭搜索",
+    "elevationIcon": "海拔图标",
+    "peaks": "座山峰",
+    "noPeaksOrUsersFound": "未找到\"{query}\"的山峰或用户",
+    "noPeaksFound": "未找到\"{query}\"的山峰",
+    "searchPeaksAndUsers": "搜索山峰、用户、地区...",
+    "discoverPeaksAndUsers": "发现精彩的山峰并与其他登山者联系。输入山脉名称、地区、国家或用户名开始。",
+    "discoverPeaks": "发现世界各地精彩的山峰。输入山脉名称、地区或国家开始。",
+    "recentSearches": "最近搜索",
+    "clearRecentSearches": "清除最近搜索",
+    "clearSearch": "清除搜索"
+  },
+  "peaksList": {
+    "yourPeaks": "您的山峰",
+    "noPeaksMatchingSearch": "未找到与搜索匹配的山峰",
+    "noPeaksInRoutes": "在您的路线中未找到山峰",
+    "loadingPeaksData": "加载山峰数据中...",
+    "loadingPeaksMetadata": "加载山峰元数据中...",
+    "noPeaksDataAvailable": "无可用山峰数据"
+  },
+  "gallery": {
+    "media": "媒体库",
+    "noMedia": "无可用媒体",
+    "videoError": "加载视频错误",
+    "photos": "照片",
+    "videos": "视频",
+    "video": "视频",
+    "photo": "照片",
+    "openVideoMessage": "您想在Pexels上观看这个视频吗？",
+    "openVideo": "观看视频",
+    "watchVideo": "观看视频",
+    "viewOnPexels": "在Pexels上查看",
+    "addImage": "添加图片",
+    "addImageSuccess": "您的图片已提交审核。批准后将显示。",
+    "addImageError": "添加图片失败",
+    "replaceImage": "替换图片"
+  },
+  "filters": {
+    "filters": "筛选",
+    "altitude": "海拔",
+    "content": "内容",
+    "shelterType": "庇护所类型",
+    "modeAll": "全部",
+    "modePeaks": "山峰",
+    "modeShelters": "庇护所",
+    "all": "全部",
+    "location": "位置",
+    "clear": "清除筛选",
+    "showFilters": "显示筛选",
+    "hideFilters": "隐藏筛选",
+    "filterByElevation": "按海拔筛选",
+    "nearbyPeaks": "附近山峰",
+    "currentFilter": "当前筛选",
+    "choosePeakList": "选择挑战",
+    "chooseListOfSummits": "选择挑战",
+    "yourPeaks": "您的山峰"
+  },
+  "leaderboard": {
+    "clubsTab": "俱乐部",
+    "browseClubs": "浏览俱乐部",
+    "totalClubs": "俱乐部总数",
+    "totalCountries": "国家总数",
+    "exploreClubs": "探索俱乐部",
+    "clubsFilterPrefix": "拥有...的俱乐部",
+    "rank": "排名",
+    "club": "俱乐部",
+    "errorLoadingClubs": "加载俱乐部排行榜失败。",
+    "noClubsFound": "此类别下未找到俱乐部。",
+    "clubsFilters": {
+      "most_users": "成员最多",
+      "most_peaks": "最多山峰",
+      "most_distance": "距离最长",
+      "most_elevation": "海拔爬升最高",
+      "most_time": "时间最长",
+      "most_active_last_30d": "30天内最活跃",
+      "newest": "最新"
+    },
+    "metrics": {
+      "member_count": "成员",
+      "distinct_peak_count": "山峰",
+      "total_distance_km": "距离",
+      "total_elevation_gain": "海拔爬升",
+      "total_moving_time": "时间"
+    },
+    "clubsCategories": {
+      "mostPeaks": "最多山峰",
+      "mostDistance": "距离最长",
+      "mostElevation": "海拔爬升最高",
+      "mostTime": "时间最长",
+      "mostUsers": "成员最多"
+    },
+    "exploreChallenges": "探索挑战",
+    "noFollowing": "您还没有关注任何人。",
+    "title": "挑战",
+    "peaksTab": "山峰",
+    "usersTab": "用户",
+    "listsTab": "挑战",
+    "worldChallengeTab": "世界挑战",
+    "userChallengesTab": "用户挑战",
+    "worldTab": "世界",
+    "forYouTab": "为您推荐",
+    "totalWorldPeaks": "世界山峰总数",
+    "communityCompleted": "社区已完成",
+    "youCompleted": "您已完成",
+    "shortTotal": "总计",
+    "shortCommunity": "社区",
+    "shortMe": "您",
+    "shortExpand": "展开",
+    "shortMinimize": "关闭",
+    "sortByHighest": "最高山峰",
+    "sortByContributors": "最佳贡献者",
+    "expandMap": "展开地图",
+    "seeMoreAboutList": "查看更多关于此挑战的信息",
+    "sortBy": "排序方式",
+    "activity": "活动",
+    "allActivities": "所有活动",
+    "distance": "距离",
+    "elevation": "海拔",
+    "routes": "路线",
+    "peaks": "山峰",
+    "peak": "山峰",
+    "time": "时间",
+    "climbedBy": "攀登者",
+    "seeAll": "查看全部",
+    "loadMorePeaks": "加载更多山峰",
+    "loadMoreUsers": "加载更多用户",
+    "loading": "加载中...",
+    "distanceChampion": "距离冠军",
+    "elevationMaster": "海拔大师",
+    "routeExplorer": "路线探索者",
+    "peakConqueror": "山峰征服者",
+    "enduranceKing": "耐力之王",
+    "topPerformer": "最佳表现者",
+    "listChampion": "挑战冠军",
+    "peakListParticipant": "挑战参与者",
+    "badges": {
+      "distanceChampion": "距离冠军",
+      "elevationMaster": "海拔大师",
+      "routeExplorer": "路线探索者",
+      "peakConqueror": "山峰征服者",
+      "enduranceKing": "耐力之王",
+      "topPerformer": "最佳表现者"
+    },
+    "filters": {
+      "sortBy": "排序方式",
+      "activity": "活动"
+    },
+    "completed": "已完成",
+    "progress": "进度",
+    "hours": "小时",
+    "selectList": "选择挑战：",
+    "participants": "参与者",
+    "peakLists": "挑战排行榜",
+    "peakListsDescription": "与其他登山者在各种挑战中竞争",
+    "errorLoadingLists": "加载挑战失败",
+    "noParticipants": "此挑战还没有参与者。成为第一个加入的！",
+    "topPerformers": "最佳表现者",
+    "allRankings": "所有排名",
+    "noListSelected": "选择一个挑战以查看排名",
+    "noMorePeaks": "没有更多山峰可加载",
+    "noUsersFound": "未找到用户",
+    "searchLocationPlaceholder": "搜索国家或地区",
+    "noLocationsFound": "未找到\"{query}\"的国家或地区",
+    "locationSearchLabel": "搜索位置",
+    "total": "总计",
+    "user": "用户",
+    "peakList": "挑战",
+    "tryAgain": "重试",
+    "elevationGain": "爬升",
+    "climbers": "登山者",
+    "topClimber": "最佳登山者",
+    "unknown": "未知",
+    "notAvailable": "-",
+    "more": "更多",
+    "location": "位置",
+    "uniqueClimbers": "独特登山者",
+    "description": "一个社区驱动的挑战，您可以探索全球、国家或您所在地区的峰顶完成情况，同时跟踪您自己的个人贡献。",
+    "errorLoadingUsers": "加载用户失败",
+    "onlyMyPeaks": "仅我的山峰",
+    "community": "社区",
+    "you": "您",
+    "inPastYear": "在{year}年",
+    "inYear": "在{year}年"
+  },
+  "landing": {
+    "subtitle": "追踪您的山峰，探索社区的，发现新的！",
+    "description": "从珠穆朗玛峰到勃朗峰，探索世界上一些最令人惊叹的山脉。加入成千上万接受攀登挑战和冒险的登山者——因为我们在生活中所做的一切都会在永恒中回响。",
+    "loginPrompt": "想进一步推进您的进度？",
+    "wikilocText": "使用您的Wikiloc、Strava、Garmin或Suunto账户注册，看看您在所有路线中攀登了哪些山峰！",
+    "startExploring": "探索",
+    "forFullExperience": "获得完整体验：",
+    "home": "首页",
+    "explore": "发现",
+    "map": "地图",
+    "leaderboards": "挑战",
+    "signIn": "登录",
+    "navIntro": "使用这些按钮开始导航和探索！",
+    "desktopWarning": {
+      "title": "Summits在手机上效果最佳",
+      "subtitle": "要获得完整体验，请下载我们的移动应用程序。"
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "您的记录",
+    "personalClimbingAchievements": "个人登山成就",
+    "seeAll": "查看全部",
+    "highestPeak": "最高峰",
+    "ascent": "登顶",
+    "ascents": "登顶次数",
+    "otherAchievements": "其他成就",
+    "viewPeak": "查看山峰",
+    "emptyTitle": "开始您的旅程",
+    "emptySubtitle": "记录您的第一次攀登以在此处查看您的个人记录！"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "您的最艰难路线",
+    "mostDemandingChallenges": "最具挑战性的挑战",
+    "seeAll": "查看全部",
+    "hardestRoute": "最极端",
+    "elevationGain": "爬升",
+    "time": "时间",
+    "movingTime": "移动时间",
+    "distance": "距离",
+    "emptyTitle": "开始您的旅程",
+    "emptySubtitle": "完成您的第一条路线以在此处查看您的最艰难挑战！"
+  },
+  "recentPeaks": {
+    "title": "最近山峰",
+    "subtitle": "最近的峰顶完成",
+    "filter": {
+      "community": "社区",
+      "following": "关注",
+      "user": "您"
+    }
+  },
+  "recentRoutes": {
+    "title": "最近路线",
+    "subtitle": "最近的路线完成",
+    "elevationGain": "海拔",
+    "time": "时间",
+    "distance": "距离",
+    "peaks": "山峰",
+    "filter": {
+      "community": "社区",
+      "following": "关注",
+      "user": "您"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "已屏蔽用户的统计数据已隐藏。",
+    "reportContent": "举报内容",
+    "reportUser": "举报用户",
+    "blockUser": "屏蔽用户",
+    "unblockUser": "取消屏蔽",
+    "userBlocked": "用户已屏蔽",
+    "contentReported": "内容已举报",
+    "userReported": "用户已举报",
+    "actionCompleted": "操作完成",
+    "userBlockedMessage": "您已屏蔽{userName}。他们的内容将被隐藏。",
+    "contentReportedMessage": "感谢您的举报。我们将尽快审核。",
+    "userReportedMessage": "感谢您举报此用户。我们将尽快审核。",
+    "actionCompletedMessage": "操作成功完成。",
+    "unblockInfo": "您可以随时取消屏蔽此用户。",
+    "blockInfo": "屏蔽用户将隐藏他们的所有内容。",
+    "blockedUser": "已屏蔽的用户",
+    "blockedRoute": "已屏蔽的路线",
+    "blockedProfile": "已屏蔽的用户",
+    "blockedProfileMessage": "您已屏蔽此用户。他们的内容对您隐藏。"
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "世界最新路线和山峰",
+      "subtitle": "可视化社区成员、您的朋友或您自己完成的最新路线和山峰"
+    },
+    "challenges": {
+      "title": "热门挑战",
+      "subtitle": "查看并完成最大的世界挑战",
+      "allPeaksDescriptionLoggedIn": "探索社区攀登的所有峰顶并跟踪您的贡献！",
+      "allPeaksDescriptionGuest": "探索社区攀登的所有峰顶。注册以跟踪您的贡献！",
+      "statTotal": "总计",
+      "statCompleted": "已攀登",
+      "statByMe": "您"
+    },
+    "showMore": "显示更多",
+    "showLess": "显示更少"
+  },
+  "recentCommunityPeaks": {
+    "title": "社区最近山峰",
+    "subtitle": "社区最近征服的峰顶",
+    "elevation": "海拔",
+    "location": "位置"
+  },
+  "recentCommunityRoutes": {
+    "title": "社区最近路线",
+    "subtitle": "社区最近完成的路线",
+    "elevationGain": "海拔",
+    "time": "时间",
+    "distance": "距离",
+    "peaks": "山峰"
+  },
+  "weather": {
+    "title": "天气",
+    "weatherDataUnavailable": "天气数据不可用",
+    "feelsLike": "体感温度",
+    "temperature": "温度",
+    "wind": "风",
+    "precipitation": "降水",
+    "snow": "雪",
+    "uvIndex": "紫外线指数",
+    "sunrise": "日出",
+    "sunset": "日落",
+    "hourlyForecast": "小时预报",
+    "closeHourlyForecast": "关闭小时预报",
+    "showHourlyForecastForToday": "显示今天的小时预报",
+    "showHourlyForecastFor": "显示{date}的小时预报",
+    "kmh": "公里/小时",
+    "mm": "毫米",
+    "cm": "厘米",
+    "hours": "小时"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "兴趣点",
+    "noDataForPeak": "此山峰没有可用的基础设施数据。",
+    "noNearbyWithin5km": "在此山峰5公里范围内未找到附近的基础设施。",
+    "allInfrastructure": "所有基础设施",
+    "location": "位置",
+    "details": "详情",
+    "visitWebsite": "访问网站",
+    "kmFromPeak": "距山峰公里",
+    "openMaps": "打开地图",
+    "viewInMaps": "在地图中查看",
+    "category": {
+      "hut": "山间小屋",
+      "shelter": "避难所",
+      "campsite": "营地",
+      "naturalFeature": "自然特征",
+      "waterSource": "水源",
+      "other": "其他"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "附近山峰",
+    "noData": "未找到附近山峰"
+  },
+  "userPeaks": {
+    "title": "您的山峰",
+    "userTitle": "{userName}的山峰",
+    "description": "您个人收集的{count}座已完成山峰。每个峰顶代表一段旅程、一次克服的挑战和将永远持续的记忆。",
+    "userDescription": "{userName}个人收集的{count}座已完成山峰。每个峰顶代表一段旅程、一次克服的挑战和将永远持续的记忆。",
+    "noPeaks": "您还没有完成任何山峰。开始您的冒险！",
+    "loading": "正在加载您的山峰...",
+    "error": "加载您的山峰失败",
+    "addPeaks": "添加山峰",
+    "timeline": "时间线",
+    "openPeak": "打开山峰",
+    "summary": {
+      "baseText": "您已完成",
+      "userBaseText": "{userName}已完成",
+      "timeSingular": "次",
+      "timePlural": "次",
+      "in": "在",
+      "on": "于",
+      "and": "和",
+      "singleRoute": "您于{date}通过路线{routeName}完成了{peakName} {countText}",
+      "twoRoutes": "您于{dates}通过{routeNames}完成了{peakName} {countText}",
+      "multipleRoutes": "您于{dates}通过{routeNames}完成了{peakName} {countText}",
+      "oneRoute": "1条路线",
+      "multipleRoutesCount": "{count}条路线",
+      "seeMore": "查看更多",
+      "seeLess": "查看更少"
+    },
+    "grid": "网格",
+    "filters": "筛选",
+    "advancedFilters": "高级筛选",
+    "searchPeaks": "搜索山峰",
+    "searchPlaceholder": "按名称、国家、地区搜索...",
+    "dateRange": "日期范围",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "elevationRange": "海拔范围",
+    "country": "国家",
+    "region": "地区",
+    "allCountries": "所有国家",
+    "allRegions": "所有地区",
+    "clearAll": "全部清除",
+    "applyFilters": "应用筛选",
+    "noResults": "未找到与您的筛选匹配的山峰。",
+    "peaks": "座山峰",
+    "showMore": "显示另外{count}座",
+    "showLess": "显示更少",
+    "wrongPeak": "错误？",
+    "deleteConfirmation": {
+      "title": "删除山峰",
+      "message": "您想删除 {peakName} 吗？它将显示为您从未登顶过",
+      "confirm": "删除",
+      "cancel": "取消"
+    },
+    "yourAscensions": "你的攀登记录",
+    "peakDetails": "山峰详情",
+    "peakInfo": {
+      "title": "山峰信息",
+      "loading": "加载山峰信息中...",
+      "error": "加载山峰信息失败",
+      "ascensions": "攀登记录",
+      "unlinked": "未关联",
+      "youAscended": "暂无信息。",
+      "unknownRoute": "未知路线",
+      "unlinkedPrompt": "你有{count}条未关联的攀登记录。将它们关联到路线或日期：",
+      "linkToRoute": "路线",
+      "selectRoute": "选择路线...",
+      "linkToDate": "日期",
+      "link": "关联",
+      "editLink": "编辑关联",
+      "moving": "移动中",
+      "deleteAscension": "删除攀登记录",
+      "linkAscension": "关联攀登记录",
+      "deletePeak": "删除山峰",
+      "confirmDeletePeak": "删除{peakName}？这将移除所有攀登记录。",
+      "confirmDeleteAscension": "确定要删除这条攀登记录吗？",
+      "deleting": "删除中...",
+      "yesDelete": "是，删除",
+      "cancel": "取消",
+      "close": "关闭",
+      "noAscensions": "暂无攀登记录"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "已保存的山峰",
+    "description": "您收集的{count}座已保存山峰。追踪您想要攀登或重访的山峰。",
+    "noPeaks": "您还没有保存任何山峰。开始探索！",
+    "loading": "正在加载您的已保存山峰...",
+    "error": "加载您的已保存山峰失败",
+    "filters": "筛选",
+    "advancedFilters": "高级筛选",
+    "searchPlaceholder": "按名称、国家、地区搜索...",
+    "dateRange": "日期范围",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "elevationRange": "海拔范围",
+    "country": "国家",
+    "region": "地区",
+    "allCountries": "所有国家",
+    "allRegions": "所有地区",
+    "clearAll": "全部清除",
+    "applyFilters": "应用筛选",
+    "noResults": "未找到与您的筛选匹配的已保存山峰。",
+    "sorting": {
+      "savedDate": "保存日期"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "最新优先",
+      "savedDateOldest": "最旧优先"
+    }
+  },
+  "userSavedShelters": {
+    "title": "已保存的庇护所",
+    "totalLabel": "避难所总数",
+    "description": "您保存的{count}座庇护所。记录您想参观的庇护所。",
+    "noShelters": "您还没有保存任何庇护所。开始探索吧！",
+    "loading": "正在加载您保存的庇护所...",
+    "error": "无法加载您保存的庇护所",
+    "filters": "筛选",
+    "advancedFilters": "高级筛选",
+    "searchPlaceholder": "按名称、国家、地区搜索...",
+    "dateRange": "日期范围",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "elevationRange": "海拔范围",
+    "country": "国家",
+    "region": "地区",
+    "allCountries": "所有国家",
+    "allRegions": "所有地区",
+    "clearAll": "全部清除",
+    "applyFilters": "应用筛选",
+    "noResults": "未找到符合您筛选条件的已保存庇护所。",
+    "typeFilter": "庇护所类型",
+    "typeOptions": {
+      "all": "所有类型"
+    },
+    "savedOn": "保存于",
+    "unsave": "取消保存庇护所",
+    "sorting": {
+      "savedDate": "保存日期"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "最新优先",
+      "savedDateOldest": "最旧优先"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "您在此挑战中还没有完成任何山峰。开始您的冒险！",
+    "loading": "加载中...",
+    "noSearchResults": "未找到\"{query}\"的山峰。尝试不同的搜索词。",
+    "search": {
+      "placeholder": "按名称、地区或国家搜索山峰..."
+    },
+    "filters": {
+      "label": "筛选：",
+      "all": "全部",
+      "completed": "已完成",
+      "missing": "未完成"
+    },
+    "sorting": {
+      "label": "排序：",
+      "name": "名称",
+      "elevation": "海拔",
+      "date": "日期",
+      "ascents": "登顶次数"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Z",
+      "nameDesc": "Z → A",
+      "elevationAsc": "低 → 高",
+      "elevationDesc": "高 → 低",
+      "dateNewest": "最新优先",
+      "dateOldest": "最旧优先",
+      "ascentsMost": "最多登顶",
+      "ascentsLeast": "最少登顶"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "删除路线",
+    "deleteConfirmTitle": "删除路线？",
+    "deleteConfirmMessage": "您确定要删除该路线吗？此操作是永久性的，会减少您记录的山峰数。",
+    "deleteSuccess": "路线删除成功",
+    "deleteError": "无法删除路线。请重试。",
+    "unnamedRoute": "未命名路线",
+    "metrics": {
+      "distance": "距离",
+      "elevationGain": "爬升高度",
+      "time": "时间"
+    },
+    "title": "您的路线",
+    "userTitle": "{userName}的路线",
+    "description": "您已完成{totalRoutes}条路线，共{totalPeaks}座山峰。",
+    "userDescription": "{userName}已完成{totalRoutes}条路线，共{totalPeaks}座山峰。",
+    "routes": "路线",
+    "addRoute": "添加路线",
+    "addRouteTitle": "添加GPX路线",
+    "addRouteNameLabel": "路线名称",
+    "addRouteNamePlaceholder": "输入路线名称",
+    "addRouteFileLabel": "GPX文件",
+    "addRouteFilePlaceholder": "选择GPX文件",
+    "addRouteSubmit": "添加路线",
+    "addRouteSubmitting": "添加路线中...",
+    "addRouteErrors": {
+      "name": "请输入路线名称。",
+      "file": "请选择GPX文件。",
+      "submit": "添加路线失败。请重试。"
+    },
+    "searchPlaceholder": "搜索路线...",
+    "filters": "筛选",
+    "advancedFilters": "高级筛选",
+    "sortBy": "排序方式",
+    "date": "日期",
+    "peaks": "山峰",
+    "sortOptions": {
+      "dateNewest": "日期（最新）",
+      "dateOldest": "日期（最旧）",
+      "peaksMost": "最多山峰",
+      "peaksLeast": "最少山峰"
+    },
+    "loadingRoutes": "加载路线中...",
+    "loadingMore": "加载更多路线中...",
+    "loadingCountries": "加载国家/地区中...",
+    "noResults": "未找到与您的条件匹配的路线。",
+    "endMessage": "您已到达路线的末尾",
+    "paginationError": "加载更多路线失败",
+    "tryAgain": "重试",
+    "clearAll": "全部清除",
+    "applyFilters": "应用筛选",
+    "dateRange": "日期范围",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "country": "国家",
+    "region": "地区",
+    "allCountries": "所有国家",
+    "allRegions": "所有地区",
+    "peaksCount": "座山峰",
+    "noPeaksOnRoute": "此路线上没有完成山峰",
+    "seeOnMap": "在地图上查看",
+    "ascent": "登顶",
+    "ascents": "登顶次数",
+    "peaksInRoute": "路线中的山峰"
+  },
+  "addManualPeaks": {
+    "title": "手动添加山峰",
+    "subtitle": "发现并添加山峰到您的个人资料。搜索、筛选、选择多个山峰并将它们与您的路线关联。",
+    "listView": "列表",
+    "mapView": "地图",
+    "filters": "筛选",
+    "peakName": "山峰名称",
+    "searchPlaceholder": "搜索山峰（最少2个字符）...",
+    "elevation": "海拔",
+    "minElevation": "最低海拔（米）",
+    "maxElevation": "最高海拔（米）",
+    "country": "国家",
+    "allCountries": "所有国家",
+    "region": "地区",
+    "allRegions": "所有地区",
+    "clearFilters": "清除筛选",
+    "loading": "加载山峰中...",
+    "loadingMap": "加载地图中...",
+    "noPeaks": "未找到山峰。尝试调整筛选条件。",
+    "mapPlaceholder": "地图将显示在此处。选择山峰以在地图上查看。",
+    "associatedRoute": "与路线关联",
+    "selected": "已选择",
+    "selectedCount_one": "已选择{{count}}座山峰",
+    "selectedCount_other": "已选择{{count}}座山峰",
+    "submit_one": "添加{{count}}座山峰",
+    "submit_other": "添加{{count}}座山峰",
+    "submitting": "添加山峰中...",
+    "noSelection": "请至少选择一座山峰。",
+    "fetchError": "加载山峰失败。请重试。",
+    "submitError": "添加山峰失败。请重试。",
+    "addSuccess_one": "成功添加{{count}}座山峰！",
+    "addSuccess_other": "成功添加{{count}}座山峰！",
+    "routeExistence": {
+      "question": "这座山峰属于现有路线吗？",
+      "subtitle": "选择一个选项以继续",
+      "hasRoute": "是，选择路线",
+      "noRoute": "否，添加为独立山峰",
+      "addWithDate": "添加日期"
+    },
+    "selectRoute": "为{peakName}选择路线",
+    "routeAssociation": {
+      "title": "确认关联",
+      "message": "您想要将{peakName}与路线{routeName}关联吗？",
+      "confirm": "确认",
+      "cancel": "取消"
+    },
+    "submitOptions": {
+      "title": "审核您的山峰",
+      "date": "日期",
+      "routeHint": "关联路线",
+      "dateHint": "设置日期"
+    }
+  },
+  "userStats": {
+    "title": "统计",
+    "activityType": "活动类型",
+    "totalPeaks": "山峰总数",
+    "totalRoutes": "路线总数",
+    "peakLists": {
+      "title": "挑战进度",
+      "completedDescription": "您已完成{completed}座，共{total}座山峰。"
+    },
+    "statistics": "统计",
+    "globalStats": "全局统计",
+    "byActivity": "按活动",
+    "graph": "时间进度图表",
+    "openGraph": "点击查看详细图表",
+    "viewInCharts": "在图表中查看",
+    "progressChart": "进度图表",
+    "rotate": "旋转设备以获得更好的视图",
+    "rank": {
+      "yourRank": "您的排名",
+      "rankDescription": "在山峰总数最多的用户中，您排名第{rank}位，共{totalUsers}位用户",
+      "noRank": "无排名"
+    },
+    "moreInformation": "更多信息",
+    "peakListsDescription": "点击下方的任何挑战以访问其详情",
+    "statisticsDescription": "可视化您的统计",
+    "openGraphDescription": "打开以探索交互式图表",
+    "metrics": {
+      "distance": "距离",
+      "elevationGain": "爬升",
+      "time": "时间",
+      "totalTime": "总时间",
+      "movingTime": "移动时间",
+      "peaks": "山峰",
+      "routes": "路线"
+    },
+    "timeAggregation": {
+      "daily": "路线日期",
+      "weekly": "每周",
+      "monthly": "每月",
+      "yearly": "每年",
+      "custom": "自定义范围"
+    },
+    "controls": {
+      "groupBy": "分组方式",
+      "activityType": "活动类型",
+      "startDate": "开始日期",
+      "endDate": "结束日期",
+      "apply": "应用"
+    },
+    "chart": {
+      "noDataAvailable": "此活动无可用数据"
+    },
+    "rotatePhone": "请将手机旋转至水平以查看图表",
+    "activityFilter": {
+      "all": "所有活动",
+      "unknown": "未知"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "标记为已登顶",
+    "title": "社区",
+    "completedBy": "攀登者",
+    "totalCompletions": "登顶总数",
+    "uniqueUsers": "独特用户",
+    "timeSingle": "次",
+    "timePlural": "次",
+    "seeMore": "查看更多",
+    "more": "更多",
+    "yourProgress": "您的进度",
+    "completed": "已攀登",
+    "notCompleted": "未攀登",
+    "lastCompleted": "最近攀登",
+    "youHaveCompleted": "您已攀登",
+    "routes": "路线",
+    "peaks": "山峰",
+    "filterAll": "全部",
+    "filterClubRelated": "俱乐部相关",
+    "filterMyClubs": "我的俱乐部"
+  },
+  "listOverlay": {
+    "chooseList": "选择挑战",
+    "completedLabel": "{completed}/{total}已完成"
+  },
+  "exploreOverlay": {
+    "title": "向左拖动/滑动",
+    "subtitle": "以发现交互式地图"
+  },
+  "og": {
+    "title": "Summits - 追踪您的山脉峰顶",
+    "description": "追踪您的登顶成就，与社区分享山峰，并发现世界各地其他登山者的攀登。"
+  },
+  "routeDetails": {
+    "downloadRoute": "下载路线",
+    "sendToDevice": "发送到设备",
+    "showStats": "显示统计",
+    "hideStats": "隐藏统计",
+    "shareRoute": "分享"
+  },
+  "routeAnimation": {
+    "title": "创建动画",
+    "createAnimation": "创建动画",
+    "description": "生成您的路线的电影式3D飞越视频。摄像机将跟随您的路径，以戏剧性的追逐视角呈现。",
+    "hint": "地形完全加载后 recording will begin.",
+    "duration": "视频时长",
+    "seconds": "秒",
+    "durationHint": "越长 = 越慢越有电影感",
+    "elevation": "海拔",
+    "elevationGain": "爬升",
+    "distance": "距离",
+    "preparing": "准备3D地形中...",
+    "recording": "录制中...",
+    "recordingHint": "请等待动画录制完成。请勿切换标签页。",
+    "complete": "动画完成！您的视频已准备好下载。",
+    "fileSize": "文件大小",
+    "download": "下载视频",
+    "start": "开始录制",
+    "retry": "重试",
+    "error": "创建动画时发生错误。",
+    "errorNoRoute": "没有可用于动画的路线数据。",
+    "errorUnknown": "发生未知错误。",
+    "notSupported": "您的浏览器不支持视频录制。请尝试Chrome、Firefox或Edge。",
+    "videoDownloaded": "视频已下载",
+    "videoSavedToGallery": "视频已保存到您的相册",
+    "speed": "速度",
+    "speedHint": "在录制期间使用+/-按钮调整速度：1x → 3x → 5x → 10x → 0.5x → 1x",
+    "speedDurationHint": "视频时长取决于您选择的速度",
+    "save": "保存到相册"
+  },
+  "routeAssociation": {
+    "authRequired": "登录以将此山峰与路线关联。",
+    "confirm": "确认",
+    "fetchError": "无法加载您的路线。",
+    "loading": "正在加载路线...",
+    "noRoute": "跳过（无路线）",
+    "noRoutes": "未找到路线",
+    "peaks_one": "此路线包含{count}座山峰",
+    "peaks_other": "此路线包含{count}座山峰",
+    "subtitle": "为{peakName}选择路线",
+    "title": "关联路线"
+  },
+  "terms": {
+    "title": "Summits – 服务条款",
+    "lastUpdated": "最后更新：2025年1月",
+    "introduction": {
+      "title": "Introduction",
+      "content": "Summits is a platform that helps track and share mountain peak climbing experiences. To provide this service, Summits integrates with third-party platforms including Garmin Connect, Strava, and Wikiloc (collectively, \"External Platforms\") to import and analyze your outdoor activity data. By using Summits and registering with your External Platform accounts, you agree to these Terms of Service regarding the use of your data."
+    },
+    "dataCollection": {
+      "title": "1. 数据收集和处理",
+      "whatData": {
+        "title": "1.1 我们访问哪些数据",
+        "intro": "当您将外部平台账户连接到 Summits 时，我们访问以下类型的数据：",
+        "fromWikiloc": "来自 Wikiloc：",
+        "wikiloc": {
+          "activity": "活动和路线数据（GPX 文件、轨迹日志）",
+          "timestamps": "活动的时间戳和日期",
+          "elevation": "海拔剖面和地理坐标",
+          "routeNames": "路线名称和描述",
+          "activityTypes": "活动类型（徒步、登山等）",
+          "profile": "公开个人资料信息"
+        },
+        "fromStrava": "来自 Strava：",
+        "strava": {
+          "activity": "活动数据，包括路线和轨迹",
+          "timestamps": "活动的时间戳和持续时间",
+          "elevation": "爬升、距离和持续时间指标",
+          "coordinates": "地理坐标和海拔剖面",
+          "activityTypes": "活动类型和运动项目",
+          "profile": "基本个人资料信息（姓名、用户名、个人资料照片）"
+        },
+        "fromGarmin": "来自 Garmin Connect：",
+        "garmin": {
+          "activity": "来自 Garmin 设备的活动记录",
+          "gps": "GPS 追踪数据和路线",
+          "elevation": "海拔、距离和时间数据",
+          "summaries": "活动摘要和统计数据",
+          "location": "地理位置数据",
+          "profile": "基本个人资料信息（姓名、用户名、个人资料照片）"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 我们如何使用您的数据",
+        "intro": "我们使用来自外部平台的数据来：",
+        "identifyPeaks": "识别您攀登了哪些山峰",
+        "trackProgress": "追踪您的登山进度",
+        "displayHistory": "在交互式地图上显示您的攀登历史",
+        "calculateStats": "计算您攀登的山峰总数和其他统计数据",
+        "enableSharing": "允许与其他用户分享成就（受隐私设置限制）",
+        "leaderboards": "将您的统计数据纳入社区排行榜",
+        "analyzeRoutes": "分析并存储您带有已识别山峰的路线"
+      }
+    },
+    "thirdParty": {
+      "title": "2. 第三方平台服务条款",
+      "compliance": {
+        "title": "2.1 遵守外部平台政策",
+        "intro": "通过将您的外部平台账户连接到 Summits，您承认：",
+        "readAgree": "您已阅读并同意遵守每个平台的服务条款",
+        "apiTerms": "我们仅根据您授予的权限和每个平台的 API 条款访问您的数据",
+        "devPolicies": "我们遵守 Garmin、Strava 和 Wikiloc 的开发者和隐私政策",
+        "noCredentials": "我们不会共享您的登录凭据",
+        "secureTokens": "我们安全地存储访问令牌，并仅将其用于导入活动数据"
+      },
+      "scope": {
+        "title": "2.2 授权范围",
+        "intro": "通过授权 Summits，您授予以下权限：",
+        "readStore": "读取、存储和处理您的活动数据",
+        "analyzeTransform": "分析和转换您的数据以识别山峰",
+        "notDo": {
+          "intro": "我们不会：",
+          "modify": "代表您修改、删除或发布活动",
+          "share": "与广告商或第三方共享您的数据（第 4 节所述情况除外）",
+          "sell": "出售您的个人数据"
+        }
+      },
+      "revocation": {
+        "title": "2.3 撤销访问权限",
+        "content": "您可以随时通过外部平台账户设置撤销 Summits 的访问权限。一旦撤销，将不再导入新数据。除非您请求删除，否则之前导入的数据将保留。"
+      }
+    },
+    "dataStorage": {
+      "title": "3. 数据存储和安全",
+      "retention": {
+        "title": "3.1 数据保留",
+        "active": "只要您的 Summits 账户处于活动状态，导入的数据就会被存储。",
+        "deleted": "注销的账户和数据将在 30 天内永久删除。",
+        "matching": "存储山峰匹配信息以提高处理性能。"
+      },
+      "security": {
+        "title": "3.2 数据安全",
+        "intro": "我们通过行业标准措施保护您的数据，包括：",
+        "encryption": "加密（HTTPS/TLS 和静态加密）",
+        "access": "仅限授权人员的访问控制",
+        "infrastructure": "安全的云存储基础设施",
+        "updates": "定期安全更新和修补"
+      },
+      "location": {
+        "title": "3.3 数据位置",
+        "content": "您的数据存储在符合适用数据保护法的地区云服务器上。使用 Summits 即表示您同意此类转移和处理。"
+      }
+    },
+    "dataSharing": {
+      "title": "4. 数据共享和披露",
+      "public": {
+        "title": "4.1 公开信息",
+        "intro": "如果您的个人资料是公开的，其他用户可能会看到：",
+        "statistics": "您的山峰统计数据和完成次数",
+        "username": "您的用户名和个人资料照片",
+        "rankings": "您在排行榜上的排名",
+        "profile": "搜索结果和列表中的个人资料"
+      },
+      "private": {
+        "title": "4.2 私人信息",
+        "intro": "以下信息始终保持私密：",
+        "routes": "确切的路线轨迹和坐标",
+        "elevation": "详细的海拔剖面",
+        "times": "活动开始/结束时间",
+        "email": "电子邮件和个人标识符",
+        "followers": "关注者和被关注用户列表（除非公开）"
+      },
+      "thirdParties": {
+        "title": "4.3 向第三方共享数据",
+        "noSell": "我们不出售个人数据。",
+        "aggregated": "我们可能会共享汇总的匿名数据用于分析或研究。",
+        "shareWith": "我们可能仅与以下各方共享数据：",
+        "serviceProviders": "支持平台运营的服务提供商",
+        "authorities": "法律要求的政府部门",
+        "safety": "为确保用户安全的相关方"
+      }
+    },
+    "rights": {
+      "title": "5. 您的权利和控制",
+      "correction": {
+        "title": "5.1 数据更正",
+        "content": "您可以在应用程序中验证或报告不正确的山峰识别。经过验证的更正将被审查和更新。"
+      },
+      "deletion": {
+        "title": "5.2 账户注销",
+        "content": "您可以随时注销您的 Summits 账户。所有导入的数据和社交连接将在 30 天内移除。注销您的 Summits 账户不会影响您的外部平台账户。"
+      },
+      "privacy": {
+        "title": "5.3 隐私设置",
+        "content": "您可以直接在应用程序的隐私设置中管理可见性、共享选项和社交功能。"
+      }
+    },
+    "accuracy": {
+      "title": "6. 数据准确性和局限性",
+      "peakIdentification": {
+        "title": "6.1 山峰识别",
+        "algorithmic": "山峰识别是基于算法的，可能并不总是准确的。",
+        "errors": "可以报告错误以改进未来的准确性。"
+      },
+      "routeData": {
+        "title": "6.2 路线数据质量",
+        "accuracy": "准确性取决于来自外部平台的 GPS 数据。",
+        "incomplete": "不完整或缺失的数据可能会影响处理。",
+        "delays": "大型数据集可能会出现延迟。"
+      },
+      "warranty": {
+        "title": "6.3 免责声明",
+        "intro": "Summits 不对以下内容提供任何保证：",
+        "accuracy": "山峰或路线数据的准确性或完整性",
+        "reliability": "外部平台 API 的可靠性",
+        "uptime": "服务在线时间或不间断访问",
+        "disclaimer": "使用 Summits 的风险自担。"
+      }
+    },
+    "changes": {
+      "title": "7. 条款修订",
+      "modifications": {
+        "title": "7.1 修改",
+        "content": "我们可能随时修改这些服务条款。更新自发布在应用程序或我们的网站上之日起生效。"
+      },
+      "continuedUse": {
+        "title": "7.2 继续使用",
+        "content": "更新后的继续使用即表示接受。如果您不同意，请停止使用并注销您的账户。"
+      }
+    },
+    "termination": {
+      "title": "8. 服务终止",
+      "serviceTermination": {
+        "title": "8.1 服务终止",
+        "intro": "我们可能会因以下原因暂停或注销账户：",
+        "violation": "违反本条款或外部平台条款",
+        "fraudulent": "欺诈或滥用活动",
+        "legal": "法律或监管要求"
+      },
+      "effect": {
+        "title": "8.2 终止的影响",
+        "content": "访问权限将立即被撤销，数据将根据保留政策删除。"
+      }
+    },
+    "indemnification": {
+      "title": "9. 赔偿",
+      "intro": "您同意对因以下原因引起的任何索赔或损失向 Summits 进行赔偿并使之免受损害：",
+      "violations": "违反本条款",
+      "platformPolicies": "违反外部平台政策",
+      "misuse": "误用或欺诈性数据提交",
+      "disputes": "与其他用户的纠纷"
+    },
+    "liability": {
+      "title": "10. 责任限制",
+      "intro": "在法律允许的最大范围内：",
+      "asIs": "Summits 按“原样”提供，不作任何保证。",
+      "notLiable": "我们不对任何间接、附带或后果性损害负责。",
+      "platformDowntime": "我们对外部平台停机或 API 更改不承担责任。"
+    },
+    "disputes": {
+      "title": "11. 争议解决和适用法律",
+      "governingLaw": {
+        "title": "11.1 适用法律",
+        "content": "本条款受哥斯达黎加法律管辖，不包括冲突法原则。"
+      },
+      "resolution": {
+        "title": "11.2 争议解决",
+        "negotiation": "诚意谈判",
+        "mediation": "如果谈判失败，进行调解",
+        "arbitration": "未解决纠纷的约束性仲裁"
+      },
+      "classAction": {
+        "title": "11.3 集体诉讼豁免",
+        "content": "所有争议必须单独解决；不允许进行集体诉讼。"
+      }
+    },
+    "contact": {
+      "title": "12. 联系信息",
+      "intro": "如果您有任何疑问，请联系我们：",
+      "email": "电子邮件：cesc.riera@summitstracker.com",
+      "website": "网站：summitstracker.com",
+      "support": "支持：可通过应用内帮助和支持功能获得"
+    },
+    "acknowledgment": {
+      "title": "13. 确认",
+      "intro": "通过使用 Summits 并连接 Garmin、Strava 或 Wikiloc 账户，您：",
+      "read": "已阅读并理解本条款",
+      "consent": "同意所述的数据使用",
+      "capacity": "具有同意的法律能力",
+      "comply": "将遵守适用法律",
+      "responsible": "负责维护您的账户安全",
+      "footer": "继续使用 Summits 即表示您同意本服务条款。如果您不同意，请停止使用并注销您的账户。"
+    }
+  },
+  "privacy": {
+    "title": "Summits – 隐私政策",
+    "lastUpdated": "最后更新：2025年1月",
+    "introduction": {
+      "title": "1. 简介",
+      "content": "在 Summits，我们致力于保护您的隐私。本隐私政策解释了我们如何收集、使用、披露和保护您在使用我们的移动应用程序和网站（统称为“服务”）时的信息。使用本服务即表示您同意本政策中所述的数据做法。"
+    },
+    "dataController": {
+      "title": "2. 数据控制者",
+      "content": "负责您个人信息的数据控制者是：",
+      "email": "电子邮件：cesc.riera@summitstracker.com",
+      "website": "网站：summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. 我们收集的信息",
+      "personalData": {
+        "title": "3.1 个人信息",
+        "intro": "当您创建账户时，我们收集：",
+        "account": "账户信息（电子邮件地址、用户名、密码）",
+        "profile": "个人资料信息（姓名、个人资料照片、简介）",
+        "preferences": "应用偏好和设置"
+      },
+      "activityData": {
+        "title": "3.2 来自第三方平台的活动数据",
+        "intro": "当您连接来自 Wikiloc、Strava 或 Garmin 的账户时，我们收集：",
+        "fromWikiloc": "来自 Wikiloc：",
+        "wikiloc": {
+          "activity": "活动数据（路线、轨迹、GPS 坐标）",
+          "timestamps": "活动时间戳（开始时间、结束时间、持续时间）",
+          "elevation": "海拔数据和剖面",
+          "routeNames": "路线名称和描述",
+          "activityTypes": "活动类型（徒步、骑行等）",
+          "profile": "公开个人资料信息"
+        },
+        "fromStrava": "来自 Strava：",
+        "strava": {
+          "activity": "活动数据（路线、轨迹、GPS 坐标）",
+          "timestamps": "活动时间戳（开始时间、结束时间、持续时间）",
+          "elevation": "海拔数据和剖面",
+          "coordinates": "GPS 坐标和路线轨迹",
+          "activityTypes": "活动类型（跑步、骑行、徒步等）",
+          "profile": "公开个人资料信息"
+        },
+        "fromGarmin": "来自 Garmin：",
+        "garmin": {
+          "activity": "来自 Garmin Connect 的活动数据",
+          "gps": "GPS 轨迹和坐标",
+          "elevation": "海拔数据和心率信息",
+          "summaries": "活动摘要和统计数据",
+          "location": "位置数据",
+          "profile": "公开个人资料信息"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 技术信息",
+        "intro": "我们自动收集：",
+        "device": "设备信息（设备类型、操作系统、唯一设备标识符）",
+        "ip": "IP 地址和位置数据",
+        "browser": "浏览器类型和版本",
+        "logs": "使用日志和分析数据"
+      }
+    },
+    "dataUsage": {
+      "title": "4. 我们如何使用您的信息",
+      "purposes": {
+        "title": "4.1 处理目的",
+        "intro": "我们将您的信息用于：",
+        "service": "提供和维护服务",
+        "peakIdentification": "根据您的活动数据识别您已完成的山峰",
+        "progress": "追踪您的进度并生成统计数据",
+        "statistics": "计算并显示您的个人统计数据和成就",
+        "community": "启用社交功能、排行榜和社区互动",
+        "communication": "向您发送通知、更新和支持沟通",
+        "improvement": "改进、个性化和开发服务",
+        "security": "检测、预防和解决技术问题和安全威胁"
+      },
+      "legalBasis": {
+        "title": "4.2 处理的法律依据",
+        "intro": "我们基于以下依据处理您的个人数据：",
+        "consent": "您连接第三方账户时的同意",
+        "contract": "为向您提供服务而履行我们与您的合同",
+        "legitimate": "我们在运营和改进服务方面的正当利益",
+        "legal": "遵守法律义务"
+      }
+    },
+    "dataSharing": {
+      "title": "5. 数据共享和披露",
+      "thirdParties": {
+        "title": "5.1 第三方服务提供商",
+        "intro": "我们可能会与协助我们完成以下工作的受信任服务提供商共享您的信息：",
+        "serviceProviders": "托管和基础设施服务",
+        "analytics": "分析和性能监控",
+        "cloud": "云存储和数据处理"
+      },
+      "publicData": {
+        "title": "5.2 公开信息",
+        "intro": "以下信息可能是公开可见的：",
+        "statistics": "汇总统计数据和成就",
+        "username": "您的用户名和公开个人资料",
+        "rankings": "您在排行榜上的位置",
+        "profile": "您选择分享的公开个人资料信息"
+      },
+      "legal": {
+        "title": "5.3 法律要求",
+        "content": "如果法律、法院命令或政府当局要求，或者为了保护我们、我们的用户或他人的权利、财产或安全，我们可能会披露您的信息。"
+      }
+    },
+    "dataStorage": {
+      "title": "6. 数据存储和安全",
+      "location": {
+        "title": "6.1 数据位置",
+        "content": "您的数据存储在位于欧盟和美国的安全服务器上。使用本服务即表示您同意将数据转移到这些位置。"
+      },
+      "retention": {
+        "title": "6.2 数据保留",
+        "intro": "我们保留您的数据：",
+        "active": "在您的账户处于活动状态期间以及提供服务所需的期间",
+        "deleted": "在账户注销后最多保留 30 天，之后将其永久删除",
+        "legal": "根据适用法律法规的要求"
+      },
+      "security": {
+        "title": "6.3 安全措施",
+        "intro": "我们实施适当的技术和组织措施来保护您的数据：",
+        "encryption": "对传输中和静态的数据进行加密",
+        "access": "访问控制和身份验证机制",
+        "infrastructure": "安全的基础设施和定期安全审计",
+        "updates": "定期安全更新和补丁"
+      }
+    },
+    "userRights": {
+      "title": "7. 您的权利 (GDPR/CCPA)",
+      "access": {
+        "title": "7.1 访问权",
+        "content": "您有权请求访问您的个人数据并获得我们持有的关于您的数据的副本。"
+      },
+      "rectification": {
+        "title": "7.2 更正权",
+        "content": "您可以请求更正不准确或不完整的个人数据。"
+      },
+      "erasure": {
+        "title": "7.3 删除权",
+        "content": "您可以请求删除您的个人数据。您可以随时通过应用设置注销您的账户。"
+      },
+      "restriction": {
+        "title": "7.4 限制处理权",
+        "content": "在某些情况下，您可以请求限制处理您的个人数据。"
+      },
+      "portability": {
+        "title": "7.5 数据可移植权",
+        "content": "您可以请求以结构化、机器可读的格式提供您的数据副本。"
+      },
+      "objection": {
+        "title": "7.6 反对权",
+        "content": "您可以基于正当利益反对处理您的个人数据。"
+      },
+      "withdraw": {
+        "title": "7.7 撤回同意权",
+        "content": "您可以随时通过断开第三方账户或注销您的账户来撤回您的同意。"
+      },
+      "complaint": {
+        "title": "7.8 投诉权",
+        "content": "如果您认为您的权利受到侵犯，您有权向当地数据保护机构提出投诉。"
+      }
+    },
+    "cookies": {
+      "title": "8. Cookie 和追踪技术",
+      "intro": "我们使用 Cookie 和类似的追踪技术来追踪我们服务上的活动并存储某些信息。",
+      "types": {
+        "title": "8.1 Cookie 类型",
+        "essential": "服务正常运行所需的必要 Cookie",
+        "analytics": "了解用户如何与服务互动的分析 Cookie",
+        "functional": "记住您偏好的功能性 Cookie"
+      },
+      "management": {
+        "title": "8.2 Cookie 管理",
+        "content": "您可以通过浏览器设置控制 Cookie。但是，禁用 Cookie 可能会影响服务的功能。"
+      }
+    },
+    "children": {
+      "title": "9. 儿童隐私",
+      "content": "我们的服务可供所有年龄段的儿童使用。我们致力于保护儿童和所有用户的隐私。我们实施了适当的保障措施，以确保使用我们服务的儿童的安全和隐私。如果您对您的孩子使用我们的服务有任何疑问，请联系我们。"
+    },
+    "international": {
+      "title": "10. 国际数据转移",
+      "content": "您的信息可能会被转移到您居住国以外的国家并进行处理。这些国家的数据保护法可能与您所在国家的法律不同。我们确保采取适当的保障措施来保护您的数据。"
+    },
+    "changes": {
+      "title": "11. 本隐私政策的修订",
+      "content": "我们可能不时更新本隐私政策。我们将通过在本页面发布新的隐私政策并更新“最后更新”日期来通知您任何更改。建议您定期查看本隐私政策。"
+    },
+    "contact": {
+      "title": "12. 联系我们",
+      "intro": "如果您对本隐私政策有疑问或希望行使您的权利，请联系我们：",
+      "email": "电子邮件：cesc.riera@summitstracker.com",
+      "website": "网站：summitstracker.com",
+      "support": "支持：可通过应用内帮助和支持功能获得"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "俱乐部挑战",
+    "clubChallengeDescription": "该挑战与俱乐部关联，仅对俱乐部成员可见。",
+    "clubPrivateHelp": "俱乐部挑战对俱乐部成员始终公开，无法设为私人。",
+    "createTitle": "创建挑战",
+    "editTitle": "编辑挑战",
+    "name": "挑战名称",
+    "namePlaceholder": "输入挑战名称...",
+    "description": "描述",
+    "descriptionPlaceholder": "此挑战的主题是什么？",
+    "isPrivate": "私有挑战",
+    "privateHelp": "私有挑战仅对您可见。",
+    "challengeConstraints": "挑战限制",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "dateRangeHelp": "如果允许任何日期完成，请保持两个日期为空。",
+    "maxDuration": "最大持续时间（小时）",
+    "maxDurationPlaceholder": "例如 24",
+    "maxDurationHelp": "保持为空以不限制第一座和最后一座山峰之间的时间。",
+    "timeLimit": "时间限制",
+    "dateRange": "日期范围",
+    "starts": "开始",
+    "ends": "Ends",
+    "primaryImage": "封面图片",
+    "addImage": "添加封面图片",
+    "noImage": "未提供图片",
+    "imageUrlPlaceholder": "粘贴图片 URL（例如 https://...）",
+    "peaks": "Peaks",
+    "addPeaks": "添加山峰",
+    "selectPeaks": "选择山峰",
+    "selectedPeaks": "已选山峰",
+    "noPeaksSelected": "尚未选择山峰。搜索并选择山峰以将其添加到您的挑战中。",
+    "saveSuccess": "挑战保存成功！",
+    "saveError": "保存挑战失败。请重试。",
+    "loadError": "加载挑战失败。请重试。",
+    "validation": {
+      "nameRequired": "挑战名称是必填项。",
+      "descriptionRequired": "描述是必填项。",
+      "imageRequired": "封面图片是必填项。",
+      "peaksRequired": "请至少选择一座山峰。",
+      "startDateInvalid": "请输入有效的开始日期。",
+      "endDateInvalid": "请输入有效的结束日期。",
+      "endDateBeforeStart": "结束日期必须在开始日期之后。",
+      "maxDurationInvalid": "请输入大于 0 的有效最大持续时间。"
+    },
+    "challenges": "挑战",
+    "available_challenges": "个可用挑战",
+    "searchPlaceholder": "按名称或作者搜索",
+    "emptySearchTitle": "未找到挑战",
+    "emptySearchMessage": "尝试其他名称或作者。",
+    "worldPeaks": "世界高峰",
+    "worldPeaksDescription": "探索全球各地的所有山峰",
+    "join": "加入",
+    "leave": "离开",
+    "joined": "已加入",
+    "deleteList": "删除挑战",
+    "deleteSuccess": "挑战已成功删除",
+    "deleteError": "删除挑战失败",
+    "deleteConfirmTitle": "删除挑战？",
+    "deleteConfirmMessage": "您确定要删除此挑战吗？此操作无法撤销。",
+    "inviteToChallenge": "邀请加入挑战",
+    "inviteHelp": "搜索用户以邀请他们加入您的挑战。"
+  },
+  "forceUpdate": {
+    "title": "发现新版本！",
+    "subtitle": "请更新到最新版本的 Summits 以继续使用。",
+    "button": "立即更新",
+    "version": "版本",
+    "continue": "不更新继续"
+  },
+  "appInstallBanner": {
+    "title": "安装移动应用",
+    "subtitle": "安装 Summits 以获得更快速、更完整的移动端体验。",
+    "button": "安装应用",
+    "dismiss": "关闭",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "lastUpdate": {
+    "title": "避难小屋登陆 Summits",
+    "close": "太棒了！",
+    "refugios": {
+      "headline": "80,000+ 个避难小屋",
+      "subtitle": "来自世界各地的已保存和免费避难小屋，现已上线 Summits。",
+      "findOnMap": "在地图或探索页面上找到它们。",
+      "addManually": "缺少一个？你可以从地图页面手动添加。",
+      "saveFavorites": "将它们保存到收藏夹，随时快速访问。",
+      "community": "任何贡献都备受感谢，并有助于社区发展。"
+    }
+  },
+  "clubs": {
+    "availableClubs": "可用俱乐部",
+    "common": {
+      "creator": "创建者"
+    },
+    "browse": {
+      "title": "浏览俱乐部",
+      "subtitle": "探索基于共享山峰进度的公开和私人社区。",
+      "searchPlaceholder": "搜索俱乐部",
+      "searchPlaceholderUnified": "搜索俱乐部或地区...",
+      "emptyTitle": "还没有俱乐部",
+      "emptyMessage": "尝试更广泛的搜索，或为您的登山小组创建一个新俱乐部。",
+      "emptySearchTitle": "未找到俱乐部",
+      "emptySearchMessage": "尝试其他标题或地区。"
+    },
+    "details": {
+      "title": "俱乐部详情",
+      "statistics": "统计数据",
+      "restrictedTitle": "私人俱乐部预览",
+      "restrictedMessage": "只有被接受的成员才能查看该俱乐部的排名、成员和活动。"
+    },
+    "myClubs": {
+      "title": "我的俱乐部",
+      "subtitle": "管理您创建、加入或申请访问的俱乐部。",
+      "created": "已创建",
+      "joined": "已加入",
+      "pending": "待处理",
+      "createdSection": "我创建的",
+      "createdDescription": "您拥有并可以完全管理的俱乐部。",
+      "joinedSection": "已加入的俱乐部",
+      "joinedDescription": "您可以查看成员专属进度和活动的俱乐部。",
+      "pendingSection": "待处理的申请",
+      "pendingDescription": "等待创建者批准的私人俱乐部。",
+      "emptyTitle": "您还不属于任何俱乐部",
+      "emptyMessage": "浏览俱乐部以加入一个，或为您的徒步伙伴创建一个私人小组。",
+      "emptySection": "此栏目暂无俱乐部。"
+    },
+    "create": {
+      "title": "创建俱乐部",
+      "subtitle": "设置俱乐部身份、可见性和成员首先看到的封面图片。",
+      "submit": "创建俱乐部"
+    },
+    "edit": {
+      "title": "编辑俱乐部"
+    },
+    "leaderboard": {
+      "subtitle": "查看哪些俱乐部增长最快并记录了最多的山峰进度。"
+    },
+    "filters": {
+      "allVisibility": "所有可见性",
+      "period": "时段",
+      "sortBy": "排序方式",
+      "highestClimb": "最高攀登",
+      "activity": "活动",
+      "allCategories": "所有类别",
+      "routes": "路线",
+      "sort": "排序方式"
+    },
+    "period": {
+      "thisYear": "今年",
+      "lastYear": "去年",
+      "allTime": "历史所有",
+      "custom": "自定义",
+      "dateFrom": "开始日期",
+      "dateTo": "结束日期"
+    },
+    "visibility": {
+      "public": "公开",
+      "private": "私人"
+    },
+    "sort": {
+      "mostUsers": "成员最多",
+      "mostPeaks": "最多山峰",
+      "mostDistance": "距离最长",
+      "mostElevation": "爬升最高",
+      "mostTime": "用时最长",
+      "newest": "最新",
+      "oldest": "最早",
+      "recentActivity": "最近活动",
+      "joinedAt": "加入日期",
+      "name": "名称",
+      "mostActiveLast30d": "30天内最活跃"
+    },
+    "metrics": {
+      "members": "成员",
+      "peaks": "山峰",
+      "distinctPeaks": "山峰",
+      "totalAscents": "总登顶数",
+      "highestPeak": "最高峰",
+      "recentDistinctPeaks": "近期山峰",
+      "activeMembers30d": "活跃成员 (30天)",
+      "totalRoutes": "路线",
+      "distance": "距离",
+      "totalDistanceKm": "距离",
+      "totalElevationGain": "海拔爬升",
+      "totalTime": "总用时",
+      "totalMovingTime": "运动用时",
+      "topMember": "顶级成员"
+    },
+    "tabs": {
+      "summary": "摘要",
+      "members": "成员",
+      "leaderboard": "排行榜",
+      "activity": "活动",
+      "requests": "申请"
+    },
+    "activity": {
+      "allRoutes": "所有路线",
+      "withPeaks": "带山峰",
+      "noPeak": "不带山峰",
+      "peaksDone": "该路线上完成的山峰",
+      "xMore": "更多",
+      "latestRoutes": "俱乐部最新路线",
+      "empty": "暂无活动。"
+    },
+    "challenges": {
+      "title": "俱乐部挑战",
+      "subtitle": "与该俱乐部关联的挑战对成员可见。",
+      "membersOnly": "加入该俱乐部即可查看和创建俱乐部挑战。",
+      "create": "创建挑战",
+      "empty": "还没有俱乐部挑战。",
+      "emptyRestricted": "没有可见的挑战。加入俱乐部以解锁成员挑战。",
+      "itemFallback": "挑战",
+      "total": "总计",
+      "completed": "已完成",
+      "viewProgress": "查看俱乐部挑战进度"
+    },
+    "actions": {
+      "manageMyClubs": "管理我的俱乐部",
+      "signInToJoin": "登录以加入",
+      "joinClub": "加入俱乐部",
+      "requestToJoin": "申请加入",
+      "requestPending": "申请待处理",
+      "leaveClub": "退出俱乐部",
+      "editClub": "编辑俱乐部",
+      "manageClub": "管理俱乐部",
+      "viewClub": "查看俱乐部",
+      "cancelRequest": "取消申请",
+      "loadMore": "加载更多",
+      "leaveConfirm": "退出该俱乐部？您以后可以随时重新加入。",
+      "leaveConfirmTitle": "退出俱乐部",
+      "leaveConfirmMessage": "您确定要退出俱乐部 '{name}' 吗？您以后可以随时重新加入。",
+      "joinConfirmTitle": "加入俱乐部",
+      "joinConfirmMessage": "您想加入俱乐部 '{name}' 吗？加入后您可以查看其排行榜和活动。",
+      "removeMember": "移除",
+      "removeMemberConfirm": "移除该成员？",
+      "acceptRequest": "接受",
+      "rejectRequest": "拒绝",
+      "deleteConfirmTitle": "删除俱乐部？",
+      "deleteConfirmMessage": "您确定要删除该俱乐部吗？此操作是永久性的，无法撤销。",
+      "deleteSuccess": "俱乐部删除成功",
+      "leave": "退出俱乐部",
+      "selectClub": "选择俱乐部"
+    },
+    "badges": {
+      "creator": "创建者",
+      "member": "成员",
+      "requestPending": "待处理",
+      "privateClub": "私人俱乐部",
+      "restricted": "受限"
+    },
+    "status": {
+      "joined": "已加入",
+      "pending": "待处理"
+    },
+    "roles": {
+      "creator": "创建者",
+      "member": "成员"
+    },
+    "members": {
+      "joinedLabel": "已加入",
+      "none": "未找到成员",
+      "empty": "未找到成员"
+    },
+    "requests": {
+      "requestedOn": "申请日期",
+      "pending": "待处理申请",
+      "none": "暂无待处理申请"
+    },
+    "messages": {
+      "actionFailed": "目前无法更新该俱乐部。",
+      "loadFailed": "目前无法加载该俱乐部。",
+      "saveFailed": "无法保存该俱乐部。",
+      "deleteFailed": "无法删除该俱乐部。",
+      "imageFailed": "无法读取该图片。",
+      "leaveConfirmation": "确定要退出此俱乐部吗？"
+    },
+    "validation": {
+      "nameRequired": "俱乐部名称必填",
+      "descriptionRequired": "俱乐部描述必填",
+      "visibilityRequired": "俱乐部可见性必填",
+      "imageRequired": "必须上传俱乐部图标",
+      "regionRequired": "必须选择俱乐部地区"
+    },
+    "form": {
+      "image": "俱乐部图标",
+      "changeImage": "更换图标",
+      "uploadImage": "上传图标",
+      "name": "俱乐部名称",
+      "namePlaceholder": "喜马拉雅攀登者",
+      "description": "描述",
+      "descriptionPlaceholder": "简要描述您的俱乐部",
+      "visibility": "可见性",
+      "region": "地区",
+      "regionPlaceholder": "搜索国家或地区...",
+      "regionSearching": "正在搜索...",
+      "regionNoResults": "未找到地区",
+      "regionClear": "清除地区",
+      "previewTitle": "俱乐部预览",
+      "previewMessage": "添加图标以使您的俱乐部在浏览和搜索结果中具有清晰的身份。",
+      "cropDescription": "调整并缩放您的徽标以预览圆形头像。",
+      "cropTitle": "调整俱乐部徽标",
+      "cropZoom": "缩放"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "manualPeaks": {
+    "fetchError": "加载山峰失败。请重试。"
+  },
+  "offline": {
+    "banner": "您已离线 — 部分功能可能受限",
+    "bannerCached": "离线 - 缓存的地图数据可用",
+    "bannerNoCache": "离线 - 没有缓存的地图数据",
+    "title": "离线地图",
+    "area": "离线区域",
+    "empty": "还没有离线区域。下载一个地图区域，无需网络连接即可使用。",
+    "newArea": "下载新区域",
+    "downloading": "正在下载",
+    "ready": "已就绪",
+    "failed": "失败",
+    "cancelled": "已取消",
+    "tiles": "瓦片",
+    "zoom": "缩放 {min}-{max}",
+    "goTo": "前往区域",
+    "delete": "删除",
+    "drawHint": "点击地图放置角点，然后点击完成以闭合区域。",
+    "undo": "撤销",
+    "clear": "清除",
+    "finish": "完成",
+    "configName": "区域名称",
+    "namePlaceholder": "例如：塔特拉山",
+    "maxZoomLabel": "最大缩放（细节）",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "缩放级别17-18很少需要且非常昂贵 - 每级都会使下载大小翻四倍。缩放14是推荐的最大值。",
+    "estimate": "约{count}个瓦片（约{size}）",
+    "eta": "剩余约{eta}",
+    "keepOpen": "下载时请保持应用打开 - 关闭应用会暂停下载。",
+    "redraw": "重新绘制",
+    "download": "下载区域",
+    "starting": "正在开始...",
+    "errorResolve": "无法解析地图样式。请确保您在线。",
+    "errorNoSources": "请至少选择一个数据源。",
+    "errorDownload": "下载失败。",
+    "deleteTitle": "删除离线区域？",
+    "deleteMessage": "删除“{name}”？这将从此设备永久移除 {tiles} 个瓦片（{size}）。此操作无法撤销。",
+    "deleteCancel": "取消",
+    "deleteConfirm": "删除",
+    "deleting": "正在删除..."
+  },
+  "peakChange": {
+    "createTitle": "提交新山峰",
+    "editTitle": "编辑山峰",
+    "successTitle": "山峰已提交",
+    "successMessage": "您的山峰已提交审核。将在3天内被接受或拒绝。您不会收到通知，请稍后回来查看结果。",
+    "successSubmessage": "如有任何疑问，请从您的个人资料中联系我们。",
+    "close": "关闭",
+    "name": "名称",
+    "namePlaceholder": "山峰名称",
+    "englishName": "英文名称",
+    "englishNamePlaceholder": "英文名称（可选）",
+    "coordinates": "坐标",
+    "latitude": "纬度",
+    "longitude": "经度",
+    "coordsEditHint": "留空以保持当前位置",
+    "pickOnMap": "在地图上选择",
+    "clickMapInstruction": "点击地图设置山峰位置",
+    "acceptLocation": "确认",
+    "elevation": "海拔（米）",
+    "elevationPlaceholder": "海拔高度（米）",
+    "minZoomLevel": "最小缩放级别",
+    "selectVisibility": "-- 选择可见性 --",
+    "minZoomHelp": "数字越小=缩放越远可见（全球性山峰）。数字越大=仅缩放近处可见（本地山丘）。",
+    "wikipediaUrl": "维基百科网址",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "reason": "变更原因",
+    "reasonPlaceholder": "此请求的可选原因",
+    "image": "图片",
+    "chooseImage": "选择图片",
+    "submitCreate": "提交山峰供审核",
+    "submitEdit": "提交变更供审核",
+    "submitting": "提交中...",
+    "errorPeakIdMissing": "缺少山峰ID",
+    "errorNameRequired": "名称为必填项",
+    "errorCoordinatesRequired": "坐标为必填项",
+    "errorElevationRequired": "海拔为必填项",
+    "errorMinZoomRequired": "最小缩放级别为必填项",
+    "errorGeneric": "提交失败。请重试。",
+    "tabPeak": "山峰",
+    "tabShelter": "山间小屋",
+    "currentData": "当前数据",
+    "versionName": "名称",
+    "versionElevation": "海拔",
+    "versionWikipedia": "维基百科",
+    "versionWikipediaYes": "是",
+    "mapButtonLabel": "提交新山峰",
+    "email": "电子邮件（可选）",
+    "emailPlaceholder": "your@email.com",
+    "emailHelp": "当您的请求被批准或拒绝时收到通知"
+  },
+  "shelterChange": {
+    "createTitle": "提交新山间小屋",
+    "editTitle": "编辑山间小屋",
+    "successTitle": "山间小屋已提交",
+    "successMessage": "您的山间小屋已提交审核。将在3天内被接受或拒绝。您不会收到通知，请稍后回来查看结果。",
+    "successSubmessage": "如有任何疑问，请从您的个人资料中联系我们。",
+    "close": "关闭",
+    "name": "名称",
+    "namePlaceholder": "山间小屋名称",
+    "englishName": "英文名称",
+    "englishNamePlaceholder": "英文名称（可选）",
+    "shelterType": "山间小屋类型",
+    "selectType": "-- 选择类型 --",
+    "coordinates": "坐标",
+    "latitude": "纬度",
+    "longitude": "经度",
+    "coordsEditHint": "留空以保持当前位置",
+    "pickOnMap": "在地图上选择",
+    "acceptLocation": "确认",
+    "clickMapInstruction": "点击地图设置山间小屋位置",
+    "elevation": "海拔（米）",
+    "elevationPlaceholder": "海拔高度（米）",
+    "wikipediaUrl": "维基百科网址",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "tagsTitle": "设施与服务",
+    "tagsHint": "仅填写适用于此山间小屋的选项",
+    "tags": {
+      "capacity": "容量（人数）",
+      "beds": "床位",
+      "toilets": "卫生间",
+      "drinking_water": "饮用水",
+      "fireplace": "壁炉",
+      "heating": "暖气",
+      "electricity": "电力",
+      "shower": "淋浴",
+      "kitchen": "厨房",
+      "lit": "照明",
+      "outdoor_seating": "户外座位",
+      "picnic_table": "野餐桌",
+      "bench": "长凳",
+      "covered": "有顶区域",
+      "pets": "允许宠物",
+      "dog": "允许狗狗",
+      "internet_access": "互联网接入",
+      "smoking": "吸烟",
+      "website": "网站",
+      "websitePlaceholder": "https://...",
+      "description": "描述",
+      "descriptionPlaceholder": "山间小屋的简短描述"
+    },
+    "tagValues": {
+      "yes": "是",
+      "no": "否",
+      "wifi": "WiFi",
+      "outside": "仅室外",
+      "isolated": "偏远区域"
+    },
+    "reason": "变更原因",
+    "reasonPlaceholder": "此请求的可选原因",
+    "email": "电子邮件（可选）",
+    "emailPlaceholder": "your@email.com",
+    "emailHelp": "当您的请求被批准或拒绝时收到通知",
+    "image": "图片",
+    "chooseImage": "选择图片",
+    "submitCreate": "提交山间小屋供审核",
+    "submitEdit": "提交变更供审核",
+    "submitting": "提交中...",
+    "errorShelterIdMissing": "缺少山间小屋ID",
+    "errorNameRequired": "名称为必填项",
+    "errorTypeRequired": "山间小屋类型为必填项",
+    "errorCoordinatesRequired": "坐标为必填项",
+    "errorGeneric": "提交失败。请重试。",
+    "tabPeak": "山峰",
+    "tabShelter": "山间小屋"
+  },
+  "singleDatePicker": {
+    "chooseDate": "选择{label}",
+    "close": "关闭",
+    "apply": "应用"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "有人管理的山间小屋",
+      "wilderness_hut": "无人管理的偏远小屋",
+      "shelter": "紧急避难所"
+    },
+    "intro": {
+      "default": "这是一个{type}。",
+      "withOperator": "这是一个由{operator}管理的{type}。",
+      "withHours": "开放时间：{hours}。",
+      "free": "免费。",
+      "paid": "需要付费。",
+      "paidAmount": "费用为{charge}。",
+      "reservationsRequired": "需要预订。",
+      "reservationsOptional": "预订可选。",
+      "accessPublic": "公共开放。",
+      "accessPrivate": "私人场所。",
+      "accessMembers": "仅限会员进入。"
+    },
+    "capacity": {
+      "bedsAndCapacity": "有{beds}个床位，可容纳{capacity}人。",
+      "bedsOnly": "有{beds}个床位。",
+      "capacityOnly": "可容纳{capacity}人。"
+    },
+    "services": {
+      "title": "设施：",
+      "toilets": "卫生间",
+      "drinking_water": "饮用水",
+      "fireplace": "壁炉",
+      "stove": "炉子",
+      "heating": "供暖",
+      "electricity": "电力",
+      "shower": "淋浴",
+      "kitchen": "厨房",
+      "lit": "照明",
+      "internet": "网络接入",
+      "outdoor_seating": "户外座位",
+      "picnic_table": "野餐桌",
+      "bench": "长椅",
+      "covered": "遮蔽区域",
+      "pets": "允许宠物",
+      "smoking_free": "禁烟"
+    },
+    "website": "访问网站",
+    "noInfo": "没有关于此避难所的其他信息。",
+    "nearbyShelters": "附近山间小屋",
+    "nearbySheltersNoData": "未找到附近山间小屋",
+    "unnamedShelter": "未命名山间小屋",
+    "unknownShelter": "未知山间小屋",
+    "invalidShelterId": "无效的山间小屋ID",
+    "suggestEdit": "建议编辑",
+    "source": "来源: {source}",
+    "searchRoutesFor": "搜索路线",
+    "findHikingRoutesOnWikiloc": "在Wikiloc上查找徒步路线",
+    "openImageGallery": "打开图片库",
+    "previousImage": "上一张图片",
+    "nextImage": "下一张图片",
+    "searchRoutesAria": "在Wikiloc上搜索{name}的路线"
+  }
+}

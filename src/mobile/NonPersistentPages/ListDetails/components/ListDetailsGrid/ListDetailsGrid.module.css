@@ -1,0 +1,443 @@
+/* ListDetailsGrid.module.css - Peak List Grid Component with BEM naming */
+
+/* Block: listDetailsGrid */
+.listDetailsGrid {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Element: filtersWrapper */
+.listDetailsGrid__filtersWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--background-color, var(--c-gray-100));
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Element: searchWrapper */
+.listDetailsGrid__searchWrapper {
+  width: 100%;
+}
+
+/* Element: searchInputContainer */
+.listDetailsGrid__searchInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Element: searchIcon */
+.listDetailsGrid__searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Element: searchInput */
+.listDetailsGrid__searchInput {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  background-color: white;
+  color: #1e293b;
+  box-shadow: 0 2px 4px rgba(var(--rgb-black), 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  min-height: 48px;
+}
+
+/* Modifier: searchInput focused */
+.listDetailsGrid__searchInput:focus {
+  outline: none;
+  border-color: #0a2540;
+  box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.1);
+}
+
+/* Element: searchInput placeholder */
+.listDetailsGrid__searchInput::placeholder {
+  color: #94a3b8;
+}
+
+/* Element: searchClearButton */
+.listDetailsGrid__searchClearButton {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+/* Modifier: searchClearButton hover */
+
+/* Modifier: searchClearButton active */
+.listDetailsGrid__searchClearButton:active {
+  transform: scale(0.95);
+}
+
+/* Element: dropdownsRow */
+.listDetailsGrid__dropdownsRow {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Element: sortDropdown */
+.listDetailsGrid__sortDropdown {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Element: filterDropdown */
+.listDetailsGrid__filterDropdown {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Element: dropdownButton */
+.listDetailsGrid__dropdownButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  background-color: white;
+  color: #64748b;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-shadow: 0 2px 4px rgba(var(--rgb-black), 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+/* Modifier: dropdownButton for all filter */
+.listDetailsGrid__dropdownButton--all {
+  border-color: #0a2540;
+  color: #0a2540;
+}
+
+/* Modifier: dropdownButton for completed filter */
+.listDetailsGrid__dropdownButton--completed {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+/* Modifier: dropdownButton for missing filter */
+.listDetailsGrid__dropdownButton--missing {
+  border-color: #f97316;
+  color: #f97316;
+}
+
+/* Element: dropdownButton span */
+.listDetailsGrid__dropdownButton span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  min-width: 0;
+}
+
+/* Modifier: dropdownButton disabled */
+.listDetailsGrid__dropdownButton:disabled {
+  opacity: 0.7;
+  transform: none;
+}
+
+/* Element: dropdownButton svg */
+.listDetailsGrid__dropdownButton svg {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+/* Modifier: chevron rotated */
+.listDetailsGrid__chevron--rotated {
+  transform: rotate(180deg);
+}
+
+/* Modifier: chevron hidden */
+.listDetailsGrid__chevron--hidden {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+/* Element: loadingSpinner */
+.listDetailsGrid__loadingSpinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Element: dropdownMenu */
+.listDetailsGrid__dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(var(--rgb-black), 0.15);
+  z-index: 1000;
+  margin-top: 4px;
+  overflow: hidden;
+  animation: dropdownSlideIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+}
+
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Element: dropdownSection */
+.listDetailsGrid__dropdownSection {
+  border: none;
+}
+
+/* Modifier: dropdownSection last child */
+.listDetailsGrid__dropdownSection:last-child {
+  border-bottom: none;
+}
+
+/* Element: dropdownTitle */
+.listDetailsGrid__dropdownTitle {
+  padding: 12px 16px 8px;
+  color: #64748b;
+  text-transform: uppercase;
+  background: var(--c-gray-50);
+}
+
+/* Element: dropdownItem */
+.listDetailsGrid__dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
+  background: white;
+  color: #64748b;
+  text-align: left;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Element: dropdownItem before pseudo-element */
+.listDetailsGrid__dropdownItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(10, 37, 64, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+/* Modifier: dropdownItem active */
+.listDetailsGrid__dropdownItem--active {
+  background: #0a2540;
+  color: white;
+}
+
+/* Modifier: dropdownItem active before pseudo-element */
+.listDetailsGrid__dropdownItem--active::before {
+  display: none;
+}
+
+/* Modifier: dropdownItem disabled */
+.listDetailsGrid__dropdownItem--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Element: dropdownItem arrow */
+.listDetailsGrid__dropdownItem .arrow {
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+/* Element: filterIcon */
+.listDetailsGrid__filterIcon {
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+/* Modifier: dropdownItem for all filter */
+.listDetailsGrid__dropdownItem--all {
+  border-left: 3px solid #0a2540;
+}
+
+/* Modifier: dropdownItem for completed filter */
+.listDetailsGrid__dropdownItem--completed {
+  border-left: 3px solid #22c55e;
+}
+
+/* Modifier: dropdownItem for missing filter */
+.listDetailsGrid__dropdownItem--missing {
+  border-left: 3px solid #f97316;
+}
+
+/* Modifier: dropdownItem for all filter active */
+.listDetailsGrid__dropdownItem--all.listDetailsGrid__dropdownItem--active {
+  background: #0a2540;
+  color: white;
+}
+
+/* Modifier: dropdownItem for completed filter active */
+.listDetailsGrid__dropdownItem--completed.listDetailsGrid__dropdownItem--active {
+  background: #22c55e;
+  color: white;
+}
+
+/* Modifier: dropdownItem for missing filter active */
+.listDetailsGrid__dropdownItem--missing.listDetailsGrid__dropdownItem--active {
+  background: #f97316;
+  color: white;
+}
+
+/* Element: noCompletedMessage */
+.listDetailsGrid__noCompletedMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, var(--c-gray-50) 0%, var(--c-gray-200) 100%);
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Element: noCompletedMessage paragraph */
+.listDetailsGrid__noCompletedMessage p {
+  color: #64748b;
+  margin: 0;
+}
+
+/* Element: noSearchResultsMessage */
+.listDetailsGrid__noSearchResultsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, var(--c-gray-50) 0%, #e0f2fe 100%);
+  border: 2px solid #0ea5e9;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Element: noSearchResultsMessage paragraph */
+.listDetailsGrid__noSearchResultsMessage p {
+  color: #0c4a6e;
+  margin: 0;
+}
+
+/* Element: contentLoadingSpinner */
+.listDetailsGrid__contentLoadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+/* Element: loadingText */
+.listDetailsGrid__loadingText {
+  color: #64748b;
+  margin: 0;
+}
+
+/* Element: gridsContainer */
+.listDetailsGrid__gridsContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Modifier: gridsContainer transitioning */
+.listDetailsGrid__gridsContainer--transitioning {
+  transition: none;
+}
+
+/* Modifier: gridsContainer loaded */
+.listDetailsGrid__gridsContainer--loaded {
+  gap: 0;
+}
+
+/* Small screen adjustments */
+@media (max-width: 350px) {
+  .listDetailsGrid__filtersWrapper {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .listDetailsGrid__searchInput {
+    padding: 10px 14px 10px 40px;
+    min-height: 44px;
+  }
+
+  .listDetailsGrid__searchIcon {
+    left: 10px;
+  }
+
+  .listDetailsGrid__searchClearButton {
+    right: 10px;
+  }
+}

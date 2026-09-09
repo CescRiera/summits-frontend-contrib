@@ -1,0 +1,95 @@
+.club-logo-cropper {
+  width: min(92vw, 420px);
+  max-width: 420px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.club-logo-cropper__header h3 {
+  margin: 0 0 6px;
+  color: #0f172a;
+}
+
+.club-logo-cropper__header p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.64);
+}
+
+.club-logo-cropper__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.08);
+  touch-action: none;
+  user-select: none;
+}
+
+.club-logo-cropper__image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.club-logo-cropper__mask {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.club-logo-cropper__mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 999px rgba(2, 6, 23, 0.34);
+}
+
+.club-logo-cropper__mask::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(var(--rgb-white), 0.88);
+}
+
+.club-logo-cropper__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.club-logo-cropper__controls label {
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.club-logo-cropper__controls input[type="range"] {
+  width: 100%;
+}
+
+.club-logo-cropper__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.club-logo-cropper__button {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.club-logo-cropper__button--secondary {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.club-logo-cropper__button--primary {
+  background: var(--color-accent);
+  color: #0f172a;
+}

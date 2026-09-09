@@ -1,0 +1,96 @@
+/* OverlayInfoSection.module.css - Unified Info Section Component */
+
+/* Block: overlay-info-section */
+.overlay-info-section {
+  padding: 8px 16px 8px 16px;
+  background: var(--c-gray-100);
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+/* Element: overlay-info-section description */
+.overlay-info-section__description {
+  color: #64748b;
+  margin: 0 0 4px 0;
+  text-align: left;
+}
+
+/* Element: overlay-info-section stats */
+.overlay-info-section__stats {
+  display: flex;
+  background: var(--c-gray-100);
+  padding: 16px 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-info-section__stats--hero {
+  padding: 12px 16px;
+  gap: 0;
+}
+
+/* Element: overlay-info-section stat card */
+.overlay-info-section__stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.overlay-info-section__stat-card--hero {
+  min-width: unset;
+  width: 100%;
+}
+
+.overlay-info-section__stat-label {
+  color: var(--c-gray-600);
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+/* Element: overlay-info-section stat value */
+.overlay-info-section__stat-value {
+  color: var(--c-gray-900);
+}
+
+.overlay-info-section__stat-value--hero {
+  color: var(--color-primary);
+}
+
+
+
+/* Element: overlay-info-section divider */
+.overlay-info-section__stat-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--c-gray-200);
+  opacity: 1;
+}
+
+/* Element: overlay-info-section map button */
+.overlay-info-section__map-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.18s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+}
+
+.overlay-info-section__map-button:active {
+  opacity: 0.6;
+}

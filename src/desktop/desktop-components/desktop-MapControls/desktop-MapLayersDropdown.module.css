@@ -1,0 +1,192 @@
+/* Map Layers Dropdown Container */
+.map-layers-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+/* MapLayers Icon Button */
+.map-layers-dropdown__button {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #1f2937;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08), 0 4px 12px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+.map-layers-dropdown__button:hover {
+  background: rgba(var(--rgb-white), 1);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Dropdown - Above Icon */
+.map-layers-dropdown__dropdown {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  width: 240px;
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(var(--rgb-black), 0.12), 0 4px 12px rgba(59, 130, 246, 0.1);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: dropdownSlideUp 0.2s ease;
+  z-index: 1002;
+}
+
+@keyframes dropdownSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Globe Toggle */
+.map-layers-dropdown__toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  position: relative;
+  padding: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.04) 0%,
+    rgba(16, 185, 129, 0.03) 100%
+  );
+  border: 1px solid rgba(59, 130, 246, 0.08);
+}
+
+.map-layers-dropdown__toggle-input {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  appearance: none;
+  background: rgba(var(--rgb-gray-400), 0.3);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.map-layers-dropdown__toggle-input:checked {
+  background: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(var(--rgb-white), 0.2);
+}
+
+.map-layers-dropdown__toggle-input::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.15);
+}
+
+.map-layers-dropdown__toggle-input:checked::before {
+  transform: translateX(18px);
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.2);
+}
+
+/* Map Styles Container */
+.map-layers-dropdown__map-styles-container {
+  display: flex;
+  gap: 8px;
+}
+
+/* Map Style Button */
+.map-layers-dropdown__map-style {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.map-layers-dropdown__map-style:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.map-layers-dropdown__map-style--active {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.map-layers-dropdown__map-style-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Geolocation Button */
+.map-layers-dropdown__geolocation-button {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 2px solid rgba(59, 130, 246, 0.1);
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  color: #1f2937;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.04);
+}
+
+.map-layers-dropdown__geolocation-button:hover {
+  background: rgba(var(--rgb-white), 1);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.map-layers-dropdown__geolocation-button:active {
+  transform: translateY(0);
+}
+
+.map-layers-dropdown__geolocation-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+

@@ -1,0 +1,206 @@
+require_relative '../../node_modules/@capacitor/ios/scripts/pods_helpers'
+
+platform :ios, '14.0'
+use_frameworks!
+
+# workaround to avoid Xcode caching of Pods that requires
+# Product -> Clean Build Folder after new Cordova plugins installed
+# Requires CocoaPods 1.6 or newer
+install! 'cocoapods', :disable_input_output_paths => true
+
+def capacitor_pods
+  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorCommunityMedia', :path => '../../node_modules/@capacitor-community/media'
+  pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
+  pod 'CapacitorBrowser', :path => '../../node_modules/@capacitor/browser'
+  pod 'CapacitorFilesystem', :path => '../../node_modules/@capacitor/filesystem'
+  pod 'CapacitorGeolocation', :path => '../../node_modules/@capacitor/geolocation'
+  pod 'CapacitorPreferences', :path => '../../node_modules/@capacitor/preferences'
+  pod 'CapacitorPushNotifications', :path => '../../node_modules/@capacitor/push-notifications'
+  pod 'CapacitorShare', :path => '../../node_modules/@capacitor/share'
+  pod 'CapacitorSplashScreen', :path => '../../node_modules/@capacitor/splash-screen'
+  pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
+  pod 'CapawesomeCapacitorBackgroundTask', :path => '../../node_modules/@capawesome/capacitor-background-task'
+  pod 'CapacitorPluginSafeArea', :path => '../../node_modules/capacitor-plugin-safe-area'
+end
+
+target 'App' do
+  capacitor_pods
+
+  # Firebase dependencies (native iOS SDK) - matching Android setup
+  # Using version 10.x for Xcode 15.3 compatibility
+  pod 'Firebase/Core', '~> 10.0'
+  pod 'Firebase/Auth', '~> 10.0'
+  pod 'Firebase/Messaging', '~> 10.0'
+  pod 'Firebase/Analytics', '~> 10.0'
+
+  # Mapbox Maps SDK for iOS - matching Android v11.9.0 functionality
+  pod 'MapboxMaps', '11.8.0'
+end
+
+post_install do |installer|
+  assertDeploymentTarget(installer)
+  
+  # Fix ALL framework bundle identifier conflicts
+  # ALL frameworks must have a different bundle ID than the main app (com.summitstracker.summits)
+  # This prevents CFBundleIdentifier collision errors during App Store validation
+  installer.pods_project.targets.each do |target|
+    if target.name == 'MapboxCommon'
+      target.build_configurations.each do |config|
+        config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'DWARF'
+      end
+    end
+    # Skip the main app target
+    next if target.name == 'App' || target.name == 'Pods-App'
+    
+    target.build_configurations.each do |config|
+      # Create unique bundle ID for ALL pod targets
+      safe_target_name = target.name.downcase.gsub(/[^a-z0-9]/, '')
+      unique_bundle_id = "com.capacitor.#{safe_target_name}"
+      
+      # Always set a unique bundle ID for pods
+      config.build_settings['PRODUCT_BUNDLE_IDENTIFIER'] = unique_bundle_id
+    end
+  end
+  
+  # Fix deprecated DT_TOOLCHAIN_DIR error - replace with TOOLCHAIN_DIR
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Fix LIBRARY_SEARCH_PATHS
+      if config.build_settings['LIBRARY_SEARCH_PATHS']
+        search_paths = config.build_settings['LIBRARY_SEARCH_PATHS']
+        if search_paths.is_a?(Array)
+          config.build_settings['LIBRARY_SEARCH_PATHS'] = search_paths.map do |path|
+            if path.is_a?(String)
+              path.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+            else
+              path
+            end
+          end
+        elsif search_paths.is_a?(String)
+          config.build_settings['LIBRARY_SEARCH_PATHS'] = search_paths.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        end
+      end
+      
+      # Fix FRAMEWORK_SEARCH_PATHS
+      if config.build_settings['FRAMEWORK_SEARCH_PATHS']
+        framework_paths = config.build_settings['FRAMEWORK_SEARCH_PATHS']
+        if framework_paths.is_a?(Array)
+          config.build_settings['FRAMEWORK_SEARCH_PATHS'] = framework_paths.map do |path|
+            if path.is_a?(String)
+              path.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+            else
+              path
+            end
+          end
+        elsif framework_paths.is_a?(String)
+          config.build_settings['FRAMEWORK_SEARCH_PATHS'] = framework_paths.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        end
+      end
+      
+      # Fix HEADER_SEARCH_PATHS
+      if config.build_settings['HEADER_SEARCH_PATHS']
+        header_paths = config.build_settings['HEADER_SEARCH_PATHS']
+        if header_paths.is_a?(Array)
+          config.build_settings['HEADER_SEARCH_PATHS'] = header_paths.map do |path|
+            if path.is_a?(String)
+              path.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+            else
+              path
+            end
+          end
+        elsif header_paths.is_a?(String)
+          config.build_settings['HEADER_SEARCH_PATHS'] = header_paths.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        end
+      end
+      
+      # Fix OTHER_LDFLAGS
+      if config.build_settings['OTHER_LDFLAGS']
+        ldflags = config.build_settings['OTHER_LDFLAGS']
+        if ldflags.is_a?(Array)
+          config.build_settings['OTHER_LDFLAGS'] = ldflags.map do |flag|
+            if flag.is_a?(String)
+              flag.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+            else
+              flag
+            end
+          end
+        elsif ldflags.is_a?(String)
+          config.build_settings['OTHER_LDFLAGS'] = ldflags.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        end
+      end
+      
+      # Fix any other build settings that might contain DT_TOOLCHAIN_DIR
+      config.build_settings.each do |key, value|
+        if value.is_a?(String) && value.include?('DT_TOOLCHAIN_DIR')
+          config.build_settings[key] = value.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        elsif value.is_a?(Array)
+          config.build_settings[key] = value.map do |item|
+            if item.is_a?(String) && item.include?('DT_TOOLCHAIN_DIR')
+              item.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+            else
+              item
+            end
+          end
+        end
+      end
+    end
+  end
+  
+  # Also fix in the main project if needed
+  installer.pods_project.build_configurations.each do |config|
+    if config.build_settings['LIBRARY_SEARCH_PATHS']
+      search_paths = config.build_settings['LIBRARY_SEARCH_PATHS']
+      if search_paths.is_a?(Array)
+        config.build_settings['LIBRARY_SEARCH_PATHS'] = search_paths.map do |path|
+          if path.is_a?(String)
+            path.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+          else
+            path
+          end
+        end
+      elsif search_paths.is_a?(String)
+        config.build_settings['LIBRARY_SEARCH_PATHS'] = search_paths.gsub('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+      end
+    end
+  end
+  
+  # Fix .xcconfig files that CocoaPods generates (use absolute path from installer)
+  # This fixes the "DT_TOOLCHAIN_DIR cannot be used" error
+  xcconfig_dir = File.join(installer.sandbox.root, 'Target Support Files')
+  if Dir.exist?(xcconfig_dir)
+    Dir.glob(File.join(xcconfig_dir, '**', '*.xcconfig')).each do |xcconfig_path|
+      begin
+        xcconfig_content = File.read(xcconfig_path)
+        original_content = xcconfig_content.dup
+        # Replace both $(DT_TOOLCHAIN_DIR) and ${DT_TOOLCHAIN_DIR} formats
+        xcconfig_content.gsub!('$(DT_TOOLCHAIN_DIR)', '$(TOOLCHAIN_DIR)')
+        xcconfig_content.gsub!('${DT_TOOLCHAIN_DIR}', '${TOOLCHAIN_DIR}')
+        if xcconfig_content != original_content
+          File.write(xcconfig_path, xcconfig_content)
+          puts "Fixed DT_TOOLCHAIN_DIR in #{File.basename(xcconfig_path)}"
+        end
+      rescue => e
+        puts "Warning: Could not fix #{xcconfig_path}: #{e.message}"
+      end
+    end
+  end
+  
+  # Fix shell scripts
+  if Dir.exist?(xcconfig_dir)
+    Dir.glob(File.join(xcconfig_dir, '**', '*.sh')).each do |script_path|
+      begin
+        script_content = File.read(script_path)
+        original_content = script_content.dup
+        script_content.gsub!('${DT_TOOLCHAIN_DIR}', '${TOOLCHAIN_DIR}')
+        if script_content != original_content
+          File.write(script_path, script_content)
+          puts "Fixed DT_TOOLCHAIN_DIR in #{File.basename(script_path)}"
+        end
+      rescue => e
+        puts "Warning: Could not fix #{script_path}: #{e.message}"
+      end
+    end
+  end
+end

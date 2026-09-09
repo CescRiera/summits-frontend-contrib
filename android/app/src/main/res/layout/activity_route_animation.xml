@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fitsSystemWindows="true">
+
+    <!-- Mapbox MapView Container (will be created programmatically) -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top Overlay - Stats and Branding -->
+    <LinearLayout
+        android:id="@+id/statsOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        android:paddingBottom="200dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/stats_gradient"
+        android:gravity="center_horizontal"
+        android:fitsSystemWindows="true">
+
+        <!-- SUMMITS Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMMITS"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.18"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Stats Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <!-- Elevation Column -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/elevationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/elevationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/elevationUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="1dp"
+                />
+            </LinearLayout>
+
+            <!-- Distance Column -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/distanceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/distanceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/distanceUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="1dp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Top Right Close Button -->
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_x"
+        android:background="@drawable/rounded_black_background"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:padding="12dp" />
+
+    <!-- Bottom Controls Container -->
+    <LinearLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:background="@drawable/controls_background"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="8dp"
+        android:fitsSystemWindows="false">
+
+        <!-- Play/Pause/Refresh Button -->
+        <ImageButton
+            android:id="@+id/pauseResumeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_pause"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:duplicateParentState="false" />
+
+        <!-- Route SeekBar -->
+        <SeekBar
+            android:id="@+id/routeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:max="1000"
+            android:progress="0"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="8dp"
+            android:padding="0dp"
+            android:thumbOffset="0dp"
+            android:stateListAnimator="@null"
+            android:splitTrack="false"
+            android:duplicateParentState="false" />
+
+        <!-- Speed Button -->
+        <Button
+            android:id="@+id/speedButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="1x"
+            android:background="@android:color/transparent"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:stateListAnimator="@null"
+            android:duplicateParentState="false" />
+    </LinearLayout>
+
+    <!-- Completion Buttons Overlay (hidden initially) -->
+    <LinearLayout
+        android:id="@+id/completionOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:minHeight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:fitsSystemWindows="false"
+        android:visibility="gone">
+
+        <!-- Cancel Button -->
+        <ImageButton
+            android:id="@+id/completionCancelButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_x"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:padding="0dp" />
+
+        <!-- Replay Button -->
+        <ImageButton
+            android:id="@+id/replayButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_rotate_ccw"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:padding="0dp" />
+
+        <!-- Download Button -->
+        <ImageButton
+            android:id="@+id/downloadButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_download"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerInside"
+            android:padding="0dp" />
+    </LinearLayout>
+
+</FrameLayout>

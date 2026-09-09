@@ -1,0 +1,17 @@
+.peak-list__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin: 24px auto 0 auto;
+}
+
+.peak-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 19px;
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto 0 auto;
+}

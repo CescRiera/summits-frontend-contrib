@@ -1,0 +1,551 @@
+.desktop-map-challenge-modal__content {
+  width: min(1180px, calc(100vw - 56px));
+  height: min(82vh, 780px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    radial-gradient(circle at top right, rgba(var(--rgb-color-accent), 0.22), transparent 36%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.28);
+  will-change: transform, opacity;
+}
+
+.desktop-map-challenge-modal__shell {
+  position: relative;
+  padding: 18px 20px 0;
+}
+
+.desktop-map-challenge-modal__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  padding-bottom: 14px;
+}
+
+.desktop-map-challenge-modal__hero-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.desktop-map-challenge-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.desktop-map-challenge-modal__header-copy {
+  min-width: 0;
+}
+
+.desktop-map-challenge-modal__header-copy h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.desktop-map-challenge-modal__subtitle {
+  margin: 6px 0 0;
+  max-width: 56ch;
+  color: #475569;
+}
+
+.desktop-map-challenge-modal__close {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.84);
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.desktop-map-challenge-modal__close:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.12);
+}
+
+.desktop-map-challenge-modal__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 0 14px;
+}
+
+.desktop-map-challenge-modal__search {
+  flex: 1;
+}
+
+.desktop-map-challenge-modal__search-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #64748b;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.desktop-map-challenge-modal__search-input:focus-within {
+  border-color: rgba(var(--rgb-color-accent), 0.9);
+  box-shadow:
+    0 0 0 4px rgba(var(--rgb-color-accent), 0.14),
+    0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.desktop-map-challenge-modal__search-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+}
+
+.desktop-map-challenge-modal__search-input input:focus {
+  outline: none;
+}
+
+.desktop-map-challenge-modal__search-input input::placeholder {
+  color: #94a3b8;
+}
+
+.desktop-map-challenge-modal__search-clear {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.desktop-map-challenge-modal__toolbar-summary {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.86);
+  border: none;
+  color: #f8fafc;
+  min-height: 48px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+.desktop-map-challenge-modal__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+}
+
+.desktop-map-challenge-modal__loading,
+.desktop-map-challenge-modal__empty {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+.desktop-map-challenge-modal__empty h3,
+.desktop-map-challenge-modal__empty p {
+  margin: 0;
+}
+
+.desktop-map-challenge-modal__empty-btn {
+  min-width: 104px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(var(--rgb-color-accent), 0.22);
+  color: #253041;
+  cursor: pointer;
+}
+
+.desktop-map-challenge-modal__spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(15, 23, 42, 0.12);
+  border-top-color: #0f172a;
+  border-radius: 50%;
+  animation: desktopMapChallengeSpin 0.8s linear infinite;
+}
+
+@keyframes desktopMapChallengeSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.desktop-map-challenge-modal__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  align-content: start;
+}
+
+.desktop-map-challenge-modal__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.desktop-map-challenge-modal__item:hover,
+.desktop-map-challenge-modal__item:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 54px rgba(15, 23, 42, 0.12);
+  border-color: rgba(148, 163, 184, 0.3);
+  outline: none;
+}
+
+.desktop-map-challenge-modal__item--featured {
+}
+
+.desktop-map-challenge-modal__item--following {
+  border-color: rgba(var(--rgb-color-accent), 0.52);
+  box-shadow:
+    0 0 0 1px rgba(var(--rgb-color-accent), 0.18),
+    0 22px 48px rgba(15, 23, 42, 0.1);
+}
+
+.desktop-map-challenge-modal__item--active {
+  border-color: rgba(var(--rgb-color-accent), 0.8);
+  box-shadow:
+    0 0 0 2px rgba(var(--rgb-color-accent), 0.2),
+    0 24px 52px rgba(15, 23, 42, 0.12);
+}
+
+.desktop-map-challenge-modal__item-image {
+  position: relative;
+  min-height: 148px;
+  background:
+    linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.desktop-map-challenge-modal__item-image--featured {
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.desktop-map-challenge-modal__item-overlay {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.08) 0%,
+    rgba(15, 23, 42, 0.7) 100%
+  );
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.desktop-map-challenge-modal__item-topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+}
+
+.desktop-map-challenge-modal__item-peak-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #ffffff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.desktop-map-challenge-modal__item-peak-chip {
+  margin-left: auto;
+  background: rgba(15, 23, 42, 0.52);
+}
+
+.desktop-map-challenge-modal__item-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  padding: 14px;
+}
+
+.desktop-map-challenge-modal__item-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desktop-map-challenge-modal__item-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.desktop-map-challenge-modal__item-title-inline {
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.desktop-map-challenge-modal__item-title {
+  margin: 0;
+  color: #0f172a;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-title,
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-title-inline {
+  color: #f8fafc;
+}
+
+.desktop-map-challenge-modal__creator-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.desktop-map-challenge-modal__creator-badge {
+  flex-shrink: 0;
+}
+
+.desktop-map-challenge-modal__creator-name {
+  min-width: 0;
+  color: #475569;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desktop-map-challenge-modal__meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desktop-map-challenge-modal__meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 13px;
+  background: rgba(248, 250, 252, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #475569;
+}
+
+.desktop-map-challenge-modal__item-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+  margin-top: auto;
+}
+
+.desktop-map-challenge-modal__item--featured
+  .desktop-map-challenge-modal__item-actions {
+  grid-template-columns: 1fr;
+}
+
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-btn--select {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-btn--select:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-btn--selected {
+  background: rgba(var(--rgb-color-accent), 0.85);
+  border-color: rgba(var(--rgb-color-accent), 0.95);
+  color: #ffffff;
+}
+
+.desktop-map-challenge-modal__item--featured .desktop-map-challenge-modal__item-btn--selected:hover {
+  background: rgba(var(--rgb-color-accent), 0.95);
+  border-color: rgba(var(--rgb-color-accent), 1);
+}
+
+.desktop-map-challenge-modal__item-btn {
+  min-width: 0;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.desktop-map-challenge-modal__item-btn:hover {
+  transform: translateY(-1px);
+}
+
+.desktop-map-challenge-modal__item-btn--select {
+  background: rgba(248, 250, 252, 0.9);
+  border-color: rgba(148, 163, 184, 0.2);
+  color: #0f172a;
+}
+
+.desktop-map-challenge-modal__item-btn--selected {
+  background: rgba(var(--rgb-color-accent), 0.24);
+  border-color: rgba(var(--rgb-color-accent), 0.62);
+  color: #253041;
+}
+
+.desktop-map-challenge-modal__item-btn--follow {
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+}
+
+.desktop-map-challenge-modal__item-btn--following {
+  background: rgba(var(--rgb-color-accent), 0.22);
+  border-color: rgba(var(--rgb-color-accent), 0.44);
+  color: #253041;
+}
+
+.desktop-map-challenge-modal__item-btn:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+.desktop-map-challenge-modal__btn-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: desktopMapChallengeSpin 0.6s linear infinite;
+}
+
+.desktop-map-challenge-modal__item-btn--following
+  .desktop-map-challenge-modal__btn-spinner {
+  border-color: rgba(37, 48, 65, 0.24);
+  border-top-color: #253041;
+}
+
+.desktop-map-challenge-modal__body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.desktop-map-challenge-modal__body::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 999px;
+}
+
+.desktop-map-challenge-modal__body::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.18);
+  border-radius: 999px;
+}
+
+@media (min-width: 980px) {
+  .desktop-map-challenge-modal__item--featured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktop-map-challenge-modal__content {
+    width: min(1040px, calc(100vw - 40px));
+  }
+
+  .desktop-map-challenge-modal__list {
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .desktop-map-challenge-modal__content {
+    width: min(100vw - 24px, 920px);
+    height: min(88vh, 860px);
+  }
+
+  .desktop-map-challenge-modal__shell {
+    padding: 16px 16px 0;
+  }
+
+  .desktop-map-challenge-modal__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .desktop-map-challenge-modal__toolbar-summary {
+    align-self: flex-start;
+  }
+
+  .desktop-map-challenge-modal__body {
+    padding: 0 16px 16px;
+  }
+
+  .desktop-map-challenge-modal__list {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-map-challenge-modal__item,
+  .desktop-map-challenge-modal__item--featured {
+    min-height: auto;
+  }
+}

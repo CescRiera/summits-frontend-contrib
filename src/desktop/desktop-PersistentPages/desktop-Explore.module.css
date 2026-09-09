@@ -1,0 +1,564 @@
+/* Main Container */
+.explore__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: var(--c-gray-100);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Grid Container */
+.explore__grid-container {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  /* Clip-path removes a 420px x 320px rectangle from the top-left corner */
+}
+
+.explore__content-wrapper {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.explore__grid-section {
+  display: grid;
+  /* Create grid that flows around the 420px x 320px cutout at top-left */
+  /* Use explicit column structure: cutout area (420px) + rest of columns */
+  /* The first column (420px) and first row (320px) are reserved for the cutout */
+  grid-template-columns: 
+    /* First column is the cutout area (420px) - will be occupied by ::before */
+    420px
+    /* Rest of columns after cutout - smaller base size for more flexibility */
+    repeat(auto-fill, minmax(180px, 1fr));
+  /* Create rows that account for the 320px cutout height */
+  grid-template-rows: 
+    /* First row is the cutout area (320px) - will be occupied by ::before */ 280px;
+  /* Rest of rows after cutout - fixed row height for consistent spacing */
+  /* Each row is 180px + gap is handled separately */
+  grid-auto-rows: 180px;
+  gap: 16px;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Use row dense to fill gaps efficiently */
+  grid-auto-flow: row dense;
+  position: relative;
+}
+
+/* Responsive breakpoints - cells scale proportionally while cutout remains fixed */
+@media (max-width: 1400px) {
+  .explore__grid-section {
+    grid-template-columns: 420px repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 14px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .explore__grid-section {
+    grid-template-columns: 420px repeat(auto-fill, minmax(130px, 1fr));
+    grid-auto-rows: 130px;
+    gap: 12px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .explore__grid-section {
+    grid-template-columns: 420px repeat(auto-fill, minmax(110px, 1fr));
+    grid-auto-rows: 110px;
+    gap: 10px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .explore__grid-section {
+    grid-template-columns: 420px repeat(auto-fill, minmax(90px, 1fr));
+    grid-auto-rows: 90px;
+    gap: 8px;
+    padding: 14px;
+  }
+}
+
+/* Create a grid area placeholder for the cutout that occupies the first cell */
+.explore__grid-section::before {
+  content: "";
+  /* Occupy the cutout grid area (first column, first row) */
+  grid-column: 1;
+  grid-row: 1;
+  /* Make it invisible but still occupy space */
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  /* Ensure it takes up the full grid cell */
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Peak cells will auto-place starting from column 2, row 2 due to ::before occupying (1,1) */
+/* The grid will naturally flow around the ::before cutout placeholder */
+
+/* Peak Cells */
+.explore__peak-cell {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Default size - 1 column, 1 row */
+  grid-column: span 1;
+  grid-row: span 1;
+  /* Ensure cells don't overflow their grid area */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Size variants for gallery layout */
+/* All sizes use consistent spacing - gap is handled by grid */
+/* Row height is 180px, so spans calculate as: (180px * span) + (16px * (span - 1)) */
+.explore__peak-cell--small {
+  grid-column: span 1;
+  grid-row: span 1;
+  /* Square cell: 180px × 180px */
+  aspect-ratio: 1;
+}
+
+.explore__peak-cell--medium {
+  grid-column: span 2;
+  grid-row: span 2;
+  /* Square cell spanning 2×2: ~376px × ~376px (with gaps) */
+  aspect-ratio: 1;
+}
+
+.explore__peak-cell--large {
+  grid-column: span 2;
+  grid-row: span 3;
+  /* Tall cell: ~376px × ~572px (with gaps) */
+  /* Remove aspect-ratio to let grid handle height */
+}
+
+.explore__peak-cell--wide {
+  grid-column: span 3;
+  grid-row: span 2;
+  /* Wide landscape cell: ~572px × ~376px (with gaps) */
+  /* Remove aspect-ratio to let grid handle height */
+}
+
+.explore__peak-cell--tall {
+  grid-column: span 1;
+  grid-row: span 3;
+  /* Tall portrait cell: 180px × ~572px (with gaps) */
+  /* Remove aspect-ratio to let grid handle height */
+}
+
+.explore__peak-cell--extra-wide {
+  grid-column: span 4;
+  grid-row: span 2;
+  /* Extra wide cell: ~768px × ~376px (with gaps) */
+  /* Remove aspect-ratio to let grid handle height */
+}
+
+/* Responsive cell spans - reduce spans on smaller screens */
+@media (max-width: 1400px) {
+  .explore__peak-cell--extra-wide {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 1200px) {
+  .explore__peak-cell--wide {
+    grid-column: span 2;
+  }
+
+  .explore__peak-cell--extra-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .explore__peak-cell--medium {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .explore__peak-cell--large {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .explore__peak-cell--wide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .explore__peak-cell--tall {
+    grid-row: span 2;
+  }
+
+  .explore__peak-cell--extra-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .explore__peak-cell--large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .explore__peak-cell--wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .explore__peak-cell--tall {
+    grid-row: span 1;
+  }
+
+  .explore__peak-cell--extra-wide {
+    grid-column: span 1;
+  }
+}
+
+.explore__peak-cell:hover {
+  z-index: 10;
+}
+
+/* Background - Always visible */
+.explore__peak-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.explore__peak-img--loaded {
+  opacity: 1;
+}
+
+/* Shimmer loading effect */
+.explore__peak-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-100) 0%,
+    var(--c-gray-200) 20%,
+    var(--c-gray-100) 40%,
+    var(--c-gray-100) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.explore__peak-shimmer--hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Default: Show only icon */
+.explore__peak-icon-default {
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.explore__peak-icon-default--center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore__peak-icon-default--top-right {
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore__peak-icon-img {
+  filter: drop-shadow(0 2px 8px rgba(var(--rgb-black), 0.3));
+}
+
+.explore__peak-icon-img--large {
+  width: 60px;
+  height: 60px;
+}
+
+.explore__peak-icon-img--small {
+  width: 32px;
+  height: 32px;
+}
+
+/* Hover: Show overlay and text */
+.explore__peak-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.explore__peak-cell:hover .explore__peak-icon-default {
+  opacity: 0;
+}
+
+.explore__peak-cell:hover .explore__peak-hover-content {
+  opacity: 1;
+}
+
+.explore__peak-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--rgb-black), 0.2) 0%,
+    rgba(var(--rgb-black), 0.4) 30%,
+    rgba(var(--rgb-black), 0.6) 60%,
+    rgba(var(--rgb-black), 0.7) 100%
+  );
+  z-index: 1;
+}
+
+.explore__peak-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.explore__peak-name {
+  color: var(--c-white);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.8);
+}
+
+/* Special cells allow 3 lines for peak names */
+.explore__peak-cell--special .explore__peak-name {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.explore__peak-details {
+  color: rgba(var(--rgb-white), 0.95);
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  text-shadow: 0 1px 3px rgba(var(--rgb-black), 0.8);
+}
+
+/* Special cells allow 3 lines for peak details */
+.explore__peak-cell--special .explore__peak-details {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* User Rows */
+.explore__user-row {
+  background: var(--c-white);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 12px;
+  transition: background-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+  /* Start from column 2 to avoid cutout, span rest of width */
+  grid-column: 2 / -1;
+}
+
+/* Responsive user row spans */
+@media (max-width: 1000px) {
+  .explore__user-row {
+    grid-column: 2 / -1;
+  }
+}
+
+.explore__user-row:hover {
+  background-color: var(--c-gray-50);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.1);
+}
+
+.explore__user-img-container {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.explore__user-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--c-gray-200);
+}
+
+.explore__user-img-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c-gray-200), var(--c-gray-100));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-gray-400);
+  border: 2px solid var(--c-gray-200);
+}
+
+.explore__user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.explore__user-name {
+  color: #1f2937;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.explore__user-peaks {
+  color: #6b7280;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Loading Spinner */
+.explore__loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.explore__loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.explore__no-results {
+  text-align: center;
+  padding: 60px 32px;
+  background: linear-gradient(135deg, var(--c-white), var(--c-gray-50));
+  margin: 32px 16px;
+  border-radius: 10px;
+}
+
+.explore__no-results-title {
+  color: var(--c-gray-900);
+  margin-bottom: 8px;
+}
+
+.explore__no-results-subtitle {
+  color: var(--c-gray-600);
+}
+
+.explore__end-message {
+  text-align: center;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.explore__end-message-text {
+  color: var(--c-gray-600);
+}
+
+/* Loading more section */
+.explore__loading-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.explore__loading-more span {
+  color: #64748b;
+}
+
+.explore__content-wrapper {
+  width: 100%;
+  min-height: 100%;
+}

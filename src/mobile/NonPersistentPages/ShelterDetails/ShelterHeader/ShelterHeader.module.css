@@ -1,0 +1,119 @@
+.shelter-header {
+  padding: 16px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shelter-header__details-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.shelter-header__top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.shelter-header__badges {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shelter-header__type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.shelter-header__elevation-text {
+  color: var(--c-gray-700);
+  white-space: nowrap;
+}
+
+.shelter-header__location-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  min-width: 0;
+  gap: 8px;
+  flex-shrink: 1;
+}
+
+.shelter-header__location-text {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.shelter-header__location-region {
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: italic;
+  color: var(--c-gray-600);
+}
+
+.shelter-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.shelter-header__edit-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  color: var(--c-gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.shelter-header__edit-btn:hover {
+  opacity: 1;
+  background: var(--c-gray-100);
+}
+
+.shelter-header__map-button {
+  min-height: 40px;
+  background: transparent;
+  color: var(--c-gray-900);
+  border: none;
+  transition: background 0.18s, box-shadow 0.18s;
+  padding: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+}

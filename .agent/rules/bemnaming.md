@@ -1,0 +1,54 @@
+---
+trigger: always_on
+---
+
+
+# BEM Naming Convention
+
+**MANDATORY**: All CSS classes MUST follow BEM (Block Element Modifier) naming convention.
+
+## Rules:
+
+1. **Block**: Use kebab-case for the main component name (e.g., `user-card`, `community-peaks`)
+2. **Element**: Use double underscore `__` to separate block from element (e.g., `user-card__header`, `user-card__content`)
+3. **Modifier**: Use double dash `--` to separate element from modifier (e.g., `user-card__button--primary`, `user-card__button--disabled`)
+4. **State modifiers**: Use single dash `-` for state modifiers (e.g., `user-card--loading`, `user-card--error`)
+
+## Examples:
+
+- ✅ `.user-card__header`
+- ✅ `.user-card__button--primary`
+- ✅ `.user-card--loading`
+- ❌ `.userCard` (camelCase)
+- ❌ `.user-card-header` (single underscore)
+- ❌ `.userCardHeader` (camelCase with single underscore)
+
+## Enforcement:
+
+- ALL CSS class names in `.module.css` files MUST follow this pattern
+- ALL className references in TypeScript/JSX MUST use the BEM format
+- NO exceptions - this is a hard requirement for all new components# BEM Naming Convention
+
+**MANDATORY**: All CSS classes MUST follow BEM (Block Element Modifier) naming convention.
+
+## Rules:
+
+1. **Block**: Use kebab-case for the main component name (e.g., `user-card`, `community-peaks`)
+2. **Element**: Use double underscore `__` to separate block from element (e.g., `user-card__header`, `user-card__content`)
+3. **Modifier**: Use double dash `--` to separate element from modifier (e.g., `user-card__button--primary`, `user-card__button--disabled`)
+4. **State modifiers**: Use single dash `-` for state modifiers (e.g., `user-card--loading`, `user-card--error`)
+
+## Examples:
+
+- ✅ `.user-card__header`
+- ✅ `.user-card__button--primary`
+- ✅ `.user-card--loading`
+- ❌ `.userCard` (camelCase)
+- ❌ `.user-card-header` (single underscore)
+- ❌ `.userCardHeader` (camelCase with single underscore)
+
+## Enforcement:
+
+- ALL CSS class names in `.module.css` files MUST follow this pattern
+- ALL className references in TypeScript/JSX MUST use the BEM format
+- NO exceptions - this is a hard requirement for all new components

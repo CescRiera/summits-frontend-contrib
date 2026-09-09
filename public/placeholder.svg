@@ -1,0 +1,7 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="#f0f0f0" />
+  <circle cx="50" cy="35" r="15" fill="#d0d0d0" />
+  <path d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z" fill="#d0d0d0" />
+  <text x="50" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#999">
+    Image</text>
+</svg>

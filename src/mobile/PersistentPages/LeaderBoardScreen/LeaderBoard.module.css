@@ -1,0 +1,196 @@
+/* =================================================================
+   BASE LEADERBOARD STYLES - Mobile-First (390x844)
+   ================================================================= */
+
+/* Container & Layout */
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: calc(
+    64px + env(safe-area-inset-bottom)
+  ); /* Extra padding for navbar */
+  background: var(--c-gray-100);
+  min-height: 100dvh;
+  height: auto;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid rgba(var(--rgb-white), 0.2);
+  padding: 16px;
+  padding-top: calc(16px + env(safe-area-inset-top));
+}
+
+.tabs {
+  display: flex;
+  background: rgba(var(--rgb-white), 0.95);
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  width: 100%;
+  position: relative;
+}
+
+.tabs::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / 3);
+  height: calc(100% - 8px);
+  background: var(--color-accent);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.tabs[data-active-tab="world"]::before {
+  transform: translateX(0);
+}
+
+.tabs[data-active-tab="challenges"]::before {
+  transform: translateX(100%);
+}
+
+.tabs[data-active-tab="clubs"]::before {
+  transform: translateX(200%);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--c-gray-600);
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.tab span {
+  transition: inherit;
+  position: relative;
+  z-index: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.tabActive {
+  color: var(--c-gray-900, #1e293b);
+}
+
+.contentContainer {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  padding: 0;
+  box-sizing: border-box;
+  /* Prevent content from being selectable during swipe */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.contentActive {
+  display: block;
+  position: relative;
+}
+
+.contentHidden {
+  display: none;
+}
+
+.loading,
+.error,
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40dvh;
+  gap: 16px;
+}
+
+.loadingSpinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--c-gray-100);
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.loadMoreBtn {
+  appearance: none;
+  border: none;
+  background: #3b82f6;
+  color: var(--c-white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.loadMoreBtn:disabled {
+  opacity: 0.6;
+  transform: none;
+}
+
+/* Shimmer animation for loading states */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, var(--c-gray-100) 0px, var(--c-gray-200) 40px, var(--c-gray-100) 80px);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}

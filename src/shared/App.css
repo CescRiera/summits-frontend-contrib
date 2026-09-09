@@ -1,0 +1,415 @@
+@import "@silk-hq/components/unlayered-styles";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Lato:wght@400;500;700&display=swap");
+
+:root {
+  /* --------------------------------------------------------- */
+  /* Standardized 9-Step Grayscale Palette (Slate)             */
+  /* --------------------------------------------------------- */
+  --rgb-white: 255, 255, 255;
+  --rgb-gray-50: 248, 250, 252;
+  --rgb-gray-100: 255, 250, 243;
+  --rgb-gray-200: 226, 232, 240;
+  --rgb-gray-300: 187, 198, 212;
+  --rgb-gray-400: 148, 163, 184;
+  --rgb-gray-600: 71, 85, 105;
+  --rgb-gray-700: 51, 63, 82;
+
+  --rgb-gray-800: 30, 41, 59;
+  --rgb-gray-900: 15, 23, 42;
+  --rgb-black: 0, 0, 0;
+
+  --c-white: rgb(var(--rgb-white));
+  --c-gray-50: rgb(var(--rgb-gray-50));
+  --c-gray-100: rgb(var(--rgb-gray-100));
+  --c-gray-200: rgb(var(--rgb-gray-200));
+  --c-gray-300: rgb(var(--rgb-gray-300));
+
+  --c-gray-400: rgb(var(--rgb-gray-400));
+  --c-gray-600: rgb(var(--rgb-gray-600));
+  --c-gray-700: rgb(var(--rgb-gray-700));
+  --c-gray-800: rgb(var(--rgb-gray-800));
+  --c-gray-900: rgb(var(--rgb-gray-900));
+  --c-black: rgb(var(--rgb-black));
+
+  /* Map existing system variables to the new palette for consistency */
+  --color-primary-light: #5a5a5a;
+  --color-primary: #2d2d2d;
+  --color-primary-dark: #1a1a1a;
+  --yarl__portal_zindex: 10001;
+
+  --color-secondary-light: #999999;
+  --color-secondary: #666666;
+  --color-secondary-dark: #444444;
+
+  --color-accent-light: #e4ead0;
+  --color-accent: #c2cf94;
+  --color-accent-dark: #5f7440;
+  --rgb-color-primary: 45, 45, 45;
+  --rgb-color-accent: 194, 207, 148;
+
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-success-light: #34d399;
+  --color-success-dark: #059669;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fbbf24;
+  --color-warning-dark: #d97706;
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+  --color-error-dark: #dc2626;
+  --color-info: #3b82f6;
+  --color-info-light: #60a5fa;
+  --color-info-dark: #2563eb;
+
+  /* Elevation Colors - Standardized System */
+  --color-elevation-black: #000000;
+  --color-elevation-burgundy: #480001;
+  --color-elevation-red: #ff0000;
+  --color-elevation-orange: #ff7300;
+  --color-elevation-yellow: #ffbb00;
+  --color-elevation-green: #00ae21;
+
+  --color-danger: var(--color-error);
+  /* Desktop navbar height for overlay offset */
+  --desktop-navbar-height: 64px;
+
+  /* Modal system tokens */
+  --modal-overlay-rgb: var(--rgb-black);
+  --modal-overlay-alpha: 0.5;
+  --modal-overlay-blur: 4px;
+  --modal-motion-enter: 10000ms;
+  --modal-motion-exit: 180ms;
+  --modal-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --modal-radius-dialog: 16px;
+  --modal-radius-sheet: 20px;
+  --modal-z-base: 20000;
+  --modal-z-step: 10;
+}
+
+/* Import fonts */
+
+
+html,
+body,
+#root {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100dvh;
+  height: auto;
+}
+
+/* Global body styling */
+body {
+  background: #000000;
+  color: var(--c-gray-900);
+  margin: 0;
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  min-height: 100dvh;
+  height: auto;
+}
+
+/* Root container - pages handle their own safe area padding */
+#root {
+  background: var(--c-gray-100);
+  min-height: 100dvh;
+  height: auto;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+/* Typography System - Montserrat (primary) & Nunito Sans (secondary) */
+
+/* Display variants - Montserrat, for hero/large headings */
+.typography-display-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.typography-display-medium {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+}
+
+.typography-display-small {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+}
+
+/* Headline variants - Montserrat, for section headers */
+.typography-headline-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.typography-headline-medium {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+.typography-headline-small {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+/* Title variants - Montserrat, for card/component titles */
+.typography-title-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+}
+
+.typography-title-medium {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.1px;
+}
+
+.typography-title-small {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0px;
+}
+
+/* Body variants - Nunito Sans, for content */
+.typography-body-large {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.typography-body-medium {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.typography-body-small {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* Label variants - Nunito Sans, for UI labels/metadata */
+.typography-label-large {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+}
+
+.typography-label-medium {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+}
+
+.typography-label-small {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+/* Button variants - Montserrat, for interactive elements */
+.typography-button-large {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+.typography-button-medium {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+.typography-button-small {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+/* Example usage:
+  <h1 class="typography-display-large">Hero Title</h1>
+  <h2 class="typography-headline-medium">Section Header</h2>
+  <h3 class="typography-title-medium">Card Title</h3>
+  <p class="typography-body-medium">Body content</p>
+  <span class="typography-label-medium">Label text</span>
+  <button class="typography-button-medium">Button</button>
+*/
+
+/* Desktop Typography (larger sizes for desktop-only UI) */
+.typography-desktop-display-xxl {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.2px;
+}
+
+.typography-desktop-display-xl {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+.typography-desktop-display-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+.typography-desktop-title-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+.typography-desktop-title-medium {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.typography-desktop-body-large {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.typography-desktop-label-large {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+/* Complete desktop counterparts for mobile set */
+.typography-desktop-headline-large {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.typography-desktop-headline-medium {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.typography-desktop-headline-small {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.typography-desktop-title-small {
+  font-family: "Montserrat", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.typography-desktop-body-medium {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.typography-desktop-body-small {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.typography-desktop-label-medium {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.typography-desktop-label-small {
+  font-family: "Nunito Sans", "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.typography-desktop-button-large {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.typography-desktop-button-medium {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.typography-desktop-button-small {
+  font-family: "Nunito Sans", "Nunito Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}

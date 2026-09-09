@@ -1,0 +1,116 @@
+.club-details {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  background: #f8fafc;
+}
+
+.club-details__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.club-details__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 32px;
+  gap: 16px;
+  text-align: center;
+  color: rgba(15, 23, 42, 0.4);
+}
+
+.club-details__error-bar {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.club-details__top-row {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.club-details__content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.club-details__tab-content {
+  min-height: 400px;
+}
+
+.club-details__locked-notice {
+  background: rgba(var(--rgb-white), 0.8);
+  border: 1px dashed rgba(15, 23, 42, 0.2);
+  border-radius: 18px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.club-details__locked-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(15, 23, 42, 0.4);
+  margin-bottom: 8px;
+}
+
+.club-details__modal {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.club-details__modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.club-details__modal-button--secondary,
+.club-details__modal-button--danger {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.club-details__modal-button--secondary {
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+}
+
+.club-details__modal-button--danger {
+  background: #ef4444;
+  color: #fff;
+}
+
+.club-details__modal-button--danger:hover {
+  background: #dc2626;
+}
+
+.club-details__modal-button--secondary:hover {
+  background: rgba(15, 23, 42, 0.1);
+}

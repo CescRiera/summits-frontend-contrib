@@ -1,0 +1,157 @@
+.scrapingBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background: #ffb347;
+  color: var(--c-gray-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08);
+  padding: 0 16px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.completeBar {
+  composes: scrapingBar;
+  background: #4caf50;
+  color: var(--c-white);
+  animation: slideDown 0.3s ease-out, fadeIn 0.5s ease-out;
+}
+
+.completeBar.fadeOut {
+  animation: slideDown 0.3s ease-out, fadeIn 0.5s ease-out,
+    fadeOut 0.5s ease-out 5s forwards;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+}
+
+.iconContainer {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  flex: 1;
+  text-align: center;
+  /* Clamp to 2 lines with ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.4em * 2);
+}
+
+.message.fadeOut {
+  opacity: 0;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(var(--rgb-white), 0.3);
+  border-top: 2px solid var(--c-white);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.completeIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--c-white);
+  animation: bounceIn 0.6s ease-out;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in-out;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textFadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

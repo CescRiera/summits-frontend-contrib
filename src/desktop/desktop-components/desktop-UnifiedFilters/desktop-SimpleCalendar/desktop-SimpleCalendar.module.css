@@ -1,0 +1,105 @@
+.calendar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.calendar__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calendar__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #1f2937;
+}
+
+.calendar__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08), 0 4px 12px rgba(59, 130, 246, 0.1);
+  cursor: pointer;
+}
+
+.calendar__input-wrapper:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1), 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.calendar__input-wrapper:focus-within {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.calendar__input-wrapper--active {
+  background: linear-gradient(135deg, #e6f0ff 0%, #cfe1ff 100%);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08), 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.calendar__icon {
+  flex-shrink: 0;
+  margin-right: 12px;
+  pointer-events: none;
+}
+
+.calendar__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #1f2937;
+  padding: 0;
+  width: 100%;
+}
+
+.calendar__input::placeholder {
+  color: var(--c-gray-400);
+}
+
+.calendar__input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.calendar__input--active {
+  color: #1e3a8a;
+}
+
+.calendar__clear {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.calendar__clear:hover {
+  background: rgba(var(--rgb-black), 0.05);
+  color: #1f2937;
+}
+

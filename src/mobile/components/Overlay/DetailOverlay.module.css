@@ -1,0 +1,12 @@
+.detail-overlay__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: 3000;
+  background: var(--c-gray-100);
+  overflow: auto;
+  /* Safe area handling is done by each specific detail page */
+}

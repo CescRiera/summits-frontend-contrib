@@ -1,0 +1,107 @@
+.popup {
+  border: 2px solid #0a2540;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #6b7280;
+
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.content {
+  padding: 32px 24px 24px;
+  text-align: center;
+}
+
+.iconContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: #0a2540;
+  background: linear-gradient(135deg, #cfe1ff 0%, #a8c8ff 100%);
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(10, 37, 64, 0.15);
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 16px rgba(10, 37, 64, 0.15);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(10, 37, 64, 0.25);
+  }
+}
+
+.title {
+  color: #0a2540;
+  margin: 0 0 12px 0;
+}
+
+.message {
+  color: #6b7280;
+  margin: 0 0 32px 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.cancelButton,
+.loginButton {
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 100px;
+}
+
+.cancelButton {
+  background: var(--c-white);
+  border-color: var(--c-gray-200);
+  color: #6b7280;
+}
+
+.cancelButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(var(--rgb-black), 0.1);
+}
+
+.loginButton {
+  background: linear-gradient(135deg, #cfe1ff 0%, #a8c8ff 100%);
+  border-color: #0a2540;
+  color: #0a2540;
+  box-shadow: 0 4px 16px rgba(10, 37, 64, 0.2);
+}
+
+.loginButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.25);
+}
+
+

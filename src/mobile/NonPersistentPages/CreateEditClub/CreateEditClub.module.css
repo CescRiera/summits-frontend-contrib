@@ -1,0 +1,278 @@
+.create-edit-club {
+  min-height: 100dvh;
+  background: var(--c-gray-100);
+  color: #0f172a;
+}
+
+.create-edit-club__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 14px 28px;
+}
+
+.create-edit-club__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-edit-club__section-subtitle {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.64);
+}
+
+.create-edit-club__error {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.08);
+  color: #991b1b;
+}
+
+.create-edit-club__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-edit-club__field-label {
+  color: rgba(15, 23, 42, 0.74);
+}
+
+.create-edit-club__input,
+.create-edit-club__textarea,
+.create-edit-club__select {
+  width: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  border-radius: 10px;
+  background: var(--c-white);
+  color: #0f172a;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.create-edit-club__textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.create-edit-club__input:focus,
+.create-edit-club__textarea:focus,
+.create-edit-club__select:focus {
+  border-color: rgba(15, 23, 42, 0.26);
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+.create-edit-club__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  background: var(--color-accent);
+  color: #0f172a;
+  transition: opacity 0.16s ease;
+}
+
+.create-edit-club__button--secondary {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.create-edit-club__button--ghost {
+  background: var(--c-white);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.create-edit-club__button--danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.create-edit-club__button--stretch {
+  width: 100%;
+  flex: 1 1 0;
+}
+
+.create-edit-club__button:disabled,
+.create-edit-club__button--secondary:disabled,
+.create-edit-club__button--ghost:disabled,
+.create-edit-club__button--danger:disabled {
+  opacity: 0.55;
+}
+
+.create-edit-club__preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.create-edit-club__preview-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.create-edit-club__action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.create-edit-club__action-row > * {
+  flex: 1 1 140px;
+}
+
+.create-edit-club__file-input {
+  display: none;
+}
+
+.create-edit-club__error-text {
+  color: #b91c1c;
+}
+
+.create-edit-club__empty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.create-edit-club__admin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 12px;
+  color: #0f172a;
+  align-self: flex-start;
+}
+
+.create-edit-club__admin-chip-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-right: -6px;
+  border: none;
+  background: transparent;
+  color: rgba(15, 23, 42, 0.44);
+  border-radius: 50%;
+  transition: background 0.16s ease;
+}
+
+.create-edit-club__admin-chip-remove:active {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.create-edit-club__admin-search {
+  position: relative;
+}
+
+.create-edit-club__admin-dropdown {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  background: var(--c-white);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-edit-club__admin-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  text-align: left;
+  transition: background 0.16s ease;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.create-edit-club__admin-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.create-edit-club__admin-dropdown-item:active {
+  background-color: var(--c-gray-100);
+}
+
+/* Confirm Modal */
+.create-edit-club__confirm-modal {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-edit-club__confirm-header h3 {
+  margin: 0;
+  color: var(--c-gray-900);
+}
+
+.create-edit-club__confirm-body p {
+  margin: 0;
+  color: var(--c-gray-600);
+}
+
+.create-edit-club__confirm-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.create-edit-club__confirm-button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.create-edit-club__confirm-button--secondary {
+  border: 1px solid var(--c-gray-200);
+  background: white;
+  color: var(--c-gray-700);
+}
+
+.create-edit-club__confirm-button--danger {
+  border: none;
+  background: #ef4444;
+  color: white;
+}
+
+.create-edit-club__confirm-button--danger:disabled {
+  opacity: 0.6;
+}
+
+.create-edit-club__admin-dropdown-item--muted {
+  color: rgba(15, 23, 42, 0.54);
+  justify-content: center;
+}

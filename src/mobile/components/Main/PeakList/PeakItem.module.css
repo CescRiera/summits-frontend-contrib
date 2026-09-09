@@ -1,0 +1,76 @@
+.peak-item {
+  background: var(--c-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.04);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  color: var(--c-gray-900);
+}
+
+.peak-item__main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.peak-item__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--c-gray-200);
+}
+
+.peak-item__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.peak-item__name {
+  color: var(--color-primary);
+}
+
+.peak-item__meta {
+  color: var(--c-gray-600);
+}
+
+.peak-item__expand-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  border-radius: 6px;
+  padding: 5px 11px;
+  transition: background 0.2s;
+}
+
+.peak-item__expand-btn:focus {
+  background: var(--color-primary);
+  color: var(--c-gray-50);
+}
+
+.peak-item__details {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--c-gray-200);
+}
+
+.peak-item__altitude-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.peak-item__region {
+  margin-left: 4px;
+  color: var(--c-gray-600);
+}
+
+.peak-item__description {
+  color: var(--c-gray-600);
+  margin-bottom: 8px;
+}

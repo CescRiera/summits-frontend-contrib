@@ -1,0 +1,186 @@
+.swiperContainer {
+  position: relative;
+  padding-bottom: 4px; /* Ensure bottom border is visible */
+  margin-bottom: 2px; /* Extra space for border */
+}
+
+.swiper {
+  width: 100%;
+  height: calc(17dvh - 4px); /* Account for padding */
+  overflow: visible; /* Allow borders to show */
+  padding: 0 20px; /* Add horizontal padding for better spacing */
+}
+
+.slide {
+  height: 100%;
+  padding-bottom: 2px; /* Space for border */
+}
+
+.peakCard {
+  background: rgba(var(--rgb-white), 0.95);
+  border: 1px solid rgba(var(--rgb-white), 0.4);
+  border-radius: 12px;
+  padding: 0;
+
+  transition: all 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.15);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.peakCardSelected {
+  /* Dynamic styling applied via inline styles based on elevation color */
+}
+
+.peakInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.peakName {
+  color: white;
+  word-break: break-word;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.8);
+}
+
+.peakNameLocal {
+  margin: 0;
+  color: rgba(var(--rgb-white), 0.9);
+  font-style: italic;
+  word-break: break-word;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(var(--rgb-black), 0.8);
+}
+
+/* Bottom section with elevation, location, and see more button */
+.peakBottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.peakLeftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.peakElevation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.elevationIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.elevationText {
+  color: white;
+  text-shadow: 0 1px 3px rgba(var(--rgb-black), 0.8);
+}
+
+/* Black overlay for better text visibility */
+.peakCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(var(--rgb-black), 0.6);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* Content container */
+.peakContent {
+  position: relative;
+  z-index: 2;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Location styling */
+.peakLocation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.locationIcon {
+  color: rgba(var(--rgb-white), 0.9);
+  flex-shrink: 0;
+}
+
+.locationText {
+  color: rgba(var(--rgb-white), 0.9);
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(var(--rgb-black), 0.8);
+}
+
+/* Enhanced text styling for better contrast */
+
+/* Elevation icon background styling */
+.elevationIconBg {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* See More Button */
+.seeMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  color: var(--c-white);
+  background: none;
+  border: none;
+  border-radius: 8px;
+  background: rgba(var(--rgb-black), 0.4);
+  border: 1px solid rgba(var(--rgb-white), 0.3);
+
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.2);
+}
+
+/* Responsive font sizes for small screens */
+@media (max-height: 700px) {
+  .peakName {
+  }
+
+  .peakNameLocal {
+  }
+
+  .elevationText {
+  }
+
+  .locationText {
+  }
+
+  .seeMoreButton {
+    padding: 6px 12px;
+  }
+}

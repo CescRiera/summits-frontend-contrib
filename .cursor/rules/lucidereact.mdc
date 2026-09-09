@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+- Use **lucide-react** for all icons. Import individual icons (e.g., `import { Check } from 'lucide-react'`).

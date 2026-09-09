@@ -1,0 +1,383 @@
+.manage-clubs {
+  min-height: 100dvh;
+  background: var(--c-gray-100);
+  color: #0f172a;
+}
+
+.manage-clubs__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 14px 28px;
+}
+
+.manage-clubs__top-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.manage-clubs__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-200);
+}
+
+.manage-clubs__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.manage-clubs__section-title {
+  margin: 0;
+  color: #0f172a;
+  min-width: 0;
+}
+
+.manage-clubs__section-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.manage-clubs__section-subtitle {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.64);
+}
+
+.manage-clubs__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  background: var(--color-accent);
+  color: #0f172a;
+  transition: opacity 0.16s ease;
+}
+
+.manage-clubs__button--compact {
+  min-height: 34px;
+  padding: 8px 10px;
+  gap: 6px;
+}
+
+.manage-clubs__button--secondary {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.manage-clubs__button--ghost {
+  background: var(--c-white);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.manage-clubs__button--danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.manage-clubs__button--tiny {
+  min-height: 30px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.manage-clubs__button:disabled,
+.manage-clubs__button--secondary:disabled,
+.manage-clubs__button--ghost:disabled,
+.manage-clubs__button--danger:disabled {
+  opacity: 0.55;
+}
+
+.manage-clubs__meta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.manage-clubs__meta-pill {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.05);
+  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.manage-clubs__error,
+.manage-clubs__empty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.manage-clubs__empty {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.manage-clubs__error {
+  background: rgba(220, 38, 38, 0.08);
+  color: #991b1b;
+}
+
+.manage-clubs__action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.manage-clubs__action-row > * {
+  flex: 1 1 140px;
+}
+
+.manage-clubs__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manage-clubs__dropdown-toggle {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  color: inherit;
+}
+
+.manage-clubs__dropdown-icon {
+  flex-shrink: 0;
+  color: rgba(15, 23, 42, 0.58);
+  transition: transform 0.16s ease;
+}
+
+.manage-clubs__dropdown-icon--open {
+  transform: rotate(180deg);
+}
+
+.manage-clubs__dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manage-clubs__empty-section {
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.04);
+  color: rgba(15, 23, 42, 0.68);
+}
+
+.manage-clubs__card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-200);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.manage-clubs__card:hover {
+  border-color: rgba(15, 23, 42, 0.2);
+}
+
+.manage-clubs__card:focus-visible {
+  outline: none;
+  border-color: rgba(15, 23, 42, 0.26);
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+.manage-clubs__card-image,
+.manage-clubs__hero-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: linear-gradient(145deg, rgba(194, 207, 148, 0.75), rgba(148, 163, 184, 0.7));
+}
+
+.manage-clubs__hero-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.manage-clubs__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.manage-clubs__badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.manage-clubs__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.manage-clubs__badge--private {
+  background: rgba(15, 23, 42, 0.86);
+  color: #f8fafc;
+}
+
+.manage-clubs__badge--pending {
+  background: rgba(217, 119, 6, 0.14);
+  color: #92400e;
+}
+
+.manage-clubs__card-title {
+  margin: 0;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.manage-clubs__card-metrics {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.74);
+}
+
+.manage-clubs__card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.manage-clubs__manage-modal {
+  width: min(92vw, 440px);
+  max-height: 84dvh;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--c-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-clubs__manage-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+.manage-clubs__manage-modal-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.manage-clubs__modal-close {
+  border: none;
+  background: none;
+  color: rgba(15, 23, 42, 0.58);
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manage-clubs__custom-dropdown {
+  width: 100%;
+}
+
+.manage-clubs__separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.manage-clubs__muted {
+  color: rgba(15, 23, 42, 0.62);
+}
+
+.manage-clubs__list-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.manage-clubs__list-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.manage-clubs__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  object-fit: cover;
+  background: rgba(15, 23, 42, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  flex-shrink: 0;
+}
+
+.manage-clubs__list-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.manage-clubs__list-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-shrink: 0;
+}

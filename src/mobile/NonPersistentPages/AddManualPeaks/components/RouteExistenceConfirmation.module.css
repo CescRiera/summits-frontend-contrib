@@ -1,0 +1,109 @@
+.route-existence-confirmation__modal {
+  background: var(--c-white);
+  border-radius: 16px;
+  padding: 24px 16px;
+  max-width: calc(100% - 32px);
+  width: 100%;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.15);
+}
+
+.route-existence-confirmation__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.route-existence-confirmation__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.route-existence-confirmation__title {
+  color: var(--c-gray-900);
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  /* Push title to center even with the left space available if needed, 
+     but typical pattern is to just let it fill */
+  padding-left: 32px; /* Offset to center title accounting for the close button width */
+}
+
+.route-existence-confirmation__close-btn {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-500);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.route-existence-confirmation__close-btn:hover {
+  background: var(--c-gray-100);
+  color: var(--c-gray-700);
+}
+
+.route-existence-confirmation__close-btn:active {
+  transform: scale(0.95);
+}
+
+.route-existence-confirmation__peak-name {
+  color: var(--c-gray-900);
+  text-align: center;
+}
+
+
+
+.route-existence-confirmation__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.route-existence-confirmation__button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  transition: all 200ms ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.route-existence-confirmation__button--primary {
+  background: var(--color-primary);
+  color: var(--c-white);
+}
+
+.route-existence-confirmation__button--primary:active {
+  opacity: 0.8;
+}
+
+.route-existence-confirmation__button--secondary {
+  background: var(--c-gray-100);
+  color: var(--c-gray-900);
+  border: 1px solid var(--c-gray-200);
+}
+
+.route-existence-confirmation__button--secondary:active {
+  opacity: 0.7;
+}
+
+.route-existence-confirmation__button--danger {
+  background: #db2727; /* Darker red */
+  color: white;
+}
+
+.route-existence-confirmation__button--danger:active {
+  opacity: 0.8;
+}

@@ -1,0 +1,217 @@
+/* Home Header Component */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 16px 0 24px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.home-header__content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.home-header__icon {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.home-header__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-header__title {
+  color: var(--c-gray-900);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-header__title--no-subtitle {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-header__subtitle {
+  color: var(--c-gray-600);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-header__right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* See All Link Styles */
+.home-header__see-all {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--color-accent-dark);
+  white-space: nowrap;
+}
+
+.home-header__see-all span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-header__see-all svg {
+  margin-top: 1px;
+}
+
+/* Dropdown Container */
+.home-header__dropdown-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Styles */
+.home-header__dropdown-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+/* Filter Button Styles */
+.home-header__filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 8px;
+  color: #000000;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home-header__filter-button:active {
+  transform: scale(0.95);
+}
+
+
+
+.home-header__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 140px;
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-200);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12);
+  z-index: 100;
+  margin-top: 8px;
+  overflow-y: auto;
+  animation: dropdownIn 0.2s ease-out;
+  max-height: 200px;
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-header__dropdown-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--c-gray-200);
+  color: var(--c-gray-900);
+  text-align: left;
+  transition: all 0.2s ease;
+  }
+
+.home-header__dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.home-header__dropdown-option:active {
+  background: var(--color-surface-hover);
+}
+
+.home-header__dropdown-option-active {
+  background: var(--c-gray-100);
+  color: var(--color-primary);
+}
+
+.home-header__dropdown-tick {
+  color: var(--color-primary);
+}
+
+.home-header__dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.home-header__dropdown-option:hover {
+  background: var(--color-surface-hover);
+}
+
+.home-header__dropdown-option-active {
+  background: var(--color-surface-hover);
+  color: var(--c-gray-900);
+}
+
+.home-header--clickable {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* Expand Button Styles */
+.home-header__expand-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home-header__expand-button:active {
+  transform: scale(0.92);
+}
+
+.home-header__chevron {
+  transition: transform 0.3s ease;
+  transform: rotate(90deg); /* Point Right by default */
+}
+
+.home-header__chevron--expanded {
+  transform: rotate(180deg); /* Point Down when open */
+}
+

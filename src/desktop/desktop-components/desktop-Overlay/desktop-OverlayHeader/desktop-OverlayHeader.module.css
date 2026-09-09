@@ -1,0 +1,73 @@
+/* OverlayHeader.module.css - Unified Header Component for Overlay Pages */
+
+/* Block: overlay-header */
+.overlay-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Element: overlay-header title wrapper */
+.overlay-header__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+/* Element: overlay-header title */
+.overlay-header__title {
+  color: #0a2540;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+/* Element: overlay-header subtitle */
+.overlay-header__subtitle {
+  color: #0a2540;
+  margin: 0;
+  font-style: italic;
+  overflow: hidden; /* Changed from hidden to visible to allow italics to render fully */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+/* Element: overlay-header right content */
+.overlay-header__right-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 36px;
+}
+
+/* Modifier: overlay-header transparent variant */
+.overlay-header--transparent {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.overlay-header--transparent .overlay-header__title {
+  color: var(--c-white);
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 1);
+}
+
+.overlay-header--transparent .overlay-header__subtitle {
+  color: rgba(var(--rgb-white), 0.8);
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.5);
+}

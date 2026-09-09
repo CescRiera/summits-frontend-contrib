@@ -1,0 +1,48 @@
+.auth-loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-gray-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.auth-loading-screen__label {
+  margin-top: 16px;
+  color: var(--c-gray-600);
+  opacity: 1;
+}
+
+.auth-loading-screen__dot {
+  animation: auth-loading-screen__blink 1.4s ease-in-out infinite;
+}
+
+.auth-loading-screen__dot--2 {
+  animation-delay: 0.3s;
+}
+
+.auth-loading-screen__dot--3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes auth-loading-screen__blink {
+  0%, 20% { opacity: 0.4; }
+  40% { opacity: 1; }
+  60%, 100% { opacity: 0.4; }
+}
+
+.auth-loading-screen__icon {
+  width: 80dvw;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .auth-loading-screen__icon {
+    width: 500px;
+  }
+}

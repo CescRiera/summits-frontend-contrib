@@ -1,0 +1,356 @@
+.page {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(194, 207, 148, 0.24), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  color: #0f172a;
+}
+
+.content {
+  width: min(1520px, 100%);
+  margin: 0 auto;
+  padding: 24px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  padding: 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.topPanel {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(194, 207, 148, 0.2), transparent 42%),
+    rgba(255, 255, 255, 0.95);
+}
+
+.sectionSubtitle {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.68);
+}
+
+.muted {
+  color: rgba(15, 23, 42, 0.62);
+}
+
+.dashboardStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.dashboardStatCard {
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  background: rgba(255, 255, 255, 0.84);
+  color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.browseToolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+}
+
+.input,
+.select {
+  width: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f172a;
+  padding: 13px 16px;
+  outline: none;
+}
+
+.input:focus,
+.select:focus {
+  border-color: rgba(15, 23, 42, 0.28);
+  box-shadow: 0 0 0 3px rgba(194, 207, 148, 0.26);
+}
+
+.button,
+.buttonSecondary,
+.buttonGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 14px;
+  padding: 12px 16px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    opacity 0.16s ease;
+}
+
+.button:hover,
+.buttonSecondary:hover,
+.buttonGhost:hover {
+  transform: translateY(-1px);
+}
+
+.button {
+  background: #c2cf94;
+  color: #0f172a;
+  box-shadow: 0 12px 24px rgba(95, 116, 64, 0.16);
+}
+
+.buttonSecondary {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.buttonGhost {
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.button:disabled,
+.buttonSecondary:disabled,
+.buttonGhost:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  height: 100%;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.1);
+}
+
+.cardTop {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.cardImage {
+  width: 100%;
+  height: 170px;
+  border-radius: 18px;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(194, 207, 148, 0.9), rgba(148, 163, 184, 0.9));
+}
+
+.heroPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 64px;
+}
+
+.cardBody {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.badgePrivate {
+  background: rgba(15, 23, 42, 0.86);
+  color: #f8fafc;
+}
+
+.badgePending {
+  background: rgba(217, 119, 6, 0.12);
+  color: #92400e;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #0f172a;
+}
+
+.cardText {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.74);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.metaGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.metaPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.05);
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.cardActions {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cardActionButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emptyState,
+.errorBox {
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.emptyState {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.errorBox {
+  background: rgba(220, 38, 38, 0.08);
+  color: #991b1b;
+}
+
+.loadMoreWrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+@media (max-width: 1200px) {
+  .dashboardStatsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .controls > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .cardList {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  .cardTop {
+    grid-template-columns: 130px minmax(0, 1fr);
+  }
+
+  .cardImage {
+    height: 130px;
+  }
+}
+
+@media (max-width: 820px) {
+  .content {
+    padding: 20px 16px 26px;
+  }
+
+  .section {
+    padding: 18px;
+  }
+
+  .dashboardStatsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .controls,
+  .cardTop {
+    grid-template-columns: 1fr;
+  }
+
+  .cardList {
+    grid-template-columns: 1fr;
+  }
+
+  .cardActions,
+  .cardActionButtons {
+    width: 100%;
+  }
+
+  .cardActionButtons > * {
+    flex: 1 1 160px;
+  }
+}

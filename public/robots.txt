@@ -1,0 +1,13 @@
+# robots.txt for summitstracker.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /verifyemail
+Disallow: /changepassword
+Disallow: /register
+
+# Sitemap location
+Sitemap: https://summitstracker.com/sitemap.xml
+
+

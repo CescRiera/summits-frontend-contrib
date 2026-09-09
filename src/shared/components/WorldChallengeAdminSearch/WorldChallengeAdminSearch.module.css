@@ -1,0 +1,201 @@
+.world-challenge-admin-search {
+  position: relative;
+  width: 100%;
+}
+
+.world-challenge-admin-search__input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  padding: 0 10px 0 14px;
+  border: 1px solid rgba(var(--rgb-black), 0.08);
+  border-radius: 12px;
+  background: rgba(var(--rgb-white), 0.96);
+  box-shadow: 0 8px 24px rgba(var(--rgb-black), 0.08);
+}
+
+.world-challenge-admin-search__icon {
+  color: var(--c-gray-500);
+  flex-shrink: 0;
+}
+
+.world-challenge-admin-search__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--c-gray-900);
+  font: inherit;
+  outline: none;
+}
+
+.world-challenge-admin-search__input::placeholder {
+  color: var(--c-gray-500);
+}
+
+.world-challenge-admin-search__clear {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(var(--rgb-black), 0.05);
+  color: var(--c-gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.world-challenge-admin-search__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(var(--rgb-black), 0.08);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(var(--rgb-black), 0.14);
+  overflow: hidden;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.world-challenge-admin-search__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  color: var(--c-gray-600);
+}
+
+.world-challenge-admin-search__loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.world-challenge-admin-search__skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(var(--rgb-black), 0.05);
+}
+
+.world-challenge-admin-search__skeleton-row:last-child {
+  border-bottom: none;
+}
+
+.world-challenge-admin-search__skeleton-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.world-challenge-admin-search__skeleton-block {
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--rgb-black), 0.05) 0%,
+    rgba(var(--rgb-black), 0.11) 50%,
+    rgba(var(--rgb-black), 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: world-challenge-admin-search-shimmer 1.2s linear infinite;
+}
+
+.world-challenge-admin-search__skeleton-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.world-challenge-admin-search__skeleton-title {
+  width: min(180px, 72%);
+  height: 14px;
+}
+
+.world-challenge-admin-search__skeleton-subtitle {
+  width: min(130px, 48%);
+  height: 11px;
+}
+
+.world-challenge-admin-search__result {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(var(--rgb-black), 0.05);
+}
+
+.world-challenge-admin-search__result:last-child {
+  border-bottom: none;
+}
+
+.world-challenge-admin-search__result:hover {
+  background: rgba(var(--rgb-black), 0.03);
+}
+
+.world-challenge-admin-search__result-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.world-challenge-admin-search__result-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.world-challenge-admin-search__result-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--c-gray-700);
+}
+
+.world-challenge-admin-search__result-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.world-challenge-admin-search__result-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.world-challenge-admin-search__result-title {
+  color: var(--c-gray-900);
+}
+
+.world-challenge-admin-search__result-subtitle {
+  color: var(--c-gray-600);
+}
+
+@keyframes world-challenge-admin-search-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}

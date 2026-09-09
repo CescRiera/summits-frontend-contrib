@@ -1,0 +1,6049 @@
+{
+  "summary": {
+    "totalFilesScanned": 628,
+    "filesWithColors": 332,
+    "uniqueColorsFound": 592,
+    "allUniqueColors": [
+      "#000",
+      "#000000",
+      "#003366",
+      "#003962",
+      "#003d82",
+      "#004085",
+      "#005691",
+      "#0056b3",
+      "#0061a3",
+      "#006ba3",
+      "#0072bc",
+      "#007CC3",
+      "#007aff",
+      "#007bff",
+      "#007cc3",
+      "#008000",
+      "#00AE21",
+      "#00ae21",
+      "#00f2fe",
+      "#050505",
+      "#059669",
+      "#065f46",
+      "#06b6d4",
+      "#0891b2",
+      "#0E7AFE",
+      "#0a2540",
+      "#0b0b0b",
+      "#0b1220",
+      "#0c4a6e",
+      "#0d3254",
+      "#0d47a1",
+      "#0ea5e9",
+      "#0f172a",
+      "#0f3a5f",
+      "#10b981",
+      "#111",
+      "#111827",
+      "#1565c0",
+      "#15803d",
+      "#16b4ff",
+      "#1976d2",
+      "#1a1a1a",
+      "#1a2632",
+      "#1a3a5a",
+      "#1d4ed8",
+      "#1e293b",
+      "#1e3a8a",
+      "#1e40af",
+      "#1f2937",
+      "#218838",
+      "#222",
+      "#222222",
+      "#22223b",
+      "#22C55E",
+      "#22c55e",
+      "#234012",
+      "#2563eb",
+      "#28a745",
+      "#2a2a2a",
+      "#2c3e50",
+      "#2d2d2d",
+      "#2d3fd9",
+      "#2d5016",
+      "#2e7d32",
+      "#300",
+      "#3056d3",
+      "#333",
+      "#333333",
+      "#3498db",
+      "#34d399",
+      "#363636",
+      "#374151",
+      "#397019",
+      "#3B82F6",
+      "#3a3a3a",
+      "#3b82f6",
+      "#3d4eeb",
+      "#3d6b23",
+      "#3d9de6",
+      "#404040",
+      "#40A040",
+      "#444444",
+      "#45a049",
+      "#475569",
+      "#480001",
+      "#495057",
+      "#4CAF50",
+      "#4a4a4a",
+      "#4a5568",
+      "#4a7d2a",
+      "#4b5563",
+      "#4c8c2b",
+      "#4caf50",
+      "#4facfe",
+      "#555",
+      "#5568d3",
+      "#5a5a5a",
+      "#5b6b7a",
+      "#5ba832",
+      "#60a5fa",
+      "#64748b",
+      "#65403a",
+      "#666",
+      "#666666",
+      "#667eea",
+      "#6b7280",
+      "#6c757d",
+      "#6f42c1",
+      "#71d54d",
+      "#764ba2",
+      "#7D8A5B",
+      "#7a5a00",
+      "#7c3aed",
+      "#7d8592",
+      "#800020",
+      "#888",
+      "#888888",
+      "#8a99a8",
+      "#8b4a00",
+      "#8b5cf6",
+      "#92400e",
+      "#94a3b8",
+      "#95b8ff",
+      "#991b1b",
+      "#999",
+      "#999999",
+      "#9ca3af",
+      "#A00040",
+      "#A70000",
+      "#A9A9A9",
+      "#B5A48B",
+      "#B87333",
+      "#C0C0C0",
+      "#CD7F32",
+      "#ED254E",
+      "#FC4C02",
+      "#FDB931",
+      "#FF0000",
+      "#FF4040",
+      "#FF7300",
+      "#FF8C00",
+      "#FFA040",
+      "#FFBB00",
+      "#FFD700",
+      "#FFE040",
+      "#FFFFFF",
+      "#a12400",
+      "#a35709",
+      "#a7f3d0",
+      "#a8c8ff",
+      "#adb5bd",
+      "#b0b0b0",
+      "#b0b4bb",
+      "#b3003c",
+      "#b7deab",
+      "#b8860b",
+      "#b8d4ff",
+      "#b91c1c",
+      "#bbdefb",
+      "#bbf7d0",
+      "#c0392b",
+      "#c0c0c0",
+      "#c17a2a",
+      "#cbd5e0",
+      "#cbd5e1",
+      "#cc3900",
+      "#ccc",
+      "#ccfff6",
+      "#cd7f32",
+      "#cfe1ff",
+      "#d0e0ff",
+      "#d1d5db",
+      "#d1fae5",
+      "#d32f2f",
+      "#d4f4dd",
+      "#d6ecff",
+      "#d97706",
+      "#d9e1ec",
+      "#da9c00",
+      "#db2727",
+      "#dbeafe",
+      "#dc2626",
+      "#dc3545",
+      "#dee2e6",
+      "#df6654",
+      "#e0e0e0",
+      "#e0f2fe",
+      "#e1bee7",
+      "#e2e8f0",
+      "#e34402",
+      "#e3e7ee",
+      "#e3e8f0",
+      "#e3f2fd",
+      "#e5e5e5",
+      "#e5e7eb",
+      "#e64400",
+      "#e67e22",
+      "#e6e6e6",
+      "#e6f0ff",
+      "#e7e7e7",
+      "#e8e8e8",
+      "#e9ecef",
+      "#eaf6ff",
+      "#eee",
+      "#eef1f5",
+      "#ef4444",
+      "#efad75",
+      "#eff6ff",
+      "#f0f0f0",
+      "#f0f1f3",
+      "#f0f4f8",
+      "#f0f9ff",
+      "#f0fdf4",
+      "#f1f1f1",
+      "#f1f5f9",
+      "#f39c12",
+      "#f3e5f5",
+      "#f3f3f3",
+      "#f3f4f6",
+      "#f59e0b",
+      "#f5f5f5",
+      "#f5f5f7",
+      "#f5f7fa",
+      "#f6f8fa",
+      "#f87171",
+      "#f8f9fa",
+      "#f8fafc",
+      "#f8fbff",
+      "#f97316",
+      "#f9fafb",
+      "#fabd23",
+      "#fafbfc",
+      "#fbbf24",
+      "#fc4c02",
+      "#fca5a5",
+      "#fce076",
+      "#fcfcfc",
+      "#fde68a",
+      "#fecaca",
+      "#fee2e2",
+      "#fef2f2",
+      "#fef3c7",
+      "#ff0000",
+      "#ff3100",
+      "#ff4500",
+      "#ff5400",
+      "#ff6b35",
+      "#ff6b6b",
+      "#ff7300",
+      "#ffb347",
+      "#ffb945",
+      "#ffbb00",
+      "#ffd6d6",
+      "#ffd700",
+      "#ffe5d6",
+      "#fff",
+      "#fff7d6",
+      "#fffbe6",
+      "#ffffff",
+      "#ffffff00",
+      "rgb(0 0 0 / 0.1)",
+      "rgb(0, 0, 0)",
+      "rgb(11, 11, 25)",
+      "rgb(13, 66, 151)",
+      "rgb(186, 210, 235)",
+      "rgb(209, 213, 219)",
+      "rgb(240, 240, 240)",
+      "rgb(255, 255, 255)",
+      "rgb(36, 92, 223)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0.02)",
+      "rgba(0, 0, 0, 0.03)",
+      "rgba(0, 0, 0, 0.04)",
+      "rgba(0, 0, 0, 0.05)",
+      "rgba(0, 0, 0, 0.06)",
+      "rgba(0, 0, 0, 0.07)",
+      "rgba(0, 0, 0, 0.08)",
+      "rgba(0, 0, 0, 0.1)",
+      "rgba(0, 0, 0, 0.12)",
+      "rgba(0, 0, 0, 0.14)",
+      "rgba(0, 0, 0, 0.15)",
+      "rgba(0, 0, 0, 0.16)",
+      "rgba(0, 0, 0, 0.18)",
+      "rgba(0, 0, 0, 0.2)",
+      "rgba(0, 0, 0, 0.25)",
+      "rgba(0, 0, 0, 0.3)",
+      "rgba(0, 0, 0, 0.35)",
+      "rgba(0, 0, 0, 0.4)",
+      "rgba(0, 0, 0, 0.45)",
+      "rgba(0, 0, 0, 0.5)",
+      "rgba(0, 0, 0, 0.55)",
+      "rgba(0, 0, 0, 0.6)",
+      "rgba(0, 0, 0, 0.7)",
+      "rgba(0, 0, 0, 0.75)",
+      "rgba(0, 0, 0, 0.8)",
+      "rgba(0, 0, 0, 0.85)",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 1)",
+      "rgba(0, 123, 255, 0.1)",
+      "rgba(0, 124, 195, 0.08)",
+      "rgba(0, 124, 195, 0.1)",
+      "rgba(0, 124, 195, 0.25)",
+      "rgba(0,0,0,0.06)",
+      "rgba(0,0,0,0.1)",
+      "rgba(0,0,0,0.10)",
+      "rgba(0,0,0,0.2)",
+      "rgba(0,0,0,0.3)",
+      "rgba(0,0,0,0.5)",
+      "rgba(0,0,0,0.7)",
+      "rgba(0,0,0,0.8)",
+      "rgba(10, 37, 64, 0.05)",
+      "rgba(10, 37, 64, 0.08)",
+      "rgba(10, 37, 64, 0.1)",
+      "rgba(10, 37, 64, 0.15)",
+      "rgba(10, 37, 64, 0.2)",
+      "rgba(10, 37, 64, 0.25)",
+      "rgba(10, 37, 64, 0.3)",
+      "rgba(102, 102, 102, 0.05)",
+      "rgba(102, 102, 102, 0.06)",
+      "rgba(102, 102, 102, 0.08)",
+      "rgba(102, 126, 234, 0.1)",
+      "rgba(102, 126, 234, 0.15)",
+      "rgba(102, 126, 234, 0.25)",
+      "rgba(107, 114, 128, 0.05)",
+      "rgba(107, 114, 128, 0.08)",
+      "rgba(107, 114, 128, 0.1)",
+      "rgba(107, 114, 128, 0.15)",
+      "rgba(107, 114, 128, 0.2)",
+      "rgba(107, 114, 128, 0.3)",
+      "rgba(107, 114, 128, 0.4)",
+      "rgba(107, 114, 128, 0.5)",
+      "rgba(107, 114, 128, 0.6)",
+      "rgba(11, 18, 32, 0.95)",
+      "rgba(111, 66, 193, 0.1)",
+      "rgba(148, 163, 184, 0.2)",
+      "rgba(15, 23, 42, 0.02)",
+      "rgba(15, 23, 42, 0.04)",
+      "rgba(15, 23, 42, 0.05)",
+      "rgba(15, 23, 42, 0.06)",
+      "rgba(15, 23, 42, 0.08)",
+      "rgba(15, 23, 42, 0.1)",
+      "rgba(15, 23, 42, 0.12)",
+      "rgba(15, 23, 42, 0.15)",
+      "rgba(15, 23, 42, 0.18)",
+      "rgba(15, 23, 42, 0.2)",
+      "rgba(15, 23, 42, 0.25)",
+      "rgba(15, 23, 42, 0.3)",
+      "rgba(15, 23, 42, 0.35)",
+      "rgba(15, 23, 42, 0.4)",
+      "rgba(15, 23, 42, 0.5)",
+      "rgba(15, 23, 42, 0.6)",
+      "rgba(15, 23, 42, 0.7)",
+      "rgba(15, 23, 42, 0.8)",
+      "rgba(15, 23, 42, 0.9)",
+      "rgba(15,23,42,0.18)",
+      "rgba(156, 163, 175, 0.3)",
+      "rgba(16, 185, 129, 0.03)",
+      "rgba(16, 185, 129, 0.06)",
+      "rgba(16, 185, 129, 0.08)",
+      "rgba(16, 185, 129, 0.25)",
+      "rgba(16, 185, 129, 0.3)",
+      "rgba(16, 185, 129, 0.35)",
+      "rgba(185, 28, 28, 0.95)",
+      "rgba(19, 194, 150, 0.05)",
+      "rgba(19, 194, 150, 0.06)",
+      "rgba(19, 194, 150, 0.08)",
+      "rgba(19, 194, 150, 0.1)",
+      "rgba(19, 194, 150, 0.12)",
+      "rgba(192, 192, 192, 0.18)",
+      "rgba(192, 192, 192, 0.3)",
+      "rgba(205, 127, 50, 0.18)",
+      "rgba(205, 127, 50, 0.3)",
+      "rgba(211, 47, 47, 0.05)",
+      "rgba(211, 47, 47, 0.1)",
+      "rgba(220, 38, 38, 0.85)",
+      "rgba(220, 38, 38, 1)",
+      "rgba(220, 53, 69, 0.6)",
+      "rgba(226, 232, 240, 0.4)",
+      "rgba(226, 232, 240, 0.95)",
+      "rgba(226, 98, 95, 0.08)",
+      "rgba(226, 98, 95, 0.1)",
+      "rgba(226, 98, 95, 0.25)",
+      "rgba(239, 68, 68, 0.1)",
+      "rgba(239, 68, 68, 0.25)",
+      "rgba(239, 68, 68, 0.9)",
+      "rgba(241, 245, 249, 0.8)",
+      "rgba(245, 158, 11, 0.1)",
+      "rgba(245, 158, 11, 0.25)",
+      "rgba(245, 158, 11, 0.3)",
+      "rgba(248, 250, 252, 0.5)",
+      "rgba(248, 250, 252, 0.8)",
+      "rgba(248, 250, 252, 0.95)",
+      "rgba(248, 250, 252, 0.96)",
+      "rgba(248, 250, 252, 1)",
+      "rgba(249, 168, 37, 0.2)",
+      "rgba(249, 250, 251, 0.8)",
+      "rgba(252, 76, 2, 0.1)",
+      "rgba(255, 107, 107, 0.1)",
+      "rgba(255, 107, 107, 0.3)",
+      "rgba(255, 193, 7, 0.1)",
+      "rgba(255, 193, 7, 0.4)",
+      "rgba(255, 215, 0, 0.18)",
+      "rgba(255, 215, 0, 0.3)",
+      "rgba(255, 255, 255, 0)",
+      "rgba(255, 255, 255, 0.05)",
+      "rgba(255, 255, 255, 0.1)",
+      "rgba(255, 255, 255, 0.15)",
+      "rgba(255, 255, 255, 0.2)",
+      "rgba(255, 255, 255, 0.25)",
+      "rgba(255, 255, 255, 0.3)",
+      "rgba(255, 255, 255, 0.35)",
+      "rgba(255, 255, 255, 0.4)",
+      "rgba(255, 255, 255, 0.5)",
+      "rgba(255, 255, 255, 0.55)",
+      "rgba(255, 255, 255, 0.6)",
+      "rgba(255, 255, 255, 0.7)",
+      "rgba(255, 255, 255, 0.8)",
+      "rgba(255, 255, 255, 0.85)",
+      "rgba(255, 255, 255, 0.9)",
+      "rgba(255, 255, 255, 0.95)",
+      "rgba(255, 255, 255, 0.98)",
+      "rgba(255, 255, 255, 0.99)",
+      "rgba(255, 255, 255, 1)",
+      "rgba(255, 69, 0, 0.4)",
+      "rgba(255,255,255,0.1)",
+      "rgba(255,255,255,0.2)",
+      "rgba(255,255,255,0.3)",
+      "rgba(255,255,255,0.4)",
+      "rgba(255,255,255,0.5)",
+      "rgba(255,255,255,0.6)",
+      "rgba(255,255,255,0.8)",
+      "rgba(255,255,255,0.9)",
+      "rgba(30, 58, 138, 0.1)",
+      "rgba(30, 58, 138, 0.15)",
+      "rgba(30, 58, 138, 0.2)",
+      "rgba(30, 58, 138, 0.25)",
+      "rgba(30, 58, 138, 0.3)",
+      "rgba(30, 58, 138, 0.4)",
+      "rgba(30, 58, 138, 0.5)",
+      "rgba(34, 197, 94, 0.3)",
+      "rgba(40, 167, 69, 0.1)",
+      "rgba(40, 167, 69, 0.2)",
+      "rgba(40, 76, 100, 0.09)",
+      "rgba(43, 122, 120, 0.1)",
+      "rgba(44, 62, 120, 0.22)",
+      "rgba(44, 62, 120, 0.38)",
+      "rgba(44, 62, 80, 0.04)",
+      "rgba(44, 62, 80, 0.08)",
+      "rgba(44, 62, 80, 0.12)",
+      "rgba(45, 45, 45, 0.05)",
+      "rgba(45, 45, 45, 0.06)",
+      "rgba(45, 45, 45, 0.08)",
+      "rgba(45, 45, 45, 0.1)",
+      "rgba(45, 45, 45, 0.15)",
+      "rgba(45, 45, 45, 0.18)",
+      "rgba(45, 45, 45, 0.2)",
+      "rgba(45, 45, 45, 0.25)",
+      "rgba(45, 45, 45, 0.3)",
+      "rgba(45, 45, 45, 0.5)",
+      "rgba(46, 125, 50, 0.1)",
+      "rgba(48, 86, 211, 0.05)",
+      "rgba(48, 86, 211, 0.06)",
+      "rgba(48, 86, 211, 0.08)",
+      "rgba(48, 86, 211, 0.1)",
+      "rgba(48, 86, 211, 0.12)",
+      "rgba(48, 86, 211, 0.9)",
+      "rgba(5, 150, 105, 0.1)",
+      "rgba(5, 150, 105, 0.3)",
+      "rgba(59, 130, 246, 0.04)",
+      "rgba(59, 130, 246, 0.05)",
+      "rgba(59, 130, 246, 0.08)",
+      "rgba(59, 130, 246, 0.1)",
+      "rgba(59, 130, 246, 0.12)",
+      "rgba(59, 130, 246, 0.15)",
+      "rgba(59, 130, 246, 0.2)",
+      "rgba(59, 130, 246, 0.3)",
+      "rgba(59, 130, 246, 0.4)",
+      "rgba(59, 130, 246, 0.5)",
+      "rgba(59, 130, 246, 0.9)",
+      "rgba(59,130,246,0.45)",
+      "rgba(75, 140, 46, 0.04)",
+      "rgba(75, 140, 46, 0.05)",
+      "rgba(75, 140, 46, 0.06)",
+      "rgba(75, 140, 46, 0.08)",
+      "rgba(75, 140, 46, 0.1)",
+      "rgba(75, 140, 46, 0.25)",
+      "rgba(75, 140, 46, 0.3)",
+      "rgba(76, 175, 80, 0.08)",
+      "rgba(76, 175, 80, 0.1)",
+      "rgba(76, 175, 80, 0.2)",
+      "rgba(76, 175, 80, 0.25)",
+      "rgba(79, 172, 254, 0.1)",
+      "rgba(79, 172, 254, 0.2)",
+      "rgba(79, 172, 254, 0.26)",
+      "rgba(79, 172, 254, 0.3)",
+      "rgba(79, 172, 254, 0.4)",
+      "rgba(79, 172, 254, 0.5)",
+      "rgba(8, 7, 71, 0.9)",
+      "rgba(var(--color-primary-rgb)",
+      "rgba(var(--color-primary-rgb, 0, 0, 0)",
+      "var(--accent)",
+      "var(--app-background, #0b0b0b)",
+      "var(--background-color, #ffffff)",
+      "var(--color-accent)",
+      "var(--color-accent-primary, #ff4500)",
+      "var(--color-background)",
+      "var(--color-background-elevated)",
+      "var(--color-background-hover)",
+      "var(--color-background-primary)",
+      "var(--color-background-primary, #1a1a1a)",
+      "var(--color-background-secondary)",
+      "var(--color-background-secondary, #f5f5f5)",
+      "var(--color-background-secondary, rgba(255, 255, 255, 0.05)",
+      "var(--color-background-secondary, rgba(255, 255, 255, 0.1)",
+      "var(--color-background-tertiary)",
+      "var(--color-background-tertiary, rgba(255, 255, 255, 0.1)",
+      "var(--color-background-tertiary, rgba(255, 255, 255, 0.15)",
+      "var(--color-border)",
+      "var(--color-border-dark)",
+      "var(--color-border-hover)",
+      "var(--color-border-light)",
+      "var(--color-border-light, #e9ecef)",
+      "var(--color-border-secondary, rgba(255, 255, 255, 0.1)",
+      "var(--color-border-secondary, rgba(255, 255, 255, 0.2)",
+      "var(--color-border-subtle)",
+      "var(--color-danger)",
+      "var(--color-disabled)",
+      "var(--color-elevation-${color.replace(\"#\", \"\")",
+      "var(--color-elevation-black)",
+      "var(--color-elevation-burgundy)",
+      "var(--color-elevation-green)",
+      "var(--color-elevation-orange)",
+      "var(--color-elevation-red)",
+      "var(--color-elevation-yellow)",
+      "var(--color-error)",
+      "var(--color-error, #d32f2f)",
+      "var(--color-error-light)",
+      "var(--color-on-surface)",
+      "var(--color-on-surface-variant)",
+      "var(--color-outline-variant)",
+      "var(--color-primary)",
+      "var(--color-primary, #1976d2)",
+      "var(--color-primary-dark)",
+      "var(--color-primary-dark, #1565c0)",
+      "var(--color-primary-darker, #0d47a1)",
+      "var(--color-primary-light)",
+      "var(--color-primary-rgb)",
+      "var(--color-primary-rgb, 0, 0, 0)",
+      "var(--color-primary-transparent)",
+      "var(--color-secondary)",
+      "var(--color-success)",
+      "var(--color-success, #22C55E)",
+      "var(--color-success, #2e7d32)",
+      "var(--color-surface)",
+      "var(--color-surface, #ffffff)",
+      "var(--color-surface-alt, #f5f7fa)",
+      "var(--color-surface-container-high)",
+      "var(--color-surface-container-low)",
+      "var(--color-surface-hover)",
+      "var(--color-surface-secondary)",
+      "var(--color-surface-secondary, #f8f9fa)",
+      "var(--color-surface-tertiary)",
+      "var(--color-surface-tertiary, #f1f5f9)",
+      "var(--color-surface-variant)",
+      "var(--color-text-disabled)",
+      "var(--color-text-inverse)",
+      "var(--color-text-primary)",
+      "var(--color-text-primary, #0a2540)",
+      "var(--color-text-primary, #1e293b)",
+      "var(--color-text-primary, #1f2937)",
+      "var(--color-text-primary, #2c3e50)",
+      "var(--color-text-primary, #ffffff)",
+      "var(--color-text-secondary)",
+      "var(--color-text-secondary, #64748b)",
+      "var(--color-text-secondary, #666)",
+      "var(--color-text-secondary, #6c757d)",
+      "var(--color-text-secondary, rgba(255, 255, 255, 0.5)",
+      "var(--color-text-secondary, rgba(255, 255, 255, 0.6)",
+      "var(--color-text-secondary, rgba(255, 255, 255, 0.7)",
+      "var(--color-text-tertiary)",
+      "var(--color-text-tertiary, #6c757d)",
+      "var(--color-text-tertiary, #94a3b8)",
+      "var(--grayscale-surface--default, #e9ecef)",
+      "var(--peaks-count, 1)",
+      "var(--percent, 0)",
+      "var(--primary-border--dark, #3498db)",
+      "var(--primary-surface--subtle, #f8f9fa)",
+      "var(--sidebar-width, 280px)",
+      "var(--size)",
+      "var(--thickness)",
+      "var(--top-overlay-height, 200px)",
+      "var(--track)"
+    ]
+  },
+  "report": [
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ConfirmationModal\\desktop-ConfirmationModal.tsx",
+      "colors": [
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-CustomDropdown\\desktop-CustomDropdown.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(0, 0, 0, 0.9)",
+        "rgba(107, 114, 128, 0.05)",
+        "rgba(107, 114, 128, 0.08)",
+        "rgba(107, 114, 128, 0.1)",
+        "rgba(107, 114, 128, 0.15)",
+        "rgba(107, 114, 128, 0.2)",
+        "rgba(107, 114, 128, 0.3)",
+        "rgba(107, 114, 128, 0.4)",
+        "rgba(107, 114, 128, 0.5)",
+        "rgba(107, 114, 128, 0.6)",
+        "rgba(249, 250, 251, 0.8)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-EmailVerificationPopup\\desktop-EmailVerificationPopup.module.css",
+      "colors": [
+        "#1d4ed8",
+        "#2563eb",
+        "#3b82f6",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ExploreHeaderSearch\\desktop-ExploreHeaderSearch.module.css",
+      "colors": [
+        "#cfe1ff",
+        "#e3e8f0",
+        "#e6f0ff",
+        "#eef1f5",
+        "#f3f3f3",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(241, 245, 249, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 0.99)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.08)",
+        "var(--color-background-primary)",
+        "var(--color-background-secondary)",
+        "var(--color-border)",
+        "var(--color-border-subtle)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ExploreHeaderSearch\\desktop-ExploreHeaderSearch.tsx",
+      "colors": [
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ExploreSidebar\\desktop-ExploreSidebar.module.css",
+      "colors": [
+        "#1f2937",
+        "#6b7280",
+        "#9ca3af",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ExploreSidebar\\desktop-ExploreSidebar.tsx",
+      "colors": [
+        "#1e3a8a",
+        "#6b7280",
+        "#9ca3af",
+        "#ffffff",
+        "rgba(255,255,255,0.3)",
+        "rgba(30, 58, 138, 0.15)",
+        "rgba(30, 58, 138, 0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Footer\\desktop-Footer.module.css",
+      "colors": [
+        "#333333",
+        "#666666",
+        "#e6e6e6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LastUpdateModal\\desktop-LastUpdateModal.module.css",
+      "colors": [
+        "#000",
+        "#1a1a1a",
+        "#333",
+        "#555",
+        "#666",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoadingScreen\\desktop-LoadingScreen.module.css",
+      "colors": [
+        "#003d82",
+        "#333",
+        "#f3f3f3",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-GarminSignupForm.module.css",
+      "colors": [
+        "#005691",
+        "#006ba3",
+        "#007cc3",
+        "#7a5a00",
+        "#ccc",
+        "rgba(0, 124, 195, 0.08)",
+        "rgba(0, 124, 195, 0.1)",
+        "rgba(0, 124, 195, 0.25)",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-LoginForm.module.css",
+      "colors": [
+        "#0a2540",
+        "#0d3254",
+        "#e34402",
+        "#fc4c02",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(75, 140, 46, 0.08)",
+        "rgba(75, 140, 46, 0.1)",
+        "rgba(75, 140, 46, 0.25)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-danger)",
+        "var(--color-success)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-LoginLanding.tsx",
+      "colors": [
+        "#0072bc",
+        "#4CAF50",
+        "#eee",
+        "#fff",
+        "rgba(0,0,0,0.10)",
+        "var(--color-accent)",
+        "var(--color-background)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-LoginRegister.module.css",
+      "colors": [
+        "#0a2540",
+        "#0d3254",
+        "rgba(0, 0, 0, 0.1)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-RegisterFlow.module.css",
+      "colors": [
+        "#003962",
+        "#0061a3",
+        "#16b4ff",
+        "#234012",
+        "#397019",
+        "#71d54d",
+        "#a12400",
+        "#ff3100",
+        "#ff5400",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "var(--color-background)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-RegisterFlow.tsx",
+      "colors": [
+        "#007CC3",
+        "#4CAF50",
+        "#FC4C02"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-StravaSignupForm.module.css",
+      "colors": [
+        "#7a5a00",
+        "#cc3900",
+        "#ccc",
+        "#e64400",
+        "#fc4c02",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(252, 76, 2, 0.1)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRegister\\desktop-WikilocSignupForm.module.css",
+      "colors": [
+        "#2d5016",
+        "#45a049",
+        "#4caf50",
+        "#7a5a00",
+        "#ccc",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.1)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "rgba(76, 175, 80, 0.08)",
+        "rgba(76, 175, 80, 0.1)",
+        "rgba(76, 175, 80, 0.2)",
+        "rgba(76, 175, 80, 0.25)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-LoginRequiredPopup\\desktop-LoginRequiredPopup.module.css",
+      "colors": [
+        "#0a2540",
+        "#374151",
+        "#4b5563",
+        "#6b7280",
+        "#95b8ff",
+        "#9ca3af",
+        "#a8c8ff",
+        "#b8d4ff",
+        "#cfe1ff",
+        "#d1d5db",
+        "#f3f4f6",
+        "#f9fafb",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(10, 37, 64, 0.15)",
+        "rgba(10, 37, 64, 0.2)",
+        "rgba(10, 37, 64, 0.25)",
+        "rgba(10, 37, 64, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-EmptyState\\desktop-EmptyState.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-HighestPeaks\\desktop-UserHighestPeaks.module.css",
+      "colors": [
+        "#da9c00",
+        "#ffb945",
+        "#fff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.16)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.55)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(249, 168, 37, 0.2)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-secondary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-HighestPeaks\\desktop-UserHighestPeaks.tsx",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-HighestRoutes\\desktop-UserHighestRoutes.module.css",
+      "colors": [
+        "#da9c00",
+        "#fff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.16)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.55)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(249, 168, 37, 0.2)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-secondary)",
+        "var(--color-surface)",
+        "var(--color-text-inverse)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-HighestRoutes\\desktop-UserHighestRoutes.tsx",
+      "colors": [
+        "#ED254E",
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-HomeHeader\\desktop-HomeHeader.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.08)",
+        "var(--color-border)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-PeakList\\desktop-PeakItem.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-PeakList\\desktop-RouteChips.module.css",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-background)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-RecentPeaks\\desktop-RecentPeaks.module.css",
+      "colors": [
+        "#7d8592",
+        "#b0b4bb",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.14)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-RecentPeaks\\desktop-RecentPeaks.tsx",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-RecentRoutes\\desktop-RecentRoutes.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.14)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--peaks-count, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-RecentRoutes\\desktop-RecentRoutes.tsx",
+      "colors": [
+        "#ED254E",
+        "rgba(255,255,255,0.3)",
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Main\\desktop-SwiperHome\\desktop-SwiperHome.module.css",
+      "colors": [
+        "#fff",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(255, 255, 255, 0.15)",
+        "rgba(255, 255, 255, 0.25)",
+        "rgba(255, 255, 255, 0.35)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-text-inverse)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-MapChallengesModal.module.css",
+      "colors": [
+        "#111827",
+        "#1e3a8a",
+        "#374151",
+        "#3b82f6",
+        "#6b7280",
+        "#e5e7eb",
+        "#f3f3f3",
+        "#f3f4f6",
+        "#f9fafb",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0,0,0,0.2)",
+        "rgba(0,0,0,0.3)",
+        "rgba(0,0,0,0.7)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.4)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(30, 58, 138, 0.2)",
+        "rgba(59, 130, 246, 0.15)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-MapChallengesModal.tsx",
+      "colors": [
+        "#1e293b",
+        "rgba(255,255,255,0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-MapLayers.tsx",
+      "colors": [
+        "#000000",
+        "#222",
+        "#222222",
+        "#fff",
+        "#ffffff",
+        "rgb(11, 11, 25)",
+        "rgb(186, 210, 235)",
+        "rgb(36, 92, 223)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-MapUtils.tsx",
+      "colors": [
+        "#0E7AFE",
+        "#22223b",
+        "#6b7280"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-CommunityInfoMap\\desktop-CommunityInfoMap.module.css",
+      "colors": [
+        "#0056b3",
+        "#007bff",
+        "#1e293b",
+        "#2c3e50",
+        "#64748b",
+        "#6c757d",
+        "#cbd5e1",
+        "#dee2e6",
+        "#e1bee7",
+        "#e2e8f0",
+        "#e3f2fd",
+        "#e9ecef",
+        "#f1f1f1",
+        "#f1f5f9",
+        "#f3e5f5",
+        "#f8f9fa",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-DescriptionMap\\desktop-DescriptionMap.module.css",
+      "colors": [
+        "#2c3e50",
+        "#3d9de6",
+        "#4facfe",
+        "#5b6b7a",
+        "#e3e7ee",
+        "#e9ecef",
+        "#f0f4f8",
+        "#f3f3f3",
+        "#f6f8fa",
+        "#fff",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(44, 62, 80, 0.08)",
+        "rgba(44, 62, 80, 0.12)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-FloraFaunaMap\\desktop-FloraFaunaMap.module.css",
+      "colors": [
+        "#0056b3",
+        "#007bff",
+        "#2c3e50",
+        "#495057",
+        "#6c757d",
+        "#bbdefb",
+        "#dee2e6",
+        "#e0e0e0",
+        "#e1bee7",
+        "#e3f2fd",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f0f1f3",
+        "#f3e5f5",
+        "#f8f9fa",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-GalleryMap\\desktop-GalleryMap.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-on-surface)",
+        "var(--color-on-surface-variant)",
+        "var(--color-outline-variant)",
+        "var(--color-surface)",
+        "var(--color-surface-container-high)",
+        "var(--color-surface-container-low)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-GalleryMap\\desktop-GalleryMap.tsx",
+      "colors": [
+        "#fff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-InfrastructureMap\\desktop-InfrastructureMap.module.css",
+      "colors": [
+        "#000000",
+        "#004085",
+        "#0056b3",
+        "#007bff",
+        "#2c3e50",
+        "#495057",
+        "#4a5568",
+        "#4facfe",
+        "#6c757d",
+        "#e0e0e0",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f1f1f1",
+        "#f8f9fa",
+        "#fff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.9)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-InfrastructureMap\\desktop-InfrastructureMap.tsx",
+      "colors": [
+        "#007bff",
+        "rgba(0,0,0,0.5)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-NearbyPeaksMap\\desktop-NearbyPeaksMap.module.css",
+      "colors": [
+        "#2c3e50",
+        "#4a5568",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.35)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.75)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-NearbyPeaksMap\\desktop-NearbyPeaksMap.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-PeakDetailsMap.module.css",
+      "colors": [
+        "#6c757d",
+        "#f5f7fa",
+        "#f8f9fa",
+        "#ffffff",
+        "rgba(40, 76, 100, 0.09)",
+        "var(--color-surface, #ffffff)",
+        "var(--color-surface-alt, #f5f7fa)",
+        "var(--color-surface-secondary, #f8f9fa)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)",
+        "var(--color-text-tertiary, #6c757d)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-PeakHeaderMap\\desktop-PeakHeaderMap.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "var(--color-border-light)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-PeakHeaderMap\\desktop-PeakHeaderMap.tsx",
+      "colors": [
+        "#111",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-WeatherMap\\desktop-WeatherMap.module.css",
+      "colors": [
+        "#000000",
+        "#007bff",
+        "#00f2fe",
+        "#218838",
+        "#2c3e50",
+        "#495057",
+        "#4facfe",
+        "#6c757d",
+        "#6f42c1",
+        "#888",
+        "#8a99a8",
+        "#b0b0b0",
+        "#b3003c",
+        "#b8860b",
+        "#c0392b",
+        "#ccfff6",
+        "#d4f4dd",
+        "#d6ecff",
+        "#e0e0e0",
+        "#e3e7ee",
+        "#e67e22",
+        "#e9ecef",
+        "#eaf6ff",
+        "#f0f0f0",
+        "#f39c12",
+        "#f6f8fa",
+        "#f8f9fa",
+        "#ffd6d6",
+        "#ffe5d6",
+        "#fff",
+        "#fff7d6",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 123, 255, 0.1)",
+        "rgba(111, 66, 193, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)",
+        "rgba(44, 62, 120, 0.22)",
+        "rgba(44, 62, 120, 0.38)",
+        "rgba(44, 62, 80, 0.04)",
+        "rgba(44, 62, 80, 0.08)",
+        "rgba(44, 62, 80, 0.12)",
+        "rgba(79, 172, 254, 0.1)",
+        "rgba(79, 172, 254, 0.26)",
+        "rgba(79, 172, 254, 0.3)",
+        "rgba(79, 172, 254, 0.4)",
+        "rgba(79, 172, 254, 0.5)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-PeakDetailsMap\\desktop-WikilocRouteMap\\desktop-WikilocRouteMap.module.css",
+      "colors": [
+        "#2d5016",
+        "#4c8c2b",
+        "#5ba832",
+        "rgb(0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.15)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-RouteDetailsControls\\desktop-RouteDetailsControls.module.css",
+      "colors": [
+        "#1f2937",
+        "#6b7280",
+        "rgb(0, 0, 0)",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(255, 255, 255, 1)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)",
+        "var(--top-overlay-height, 200px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-RouteMapControls.module.css",
+      "colors": [
+        "#1f2937",
+        "#3b82f6",
+        "#6b7280",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(156, 163, 175, 0.3)",
+        "rgba(16, 185, 129, 0.03)",
+        "rgba(16, 185, 129, 0.06)",
+        "rgba(16, 185, 129, 0.08)",
+        "rgba(248, 250, 252, 0.95)",
+        "rgba(248, 250, 252, 0.96)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.04)",
+        "rgba(59, 130, 246, 0.08)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.12)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-SheetWithKeyboard\\desktop-SimpleSheet.module.css",
+      "colors": [
+        "#2c3e50",
+        "#6c757d",
+        "#e9ecef",
+        "#ffffff",
+        "rgb(0 0 0 / 0.1)",
+        "rgb(209, 213, 219)",
+        "rgba(0, 0, 0, 0.05)",
+        "var(--color-border-light, #e9ecef)",
+        "var(--color-surface, #ffffff)",
+        "var(--color-text-primary, #2c3e50)",
+        "var(--color-text-secondary, #6c757d)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Map\\desktop-SheetWithKeyboard\\desktop-SimpleSheet.tsx",
+      "colors": [
+        "#000000",
+        "#008000",
+        "#800020",
+        "#FF0000",
+        "#FF8C00",
+        "#FFD700"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-MapControls\\desktop-MapControls.module.css",
+      "colors": [
+        "#0f172a",
+        "#1e3a8a",
+        "#1f2937",
+        "#475569",
+        "#6b7280",
+        "#9ca3af",
+        "#ffffff",
+        "rgb(13, 66, 151)",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(148, 163, 184, 0.2)",
+        "rgba(15, 23, 42, 0.25)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(30, 58, 138, 0.1)",
+        "rgba(30, 58, 138, 0.15)",
+        "rgba(30, 58, 138, 0.2)",
+        "rgba(30, 58, 138, 0.3)",
+        "rgba(30, 58, 138, 0.4)",
+        "rgba(30, 58, 138, 0.5)",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-MapControls\\desktop-MapControls.tsx",
+      "colors": [
+        "#000000",
+        "#1e3a8a",
+        "#6b7280",
+        "#9ca3af",
+        "#ffffff",
+        "rgba(255,255,255,0.3)",
+        "rgba(255,255,255,0.5)",
+        "rgba(30, 58, 138, 0.15)",
+        "rgba(30, 58, 138, 0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-MapControls\\desktop-MapLayersDropdown.module.css",
+      "colors": [
+        "#1f2937",
+        "#3b82f6",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(156, 163, 175, 0.3)",
+        "rgba(16, 185, 129, 0.03)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(255, 255, 255, 1)",
+        "rgba(59, 130, 246, 0.04)",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.08)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-MapControls\\desktop-MapLayersDropdown.tsx",
+      "colors": [
+        "#3b82f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-DetailOverlay.module.css",
+      "colors": [
+        "#e2e8f0",
+        "#ffffff",
+        "rgba(19, 194, 150, 0.05)",
+        "rgba(19, 194, 150, 0.06)",
+        "rgba(19, 194, 150, 0.08)",
+        "rgba(48, 86, 211, 0.05)",
+        "rgba(48, 86, 211, 0.06)",
+        "rgba(48, 86, 211, 0.08)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.06)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-OverlayBreadcrumbs\\desktop-OverlayBreadcrumbs.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#94a3b8",
+        "var(--color-text-primary, #0a2540)",
+        "var(--color-text-secondary, #64748b)",
+        "var(--color-text-tertiary, #94a3b8)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-OverlayHeader\\desktop-OverlayHeader.module.css",
+      "colors": [
+        "#0a2540",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 1)",
+        "rgba(255, 255, 255, 0.8)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-OverlayInfoSection\\desktop-OverlayInfoSection.module.css",
+      "colors": [
+        "#1e3a8a",
+        "#22C55E",
+        "#64748b",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.2)",
+        "var(--color-border)",
+        "var(--color-success, #22C55E)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-OverlayManager.module.css",
+      "colors": [
+        "#0b0b0b",
+        "var(--app-background, #0b0b0b)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay\\desktop-OverlayStackManager.tsx",
+      "colors": [
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Overlay.tsx",
+      "colors": [
+        "rgba(0,0,0,0.5)",
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-RouteAssociation\\desktop-RouteAssociationModal.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.5)",
+        "var(--color-background)",
+        "var(--color-background-elevated)",
+        "var(--color-background-hover)",
+        "var(--color-border)",
+        "var(--color-disabled)",
+        "var(--color-error)",
+        "var(--color-error-light)",
+        "var(--color-primary)",
+        "var(--color-primary-light)",
+        "var(--color-text-disabled)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-ScrapingOverlayBar.module.css",
+      "colors": [
+        "#222",
+        "#4caf50",
+        "#ffb347",
+        "#fff",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(255, 255, 255, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Search\\desktop-Search.module.css",
+      "colors": [
+        "#e3e8f0",
+        "#eef1f5",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(241, 245, 249, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(255, 255, 255, 0.99)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.08)",
+        "rgba(8, 7, 71, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Search\\desktop-Search.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Shimmer\\desktop-PeakCardShimmer.module.css",
+      "colors": [
+        "#e2e8f0",
+        "#f1f5f9",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(255, 255, 255, 0)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Shimmer\\desktop-Shimmer.module.css",
+      "colors": [
+        "#e0e0e0",
+        "#f0f0f0"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-SimpleCalendar\\desktop-SimpleCalendar.module.css",
+      "colors": [
+        "#1e3a8a",
+        "#1f2937",
+        "#6b7280",
+        "#9ca3af",
+        "#cfe1ff",
+        "#e6f0ff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-SimpleCalendar\\desktop-SimpleCalendar.tsx",
+      "colors": [
+        "#1e3a8a",
+        "#6b7280"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedControls\\desktop-UnifiedControls.module.css",
+      "colors": [
+        "#1e3a8a",
+        "#6b7280",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedFilterSection\\desktop-UnifiedFilterSection.module.css",
+      "colors": [
+        "#1f2937",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedFilterSection\\desktop-UnifiedFilterSection.tsx",
+      "colors": [
+        "#0a2540",
+        "#a8c8ff",
+        "#cfe1ff",
+        "#e6f0ff",
+        "rgba(0, 0, 0, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedFiltersPopup\\desktop-UnifiedFiltersPopup.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#e2e8f0",
+        "#f8fafc",
+        "#fafbfc",
+        "rgba(0, 0, 0, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedFiltersTrigger\\desktop-UnifiedFiltersTrigger.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#e2e8f0",
+        "#ef4444",
+        "#f8fafc"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedOrderBy\\desktop-UnifiedOrderBy.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e3a8a",
+        "#475569",
+        "#64748b",
+        "#d0e0ff",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#f1f5f9",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-UnifiedFilters\\desktop-UnifiedSearchbar\\desktop-UnifiedSearchbar.module.css",
+      "colors": [
+        "#1f2937",
+        "#6b7280",
+        "#9ca3af",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Warning\\desktop-Warning.module.css",
+      "colors": [
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-components\\desktop-Warning\\desktop-Warning.tsx",
+      "colors": [
+        "#000000",
+        "#ffffff00"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-AddManualPeaksList.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(45, 45, 45, 0.08)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-AddManualPeaksMap.module.css",
+      "colors": [
+        "var(--color-background)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-AddManualPeaksMap.tsx",
+      "colors": [
+        "#222",
+        "#fff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-PeakFilters.module.css",
+      "colors": [
+        "rgba(45, 45, 45, 0.1)",
+        "var(--color-background)",
+        "var(--color-background-elevated)",
+        "var(--color-border)",
+        "var(--color-error)",
+        "var(--color-error-light)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-PeakFilters.tsx",
+      "colors": [
+        "#fff",
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-primary)",
+        "var(--color-text-disabled)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-RouteExistenceConfirmation.module.css",
+      "colors": [
+        "#b91c1c",
+        "#db2727",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.3)",
+        "var(--color-border)",
+        "var(--color-border-light)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\components\\desktop-RouteSelectionModal.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-border-light)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-AddManualPeaks\\desktop-AddManualPeaks.module.css",
+      "colors": [
+        "#333",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(239, 68, 68, 0.1)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-border-light)",
+        "var(--color-error)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-surface-tertiary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ChangePassword\\desktop-ChangePassword.module.css",
+      "colors": [
+        "#0a2540",
+        "#2e7d32",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(46, 125, 50, 0.1)",
+        "rgba(75, 140, 46, 0.1)",
+        "var(--color-background)",
+        "var(--color-background-primary)",
+        "var(--color-background-secondary)",
+        "var(--color-background-tertiary)",
+        "var(--color-border)",
+        "var(--color-border-hover)",
+        "var(--color-danger)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-success, #2e7d32)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-Contact\\desktop-Contact.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#3056d3",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f1f5f9",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(19, 194, 150, 0.08)",
+        "rgba(19, 194, 150, 0.1)",
+        "rgba(19, 194, 150, 0.12)",
+        "rgba(48, 86, 211, 0.05)",
+        "rgba(48, 86, 211, 0.08)",
+        "rgba(48, 86, 211, 0.1)",
+        "rgba(48, 86, 211, 0.12)",
+        "rgba(48, 86, 211, 0.9)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-CreateEditList\\desktop-CreateEditList.module.css",
+      "colors": [
+        "#000",
+        "#1e293b",
+        "#22c55e",
+        "#2d2d2d",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#ef4444",
+        "#f1f5f9",
+        "#f8fafc",
+        "#fcfcfc",
+        "#fee2e2",
+        "#fef2f2",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0,0,0,0.06)",
+        "rgba(0,0,0,0.1)",
+        "rgba(0,0,0,0.5)",
+        "rgba(45, 45, 45, 0.05)",
+        "rgba(45, 45, 45, 0.15)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-CreateEditList\\desktop-CreateEditList.tsx",
+      "colors": [
+        "#ef4444"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ExternalProfile\\desktop-ExternalProfile.module.css",
+      "colors": [
+        "#0b1220",
+        "#0d47a1",
+        "#0f172a",
+        "#1565c0",
+        "#1976d2",
+        "#1a1a1a",
+        "#1e293b",
+        "#2d2d2d",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(102, 102, 102, 0.05)",
+        "rgba(102, 102, 102, 0.06)",
+        "rgba(102, 102, 102, 0.08)",
+        "rgba(15, 23, 42, 0.02)",
+        "rgba(15, 23, 42, 0.04)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.4)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(226, 232, 240, 0.4)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(248, 250, 252, 1)",
+        "rgba(255, 255, 255, 0.05)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(45, 45, 45, 0.05)",
+        "rgba(45, 45, 45, 0.06)",
+        "rgba(45, 45, 45, 0.08)",
+        "rgba(45, 45, 45, 0.1)",
+        "rgba(45, 45, 45, 0.2)",
+        "rgba(45, 45, 45, 0.25)",
+        "rgba(45, 45, 45, 0.3)",
+        "rgba(45, 45, 45, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ExternalProfile\\desktop-ExternalProfile.tsx",
+      "colors": [
+        "#0f172a",
+        "#2d2d2d",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(45, 45, 45, 0.18)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-Help\\desktop-Help.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#2563eb",
+        "#3056d3",
+        "#3b82f6",
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#9ca3af",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(48, 86, 211, 0.9)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-LazyPeakCard\\desktop-LazyPeakCard.module.css",
+      "colors": [
+        "#22c55e",
+        "#3498db",
+        "#e0e0e0",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f3f3f3",
+        "#f5f5f5",
+        "#f8f9fa",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(34, 197, 94, 0.3)",
+        "var(--grayscale-surface--default, #e9ecef)",
+        "var(--primary-border--dark, #3498db)",
+        "var(--primary-surface--subtle, #f8f9fa)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-LazyPeakCard\\desktop-LazyPeakCard.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-ListDetailsGrid\\desktop-ListDetailsGrid.module.css",
+      "colors": [
+        "#0a2540",
+        "#0c4a6e",
+        "#0ea5e9",
+        "#1e293b",
+        "#22c55e",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e0f2fe",
+        "#e2e8f0",
+        "#f0f9ff",
+        "#f8fafc",
+        "#f97316",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(10, 37, 64, 0.1)",
+        "var(--background-color, #ffffff)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-PeakGrid\\desktop-PeakGrid.module.css",
+      "colors": [
+        "#0c4a6e",
+        "#0ea5e9",
+        "#22c55e",
+        "#3498db",
+        "#64748b",
+        "#cbd5e1",
+        "#e0e0e0",
+        "#e0f2fe",
+        "#e2e8f0",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f0f9ff",
+        "#f3f3f3",
+        "#f5f5f5",
+        "#f8f9fa",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(34, 197, 94, 0.3)",
+        "var(--grayscale-surface--default, #e9ecef)",
+        "var(--primary-border--dark, #3498db)",
+        "var(--primary-surface--subtle, #f8f9fa)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-PeakList\\desktop-PeakList.module.css",
+      "colors": [
+        "#0a2540",
+        "#22c55e",
+        "#475569",
+        "#64748b",
+        "#e2e8f0",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(0, 0, 0, 0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-PeakList\\desktop-PeakList.tsx",
+      "colors": [
+        "rgba(255,255,255,0.4)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-components\\desktop-SearchAndFilters\\desktop-SearchAndFilters.module.css",
+      "colors": [
+        "#0a2540",
+        "#0f3a5f",
+        "#1e293b",
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f1f5f9",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(10, 37, 64, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-ListDetails.module.css",
+      "colors": [
+        "#00ae21",
+        "#0a2540",
+        "#1a3a5a",
+        "#22c55e",
+        "#64748b",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f1f5f9",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(10, 37, 64, 0.05)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(10, 37, 64, 0.2)",
+        "rgba(10, 37, 64, 0.3)",
+        "rgba(226, 232, 240, 0.95)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(34, 197, 94, 0.3)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-ListDetails\\desktop-utils.ts",
+      "colors": [
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-CommunityInfo\\desktop-CommunityInfo.module.css",
+      "colors": [
+        "#0f172a",
+        "#cbd5e1",
+        "#e2e8f0",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.4)",
+        "rgba(15, 23, 42, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(19, 194, 150, 0.1)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(248, 250, 252, 1)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(79, 172, 254, 0.1)",
+        "rgba(79, 172, 254, 0.2)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-Description\\desktop-Description.module.css",
+      "colors": [
+        "#2c3e50",
+        "#4facfe",
+        "#5b6b7a",
+        "#e3e7ee",
+        "#f3f3f3",
+        "#f6f8fa",
+        "#fff",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(44, 62, 80, 0.08)",
+        "rgba(44, 62, 80, 0.12)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-FloraFauna\\desktop-FloraFauna.module.css",
+      "colors": [
+        "#2c3e50",
+        "#495057",
+        "#6c757d",
+        "#adb5bd",
+        "#bbdefb",
+        "#e3f2fd",
+        "#e9ecef",
+        "#f8f9fa",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-Gallery\\desktop-Gallery.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-on-surface)",
+        "var(--color-on-surface-variant)",
+        "var(--color-outline-variant)",
+        "var(--color-surface)",
+        "var(--color-surface-container-high)",
+        "var(--color-surface-container-low)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-Gallery\\desktop-Gallery.tsx",
+      "colors": [
+        "#fff",
+        "rgba(0,0,0,0.5)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-Infrastructure\\desktop-Infrastructure.module.css",
+      "colors": [
+        "#000000",
+        "#0056b3",
+        "#007bff",
+        "#0a2540",
+        "#2c3e50",
+        "#475569",
+        "#495057",
+        "#4a5568",
+        "#64748b",
+        "#6c757d",
+        "#cbd5e0",
+        "#e0e0e0",
+        "#e2e8f0",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f8f9fa",
+        "#fff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.9)",
+        "rgba(10, 37, 64, 0.08)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-NearbyPeaks\\desktop-NearbyPeaks.module.css",
+      "colors": [
+        "#64748b",
+        "#cbd5e0",
+        "#e2e8f0",
+        "#e9ecef",
+        "#f8f9fa",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.9)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-NearbyPeaks\\desktop-NearbyPeaks.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-PeakDetails.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-border-light)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-PeakHeader\\desktop-PeakHeader.module.css",
+      "colors": [
+        "#0f172a",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(248, 250, 252, 1)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-PeakHeader\\desktop-PeakHeader.tsx",
+      "colors": [
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-Weather\\desktop-Weather.module.css",
+      "colors": [
+        "#000000",
+        "#007bff",
+        "#1a2632",
+        "#218838",
+        "#2c3e50",
+        "#495057",
+        "#4facfe",
+        "#6c757d",
+        "#6f42c1",
+        "#888",
+        "#8a99a8",
+        "#b0b0b0",
+        "#b3003c",
+        "#b8860b",
+        "#c0392b",
+        "#d4f4dd",
+        "#e0e0e0",
+        "#e3e7ee",
+        "#e67e22",
+        "#e9ecef",
+        "#eaf6ff",
+        "#f0f0f0",
+        "#f39c12",
+        "#f6f8fa",
+        "#f8f9fa",
+        "#ffd6d6",
+        "#ffe5d6",
+        "#fff",
+        "#fff7d6",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 123, 255, 0.1)",
+        "rgba(111, 66, 193, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.85)",
+        "rgba(44, 62, 120, 0.22)",
+        "rgba(44, 62, 120, 0.38)",
+        "rgba(44, 62, 80, 0.04)",
+        "rgba(79, 172, 254, 0.1)",
+        "rgba(79, 172, 254, 0.26)",
+        "rgba(79, 172, 254, 0.5)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)",
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PeakDetails\\desktop-WikilocRoute\\desktop-WikilocRoute.module.css",
+      "colors": [
+        "#2d5016",
+        "#3d6b23",
+        "#4a7d2a",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-PrivacyPolicy\\desktop-PrivacyPolicy.module.css",
+      "colors": [
+        "#111827",
+        "#1f2937",
+        "#374151",
+        "#6b7280",
+        "#e5e7eb",
+        "#f3f4f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-TermsOfService\\desktop-TermsOfService.module.css",
+      "colors": [
+        "#111827",
+        "#1f2937",
+        "#374151",
+        "#6b7280",
+        "#e5e7eb",
+        "#f3f4f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserPeaks\\desktop-ModalPicker.css",
+      "colors": [
+        "#000000",
+        "#0a2540",
+        "#1d4ed8",
+        "#64748b",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#f8fafc",
+        "rgb(0, 0, 0)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(255, 255, 255, 0.8)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserPeaks\\desktop-UserPeaks.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e293b",
+        "#22c55e",
+        "#3498db",
+        "#374151",
+        "#3b82f6",
+        "#475569",
+        "#4facfe",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#d1d5db",
+        "#e0e0e0",
+        "#e2e8f0",
+        "#ef4444",
+        "#eff6ff",
+        "#f0f0f0",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f5f5f5",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.75)",
+        "rgba(10, 37, 64, 0.08)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(185, 28, 28, 0.95)",
+        "rgba(220, 38, 38, 0.85)",
+        "rgba(220, 38, 38, 1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(45, 45, 45, 0.1)",
+        "rgba(45, 45, 45, 0.15)",
+        "rgba(59, 130, 246, 0.1)",
+        "var(--background-color, #ffffff)",
+        "var(--color-border-light)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--primary-border--dark, #3498db)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserPeaks\\desktop-UserPeaks.tsx",
+      "colors": [
+        "rgba(255,255,255,0.4)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRouteDetails\\desktop-RouteMap.module.css",
+      "colors": [
+        "#000",
+        "#2c3e50",
+        "#6c757d",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRouteDetails\\desktop-RouteMap.tsx",
+      "colors": [
+        "#000000",
+        "#222",
+        "#222222",
+        "#ED254E",
+        "#fff",
+        "#ffffff",
+        "rgb(11, 11, 25)",
+        "rgb(186, 210, 235)",
+        "rgb(36, 92, 223)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRouteDetails\\desktop-UserRouteDetails.module.css",
+      "colors": [
+        "#000",
+        "#0056b3",
+        "#007bff",
+        "#6c757d",
+        "#ff6b6b",
+        "#fff",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 107, 107, 0.1)",
+        "rgba(255, 107, 107, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRoutes\\desktop-components\\desktop-PeakCard.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRoutes\\desktop-UserRoutes.module.css",
+      "colors": [
+        "#000000",
+        "#0a2540",
+        "#111827",
+        "#15803d",
+        "#1d4ed8",
+        "#374151",
+        "#3b82f6",
+        "#64748b",
+        "#6b7280",
+        "#9ca3af",
+        "#bbf7d0",
+        "#cbd5e1",
+        "#dc2626",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f0fdf4",
+        "#f1f5f9",
+        "#f3f4f6",
+        "#f8fafc",
+        "#f9fafb",
+        "#fecaca",
+        "#fef2f2",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(59, 130, 246, 0.2)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-primary-transparent)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserRoutes\\desktop-utils.ts",
+      "colors": [
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserSavedPeaks\\desktop-UserSavedPeaks.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e293b",
+        "#374151",
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#ef4444",
+        "#f1f5f9",
+        "#f8fafc",
+        "#fafbfc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(15, 23, 42, 0.05)",
+        "var(--background-color, #ffffff)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-UserSavedPeaks\\desktop-UserSavedPeaks.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-NonPersistentPages\\desktop-VerifyEmail\\desktop-VerifyEmail.module.css",
+      "colors": [
+        "#2e7d32",
+        "#d32f2f",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(211, 47, 47, 0.1)",
+        "rgba(46, 125, 50, 0.1)",
+        "rgba(var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-background-primary)",
+        "var(--color-background-secondary)",
+        "var(--color-background-tertiary)",
+        "var(--color-border)",
+        "var(--color-border-hover)",
+        "var(--color-error, #d32f2f)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-success, #2e7d32)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Explore.module.css",
+      "colors": [
+        "#1f2937",
+        "#64748b",
+        "#6b7280",
+        "#9ca3af",
+        "#e5e7eb",
+        "#e8e8e8",
+        "#f0f0f0",
+        "#f3f3f3",
+        "#f3f4f6",
+        "#f8fafc",
+        "#f9fafb",
+        "#fff",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.95)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Home.module.css",
+      "colors": [
+        "#f3f3f3",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(19, 194, 150, 0.05)",
+        "rgba(19, 194, 150, 0.06)",
+        "rgba(19, 194, 150, 0.08)",
+        "rgba(48, 86, 211, 0.05)",
+        "rgba(48, 86, 211, 0.06)",
+        "rgba(48, 86, 211, 0.08)",
+        "rgba(75, 140, 46, 0.04)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.06)",
+        "var(--color-border)",
+        "var(--color-error)",
+        "var(--color-primary)",
+        "var(--color-primary-light)",
+        "var(--color-secondary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-LeaderBoard.module.css",
+      "colors": [
+        "#0f172a",
+        "#2563eb",
+        "#3b82f6",
+        "#64748b",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(255, 255, 255, 0.95)",
+        "var(--color-surface-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-ListsLeaderboard.module.css",
+      "colors": [
+        "#e2e8f0",
+        "#f8fafc",
+        "#fff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(var(--color-primary-rgb)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-primary-rgb)",
+        "var(--color-surface)",
+        "var(--color-surface-variant)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-ListsLeaderboard.tsx",
+      "colors": [
+        "#C0C0C0",
+        "#CD7F32",
+        "#FFD700"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-PeaksLeaderboard.module.css",
+      "colors": [
+        "#1a1a1a",
+        "#1e293b",
+        "#222",
+        "#2563eb",
+        "#2c3e50",
+        "#2d2d2d",
+        "#3a3a3a",
+        "#3b82f6",
+        "#475569",
+        "#64748b",
+        "#6c757d",
+        "#94a3b8",
+        "#c0c0c0",
+        "#cd7f32",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f8f9fa",
+        "#f8fafc",
+        "#ffd700",
+        "#fff",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.45)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(59, 130, 246, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-UsersLeaderboard.module.css",
+      "colors": [
+        "#1e293b",
+        "#1e40af",
+        "#3b82f6",
+        "#475569",
+        "#64748b",
+        "#6b7280",
+        "#94a3b8",
+        "#9ca3af",
+        "#c0c0c0",
+        "#cbd5e1",
+        "#cd7f32",
+        "#dbeafe",
+        "#dc2626",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f8fafc",
+        "#fca5a5",
+        "#fef2f2",
+        "#ffd700",
+        "#fff",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(59, 130, 246, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-WorldChallenge.module.css",
+      "colors": [
+        "#c0c0c0",
+        "#cd7f32",
+        "#ffd700",
+        "#fff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.85)",
+        "rgba(59, 130, 246, 0.05)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-variant)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-LeaderBoardScreen\\desktop-WorldChallenge.tsx",
+      "colors": [
+        "#22C55E",
+        "#3B82F6",
+        "#7D8A5B",
+        "#B5A48B",
+        "#C0C0C0",
+        "#CD7F32",
+        "#FFD700",
+        "#FFFFFF",
+        "#ffffff",
+        "rgba(0,0,0,0.8)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Map.module.css",
+      "colors": [
+        "#0a2540",
+        "#0d47a1",
+        "#1565c0",
+        "#1976d2",
+        "#666",
+        "#f5f5f5",
+        "var(--color-background)",
+        "var(--color-background-secondary, #f5f5f5)",
+        "var(--color-primary, #1976d2)",
+        "var(--color-primary-dark, #1565c0)",
+        "var(--color-primary-darker, #0d47a1)",
+        "var(--color-text-primary, #0a2540)",
+        "var(--color-text-secondary, #666)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Navbar.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.05)",
+        "var(--color-border)",
+        "var(--color-border-dark)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-surface-tertiary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ActionButtons.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#dc2626",
+        "#e2e8f0",
+        "#fecaca",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.04)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ChallengesModal.module.css",
+      "colors": [
+        "#0f172a",
+        "#1e293b",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-PrivacyToggle.module.css",
+      "colors": [
+        "#0f172a",
+        "#10b981",
+        "#ef4444",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(248, 250, 252, 0.5)",
+        "rgba(248, 250, 252, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfileCard.module.css",
+      "colors": [
+        "#0f172a",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.55)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfileCard.tsx",
+      "colors": [
+        "#0f172a"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfileMenu.module.css",
+      "colors": [
+        "#0f172a",
+        "#ef4444",
+        "#fbbf24",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(248, 250, 252, 0.5)",
+        "rgba(248, 250, 252, 1)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-ContactDeveloperPopup\\desktop-ContactDeveloperPopup.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#3d4eeb",
+        "#64748b",
+        "#667eea",
+        "#94a3b8",
+        "#cbd5e1",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(5, 150, 105, 0.1)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-ContactDeveloperPopup\\desktop-ContactDeveloperPopup.tsx",
+      "colors": [
+        "#000",
+        "#64748b"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-DeleteAccountPopup\\desktop-DeleteAccountPopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#64748b",
+        "#94a3b8",
+        "#b91c1c",
+        "#cbd5e1",
+        "#dc2626",
+        "#ef4444",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.15)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.9)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-DeleteAccountPopup\\desktop-DeleteAccountPopup.tsx",
+      "colors": [
+        "#ef4444"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-LanguageChangePopup\\desktop-LanguageChangePopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#2d3fd9",
+        "#3d4eeb",
+        "#5568d3",
+        "#64748b",
+        "#667eea",
+        "#94a3b8",
+        "#cbd5e1",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(102, 126, 234, 0.1)",
+        "rgba(102, 126, 234, 0.15)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.15)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.9)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-LanguageChangePopup\\desktop-LanguageChangePopup.tsx",
+      "colors": [
+        "#000"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-LogoutPopup\\desktop-LogoutPopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#64748b",
+        "#f59e0b",
+        "#fbbf24",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.15)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-LogoutPopup\\desktop-LogoutPopup.tsx",
+      "colors": [
+        "#fbbf24"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-SuggestionsPopup\\desktop-SuggestionsPopup.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#d97706",
+        "#f59e0b",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(245, 158, 11, 0.1)",
+        "rgba(245, 158, 11, 0.3)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(5, 150, 105, 0.1)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-ProfilePopups\\desktop-SuggestionsPopup\\desktop-SuggestionsPopup.tsx",
+      "colors": [
+        "#e2e8f0",
+        "#f59e0b",
+        "#f8fafc"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-StatsChart.tsx",
+      "colors": [
+        "#06b6d4",
+        "#0f172a",
+        "#10b981",
+        "#3b82f6",
+        "#8b5cf6",
+        "#ef4444",
+        "#f59e0b",
+        "#fff",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.15)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.8)",
+        "rgba(255, 255, 255, 0.98)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-StatsScroller.module.css",
+      "colors": [
+        "#0f172a",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.85)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile\\desktop-components\\desktop-StatsScroller.tsx",
+      "colors": [
+        "#059669",
+        "#0891b2",
+        "#0a2540",
+        "#7c3aed",
+        "#ff0000",
+        "#ff7300"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#3b82f6",
+        "#4b5563",
+        "#64748b",
+        "#6b7280",
+        "#94a3b8",
+        "#cbd5e1",
+        "#dc2626",
+        "#e2e8f0",
+        "#ef4444",
+        "#f1f5f9",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(107, 114, 128, 0.4)",
+        "rgba(107, 114, 128, 0.5)",
+        "rgba(15, 23, 42, 0.02)",
+        "rgba(15, 23, 42, 0.04)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.4)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.9)",
+        "rgba(19, 194, 150, 0.05)",
+        "rgba(19, 194, 150, 0.06)",
+        "rgba(19, 194, 150, 0.08)",
+        "rgba(220, 38, 38, 1)",
+        "rgba(226, 232, 240, 0.4)",
+        "rgba(239, 68, 68, 0.9)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(248, 250, 252, 1)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(48, 86, 211, 0.05)",
+        "rgba(48, 86, 211, 0.06)",
+        "rgba(48, 86, 211, 0.08)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.06)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\desktop-PersistentPages\\desktop-Profile.tsx",
+      "colors": [
+        "#0f172a",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15,23,42,0.18)"
+      ]
+    },
+    {
+      "file": "src\\desktop\\DesktopApp.tsx",
+      "colors": [
+        "var(--sidebar-width, 280px)"
+      ]
+    },
+    {
+      "file": "src\\index.css",
+      "colors": [
+        "#000000"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\EmailVerificationPopup\\EmailVerificationPopup.module.css",
+      "colors": [
+        "#1d4ed8",
+        "#2563eb",
+        "#3b82f6",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ExploreHeaderSearch\\ExploreHeaderSearch.module.css",
+      "colors": [
+        "#cfe1ff",
+        "#e3e8f0",
+        "#e6f0ff",
+        "#eef1f5",
+        "#f3f3f3",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(241, 245, 249, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 0.99)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.08)",
+        "var(--color-background-secondary)",
+        "var(--color-border)",
+        "var(--color-border-subtle)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ExploreHeaderSearch\\ExploreHeaderSearch.tsx",
+      "colors": [
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Footer\\Footer.module.css",
+      "colors": [
+        "#333333",
+        "#666666",
+        "#e6e6e6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ForceUpdateOverlay\\ForceUpdateOverlay.module.css",
+      "colors": [
+        "#000",
+        "#1a1a1a",
+        "#666",
+        "#999",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ForceUpdateOverlay\\ForceUpdateOverlay.tsx",
+      "colors": [
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LandingPageOverlay\\LandingPageOverlay.module.css",
+      "colors": [
+        "#000000",
+        "#e7e7e7",
+        "#ffffff",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LastUpdateModal\\LastUpdateModal.module.css",
+      "colors": [
+        "#000",
+        "#1a1a1a",
+        "#555",
+        "#666",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(255, 255, 255, 0.4)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoadingScreen\\LoadingScreen.module.css",
+      "colors": [
+        "#003d82",
+        "#333",
+        "#f3f3f3",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\GarminSignupForm.module.css",
+      "colors": [
+        "#005691",
+        "#007cc3",
+        "#7a5a00",
+        "#ccc",
+        "rgba(0, 124, 195, 0.08)",
+        "rgba(0, 124, 195, 0.1)",
+        "rgba(0, 124, 195, 0.25)",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\LoginForm.module.css",
+      "colors": [
+        "#0a2540",
+        "#fc4c02",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(75, 140, 46, 0.08)",
+        "rgba(75, 140, 46, 0.1)",
+        "rgba(75, 140, 46, 0.25)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-danger)",
+        "var(--color-success)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\LoginLanding.tsx",
+      "colors": [
+        "#0072bc",
+        "#4CAF50",
+        "#eee",
+        "#fff",
+        "rgba(0,0,0,0.10)",
+        "var(--color-accent)",
+        "var(--color-background)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\LoginRegister.module.css",
+      "colors": [
+        "#0a2540",
+        "rgba(0, 0, 0, 0.1)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\RegisterFlow.module.css",
+      "colors": [
+        "#003962",
+        "#0061a3",
+        "#16b4ff",
+        "#234012",
+        "#397019",
+        "#71d54d",
+        "#a12400",
+        "#ff3100",
+        "#ff5400",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\RegisterFlow.tsx",
+      "colors": [
+        "#007CC3",
+        "#4CAF50",
+        "#FC4C02"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\StravaSignupForm.module.css",
+      "colors": [
+        "#7a5a00",
+        "#cc3900",
+        "#ccc",
+        "#fc4c02",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(252, 76, 2, 0.1)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRegister\\WikilocSignupForm.module.css",
+      "colors": [
+        "#2d5016",
+        "#4caf50",
+        "#7a5a00",
+        "#ccc",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(255, 193, 7, 0.1)",
+        "rgba(255, 193, 7, 0.4)",
+        "rgba(76, 175, 80, 0.08)",
+        "rgba(76, 175, 80, 0.1)",
+        "rgba(76, 175, 80, 0.2)",
+        "rgba(76, 175, 80, 0.25)",
+        "var(--color-danger)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\LoginRequiredPopup\\LoginRequiredPopup.module.css",
+      "colors": [
+        "#0a2540",
+        "#6b7280",
+        "#a8c8ff",
+        "#cfe1ff",
+        "#d1d5db",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(10, 37, 64, 0.15)",
+        "rgba(10, 37, 64, 0.2)",
+        "rgba(10, 37, 64, 0.25)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\EmptyState\\EmptyState.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\HighestPeaks\\UserHighestPeaks.module.css",
+      "colors": [
+        "#da9c00",
+        "#fabd23",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.16)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(249, 168, 37, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-secondary)",
+        "var(--color-surface)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\HighestPeaks\\UserHighestPeaks.tsx",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\HighestRoutes\\UserHighestRoutes.module.css",
+      "colors": [
+        "#da9c00",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(249, 168, 37, 0.2)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\HighestRoutes\\UserHighestRoutes.tsx",
+      "colors": [
+        "#ED254E",
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\HomeHeader\\HomeHeader.module.css",
+      "colors": [
+        "#050505",
+        "rgba(0, 0, 0, 0.12)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-hover)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\PeakList\\PeakItem.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\PeakList\\RouteChips.module.css",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-background)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\RecentPeaks\\RecentPeaks.module.css",
+      "colors": [
+        "#7d8592",
+        "#b0b4bb",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(0, 0, 0, 1)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\RecentPeaks\\RecentPeaks.tsx",
+      "colors": [
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\RecentRoutes\\RecentRoutes.module.css",
+      "colors": [
+        "rgb(0, 0, 0)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\RecentRoutes\\RecentRoutes.tsx",
+      "colors": [
+        "#ED254E",
+        "var(--color-accent)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\SwiperHome\\SwiperHome.module.css",
+      "colors": [
+        "#fff",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(255, 255, 255, 0.15)",
+        "rgba(255, 255, 255, 0.25)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 1)",
+        "var(--color-border)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Main\\SwiperHome\\SwiperHome.tsx",
+      "colors": [
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\LayerControl.module.css",
+      "colors": [
+        "#1f2937",
+        "#3b82f6",
+        "#6b7280",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(156, 163, 175, 0.3)",
+        "rgba(16, 185, 129, 0.03)",
+        "rgba(16, 185, 129, 0.06)",
+        "rgba(16, 185, 129, 0.08)",
+        "rgba(248, 250, 252, 0.95)",
+        "rgba(248, 250, 252, 0.96)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.04)",
+        "rgba(59, 130, 246, 0.08)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.12)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\LayerControl.tsx",
+      "colors": [
+        "#3b82f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\MapChallengesModal.module.css",
+      "colors": [
+        "#007aff",
+        "#111827",
+        "#1a1a1a",
+        "#3b82f6",
+        "#666",
+        "#f0f0f0",
+        "#f3f3f3",
+        "#f3f4f6",
+        "#f5f5f7",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0,0,0,0.2)",
+        "rgba(0,0,0,0.3)",
+        "rgba(0,0,0,0.7)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.4)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(59, 130, 246, 0.15)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\MapChallengesModal.tsx",
+      "colors": [
+        "#1e293b",
+        "rgba(255,255,255,0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\MapLayers.tsx",
+      "colors": [
+        "#000000",
+        "#222",
+        "#222222",
+        "#fff",
+        "#ffffff",
+        "rgb(11, 11, 25)",
+        "rgb(186, 210, 235)",
+        "rgb(36, 92, 223)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\MapUtils.tsx",
+      "colors": [
+        "#0E7AFE",
+        "#22223b",
+        "#6b7280"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\PeakDetailsMap\\PeakDetailsMap.module.css",
+      "colors": [
+        "#6c757d",
+        "#f8f9fa",
+        "#ffffff",
+        "var(--color-surface, #ffffff)",
+        "var(--color-surface-secondary, #f8f9fa)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)",
+        "var(--color-text-tertiary, #6c757d)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\RouteMapControls.module.css",
+      "colors": [
+        "#1f2937",
+        "#3b82f6",
+        "#6b7280",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(156, 163, 175, 0.3)",
+        "rgba(16, 185, 129, 0.03)",
+        "rgba(16, 185, 129, 0.06)",
+        "rgba(16, 185, 129, 0.08)",
+        "rgba(248, 250, 252, 0.95)",
+        "rgba(248, 250, 252, 0.96)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(59, 130, 246, 0.04)",
+        "rgba(59, 130, 246, 0.08)",
+        "rgba(59, 130, 246, 0.1)",
+        "rgba(59, 130, 246, 0.12)",
+        "rgba(59, 130, 246, 0.15)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\SheetWithKeyboard\\SimpleSheet.module.css",
+      "colors": [
+        "#2c3e50",
+        "#6c757d",
+        "#e9ecef",
+        "#ffffff",
+        "rgb(0 0 0 / 0.1)",
+        "rgb(209, 213, 219)",
+        "rgba(0, 0, 0, 0.05)",
+        "var(--color-border-light, #e9ecef)",
+        "var(--color-surface, #ffffff)",
+        "var(--color-text-primary, #2c3e50)",
+        "var(--color-text-secondary, #6c757d)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Map\\SheetWithKeyboard\\SimpleSheet.tsx",
+      "colors": [
+        "#000000",
+        "#008000",
+        "#800020",
+        "#FF0000",
+        "#FF8C00",
+        "#FFD700"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\MapHeader\\MapHeader.module.css",
+      "colors": [
+        "#1e3a8a",
+        "#ffffff",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(30, 58, 138, 0.25)",
+        "var(--color-background-primary)",
+        "var(--color-border-subtle)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\MapHeader\\MapHeader.tsx",
+      "colors": [
+        "#000000",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Overlay\\OverlayHeader\\OverlayHeader.module.css",
+      "colors": [
+        "#000000",
+        "#0a2540",
+        "#e2e8f0",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.8)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Overlay\\OverlayInfoSection\\OverlayInfoSection.module.css",
+      "colors": [
+        "#22C55E",
+        "#64748b",
+        "#e2e8f0",
+        "#ffffff",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-success, #22C55E)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Overlay\\OverlayManager.module.css",
+      "colors": [
+        "#0b0b0b",
+        "var(--app-background, #0b0b0b)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Overlay.tsx",
+      "colors": [
+        "rgba(0,0,0,0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\PeakListItem\\PeakListItem.module.css",
+      "colors": [
+        "#0a2540",
+        "#475569",
+        "#4facfe",
+        "#64748b",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.75)",
+        "rgba(220, 38, 38, 0.85)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\PeakListItem\\PeakListItem.tsx",
+      "colors": [
+        "rgba(255,255,255,0.4)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\PWAInstallToast\\PWAInstallToast.module.css",
+      "colors": [
+        "#3b82f6",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ReportBlockPopup\\ReportBlockPopup.module.css",
+      "colors": [
+        "#065f46",
+        "#0a2540",
+        "#10b981",
+        "#374151",
+        "#6b7280",
+        "#92400e",
+        "#991b1b",
+        "#a7f3d0",
+        "#a8c8ff",
+        "#cfe1ff",
+        "#d1fae5",
+        "#ef4444",
+        "#f3f4f6",
+        "#f59e0b",
+        "#fde68a",
+        "#fecaca",
+        "#fee2e2",
+        "#fef3c7",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(10, 37, 64, 0.15)",
+        "rgba(16, 185, 129, 0.25)",
+        "rgba(239, 68, 68, 0.25)",
+        "rgba(245, 158, 11, 0.25)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\RouteAssociation\\RouteAssociationBottomSheet.module.css",
+      "colors": [
+        "var(--color-background)",
+        "var(--color-background-elevated)",
+        "var(--color-background-hover)",
+        "var(--color-border)",
+        "var(--color-disabled)",
+        "var(--color-error)",
+        "var(--color-error-light)",
+        "var(--color-primary)",
+        "var(--color-primary-light)",
+        "var(--color-text-disabled)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\ScrapingOverlayBar.module.css",
+      "colors": [
+        "#222",
+        "#4caf50",
+        "#ffb347",
+        "#fff",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(255, 255, 255, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Search\\Search.module.css",
+      "colors": [
+        "#e3e8f0",
+        "#eef1f5",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(241, 245, 249, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(255, 255, 255, 0.99)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.08)",
+        "rgba(8, 7, 71, 0.9)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Search\\Search.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\SearchMap\\SearchMap.module.css",
+      "colors": [
+        "#e3e8f0",
+        "#eef1f5",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(241, 245, 249, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.99)",
+        "rgba(75, 140, 46, 0.05)",
+        "rgba(75, 140, 46, 0.08)",
+        "var(--color-background-secondary)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\SearchMap\\SearchMap.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-${color.replace(\"#\", \"\")"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Shimmer\\PeakCardShimmer.module.css",
+      "colors": [
+        "#e2e8f0",
+        "#f1f5f9",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(255, 255, 255, 0)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\Shimmer\\Shimmer.module.css",
+      "colors": [
+        "#e0e0e0",
+        "#f0f0f0"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedFilterSection\\UnifiedFilterSection.module.css",
+      "colors": [
+        "#0a2540",
+        "#d9e1ec",
+        "#f8fbff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedFilterSection\\UnifiedFilterSection.tsx",
+      "colors": [
+        "#0a2540",
+        "#a8c8ff",
+        "#cfe1ff",
+        "#e6f0ff",
+        "rgba(0, 0, 0, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedFiltersPopup\\UnifiedFiltersPopup.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#e2e8f0",
+        "#f8fafc",
+        "#fafbfc",
+        "rgba(0, 0, 0, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedFiltersTrigger\\UnifiedFiltersTrigger.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#e2e8f0",
+        "#ef4444",
+        "#f8fafc"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedOrderBy\\UnifiedOrderBy.module.css",
+      "colors": [
+        "#0a2540",
+        "#475569",
+        "#64748b",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#f1f5f9",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.12)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\components\\UnifiedFilters\\UnifiedSearchbar\\UnifiedSearchbar.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e293b",
+        "#64748b",
+        "#e2e8f0",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(10, 37, 64, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\AddManualPeaks.module.css",
+      "colors": [
+        "#fff",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(239, 68, 68, 0.1)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-error)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-surface-tertiary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\AddManualPeaksList.module.css",
+      "colors": [
+        "#e5e5e5",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\AddManualPeaksList.tsx",
+      "colors": [
+        "rgba(255,255,255,0.4)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\AddManualPeaksMap.module.css",
+      "colors": [
+        "var(--color-background)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\AddManualPeaksMap.tsx",
+      "colors": [
+        "#333",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\PeakFilters.module.css",
+      "colors": [
+        "var(--color-background)",
+        "var(--color-background-elevated)",
+        "var(--color-background-hover)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-primary-transparent)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\PeakFilters.tsx",
+      "colors": [
+        "#fff",
+        "rgba(0, 0, 0, 0.04)",
+        "var(--color-primary)",
+        "var(--color-text-disabled)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\RouteExistenceConfirmation.module.css",
+      "colors": [
+        "#db2727",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\AddManualPeaks\\components\\RouteSelectionModal.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.4)",
+        "var(--color-background)",
+        "var(--color-border-light)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ChangePassword\\ChangePassword.module.css",
+      "colors": [
+        "#0a2540",
+        "#2e7d32",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(226, 98, 95, 0.08)",
+        "rgba(226, 98, 95, 0.25)",
+        "rgba(46, 125, 50, 0.1)",
+        "rgba(75, 140, 46, 0.1)",
+        "var(--color-background)",
+        "var(--color-background-primary)",
+        "var(--color-background-secondary)",
+        "var(--color-background-tertiary)",
+        "var(--color-border)",
+        "var(--color-danger)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-success, #2e7d32)",
+        "var(--color-surface)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\CreateEditList\\CreateEditList.module.css",
+      "colors": [
+        "#1e293b",
+        "#22c55e",
+        "#2d2d2d",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#ef4444",
+        "#f1f5f9",
+        "#f8fafc",
+        "#fcfcfc",
+        "#fecaca",
+        "#fee2e2",
+        "#fef2f2",
+        "rgba(0, 0, 0, 0.03)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(45, 45, 45, 0.05)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\CreateEditList\\CreateEditList.tsx",
+      "colors": [
+        "#ef4444"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ExternalProfile\\ExternalProfile.module.css",
+      "colors": [
+        "#000000",
+        "#003366",
+        "#0b1220",
+        "#1e293b",
+        "#1f2937",
+        "#3b82f6",
+        "#667eea",
+        "#6b7280",
+        "#764ba2",
+        "#9ca3af",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#f3f4f6",
+        "#f9fafb",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(102, 126, 234, 0.25)",
+        "rgba(255, 255, 255, 0.05)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(59, 130, 246, 0.2)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ExternalProfile\\ExternalProfile.tsx",
+      "colors": [
+        "rgba(15, 23, 42, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\Help\\Help.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#2563eb",
+        "#3056d3",
+        "#3b82f6",
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#9ca3af",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f8fafc",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(48, 86, 211, 0.9)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ListDetails\\components\\ListDetailsGrid\\ListDetailsGrid.module.css",
+      "colors": [
+        "#0a2540",
+        "#0c4a6e",
+        "#0ea5e9",
+        "#1e293b",
+        "#22c55e",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#e0f2fe",
+        "#e2e8f0",
+        "#f0f9ff",
+        "#f8fafc",
+        "#f97316",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(10, 37, 64, 0.1)",
+        "var(--background-color, #ffffff)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ListDetails\\components\\PeakGrid\\PeakGrid.module.css",
+      "colors": [
+        "#0c4a6e",
+        "#64748b",
+        "#e2e8f0",
+        "rgba(0, 0, 0, 0.05)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ListDetails\\components\\SearchAndFilters\\SearchAndFilters.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e293b",
+        "#22c55e",
+        "#64748b",
+        "#94a3b8",
+        "#e2e8f0",
+        "#f8fafc",
+        "#f97316",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(10, 37, 64, 0.1)",
+        "var(--background-color, #ffffff)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ListDetails\\ListDetails.module.css",
+      "colors": [
+        "#00ae21",
+        "#0a2540",
+        "#22c55e",
+        "#64748b",
+        "#cbd5e1",
+        "#e2e8f0",
+        "#f1f5f9",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(10, 37, 64, 0.2)",
+        "rgba(10, 37, 64, 0.3)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(34, 197, 94, 0.3)",
+        "var(--background-color, #ffffff)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\ListDetails\\utils.ts",
+      "colors": [
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\CommunityInfo\\CommunityInfo.module.css",
+      "colors": [
+        "#007bff",
+        "#1e293b",
+        "#2c3e50",
+        "#64748b",
+        "#6c757d",
+        "#cbd5e1",
+        "#dee2e6",
+        "#e1bee7",
+        "#e2e8f0",
+        "#e3f2fd",
+        "#e9ecef",
+        "#f1f1f1",
+        "#f1f5f9",
+        "#f3e5f5",
+        "#f8f9fa",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.6)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Description\\Description.module.css",
+      "colors": [
+        "#2c3e50",
+        "#4facfe",
+        "#5b6b7a",
+        "#e3e7ee",
+        "#f3f3f3",
+        "#f6f8fa",
+        "#fff",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(44, 62, 80, 0.08)",
+        "rgba(44, 62, 80, 0.12)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\FloraFauna\\FloraFauna.module.css",
+      "colors": [
+        "#007bff",
+        "#2c3e50",
+        "#495057",
+        "#6c757d",
+        "#bbdefb",
+        "#e0e0e0",
+        "#e1bee7",
+        "#e3f2fd",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f0f1f3",
+        "#f3e5f5",
+        "#f8f9fa",
+        "rgba(0, 0, 0, 0.08)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Gallery\\Gallery.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(255, 255, 255, 0.9)",
+        "var(--color-on-surface)",
+        "var(--color-on-surface-variant)",
+        "var(--color-outline-variant)",
+        "var(--color-surface-container-low)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Gallery\\Gallery.tsx",
+      "colors": [
+        "#fff",
+        "rgba(0,0,0,0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Infrastructure\\Infrastructure.module.css",
+      "colors": [
+        "#000000",
+        "#007bff",
+        "#2c3e50",
+        "#495057",
+        "#4a5568",
+        "#4facfe",
+        "#6c757d",
+        "#e0e0e0",
+        "#e9ecef",
+        "#f0f0f0",
+        "#f1f1f1",
+        "#f8f9fa",
+        "#fff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.9)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Infrastructure\\Infrastructure.tsx",
+      "colors": [
+        "#007bff",
+        "rgba(0,0,0,0.5)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\NearbyPeaks\\NearbyPeaks.module.css",
+      "colors": [
+        "#2c3e50",
+        "#4a5568",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.35)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.75)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\NearbyPeaks\\NearbyPeaks.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\PeakDetails.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.08)",
+        "var(--color-border-light)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\PeakHeader\\PeakHeader.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "var(--color-border-light)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\PeakHeader\\PeakHeader.tsx",
+      "colors": [
+        "#111",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\Weather\\Weather.module.css",
+      "colors": [
+        "#000000",
+        "#007bff",
+        "#00f2fe",
+        "#218838",
+        "#2c3e50",
+        "#495057",
+        "#4facfe",
+        "#6c757d",
+        "#6f42c1",
+        "#888",
+        "#8a99a8",
+        "#b0b0b0",
+        "#b3003c",
+        "#b8860b",
+        "#c0392b",
+        "#ccfff6",
+        "#d4f4dd",
+        "#d6ecff",
+        "#e0e0e0",
+        "#e3e7ee",
+        "#e67e22",
+        "#e9ecef",
+        "#eaf6ff",
+        "#f0f0f0",
+        "#f39c12",
+        "#f6f8fa",
+        "#f8f9fa",
+        "#ffd6d6",
+        "#ffe5d6",
+        "#fff",
+        "#fff7d6",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 123, 255, 0.1)",
+        "rgba(111, 66, 193, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(44, 62, 120, 0.22)",
+        "rgba(44, 62, 120, 0.38)",
+        "rgba(44, 62, 80, 0.04)",
+        "rgba(44, 62, 80, 0.08)",
+        "rgba(79, 172, 254, 0.1)",
+        "rgba(79, 172, 254, 0.26)",
+        "rgba(79, 172, 254, 0.3)",
+        "rgba(79, 172, 254, 0.5)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-tertiary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PeakDetails\\WikilocRoute\\WikilocRoute.module.css",
+      "colors": [
+        "#2d5016",
+        "#4c8c2b",
+        "#5ba832",
+        "rgb(0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.15)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\PrivacyPolicy\\PrivacyPolicy.module.css",
+      "colors": [
+        "#111827",
+        "#1f2937",
+        "#374151",
+        "#6b7280",
+        "#e5e7eb",
+        "#f3f4f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\TermsOfService\\TermsOfService.module.css",
+      "colors": [
+        "#111827",
+        "#1f2937",
+        "#374151",
+        "#6b7280",
+        "#e5e7eb",
+        "#f3f4f6",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserPeaks\\ModalPicker.css",
+      "colors": [
+        "#000000",
+        "#0a2540",
+        "#1d4ed8",
+        "#64748b",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#f8fafc",
+        "rgb(0, 0, 0)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(10, 37, 64, 0.1)",
+        "rgba(255, 255, 255, 0.8)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserPeaks\\UserPeaks.module.css",
+      "colors": [
+        "#0a2540",
+        "#3b82f6",
+        "#64748b",
+        "#e2e8f0",
+        "#fafbfc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.1)",
+        "var(--background-color, #ffffff)",
+        "var(--color-background-elevated)",
+        "var(--color-border)",
+        "var(--color-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRouteDetails\\PeakSwiper.module.css",
+      "colors": [
+        "#ffffff",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.4)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRouteDetails\\PeakSwiper.tsx",
+      "colors": [
+        "#404040",
+        "#40A040",
+        "#A00040",
+        "#FF4040",
+        "#FFA040",
+        "#FFE040",
+        "rgba(255,255,255,0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRouteDetails\\RouteMap.module.css",
+      "colors": [
+        "#000",
+        "#2c3e50",
+        "#6c757d",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(255, 255, 255, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRouteDetails\\RouteMap.tsx",
+      "colors": [
+        "#000000",
+        "#222",
+        "#222222",
+        "#ED254E",
+        "#fff",
+        "#ffffff",
+        "rgb(11, 11, 25)",
+        "rgb(186, 210, 235)",
+        "rgb(36, 92, 223)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRouteDetails\\UserRouteDetails.module.css",
+      "colors": [
+        "#000",
+        "#0056b3",
+        "#007bff",
+        "#6c757d",
+        "#ff6b6b",
+        "#fff",
+        "rgb(0, 0, 0)",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 107, 107, 0.1)",
+        "rgba(255, 107, 107, 0.3)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 1)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRoutes\\components\\PeakCard.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRoutes\\UserRoutes.module.css",
+      "colors": [
+        "#0a2540",
+        "#111827",
+        "#15803d",
+        "#1d4ed8",
+        "#374151",
+        "#3b82f6",
+        "#64748b",
+        "#6b7280",
+        "#9ca3af",
+        "#bbf7d0",
+        "#cbd5e1",
+        "#dc2626",
+        "#e2e8f0",
+        "#e5e5e5",
+        "#e5e7eb",
+        "#f0fdf4",
+        "#f1f5f9",
+        "#f3f4f6",
+        "#f8fafc",
+        "#f9fafb",
+        "#fecaca",
+        "#fef2f2",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.25)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(59, 130, 246, 0.2)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserRoutes\\utils.ts",
+      "colors": [
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserSavedPeaks\\UserSavedPeaks.module.css",
+      "colors": [
+        "#0a2540",
+        "#1e293b",
+        "#374151",
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#e2e8f0",
+        "#e6f0ff",
+        "#ef4444",
+        "#f1f5f9",
+        "#f8fafc",
+        "#fafbfc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(10, 37, 64, 0.1)",
+        "var(--background-color, #ffffff)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\UserSavedPeaks\\UserSavedPeaks.tsx",
+      "colors": [
+        "rgba(255,255,255,0.3)",
+        "var(--color-elevation-black)",
+        "var(--color-elevation-burgundy)",
+        "var(--color-elevation-green)",
+        "var(--color-elevation-orange)",
+        "var(--color-elevation-red)",
+        "var(--color-elevation-yellow)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\NonPersistentPages\\VerifyEmail\\VerifyEmail.module.css",
+      "colors": [
+        "#2e7d32",
+        "#d32f2f",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(211, 47, 47, 0.1)",
+        "rgba(46, 125, 50, 0.1)",
+        "rgba(var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-background-primary)",
+        "var(--color-background-secondary)",
+        "var(--color-border)",
+        "var(--color-error, #d32f2f)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-success, #2e7d32)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Explore.module.css",
+      "colors": [
+        "#0f172a",
+        "#1f2937",
+        "#222",
+        "#374151",
+        "#64748b",
+        "#6b7280",
+        "#888888",
+        "#9ca3af",
+        "#e5e7eb",
+        "#f3f3f3",
+        "#f3f4f6",
+        "#f8fafc",
+        "#fff",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(0, 0, 0, 0.8)",
+        "rgba(255, 255, 255, 0.95)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Home.module.css",
+      "colors": [
+        "#0a2540",
+        "#f3f3f3",
+        "#fff",
+        "rgb(0, 0, 0)",
+        "rgb(240, 240, 240)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(75, 140, 46, 0.04)",
+        "rgba(75, 140, 46, 0.3)",
+        "var(--color-error)",
+        "var(--color-primary)",
+        "var(--color-primary-light)",
+        "var(--color-secondary)",
+        "var(--color-surface)",
+        "var(--color-surface-secondary)",
+        "var(--color-text-inverse)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Home.tsx",
+      "colors": [
+        "var(--color-primary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\LeaderBoard.module.css",
+      "colors": [
+        "#1e293b",
+        "#3b82f6",
+        "#666",
+        "#e2e8f0",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#ffffff",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.95)",
+        "var(--color-surface-tertiary, #f1f5f9)",
+        "var(--color-text-primary, #1e293b)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\ListsLeaderboard.module.css",
+      "colors": [
+        "#A9A9A9",
+        "#B87333",
+        "#C0C0C0",
+        "#CD7F32",
+        "#FDB931",
+        "#FFD700",
+        "#fff",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(192, 192, 192, 0.3)",
+        "rgba(205, 127, 50, 0.3)",
+        "rgba(255, 215, 0, 0.3)",
+        "rgba(var(--color-primary-rgb)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-primary-dark)",
+        "var(--color-primary-rgb)",
+        "var(--color-surface)",
+        "var(--color-surface-variant)",
+        "var(--color-text-disabled)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\PeaksLeaderboard.module.css",
+      "colors": [
+        "#1a1a1a",
+        "#1e293b",
+        "#222",
+        "#2c3e50",
+        "#2d2d2d",
+        "#3a3a3a",
+        "#3b82f6",
+        "#4a4a4a",
+        "#64748b",
+        "#6c757d",
+        "#94a3b8",
+        "#c0c0c0",
+        "#cd7f32",
+        "#e2e8f0",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f8f9fa",
+        "#f8fafc",
+        "#ffd700",
+        "#fff",
+        "#fffbe6",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.45)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.55)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(192, 192, 192, 0.18)",
+        "rgba(192, 192, 192, 0.3)",
+        "rgba(205, 127, 50, 0.18)",
+        "rgba(205, 127, 50, 0.3)",
+        "rgba(255, 215, 0, 0.18)",
+        "rgba(255, 215, 0, 0.3)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(59, 130, 246, 0.9)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\UsersLeaderboard.module.css",
+      "colors": [
+        "#1e293b",
+        "#1e40af",
+        "#374151",
+        "#3b82f6",
+        "#475569",
+        "#64748b",
+        "#6b7280",
+        "#94a3b8",
+        "#9ca3af",
+        "#c0c0c0",
+        "#cd7f32",
+        "#dc2626",
+        "#e2e8f0",
+        "#e5e7eb",
+        "#eff6ff",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f8fafc",
+        "#fca5a5",
+        "#fef2f2",
+        "#ffd700",
+        "#fff",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(59, 130, 246, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\WorldChallenge.module.css",
+      "colors": [
+        "#1a1a1a",
+        "#222",
+        "#2a2a2a",
+        "#2d2d2d",
+        "#3a3a3a",
+        "#4a4a4a",
+        "#A9A9A9",
+        "#B87333",
+        "#C0C0C0",
+        "#CD7F32",
+        "#FDB931",
+        "#FFD700",
+        "#c0c0c0",
+        "#cd7f32",
+        "#ffd700",
+        "#fff",
+        "#fffbe6",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.05)",
+        "rgba(0, 0, 0, 0.45)",
+        "rgba(0, 0, 0, 0.55)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(192, 192, 192, 0.18)",
+        "rgba(192, 192, 192, 0.3)",
+        "rgba(205, 127, 50, 0.18)",
+        "rgba(205, 127, 50, 0.3)",
+        "rgba(255, 215, 0, 0.18)",
+        "rgba(255, 215, 0, 0.3)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(59, 130, 246, 0.05)",
+        "rgba(59, 130, 246, 0.9)",
+        "var(--color-background)",
+        "var(--color-border)",
+        "var(--color-outline-variant)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-surface-variant)",
+        "var(--color-text-primary)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\LeaderBoardScreen\\WorldChallenge.tsx",
+      "colors": [
+        "#22C55E",
+        "#3B82F6",
+        "#7D8A5B",
+        "#B5A48B",
+        "#FFFFFF",
+        "#ffffff",
+        "rgba(0,0,0,0.8)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Map.module.css",
+      "colors": [
+        "#0a2540",
+        "#0d47a1",
+        "#1976d2",
+        "#1f2937",
+        "#666",
+        "#f5f5f5",
+        "#fff",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.08)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.98)",
+        "rgba(43, 122, 120, 0.1)",
+        "var(--color-background)",
+        "var(--color-background-secondary, #f5f5f5)",
+        "var(--color-primary, #1976d2)",
+        "var(--color-primary-darker, #0d47a1)",
+        "var(--color-text-primary, #0a2540)",
+        "var(--color-text-primary, #1f2937)",
+        "var(--color-text-secondary, #666)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Navbar.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.07)",
+        "var(--color-border)",
+        "var(--color-primary)",
+        "var(--color-surface)",
+        "var(--color-text-secondary)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ActionButtons.module.css",
+      "colors": [
+        "#0a2540",
+        "#64748b",
+        "#dc2626",
+        "#e2e8f0",
+        "#fecaca",
+        "rgba(0, 0, 0, 0.02)",
+        "rgba(0, 0, 0, 0.04)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ChallengesModal.module.css",
+      "colors": [
+        "#0f172a",
+        "#667eea",
+        "#764ba2",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.8)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(var(--color-primary-rgb)",
+        "var(--color-primary)",
+        "var(--color-primary-rgb)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\NotificationToggle.module.css",
+      "colors": [
+        "#0f172a",
+        "#10b981",
+        "#6b7280",
+        "#ef4444",
+        "rgba(15, 23, 42, 0.08)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\PrivacyToggle.module.css",
+      "colors": [
+        "#0f172a",
+        "#10b981",
+        "#ef4444",
+        "rgba(15, 23, 42, 0.08)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfileCard.module.css",
+      "colors": [
+        "#0f172a",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.55)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfileCard.tsx",
+      "colors": [
+        "#0f172a"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfileMenu.module.css",
+      "colors": [
+        "#0f172a",
+        "#ef4444",
+        "#fbbf24",
+        "rgba(0, 0, 0, 0.06)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(255, 255, 255, 0.55)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\ContactDeveloperPopup\\ContactDeveloperPopup.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#3d4eeb",
+        "#64748b",
+        "#667eea",
+        "#94a3b8",
+        "#cbd5e1",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(5, 150, 105, 0.1)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\ContactDeveloperPopup\\ContactDeveloperPopup.tsx",
+      "colors": [
+        "#000",
+        "#64748b"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\DeleteAccountPopup\\DeleteAccountPopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#dc2626",
+        "#ef4444",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\DeleteAccountPopup\\DeleteAccountPopup.tsx",
+      "colors": [
+        "#ef4444"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\LanguageChangePopup\\LanguageChangePopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#3d4eeb",
+        "#64748b",
+        "#667eea",
+        "#94a3b8",
+        "#cbd5e1",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(102, 126, 234, 0.1)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\LanguageChangePopup\\LanguageChangePopup.tsx",
+      "colors": [
+        "#000"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\LogoutPopup\\LogoutPopup.module.css",
+      "colors": [
+        "#0f172a",
+        "#64748b",
+        "#fbbf24",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(255, 255, 255, 0.95)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\LogoutPopup\\LogoutPopup.tsx",
+      "colors": [
+        "#fbbf24"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\SuggestionsPopup\\SuggestionsPopup.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1",
+        "#d97706",
+        "#f59e0b",
+        "rgba(0, 0, 0, 0.04)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(245, 158, 11, 0.1)",
+        "rgba(245, 158, 11, 0.3)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(5, 150, 105, 0.1)",
+        "rgba(5, 150, 105, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\ProfilePopups\\SuggestionsPopup\\SuggestionsPopup.tsx",
+      "colors": [
+        "#e2e8f0",
+        "#f59e0b",
+        "#f8fafc"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\StatsChart.tsx",
+      "colors": [
+        "#06b6d4",
+        "#10b981",
+        "#3b82f6",
+        "#8b5cf6",
+        "#ef4444",
+        "#f59e0b",
+        "#fff",
+        "rgba(11, 18, 32, 0.95)",
+        "rgba(255,255,255,0.1)",
+        "rgba(255,255,255,0.2)",
+        "rgba(255,255,255,0.6)",
+        "rgba(255,255,255,0.8)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\StatsScroller.module.css",
+      "colors": [
+        "#0f172a",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(255, 255, 255, 0.85)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\StatsScroller.tsx",
+      "colors": [
+        "#059669",
+        "#0891b2",
+        "#0a2540",
+        "#7c3aed",
+        "#ff0000",
+        "#ff7300"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\UserStatisticsSection.module.css",
+      "colors": [
+        "#000",
+        "#0b1220",
+        "#0f172a",
+        "#10b981",
+        "#1e293b",
+        "#3b82f6",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.12)",
+        "rgba(0, 0, 0, 0.18)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(11, 18, 32, 0.95)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.06)",
+        "rgba(15, 23, 42, 0.08)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.12)",
+        "rgba(15, 23, 42, 0.18)",
+        "rgba(15, 23, 42, 0.2)",
+        "rgba(15, 23, 42, 0.3)",
+        "rgba(15, 23, 42, 0.35)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)",
+        "rgba(15, 23, 42, 0.8)",
+        "rgba(239, 68, 68, 0.9)",
+        "rgba(248, 250, 252, 0.8)",
+        "rgba(255, 255, 255, 0.05)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.8)",
+        "rgba(255, 255, 255, 0.9)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(59, 130, 246, 0.3)",
+        "rgba(59, 130, 246, 0.5)",
+        "var(--accent)",
+        "var(--percent, 0)",
+        "var(--size)",
+        "var(--thickness)",
+        "var(--track)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile\\components\\UserStatisticsSection.tsx",
+      "colors": [
+        "#0f172a",
+        "rgba(15,23,42,0.18)",
+        "rgba(59,130,246,0.45)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile.module.css",
+      "colors": [
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#4b5563",
+        "#64748b",
+        "#6b7280",
+        "#cbd5e1",
+        "#dc2626",
+        "#e2e8f0",
+        "#ef4444",
+        "#f1f5f9",
+        "#f3f3f3",
+        "#f8fafc",
+        "#ffffff",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(107, 114, 128, 0.4)",
+        "rgba(15, 23, 42, 0.02)",
+        "rgba(15, 23, 42, 0.05)",
+        "rgba(15, 23, 42, 0.1)",
+        "rgba(15, 23, 42, 0.15)",
+        "rgba(15, 23, 42, 0.5)",
+        "rgba(15, 23, 42, 0.6)",
+        "rgba(15, 23, 42, 0.7)"
+      ]
+    },
+    {
+      "file": "src\\mobile\\PersistentPages\\Profile.tsx",
+      "colors": [
+        "rgba(15, 23, 42, 0.3)"
+      ]
+    },
+    {
+      "file": "src\\shared\\App.css",
+      "colors": [
+        "#000000",
+        "#00ae21",
+        "#059669",
+        "#0f172a",
+        "#10b981",
+        "#1a1a1a",
+        "#2563eb",
+        "#2d2d2d",
+        "#34d399",
+        "#3b82f6",
+        "#444444",
+        "#475569",
+        "#480001",
+        "#5a5a5a",
+        "#60a5fa",
+        "#64748b",
+        "#666666",
+        "#8b4a00",
+        "#94a3b8",
+        "#999999",
+        "#a35709",
+        "#c17a2a",
+        "#cbd5e1",
+        "#d97706",
+        "#dc2626",
+        "#e2e8f0",
+        "#ef4444",
+        "#f1f5f9",
+        "#f59e0b",
+        "#f87171",
+        "#f8fafc",
+        "#fbbf24",
+        "#ff0000",
+        "#ff7300",
+        "#ffbb00",
+        "#ffffff",
+        "var(--color-background)",
+        "var(--color-error)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\AuthLoadingScreen.module.css",
+      "colors": [
+        "#666",
+        "#f5f5f5"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\ErrorBoundary\\ErrorBoundary.module.css",
+      "colors": [
+        "#0d47a1",
+        "#1565c0",
+        "#1976d2",
+        "#333",
+        "#666",
+        "#d32f2f",
+        "#e0e0e0",
+        "#f5f5f5",
+        "rgba(0, 0, 0, 0.1)"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\ErrorBoundary\\ErrorBoundary.tsx",
+      "colors": [
+        "#300"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\GPXDownloadSuccessModal\\GPXDownloadSuccessModal.module.css",
+      "colors": [
+        "#059669",
+        "#0a2540",
+        "#10b981",
+        "#374151",
+        "#6b7280",
+        "#d1d5db",
+        "#e2e8f0",
+        "#f3f4f6",
+        "#f8fafc",
+        "#f9fafb",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.15)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(16, 185, 129, 0.25)",
+        "rgba(16, 185, 129, 0.3)",
+        "rgba(16, 185, 129, 0.35)"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\PullToRefresh\\PullToRefresh.module.css",
+      "colors": [
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.6)"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\RouteAnimationModal\\RouteAnimationModal.module.css",
+      "colors": [
+        "#000000",
+        "#1a1a1a",
+        "#22c55e",
+        "#28a745",
+        "#dc3545",
+        "#ff4500",
+        "#ff6b35",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.1)",
+        "rgba(0, 0, 0, 0.2)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.4)",
+        "rgba(0, 0, 0, 0.5)",
+        "rgba(0, 0, 0, 0.6)",
+        "rgba(0, 0, 0, 0.7)",
+        "rgba(220, 53, 69, 0.6)",
+        "rgba(255, 255, 255, 0.05)",
+        "rgba(255, 255, 255, 0.1)",
+        "rgba(255, 255, 255, 0.15)",
+        "rgba(255, 255, 255, 0.2)",
+        "rgba(255, 255, 255, 0.3)",
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.6)",
+        "rgba(255, 255, 255, 0.7)",
+        "rgba(255, 255, 255, 0.95)",
+        "rgba(255, 255, 255, 1)",
+        "rgba(255, 69, 0, 0.4)",
+        "rgba(40, 167, 69, 0.1)",
+        "rgba(40, 167, 69, 0.2)",
+        "var(--color-accent-primary, #ff4500)",
+        "var(--color-background-primary, #1a1a1a)",
+        "var(--color-background-secondary, rgba(255, 255, 255, 0.05)",
+        "var(--color-background-secondary, rgba(255, 255, 255, 0.1)",
+        "var(--color-background-tertiary, rgba(255, 255, 255, 0.1)",
+        "var(--color-background-tertiary, rgba(255, 255, 255, 0.15)",
+        "var(--color-border-secondary, rgba(255, 255, 255, 0.1)",
+        "var(--color-border-secondary, rgba(255, 255, 255, 0.2)",
+        "var(--color-text-primary, #ffffff)",
+        "var(--color-text-secondary, rgba(255, 255, 255, 0.5)",
+        "var(--color-text-secondary, rgba(255, 255, 255, 0.6)",
+        "var(--color-text-secondary, rgba(255, 255, 255, 0.7)"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\RoutePrivacyProtectedRoute.tsx",
+      "colors": [
+        "#666",
+        "#f5f5f5"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\UserPrivacyProtectedRoute.tsx",
+      "colors": [
+        "#666",
+        "#f5f5f5"
+      ]
+    },
+    {
+      "file": "src\\shared\\components\\VerificationCodeInput\\VerificationCodeInput.module.css",
+      "colors": [
+        "#d32f2f",
+        "rgba(211, 47, 47, 0.05)",
+        "rgba(211, 47, 47, 0.1)",
+        "rgba(var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-background-secondary)",
+        "var(--color-border)",
+        "var(--color-error, #d32f2f)",
+        "var(--color-primary)",
+        "var(--color-primary-rgb, 0, 0, 0)",
+        "var(--color-text-primary)"
+      ]
+    },
+    {
+      "file": "src\\shared\\constants\\elevationColors.ts",
+      "colors": [
+        "#000000",
+        "#00AE21",
+        "#363636",
+        "#480001",
+        "#65403a",
+        "#6b7280",
+        "#FF0000",
+        "#FF7300",
+        "#FFBB00",
+        "#b7deab",
+        "#df6654",
+        "#efad75",
+        "#fce076"
+      ]
+    },
+    {
+      "file": "src\\shared\\utils\\capacitorSafeArea.ts",
+      "colors": [
+        "#000000"
+      ]
+    },
+    {
+      "file": "src\\shared\\utils\\desktopRouteAnimationService.ts",
+      "colors": [
+        "#3b82f6",
+        "#A70000",
+        "#ED254E",
+        "#ffffff"
+      ]
+    },
+    {
+      "file": "src\\shared\\utils\\routeAnimationService.ts",
+      "colors": [
+        "#3b82f6",
+        "#A70000",
+        "#ED254E",
+        "#ffffff",
+        "rgba(0, 0, 0, 0)",
+        "rgba(0, 0, 0, 0.3)",
+        "rgba(0, 0, 0, 0.6)"
+      ]
+    },
+    {
+      "file": "src\\sw.ts",
+      "colors": [
+        "#f5f5f5"
+      ]
+    }
+  ]
+}

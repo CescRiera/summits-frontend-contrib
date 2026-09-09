@@ -1,0 +1,123 @@
+.persistent-pages__page {
+  min-height: 100svh;
+  width: 100%;
+  position: relative;
+  background: var(--c-gray-100);
+  overflow-x: hidden;
+  color: var(--c-gray-900);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: calc(
+    60px + env(safe-area-inset-bottom)
+  ); /* Navbar height + safe area */
+}
+
+.home__section {
+  background: var(--c-white);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(75, 140, 46, 0.04);
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.home__section-title {
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.home__card {
+  background: var(--c-gray-100);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(75, 140, 46, 0.04);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.home__card-title {
+  color: var(--color-secondary);
+}
+
+.home__card-subtitle {
+  color: var(--c-gray-600);
+}
+
+.home__highlight {
+  background: var(--color-primary-light);
+  color: var(--c-white);
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+
+.home__error {
+  color: var(--color-error);
+  background: var(--c-gray-100);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.home__action-buttons {
+  position: absolute;
+  top: calc(8px + env(safe-area-inset-top));
+  left: 16px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.home__action-buttons button {
+  height: 30px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background: #0a2540;
+  color: var(--c-white);
+  border: none;
+  border-radius: 8px;
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  padding: 16px 8px;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.home__action-buttons button:disabled {
+  opacity: 0.6;
+}
+
+.home__share-button {
+  position: absolute;
+  top: calc(8px + env(safe-area-inset-top));
+  right: 16px;
+  z-index: 1001;
+}
+
+.home__share-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--c-gray-100);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(75, 140, 46, 0.3);
+  transition: all 0.2s ease;
+  color: var(--c-black);
+}
+
+.home__share-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(75, 140, 46, 0.3);
+}
+
+.home__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  margin-bottom: 4px;
+  width: 100%;
+}

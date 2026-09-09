@@ -1,0 +1,84 @@
+/* LeaveChallengePopup.module.css - Leave Challenge confirmation popup */
+
+.leave-challenge-popup__content {
+  padding: 32px;
+}
+
+.leave-challenge-popup__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.leave-challenge-popup__title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.leave-challenge-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.leave-challenge-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.leave-challenge-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leave-challenge-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+}
+
+.leave-challenge-popup__button--confirm {
+  background: #c90a0a;
+  color: #ffffff;
+}
+
+.leave-challenge-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+.leave-challenge-popup__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #0f172a;
+  border-radius: 50%;
+  animation: leave-challenge-popup__spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes leave-challenge-popup__spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .leave-challenge-popup__content {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .leave-challenge-popup__actions {
+    flex-direction: column;
+  }
+
+  .leave-challenge-popup__button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,368 @@
+/* LazyPeakCard.module.css - Lazy Peak Card Component with BEM naming */
+
+/* Block: lazyPeakCard */
+.lazyPeakCard {
+  /* Base styles for the card container - no additional styles needed */
+  display: block;
+}
+
+/* Element: lazyPeakCard item */
+.lazyPeakCard__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--c-gray-100);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1) translateZ(0);
+  contain: layout style paint;
+  will-change: transform;
+  box-shadow: 0px 4px 12px -2px rgba(var(--rgb-black), 0.15);
+  border: none;
+}
+
+/* Modifier: lazyPeakCard item completed */
+.lazyPeakCard__item--completed {
+  border: 1px solid #22c55e;
+}
+
+/* Element: lazyPeakCard item positioning - Irregular layout */
+.lazyPeakCard__item--1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.lazyPeakCard__item--2 {
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+
+.lazyPeakCard__item--3 {
+  grid-column: 1;
+  grid-row: 3 / 6;
+}
+
+.lazyPeakCard__item--4 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+/* Element: lazyPeakCard content */
+.lazyPeakCard__content {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 12px;
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(var(--rgb-black), 0.4);
+  color: white;
+  z-index: 3;
+}
+
+/* Element: lazyPeakCard mainContent */
+.lazyPeakCard__mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Element: lazyPeakCard titleRow */
+.lazyPeakCard__titleRow {
+  width: 100%;
+}
+
+/* Element: lazyPeakCard title */
+.lazyPeakCard__title {
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Element: lazyPeakCard infoRow */
+.lazyPeakCard__infoRow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Element: lazyPeakCard elevationAndLocation */
+.lazyPeakCard__elevationAndLocation {
+  display: inline-block;
+}
+
+/* Element: lazyPeakCard elevation */
+.lazyPeakCard__elevation {
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.4);
+  display: inline;
+  margin-right: 8px;
+}
+
+/* Element: lazyPeakCard location */
+.lazyPeakCard__location {
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.4);
+  opacity: 0.9;
+  white-space: normal;
+  display: inline;
+}
+
+/* Element: lazyPeakCard userData */
+.lazyPeakCard__userData {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Element: lazyPeakCard datesSection */
+.lazyPeakCard__datesSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+/* Element: lazyPeakCard routeDate */
+.lazyPeakCard__routeDate {
+  opacity: 0.8;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Element: lazyPeakCard moreDatesIndicator */
+.lazyPeakCard__moreDatesIndicator {
+  opacity: 0.7;
+  background: rgba(var(--rgb-white), 0.2);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Element: lazyPeakCard ascentsSection */
+.lazyPeakCard__ascentsSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Element: lazyPeakCard ascentsCount */
+.lazyPeakCard__ascentsCount {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Element: lazyPeakCard ascentsLabel */
+.lazyPeakCard__ascentsLabel {
+  opacity: 0.9;
+}
+
+/* Element: lazyPeakCard elevationIcon background */
+.lazyPeakCard__elevationIconBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Element: lazyPeakCard elevationIcon inline */
+.lazyPeakCard__elevationIconInline {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
+  margin-right: 6px;
+  vertical-align: text-bottom;
+}
+
+/* Element: lazyPeakCard imageContainer */
+.lazyPeakCard__imageContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Element: lazyPeakCard image */
+.lazyPeakCard__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Element: lazyPeakCard imagePlaceholder */
+.lazyPeakCard__imagePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    var(--c-gray-100) 25%,
+    var(--c-gray-200) 25%,
+    var(--c-gray-200) 50%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-100) 75%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 20px 20px;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Element: lazyPeakCard imageLoader */
+.lazyPeakCard__imageLoader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--c-gray-100);
+  border-top: 3px solid var(--primary-border--dark, #3498db);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Element: lazyPeakCard optimizedImage */
+.lazyPeakCard__optimizedImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* Element: lazyPeakCard noImageBackground */
+.lazyPeakCard__noImageBackground {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-surface--subtle, var(--c-gray-50)) 0%,
+    var(--grayscale-surface--default, var(--c-gray-200)) 50%,
+    var(--primary-surface--subtle, var(--c-gray-50)) 100%
+  );
+  position: relative;
+}
+
+/* Element: lazyPeakCard noImageBackground before pseudo-element */
+.lazyPeakCard__noImageBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 30% 70%,
+    rgba(var(--rgb-white), 0.3) 0%,
+    transparent 50%
+  );
+}
+
+/* Element: lazyPeakCard gridItemOptimized */
+.lazyPeakCard__gridItemOptimized {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Modifier: lazyPeakCard item for single grid layout */
+.lazyPeakCard__item--singleGrid {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+
+/* Element: lazyPeakCard completionBadge */
+.lazyPeakCard__completionBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #22c55e;
+  color: white;
+  border-radius: 12px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+/* Clamp grid content paragraph to 2 lines with ellipsis */
+.lazyPeakCard__content p {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 350px) {
+  .lazyPeakCard__content {
+    padding: 8px;
+  }
+
+  .lazyPeakCard__title {
+    }
+
+  .lazyPeakCard__elevationAndLocation {
+    gap: 6px;
+  }
+
+  .lazyPeakCard__elevationIconInline {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px !important;
+  }
+
+  .lazyPeakCard__elevation {
+    }
+
+  .lazyPeakCard__routeDate {
+    padding: 3px 6px;
+  }
+
+  .lazyPeakCard__ascentsCount {
+    padding: 3px 6px;
+  }
+
+  .lazyPeakCard__userData {
+    gap: 4px;
+  }
+}

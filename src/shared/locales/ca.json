@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "Aplicar",
+    "details": "Detalls",
+    "filters": "Filtres",
+    "seeRanking": "Veure rànquing",
+    "time": {
+      "years": "anys",
+      "days": "dies",
+      "hours": "hores",
+      "minutes": "minuts",
+      "seconds": "segons"
+    },
+    "loading": "Carregant...",
+    "loadingRouteData": "Estem carregant les dades de la teva ruta, pot trigar uns segons",
+    "error": "Error",
+    "retry": "Torna-ho a intentar",
+    "cancel": "Cancel·la",
+    "save": "Desa",
+    "delete": "Eliminar",
+    "edit": "Edita",
+    "list": "Llista",
+    "map": "Mapa",
+    "close": "Tanca",
+    "back": "Enrere",
+    "goBack": "Tornar enrere",
+    "next": "Següent",
+    "previous": "Anterior",
+    "search": "Cerca",
+    "searching": "Cercant...",
+    "clear": "Netejar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "refresh": "Actualitzar",
+    "min": "Mín",
+    "max": "Màx",
+    "country": "País",
+    "region": "Regió",
+    "location": "Ubicació",
+    "chooseCountry": "Tria un país",
+    "chooseRegion": "Tria una regió",
+    "allCountries": "Tots els països",
+    "allRegions": "Totes les regions",
+    "seeAll": "Veure tot",
+    "seeOnMap": "Veure mapa",
+    "showLess": "Mostra menys",
+    "moreInfo": "Més informació",
+    "create": "Crear",
+    "follow": "Seguir",
+    "following": "Seguint",
+    "join": "Unir-se",
+    "leave": "Abandonar",
+    "seeMore": "Veure més",
+    "select": "Seleccionar",
+    "send": "Enviar",
+    "timeUnits": {
+      "yearShort": "a",
+      "dayShort": "d",
+      "hourShort": "h",
+      "minuteShort": "m",
+      "secondShort": "s"
+    },
+    "ranking": "Rànquing",
+    "share": "Share",
+    "deleting": "Eliminant...",
+    "seeLess": "Veure menys"
+  },
+  "desktopWarning": {
+    "title": "Descarrega la versió mòbil de Summits",
+    "subtitle": "Gaudeix de la versió mòbil de summits, escaneja el codi qr i segueix els passos que veuràs a la pàgina d'inici per descarregar l'aplicació!",
+    "scanQR": "Escaneja aquest codi QR amb el teu dispositiu mòbil",
+    "mobileSubtitle": "Escaneja el codi QR corresponent a continuació segons el sistema operatiu del teu telèfon i descarrega l'aplicació a Android o iOS per fer seguiment dels teus cims sobre la marxa!"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "Inicia sessió per formar part d'un club.",
+      "title": "Inici de sessió requerit",
+      "message": "Si us plau, inicia sessió per veure els teus cims personals al mapa.",
+      "viewCompletedPeaks": "Inicia sessió per veure els teus cims completats",
+      "filterPeaks": "Si us plau, inicia sessió per filtrar cims per estat de finalització.",
+      "sortByDate": "Si us plau, inicia sessió per ordenar cims per data de finalització.",
+      "myPeaks": "Si us plau, inicia sessió per veure els teus cims personals.",
+      "myRoutes": "Si us plau, inicia sessió per veure les teves rutes personals.",
+      "followingMode": "Si us plau, inicia sessió per veure l'activitat recent dels usuaris que segueixes.",
+      "savedPeaks": "Si us plau, inicia sessió per veure els teus cims desats.",
+      "savedShelters": "Si us plau, inicia sessió per veure els teus refugis desats.",
+      "followUser": "Si us plau, inicia sessió per seguir usuaris i veure els seus perfils.",
+      "joinChallenge": "Si us plau, inicia sessió per unir-te o seguir un repte.",
+      "cancel": "Cancel·lar",
+      "login": "Iniciar sessió"
+    },
+    "welcome": "Benvingut a Summits",
+    "signIn": "Inicia sessió al teu compte",
+    "email": "Correu electrònic",
+    "name": "Nom",
+    "password": "Contrasenya",
+    "signInButton": "Inicia sessió",
+    "noAccount": "No tens compte?",
+    "signUp": "Registra't",
+    "signUpOrLogin": "Registra't / Inicia sessió",
+    "createAccount": "Crear compte",
+    "confirmPassword": "Confirma la contrasenya",
+    "signUpButton": "Crea el compte",
+    "hasAccount": "Ja tens compte?",
+    "fillAllFields": "Omple tots els camps",
+    "loginFailed": "Error d'inici de sessió",
+    "registrationFailed": "Error de registre",
+    "passwordsNotMatch": "Les contrasenyes no coincideixen",
+    "passwordMin": "La contrasenya ha de tenir almenys 6 caràcters.",
+    "acceptTerms": "Accepto els",
+    "termsOfService": "termes i condicions",
+    "and": "i",
+    "privacyPolicy": "política de privacitat",
+    "acceptTermsRequired": "Has d'acceptar els termes i condicions",
+    "receiveNotificationsOnPeaks": "Rebre notificacions al fer cims",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "Compte creat correctament! Si us plau, inicia sessió.",
+    "stravaRegisteredSuccess": "El teu compte s'ha registrat correctament amb Strava. Inicia sessió.",
+    "backToSelection": "Tornar a la selecció",
+    "backToLogin": "Tornar a l'inici de sessió",
+    "emailVerification": {
+      "title": "Verifica el teu correu",
+      "message": "Hem enviat un codi de verificació de 6 dígits a la teva adreça de correu electrònic. Si us plau, comprova la teva safata d'entrada i introdueix el codi a continuació.",
+      "messageWithEmail": "Hem enviat un codi de verificació de 6 dígits a {email}. Si us plau, comprova la teva safata d'entrada i introdueix el codi a continuació.",
+      "openGmail": "Obrir Gmail",
+      "success": "El teu correu ha estat verificat correctament! El teu compte ja està llest per utilitzar.",
+      "authenticated": "El teu compte ha estat autenticat. Ara pots iniciar sessió.",
+      "verifying": "Verificant...",
+      "error": "La verificació del correu ha fallat. El codi pot haver caducat o ser invàlid. Si us plau, torna-ho a intentar o contacta amb el suport.",
+      "codePlaceholder": "Introdueix el codi de 6 dígits",
+      "verifyButton": "Verificar correu",
+      "verifyingButton": "Verificant...",
+      "resendCode": "Tornar a enviar codi",
+      "resendSuccess": "El codi de verificació ha estat reenviat al teu correu.",
+      "codeError": "Codi de verificació invàlid o caducat",
+      "codeRequired": "Si us plau, introdueix el codi de 6 dígits",
+      "link": "Verificar correu?"
+    },
+    "forgotPassword": {
+      "title": "Contrasenya oblidada",
+      "link": "Has oblidat la contrasenya?",
+      "instructions": "Introdueix la teva adreça de correu electrònic i t'enviarem un enllaç per restablir la contrasenya.",
+      "sendEmail": "Enviar enllaç de restabliment",
+      "success": "Si existeix un compte amb aquest correu electrònic, t'hem enviat un enllaç per restablir la contrasenya. Si us plau, comprova la teva safata d'entrada.",
+      "error": "Error en enviar el correu de restabliment de contrasenya. Si us plau, torna-ho a intentar."
+    },
+    "resetPassword": {
+      "title": "Restablir contrasenya",
+      "instructions": "Introdueix la teva nova contrasenya a continuació. Assegura't que tingui almenys 6 caràcters.",
+      "messageWithEmail": "T'hem enviat un codi a {email}",
+      "codePlaceholder": "Codi de verificació",
+      "codeRequired": "El codi és obligatori",
+      "emailRequired": "L'email és obligatori",
+      "submit": "Restablir contrasenya",
+      "successTitle": "Contrasenya restablida correctament",
+      "successMessage": "La teva contrasenya s'ha restablert correctament. Ara pots iniciar sessió amb la teva nova contrasenya.",
+      "error": "Error en restablir la contrasenya. L'enllaç pot haver caducat o ser invàlid. Si us plau, sol·licita un nou enllaç de restabliment de contrasenya.",
+      "resendCode": "Reenviar codi",
+      "resendSuccess": "Codi reenviat",
+      "resendError": "Error al reenviar codi",
+      "invalidToken": "Token de restabliment invàlid o faltant. Si us plau, sol·licita un nou enllaç de restabliment de contrasenya."
+    },
+    "loginHint": "Benvingut de nou! Introdueix les teves credencials per accedir al teu perfil.",
+    "goToLogin": "Anar a Iniciar Sessió",
+    "welcomeMessage": "Si us plau, inicia sessió o crea un compte nou per accedir al teu perfil i sincronitzar les teves activitats.",
+    "noAccountQuestion": "No tens un compte?",
+    "hasAccountQuestion": "Ja tens un compte?",
+    "or": "o",
+    "orSignInWith": "o inicia sessió amb",
+    "loginWithStrava": "Inicia sessió amb Strava",
+    "loginWithSuunto": "Inicia sessió amb Suunto",
+    "chooseProvider": "Tria un proveïdor per crear el teu compte:",
+    "backToProviderSelection": "Tornar a la selecció de proveïdor",
+    "wikiloc": {
+      "enterUsername": "Introdueix un nom d'usuari de Wikiloc per cercar.",
+      "noUsers": "No s'han trobat usuaris de Wikiloc amb aquest nom.",
+      "searchFailed": "Error en cercar usuaris de Wikiloc.",
+      "selectUserToContinue": "Selecciona el teu usuari per continuar",
+      "trails": "Rutes",
+      "selected": "Seleccionat"
+    },
+    "register": {
+      "title": "Crea el teu compte",
+      "subtitle": "Per sincronitzar els teus cims, pots registrar-te fàcilment amb el teu correu electrònic o connectar amb Strava, Suunto, Garmin o Wikiloc. Recomanem Strava o Suunto perquè són les opcions més ràpides i senzilles.",
+      "choosePlatform": "Tria la teva plataforma",
+      "noPlatformOption": "No tinc cap d'aquests comptes",
+      "registerWith": "Registra't amb",
+      "connectingToWikiloc": {
+        "before": "Estic intentant contactar amb Wikiloc per fer possible registrar un compte a",
+        "appName": "Summits",
+        "after": "utilitzant el de Wikiloc"
+      },
+      "connectingToStrava": {
+        "before": "Estic intentant contactar amb Strava per fer possible registrar un compte a",
+        "appName": "Summits",
+        "after": "utilitzant el de Strava"
+      },
+      "providerDescription": {
+        "wikiloc": "Sincronitza amb Wikiloc per seguir el teu progrés de cims",
+        "strava": "Sincronitza amb Strava per seguir el teu progrés de cims",
+        "garmin": "Sincronitza amb Garmin Connect per seguir el teu progrés de cims",
+        "default": "Crea un compte de Summits amb el teu email i contrasenya"
+      },
+      "default": {
+        "label": "Correu electrònic",
+        "title": "Crea un compte de Summits"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "Registra't amb Wikiloc",
+        "searchPlaceholder": "Busca el nom del teu usuari de Wikiloc",
+        "enterUsername": "Introdueix un nom d'usuari de Wikiloc per cercar.",
+        "noUsers": "No s'han trobat usuaris de Wikiloc amb aquest nom.",
+        "searchFailed": "Error en cercar usuaris de Wikiloc.",
+        "warning": "Descarregar rutes des de Wikiloc és MOLT més lent que amb Strava, Garmin o Suunto. Si tens un compte amb alguna d'aquestes, fes servir aquell!",
+        "trails": "Rutes",
+        "selected": "Seleccionat"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "Registre amb Strava",
+        "connecting": "Connectant amb Strava...",
+        "submit": "Registra't amb Strava",
+        "warning": "Strava té un límit en el nombre de rutes que es poden sincronitzar. Si tens un compte de Garmin amb les teves rutes, considera utilitzar-lo per a millors capacitats de sincronització."
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "Registre amb Garmin",
+        "connecting": "Registrant-se amb Garmin Connect...",
+        "submit": "Registra't amb Garmin Connect",
+        "warning": "Garmin Connect té algunes limitacions. Si no veus totes les activitats, pots contactar amb mi per obtenir ajuda."
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "Registre amb Suunto",
+        "connecting": "Connectant amb Suunto...",
+        "submit": "Continua amb Suunto",
+        "warning": "Connecta el teu compte de Suunto per sincronitzar les teves activitats amb Summits."
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "S'ha produït un error durant el registre amb Strava. Si us plau, torna-ho a intentar.",
+        "emailAlreadyExists": "Ja existeix un compte amb aquest correu electrònic. Si us plau, utilitza un correu diferent o inicia sessió.",
+        "accountAlreadyLinked": "Aquest compte de Strava ja està vinculat a un altre compte.",
+        "registrationFailed": "El registre ha fallat. Si us plau, torna-ho a intentar.",
+        "emailCheckFailed": "La verificació del correu electrònic ha fallat. Si us plau, torna-ho a intentar.",
+        "internalError": "S'ha produït un error intern. Si us plau, torna-ho a intentar més tard."
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "Aquest compte de Garmin ja està vinculat a un altre compte.",
+        "emailCheckFailed": "La verificació del correu electrònic ha fallat. Si us plau, torna-ho a intentar.",
+        "generic": "S'ha produït un error durant el registre amb Garmin. Si us plau, torna-ho a intentar.",
+        "internalError": "S'ha produït un error intern. Si us plau, torna-ho a intentar més tard.",
+        "registrationFailed": "El registre ha fallat. Si us plau, torna-ho a intentar."
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "S'ha produït un error durant l'inici de sessió. Si us plau, torna-ho a intentar.",
+        "timeout": "L'inici de sessió ha superat el temps d'espera. Si us plau, torna-ho a intentar."
+      }
+    }
+  },
+  "navigation": {
+    "home": "Inici",
+    "discover": "Descobreix",
+    "leaderboard": "Reptes",
+    "map": "Mapa",
+    "profile": "Perfil",
+    "contact": "Contacte",
+    "userProfile": "Perfil d'usuari",
+    "routeDetails": "Detalls de la ruta",
+    "peakDetails": "Detalls del pic"
+  },
+  "contact": {
+    "getInTouchWithMe": "PON-TE EN CONTACTE AMB EL DESENVOLUPADOR",
+    "phoneNumber": "Número de Telèfon",
+    "emailAddress": "Adreça de Correu",
+    "emailPlaceholder": "Correu electrònic"
+  },
+  "main": {
+    "totalPeaks": "Total de cims",
+    "totalAscents": "Ascensions totals",
+    "scrapingMessage": "🔄 Carregant cims de les teves rutes...",
+    "failedToRefresh": "Error en actualitzar dades",
+    "completedPeaksInList": "Has completat {completed} de {total} cims d'aquesta llista.",
+    "allPeaks": "Tots els cims",
+    "loading": "Carregant...",
+    "completed": "Completat",
+    "seeMore": "Veure més",
+    "seeLess": "Veure menys",
+    "myPeaks": "Els teus cims",
+    "swipeProgressHint": "Llisca per explorar el teu progrés en diferents llistes",
+    "swipeDiscoverHint": "Llisca per descobrir llistes increïbles del món",
+    "yourHighestPeaks": "Els teus cims més altos",
+    "yourHighestPeaksDesc": "Les muntanyes més altes que has conquerit",
+    "communityHighestPeaks": "Cims més altos de la comunitat",
+    "communityHighestPeaksDesc": "Els cims més impressionants assolits per la comunitat",
+    "loadNewPeaks": "Carregar nous cims",
+    "refreshUserData": "Actualitzar dades de l'usuari",
+    "scrapingInProgress": "Pot trigar una estona si tens moltes rutes; mentre tant, pots explorar la resta de l'aplicació.",
+    "allPeaksList": {
+      "nameLoggedIn": "La teva trajectòria",
+      "nameGuest": "Descobreix els cims del món",
+      "descriptionLoggedIn": "Cada cim que aconsegueixes deixa una empremta inesborrable en el teu viatge. Segueix les teves ascensions a través de serralades icòniques, des de l'Himàlaia fins als Alps — superant-te un pas a la vegada.",
+      "descriptionGuest": "Des de l'Everest fins al Mont Blanc, explora algunes de les muntanyes més impressionants del món. Uneix-te a milers d'escaladors que abraçen el repte i l'aventura de cada ascens — perquè allò que fem a la vida ressona en l'eternitat."
+    }
+  },
+  "peakDetails": {
+    "description": "Descripció",
+    "searchRoutesFor": "Cerca rutes per",
+    "findHikingRoutesOnWikiloc": "Troba rutes de senderisme a Wikiloc",
+    "expand": "Expandir",
+    "loadError": "Error en carregar els detalls del pic"
+  },
+  "peaks": {
+    "count": "cims",
+    "noPeaksFound": "No s'han trobat cims",
+    "peakInfo": "Informació del cim",
+    "information": "Informació",
+    "elevation": "Altitud",
+    "description": "Descripció",
+    "noDescription": "No hi ha descripció disponible",
+    "noPeaksNearCoordinates": "No hi ha cims a prop d'aquestes coordenades",
+    "images": "Imatges",
+    "userPeakDescriptionSingle": "El cim {name}, a la regió {region} de {country}, que vas pujar el {dates} amb la ruta <b>{routes}</b>.",
+    "userPeakDescriptionMultiple": "El cim {name}, a la regió {region} de {country}, que vas pujar en aquestes dates: {dates} amb aquestes rutes: <b>{routes}</b>."
+  },
+  "map": {
+    "noRoutes": "No hi ha rutes disponibles",
+    "loadingRoutes": "Carregant rutes...",
+    "mapView": "Vista de mapa",
+    "controls": {
+      "title": "Controls del mapa",
+      "globeView": "Vista de globus 3D",
+      "outdoors": "Exterior",
+      "satellite": "Satèl·lit",
+      "terrainView": "Terreny 3D"
+    },
+    "visiblePeaks": {
+      "title": "Cims visibles",
+      "subtitle": "Resultats de la vista i els filtres actuals",
+      "layerLabel": "Capa:",
+      "tilesLayerLabel": "Capa de mosaic",
+      "listLayerLabel": "Capa de llista",
+      "userLayerLabel": "La teva capa de cims",
+      "enableHint": "Activa l'interruptor per llistar els cims",
+      "empty": "No s'han detectat cims a la vista actual.",
+      "footer": "S'actualitza quan el mapa roman immòbil durant 1 segon.",
+      "loadMore": "Veure {remaining} cims més"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "Explorar clubs",
+      "createClub": "Crear club",
+      "myClubs": "Els meus clubs",
+      "browseTitle": "Explorar clubs",
+      "joinClub": "Unir-se al club",
+      "myClubsDescription": "Clubs dels que ets membre."
+    },
+    "userProfile": "Perfil d'usuari",
+    "settings": "Configuració",
+    "logout": "Tanca sessió",
+    "language": "Idioma",
+    "about": "Sobre",
+    "version": "Versió",
+    "statistics": "Estadístiques",
+    "savedPeaks": "Cims desats",
+    "yourRoutes": "Les teves rutes",
+    "yourPeaks": "Els teus cims",
+    "yourRoutesWithCount": "Les teves {count} rutes",
+    "yourPeaksWithCount": "Els teus {count} cims",
+    "savedPeaksWithCount": "Els teus {count} cims desats",
+    "savedShelters": "Refugis desats",
+    "savedSheltersWithCount": "Els teus {count} refugis desats",
+    "viewYourRoutes": "Veure les teves rutes",
+    "viewYourPeaks": "Veure els teus cims",
+    "viewAllStats": "Veure totes les meves estadístiques",
+    "seeAllSavedPeaks": "Veure tots els cims desats",
+    "changeLanguage": "Canviar idioma",
+    "unitSystem": "Sistema d'unitats",
+    "unitSystemMessage": "Selecciona el teu sistema d'unitats preferit",
+    "metricSystem": "Mètric (km, m)",
+    "imperialSystem": "Imperial (mi, ft)",
+    "helpTutorials": "Ajuda i tutorials",
+    "needHelp": "Necessites ajuda?",
+    "sendSuggestionsReportErrors": "Enviar suggeriments / Informar errors",
+    "contactDeveloper": "Contactar desenvolupador",
+    "donate": "Donar",
+    "donateQuestion": "Vols donar?",
+    "donateTitle": "Dona suport a Summits",
+    "donateMessage": "Summits és un projecte personal que no genera cap benefici i que mantinc amb els meus diners. Qualsevol donació serà agraïda i ajudarà a millorar i mantenir l'aplicació. Gràcies per utilitzar-la!",
+    "donateButton": "Donar",
+    "donateAmount": "Import en EUR",
+    "donateAmountPlaceholder": "p. ex. 5,00",
+    "wikilocImport": "Importa de Wikiloc",
+    "wikilocImportTitle": "Importa rutes de Wikiloc",
+    "wikilocImportDescription": "Cerca un perfil de Wikiloc i importa totes les seves rutes al teu compte.",
+    "wikilocImportSearchPlaceholder": "Cerca un nom d'usuari de Wikiloc...",
+    "wikilocImportButton": "Importa rutes",
+    "wikilocImportStarted": "Importació iniciada! Rebràs actualitzacions de progrés via WebSocket.",
+    "wikilocImportQueued": "Ets #{position} a la cua. Rebràs actualitzacions de progrés via WebSocket.",
+    "wikilocImportAlreadyInProgress": "La importació de Wikiloc ja està en curs per a aquest usuari.",
+    "wikilocImportServerBusy": "El servidor està ocupat processant altres sol·licituds. Torna-ho a intentar en uns minuts.",
+    "wikilocImportCompleted": "Importació completada! {count} rutes processades.",
+    "wikilocImportError": "La importació ha fallat. Torna-ho a intentar.",
+    "wikilocNoUsersFound": "No s'han trobat usuaris de Wikiloc amb aquest nom.",
+    "wikilocSearchFailed": "Ha fallat la cerca d'usuaris de Wikiloc.",
+    "wikilocEnterUsername": "Si us plau, introdueix un nom d'usuari de Wikiloc per cercar.",
+    "wikilocSelectUser": "Selecciona un usuari per importar rutes:",
+    "wikilocSelectedUser": "Seleccionat: {name}",
+    "deleteAccount": "Eliminar",
+    "accountSettings": "Configuració del compte",
+    "nameRequired": "El nom és obligatori",
+    "nameTooLong": "El nom ha de tenir 100 caràcters o menys",
+    "nameUpdateFailed": "Error en actualitzar el nom",
+    "editName": "Editar nom",
+    "saveName": "Guardar nom",
+    "cancelEditName": "Cancel·lar edició",
+    "logoutConfirmation": "Estàs segur que vols tancar la sessió?",
+    "languageChangeMessage": "Selecciona el teu idioma preferit",
+    "deleteAccountConfirmation": "Estàs segur que vols eliminar el teu compte? Aquesta acció no es pot desfer.",
+    "contactDeveloperMessage": "Posa't en contacte amb el desenvolupador per a suport, informes d'errors o consultes generals.",
+    "suggestionsMessage": "Comparteix les teves idees i suggeriments per ajudar a millorar l'app.",
+    "subject": "Assumpte",
+    "subjectPlaceholder": "Introdueix un assumpte...",
+    "message": "Missatge",
+    "messagePlaceholder": "Introdueix el teu missatge...",
+    "yourSuggestion": "El teu suggeriment",
+    "suggestionPlaceholder": "Comparteix les teves idees i suggeriments...",
+    "sendMessage": "Enviar",
+    "sendSuggestion": "Enviar",
+    "suggestionSentSuccessfully": "Suggeriment enviat amb èxit!",
+    "messageSentSuccessfully": "El teu missatge ha estat enviat correctament!",
+    "follows": {
+      "followers": "Seguidors",
+      "following": "Seguint",
+      "peaks": "Cims",
+      "followRequests": "Sol·licituds de seguiment",
+      "noPendingRequests": "Sense sol·licituds pendents",
+      "noPendingRequestsMessage": "No tens sol·licituds de seguiment pendents en aquest moment.",
+      "noFollowers": "Sense seguidors",
+      "noFollowersMessage": "Encara no tens seguidors.",
+      "notFollowingAnyone": "No segueixes a ningú",
+      "notFollowingAnyoneMessage": "Encara no segueixes a ningú.",
+      "accept": "Acceptar",
+      "reject": "Rebutjar",
+      "unfollow": "Deixar de seguir",
+      "loading": "Carregant...",
+      "error": "Error al carregar dades",
+      "pendingRequests": "Sol·licituds pendents"
+    },
+    "notifications": {
+      "notifications": "Notificacions",
+      "notificationsEnabled": "Activades",
+      "notificationsDisabled": "Desactivades",
+      "notificationsPermissionDenied": "Permís denegat",
+      "notificationsNotSupported": "No suportat",
+      "waitingForPermission": "Esperant el permís"
+    },
+    "privacy": {
+      "profileStatus": "Estat del perfil",
+      "public": "Públic",
+      "private": "Privat"
+    },
+    "challenges": {
+      "joinChallenge": "Unir-se al Repte",
+      "createChallenge": "Crear Repte",
+      "editMyChallenges": "Edita els meus reptes",
+      "browseTitle": "Explorar Reptes",
+      "follow": "Seguir",
+      "following": "Seguint",
+      "unfollowChallenge": "Deixar de seguir Repte",
+      "editChallenge": "Editar Repte",
+      "leave": "Abandonar Repte",
+      "leaveConfirmTitle": "Abandonar Repte",
+      "leaveConfirmMessage": "Vols abandonar el repte '{name}'? Els teus progressos no es perdran i podràs tornar a unir-t'hi quan vulguis.",
+      "noCreatedChallenges": "Encara no has creat cap repte."
+    }
+  },
+  "externalProfile": {
+    "userClubs": "Clubs de {userName}",
+    "unknownUser": "Usuari desconegut",
+    "userNotFound": "Usuari no trobat",
+    "userNotFoundMessage": "L'usuari que busques no existeix o ha estat eliminat.",
+    "follow": "Seguir",
+    "following": "Seguint",
+    "privateProfile": "Perfil privat",
+    "privateProfileMessage": "Aquest usuari ha configurat el seu perfil com a privat. Segueix-lo per veure les seves estadístiques i activitat.",
+    "rankTitle": "Rang de {userName}",
+    "rankDescription": "Posició <strong>{rank}</strong> de <strong>{totalUsers}</strong> usuaris amb més cims escalats",
+    "userPeaks": "Cims de {userName}",
+    "userRoutes": "Rutes de {userName}",
+    "userPeaksWithCount": "Els {count} cims de {userName}",
+    "userRoutesWithCount": "Les {count} rutes de {userName}",
+    "userPeakLists": "Reptes de cims de {userName}",
+    "peakListProgress": "{completed} / {total} completats",
+    "performanceOverview": "Resum de rendiment",
+    "distanceKm": "Distància (km)",
+    "elevationM": "Elevació (m)",
+    "totalTime": "Temps total",
+    "peaksConquered": "Cims conquerits",
+    "routesCompleted": "Rutes completades",
+    "movingTime": "Temps en moviment",
+    "viewStatsTitle": "Veure estadístiques de {userName}",
+    "viewStatsSubtitle": "Gràfics interactius i mètriques",
+    "requestPending": "Sol·licitud pendent"
+  },
+  "help": {
+    "subtitle": "Aprèn a treure el màxim profit de Summits i descobreix totes les seves funcions",
+    "faq": {
+      "installApp": {
+        "question": "Com puc instal·lar l'aplicació?",
+        "answer": "Per instal·lar l'aplicació de Summits, depèn del teu sistema operatiu (iOS o Android) o de la versió del navegador que utilitzis.\n\nA continuació trobaràs el botó d'instal·lació i els passos segons el teu dispositiu (com fem a la pantalla d'inici, però amb un disseny més senzill)"
+      },
+      "newPeaks": {
+        "question": "No m'apareixen els cims de rutes noves",
+        "answer": "Si no t'apareixen els cims més recents de les teves rutes, prova d'utilitzar el botó a la pantalla d'inici (a dalt a la dreta) que diu \"Carregar més cims\".\n\nSi això no funciona o hi ha qualsevol error, pots contactar amb mi des del teu perfil, a l'apartat \"Contactar amb el desenvolupador\"."
+      },
+      "incorrectPeaks": {
+        "question": "M'apareix que he fet cims que realment no he fet (o viceversa)",
+        "answer": "Per calcular els teus cims, l'aplicació comprova les coordenades de les teves rutes i determina pels punts per on has passat.\n\nA causa de la baixa precisió de l'altitud, no sempre es pot establir amb exactitud si has fet un cim o simplement hi has passat a prop o per sota. Això pot passar especialment en zones amb molta densitat de cims, com Montserrat, on pot semblar que has fet cims que en realitat no has pujat.\n\nEn el cas contrari —si creus que has fet un cim però no t'apareix—, és possible que el GPS hagi fallat o hagi enregistrat la ruta amb un petit marge d'error. Et recomano visualitzar la teva ruta al mapa i comprovar la línia que ha registrat el GPS.\n\nSi tot i així creus que és un error, pots contactar amb mi des de l'apartat \"Contactar amb el desenvolupador\" del teu perfil."
+      },
+      "missingRoutes": {
+        "question": "No m'apareixen totes les meves rutes o rutes noves que he fet",
+        "answer": "Per evitar analitzar rutes innecessàriament, Summits només analitza rutes de categories concretes relacionades amb activitats de muntanya (senderisme, alpinisme, trail running...). D'aquesta manera, s'evita una gran càrrega de rutes i no s'analitzen aquelles que molt probablement no tinguin cap activitat de muntanya com per exemple: natació, running, bicicleta, gimnàs...\n\nPer assegurar-te que les teves rutes seran analitzades, comprova que tenen un tipus vàlid. Si tens cap problema relacionat amb això, pots contactar amb mi a l'apartat \"Contactar amb el desenvolupador\"."
+      },
+      "historicalData": {
+        "question": "No puc veure les meves dades històriques (cims fets en rutes passades)",
+        "answer": "Hi ha alguns problemes amb les dades de retroalimentació. Si us plau, utilitza el formulari de sota per contactar amb el desenvolupador."
+      }
+    },
+    "mapNavigation": {
+      "title": "Navegació del mapa",
+      "pinchZoom": "Pellissen per apropar i allunyar el mapa",
+      "dragPan": "Arrossega per moure't pel mapa",
+      "tapPeak": "Toca els cims per veure detalls",
+      "layers": "Canvia entre diferents capes de mapa"
+    },
+    "userFeatures": {
+      "title": "Funcions d'usuari",
+      "savedPeaks": "Guarda els teus cims preferits",
+      "routes": "Crea i gestiona les teves rutes",
+      "statistics": "Segueix el teu progrés i èxits",
+      "profile": "Gestiona el teu compte i preferències"
+    },
+    "leaderboard": {
+      "title": "Classificació",
+      "ranking": "Competeix amb altres escaladors",
+      "categories": "Veure rànquings per categories",
+      "filters": "Filtra resultats per país, regió...",
+      "achievements": "Desbloqueja èxits i insígnies"
+    },
+    "settings": {
+      "title": "Ajustos i Preferències",
+      "language": "Canviar idioma de l'app",
+      "notifications": "Gestionar notificacions",
+      "privacy": "Controlar privacitat",
+      "data": "Gestionar dades i compte"
+    }
+  },
+  "errors": {
+    "networkError": "Error de xarxa",
+    "serverError": "Error del servidor",
+    "timeoutError": "Temps d'espera esgotat",
+    "unknownError": "Error desconegut"
+  },
+  "search": {
+    "searchPeaks": "Cerca cims",
+    "searching": "Cercant...",
+    "searchForPeaks": "Cerca cims, usuaris, regions...",
+    "searchLabel": "Cerca",
+    "closeSearch": "Tanca cerca",
+    "elevationIcon": "Icòna d'altitud",
+    "peaks": "cims",
+    "noPeaksOrUsersFound": "No s'han trobat cims o usuaris per \"{query}\"",
+    "noPeaksFound": "No s'han trobat cims per \"{query}\"",
+    "searchPeaksAndUsers": "Cerca cims, usuaris, regions...",
+    "discoverPeaksAndUsers": "Descobreix cims increïbles i connecta't amb altres escaladors. Escriu un nom de muntanya, regió, país o nom d'usuari per començar.",
+    "discoverPeaks": "Descobreix cims increïbles d'arreu del món. Escriu un nom de muntanya, regió o país per començar.",
+    "recentSearches": "Cerques recents",
+    "clearRecentSearches": "Neteja cerques recents",
+    "clearSearch": "Netejar cerca"
+  },
+  "peaksList": {
+    "yourPeaks": "Els teus cims",
+    "noPeaksMatchingSearch": "No s'han trobat cims coincidents",
+    "noPeaksInRoutes": "No s'han trobat cims a les teves rutes",
+    "loadingPeaksData": "Carregant dades de cims...",
+    "loadingPeaksMetadata": "Carregant metadades...",
+    "noPeaksDataAvailable": "No hi ha dades de cims disponibles"
+  },
+  "gallery": {
+    "media": "Multimèdia",
+    "noMedia": "No hi ha multimèdia",
+    "videoError": "Error de vídeo",
+    "photos": "Fotos",
+    "videos": "Vídeos",
+    "video": "Vídeo",
+    "photo": "Foto",
+    "openVideoMessage": "Obrir vídeo",
+    "openVideo": "Obrir",
+    "watchVideo": "Veure vídeo",
+    "viewOnPexels": "Veure a Pexels",
+    "addImage": "Afegir imatge",
+    "addImageSuccess": "La teva imatge ha estat enviada per a revisió. Apareixerà un cop aprovada.",
+    "addImageError": "Error en afegir la imatge",
+    "replaceImage": "Substituir imatge"
+  },
+  "filters": {
+    "filters": "Filtres",
+    "altitude": "Altitud",
+    "content": "Contingut",
+    "shelterType": "Tipus de refugi",
+    "modeAll": "Tots",
+    "modePeaks": "Cims",
+    "modeShelters": "Refugis",
+    "all": "Tots",
+    "location": "Ubicació",
+    "clear": "Netejar filtres",
+    "showFilters": "Mostrar filtres",
+    "hideFilters": "Amagar filtres",
+    "filterByElevation": "Filtrar per elevació",
+    "nearbyPeaks": "Cims propers",
+    "currentFilter": "Filtre actual",
+    "choosePeakList": "Tria Repte",
+    "chooseListOfSummits": "Tria un repte",
+    "yourPeaks": "Els teus cims"
+  },
+  "leaderboard": {
+    "clubsTab": "Clubs",
+    "browseClubs": "Explorar clubs",
+    "totalClubs": "Clubs",
+    "totalCountries": "Països",
+    "exploreClubs": "Explorar Clubs",
+    "clubsFilterPrefix": "Els clubs amb...",
+    "club": "Club",
+    "errorLoadingClubs": "Error en carregar la classificació de clubs.",
+    "noClubsFound": "No s'han trobat clubs en aquesta categoria.",
+    "clubsFilters": {
+      "most_users": "més membres",
+      "most_peaks": "més cims",
+      "most_distance": "més distància",
+      "most_elevation": "més desnivell positiu",
+      "most_time": "més temps",
+      "most_active_last_30d": "més actius en 30d",
+      "newest": "més nous"
+    },
+    "metrics": {
+      "member_count": "Membres",
+      "distinct_peak_count": "Cims",
+      "total_distance_km": "Distància",
+      "total_elevation_gain": "Desnivell positiu",
+      "total_moving_time": "Temps"
+    },
+    "clubsCategories": {
+      "mostPeaks": "Més cims",
+      "mostDistance": "Més distància",
+      "mostElevation": "Més desnivell positiu",
+      "mostTime": "Més temps",
+      "mostUsers": "Més membres"
+    },
+    "exploreChallenges": "Explora els reptes",
+    "noFollowing": "Encara no segueixes a ningú.",
+    "title": "Reptes",
+    "peaksTab": "Cims",
+    "usersTab": "Usuaris",
+    "listsTab": "Reptes",
+    "worldChallengeTab": "Repte Mundial",
+    "userChallengesTab": "Reptes d'Usuaris",
+    "worldTab": "Món",
+    "forYouTab": "Per a tu",
+    "totalWorldPeaks": "Cims totals del món",
+    "communityCompleted": "Completats per la comunitat",
+    "youCompleted": "Completats per tu",
+    "shortTotal": "Total",
+    "shortCommunity": "Comunitat",
+    "shortMe": "Tu",
+    "shortExpand": "Expandir",
+    "shortMinimize": "Tancar",
+    "sortByHighest": "Cims més alts",
+    "sortByContributors": "Majors contribuïdors",
+    "expandMap": "Expandir mapa",
+    "seeMoreAboutList": "Veure més sobre aquest repte",
+    "rank": "#",
+    "sortBy": "Ordenar per",
+    "activity": "Activitat",
+    "allActivities": "Totes les activitats",
+    "distance": "Distància",
+    "elevation": "Elevació",
+    "routes": "Rutes",
+    "peaks": "Cims",
+    "peak": "Cim",
+    "time": "Temps",
+    "climbedBy": "Escalada per",
+    "seeAll": "Veure tot",
+    "loadMorePeaks": "Carregar més cims",
+    "loadMoreUsers": "Carregar més usuaris",
+    "loading": "Carregant...",
+    "distanceChampion": "Campió de distància",
+    "elevationMaster": "Mestre de desnivell",
+    "routeExplorer": "Explorador de rutes",
+    "peakConqueror": "Conqueridor de cims",
+    "enduranceKing": "Rei de la resistència",
+    "topPerformer": "Alt rendiment",
+    "listChampion": "Campió del repte",
+    "peakListParticipant": "Participant del Repte",
+    "badges": {
+      "distanceChampion": "Campió de distància",
+      "elevationMaster": "Mestre de desnivell",
+      "routeExplorer": "Explorador de rutes",
+      "peakConqueror": "Conqueridor de cims",
+      "enduranceKing": "Rei de la resistència",
+      "topPerformer": "Alt rendiment"
+    },
+    "filters": {
+      "sortBy": "Ordenar per",
+      "activity": "Activitat"
+    },
+    "completed": "Completat",
+    "progress": "Progrés",
+    "hours": "Hores",
+    "selectList": "Selecciona Repte:",
+    "participants": "participants",
+    "peakLists": "Reptes",
+    "peakListsDescription": "Competeix en diversos reptes",
+    "errorLoadingLists": "Error en carregar reptes",
+    "noParticipants": "No hi ha participants en aquest repte encara. Sigues el primer a unir-te!",
+    "topPerformers": "Millors rendiments",
+    "allRankings": "Tots els rànquings",
+    "noListSelected": "Selecciona un repte per veure les classificacions",
+    "noMorePeaks": "No hi ha més cims per carregar",
+    "noUsersFound": "No s'han trobat usuaris",
+    "searchLocationPlaceholder": "Cerca país o regió",
+    "noLocationsFound": "No s'han trobat països o regions per a \"{query}\"",
+    "locationSearchLabel": "Cerca ubicació",
+    "total": "Total",
+    "user": "Usuari",
+    "peakList": "Repte",
+    "tryAgain": "Tornar a intentar",
+    "elevationGain": "Desn. Pos.",
+    "climbers": "Escaladors",
+    "topClimber": "Millor escalador",
+    "unknown": "Desconegut",
+    "notAvailable": "-",
+    "more": "més",
+    "location": "Ubicació",
+    "uniqueClimbers": "Escaladors únics",
+    "description": "Un repte comunitari que et permet veure quants cims s'han completat a tot el món, al teu país o a la teva regió, i fer un seguiment de les teves pròpies aportacions.",
+    "errorLoadingUsers": "Error en carregar usuaris",
+    "onlyMyPeaks": "Només els meus cims",
+    "community": "Comunitat",
+    "you": "Tu",
+    "inPastYear": "en {year} ",
+    "inYear": "en {year}"
+  },
+  "landing": {
+    "subtitle": "Visualitza els teus cims, explora els de la comunitat i descobreix-ne de nous!",
+    "description": "Des de l'Everest fins al Mont Blanc, explora algunes de les muntanyes més impressionants del món. Uneix-te a milers d'escaladors que abracen el repte i l'aventura de cada ascens — perquè allò que fem a la vida ressona en l'eternitat.",
+    "loginPrompt": "Vols portar el teu progrés més lluny?",
+    "wikilocText": "Registra't amb el teu compte de Wikiloc, Strava, Garmin o Suunto per poder veure quins cims has pujat en totes les teves rutes!",
+    "startExploring": "Explora",
+    "forFullExperience": "Per a la millor experiència:",
+    "home": "Inici",
+    "explore": "Descobrir",
+    "map": "Mapa",
+    "leaderboards": "Reptes",
+    "signIn": "Inicia sessió",
+    "navIntro": "Usa aquests botons per explorar!",
+    "desktopWarning": {
+      "title": "Summits funciona millor al mòbil",
+      "subtitle": "Per a l'experiència completa, descarrega la nostra app mòbil."
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "Els teus rècords",
+    "personalClimbingAchievements": "Assoliments personals d'escalada",
+    "seeAll": "Veure tot",
+    "highestPeak": "Pic més alt",
+    "ascent": "Ascensió",
+    "ascents": "Ascensions",
+    "otherAchievements": "Altres fites",
+    "viewPeak": "Veure pic",
+    "emptyTitle": "Comença el teu viatge",
+    "emptySubtitle": "Registra la teva primera ascensió per veure els teus rècords personals aquí"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "Les teves rutes més exigents",
+    "mostDemandingChallenges": "Reptes més exigents",
+    "seeAll": "Veure tot",
+    "hardestRoute": "Més extrema",
+    "elevationGain": "Desn.",
+    "time": "Temps",
+    "movingTime": "Temps de moviment",
+    "distance": "Distància",
+    "emptyTitle": "Comença el teu viatge",
+    "emptySubtitle": "Completa la teva primera ruta per veure els teus reptes més exigents aquí"
+  },
+  "recentPeaks": {
+    "title": "Cims recents",
+    "subtitle": "Últimes conquestes de cims",
+    "filter": {
+      "community": "Comunitat",
+      "following": "Seguint",
+      "user": "Tu"
+    }
+  },
+  "recentRoutes": {
+    "title": "Rutes recents",
+    "subtitle": "Últimes rutes completades",
+    "elevationGain": "Desnivell",
+    "time": "Temps",
+    "distance": "Distància",
+    "peaks": "Cims",
+    "filter": {
+      "community": "Comunitat",
+      "following": "Seguint",
+      "user": "Tu"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "Les estadístiques estan ocultes per als usuaris bloquejats.",
+    "reportContent": "Reportar Contingut",
+    "reportUser": "Reportar Usuari",
+    "blockUser": "Bloquejar Usuari",
+    "unblockUser": "Desbloquejar Usuari",
+    "userBlocked": "Usuari Bloquejat",
+    "contentReported": "Contingut Reportat",
+    "userReported": "Usuari Reportat",
+    "actionCompleted": "Acció Completada",
+    "userBlockedMessage": "Has bloquejat a {userName}. El seu contingut s'ocultarà.",
+    "contentReportedMessage": "Gràcies pel teu report. El revisarem aviat.",
+    "userReportedMessage": "Gràcies per reportar aquest usuari. El revisarem aviat.",
+    "actionCompletedMessage": "Acció completada amb èxit.",
+    "unblockInfo": "Pots desbloquejar aquest usuari en qualsevol moment.",
+    "blockInfo": "Bloquejar un usuari ocultarà tot el seu contingut per a tu.",
+    "blockedUser": "Usuari Bloquejat",
+    "blockedRoute": "Ruta Bloquejada",
+    "blockedProfile": "Usuari Bloquejat",
+    "blockedProfileMessage": "Has bloquejat aquest usuari. El seu contingut està ocult per a tu."
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "Últimes Rutes i Cims del Món",
+      "subtitle": "Visualitza les últimes rutes i cims completats per membres de la comunitat, els teus amics o tu mateix"
+    },
+    "challenges": {
+      "title": "Reptes principals",
+      "subtitle": "Mira i completa els reptes més grans del món",
+      "allPeaksDescriptionLoggedIn": "Explora tots els cims escalats per la comunitat i fes seguiment de la teva contribució!",
+      "allPeaksDescriptionGuest": "Explora tots els cims escalats per la comunitat. Registra't per fer seguiment de la teva contribució!",
+      "statTotal": "Total",
+      "statCompleted": "Escalats",
+      "statByMe": "Per Tu"
+    },
+    "showMore": "Mostra més",
+    "showLess": "Mostra menys"
+  },
+  "recentCommunityPeaks": {
+    "title": "Cims Recents",
+    "subtitle": "Últims cims conquerits",
+    "elevation": "Elevació",
+    "location": "Ubicació"
+  },
+  "recentCommunityRoutes": {
+    "title": "Rutes Recents",
+    "subtitle": "Últimes rutes completades",
+    "elevationGain": "Desnivell",
+    "time": "Temps",
+    "distance": "Distància",
+    "peaks": "Cims"
+  },
+  "weather": {
+    "title": "Temps",
+    "weatherDataUnavailable": "Dades del temps no disponibles",
+    "feelsLike": "Sensació tèrmica",
+    "temperature": "Temperatura",
+    "wind": "Vent",
+    "precipitation": "Precipitació",
+    "snow": "Neu",
+    "uvIndex": "Índex UV",
+    "sunrise": "Sortida del sol",
+    "sunset": "Posta del sol",
+    "hourlyForecast": "Pronòstic per hores",
+    "closeHourlyForecast": "Tancar pronòstic per hores",
+    "showHourlyForecastForToday": "Mostrar pronòstic per hores per avui",
+    "showHourlyForecastFor": "Mostrar pronòstic per hores per {date}",
+    "kmh": "km/h",
+    "mm": "mm",
+    "cm": "cm",
+    "hours": "h"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "Llocs d'interès",
+    "noDataForPeak": "No hi ha dades d'infraestructura",
+    "noNearbyWithin5km": "No hi ha infraestructura propera (5km)",
+    "allInfrastructure": "Tota la infraestructura",
+    "location": "Ubicació",
+    "details": "Detalls",
+    "visitWebsite": "Visita el lloc web",
+    "kmFromPeak": "km des del cim",
+    "openMaps": "Obre en Maps",
+    "viewInMaps": "Veure en Maps",
+    "category": {
+      "hut": "Refugi de muntanya",
+      "shelter": "Refugi",
+      "campsite": "Càmping",
+      "naturalFeature": "Element natural",
+      "waterSource": "Font d'aigua",
+      "other": "Altres"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "Cims propers",
+    "noData": "No s'han trobat cims propers"
+  },
+  "userPeaks": {
+    "title": "Els teus cims",
+    "userTitle": "Cims de {userName}",
+    "description": "La teva col·lecció personal de {count} cims completats. Cada cim representa un viatge, un repte superat i un record que durarà per sempre.",
+    "userDescription": "La col·lecció personal de {userName} de {count} cims completats. Cada cim representa un viatge, un repte superat i un record que durarà per sempre.",
+    "noPeaks": "Encara no has completat cap cim. Comença la teva aventura!",
+    "loading": "Carregant els teus cims...",
+    "error": "Error al carregar els teus cims",
+    "addPeaks": "Afegir Cims",
+    "timeline": "Cronologia",
+    "openPeak": "Obrir cim",
+    "summary": {
+      "baseText": "Has completat",
+      "userBaseText": "{userName} ha completat",
+      "timeSingular": "vegada",
+      "timePlural": "vegades",
+      "in": "en",
+      "on": "el",
+      "and": "i",
+      "singleRoute": "Has completat {peakName} {countText} a {routeName} el {date}",
+      "twoRoutes": "Has completat {peakName} {countText} a {routeNames} a {dates}",
+      "multipleRoutes": "Has completat {peakName} {countText} a {routeNames} a {dates}",
+      "oneRoute": "1 ruta",
+      "multipleRoutesCount": "{count} rutes",
+      "seeMore": "Veure més",
+      "seeLess": "Veure menys"
+    },
+    "grid": "Quadrícula",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avançats",
+    "searchPeaks": "Cercar cims",
+    "searchPlaceholder": "Cercar per nom, país, regió...",
+    "dateRange": "Rang de dates",
+    "startDate": "Data d'inici",
+    "endDate": "Data de fi",
+    "elevationRange": "Rang d'elevació",
+    "country": "País",
+    "region": "Regió",
+    "allCountries": "Tots els països",
+    "allRegions": "Totes les regions",
+    "clearAll": "Esborrar tot",
+    "applyFilters": "Aplicar filtres",
+    "noResults": "No s'han trobat cims que coincideixin amb els teus filtres.",
+    "peaks": "cims",
+    "showMore": "Mostrar {count} més",
+    "showLess": "Mostrar menys",
+    "wrongPeak": "Equivocat?",
+    "deleteConfirmation": {
+      "title": "Eliminar Cim",
+      "message": "Vols eliminar {peakName}? Apareixerà com si no l'haguessis pujat mai",
+      "confirm": "Eliminar",
+      "cancel": "Cancel·lar"
+    },
+    "yourAscensions": "Les teves ascensions",
+    "peakDetails": "Detalls del cim",
+    "peakInfo": {
+      "title": "Info del cim",
+      "loading": "Carregant info del cim...",
+      "error": "Error en carregar la info del cim",
+      "ascensions": "Ascensions",
+      "unlinked": "Sense vincular",
+      "youAscended": "Sense info.",
+      "unknownRoute": "Ruta desconeguda",
+      "unlinkedPrompt": "Tens {count} ascensió(ns) sense vincular. Vincula-les a una ruta o data:",
+      "linkToRoute": "Ruta",
+      "selectRoute": "Selecciona una ruta...",
+      "linkToDate": "Data",
+      "link": "Vincular",
+      "editLink": "Editar vincle",
+      "moving": "en moviment",
+      "deleteAscension": "Eliminar ascensió",
+      "linkAscension": "Vincular ascensió",
+      "deletePeak": "Eliminar cim",
+      "confirmDeletePeak": "Eliminar {peakName}? Això eliminarà totes les ascensions.",
+      "confirmDeleteAscension": "Estàs segur que vols eliminar aquesta ascensió?",
+      "deleting": "Eliminant...",
+      "yesDelete": "Sí, eliminar",
+      "cancel": "Cancel·lar",
+      "close": "Tancar",
+      "noAscensions": "No hi ha ascensions registrades"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "Cims desats",
+    "description": "La teva col·lecció de {count} cims desats. Fes un seguiment dels cims que vols escalar o tornar a visitar.",
+    "noPeaks": "Encara no has guardat cap cim. Comença a explorar!",
+    "loading": "Carregant cims guardats...",
+    "error": "Error al carregar cims guardats",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avançats",
+    "searchPlaceholder": "Cercar per nom, país, regió...",
+    "dateRange": "Rang de dates",
+    "startDate": "Data inici",
+    "endDate": "Data fi",
+    "elevationRange": "Rang d'elevació",
+    "country": "País",
+    "region": "Regió",
+    "allCountries": "Tots els països",
+    "allRegions": "Totes les regions",
+    "clearAll": "Esborrar tot",
+    "applyFilters": "Aplicar filtres",
+    "noResults": "No s'han trobat cims desats que coincideixin amb els teus filtres.",
+    "sorting": {
+      "savedDate": "Data de desat"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Més recents primer",
+      "savedDateOldest": "Més antics primer"
+    }
+  },
+  "userSavedShelters": {
+    "title": "Refugis desats",
+    "totalLabel": "Total de refugis",
+    "description": "La teva col·lecció de {count} refugis desats. Fes un seguiment dels refugis que vols visitar.",
+    "noShelters": "Encara no has desat cap refugi. Comença a explorar!",
+    "loading": "S'estan carregant els teus refugis desats...",
+    "error": "No s'han pogut carregar els teus refugis desats",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avançats",
+    "searchPlaceholder": "Cerca per nom, país, regió...",
+    "dateRange": "Interval de dates",
+    "startDate": "Data d'inici",
+    "endDate": "Data de finalització",
+    "elevationRange": "Interval d'altitud",
+    "country": "País",
+    "region": "Regió",
+    "allCountries": "Tots els països",
+    "allRegions": "Totes les regions",
+    "clearAll": "Esborra-ho tot",
+    "applyFilters": "Aplica filtres",
+    "noResults": "No s'han trobat refugis desats que coincideixin amb els teus filtres.",
+    "typeFilter": "Tipus de refugi",
+    "typeOptions": {
+      "all": "Tots els tipus"
+    },
+    "savedOn": "Desat el",
+    "unsave": "Elimina el refugi",
+    "sorting": {
+      "savedDate": "Data de desament"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Més recents primer",
+      "savedDateOldest": "Més antics primer"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "Encara no has completat cap cim d'aquesta llista. Comença la teva aventura!",
+    "loading": "Carregant...",
+    "noSearchResults": "No s'han trobat cims per \"{query}\". Prova amb un altre terme de cerca.",
+    "search": {
+      "placeholder": "Cercar cims per nom, regió o país..."
+    },
+    "filters": {
+      "label": "Filtrar:",
+      "all": "Tots",
+      "completed": "Completats",
+      "missing": "Faltants"
+    },
+    "sorting": {
+      "label": "Ordenar:",
+      "name": "Nom",
+      "elevation": "Altitud",
+      "date": "Data",
+      "ascents": "Ascensions"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Z",
+      "nameDesc": "Z → A",
+      "elevationAsc": "Baixa → Alta",
+      "elevationDesc": "Alta → Baixa",
+      "dateNewest": "Més recents",
+      "dateOldest": "Més antics",
+      "ascentsMost": "Més pujat",
+      "ascentsLeast": "Menys pujat"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "Eliminar ruta",
+    "deleteConfirmTitle": "Eliminar Ruta?",
+    "deleteConfirmMessage": "Estàs segur que vols eliminar aquesta ruta? Aquesta acció és permanent i reduirà el teu nombre de cims fets.",
+    "deleteSuccess": "Ruta eliminada correctament",
+    "deleteError": "No s'ha pogut eliminar la ruta. Si us plau, torna-ho a intentar.",
+    "unnamedRoute": "Ruta sense nom",
+    "metrics": {
+      "distance": "Distància",
+      "elevationGain": "Desnivell",
+      "time": "Temps"
+    },
+    "title": "Les teves rutes",
+    "userTitle": "Rutes de {userName}",
+    "description": "Has completat {totalRoutes} rutes amb {totalPeaks} cims totals escalats.",
+    "userDescription": "{userName} ha completat {totalRoutes} rutes amb {totalPeaks} cims totals escalats.",
+    "routes": "Rutes",
+    "addRoute": "Afegeix ruta",
+    "addRouteTitle": "Afegeix una ruta GPX",
+    "addRouteNameLabel": "Nom de la ruta",
+    "addRouteNamePlaceholder": "Introdueix un nom de ruta",
+    "addRouteFileLabel": "Fitxer GPX",
+    "addRouteFilePlaceholder": "Selecciona un fitxer GPX",
+    "addRouteSubmit": "Afegeix ruta",
+    "addRouteSubmitting": "Afegint ruta...",
+    "addRouteErrors": {
+      "name": "Introdueix un nom de ruta.",
+      "file": "Selecciona un fitxer GPX.",
+      "submit": "No s'ha pogut afegir la ruta. Torna-ho a provar."
+    },
+    "searchPlaceholder": "Cercar rutes...",
+    "filters": "Filtres",
+    "advancedFilters": "Filtres avançats",
+    "sortBy": "Ordenar per",
+    "date": "Data",
+    "peaks": "Cims",
+    "sortOptions": {
+      "dateNewest": "Data (Més recents)",
+      "dateOldest": "Data (Més antics)",
+      "peaksMost": "Més cims",
+      "peaksLeast": "Menys cims"
+    },
+    "loadingRoutes": "Carregant rutes...",
+    "loadingMore": "Carregant més rutes...",
+    "loadingCountries": "Carregant països...",
+    "noResults": "No s'han trobat rutes que coincideixin amb els teus criteris.",
+    "endMessage": "Has arribat al final de les teves rutes",
+    "paginationError": "Error en carregar més rutes",
+    "tryAgain": "Tornar a intentar",
+    "clearAll": "Esborrar tot",
+    "applyFilters": "Aplicar filtres",
+    "dateRange": "Rang de dates",
+    "startDate": "Data d'inici",
+    "endDate": "Data de fi",
+    "country": "País",
+    "region": "Regió",
+    "allCountries": "Tots els països",
+    "allRegions": "Totes les regions",
+    "peaksCount": "cims",
+    "noPeaksOnRoute": "No s'han fet cims en aquesta ruta",
+    "seeOnMap": "Veure mapa",
+    "ascent": "Ascensió",
+    "ascents": "Ascensions",
+    "peaksInRoute": "Cims en aquesta ruta"
+  },
+  "addManualPeaks": {
+    "title": "Afegir Cims Manualment",
+    "subtitle": "Descobreix i afegeix cims al teu perfil. Cerca, filtra, selecciona múltiples cims i associa'ls amb les teves rutes.",
+    "listView": "Llista",
+    "mapView": "Mapa",
+    "filters": "Filtres",
+    "peakName": "Nom del cim",
+    "searchPlaceholder": "Cercar cims (mín 2 caràcters)...",
+    "elevation": "Elevació",
+    "minElevation": "Elevació mín (m)",
+    "maxElevation": "Elevació màx (m)",
+    "country": "País",
+    "allCountries": "Tots els països",
+    "region": "Regió",
+    "allRegions": "Totes les regions",
+    "clearFilters": "Esborrar filtres",
+    "loading": "Carregant cims...",
+    "loadingMap": "Carregant mapa...",
+    "noPeaks": "No s'han trobat cims. Prova ajustant els filtres.",
+    "mapPlaceholder": "El mapa apareixerà aquí. Selecciona cims per veure'ls al mapa.",
+    "associatedRoute": "Associat amb la ruta",
+    "selected": "seleccionat",
+    "selectedCount_one": "{{count}} cim seleccionat",
+    "selectedCount_other": "{{count}} cims seleccionats",
+    "submit_one": "Afegir {{count}} cim",
+    "submit_other": "Afegir {{count}} cims",
+    "submitting": "Afegint cims...",
+    "noSelection": "Si us plau, selecciona almenys un cim.",
+    "fetchError": "Error en carregar cims. Si us plau, torna-ho a intentar.",
+    "submitError": "Error en afegir cims. Si us plau, torna-ho a intentar.",
+    "addSuccess_one": "S'ha afegit {{count}} cim correctament!",
+    "addSuccess_other": "S'han afegit {{count}} cims correctament!",
+    "routeExistence": {
+      "question": "Aquest cim pertany a una ruta existent?",
+      "subtitle": "Selecciona una opció per continuar",
+      "hasRoute": "Sí, seleccionar ruta",
+      "noRoute": "No, afegir com a independent",
+      "addWithDate": "Afegir amb data"
+    },
+    "selectRoute": "Selecciona una ruta per a {peakName}",
+    "routeAssociation": {
+      "title": "Confirmar Associació",
+      "message": "Vols associar {peakName} amb la ruta {routeName}?",
+      "confirm": "Confirmar",
+      "cancel": "Cancel·lar"
+    },
+    "submitOptions": {
+      "title": "Revisa els teus cims",
+      "date": "Data",
+      "routeHint": "associar una ruta",
+      "dateHint": "establir una data"
+    }
+  },
+  "userStats": {
+    "title": "Estadístiques",
+    "activityType": "Tipus d'activitat",
+    "totalPeaks": "Total de cims",
+    "totalRoutes": "Total de rutes",
+    "peakLists": {
+      "title": "Progrés de reptes",
+      "completedDescription": "Has completat {completed} de {total} cims."
+    },
+    "statistics": "Estadístiques",
+    "globalStats": "Estadístiques globals",
+    "byActivity": "Per activitat",
+    "graph": "Gràfic de progrés al llarg del temps",
+    "openGraph": "Fes clic per veure el gràfic detallat",
+    "viewInCharts": "Veure en gràfiques",
+    "progressChart": "Gràfic de progrés",
+    "rotate": "Gira el dispositiu per a millor vista",
+    "rank": {
+      "yourRank": "La teva posició",
+      "rankDescription": "Ets l'usuari {rank} de {totalUsers} usuaris amb més cims totals",
+      "noRank": "Sense posició"
+    },
+    "moreInformation": "Més informació",
+    "peakListsDescription": "Fes clic a qualsevol dels reptes per accedir als seus detalls",
+    "statisticsDescription": "Visualitza les teves estadístiques",
+    "openGraphDescription": "Obre per explorar el gràfic interactiu",
+    "metrics": {
+      "distance": "Distància",
+      "elevationGain": "Desnivell positiu",
+      "time": "Temps",
+      "totalTime": "Temps total",
+      "movingTime": "Temps en mov.",
+      "peaks": "Cims",
+      "routes": "Rutes"
+    },
+    "timeAggregation": {
+      "daily": "Dia de ruta",
+      "weekly": "Setmanal",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "custom": "Rang personalitzat"
+    },
+    "controls": {
+      "groupBy": "Agrupar per",
+      "activityType": "Tipus d'activitat",
+      "startDate": "Data d'inici",
+      "endDate": "Data de fi",
+      "apply": "Aplicar"
+    },
+    "chart": {
+      "noDataAvailable": "No hi ha dades disponibles per a aquesta activitat"
+    },
+    "rotatePhone": "Si us plau, gira el telèfon a horitzontal per veure el gràfic",
+    "activityFilter": {
+      "all": "Totes les activitats",
+      "unknown": "Desconegut"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "Afegir com a ascendit",
+    "title": "Comunitat",
+    "completedBy": "Ascendit per",
+    "totalCompletions": "Ascensions totals",
+    "uniqueUsers": "Usuaris únics",
+    "timeSingle": "vegada",
+    "timePlural": "vegades",
+    "seeMore": "Veure més",
+    "more": "més",
+    "yourProgress": "El teu progrés",
+    "completed": "Ascendit",
+    "notCompleted": "No ascendit",
+    "lastCompleted": "Última completada",
+    "youHaveCompleted": "Has ascendit",
+    "routes": "Rutes",
+    "peaks": "Cims",
+    "filterAll": "Totes",
+    "filterClubRelated": "Relacionat amb el club",
+    "filterMyClubs": "Els meus clubs"
+  },
+  "listOverlay": {
+    "chooseList": "Tria un repte",
+    "completedLabel": "{completed}/{total} completats"
+  },
+  "exploreOverlay": {
+    "title": "Arrossega / llisca cap a l'esquerra",
+    "subtitle": "per descobrir el mapa interactiu"
+  },
+  "og": {
+    "title": "Summits - Segueix els teus cims de muntanya",
+    "description": "Segueix els teus assoliments de cims, comparteix cims amb la comunitat i descobreix cims i rutes d'altres escaladors d'arreu del món."
+  },
+  "routeDetails": {
+    "downloadRoute": "Descarregar ruta",
+    "sendToDevice": "Enviar al dispositiu",
+    "showStats": "Mostrar estadístiques",
+    "hideStats": "Ocultar estadístiques",
+    "shareRoute": "Compartir"
+  },
+  "routeAnimation": {
+    "title": "Crear Animació",
+    "createAnimation": "Crear Animació",
+    "description": "Genera un vídeo cinematogràfic en 3D de la teva ruta. La càmera seguirà el teu recorregut amb una perspectiva dramàtica de persecució.",
+    "hint": "La gravació començarà després que el terreny es carregui completament.",
+    "duration": "Durada del Vídeo",
+    "seconds": "seg",
+    "durationHint": "Més llarg = més lent i cinematogràfic",
+    "elevation": "Desnivell",
+    "elevationGain": "Desnivell positiu",
+    "distance": "Distància",
+    "preparing": "Preparant terreny 3D...",
+    "recording": "Gravant...",
+    "recordingHint": "Si us plau espera mentre es grava l'animació. No canviïs de pestanya.",
+    "complete": "Animació completada! El teu vídeo està llest per descarregar.",
+    "fileSize": "Mida del fitxer",
+    "download": "Descarregar Vídeo",
+    "start": "Iniciar Gravació",
+    "retry": "Reintentar",
+    "error": "S'ha produït un error en crear l'animació.",
+    "errorNoRoute": "No hi ha dades de ruta disponibles per a l'animació.",
+    "errorUnknown": "S'ha produït un error desconegut.",
+    "notSupported": "La gravació de vídeo no està suportada al teu navegador. Si us plau usa Chrome, Firefox o Edge.",
+    "videoDownloaded": "Vídeo descarregat",
+    "videoSavedToGallery": "Vídeo desat a la teva galeria",
+    "speed": "Velocitat",
+    "speedHint": "Usa els botons +/- durant la gravació per ajustar la velocitat: 1x → 3x → 5x → 10x → 0.5x → 1x",
+    "speedDurationHint": "La durada del vídeo depèn de les velocitats que triïs",
+    "save": "Desa a la galeria"
+  },
+  "routeAssociation": {
+    "authRequired": "Inicia sessió per associar aquest cim amb una ruta.",
+    "confirm": "Confirma",
+    "fetchError": "No s'han pogut carregar les teves rutes.",
+    "loading": "Carregant rutes...",
+    "noRoute": "Omet (sense ruta)",
+    "noRoutes": "No s'han trobat rutes",
+    "peaks_one": "{count} cim en aquesta ruta",
+    "peaks_other": "{count} cims en aquesta ruta",
+    "subtitle": "Selecciona una ruta per a {peakName}",
+    "title": "Associar ruta"
+  },
+  "terms": {
+    "title": "Summits – Termes i Condicions (Ús de Dades de Plataformes Externes)",
+    "lastUpdated": "Última actualització: Octubre 2025",
+    "introduction": {
+      "title": "Introducció",
+      "content": "Summits és una plataforma que ajuda a fer seguiment i compartir experiències d'escalada de cims de muntanya. Per proporcionar aquest servei, Summits s'integra amb plataformes de tercers, incloent Garmin Connect, Strava i Wikiloc (col·lectivament, \"Plataformes Externes\") per importar i analitzar les dades de les teves activitats a l'aire lliure. En utilitzar Summits i registrar-te amb els teus comptes de Plataformes Externes, acceptes aquests Termes i Condicions respecte a l'ús de les teves dades."
+    },
+    "dataCollection": {
+      "title": "1. Recopilació i Processament de Dades",
+      "whatData": {
+        "title": "1.1 Quines Dades Accedim",
+        "intro": "Quan connectes els teus comptes de Plataformes Externes a Summits, accedim als següents tipus de dades:",
+        "fromWikiloc": "De Wikiloc:",
+        "wikiloc": {
+          "activity": "Dades d'activitats i rutes (fitxers GPX, registres de trajecte)",
+          "timestamps": "Marca temporal i dates de les activitats",
+          "elevation": "Perfils d'elevació i coordenades geogràfiques",
+          "routeNames": "Noms i descripcions de rutes",
+          "activityTypes": "Tipus d'activitats (senderisme, escalada, etc.)",
+          "profile": "Informació de perfil públic"
+        },
+        "fromStrava": "De Strava:",
+        "strava": {
+          "activity": "Dades d'activitats incloent rutes i trajectes",
+          "timestamps": "Marca temporal i durada de les activitats",
+          "elevation": "Mètriques d'elevació guanyada, distància i durada",
+          "coordinates": "Coordenades geogràfiques i perfils d'elevació",
+          "activityTypes": "Tipus d'activitats i esports",
+          "profile": "Informació bàsica del perfil (nom, nom d'usuari, foto de perfil)"
+        },
+        "fromGarmin": "De Garmin Connect:",
+        "garmin": {
+          "activity": "Registres d'activitats dels dispositius Garmin",
+          "gps": "Dades de seguiment GPS i rutes",
+          "elevation": "Dades d'elevació, distància i temps",
+          "summaries": "Resums i estadístiques d'activitats",
+          "location": "Dades de localització geogràfica",
+          "profile": "Informació bàsica del perfil (nom, nom d'usuari, foto de perfil)"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 Com Utilitzem les Teves Dades",
+        "intro": "Utilitzem dades de Plataformes Externes per:",
+        "identifyPeaks": "Identificar quins cims de muntanya has escalat",
+        "trackProgress": "Fer seguiment del teu progrés muntanyenc",
+        "displayHistory": "Mostrar el teu historial d'escalades en mapes interactius",
+        "calculateStats": "Calcular el total de cims que has escalat i altres estadístiques",
+        "enableSharing": "Permetre compartir assoliments amb altres usuaris (subjecte als ajustos de privacitat)",
+        "leaderboards": "Incloure les teves estadístiques en classificacions comunitàries",
+        "analyzeRoutes": "Analitzar i emmagatzemar les teves rutes amb cims identificats"
+      }
+    },
+    "thirdParty": {
+      "title": "2. Termes i Condicions de Plataformes de Tercers",
+      "compliance": {
+        "title": "2.1 Compliment de les Polítiques de Plataformes Externes",
+        "intro": "En connectar els teus comptes de Plataformes Externes a Summits, reconeixes que:",
+        "readAgree": "Has llegit i acceptes complir amb els Termes i Condicions de cada plataforma",
+        "apiTerms": "Accedim a les teves dades només segons els permisos que atorgues i els termes de l'API de cada plataforma",
+        "devPolicies": "Complim amb les polítiques de desenvolupadors i privacitat de Garmin, Strava i Wikiloc",
+        "noCredentials": "No compartim les teves credencials d'inici de sessió",
+        "secureTokens": "Emmagatzemem de forma segura els tokens d'accés i els utilitzem només per importar dades d'activitats"
+      },
+      "scope": {
+        "title": "2.2 Abast de l'Autorització",
+        "intro": "En autoritzar Summits, concedes permís per:",
+        "readStore": "Llegir, emmagatzemar i processar les teves dades d'activitat",
+        "analyzeTransform": "Analitzar i transformar les teves dades per identificar cims",
+        "notDo": {
+          "intro": "No:",
+          "modify": "Modifiquem, eliminem o publiquem activitats en el teu nom",
+          "share": "Compartim les teves dades amb anunciants o tercers (excepte tal com es descriu a la Secció 4)",
+          "sell": "Vengem les teves dades personals"
+        }
+      },
+      "revocation": {
+        "title": "2.3 Revocació d'Accés",
+        "content": "Pots revocar l'accés de Summits en qualsevol moment mitjançant els ajustos del teu compte de Plataforma Externa. Un cop revocat, no s'importarà cap dada nova. Les dades importades prèviament romanen llevat que sol·licitis la seva eliminació."
+      }
+    },
+    "dataStorage": {
+      "title": "3. Emmagatzematge i Seguretat de Dades",
+      "retention": {
+        "title": "3.1 Retenció de Dades",
+        "active": "Les dades importades s'emmagatzemen mentre el teu compte de Summits estigui actiu.",
+        "deleted": "Els comptes i dades eliminats s'esborren permanentment dins de 30 dies.",
+        "matching": "La informació d'ajust de cims s'emmagatzema per millorar el rendiment del processament."
+      },
+      "security": {
+        "title": "3.2 Seguretat de Dades",
+        "intro": "Protegim les teves dades amb mesures estàndard de la indústria, incloent:",
+        "encryption": "Xifrat (HTTPS/TLS i en repòs)",
+        "access": "Controls d'accés limitats al personal autoritzat",
+        "infrastructure": "Infraestructura d'emmagatzematge en núvol segura",
+        "updates": "Actualitzacions i parxes de seguretat regulars"
+      },
+      "location": {
+        "title": "3.3 Ubicació de Dades",
+        "content": "Les teves dades s'emmagatzemen en servidors en núvol en regions compatibles amb les lleis de protecció de dades aplicables. En utilitzar Summits, consenteixes aquesta transferència i processament."
+      }
+    },
+    "dataSharing": {
+      "title": "4. Compartició i Divulgació de Dades",
+      "public": {
+        "title": "4.1 Informació Pública",
+        "intro": "Si el teu perfil és públic, altres usuaris poden veure:",
+        "statistics": "Les teves estadístiques de cims i comptadors de completació",
+        "username": "El teu nom d'usuari i foto de perfil",
+        "rankings": "Les teves classificacions en taules de classificació",
+        "profile": "El teu perfil en resultats de cerca i llistats"
+      },
+      "private": {
+        "title": "4.2 Informació Privada",
+        "intro": "El següent sempre roman privat:",
+        "routes": "Trajectes exactes de rutes i coordenades",
+        "elevation": "Perfils d'elevació detallats",
+        "times": "Hores d'inici/fi de les activitats",
+        "email": "Correu electrònic i identificadors personals",
+        "followers": "Llistes de seguidors i usuaris seguits (llevat que siguin públics)"
+      },
+      "thirdParties": {
+        "title": "4.3 Compartició de Dades amb Tercers",
+        "noSell": "No vengem dades personals.",
+        "aggregated": "Podem compartir dades agregades i anonimitzades per a anàlisi o recerca.",
+        "shareWith": "Podem compartir dades només amb:",
+        "serviceProviders": "Proveïdors de serveis que donen suport a les operacions de la plataforma",
+        "authorities": "Autoritats, quan ho requereixi la llei",
+        "safety": "Parts rellevants per assegurar la seguretat dels usuaris"
+      }
+    },
+    "rights": {
+      "title": "5. Els Teus Drets i Controls",
+      "correction": {
+        "title": "5.1 Correcció de Dades",
+        "content": "Pots verificar o informar d'identificacions incorrectes de cims a l'aplicació. Les correccions verificades seran revisades i actualitzades."
+      },
+      "deletion": {
+        "title": "5.2 Eliminació de Compte",
+        "content": "Pots eliminar el teu compte de Summits en qualsevol moment. Totes les dades importades i connexions socials s'eliminaran dins de 30 dies. Eliminar el teu compte de Summits no afecta els teus comptes de Plataformes Externes."
+      },
+      "privacy": {
+        "title": "5.3 Ajustos de Privacitat",
+        "content": "Pots gestionar la visibilitat, opcions de compartició i funcions socials directament als ajustos de privacitat de l'aplicació."
+      }
+    },
+    "accuracy": {
+      "title": "6. Precisió i Limitacions de Dades",
+      "peakIdentification": {
+        "title": "6.1 Identificació de Cims",
+        "algorithmic": "La identificació de cims és algorítmica i pot no ser sempre precisa.",
+        "errors": "Es poden informar errors per millorar la precisió futura."
+      },
+      "routeData": {
+        "title": "6.2 Qualitat de Dades de Rutes",
+        "accuracy": "La precisió depèn de les teves dades GPS de Plataformes Externes.",
+        "incomplete": "Les dades incompletes o faltants poden afectar el processament.",
+        "delays": "Les grans bases de dades poden experimentar retard."
+      },
+      "warranty": {
+        "title": "6.3 Descàrrec de Responsabilitat de Garantia",
+        "intro": "Summits no proporciona garanties respecte a:",
+        "accuracy": "Precisió o completesa de dades de cims o rutes",
+        "reliability": "Fiabilitat de les APIs de Plataformes Externes",
+        "uptime": "Temps d'activitat del servei o accés ininterromput",
+        "disclaimer": "Utilitza Summits sota el teu propi risc."
+      }
+    },
+    "changes": {
+      "title": "7. Canvis en Aquests Termes",
+      "modifications": {
+        "title": "7.1 Modificacions",
+        "content": "Podem modificar aquests Termes i Condicions en qualsevol moment. Les actualitzacions entraran en vigor quan es publiquin a l'aplicació o al nostre lloc web."
+      },
+      "continuedUse": {
+        "title": "7.2 Ús Continuat",
+        "content": "L'ús continuat després de les actualitzacions constitueix acceptació. Si no estàs d'acord, deixa d'utilitzar i elimina el teu compte."
+      }
+    },
+    "termination": {
+      "title": "8. Resolució del Servei",
+      "serviceTermination": {
+        "title": "8.1 Resolució del Servei",
+        "intro": "Podem suspendre o resoldre comptes per:",
+        "violation": "Violació d'aquests termes o termes de Plataformes Externes",
+        "fraudulent": "Activitat fraudulenta o abusiva",
+        "legal": "Requisits legals o normatius"
+      },
+      "effect": {
+        "title": "8.2 Efecte de la Resolució",
+        "content": "L'accés es revocarà immediatament i les dades s'eliminaran segons la política de retenció."
+      }
+    },
+    "indemnification": {
+      "title": "9. Indemnització",
+      "intro": "Acceptes indemnitzar i mantenir Summits lliure de responsabilitat per qualsevol reclamació o pèrdua que sorgeixi de:",
+      "violations": "Violacions d'aquests Termes",
+      "platformPolicies": "Violacions de les polítiques de Plataformes Externes",
+      "misuse": "Ús indegut o enviaments fraudulents de dades",
+      "disputes": "Disputes amb altres usuaris"
+    },
+    "liability": {
+      "title": "10. Limitació de Responsabilitat",
+      "intro": "En la mesura màxima permesa per llei:",
+      "asIs": "Summits es proporciona \"tal com és\" sense garanties.",
+      "notLiable": "No som responsables de danys indirectes, incidents o conseqüencials.",
+      "platformDowntime": "No som responsables dels temps d'inactivitat de Plataformes Externes o canvis d'API."
+    },
+    "disputes": {
+      "title": "11. Disputes i Llei Aplicable",
+      "governingLaw": {
+        "title": "11.1 Llei Aplicable",
+        "content": "Aquests Termes es regeixen per les lleis de [LA TEVA JURISDICCIÓ], excloent principis de conflicte de lleis."
+      },
+      "resolution": {
+        "title": "11.2 Resolució de Disputes",
+        "negotiation": "Negociació de bona fe",
+        "mediation": "Mediació si la negociació falla",
+        "arbitration": "Arbitratge vinculant per a disputes sense resoldre"
+      },
+      "classAction": {
+        "title": "11.3 Renúncia d'Acció Col·lectiva",
+        "content": "Totes les disputes s'han de resoldre individualment; no es permeten accions col·lectives."
+      }
+    },
+    "contact": {
+      "title": "12. Informació de Contacte",
+      "intro": "Si tens preguntes, contacta'ns:",
+      "email": "Correu electrònic: cesc.riera@summitstracker.com",
+      "website": "Lloc web: summitstracker.com",
+      "support": "Suport: Disponible mitjançant ajuda en l'aplicació i funcions de suport"
+    },
+    "acknowledgment": {
+      "title": "13. Reconeixement",
+      "intro": "En utilitzar Summits i connectar comptes de Garmin, Strava o Wikiloc:",
+      "read": "Has llegit i entens aquests Termes",
+      "consent": "Consenteixes l'ús de dades descrit",
+      "capacity": "Tens la capacitat legal per acceptar",
+      "comply": "Compliràs amb les lleis aplicables",
+      "responsible": "Ets responsable de mantenir la seguretat dels teus comptes",
+      "footer": "En continuar utilitzant Summits, acceptes aquests Termes i Condicions. Si no estàs d'acord, si us plau deixa d'utilitzar i elimina el teu compte."
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacitat",
+    "lastUpdated": "Última actualització: Gener 2025",
+    "introduction": {
+      "title": "1. Introducció",
+      "content": "Summits (\"nosaltres,\" \"nostre\" o \"nos\") es compromet a protegir la vostra privacitat. Aquesta Política de Privacitat explica com recopilem, utilitzem, divulgem i protegeix la vostra informació quan utilitzeu la nostra aplicació mòbil i lloc web (en conjunt, el \"Servei\"). En utilitzar el Servei, consenteix les pràctiques de dades descrites en aquesta política."
+    },
+    "dataController": {
+      "title": "2. Responsable del Tractament de Dades",
+      "content": "El responsable del tractament de les vostres dades personals és:",
+      "email": "Correu electrònic: cesc.riera@summitstracker.com",
+      "website": "Lloc web: summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. Informació que Recopilem",
+      "personalData": {
+        "title": "3.1 Informació Personal",
+        "intro": "Quan creeu un compte, recopilem:",
+        "account": "Informació del compte (adreça de correu electrònic, nom d'usuari, contrasenya)",
+        "profile": "Informació del perfil (nom, foto de perfil, biografia)",
+        "preferences": "Preferències i configuracions de l'aplicació"
+      },
+      "activityData": {
+        "title": "3.2 Dades d'Activitat de Plataformes de Tercers",
+        "intro": "Quan connecteu els vostres comptes de Wikiloc, Strava o Garmin, recopilem:",
+        "fromWikiloc": "De Wikiloc:",
+        "wikiloc": {
+          "activity": "Dades d'activitat (rutes, tracks, coordenades GPS)",
+          "timestamps": "Marcs de temps d'activitat (hora d'inici, hora de finalització, durada)",
+          "elevation": "Dades d'elevació i perfils",
+          "routeNames": "Noms i descripcions de rutes",
+          "activityTypes": "Tipus d'activitat (senderisme, ciclisme, etc.)",
+          "profile": "Informació del perfil públic"
+        },
+        "fromStrava": "De Strava:",
+        "strava": {
+          "activity": "Dades d'activitat (rutes, tracks, coordenades GPS)",
+          "timestamps": "Marcs de temps d'activitat (hora d'inici, hora de finalització, durada)",
+          "elevation": "Dades d'elevació i perfils",
+          "coordinates": "Coordenades GPS i tracks de rutes",
+          "activityTypes": "Tipus d'activitat (cursa, ciclisme, senderisme, etc.)",
+          "profile": "Informació del perfil públic"
+        },
+        "fromGarmin": "De Garmin:",
+        "garmin": {
+          "activity": "Dades d'activitat de Garmin Connect",
+          "gps": "Tracks GPS i coordenades",
+          "elevation": "Dades d'elevació i informació de freqüència cardíaca",
+          "summaries": "Resums i estadístiques d'activitat",
+          "location": "Dades d'ubicació",
+          "profile": "Informació del perfil públic"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 Informació Tècnica",
+        "intro": "Recopilem automàticament:",
+        "device": "Informació del dispositiu (tipus de dispositiu, sistema operatiu, identificadors únics del dispositiu)",
+        "ip": "Adreça IP i dades d'ubicació",
+        "browser": "Tipus i versió del navegador",
+        "logs": "Registres d'ús i dades d'anàlisi"
+      }
+    },
+    "dataUsage": {
+      "title": "4. Com Utilitzem La Vostra Informació",
+      "purposes": {
+        "title": "4.1 Propòsits del Tractament",
+        "intro": "Utilitzem la vostra informació per:",
+        "service": "Proporcionar i mantenir el Servei",
+        "peakIdentification": "Identificar pics que heu completat a partir de les vostres dades d'activitat",
+        "progress": "Rastrejar el vostre progrés i generar estadístiques",
+        "statistics": "Calcular i mostrar les vostres estadístiques personals i assoliments",
+        "community": "Habilitar funcions socials, classificacions i interaccions comunitàries",
+        "communication": "Enviar-vos notificacions, actualitzacions i comunicacions de suport",
+        "improvement": "Millorar, personalitzar i desenvolupar el Servei",
+        "security": "Detectar, prevenir i abordar problemes tècnics i amenaces de seguretat"
+      },
+      "legalBasis": {
+        "title": "4.2 Base Legal per al Tractament",
+        "intro": "Tractem les vostres dades personals basant-nos en:",
+        "consent": "El vostre consentiment quan connecteu comptes de tercers",
+        "contract": "Execució del nostre contracte amb vosaltres per proporcionar el Servei",
+        "legitimate": "Els nostres interessos legítims en operar i millorar el Servei",
+        "legal": "Compliment d'obligacions legals"
+      }
+    },
+    "dataSharing": {
+      "title": "5. Compartir i Divulgació de Dades",
+      "thirdParties": {
+        "title": "5.1 Proveïdors de Serveis de Tercers",
+        "intro": "Podem compartir la vostra informació amb proveïdors de serveis de confiança que ens ajuden en:",
+        "serviceProviders": "Serveis d'allotjament i infraestructura",
+        "analytics": "Anàlisi i monitoratge de rendiment",
+        "cloud": "Emmagatzematge al núvol i processament de dades"
+      },
+      "publicData": {
+        "title": "5.2 Informació Pública",
+        "intro": "La següent informació pot ser visible públicament:",
+        "statistics": "Estadístiques agregades i assoliments",
+        "username": "El vostre nom d'usuari i perfil públic",
+        "rankings": "La vostra posició a les classificacions",
+        "profile": "Informació del perfil públic que trieu compartir"
+      },
+      "legal": {
+        "title": "5.3 Requisits Legals",
+        "content": "Podem divulgar la vostra informació si és requerit per llei, ordre judicial o autoritat governamental, o per protegir els nostres drets, propietat o seguretat, o la dels nostres usuaris."
+      }
+    },
+    "dataStorage": {
+      "title": "6. Emmagatzematge i Seguretat de Dades",
+      "location": {
+        "title": "6.1 Ubicació de les Dades",
+        "content": "Les vostres dades s'emmagatzemen en servidors segurs ubicats a la Unió Europea i Estats Units. En utilitzar el Servei, consenteix la transferència de les vostres dades a aquestes ubicacions."
+      },
+      "retention": {
+        "title": "6.2 Retenció de Dades",
+        "intro": "Retenim les vostres dades:",
+        "active": "Mentre el vostre compte estigui actiu i durant el temps necessari per proporcionar el Servei",
+        "deleted": "Fins a 30 dies després de l'eliminació del compte, després del qual s'elimina permanentment",
+        "legal": "Segons el requerit per les lleis i regulacions aplicables"
+      },
+      "security": {
+        "title": "6.3 Mesures de Seguretat",
+        "intro": "Implementem mesures tècniques i organitzatives apropiades per protegir les vostres dades:",
+        "encryption": "Xifrat de dades en trànsit i en repòs",
+        "access": "Controls d'accés i mecanismes d'autenticació",
+        "infrastructure": "Infraestructura segura i auditories de seguretat regulars",
+        "updates": "Actualitzacions i parxes de seguretat regulars"
+      }
+    },
+    "userRights": {
+      "title": "7. Els Vostres Drets (GDPR/CCPA)",
+      "access": {
+        "title": "7.1 Dret d'Accés",
+        "content": "Teniu dret a sol·licitar accés a les vostres dades personals i rebre una còpia de les dades que tenim sobre vosaltres."
+      },
+      "rectification": {
+        "title": "7.2 Dret de Rectificació",
+        "content": "Podeu sol·licitar la correcció de dades personals inexactes o incompletes."
+      },
+      "erasure": {
+        "title": "7.3 Dret de Supressió",
+        "content": "Podeu sol·licitar l'eliminació de les vostres dades personals. Podeu eliminar el vostre compte en qualsevol moment a través de la configuració de l'aplicació."
+      },
+      "restriction": {
+        "title": "7.4 Dret de Limitació",
+        "content": "Podeu sol·licitar la limitació del tractament de les vostres dades personals en certes circumstàncies."
+      },
+      "portability": {
+        "title": "7.5 Dret a la Portabilitat de Dades",
+        "content": "Podeu sol·licitar una còpia de les vostres dades en un format estructurat i llegible per màquina."
+      },
+      "objection": {
+        "title": "7.6 Dret d'Oposició",
+        "content": "Podeu oposar-vos al tractament de les vostres dades personals basat en interessos legítims."
+      },
+      "withdraw": {
+        "title": "7.7 Dret a Retirar el Consentiment",
+        "content": "Podeu retirar el vostre consentiment en qualsevol moment desconnectant comptes de tercers o eliminant el vostre compte."
+      },
+      "complaint": {
+        "title": "7.8 Dret a Presentar una Queixa",
+        "content": "Teniu dret a presentar una queixa a la vostra autoritat local de protecció de dades si creieu que els vostres drets han estat violats."
+      }
+    },
+    "cookies": {
+      "title": "8. Cookies i Tecnologies de Seguiment",
+      "intro": "Utilitzem cookies i tecnologies de seguiment similars per rastrejar l'activitat al nostre Servei i emmagatzemar certa informació.",
+      "types": {
+        "title": "8.1 Tipus de Cookies",
+        "essential": "Cookies essencials necessàries perquè el Servei funcioni",
+        "analytics": "Cookies d'anàlisi per entendre com els usuaris interactuen amb el Servei",
+        "functional": "Cookies funcionals per recordar les vostres preferències"
+      },
+      "management": {
+        "title": "8.2 Gestió de Cookies",
+        "content": "Podeu controlar les cookies a través de la configuració del vostre navegador. Tanmateix, deshabilitar les cookies pot afectar la funcionalitat del Servei."
+      }
+    },
+    "children": {
+      "title": "9. Privacitat de Menors",
+      "content": "El nostre Servei pot ser utilitzat per nens de totes les edats. Estem compromesos a protegir la privacitat dels nens i tots els usuaris. Implementem salvaguardes apropiades per garantir la seguretat i privacitat dels nens que utilitzen el nostre Servei. Si teniu alguna preocupació sobre l'ús del nostre Servei per part del vostre fill, contacteu-nos."
+    },
+    "international": {
+      "title": "10. Transferències Internacionals de Dades",
+      "content": "La vostra informació pot ser transferida i processada en països diferents al vostre país de residència. Aquests països poden tenir lleis de protecció de dades que difereixen de les del vostre país. Asseguram que s'implementin salvaguardes apropiades per protegir les vostres dades."
+    },
+    "changes": {
+      "title": "11. Canvis a Aquesta Política de Privacitat",
+      "content": "Podem actualitzar aquesta Política de Privacitat de tant en tant. Us notificarem de qualsevol canvi publicant la nova Política de Privacitat en aquesta pàgina i actualitzant la data de \"Última actualització\". Us recomanem revisar aquesta Política de Privacitat periòdicament."
+    },
+    "contact": {
+      "title": "12. Contacteu-nos",
+      "intro": "Si teniu preguntes sobre aquesta Política de Privacitat o voleu exercir els vostres drets, contacteu-nos:",
+      "email": "Correu electrònic: cesc.riera@summitstracker.com",
+      "website": "Lloc web: summitstracker.com",
+      "support": "Suport: Disponible mitjançant ajuda en l'aplicació i funcions de suport"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "Repte de club",
+    "clubChallengeDescription": "Aquest repte està vinculat a un club i només serà visible per als membres del club.",
+    "clubPrivateHelp": "Els reptes de club són sempre públics per als membres del club i no poden ser privats.",
+    "createTitle": "Crear repte",
+    "editTitle": "Editar repte",
+    "name": "Nom del repte",
+    "namePlaceholder": "Introdueix un nom per al teu repte...",
+    "description": "Descripció",
+    "descriptionPlaceholder": "De què tracta aquest repte?",
+    "isPrivate": "Repte privat",
+    "privateHelp": "Els reptes privats només són visibles per a tu.",
+    "challengeConstraints": "Restriccions del repte",
+    "startDate": "Data d'inici",
+    "endDate": "Data de fi",
+    "dateRangeHelp": "Deixa ambdues dates buides per permetre qualsevol data de completat.",
+    "maxDuration": "Durada màxima (hores)",
+    "maxDurationPlaceholder": "p. ex. 24",
+    "maxDurationHelp": "Deixa-ho buit per no tenir límit de temps entre el primer i l'últim cim.",
+    "timeLimit": "Límit de temps",
+    "dateRange": "Vàlid",
+    "starts": "Comença",
+    "ends": "Acaba",
+    "primaryImage": "Imatge de portada",
+    "addImage": "Afegir imatge de portada",
+    "noImage": "Cap imatge proporcionada",
+    "imageUrlPlaceholder": "Engancha una URL d'imatge (p. ex., https://...)",
+    "peaks": "Cims",
+    "addPeaks": "Afegir cims",
+    "selectPeaks": "Seleccionar cims",
+    "selectedPeaks": "Cims seleccionats",
+    "noPeaksSelected": "Encara no s'ha seleccionat cap cim. Busca i selecciona cims per afegir-los a la teva llista.",
+    "saveSuccess": "Repte desat correctament!",
+    "saveError": "Error en desar la llista de cims. Torna-ho a provar.",
+    "loadError": "No s'ha pogut carregar el repte. Torna-ho a provar.",
+    "validation": {
+      "nameRequired": "El nom del repte es obligatori.",
+      "descriptionRequired": "La descripcio es obligatoria.",
+      "imageRequired": "La imatge de portada es obligatoria.",
+      "peaksRequired": "Selecciona almenys un cim.",
+      "startDateInvalid": "Introdueix una data d'inici valida.",
+      "endDateInvalid": "Introdueix una data de fi valida.",
+      "endDateBeforeStart": "La data de fi ha de ser posterior a la data d'inici.",
+      "maxDurationInvalid": "Introdueix una durada maxima valida superior a 0."
+    },
+    "challenges": "Reptes",
+    "available_challenges": "reptes disponibles",
+    "searchPlaceholder": "Cercar per títol o creador",
+    "emptySearchTitle": "No s'han trobat reptes",
+    "emptySearchMessage": "Prova amb un altre títol o nom del creador.",
+    "worldPeaks": "Cims del Món",
+    "worldPeaksDescription": "Explora tots els cims del món",
+    "join": "Unir-se",
+    "leave": "Abandonar",
+    "joined": "Seleccionat",
+    "deleteList": "Eliminar Repte",
+    "deleteSuccess": "Repte eliminat correctament",
+    "deleteError": "Error en eliminar el repte",
+    "deleteConfirmTitle": "Eliminar Repte?",
+    "deleteConfirmMessage": "Estàs segur que vols eliminar aquest repte? Aquesta acció no es pot desfer.",
+    "inviteToChallenge": "Convidar al repte",
+    "inviteHelp": "Cerca usuaris per convidar-los al teu repte."
+  },
+  "forceUpdate": {
+    "title": "Nova versió disponible!",
+    "subtitle": "Si us plau, actualitza a la darrera versió de Summits per continuar utilitzant l'aplicació.",
+    "button": "Actualitzar ara",
+    "version": "Versió",
+    "continue": "Continuar sense actualitzar"
+  },
+  "appInstallBanner": {
+    "title": "Obre l'app nativa",
+    "subtitle": "Installa Summits per tenir una experiencia mobil mes rapida i completa.",
+    "button": "Installa l'app",
+    "dismiss": "Tanca banner d'installacio",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "manualPeaks": {
+    "fetchError": "Error en carregar els cims. Si us plau, torna-ho a intentar."
+  },
+  "clubs": {
+    "availableClubs": "Clubs disponibles",
+    "common": {
+      "creator": "Creador"
+    },
+    "browse": {
+      "title": "Explorar clubs",
+      "subtitle": "Explora comunitats públiques i privades creades entorn al progrés compartit de cims.",
+      "searchPlaceholder": "Cercar clubs",
+      "searchPlaceholderUnified": "Cercar clubs o regions...",
+      "emptyTitle": "Encara no hi ha clubs",
+      "emptyMessage": "Prova una cerca més àmplia o crea un nou club per al teu grup de muntanya.",
+      "emptySearchTitle": "No s'han trobat clubs",
+      "emptySearchMessage": "Prova amb un altre títol o regió."
+    },
+    "details": {
+      "title": "Detalls del club",
+      "statistics": "Estadístiques",
+      "restrictedTitle": "Vista prèvia de club privat",
+      "restrictedMessage": "Només els membres acceptats poden veure la classificació, els membres i l'activitat d'aquest club."
+    },
+    "myClubs": {
+      "title": "Els meus clubs",
+      "subtitle": "Gestiona els clubs que vas crear, als que t'has unit o sol·licitat accés.",
+      "created": "creat",
+      "joined": "unit",
+      "pending": "pendent",
+      "createdSection": "Creats per mi",
+      "createdDescription": "Clubs dels que ets propietari i pots gestionar totalment.",
+      "joinedSection": "Clubs units",
+      "joinedDescription": "Clubs on pots veure el progrés i activitat dels membres.",
+      "pendingSection": "Sol·licituds pendents",
+      "pendingDescription": "Clubs privats esperant l'aprovació del creador.",
+      "emptyTitle": "Encara no pertanys a cap club",
+      "emptyMessage": "Explora clubs per unir-te a un o crea un grup privat per als teus companys de ruta.",
+      "emptySection": "Encara no hi ha clubs en aquesta secció."
+    },
+    "create": {
+      "title": "Crear club",
+      "subtitle": "Configura la identitat del club, la visibilitat i la imatge de portada que veuran els teus membres.",
+      "submit": "Crear club"
+    },
+    "edit": {
+      "title": "Editar club"
+    },
+    "leaderboard": {
+      "subtitle": "Mira quins clubs estan creixent més ràpid i registrant més progrés de cims."
+    },
+    "filters": {
+      "allVisibility": "Tota la visibilitat",
+      "period": "Període",
+      "sortBy": "Ordenar per",
+      "highestClimb": "Cim més alt",
+      "activity": "Activitat",
+      "allCategories": "Totes les categories",
+      "routes": "Rutes",
+      "sort": "Ordena per"
+    },
+    "period": {
+      "thisYear": "Aquest any",
+      "lastYear": "L'any passat",
+      "allTime": "Tot el temps",
+      "custom": "Personalitzat",
+      "dateFrom": "Des de",
+      "dateTo": "Fins a"
+    },
+    "visibility": {
+      "public": "Públic",
+      "private": "Privat"
+    },
+    "sort": {
+      "mostUsers": "Més membres",
+      "mostPeaks": "Més cims",
+      "mostDistance": "Més distància",
+      "mostElevation": "Més desnivell",
+      "mostTime": "Més temps",
+      "newest": "Més nous",
+      "oldest": "Més antics",
+      "recentActivity": "Activitat recent",
+      "joinedAt": "Data d'unió",
+      "name": "Nom",
+      "mostActiveLast30d": "Més actius en 30d"
+    },
+    "metrics": {
+      "members": "Membres",
+      "peaks": "Cims",
+      "distinctPeaks": "Cims",
+      "totalAscents": "Ascensions totals",
+      "highestPeak": "Cim més alt",
+      "recentDistinctPeaks": "Cims recents",
+      "activeMembers30d": "Actius en 30d",
+      "totalRoutes": "Rutes",
+      "distance": "Distància",
+      "totalDistanceKm": "Distància",
+      "totalElevationGain": "Desnivell positiu",
+      "totalTime": "Temps total",
+      "totalMovingTime": "Temps de moviment",
+      "topMember": "Millor membre"
+    },
+    "tabs": {
+      "summary": "Resum",
+      "members": "Membres",
+      "leaderboard": "Classificació",
+      "activity": "Activitat",
+      "requests": "Sol·licituds"
+    },
+    "activity": {
+      "allRoutes": "Totes les rutes",
+      "withPeaks": "Amb cims",
+      "noPeak": "Sense cims",
+      "peaksDone": "Cims fets en aquesta ruta",
+      "xMore": "més",
+      "latestRoutes": "Últimes rutes del club",
+      "empty": "Encara no hi ha activitat."
+    },
+    "challenges": {
+      "title": "Reptes de club",
+      "subtitle": "Els reptes vinculats a aquest club són visibles per als membres.",
+      "membersOnly": "Uneix-te a aquest club per veure i crear reptes de club.",
+      "create": "Crear repte",
+      "empty": "Encara no hi ha reptes de club.",
+      "emptyRestricted": "No hi ha reptes visibles. Uneix-te al club per desbloquejar els reptes de membres.",
+      "itemFallback": "Repte",
+      "total": "total",
+      "completed": "completat",
+      "viewProgress": "Veure el progrés dels reptes del club"
+    },
+    "actions": {
+      "manageMyClubs": "Gestionar els meus clubs",
+      "signInToJoin": "Inicia sessió per unir-te",
+      "joinClub": "Unir-se al club",
+      "requestToJoin": "Sol·licitar unir-se",
+      "requestPending": "Sol·licitud pendent",
+      "leaveClub": "Abandonar club",
+      "editClub": "Editar club",
+      "manageClub": "Gestionar club",
+      "viewClub": "Veure club",
+      "cancelRequest": "Cancel·lar sol·licitud",
+      "loadMore": "Carregar més",
+      "leaveConfirm": "Abandonar aquest club? Sempre pots tornar a unir-te més tard.",
+      "leaveConfirmTitle": "Abandonar Club",
+      "leaveConfirmMessage": "Estàs segur que vols abandonar el club '{name}'? Sempre pots tornar a unir-te més tard.",
+      "joinConfirmTitle": "Unir-se al Club",
+      "joinConfirmMessage": "Vols unir-te al club '{name}'? Podràs veure la seva classificació i activitat.",
+      "removeMember": "Eliminar",
+      "removeMemberConfirm": "Eliminar aquest membre?",
+      "acceptRequest": "Acceptar",
+      "rejectRequest": "Rebutjar",
+      "deleteConfirmTitle": "Eliminar Club?",
+      "deleteConfirmMessage": "Estàs segur que vols eliminar aquest club? Aquesta acció és permanent i no es pot desfer.",
+      "deleteSuccess": "Club eliminat amb èxit",
+      "leave": "Abandonar club",
+      "selectClub": "Selecciona un club"
+    },
+    "badges": {
+      "creator": "Creador",
+      "member": "Membre",
+      "requestPending": "Pendent",
+      "privateClub": "Club privat",
+      "restricted": "Restringit"
+    },
+    "status": {
+      "joined": "Unit",
+      "pending": "Pendent"
+    },
+    "roles": {
+      "creator": "Creador",
+      "member": "Membre"
+    },
+    "members": {
+      "joinedLabel": "Unit",
+      "none": "No s'han trobat membres",
+      "empty": "No s'han trobat membres"
+    },
+    "requests": {
+      "requestedOn": "Sol·licitat",
+      "pending": "Sol·licitud pendent",
+      "none": "No hi ha sol·licituds pendents"
+    },
+    "messages": {
+      "actionFailed": "No s'ha pogut actualitzar aquest club en aquest moment.",
+      "loadFailed": "No s'ha pogut carregar aquest club en aquest moment.",
+      "saveFailed": "No s'ha pogut guardar aquest club.",
+      "deleteFailed": "No s'ha pogut eliminar aquest club.",
+      "imageFailed": "No s'ha pogut llegir aquesta imatge.",
+      "leaveConfirmation": "Segur que vols abandonar aquest club?"
+    },
+    "validation": {
+      "nameRequired": "El nom del club és obligatori",
+      "descriptionRequired": "La descripció del club és obligatòria",
+      "visibilityRequired": "La visibilitat del club és obligatòria",
+      "imageRequired": "Es requereix un logo per al club",
+      "regionRequired": "Es requereix una regió per al club"
+    },
+    "form": {
+      "image": "Logo del club",
+      "changeImage": "Canviar logo",
+      "uploadImage": "Pujar logo",
+      "name": "Nom del club",
+      "namePlaceholder": "Finalitzadors dels Pirineus",
+      "description": "Descripció",
+      "descriptionPlaceholder": "Descriu el teu club breument",
+      "visibility": "Visibilitat",
+      "region": "Regió",
+      "regionPlaceholder": "Cerca un país o regió...",
+      "regionSearching": "Cercant...",
+      "regionNoResults": "No s'han trobat regions",
+      "regionClear": "Eliminar regió",
+      "previewTitle": "Vista prèvia del club",
+      "previewMessage": "Afegeix un logo per donar al teu club una identitat clara en els resultats de cerca.",
+      "cropDescription": "Posa i fes zoom al teu logotip per previsualitzar l'avatar circular.",
+      "cropTitle": "Ajusta el logotip del club",
+      "cropZoom": "Zoom"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "lastUpdate": {
+    "title": "Els refugis arriben a Summits",
+    "close": "Genial!",
+    "refugios": {
+      "headline": "80.000+ Refugis",
+      "subtitle": "Refugis guardats i lliures de tot el món, ara a Summits.",
+      "findOnMap": "Troba'ls al mapa o a la pàgina d'explorar.",
+      "addManually": "En falta algun? Afegeix-lo manualment des del mapa.",
+      "saveFavorites": "Desa'ls als favorits per tenir-los sempre a prop.",
+      "community": "Qualsevol aportació és apreciada i ajuda a la comunitat."
+    }
+  },
+  "offline": {
+    "banner": "Estàs fora de línia — algunes funcions poden estar limitades",
+    "bannerCached": "Sense connexió: dades del mapa en memòria disponibles",
+    "bannerNoCache": "Sense connexió: no hi ha dades del mapa en memòria",
+    "title": "Mapes sense connexió",
+    "area": "Zona sense connexió",
+    "empty": "Encara no hi ha zones sense connexió. Baixa una zona del mapa per tenir-la disponible sense connexió a internet.",
+    "newArea": "Baixa una zona nova",
+    "downloading": "Baixant",
+    "ready": "Preparat",
+    "failed": "Ha fallat",
+    "cancelled": "Cancel·lat",
+    "tiles": "tessel·les",
+    "zoom": "zoom {min}-{max}",
+    "goTo": "Anar a la zona",
+    "delete": "Elimina",
+    "drawHint": "Toca el mapa per col·locar els punts de les cantonades i, després, toca Finalitza per tancar la zona.",
+    "undo": "Desfés",
+    "clear": "Esborra",
+    "finish": "Finalitza",
+    "configName": "Nom de la zona",
+    "namePlaceholder": "p. ex. Alt Tatras",
+    "maxZoomLabel": "Zoom màxim (detall)",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "Els zooms 17-18 rarament calen i són molt cars: cada nivell quadruplica la mida de la descàrrega. El zoom 14 és el màxim recomanat.",
+    "estimate": "~{count} tessel·les (~{size})",
+    "eta": "~{eta} restants",
+    "keepOpen": "Mantingueu l'aplicació oberta mentre es baixa; tancar-la pausa la descàrrega.",
+    "redraw": "Redibuixa",
+    "download": "Baixa la zona",
+    "starting": "Començant...",
+    "errorResolve": "No s'ha pogut resoldre l'estil del mapa. Assegureu-vos que esteu en línia.",
+    "errorNoSources": "Seleccioneu com a mínim una font de dades.",
+    "errorDownload": "La descàrrega ha fallat.",
+    "deleteTitle": "Eliminar l'àrea sense connexió?",
+    "deleteMessage": "Eliminar \"{name}\"? Això eliminarà definitivament {tiles} tiles ({size}) d'aquest dispositiu. Aquesta acció no es pot desfer.",
+    "deleteCancel": "Cancel·la",
+    "deleteConfirm": "Elimina",
+    "deleting": "Eliminant..."
+  },
+  "peakChange": {
+    "createTitle": "Enviar Nou Cim",
+    "editTitle": "Editar Cim",
+    "successTitle": "Cim Enviat",
+    "successMessage": "El teu cim ha estat enviat per a revisió. Serà acceptat o denegat en un termini de 3 dies. No rebràs cap notificació, així que torna més tard per veure'n el resultat.",
+    "successSubmessage": "Si tens qualsevol pregunta, contacta'ns des del teu perfil.",
+    "close": "Tancar",
+    "name": "Nom",
+    "namePlaceholder": "Nom del cim",
+    "englishName": "Nom en Anglès",
+    "englishNamePlaceholder": "Nom en anglès (opcional)",
+    "coordinates": "Coordenades",
+    "latitude": "Latitud",
+    "longitude": "Longitud",
+    "coordsEditHint": "Deixar en blanc per mantenir la posició actual",
+    "pickOnMap": "Seleccionar al mapa",
+    "clickMapInstruction": "Fes clic al mapa per establir la ubicació del cim",
+    "acceptLocation": "Acceptar",
+    "elevation": "Altitud (m)",
+    "elevationPlaceholder": "Altitud en metres",
+    "minZoomLevel": "Nivell de Zoom Mínim",
+    "selectVisibility": "-- Selecciona visibilitat --",
+    "minZoomHelp": "Número baix = apareix allunyat (cims mundials). Número alt = només visible en apropar (turons locals).",
+    "wikipediaUrl": "URL de Wikipedia",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "reason": "Motiu del Canvi",
+    "reasonPlaceholder": "Motiu opcional per a aquesta petició",
+    "image": "Imatge",
+    "chooseImage": "Tria una imatge",
+    "submitCreate": "Enviar Cim per a Revisió",
+    "submitEdit": "Enviar Canvis per a Revisió",
+    "submitting": "Enviant...",
+    "errorPeakIdMissing": "Falta l'ID del cim",
+    "errorNameRequired": "El nom és obligatori",
+    "errorCoordinatesRequired": "Les coordenades són obligatòries",
+    "errorElevationRequired": "L'altitud és obligatòria",
+    "errorMinZoomRequired": "El nivell de zoom mínim és obligatori",
+    "errorGeneric": "Error en enviar. Torna-ho a intentar.",
+    "tabPeak": "Cim",
+    "tabShelter": "Refugi",
+    "currentData": "Dades actuals",
+    "versionName": "Nom",
+    "versionElevation": "Altitud",
+    "versionWikipedia": "Wikipedia",
+    "versionWikipediaYes": "sí",
+    "mapButtonLabel": "Enviar nou cim",
+    "email": "Correu electrònic (opcional)",
+    "emailPlaceholder": "el@teu.correu",
+    "emailHelp": "Rep una notificació quan la teva sol·licitud sigui aprovada o rebutjada"
+  },
+  "shelterChange": {
+    "createTitle": "Enviar Nou Refugi",
+    "editTitle": "Editar Refugi",
+    "successTitle": "Refugi Enviat",
+    "successMessage": "El teu refugi ha estat enviat per a revisió. Serà acceptat o denegat en un termini de 3 dies. No rebràs cap notificació, així que torna més tard per veure'n el resultat.",
+    "successSubmessage": "Si tens qualsevol pregunta, contacta'ns des del teu perfil.",
+    "close": "Tancar",
+    "name": "Nom",
+    "namePlaceholder": "Nom del refugi",
+    "englishName": "Nom en Anglès",
+    "englishNamePlaceholder": "Nom en anglès (opcional)",
+    "shelterType": "Tipus de Refugi",
+    "selectType": "-- Selecciona el tipus --",
+    "coordinates": "Coordenades",
+    "latitude": "Latitud",
+    "longitude": "Longitud",
+    "coordsEditHint": "Deixa-ho en blanc per mantenir la posició actual",
+    "pickOnMap": "Seleccionar al mapa",
+    "acceptLocation": "Acceptar",
+    "clickMapInstruction": "Fes clic al mapa per establir la ubicació del refugi",
+    "elevation": "Altitud (m)",
+    "elevationPlaceholder": "Altitud en metres",
+    "wikipediaUrl": "URL de Wikipedia",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "tagsTitle": "Instal·lacions i Serveis",
+    "tagsHint": "Omple només el que s'apliqui a aquest refugi",
+    "tags": {
+      "capacity": "Capacitat (persones)",
+      "beds": "Llits",
+      "toilets": "Lavabos",
+      "drinking_water": "Aigua potable",
+      "fireplace": "Xemeneia",
+      "heating": "Calefacció",
+      "electricity": "Electricitat",
+      "shower": "Dutxa",
+      "kitchen": "Cuina",
+      "lit": "Il·luminació",
+      "outdoor_seating": "Seients a l'aire lliure",
+      "picnic_table": "Taula de pícnic",
+      "bench": "Bancs",
+      "covered": "Zona coberta",
+      "pets": "Mascotes permeses",
+      "dog": "Gossos permesos",
+      "internet_access": "Accés a internet",
+      "smoking": "Fumar",
+      "website": "Lloc web",
+      "websitePlaceholder": "https://...",
+      "description": "Descripció",
+      "descriptionPlaceholder": "Breu descripció del refugi"
+    },
+    "tagValues": {
+      "yes": "Sí",
+      "no": "No",
+      "wifi": "WiFi",
+      "outside": "Només a l'exterior",
+      "isolated": "Zona aïllada"
+    },
+    "reason": "Motiu del Canvi",
+    "reasonPlaceholder": "Motiu opcional per a aquesta petició",
+    "email": "Correu electrònic (opcional)",
+    "emailPlaceholder": "el@teu.correu",
+    "emailHelp": "Rep una notificació quan la teva sol·licitud sigui aprovada o rebutjada",
+    "image": "Imatge",
+    "chooseImage": "Tria una imatge",
+    "submitCreate": "Enviar Refugi per a Revisió",
+    "submitEdit": "Enviar Canvis per a Revisió",
+    "submitting": "Enviant...",
+    "errorShelterIdMissing": "Falta l'ID del refugi",
+    "errorNameRequired": "El nom és obligatori",
+    "errorTypeRequired": "El tipus de refugi és obligatori",
+    "errorCoordinatesRequired": "Les coordenades són obligatòries",
+    "errorGeneric": "Error en enviar. Torna-ho a intentar.",
+    "tabPeak": "Cim",
+    "tabShelter": "Refugi"
+  },
+  "singleDatePicker": {
+    "chooseDate": "Tria {label}",
+    "close": "Tancar",
+    "apply": "Aplica"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "refugi de muntanya guardat",
+      "wilderness_hut": "refugi remot sense guardes",
+      "shelter": "refugi d'emergència"
+    },
+    "intro": {
+      "default": "Això és un {type}.",
+      "withOperator": "Això és un {type} gestionat per {operator}.",
+      "withHours": "Obert {hours}.",
+      "free": "És gratuït.",
+      "paid": "Requereix pagament.",
+      "paidAmount": "La tarifa és de {charge}.",
+      "reservationsRequired": "Reserva obligatòria.",
+      "reservationsOptional": "Reserva opcional.",
+      "accessPublic": "L'accés és públic.",
+      "accessPrivate": "L'accés és privat.",
+      "accessMembers": "L'accés és només per a membres."
+    },
+    "capacity": {
+      "bedsAndCapacity": "Té {beds} llits amb capacitat per a {capacity} persones.",
+      "bedsOnly": "Té {beds} llits.",
+      "capacityOnly": "Té capacitat per a {capacity} persones."
+    },
+    "services": {
+      "title": "Ofereix:",
+      "toilets": "serveis sanitaris",
+      "drinking_water": "aigua potable",
+      "fireplace": "llar de foc",
+      "stove": "estufa",
+      "heating": "calefacció",
+      "electricity": "electricitat",
+      "shower": "duxes",
+      "kitchen": "cuina",
+      "lit": "il·luminació",
+      "internet": "accés a internet",
+      "outdoor_seating": "seients a l'aire lliure",
+      "picnic_table": "taula de pícnic",
+      "bench": "bancs",
+      "covered": "zona coberta",
+      "pets": "mascotes permeses",
+      "smoking_free": "prohibit fumar"
+    },
+    "website": "Visitar el lloc web",
+    "noInfo": "No hi ha informació addicional disponible per a aquest refugi.",
+    "nearbyShelters": "Refugis propers",
+    "nearbySheltersNoData": "No s'han trobat refugis propers",
+    "unnamedShelter": "Refugi sense nom",
+    "unknownShelter": "Refugi desconegut",
+    "invalidShelterId": "ID de refugi invàlid",
+    "suggestEdit": "Suggerir edició",
+    "source": "Font: {source}",
+    "searchRoutesFor": "Cerca rutes per",
+    "findHikingRoutesOnWikiloc": "Troba rutes de senderisme a Wikiloc",
+    "openImageGallery": "Obrir la galeria d'imatges",
+    "previousImage": "Imatge anterior",
+    "nextImage": "Imatge següent",
+    "searchRoutesAria": "Cerca rutes per {name} a Wikiloc"
+  }
+}

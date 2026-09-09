@@ -1,0 +1,352 @@
+/* User Routes Section */
+.userRoutesSection {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Routes Container */
+.routesContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.routesScroll {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.routesScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Route Card */
+.routeCard {
+  flex: 0 0 320px;
+  height: 240px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(var(--rgb-black), 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.routeCard:active {
+  transform: scale(0.98);
+}
+
+.routeImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.routeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 0;
+  position: relative;
+}
+
+.routeIconBg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(var(--rgb-black), 0.04), rgba(var(--rgb-black), 0.1));
+  color: var(--color-secondary);
+}
+
+.routeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(var(--rgb-black), 0), rgba(var(--rgb-black), 0.7));
+  z-index: 1;
+}
+
+.hardestRouteBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #da9c00;
+  color: var(--c-white);
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(249, 168, 37, 0.2);
+  animation: _subtle-glow_1qp3o_1 3s ease-in-out infinite alternate;
+  align-self: flex-start;
+  z-index: 10;
+}
+
+.activityTypeBadge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 12px;
+  right: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 10;
+  background: rgba(var(--rgb-black), 0.4);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(var(--rgb-black), 0.4);
+  max-width: 140px;
+}
+
+.deviceModelBadge {
+  position: absolute;
+  bottom: 1px;
+  right: 24px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.routeContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  color: white;
+  z-index: 10;
+}
+
+.routeName {
+  margin: 0 0 12px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.5);
+}
+
+.routeStats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(var(--rgb-white), 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statIcon svg {
+  color: white;
+  width: 16px;
+  height: 16px;
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.statLabel {
+  color: rgba(var(--rgb-white), 0.7);
+  text-transform: uppercase;
+}
+
+.statValue {
+  color: white;
+}
+
+/* Loading and Error States */
+.loadingContainer,
+.errorContainer,
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--c-gray-200);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer Skeleton Loading */
+@keyframes highest-routes__shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.highest-routes__skeleton-scroll {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+  overflow: hidden;
+}
+
+.highest-routes__skeleton-card {
+  flex: 0 0 320px;
+  height: 240px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(var(--rgb-black), 0.1);
+  background: var(--c-gray-100);
+}
+
+.highest-routes__skeleton-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: highest-routes__shimmer 1.5s infinite;
+}
+
+.highest-routes__skeleton-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highest-routes__skeleton-title {
+  width: 60%;
+  height: 16px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--rgb-black), 0.12) 25%,
+    rgba(var(--rgb-black), 0.06) 50%,
+    rgba(var(--rgb-black), 0.12) 75%
+  );
+  background-size: 200% 100%;
+  animation: highest-routes__shimmer 1.5s infinite;
+}
+
+.highest-routes__skeleton-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.highest-routes__skeleton-stat {
+  flex: 1;
+  height: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--rgb-black), 0.12) 25%,
+    rgba(var(--rgb-black), 0.06) 50%,
+    rgba(var(--rgb-black), 0.12) 75%
+  );
+  background-size: 200% 100%;
+  animation: highest-routes__shimmer 1.5s infinite;
+}
+
+.emptyIcon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.floatingTrophy {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+.emptyContainer h3 {
+  color: var(--c-gray-900);
+  margin: 0 0 8px 0;
+}
+
+.loadingContainer p,
+.errorContainer p,
+.emptyContainer p {
+  color: var(--c-gray-600);
+  margin: 0;
+}
+
+/* Focus styles for accessibility */
+.routeCard:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

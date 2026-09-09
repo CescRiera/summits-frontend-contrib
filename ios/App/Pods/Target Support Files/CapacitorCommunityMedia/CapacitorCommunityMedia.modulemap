@@ -1,0 +1,6 @@
+framework module CapacitorCommunityMedia {
+  umbrella header "CapacitorCommunityMedia-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,70 @@
+.error-boundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--c-gray-100);
+  overflow-y: auto;
+}
+
+.error-boundary__container {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 6px rgba(var(--rgb-black), 0.1);
+  text-align: center;
+}
+
+.error-boundary__title {
+  margin-bottom: 1.5rem;
+  color: #d32f2f;
+  text-align: center;
+}
+
+.error-boundary__main-message {
+  color: var(--c-gray-800);
+  margin-bottom: 2rem;
+  word-break: break-word;
+}
+
+.error-boundary__code-snippet {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.error-boundary__code {
+  color: var(--c-gray-600);
+  background-color: var(--c-gray-100);
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid var(--c-gray-200);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.error-boundary__button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #1976d2;
+  color: white;
+  margin-top: 1rem;
+}
+
+.error-boundary__button:hover {
+  background-color: #1565c0;
+}
+
+.error-boundary__button:active {
+  background-color: #0d47a1;
+}
+

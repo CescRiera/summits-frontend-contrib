@@ -1,0 +1,179 @@
+.wikiloc-form {
+  --form-accent: #2f6b2f;
+  --form-accent-soft: rgba(47, 107, 47, 0.16);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.wikiloc-form__title {
+  margin: 0 0 4px;
+  color: var(--register-text, var(--c-gray-900));
+  text-align: left;
+}
+
+.wikiloc-form__warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 12px 14px;
+  background-color: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 10px;
+  color: #92400e;
+}
+
+.wikiloc-form__error {
+  padding: 12px 14px;
+  background-color: rgba(226, 98, 95, 0.08);
+  border: 1px solid rgba(226, 98, 95, 0.25);
+  border-radius: 10px;
+  color: var(--color-danger);
+}
+
+.wikiloc-form__success {
+  padding: 12px 14px;
+  background-color: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  border-radius: 10px;
+  color: var(--register-text, var(--c-gray-900));
+}
+
+.wikiloc-form__input {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--register-border, rgba(15, 23, 42, 0.16));
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--register-surface, var(--c-white));
+  color: var(--register-text, var(--c-gray-900));
+  width: 100%;
+}
+
+.wikiloc-form__input:focus {
+  outline: none;
+  border-color: var(--form-accent);
+  box-shadow: 0 0 0 3px var(--form-accent-soft);
+}
+
+.wikiloc-form__search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wikiloc-form__search-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+}
+
+.wikiloc-form__search-btn {
+  padding: 0.75rem 1rem;
+  background-color: var(--register-surface, var(--c-white));
+  color: var(--register-text, var(--c-gray-900));
+  border: 1px solid var(--register-border, rgba(15, 23, 42, 0.16));
+  border-radius: 10px;
+}
+
+.wikiloc-form__search-btn:disabled {
+  background-color: var(--c-gray-200);
+}
+
+.wikiloc-form__selected-user {
+  background: rgba(47, 107, 47, 0.08);
+  border: 1px solid rgba(47, 107, 47, 0.22);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--register-text, var(--c-gray-900));
+}
+
+.wikiloc-form__selected-user button {
+  background: none;
+  border: none;
+  color: var(--color-danger);
+}
+
+.wikiloc-form__results {
+  background: var(--register-surface, var(--c-white));
+  border: 1px solid var(--register-border, rgba(15, 23, 42, 0.16));
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.wikiloc-form__results-label {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px 14px;
+  background: var(--register-surface, var(--c-white));
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  color: var(--register-muted, var(--c-gray-600));
+}
+
+.wikiloc-form__user {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  transition: background 0.2s ease;
+}
+
+.wikiloc-form__user:active {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.wikiloc-form__user:last-child {
+  border-bottom: none;
+}
+
+.wikiloc-form__user-name {
+  color: var(--register-text, var(--c-gray-900));
+  display: block;
+}
+
+.wikiloc-form__user-username {
+  color: var(--register-muted, var(--c-gray-600));
+  display: block;
+}
+
+.wikiloc-form__user-trails {
+  color: var(--register-muted, var(--c-gray-600));
+  display: block;
+}
+
+.wikiloc-form__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  color: var(--register-muted, var(--c-gray-700));
+}
+
+.wikiloc-form__checkbox input[type="checkbox"] {
+  accent-color: var(--form-accent);
+  margin-top: 2px;
+}
+
+.wikiloc-form__button {
+  padding: 0.85rem 1rem;
+  background-color: var(--form-accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.wikiloc-form__button:disabled {
+  background-color: var(--c-gray-200);
+}
+
+@media (max-width: 420px) {
+  .wikiloc-form__search-container {
+    grid-template-columns: 1fr;
+  }
+}
+

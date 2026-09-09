@@ -1,0 +1,167 @@
+/* Page Layout Override - Map page is special, no padding */
+.persistent-pages__page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--c-gray-50);
+  padding: 0;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+/* Map Layout - Container for map and controls */
+.map__layout {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Map Container - Always full width */
+.map__container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Map controls are now overlays positioned absolutely */
+
+.map__mapbox-container {
+  position: relative;
+  flex: 1 1 0%;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Popup Container */
+.map__popup-container {
+  position: absolute;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+/* Error Container */
+.map__error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--c-gray-50);
+  padding: 2rem;
+}
+
+.map__error-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.map__error-title {
+  color: var(--c-gray-900, #0a2540);
+  margin: 0;
+}
+
+.map__error-message {
+  color: var(--c-gray-600, var(--c-gray-600));
+  margin: 0;
+}
+
+.map__error-link {
+  color: var(--color-primary, #1976d2);
+  text-decoration: underline;
+  margin: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.map__error-link:hover {
+  color: var(--color-primary-dark, #1565c0);
+}
+
+.map__error-instructions {
+  text-align: left;
+  background: var(--color-background-secondary, var(--c-gray-100));
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.map__error-instructions-title {
+  color: var(--c-gray-900, #0a2540);
+  margin: 0;
+}
+
+.map__error-instructions-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--c-gray-600, var(--c-gray-600));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.map__error-instructions-note {
+  color: var(--c-gray-600, var(--c-gray-600));
+  font-style: italic;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.map__error-retry {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary, #1976d2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.map__error-retry:hover {
+  background: var(--color-primary-dark, #1565c0);
+}
+
+.map__error-retry:active {
+  background: var(--color-primary-darker, #0d47a1);
+}
+
+/* Compass — hidden when north, fades in on rotation/tilt */
+:global(.mapboxgl-ctrl-top-right) {
+  top: var(--compass-top, 16px);
+  right: calc(var(--sidebar-width, 280px) + 16px);
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+:global(.mapboxgl-ctrl-top-right:not([data-compass-visible="true"])) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group) {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.98);
+  margin: 0;
+  overflow: hidden;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group button) {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+

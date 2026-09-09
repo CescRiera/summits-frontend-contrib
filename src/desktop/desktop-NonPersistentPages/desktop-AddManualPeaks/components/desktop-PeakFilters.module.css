@@ -1,0 +1,94 @@
+.desktop-peak-filters {
+  padding: 16px;
+  border-bottom: 1px solid var(--c-gray-200);
+  background-color: var(--color-background-elevated);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.desktop-peak-filters__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-peak-filters__label {
+  color: var(--c-gray-600);
+  text-transform: uppercase;
+}
+
+.desktop-peak-filters__input,
+.desktop-peak-filters__select {
+  padding: 10px 14px;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 10px;
+  background-color: var(--c-gray-50);
+  color: var(--c-gray-900);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.desktop-peak-filters__input:focus,
+.desktop-peak-filters__select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--c-white);
+  box-shadow: 0 0 0 3px rgba(var(--rgb-gray-800), 0.1);
+}
+
+.desktop-peak-filters__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+.desktop-peak-filters__elevation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-peak-filters__elevation-values {
+  color: var(--color-primary);
+  margin: 0 auto;
+}
+
+.desktop-peak-filters__admin-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.desktop-peak-filters__admin-column .desktop-peak-filters__group {
+  display: flex;
+  flex: 1;
+}
+
+.desktop-peak-filters__admin-column .desktop-peak-filters__group > div {
+  width: 100%;
+}
+
+.desktop-peak-filters__clear {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.desktop-peak-filters__clear:hover {
+  background-color: var(--color-error-light);
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.desktop-peak-filters__clear:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,74 @@
+/* ProfileMenu.module.css - Menu items for profile page */
+
+.profile-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+    padding: 0 16px;
+
+}
+
+.profile-menu {
+  background: rgba(var(--rgb-white), 0.55);
+  border: 1px solid rgba(15, 23, 42, 0.3);
+  border-radius: 16px;
+  padding: 8px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 6px -1px rgba(var(--rgb-black), 0.1),
+    0 2px 4px -1px rgba(var(--rgb-black), 0.06);
+}
+
+.menu-item {
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+  color: #0f172a;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-item:active {
+  background: rgba(15, 23, 42, 0.08);
+  transform: scale(0.98);
+}
+
+.menu-item__icon {
+  color: #0f172a;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.menu-item__label {
+  color: #0f172a;
+}
+
+.menu-item--logout .menu-item__label {
+  color: #fbbf24;
+}
+
+.menu-item--danger .menu-item__label {
+  color: #ef4444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .menu-item {
+    padding: 14px 16px;
+  }
+
+  .menu-item__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,243 @@
+.verify-email {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background-primary);
+}
+
+.verify-email__header {
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--c-gray-200);
+  background: var(--color-background-secondary);
+}
+
+.verify-email__back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 8px;
+  color: var(--c-gray-900);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.verify-email__back-button:hover {
+  background: var(--color-background-tertiary);
+  border-color: var(--color-border-hover);
+}
+
+.verify-email__back-button:active {
+  transform: scale(0.98);
+}
+
+.verify-email__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.verify-email__card {
+  width: 100%;
+  max-width: 500px;
+  background: var(--color-background-secondary);
+  border-radius: 20px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(var(--rgb-black), 0.12);
+  border: 1px solid var(--c-gray-200);
+}
+
+.verify-email__icon {
+  color: white;
+}
+
+.verify-email__title {
+  margin: 0 0 20px 0;
+  color: var(--c-gray-900);
+}
+
+.verify-email__message {
+  margin: 0 0 20px 0;
+  color: var(--c-gray-600);
+  max-width: 420px;
+}
+
+.verify-email__gmail-button {
+  width: 100%;
+  padding: 16px 32px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.15);
+}
+
+.verify-email__gmail-button:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(var(--rgb-black), 0.2);
+}
+
+.verify-email__gmail-button:active {
+  transform: translateY(0);
+}
+
+.verify-email__login-button {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.verify-email__login-button:hover {
+  color: var(--c-gray-900);
+  background: var(--color-background-tertiary);
+}
+
+.verify-email__login-button:active {
+  transform: scale(0.98);
+}
+
+.verify-email__verify-button {
+  width: 100%;
+  padding: 16px 32px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.15);
+}
+
+.verify-email__verify-button:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(var(--rgb-black), 0.2);
+}
+
+.verify-email__verify-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.verify-email__verify-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.verify-email__resend-button {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-600);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.verify-email__resend-button:hover:not(:disabled) {
+  color: var(--c-gray-900);
+  background: var(--color-background-tertiary);
+}
+
+.verify-email__resend-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.verify-email__resend-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.verify-email__error {
+  color: var(--color-error, #d32f2f);
+  margin: 16px 0;
+  text-align: center;
+  padding: 12px 16px;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.verify-email__success {
+  color: var(--color-success, #2e7d32);
+  margin: 16px 0;
+  text-align: center;
+  padding: 12px 16px;
+  background: rgba(46, 125, 50, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.verify-email__verifying {
+  color: var(--c-gray-600);
+  margin: 16px 0;
+  text-align: center;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.verify-email__code-section {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.verify-email__code-label {
+  color: var(--c-gray-600);
+  text-align: center;
+}
+
+.verify-email__email-section {
+  width: 100%;
+}
+
+.verify-email__email-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  background: var(--color-background-secondary);
+  color: var(--c-gray-900);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.verify-email__email-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb, 0, 0, 0), 0.1);
+}
+
+.verify-email__email-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

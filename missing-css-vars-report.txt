@@ -1,0 +1,517 @@
+CSS Variable Usage Report
+Generated: 2026-04-29T18:35:56.715Z
+Defined variables in App.css: 60
+Missing variable usages found: 387
+Unique missing variables: 60
+
+===========================================
+MISSING VARIABLES (not defined in App.css)
+===========================================
+
+
+--app-background (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-Overlay\desktop-OverlayManager.module.css:11
+  - src\mobile\components\Overlay\OverlayManager.module.css:11
+
+--auth-focus-ring (used 4 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:48
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:65
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:206
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:199
+
+--auth-frame-border (used 1 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:48
+
+--auth-frame-shadow (used 1 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:50
+
+--auth-input-bg (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:17
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:36
+
+--auth-input-border (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:18
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:35
+
+--auth-panel-bg (used 1 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:116
+
+--auth-panel-divider (used 3 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:138
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:211
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:173
+
+--auth-panel-muted (used 12 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:19
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:164
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:15
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:43
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:93
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:108
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:123
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:162
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:35
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:102
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:126
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:171
+
+--auth-panel-text (used 10 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:20
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-AuthShell.module.css:173
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:9
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:37
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:102
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:117
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:133
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:109
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:133
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:138
+
+--auth-primary-bg (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:57
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:195
+
+--auth-primary-hover (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-LoginForm.module.css:69
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-RegisterFlow.module.css:203
+
+--background-color (used 6 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-ListDetailsGrid\desktop-ListDetailsGrid.module.css:22
+  - src\desktop\desktop-NonPersistentPages\desktop-UserPeaks\desktop-UserPeaks.module.css:9
+  - src\desktop\desktop-NonPersistentPages\desktop-UserSavedPeaks\desktop-UserSavedPeaks.module.css:6
+  - src\mobile\NonPersistentPages\ListDetails\components\ListDetailsGrid\ListDetailsGrid.module.css:14
+  - src\mobile\NonPersistentPages\ListDetails\components\SearchAndFilters\SearchAndFilters.module.css:8
+  - src\mobile\NonPersistentPages\UserSavedPeaks\UserSavedPeaks.module.css:7
+
+--badge-avatar-size (used 4 time(s)):
+  - src\shared\components\CreatorBadge\CreatorBadge.module.css:36
+  - src\shared\components\CreatorBadge\CreatorBadge.module.css:37
+  - src\shared\components\CreatorBadge\CreatorBadge.module.css:45
+  - src\shared\components\CreatorBadge\CreatorBadge.module.css:46
+
+--badge-color (used 1 time(s)):
+  - src\shared\components\CreatorBadge\CreatorBadge.module.css:11
+
+--c-gray-300 (used 6 time(s)):
+  - src\desktop\desktop-components\desktop-Main\desktop-RecentRoutes\desktop-RecentRoutes.module.css:332
+  - src\desktop\desktop-NonPersistentPages\desktop-UserPeaks\desktop-UserPeaks.module.css:1658
+  - src\desktop\desktop-NonPersistentPages\desktop-UserPeaks\desktop-UserPeaks.module.css:1682
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:1249
+  - src\mobile\components\AddRouteModal\AddRouteModal.module.css:75
+  - src\mobile\NonPersistentPages\UserPeaks\UserPeaks.module.css:222
+
+--c-gray-500 (used 12 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-AddManualPeaks\components\desktop-RouteExistenceConfirmation.module.css:35
+  - src\mobile\components\LoginRegister\LoginForm.module.css:144
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\RouteExistenceConfirmation.module.css:38
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:500
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:837
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:923
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:968
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:1001
+  - src\mobile\PersistentPages\LeaderBoardScreen\ClubsLeaderboard.module.css:125
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:190
+  - src\shared\components\WorldChallengeAdminSearch\WorldChallengeAdminSearch.module.css:20
+  - src\shared\components\WorldChallengeAdminSearch\WorldChallengeAdminSearch.module.css:35
+
+--c-gray-700 (used 14 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-CommunityInfoMap\desktop-CommunityInfoMap.module.css:76
+  - src\desktop\desktop-NonPersistentPages\desktop-AddManualPeaks\components\desktop-RouteExistenceConfirmation.module.css:49
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ClubsLeaderboard.module.css:185
+  - src\mobile\components\CustomDropdown\CustomDropdown.module.css:174
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\RouteExistenceConfirmation.module.css:52
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:985
+  - src\mobile\NonPersistentPages\CreateEditClub\CreateEditClub.module.css:264
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:71
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:804
+  - src\mobile\NonPersistentPages\UserRoutes\UserRoutes.module.css:69
+  - src\mobile\NonPersistentPages\UserRoutes\UserRoutes.module.css:311
+  - src\mobile\PersistentPages\LeaderBoardScreen\ClubsLeaderboard.module.css:72
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:236
+  - src\shared\components\WorldChallengeAdminSearch\WorldChallengeAdminSearch.module.css:172
+
+--clubs-grid-columns (used 1 time(s)):
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ClubsLeaderboard.module.css:176
+
+--color-accent-primary (used 4 time(s)):
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:65
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:171
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:172
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:216
+
+--color-accent-rgb (used 2 time(s)):
+  - src\mobile\PersistentPages\LeaderBoardScreen\ClubsLeaderboard.module.css:151
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:269
+
+--color-background-elevated (used 9 time(s)):
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:118
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:143
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:225
+  - src\desktop\desktop-NonPersistentPages\desktop-AddManualPeaks\components\desktop-PeakFilters.module.css:4
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:86
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:181
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:3
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:27
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:77
+
+--color-background-hover (used 7 time(s)):
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:52
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:123
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:231
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:103
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:187
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:33
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:132
+
+--color-background-primary (used 6 time(s)):
+  - src\desktop\desktop-components\desktop-ExploreHeaderSearch\desktop-ExploreHeaderSearch.module.css:3
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:6
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:6
+  - src\mobile\components\MapHeader\MapHeader.module.css:3
+  - src\mobile\components\MapHeader\MapHeader.module.css:56
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:32
+
+--color-background-secondary (used 18 time(s)):
+  - src\desktop\desktop-components\desktop-ExploreHeaderSearch\desktop-ExploreHeaderSearch.module.css:288
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:12
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:50
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:12
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:50
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:239
+  - src\desktop\desktop-PersistentPages\desktop-Map.module.css:92
+  - src\mobile\components\SearchMap\SearchMap.module.css:100
+  - src\mobile\NonPersistentPages\ChangePassword\ChangePassword.module.css:21
+  - src\mobile\NonPersistentPages\VerifyEmail\VerifyEmail.module.css:21
+  - src\mobile\NonPersistentPages\VerifyEmail\VerifyEmail.module.css:194
+  - src\mobile\PersistentPages\Map.module.css:264
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:80
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:118
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:135
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:250
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:362
+  - src\shared\components\VerificationCodeInput\VerificationCodeInput.module.css:16
+
+--color-background-tertiary (used 11 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:31
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:157
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:198
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:31
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:120
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:176
+  - src\mobile\NonPersistentPages\ChangePassword\ChangePassword.module.css:123
+  - src\mobile\NonPersistentPages\ChangePassword\ChangePassword.module.css:163
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:88
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:163
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:367
+
+--color-border (used 2 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-CommunityInfo\desktop-CommunityInfo.module.css:121
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:196
+
+--color-border-hover (used 2 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ChangePassword\desktop-ChangePassword.module.css:32
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:32
+
+--color-border-secondary (used 6 time(s)):
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:41
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:55
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:120
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:137
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:162
+  - src\shared\components\RouteAnimationModal\RouteAnimationModal.module.css:324
+
+--color-border-subtle (used 5 time(s)):
+  - src\desktop\desktop-components\desktop-ExploreHeaderSearch\desktop-ExploreHeaderSearch.module.css:4
+  - src\desktop\desktop-components\desktop-ExploreHeaderSearch\desktop-ExploreHeaderSearch.module.css:294
+  - src\mobile\components\ExploreHeaderSearch\ExploreHeaderSearch.module.css:353
+  - src\mobile\components\MapHeader\MapHeader.module.css:4
+  - src\mobile\components\MapHeader\MapHeader.module.css:57
+
+--color-disabled (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:219
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:176
+
+--color-on-surface (used 5 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:204
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:232
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:208
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:236
+  - src\mobile\NonPersistentPages\PeakDetails\Gallery\Gallery.module.css:170
+
+--color-on-surface-variant (used 3 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:177
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:182
+  - src\mobile\NonPersistentPages\PeakDetails\Gallery\Gallery.module.css:124
+
+--color-outline-variant (used 4 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:174
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:179
+  - src\mobile\NonPersistentPages\PeakDetails\Gallery\Gallery.module.css:121
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:639
+
+--color-primary-darker (used 2 time(s)):
+  - src\desktop\desktop-PersistentPages\desktop-Map.module.css:141
+  - src\mobile\PersistentPages\Map.module.css:308
+
+--color-primary-rgb (used 17 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-CommunityInfoMap\desktop-CommunityInfoMap.module.css:81
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-CommunityInfoMap\desktop-CommunityInfoMap.module.css:82
+  - src\desktop\desktop-NonPersistentPages\desktop-ClubDetails\components\ClubChallenges\ClubChallenges.module.css:192
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-CommunityInfo\desktop-CommunityInfo.module.css:67
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-CommunityInfo\desktop-CommunityInfo.module.css:68
+  - src\desktop\desktop-NonPersistentPages\desktop-VerifyEmail\desktop-VerifyEmail.module.css:248
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:397
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:658
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:76
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:77
+  - src\mobile\NonPersistentPages\VerifyEmail\VerifyEmail.module.css:203
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:187
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:292
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:345
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:346
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:363
+  - src\shared\components\VerificationCodeInput\VerificationCodeInput.module.css:24
+
+--color-primary-transparent (used 2 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-UserRoutes\desktop-UserRoutes.module.css:630
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.module.css:96
+
+--color-surface-alt (used 1 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-PeakDetailsMap.module.css:54
+
+--color-surface-container-high (used 2 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:183
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:188
+
+--color-surface-container-low (used 3 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-PeakDetailsMap\desktop-GalleryMap\desktop-GalleryMap.module.css:173
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Gallery\desktop-Gallery.module.css:178
+  - src\mobile\NonPersistentPages\PeakDetails\Gallery\Gallery.module.css:120
+
+--color-surface-hover (used 3 time(s)):
+  - src\mobile\components\Main\HomeHeader\HomeHeader.module.css:163
+  - src\mobile\components\Main\HomeHeader\HomeHeader.module.css:181
+  - src\mobile\components\Main\HomeHeader\HomeHeader.module.css:185
+
+--color-surface-variant (used 36 time(s)):
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ClubsLeaderboard.module.css:184
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ClubsLeaderboard.module.css:220
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ClubsLeaderboard.module.css:232
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:47
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:315
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:367
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:414
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:433
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:518
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-ListsLeaderboard.module.css:628
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:521
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:768
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:802
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:963
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:1011
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:1084
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:1135
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:565
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:574
+  - src\mobile\NonPersistentPages\ClubDetails\ClubDetails.module.css:666
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:136
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:234
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:260
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:313
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:385
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:394
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:425
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:485
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:292
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:650
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:742
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:785
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:823
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:832
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:877
+  - src\mobile\PersistentPages\LeaderBoardScreen\WorldChallenge.module.css:934
+
+--color-text-disabled (used 5 time(s)):
+  - src\desktop\desktop-components\desktop-RouteAssociation\desktop-RouteAssociationModal.module.css:220
+  - src\desktop\desktop-NonPersistentPages\desktop-AddManualPeaks\components\desktop-PeakFilters.tsx:205
+  - src\mobile\components\RouteAssociation\RouteAssociationBottomSheet.module.css:177
+  - src\mobile\NonPersistentPages\AddManualPeaks\components\PeakFilters.tsx:222
+  - src\mobile\PersistentPages\LeaderBoardScreen\ListsLeaderboard.module.css:53
+
+--color-text-primary (used 1 time(s)):
+  - src\mobile\components\MapHeader\MapHeader.module.css:122
+
+--color-text-secondary (used 2 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-CommunityInfo\desktop-CommunityInfo.module.css:86
+  - src\mobile\NonPersistentPages\PeakDetails\CommunityInfo\CommunityInfo.module.css:163
+
+--form-accent (used 24 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:53
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:66
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:77
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:55
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:68
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:79
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:38
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:50
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:56
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:64
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:173
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:184
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:47
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:59
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:65
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:49
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:61
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:67
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:38
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:50
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:56
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:58
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:158
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:164
+
+--form-accent-soft (used 8 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:54
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:56
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:39
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:65
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:48
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:50
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:39
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:59
+
+--grayscale-surface--default (used 2 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-LazyPeakCard\desktop-LazyPeakCard.module.css:255
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-PeakGrid\desktop-PeakGrid.module.css:277
+
+--peaks-count (used 4 time(s)):
+  - src\desktop\desktop-components\desktop-Main\desktop-RecentRoutes\desktop-RecentRoutes.module.css:466
+  - src\desktop\desktop-components\desktop-Main\desktop-RecentRoutes\desktop-RecentRoutes.module.css:467
+  - src\desktop\desktop-NonPersistentPages\desktop-ClubDetails\components\ClubActivity\ClubActivity.module.css:269
+  - src\desktop\desktop-NonPersistentPages\desktop-ClubDetails\components\ClubActivity\ClubActivity.module.css:269
+
+--primary-border--dark (used 3 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-LazyPeakCard\desktop-LazyPeakCard.module.css:235
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-PeakGrid\desktop-PeakGrid.module.css:257
+  - src\desktop\desktop-NonPersistentPages\desktop-UserPeaks\desktop-UserPeaks.module.css:993
+
+--primary-surface--subtle (used 4 time(s)):
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-LazyPeakCard\desktop-LazyPeakCard.module.css:254
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-LazyPeakCard\desktop-LazyPeakCard.module.css:256
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-PeakGrid\desktop-PeakGrid.module.css:276
+  - src\desktop\desktop-NonPersistentPages\desktop-ListDetails\desktop-components\desktop-PeakGrid\desktop-PeakGrid.module.css:278
+
+--register-accent-soft (used 1 time(s)):
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:116
+
+--register-border (used 14 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:39
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:42
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:29
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:50
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:85
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:128
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:37
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:40
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:77
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:100
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:29
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:48
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:78
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:105
+
+--register-muted (used 18 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:48
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:61
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:50
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:63
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:46
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:59
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:155
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:160
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:168
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:55
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:57
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:62
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:136
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:46
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:118
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:141
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:146
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:154
+
+--register-shadow (used 1 time(s)):
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:80
+
+--register-surface (used 13 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:42
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:45
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:32
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:53
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:83
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:127
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:40
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:43
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:32
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:51
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:76
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:104
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:116
+
+--register-text (used 32 time(s)):
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:16
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:33
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:43
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-DefaultSignupForm.module.css:71
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:16
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:46
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-GarminSignupForm.module.css:73
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:15
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-StravaSignupForm.module.css:33
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:16
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:44
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:54
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:84
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:109
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:150
+  - src\desktop\desktop-components\desktop-LoginRegister\desktop-WikilocSignupForm.module.css:178
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:15
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:32
+  - src\mobile\components\LoginRegister\DefaultSignupForm.module.css:41
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:15
+  - src\mobile\components\LoginRegister\GarminSignupForm.module.css:44
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:47
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:55
+  - src\mobile\components\LoginRegister\RegisterFlow.module.css:152
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:15
+  - src\mobile\components\LoginRegister\StravaSignupForm.module.css:33
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:15
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:43
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:52
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:77
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:94
+  - src\mobile\components\LoginRegister\WikilocSignupForm.module.css:136
+
+--rgb-accent (used 7 time(s)):
+  - src\mobile\NonPersistentPages\PeakDetails\FloraFauna\FloraFauna.module.css:106
+  - src\mobile\NonPersistentPages\PeakDetails\FloraFauna\FloraFauna.module.css:107
+  - src\mobile\NonPersistentPages\PeakDetails\FloraFauna\FloraFauna.module.css:230
+  - src\mobile\NonPersistentPages\PeakDetails\FloraFauna\FloraFauna.module.css:234
+  - src\mobile\NonPersistentPages\PeakDetails\Weather\Weather.module.css:61
+  - src\mobile\NonPersistentPages\PeakDetails\Weather\Weather.module.css:191
+  - src\mobile\NonPersistentPages\PeakDetails\Weather\Weather.module.css:192
+
+--sidebar-width (used 9 time(s)):
+  - src\desktop\desktop-components\desktop-Overlay\desktop-OverlayStackManager.tsx:503
+  - src\desktop\desktop-components\desktop-Overlay\desktop-OverlayStackManager.tsx:504
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Weather\desktop-Weather.module.css:263
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Weather\desktop-Weather.module.css:267
+  - src\desktop\desktop-NonPersistentPages\desktop-PeakDetails\desktop-Weather\desktop-Weather.module.css:307
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:274
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:354
+  - src\desktop\desktop-PersistentPages\desktop-LeaderBoardScreen\desktop-WorldChallenge.module.css:1224
+  - src\desktop\DesktopApp.tsx:136
+
+--top-overlay-height (used 1 time(s)):
+  - src\desktop\desktop-components\desktop-Map\desktop-RouteDetailsControls\desktop-RouteDetailsControls.module.css:211

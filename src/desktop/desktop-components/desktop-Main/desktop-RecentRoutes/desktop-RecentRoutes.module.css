@@ -1,0 +1,771 @@
+/* Recent Routes Section - Redesigned for Vertical Grid */
+.recent-routes {
+  width: 100%;
+}
+
+/* Container - No longer scrollable */
+.recent-routes__container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid Layout - 2 cards vertically stacked */
+.recent-routes__scroll {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 1.5vw, 20px);
+  padding: clamp(6px, 0.6vw, 8px) 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card Design - Larger for vertical layout */
+.recent-routes__card {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  background: var(--c-white);
+  border-radius: clamp(18px, 1.6vw, 20px);
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.12);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--c-gray-200);
+  overflow-x: visible;
+  overflow-y: hidden;
+  cursor: pointer;
+  height: clamp(260px, 24vw, 300px);
+}
+
+.recent-routes__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.14);
+}
+
+.recent-routes__card:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 16px rgba(var(--rgb-black), 0.12);
+}
+
+/* Content - Enhanced Layout */
+.recent-routes__content {
+  padding: clamp(16px, 1.5vw, 20px);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 0.7vw, 10px);
+}
+
+/* Header row */
+.recent-routes__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-routes__user-info {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1vw, 12px);
+  flex: 1;
+  min-width: 0;
+}
+
+.recent-routes__user-avatar {
+  width: clamp(36px, 3.2vw, 40px);
+  height: clamp(36px, 3.2vw, 40px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--c-gray-200);
+  flex-shrink: 0;
+}
+
+.recent-routes__user-avatar-placeholder {
+  width: clamp(36px, 3.2vw, 40px);
+  height: clamp(36px, 3.2vw, 40px);
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--c-gray-200);
+  flex-shrink: 0;
+  font-size: clamp(14px, 1.2vw, 16px);
+}
+
+.recent-routes__user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+  max-width: 240px;
+}
+
+.recent-routes__user-name {
+  color: var(--c-gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__activity-type {
+  color: var(--c-gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__device-model {
+  color: var(--c-gray-600);
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__header-right {
+  position: absolute;
+  top: clamp(10px, 1vw, 12px);
+  right: clamp(10px, 1vw, 12px);
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1vw, 12px);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.recent-routes__peaks-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--c-gray-600);
+}
+
+.recent-routes__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(var(--rgb-black), 0.6);
+  padding: clamp(5px, 0.5vw, 6px) clamp(8px, 0.9vw, 10px);
+  border-radius: clamp(7px, 0.7vw, 8px);
+  border: 1px solid rgba(var(--rgb-black), 0.4);
+  max-width: clamp(120px, 11vw, 140px);
+  font-size: clamp(11px, 1vw, 12px);
+}
+
+.recent-routes__more-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--c-gray-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.recent-routes__more-button:hover {
+  background: rgba(var(--rgb-black), 0.05);
+}
+
+/* Route name */
+.recent-routes__name {
+  color: var(--c-gray-900);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Second section - Image on left, Stats + Peaks on right */
+.recent-routes__secondsection {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(16px, 1.5vw, 20px);
+  align-items: flex-start;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.recent-routes__secondsection--compact .recent-routes__image-section {
+  width: 50%;
+  flex: 1;
+}
+
+.recent-routes__secondsection--compact .recent-routes__right-section {
+  width: 50%;
+  min-width: 325px;
+  flex: 1;
+}
+
+/* Image section - stays on left */
+.recent-routes__image-section {
+  width: clamp(160px, 15vw, 200px);
+  height: 100%;
+  border-radius: clamp(14px, 1.2vw, 16px);
+  overflow: hidden;
+  background: var(--c-gray-100);
+  flex-shrink: 0;
+}
+
+.recent-routes__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.recent-routes__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--c-gray-200),
+    var(--c-gray-100)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right section - Stats on top, Peaks on bottom */
+.recent-routes__right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* Stats grid - Horizontal row layout, on top of right section */
+.recent-routes__stats {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(12px, 1vw, 16px);
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.recent-routes__stat {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(8px, 0.7vw, 10px);
+  transition: background-color 0.2s ease;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.recent-routes__stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(18px, 1.6vw, 20px);
+  height: clamp(18px, 1.6vw, 20px);
+  flex-shrink: 0;
+  color: var(--c-gray-600);
+}
+
+.recent-routes__stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.recent-routes__stat-label {
+  color: var(--c-gray-600);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__stat-value {
+  color: var(--c-gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__blocked-placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-gray-100);
+  border-radius: 12px;
+  padding: clamp(10px, 1vw, 20px);
+  text-align: center;
+  color: var(--c-gray-600);
+  border: 1px dashed var(--c-gray-300);
+  min-height: 60px;
+}
+
+/* Peaks section - horizontal scrollable with arrows */
+.recent-routes__peaks-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.recent-routes__peaks-scroll-container {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.recent-routes__peaks-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: rgba(var(--rgb-white), 0.95);
+  border: 1px solid rgba(var(--rgb-black), 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.15);
+  pointer-events: none;
+  color: var(--c-gray-900);
+}
+
+.recent-routes__peaks-nav-button--left {
+  left: 10px;
+}
+
+.recent-routes__peaks-nav-button--right {
+  right: 10px;
+}
+
+.recent-routes__peaks-scroll-container:hover .recent-routes__peaks-nav-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.recent-routes__peaks-nav-button:hover {
+  background: rgba(var(--rgb-white), 1);
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.2);
+}
+
+.recent-routes__peaks-nav-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.recent-routes__peaks-container {
+  display: flex;
+  gap: clamp(10px, 1vw, 12px);
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
+
+.recent-routes__peaks-container--scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  min-width: 0;
+}
+
+.recent-routes__peaks-container--scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* No Peaks Card */
+.recent-routes__no-peaks-card {
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px;
+  background: var(--c-gray-100);
+  border: 2px dashed var(--c-gray-200);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--c-gray-600);
+}
+
+.recent-routes__peak-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.recent-routes__peak-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.recent-routes__peak-card:hover .recent-routes__peak-card-image {
+  transform: scale(1.05);
+}
+
+.recent-routes__peaks-container--scroll .recent-routes__peak-card {
+  width: calc(
+    (100% - (var(--peaks-count, 1) - 1) * clamp(10px, 1vw, 12px)) /
+      var(--peaks-count, 1)
+  );
+  min-width: clamp(120px, 11vw, 140px);
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.recent-routes__peak-elevation-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(50px, 4.5vw, 60px);
+  height: clamp(50px, 4.5vw, 60px);
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.recent-routes__peak-card:hover .recent-routes__peak-elevation-icon-bg {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.recent-routes__peak-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: clamp(6px, 0.6vw, 8px);
+  background: linear-gradient(transparent, rgba(var(--rgb-black), 0.4));
+  color: white;
+  z-index: 2;
+}
+
+.recent-routes__peak-name {
+  margin: 0 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.5);
+}
+
+.recent-routes__peak-elevation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.recent-routes__peak-elevation-icon {
+  width: clamp(14px, 1.3vw, 16px);
+  height: clamp(14px, 1.3vw, 16px);
+  opacity: 0.9;
+}
+
+.recent-routes__peak-elevation-value {
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.5);
+}
+
+/* Loading Overlay - Appears over the entire scroll container */
+.recent-routes__loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-gray-50);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 1.5vw, 20px);
+  padding: clamp(6px, 0.6vw, 8px) 0;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 16px;
+  min-height: clamp(548px, 50vw, 636px);
+}
+
+.recent-routes__container {
+  position: relative;
+}
+
+/* Loading and Error States */
+.recent-routes__loading,
+.recent-routes__error,
+.recent-routes__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recent-routes__spinner,
+.recent-routes__loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--c-gray-200);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer Skeleton Loading */
+@keyframes desktop-recent-routes__shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.recent-routes__skeleton-card {
+  width: 100%;
+  height: clamp(260px, 24vw, 300px);
+  background: var(--c-white);
+  border-radius: clamp(18px, 1.6vw, 20px);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.08);
+  border: 1px solid var(--c-gray-200);
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-routes__skeleton-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1vw, 12px);
+  padding: clamp(16px, 1.5vw, 20px);
+}
+
+.recent-routes__skeleton-avatar {
+  width: clamp(36px, 3.2vw, 40px);
+  height: clamp(36px, 3.2vw, 40px);
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-user-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.recent-routes__skeleton-user-name {
+  width: 100px;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-activity {
+  width: 60px;
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-title {
+  width: 50%;
+  height: 14px;
+  border-radius: 6px;
+  margin: 0 clamp(16px, 1.5vw, 20px) clamp(8px, 0.7vw, 10px);
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-body {
+  display: flex;
+  flex: 1;
+  gap: clamp(16px, 1.5vw, 20px);
+  padding: 0 clamp(16px, 1.5vw, 20px) clamp(16px, 1.5vw, 20px);
+}
+
+.recent-routes__skeleton-image {
+  width: clamp(160px, 15vw, 200px);
+  height: 100%;
+  border-radius: clamp(14px, 1.2vw, 16px);
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(12px, 1vw, 16px);
+  margin-bottom: 12px;
+}
+
+.recent-routes__skeleton-stat {
+  flex: 1;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-peaks {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 8px;
+}
+
+.recent-routes__skeleton-peak {
+  flex: 1;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: desktop-recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__empty-icon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.recent-routes__floating-icon {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+.recent-routes__empty h3 {
+  color: var(--c-gray-900);
+  margin: 0 0 8px 0;
+}
+
+.recent-routes__loading p,
+.recent-routes__error p,
+.recent-routes__empty p {
+  color: var(--c-gray-600);
+  margin: 0;
+}
+
+/* Focus styles for accessibility */
+.recent-routes__card:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

@@ -1,0 +1,273 @@
+.flora-fauna {
+  border-radius: 20px;
+  animation: fadeInUp 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flora-fauna__title {
+  padding: 16px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flora-fauna__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.flora-fauna__skeleton-text-block {
+  height: 120px;
+  width: 100%;
+  border-radius: 16px;
+  background: linear-gradient(90deg, var(--c-gray-100) 25%, var(--c-gray-200) 50%, var(--c-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.flora-fauna__category-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.flora-fauna__tab {
+  background: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  color: var(--c-gray-600);
+  padding: 10px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.flora-fauna__tab--active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.flora-fauna__accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--c-gray-200);
+}
+
+.flora-fauna__accordion-item {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  overflow: visible;
+  transition: none;
+}
+
+.flora-fauna__accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 18px 26px 18px 26px;
+  color: #2c3e50;
+  transition: background 0.2s;
+  border-bottom: 1px solid var(--c-gray-200);
+  border-radius: 0;
+}
+
+.flora-fauna__accordion-header[aria-expanded="true"] {
+  background: rgba(var(--rgb-accent), 0.1);
+  border-bottom-color: rgba(var(--rgb-accent), 0.2);
+}
+
+.flora-fauna__accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.flora-fauna__accordion-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flora-fauna__accordion-title-text {
+  display: flex;
+  align-items: center;
+  color: #2c3e50;
+}
+
+.flora-fauna__accordion-badge-chevron-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.flora-fauna__accordion-badge {
+  background: var(--c-gray-100);
+  color: var(--c-gray-600);
+  border-radius: 999px;
+  padding: 3px 12px;
+  display: inline-block;
+  border: 1px solid var(--c-gray-200);
+  margin: 0;
+}
+
+.flora-fauna__accordion-chevron {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(-90deg);
+}
+
+.flora-fauna__accordion-header[aria-expanded="true"]
+  .flora-fauna__accordion-chevron {
+  transform: rotate(0deg);
+}
+
+.flora-fauna__accordion-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background: none;
+  border-top: none;
+}
+.flora-fauna__accordion-panel.open {
+  max-height: 1000px;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flora-fauna__species-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 0 26px 18px 26px;
+  margin: 10px 0 0 0;
+  scrollbar-width: none;
+}
+
+.flora-fauna__species-card {
+  min-width: 200px;
+  max-width: 220px;
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, var(--c-gray-50) 0%, var(--c-gray-200) 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.08);
+  transition: all 0.2s ease;
+  border: 1px solid var(--c-gray-200);
+}
+
+.flora-fauna__species-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.flora-fauna__species-placeholder {
+  width: 100%;
+  height: 110px;
+  background: var(--c-gray-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-gray-600);
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+.flora-fauna__species-info {
+  padding: 14px;
+}
+
+.flora-fauna__species-name {
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+.flora-fauna__species-scientific {
+  color: var(--c-gray-600);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.flora-fauna__species-category {
+  display: none;
+}
+
+.flora-fauna__ecological-info {
+  background: linear-gradient(135deg, rgba(var(--rgb-accent), 0.1) 0%, var(--c-gray-50) 100%);
+  border-radius: 16px;
+  padding: 12px;
+  margin: 20px 16px 0 16px;
+  border: 1px solid rgba(var(--rgb-accent), 0.2);
+}
+
+.flora-fauna__ecological-info h4 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+}
+
+.flora-fauna__ecological-info p {
+  margin: 0 0 8px 0;
+  color: var(--c-gray-600);
+}
+
+.flora-fauna__ecological-info p:last-child {
+  margin-bottom: 0;
+}
+
+.flora-fauna__habitats {
+  margin: 12px 0;
+}
+
+.flora-fauna__habitats h5 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+}
+
+.flora-fauna__habitats ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.flora-fauna__habitats li {
+  color: var(--c-gray-600);
+  margin-bottom: 4px;
+}
+
+.flora-fauna__species-list > .flora-fauna__species-card:last-child {
+  margin-right: 8px;
+}

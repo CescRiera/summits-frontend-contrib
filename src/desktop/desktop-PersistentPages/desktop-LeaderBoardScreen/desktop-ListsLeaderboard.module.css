@@ -1,0 +1,646 @@
+/* =================================================================
+   LISTS LEADERBOARD STYLES (Desktop Port of Mobile Design)
+   BEM naming convention
+   ================================================================= */
+
+.lists-leaderboard {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  min-height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px;
+  margin: 0 auto;
+
+}
+
+/* =================================================================
+   FILTER HEADER (kept outside the removed filter-section)
+   ================================================================= */
+
+.lists-leaderboard__filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.lists-leaderboard__filter-label {
+  color: var(--c-gray-900);
+  display: block;
+}
+
+.lists-leaderboard__see-all-link {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.lists-leaderboard__see-all-link:hover {
+  background-color: var(--color-surface-variant);
+}
+
+/* =================================================================
+   HERO SWIPER (replaces challenge-summary + old card carousel)
+   ================================================================= */
+
+.lists-leaderboard__hero-swiper-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.12);
+  width: 100%;
+  min-width: 0;
+}
+
+.lists-leaderboard__hero-swiper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Mobile-style pagination bullets (white, small, dynamic) */
+.lists-leaderboard__hero-swiper :global(.swiper-pagination) {
+  bottom: 14px !important;
+  z-index: 10;
+}
+
+.lists-leaderboard__hero-swiper :global(.swiper-pagination-bullet) {
+  width: 8px;
+  height: 8px;
+  background: white;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+}
+
+.lists-leaderboard__hero-swiper :global(.swiper-pagination-bullet-active) {
+  background: white !important;
+  opacity: 1 !important;
+}
+
+/* Custom Navigation Buttons for Hero */
+.lists-leaderboard__nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: rgba(var(--rgb-black), 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--rgb-white), 0.2);
+  border-radius: 50%;
+  color: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+}
+
+.lists-leaderboard__nav-button:hover {
+  background: rgba(var(--rgb-black), 0.6);
+  transform: translateY(-50%) scale(1.05);
+  border-color: rgba(var(--rgb-white), 0.5);
+}
+
+.lists-leaderboard__nav-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.lists-leaderboard__nav-button--prev {
+  left: 16px;
+}
+
+.lists-leaderboard__nav-button--next {
+  right: 16px;
+}
+
+.lists-leaderboard__nav-button:disabled,
+.lists-leaderboard__nav-button:global(.swiper-button-disabled) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =================================================================
+   CHALLENGE SUMMARY (each slide)
+   ================================================================= */
+
+.lists-leaderboard__challenge-summary {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--c-gray-900);
+  min-height: 240px;
+  height: 100%;
+}
+
+.lists-leaderboard__challenge-summary-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--rgb-black), 0.7) 0%,
+    rgba(var(--rgb-black), 0.45) 50%,
+    rgba(var(--rgb-black), 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.lists-leaderboard__challenge-summary-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 32px 40px 32px;
+  width: stretch;
+}
+
+.lists-leaderboard__challenge-summary-name {
+  color: var(--c-white) !important;
+  text-shadow: 0 2px 8px rgba(var(--rgb-black), 0.4);
+  text-align: center;
+}
+
+.lists-leaderboard__creator-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+/* Join / Leave button - positioned top-right */
+.lists-leaderboard__hero-follow-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(var(--rgb-white), 0.3);
+  background: rgba(var(--rgb-white), 0.15);
+  backdrop-filter: blur(8px);
+  color: var(--c-white);
+  transition: all 0.25s ease;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.lists-leaderboard__hero-follow-btn:hover {
+  background: rgba(var(--rgb-white), 0.25);
+  border-color: rgba(var(--rgb-white), 0.5);
+}
+
+.lists-leaderboard__hero-follow-btn--following {
+  background: rgba(var(--rgb-color-accent), 0.25);
+  border-color: var(--color-accent);
+  color: var(--c-white);
+}
+
+.lists-leaderboard__hero-follow-btn--following:hover {
+  background: rgba(var(--rgb-color-accent), 0.35);
+}
+
+.lists-leaderboard__total-peaks-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.lists-leaderboard__total-peaks-number {
+  color: var(--c-white);
+  text-shadow: 0 2px 12px rgba(var(--rgb-black), 0.3);
+}
+
+.lists-leaderboard__total-peaks-label {
+  color: rgba(var(--rgb-white), 0.85);
+}
+
+.lists-leaderboard__challenge-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.lists-leaderboard__challenge-meta--empty {
+  min-height: 32px;
+}
+
+.lists-leaderboard__meta-pill {
+  background: rgba(var(--rgb-white), 0.16);
+  border: 1px solid rgba(var(--rgb-white), 0.25);
+  color: var(--c-white);
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.lists-leaderboard__challenge-actions {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  gap: 16px;
+}
+
+.lists-leaderboard__action-btn {
+  flex: 1;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.lists-leaderboard__action-btn--secondary {
+  background: rgba(var(--rgb-white), 0.15);
+  backdrop-filter: blur(6px);
+  color: var(--c-white);
+  border: 1px solid rgba(var(--rgb-white), 0.25);
+}
+
+.lists-leaderboard__action-btn--secondary:hover {
+  background: rgba(var(--rgb-white), 0.25);
+  border-color: rgba(var(--rgb-white), 0.4);
+}
+
+.lists-leaderboard__action-btn--primary {
+  background: var(--color-accent);
+  color: var(--c-black);
+  border: 1px solid var(--color-accent-dark);
+  box-shadow: 0 4px 16px rgba(var(--rgb-color-accent), 0.3);
+}
+
+.lists-leaderboard__action-btn--primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(var(--rgb-color-accent), 0.4);
+}
+
+.lists-leaderboard__action-btn:active {
+  transform: scale(0.98);
+}
+
+/* Empty following state */
+.lists-leaderboard__empty-following {
+  width: 100%;
+  padding: 40px;
+  background: var(--color-surface-variant);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.lists-leaderboard__explore-btn {
+  background: var(--color-accent);
+  color: var(--c-black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lists-leaderboard__explore-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* =================================================================
+   USER LIST (Table Style)
+   ================================================================= */
+
+.lists-leaderboard__content {
+  width: 100%;
+  background: var(--c-white);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.08);
+  overflow-x: auto;
+  overflow-y: visible;
+  border: 1px solid var(--c-gray-200);
+}
+
+.lists-leaderboard__list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header matching the world challenge Most Contributor table */
+.lists-leaderboard__list-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 90px 220px;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--color-surface-variant);
+  border-bottom: 2px solid var(--c-gray-200);
+  text-transform: uppercase;
+  min-width: fit-content;
+}
+
+.lists-leaderboard__header-rank,
+.lists-leaderboard__header-completed,
+.lists-leaderboard__header-percent,
+.lists-leaderboard__header-time {
+  text-align: center;
+}
+
+.lists-leaderboard__header-user {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Sticky User Item */
+.lists-leaderboard__sticky-user {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--c-white);
+  border-bottom: 2px solid var(--color-accent);
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.05);
+}
+
+.lists-leaderboard__auth-user-item {
+  background: rgba(var(--color-primary-rgb), 0.03) !important;
+}
+
+.lists-leaderboard__user-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 90px 220px;
+  gap: 16px;
+  padding: 16px 24px;
+  background: var(--c-white);
+  border-bottom: 1px solid var(--c-gray-200);
+  align-items: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+.lists-leaderboard__user-item:hover {
+  background: var(--color-surface-variant);
+}
+
+.lists-leaderboard__user-item:last-child {
+  border-bottom: none;
+}
+
+/* Rank Styling - Simple Text No Badges */
+.lists-leaderboard__rank-cell {
+  display: flex;
+  justify-content: center;
+}
+
+.lists-leaderboard__rank-badge {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-variant);
+  border-radius: 10px;
+  color: var(--c-gray-600);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.lists-leaderboard__rank-badge--top-1 {
+  background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%);
+  color: var(--c-white);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.lists-leaderboard__rank-badge--top-2 {
+  background: linear-gradient(135deg, var(--c-gray-400) 0%, var(--c-gray-400) 100%);
+  color: var(--c-white);
+  box-shadow: 0 4px 10px rgba(var(--rgb-gray-400), 0.3);
+}
+
+.lists-leaderboard__rank-badge--top-3 {
+  background: linear-gradient(135deg, #CD7F32 0%, #B87333 100%);
+  color: var(--c-white);
+  box-shadow: 0 4px 10px rgba(205, 127, 50, 0.3);
+}
+
+/* User Info Cell */
+.lists-leaderboard__user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  /* Occupies the 1fr column */
+}
+
+.lists-leaderboard__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--c-gray-200);
+}
+
+.lists-leaderboard__user-name-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.lists-leaderboard__user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Stats Container (Actually just mapping to columns now) */
+.lists-leaderboard__user-stats-container {
+  display: contents; /* Flattens children to grid (cols 3 and 4) */
+}
+
+.lists-leaderboard__user-stat-primary {
+  text-align: center;
+}
+
+.lists-leaderboard__user-stat-secondary {
+  text-align: center;
+}
+
+.lists-leaderboard__user-stat-time {
+  text-align: center;
+}
+
+/* =================================================================
+   LOADING & EMPTY STATES
+   ================================================================= */
+
+.lists-leaderboard__loading {
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+}
+
+.lists-leaderboard__spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-surface-variant);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.lists-leaderboard__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 32px;
+  text-align: center;
+  gap: 16px;
+}
+
+.lists-leaderboard__error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  gap: 16px;
+  text-align: center;
+}
+
+.lists-leaderboard__retry-btn {
+  padding: 10px 20px;
+  background: var(--color-accent);
+  color: var(--c-black);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lists-leaderboard__load-more {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* =================================================================
+   SKELETON ANIMATIONS
+   ================================================================= */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.lists-leaderboard__skeleton-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lists-leaderboard__skeleton-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 90px 220px;
+  gap: 16px;
+  padding: 16px 24px;
+  align-items: center;
+  border-bottom: 1px solid var(--c-gray-100);
+}
+
+.lists-leaderboard__skeleton-item {
+  height: 20px;
+  background: linear-gradient(90deg, var(--c-gray-100) 25%, var(--c-gray-200) 50%, var(--c-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
+}
+
+.lists-leaderboard__skeleton-rank {
+  width: 30px;
+  margin: 0 auto;
+}
+
+.lists-leaderboard__skeleton-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lists-leaderboard__skeleton-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.lists-leaderboard__skeleton-name {
+  width: 150px;
+  height: 24px;
+}
+
+.lists-leaderboard__skeleton-stat {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.lists-leaderboard__skeleton-hero {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(to bottom, var(--c-white), var(--color-surface-variant));
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.lists-leaderboard__skeleton-hero-number {
+  height: 64px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+.lists-leaderboard__skeleton-hero-buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.lists-leaderboard__skeleton-hero-button {
+  flex: 1;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.lists-leaderboard__skeleton-card {
+  height: 140px;
+  width: 100%;
+  border-radius: 12px;
+}

@@ -1,0 +1,85 @@
+/* OverlayInfoSection.module.css - Unified Info Section Component */
+
+/* Block: overlay-info-section */
+.overlay-info-section {
+  padding: 20px 0;
+}
+
+/* Element: overlay-info-section description */
+.overlay-info-section__description {
+  color: #64748b;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+
+/* Element: overlay-info-section stats */
+.overlay-info-section__stats {
+  display: flex;
+  padding: 12px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+/* Element: overlay-info-section stat card */
+.overlay-info-section__stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+/* Element: overlay-info-section stat label */
+.overlay-info-section__stat-label {
+  color: var(--c-gray-600);
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+/* Element: overlay-info-section stat value */
+.overlay-info-section__stat-value {
+  color: var(--c-gray-900);
+}
+
+
+
+/* Element: overlay-info-section divider */
+.overlay-info-section__stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--c-gray-200);
+  opacity: 0.6;
+}
+
+/* Element: overlay-info-section map button */
+.overlay-info-section__map-button {
+  min-height: 40px;
+  background: transparent;
+  color: var(--c-gray-900);
+  border: none;
+  transition: background 0.18s, box-shadow 0.18s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.overlay-info-section__map-button:hover {
+  background: rgba(59, 130, 246, 0.05);
+  color: #1e3a8a;
+}
+
+.overlay-info-section__map-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}

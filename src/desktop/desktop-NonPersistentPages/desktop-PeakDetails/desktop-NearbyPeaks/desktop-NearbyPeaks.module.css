@@ -1,0 +1,198 @@
+.nearby-peaks {
+  animation: fadeInUp 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nearby-peaks__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nearby-peaks__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.nearby-peaks__icon {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+
+.nearby-peaks__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nearby-peaks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nearby-peaks__card {
+  width: 100%;
+  height: 125px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.18), 0 1px 4px rgba(var(--rgb-black), 0.12);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.nearby-peaks__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(var(--rgb-black), 0.2), 0 2px 6px rgba(var(--rgb-black), 0.15);
+}
+
+.nearby-peaks__card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--rgb-black), 0) 0%,
+    rgba(var(--rgb-black), 0.3) 50%,
+    rgba(var(--rgb-black), 0.6) 75%,
+    rgba(var(--rgb-black), 0.9) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nearby-peaks__card-content {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.nearby-peaks__card-info-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.5);
+}
+
+.nearby-peaks__card-name {
+  flex: 0 0 50%;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-peaks__card-elevation {
+  flex: 0 0 25%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-peaks__card-elevation-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.nearby-peaks__card-elevation span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-peaks__card-distance {
+  flex: 0 0 25%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-peaks__card-distance svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.nearby-peaks__card-distance span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-peaks__card-elevation-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nearby-peaks__expand-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  border-radius: 8px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 16px;
+}
+
+.nearby-peaks__expand-button:hover {
+  background: var(--c-gray-200);
+  border-color: #cbd5e0;
+}
+
+.nearby-peaks__no-data {
+  text-align: center;
+  color: var(--c-gray-400);
+  font-style: italic;
+  padding: 32px 16px;
+  background: var(--c-gray-100);
+  border-radius: 12px;
+}

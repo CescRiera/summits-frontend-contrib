@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "適用",
+    "details": "詳細",
+    "filters": "フィルター",
+    "seeRanking": "ランキングを見る",
+    "time": {
+      "years": "年",
+      "days": "日",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "loading": "読み込み中...",
+    "loadingRouteData": "ルートデータを読み込んでいます。 数秒かかる場合があります",
+    "error": "エラー",
+    "retry": "再試行",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "list": "リスト",
+    "map": "マップ",
+    "close": "閉じる",
+    "back": "戻る",
+    "goBack": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "search": "検索",
+    "searching": "検索中...",
+    "clear": "クリア",
+    "filter": "フィルター",
+    "sort": "並べ替え",
+    "refresh": "更新",
+    "min": "最小",
+    "max": "最大",
+    "country": "国",
+    "region": "地域",
+    "location": "場所",
+    "chooseCountry": "国を選択",
+    "chooseRegion": "地域を選択",
+    "allCountries": "すべての国",
+    "allRegions": "すべての地域",
+    "seeAll": "すべて見る",
+    "seeOnMap": "マップで見る",
+    "showLess": "閉じる",
+    "moreInfo": "詳細",
+    "create": "作成",
+    "follow": "フォロー",
+    "following": "フォロー中",
+    "join": "参加",
+    "leave": "退出",
+    "seeMore": "もっと見る",
+    "select": "選択",
+    "send": "送信",
+    "timeUnits": {
+      "yearShort": "年",
+      "dayShort": "日",
+      "hourShort": "時間",
+      "minuteShort": "分",
+      "secondShort": "秒"
+    },
+    "ranking": "ランキング",
+    "share": "Share",
+    "deleting": "削除中...",
+    "seeLess": "表示を減らす"
+  },
+  "desktopWarning": {
+    "title": "Summitsモバイル版をダウンロード",
+    "subtitle": "Summitsモバイル版をお楽しみください。QRコードをスキャンして、ランディングページの指示に従ってアプリをダウンロードしてください！",
+    "scanQR": "このQRコードをモバイルデバイスでスキャン",
+    "mobileSubtitle": "、お使いの手机的操作系统に基づいて、以下の該当するQRコードをスキャンして、AndroidまたはiOSにアプリをダウンロードし、外出先にピークを追跡しましょう！"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "クラブに参加するにはログインしてください。",
+      "title": "ログインが必要",
+      "message": "マップで個人的なピークを表示するにはログインしてください。",
+      "viewCompletedPeaks": "完了および未完了のピークを表示するにはログインしてください。",
+      "filterPeaks": "完了状態でピークをフィルターするにはログインしてください。",
+      "sortByDate": "完了日でピークを並べ替えるにはログインしてください。",
+      "myPeaks": "個人的なピークを表示するにはログインしてください。",
+      "myRoutes": "個人的なルートを表示するにはログインしてください。",
+      "followingMode": "フォローしているユーザーの最近のアクティビティを表示するにはログインしてください。",
+      "savedPeaks": "保存したピークを表示するにはログインしてください。",
+      "savedShelters": "保存した避難小屋を表示するにはログインしてください。",
+      "followUser": "ユーザーをフォローしてプロフィールを表示するにはログインしてください。",
+      "joinChallenge": "チャレンジに参加またはフォローするにはログインしてください。",
+      "cancel": "キャンセル",
+      "login": "ログイン"
+    },
+    "welcome": "Summitsへようこそ",
+    "signIn": "アカウントにログイン",
+    "email": "メールアドレス",
+    "name": "名前",
+    "password": "パスワード",
+    "signInButton": "ログイン",
+    "noAccount": "アカウントをお持ちでないですか？登録",
+    "signUp": "登録",
+    "signUpOrLogin": "登録 / ログイン",
+    "createAccount": "アカウントを作成",
+    "confirmPassword": "パスワードを確認",
+    "signUpButton": "アカウント作成",
+    "hasAccount": "すでにアカウントをお持ちですか？ログイン",
+    "fillAllFields": "すべてのフィールドを入力してください",
+    "loginFailed": "ログイン失敗",
+    "registrationFailed": "登録失敗",
+    "passwordsNotMatch": "パスワードが一致しません",
+    "passwordMin": "パスワードは6文字以上である必要があります。",
+    "acceptTerms": "同意する",
+    "termsOfService": "利用規約",
+    "and": "と",
+    "privacyPolicy": "プライバシーポリシー",
+    "acceptTermsRequired": "利用規約に同意する必要があります",
+    "receiveNotificationsOnPeaks": "ピーク完了時に通知を受け取る",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "アカウントが正常に作成されました！ログインしてください。",
+    "stravaRegisteredSuccess": "Stravaでアカウントが正常に登録されました。ログインしてください。",
+    "backToSelection": "選択に戻る",
+    "backToLogin": "ログイン画面に戻る",
+    "emailVerification": {
+      "title": "メールアドレスを確認",
+      "message": "6桁の確認コードをメールアドレスに送信しました。受信箱を確認して、下のコードを入力してください。",
+      "messageWithEmail": "6桁の確認コードを{email}に送信しました。受信箱を確認して、下のコードを入力してください。",
+      "openGmail": "Gmailを開く",
+      "success": "メールアドレスが正常に確認されました！アカウントの準備ができました。",
+      "authenticated": "アカウントが認証されました。ログインできます。",
+      "verifying": "確認中...",
+      "error": "メールアドレスの確認に失敗しました。コードが期限切れか無効の場合があります。もう一度試すか、サポートに連絡してください。",
+      "codePlaceholder": "6桁のコードを入力",
+      "verifyButton": "メールを確認",
+      "verifyingButton": "確認中...",
+      "resendCode": "コードを再送信",
+      "resendSuccess": "確認コードがメールアドレスに再送信されました。",
+      "codeError": "無効または期限切れの確認コード",
+      "codeRequired": "6桁のコードを入力してください",
+      "link": "メールを確認？"
+    },
+    "forgotPassword": {
+      "title": "パスワードをお忘れですか",
+      "link": "パスワードをお忘れですか？",
+      "instructions": "メールアドレスを入力すると、パスワードをリセットするための6桁のコードを送信します。",
+      "sendEmail": "リセットコードを送信",
+      "success": "そのメールアドレスのアカウントが存在する場合、パスワードリセットコードを送信しました。受信箱を確認してください。",
+      "error": "パスワードリセットメールの送信に失敗しました。もう一度お試しください。"
+    },
+    "resetPassword": {
+      "title": "パスワードをリセット",
+      "instructions": "6桁の確認コードをメールアドレスに送信しました。受信箱を確認して、下のコードを入力してください。",
+      "messageWithEmail": "6桁の確認コードを{email}に送信しました。受信箱を確認して、下のコードを入力してください。",
+      "codePlaceholder": "6桁のコードを入力",
+      "codeRequired": "6桁のコードを入力してください",
+      "emailRequired": "メールアドレスを入力してください",
+      "submit": "パスワードをリセット",
+      "successTitle": "パスワードリセット成功",
+      "successMessage": "パスワードが正常にリセットされました。新しいパスワードでログインできます。",
+      "error": "パスワードのリセットに失敗しました。コードが期限切れか無効の場合があります。新しいリセットコードをリクエストしてください。",
+      "resendCode": "コードを再送信",
+      "resendSuccess": "パスワードリセットコードがメールアドレスに再送信されました。",
+      "resendError": "パスワードリセットコードの再送信に失敗しました。もう一度お試しください。",
+      "invalidToken": "無効または欠落しているリセットトークン。新しいリセットリンクをリクエストしてください。"
+    },
+    "loginHint": "おかえりなさい！プロフィールにアクセスするために認証情報を入力してください。",
+    "goToLogin": "ログインへ",
+    "welcomeMessage": "プロフィールにアクセスしてアクティビティを同期するには、ログインするか新しいアカウントを作成してください。",
+    "noAccountQuestion": "アカウントをお持ちでないですか？",
+    "hasAccountQuestion": "すでにアカウントをお持ちですか？",
+    "or": "または",
+    "orSignInWith": "またはでログイン",
+    "loginWithStrava": "Stravaでログイン",
+    "loginWithSuunto": "Suuntoでログイン",
+    "chooseProvider": "アカウントを作成するためのプロバイダを選択：",
+    "backToProviderSelection": "プロバイダー選択に戻る",
+    "wikiloc": {
+      "enterUsername": "検索するWikilocユーザー名を入力してください。",
+      "noUsers": "その名前のWikilocユーザーは見つかりませんでした。",
+      "searchFailed": "Wikilocユーザーの検索に失敗しました。",
+      "selectUserToContinue": "続行するユーザーを選択",
+      "trails": "トレイル",
+      "selected": "選択済み"
+    },
+    "register": {
+      "title": "アカウントを作成",
+      "subtitle": "ピークを同期するには、メールで登録するか、Strava、Suunto、Garmin、またはWikiloc経由で接続できます。最も高速でシンプルなセットアップには、StravaまたはSuuntoをお勧めします。",
+      "choosePlatform": "プラットフォームを選択",
+      "noPlatformOption": "これらのアカウント持っていません",
+      "registerWith": "登録",
+      "connectingToWikiloc": {
+        "before": "Wikilocに連絡して",
+        "appName": "Summits",
+        "after": "アカウントをWikilocアカウントで登録できるようにしようとしています"
+      },
+      "connectingToStrava": {
+        "before": "Stravaに連絡して",
+        "appName": "Summits",
+        "after": "アカウントをStravaアカウントで登録できるようにしようとしています"
+      },
+      "providerDescription": {
+        "wikiloc": "Wikilocと同期してピークの進捗を追跡",
+        "strava": "Stravaと同期してピークの進捗を追跡",
+        "garmin": "Garmin Connectと同期してピークの進捗を追跡",
+        "default": "メールとパスワードでSummitsアカウントを作成"
+      },
+      "default": {
+        "label": "メール",
+        "title": "Summitsアカウントを作成"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "Wikilocで登録",
+        "searchPlaceholder": "Wikilocユーザー名を検索",
+        "enterUsername": "検索するWikilocユーザー名を入力してください。",
+        "noUsers": "その名前のWikilocユーザーは見つかりませんでした。",
+        "searchFailed": "Wikilocユーザーの検索に失敗しました。",
+        "warning": "Wikilocからルートを取得するのは、Strava、Garmin、またはSuuntoよりとても遅いです！そのうちの1つ持っているなら、それを使ってください！",
+        "trails": "トレイル",
+        "selected": "選択済み"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "Stravaで登録",
+        "connecting": "Stravaに接続中...",
+        "submit": "Stravaで登録",
+        "warning": "Stravaは同期できるルートの数に制限があります。ルートを含むGarminアカウントをお持ちの場合は、同期機能向上のためそれの使用を検討してください。"
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "Garmin Connectで登録",
+        "connecting": "Garmin Connectに登録中...",
+        "submit": "Garmin Connectで登録",
+        "warning": "Garmin Connectにはいくつかの制限があります。すべてのアクティビティが表示されない場合は、助力をお問い合わせください。"
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "Suuntoで登録",
+        "connecting": "Suuntoに接続中...",
+        "submit": "Suuntoで続行",
+        "warning": "Suuntoアカウントを接続して、アクティビティをSummitsに同期します。"
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "Strava登録中にエラーが発生しました。もう一度お試しください。",
+        "emailAlreadyExists": "このメールアドレスのアカウントはすでに存在します。別のメールを使用するかログインしてください。",
+        "accountAlreadyLinked": "このStravaアカウントはすでに別のアカウントにリンクされています。",
+        "registrationFailed": "登録失敗。もう一度お試しください。",
+        "emailCheckFailed": "メール確認失敗。もう一度お試しください。",
+        "internalError": "内部エラーが発生しました。後でもう一度お試しください。"
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "このGarminアカウントはすでに別のアカウントにリンクされています。",
+        "emailCheckFailed": "メール確認失敗。もう一度お試しください。",
+        "generic": "Garmin登録中にエラーが発生しました。もう一度お試しください。",
+        "internalError": "内部エラーが発生しました。後でもう一度お試しください。",
+        "registrationFailed": "登録失敗。もう一度お試しください。"
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "ログイン中にエラーが発生しました。もう一度お試しください。",
+        "timeout": "ログインがタイムアウトしました。もう一度お試しください。"
+      }
+    }
+  },
+  "navigation": {
+    "home": "ホーム",
+    "discover": "発見",
+    "leaderboard": "チャレンジ",
+    "map": "マップ",
+    "profile": "プロフィール",
+    "contact": "連絡先",
+    "userProfile": "ユーザープロファイル",
+    "routeDetails": "ルート詳細",
+    "peakDetails": "ピーク詳細"
+  },
+  "contact": {
+    "getInTouchWithMe": "開発者に連絡",
+    "phoneNumber": "電話番号",
+    "emailAddress": "メールアドレス",
+    "emailPlaceholder": "メール"
+  },
+  "main": {
+    "totalPeaks": "ピーク合計",
+    "totalAscents": "登頂合計",
+    "scrapingMessage": "🔄 ルートからピークを読み込み中...",
+    "failedToRefresh": "データの更新に失敗しました",
+    "completedPeaksInList": "このチャレンジで{total}個中{completed}個のピークを達成しました。",
+    "allPeaks": "すべてのピーク",
+    "loading": "読み込み中...",
+    "completed": "完了",
+    "seeMore": "もっと見る",
+    "seeLess": "閉じる",
+    "myPeaks": "あなたのピーク",
+    "swipeProgressHint": "スワイプして様々なチャレンジでの進捗を確認",
+    "swipeDiscoverHint": "スワイプして世界中の素晴らしいチャレンジを発見",
+    "yourHighestPeaks": "あなたの最高峰",
+    "yourHighestPeaksDesc": "登山で征服した最も高い山",
+    "communityHighestPeaks": "コミュニティの最高峰",
+    "communityHighestPeaksDesc": "コミュニティメンバーが達成した最も印象的な頂",
+    "loadNewPeaks": "新しいピークを読み込む",
+    "refreshUserData": "ユーザーデータを更新",
+    "scrapingInProgress": "ルートが多い場合は時間がかかる場合があります。同時にアプリの他の部分を自由に見てください！",
+    "allPeaksList": {
+      "nameLoggedIn": "あなたの軌跡",
+      "nameGuest": "世界のピークを発見",
+      "descriptionLoggedIn": "あなたが達成したすべての頂点は、あなたの旅に永続的な印を残します。ヒマラヤからアルプスまでの象徴的な山脈での登山を追跡してください。",
+      "descriptionGuest": "エベレストからモンブランまで、世界で最も inspiração山，探索してください。すべての登頂の挑戦と冒険を受け入れる何千もの登山者に加わりましょう。"
+    }
+  },
+  "peakDetails": {
+    "description": "説明",
+    "searchRoutesFor": "ルートを検索",
+    "findHikingRoutesOnWikiloc": "Wikilocでハイキングルートを見つける",
+    "expand": "展開",
+    "loadError": "ピーク詳細の読み込みエラー"
+  },
+  "peaks": {
+    "count": "ピーク",
+    "noPeaksFound": "ピークが見つかりません",
+    "peakInfo": "ピーク情報",
+    "information": "情報",
+    "elevation": "標高",
+    "description": "説明",
+    "noDescription": "説明がありません",
+    "noPeaksNearCoordinates": "これらの座標の近くでピークが見つかりません",
+    "images": "画像",
+    "userPeakDescriptionSingle": "{date}にルート<b>{routes}</b>で{country}{region}の{name}ピークを登りました。",
+    "userPeakDescriptionMultiple": "これらの日付：{dates}にこれらのルート：<b>{routes}</b>で{country}{region}の{name}ピークを登りました。"
+  },
+  "map": {
+    "noRoutes": "ルートがありません",
+    "loadingRoutes": "ルートを読み込み中...",
+    "mapView": "マップ表示",
+    "controls": {
+      "title": "マップコントロール",
+      "globeView": "3D球体表示",
+      "outdoors": "屋外",
+      "satellite": "衛星",
+      "terrainView": "3D地形"
+    },
+    "visiblePeaks": {
+      "title": "表示可能なピーク",
+      "subtitle": "現在の表示とフィルターの結果",
+      "layerLabel": "レイヤー：",
+      "tilesLayerLabel": "タイルレイヤー",
+      "listLayerLabel": "リストレイヤー",
+      "userLayerLabel": "あなたのピークレイヤー",
+      "enableHint": "ピークをリスト表示するにはスイッチを有効に",
+      "empty": "現在の表示でピークが検出されませんでした。",
+      "footer": "マップが1秒間静止すると更新されます。",
+      "loadMore": "残り{remaining}個のピークを表示"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "クラブを検索",
+      "createClub": "クラブを作成",
+      "myClubs": "マイクラブ",
+      "browseTitle": "クラブを検索",
+      "joinClub": "クラブに参加",
+      "myClubsDescription": "あなたがメンバーであるクラブ。"
+    },
+    "userProfile": "ユーザープロファイル",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "language": "言語",
+    "about": "概要",
+    "version": "バージョン",
+    "statistics": "統計",
+    "savedPeaks": "保存したピーク",
+    "yourRoutes": "あなたのルート",
+    "yourPeaks": "あなたのピーク",
+    "yourRoutesWithCount": "あなたの{count}ルート",
+    "yourPeaksWithCount": "あなたの{count}ピーク",
+    "savedPeaksWithCount": "あなたの{count}保存済みピーク",
+    "savedShelters": "保存した避難小屋",
+    "savedSheltersWithCount": "あなたの{count}保存済み避難小屋",
+    "viewYourRoutes": "ルートを見る",
+    "viewYourPeaks": "ピークを見る",
+    "viewAllStats": "すべての統計を見る",
+    "seeAllSavedPeaks": "保存したすべてのピークを見る",
+    "changeLanguage": "言語を変更",
+    "unitSystem": "単位系",
+    "unitSystemMessage": "好みの単位系を選択",
+    "metricSystem": "メートル法（km、m）",
+    "imperialSystem": "ヤード・ポンド法（mi、ft）",
+    "helpTutorials": "ヘルプとチュートリアル",
+    "needHelp": "ヘルプが必要ですか？",
+    "sendSuggestionsReportErrors": "提案を送信 / エラーを報告",
+    "contactDeveloper": "開発者に連絡",
+    "donate": "寄付",
+    "donateQuestion": "寄付する？",
+    "donateTitle": "Summitsをサポート",
+    "donateMessage": "Summitsは利益を生まない個人的なプロジェクトで、私自己的資金で賄っています。どのような寄付でも雰囲し、アプリの改善と維持に貢献します。使用していただきありがとうございます！",
+    "donateButton": "寄付",
+    "donateAmount": "金額（ユーロ）",
+    "donateAmountPlaceholder": "例 5.00",
+    "wikilocImport": "Wikilocからインポート",
+    "wikilocImportTitle": "Wikilocからルートをインポート",
+    "wikilocImportDescription": "Wikilocプロフィールを検索し、すべてのルートをあなたのアカウントにインポートします。",
+    "wikilocImportSearchPlaceholder": "Wikilocユーザー名を検索...",
+    "wikilocImportButton": "ルートをインポート",
+    "wikilocImportStarted": "インポートを開始しました！WebSocketで進捗状況をお知らせします。",
+    "wikilocImportQueued": "あなたは#{position}番目の待機位置です。WebSocketで進捗状況をお知らせします。",
+    "wikilocImportAlreadyInProgress": "このユーザーのWikilocインポートは既に進行中です。",
+    "wikilocImportServerBusy": "サーバーが他のリクエストを処理中です。数分後にもう一度お試しください。",
+    "wikilocImportCompleted": "インポート完了！{count}件のルートを処理しました。",
+    "wikilocImportError": "インポートに失敗しました。もう一度お試しください。",
+    "wikilocNoUsersFound": "その名前のWikilocユーザーが見つかりません。",
+    "wikilocSearchFailed": "Wikilocユーザーの検索に失敗しました。",
+    "wikilocEnterUsername": "検索するWikilocユーザー名を入力してください。",
+    "wikilocSelectUser": "ルートをインポートするユーザーを選択：",
+    "wikilocSelectedUser": "選択済み：{name}",
+    "deleteAccount": "削除",
+    "accountSettings": "アカウント設定",
+    "nameRequired": "名前は必須です",
+    "nameTooLong": "名前は100文字以下にしてください",
+    "nameUpdateFailed": "名前の更新に失敗しました",
+    "editName": "名前を編集",
+    "saveName": "名前を保存",
+    "cancelEditName": "名前を編集をキャンセル",
+    "logoutConfirmation": "ログアウトしてもよろしいですか？",
+    "languageChangeMessage": "好みの言語を選択",
+    "deleteAccountConfirmation": "アカウントを削除してもよろしいですか？この操作は取り消せません。",
+    "contactDeveloperMessage": "サポート、エラーレポート、一般的なお問い合わせについては開発者に連絡してください。",
+    "suggestionsMessage": "アプリを改善するためのアイデアと提案を共有してください。",
+    "subject": "件名",
+    "subjectPlaceholder": "件名を入力...",
+    "message": "メッセージ",
+    "messagePlaceholder": "メッセージを入力...",
+    "yourSuggestion": "あなたの提案",
+    "suggestionPlaceholder": "アイデアと提案を共有...",
+    "sendMessage": "送信",
+    "sendSuggestion": "送信",
+    "suggestionSentSuccessfully": "提案が正常に送信されました！",
+    "messageSentSuccessfully": "メッセージが正常に送信されました！",
+    "follows": {
+      "followers": "フォロワー",
+      "following": "フォロー中",
+      "peaks": "ピーク",
+      "followRequests": "フォローリクエスト",
+      "noPendingRequests": "保留中のリクエストなし",
+      "noPendingRequestsMessage": "現在保留中のフォローリクエストはありません。",
+      "noFollowers": "フォロワーなし",
+      "noFollowersMessage": "まだフォロワーがいません。",
+      "notFollowingAnyone": "誰もフォローしていません",
+      "notFollowingAnyoneMessage": "まだ誰もフォローしていません。",
+      "accept": "承認",
+      "reject": "拒否",
+      "unfollow": "フォロー解除",
+      "loading": "読み込み中...",
+      "error": "データの読み込みエラー",
+      "pendingRequests": "保留中のリクエスト"
+    },
+    "notifications": {
+      "notifications": "通知",
+      "notificationsEnabled": "有効",
+      "notificationsDisabled": "無効",
+      "notificationsPermissionDenied": "権限が拒否されました",
+      "notificationsNotSupported": "サポートされていません",
+      "waitingForPermission": "許可を待っています"
+    },
+    "privacy": {
+      "profileStatus": "プロファイルステータス",
+      "public": "公開",
+      "private": "非公開"
+    },
+    "challenges": {
+      "joinChallenge": "チャレンジに参加",
+      "createChallenge": "チャレンジを作成",
+      "editMyChallenges": "私のチャレンジを編集",
+      "browseTitle": "チャレンジを閲覧",
+      "follow": "フォロー",
+      "following": "フォロー中",
+      "unfollowChallenge": "チャレンジのフォロー解除",
+      "editChallenge": "チャレンジを編集",
+      "leave": "チャレンジを退出",
+      "leaveConfirmTitle": "チャレンジを退出",
+      "leaveConfirmMessage": "'{name}'チャレンジを退出しますか？進捗は失われません。再参加できます。",
+      "noCreatedChallenges": "まだチャレンジを作成していません。"
+    }
+  },
+  "externalProfile": {
+    "userClubs": "{userName}のクラブ",
+    "unknownUser": "不明なユーザー",
+    "userNotFound": "ユーザーが見つかりません",
+    "userNotFoundMessage": "探しているユーザーは存在しないか削除されました。",
+    "follow": "フォロー",
+    "following": "フォロー中",
+    "privateProfile": "非公開プロファイル",
+    "privateProfileMessage": "このユーザーはプロファイルを非公開に設定しています。統計とアクティビティを見るにはフォローしてください。",
+    "rankTitle": "{userName}のランク",
+    "rankDescription": "最も多くのピークを登った<strong>{totalUsers}</strong>人のユーザーの中で<strong>{rank}</strong>位",
+    "userPeaks": "{userName}のピーク",
+    "userRoutes": "{userName}のルート",
+    "userPeaksWithCount": "{userName}の{count}ピーク",
+    "userRoutesWithCount": "{userName}の{count}ルート",
+    "userPeakLists": "{userName}のピークチャレンジ",
+    "peakListProgress": "{completed}/{total}完了",
+    "performanceOverview": "パフォーマンス概要",
+    "distanceKm": "距離（km）",
+    "elevationM": "標高（m）",
+    "totalTime": "合計時間",
+    "peaksConquered": "征服したピーク",
+    "routesCompleted": "完了したルート",
+    "movingTime": "移動時間",
+    "viewStatsTitle": "{userName}の統計を見る",
+    "viewStatsSubtitle": "インタラクティブチャートと指標",
+    "requestPending": "保留中"
+  },
+  "help": {
+    "subtitle": "Summitsを最大限に活用し、すべての機能を発見する方法を学びましょう",
+    "faq": {
+      "installApp": {
+        "question": "アプリをインストールするにはどうすればいいですか？",
+        "answer": "Summitsアプリのインストールは、使用しているオペレーティングシステム（iOSまたはAndroid）またはブラウザーバージョンによって異なります。\n\n以下にデバイスに応じたインストールボタンと手順があります（ランディングページ一样ですが、よりシンプルなデザインで）"
+      },
+      "newPeaks": {
+        "question": "新しいルートのピークが表示されません",
+        "answer": "ルートからの最新のピークが表示されない場合は дома画面（右上に「もっとピークを読み込む」ボタンをクリックしてみてください。\n\nこれが機能しないかエラーが発生した場合は、プロファイルの「開発者に連絡」セクションから私に連絡できます。"
+      },
+      "incorrectPeaks": {
+        "question": "実際に登っていないピークを登ったと表示されます（またはその逆）",
+        "answer": "ピークを計算するために、アプリはルートの座標をチェックし、通過したポイントを特定します。\n\n海拔精度が低いため、ピークを登ったのか近くを通っただけなのかを確信を持って判断できない場合があります。これはモリスerratのようなピーク密度の高い地域で特に発生する可能性があり、実際に登っていないピークを登ったように見えることがあります。\n\n逆に —登ったと思うピークが表示されない場合— GPSが失敗したか、小しい誤差でルートを記録した可能性があります。ルートをマップで確認し、GPSが記録した線を確認することをお勧めします。\n\nそれでも錯誤だと思います場合は、プロファイルの「開発者に連絡」セクションから私に連絡してください。"
+      },
+      "missingRoutes": {
+        "question": "すべてのルートや新しいルートが表示されません",
+        "answer": "不必要なルートの分析を避けるため、Summitsはマウンテンアクティビティに関連する特定のカテゴリーのルートのみを分析します（ハイキング、登山、トレイルラン...）。これにより、大量のルート負荷を避け、泳ぐ、走る、自転車、ジムのようにMountainアクティビティがない可能性の高いルートを分析しません。\n\nルートが分析されることを確認するには、有効なタイプを持っているか確認してください。これに関連する問題がある場合は、「開発者に連絡」セクションから連絡できます。"
+      },
+      "historicalData": {
+        "question": "過去のデータ（過去のルートのピーク）が見えません",
+        "answer": "バックフィルデータに問題があります。以下のフォームを使用して開発者に連絡してください。"
+      }
+    },
+    "mapNavigation": {
+      "title": "マップナビゲーション",
+      "pinchZoom": "マップでピンチしてズームイン・アウト",
+      "dragPan": "ドラッグしてマップをパン",
+      "tapPeak": "ピークをタップして詳細を表示",
+      "layers": "異なるマップレイヤー間を切り替え"
+    },
+    "userFeatures": {
+      "title": "ユーザー機能",
+      "savedPeaks": "お気に入りのピークを保存して素早くアクセス",
+      "routes": "登山ルートを作成して管理",
+      "statistics": "登山の進捗と達成を追跡",
+      "profile": "アカウントと設定を管理"
+    },
+    "leaderboard": {
+      "title": "リーダーボード",
+      "ranking": "世界中の他の登山者と競争",
+      "categories": "様々なカテゴリーでランキングを表示",
+      "filters": "国、地域、または難易度で結果をフィルター",
+      "achievements": "実績とバッジを獲得"
+    },
+    "settings": {
+      "title": "設定と環境設定",
+      "language": "アプリの言語を変更",
+      "notifications": "通知設定を管理",
+      "privacy": "プライバシー設定を制御",
+      "data": "データとアカウントを管理"
+    }
+  },
+  "errors": {
+    "networkError": "ネットワークエラー",
+    "serverError": "サーバーエラー",
+    "timeoutError": "リクエストタイムアウト",
+    "unknownError": "不明なエラーが発生しました"
+  },
+  "search": {
+    "searchPeaks": "名前またはルートIDでピークを検索...",
+    "searching": "検索中...",
+    "searchForPeaks": "ピーク、ユーザー、地域を検索...",
+    "searchLabel": "検索",
+    "closeSearch": "検索を閉じる",
+    "elevationIcon": "海拔アイコン",
+    "peaks": "ピーク",
+    "noPeaksOrUsersFound": "「{query}」のピークまたはユーザーは見つかりません",
+    "noPeaksFound": "「{query}」のピークは見つかりません",
+    "searchPeaksAndUsers": "ピーク、ユーザー、地域を検索...",
+    "discoverPeaksAndUsers": "素晴らしいピークを発見し、他の登山者とつながりましょう。山名、地域、国、またはユーザー名を入力して始めましょう。",
+    "discoverPeaks": "世界中の素晴らしいピークを発見しましょう。山名、地域、または国を入力して始めましょう。",
+    "recentSearches": "最近の検索",
+    "clearRecentSearches": "最近の検索をクリア",
+    "clearSearch": "検索をクリア"
+  },
+  "peaksList": {
+    "yourPeaks": "あなたのピーク",
+    "noPeaksMatchingSearch": "検索に一致するピークが見つかりません",
+    "noPeaksInRoutes": "ルートにピークが見つかりません",
+    "loadingPeaksData": "ピークデータを読み込み中...",
+    "loadingPeaksMetadata": "ピークメタデータを読み込み中...",
+    "noPeaksDataAvailable": "ピークデータがありません"
+  },
+  "gallery": {
+    "media": "メディアギャラリー",
+    "noMedia": "メディアがありません",
+    "videoError": "動画の読み込みエラー",
+    "photos": "写真",
+    "videos": "動画",
+    "video": "動画",
+    "photo": "写真",
+    "openVideoMessage": "Pexelsでこの動画を見たいですか？",
+    "openVideo": "動画を見る",
+    "watchVideo": "動画を見る",
+    "viewOnPexels": "Pexelsで見る",
+    "addImage": "画像を追加",
+    "addImageSuccess": "画像が審査のために提出されました。承認されると表示されます。",
+    "addImageError": "画像の追加に失敗しました",
+    "replaceImage": "画像を置き換え"
+  },
+  "filters": {
+    "filters": "フィルター",
+    "altitude": "海拔",
+    "content": "コンテンツ",
+    "shelterType": "避難小屋タイプ",
+    "modeAll": "すべて",
+    "modePeaks": "山",
+    "modeShelters": "避難小屋",
+    "all": "すべて",
+    "location": "場所",
+    "clear": "フィルターをクリア",
+    "showFilters": "フィルターを表示",
+    "hideFilters": "フィルターを非表示",
+    "filterByElevation": "海拔でフィルター",
+    "nearbyPeaks": "近くのピーク",
+    "currentFilter": "現在のフィルター",
+    "choosePeakList": "チャレンジを選択",
+    "chooseListOfSummits": "チャレンジを選択",
+    "yourPeaks": "あなたのピーク"
+  },
+  "leaderboard": {
+    "clubsTab": "クラブ",
+    "browseClubs": "クラブを検索",
+    "totalClubs": "クラブ数",
+    "totalCountries": "国数",
+    "exploreClubs": "クラブを探索",
+    "clubsFilterPrefix": "クラブ...",
+    "rank": "順位",
+    "club": "クラブ",
+    "errorLoadingClubs": "クラブランキングの読み込みに失敗しました。",
+    "noClubsFound": "このカテゴリのクラブは見つかりませんでした。",
+    "clubsFilters": {
+      "most_users": "メンバー数",
+      "most_peaks": "最多ピーク",
+      "most_distance": "総距離",
+      "most_elevation": "総獲得標高",
+      "most_time": "総時間",
+      "most_active_last_30d": "アクティブ数（30日）",
+      "newest": "新しい順"
+    },
+    "metrics": {
+      "member_count": "メンバー",
+      "distinct_peak_count": "ピーク",
+      "total_distance_km": "距離",
+      "total_elevation_gain": "獲得標高",
+      "total_moving_time": "時間"
+    },
+    "clubsCategories": {
+      "mostPeaks": "最多ピーク",
+      "mostDistance": "距離順",
+      "mostElevation": "獲得標高順",
+      "mostTime": "時間順",
+      "mostUsers": "メンバー数順"
+    },
+    "exploreChallenges": "チャレンジを探索",
+    "noFollowing": "まだ誰もフォローしていません。",
+    "title": "チャレンジ",
+    "peaksTab": "ピーク",
+    "usersTab": "ユーザー",
+    "listsTab": "チャレンジ",
+    "worldChallengeTab": "ワールドチャレンジ",
+    "userChallengesTab": "ユーザーチャレンジ",
+    "worldTab": "ワールド",
+    "forYouTab": "おすすめ",
+    "totalWorldPeaks": "世界のピーク総数",
+    "communityCompleted": "コミュニティが完了",
+    "youCompleted": "あなたが完了",
+    "shortTotal": "合計",
+    "shortCommunity": "コミュニティ",
+    "shortMe": "あなた",
+    "shortExpand": "展開",
+    "shortMinimize": "閉じる",
+    "sortByHighest": "最も高いピーク",
+    "sortByContributors": "トップコントリビューター",
+    "expandMap": "マップを展開",
+    "seeMoreAboutList": "このチャレンジについて詳しく見る",
+    "sortBy": "並べ替え",
+    "activity": "アクティビティ",
+    "allActivities": "すべてのアクティビティ",
+    "distance": "距離",
+    "elevation": "海拔",
+    "routes": "ルート",
+    "peaks": "ピーク",
+    "peak": "ピーク",
+    "time": "時間",
+    "climbedBy": "登頂者",
+    "seeAll": "すべて見る",
+    "loadMorePeaks": "もっとピークを読み込む",
+    "loadMoreUsers": "もっとユーザーを読み込む",
+    "loading": "読み込み中...",
+    "distanceChampion": "距離チャンピオン",
+    "elevationMaster": "海拔マスター",
+    "routeExplorer": "ルートエクスプローラー",
+    "peakConqueror": "ピーク征服者",
+    "enduranceKing": "耐久の王",
+    "topPerformer": "トップパフォーマー",
+    "listChampion": "チャレンジチャンピオン",
+    "peakListParticipant": "チャレンジ参加者",
+    "badges": {
+      "distanceChampion": "距離チャンピオン",
+      "elevationMaster": "海拔マスター",
+      "routeExplorer": "ルートエクスプローラー",
+      "peakConqueror": "ピーク征服者",
+      "enduranceKing": "耐久の王",
+      "topPerformer": "トップパフォーマー"
+    },
+    "filters": {
+      "sortBy": "並べ替え",
+      "activity": "アクティビティ"
+    },
+    "completed": "完了",
+    "progress": "進捗",
+    "hours": "時間",
+    "selectList": "チャレンジを選択：",
+    "participants": "参加者",
+    "peakLists": "チャレンジリーダーボード",
+    "peakListsDescription": "様々なチャレンジで他の登山者と競争",
+    "errorLoadingLists": "チャレンジの読み込みに失敗しました",
+    "noParticipants": "このチャレンジにはまだ参加者がいません。最初の参加者になりましょう！",
+    "topPerformers": "トップパフォーマー",
+    "allRankings": "すべてのランキング",
+    "noListSelected": "ランキングを表示するにはチャレンジを選択してください",
+    "noMorePeaks": "読み込むピークがこれ以上ありません",
+    "noUsersFound": "ユーザーが見つかりません",
+    "searchLocationPlaceholder": "国または地域を検索",
+    "noLocationsFound": "「{query}」の国または地域が見つかりません",
+    "locationSearchLabel": "場所を検索",
+    "total": "合計",
+    "user": "ユーザー",
+    "peakList": "チャレンジ",
+    "tryAgain": "再試行",
+    "elevationGain": "獲得",
+    "climbers": "登山者",
+    "topClimber": "トップ登山者",
+    "unknown": "不明",
+    "notAvailable": "-",
+    "more": "もっと",
+    "location": "場所",
+    "uniqueClimbers": "ユニークな登山者",
+    "description": "世界中のピーク達成を、国または地域ごとに探索し、独自の貢献を追跡できるコミュニティ主導のチャレンジ。",
+    "errorLoadingUsers": "ユーザーの読み込みに失敗しました",
+    "onlyMyPeaks": "自分のピークのみ",
+    "community": "コミュニティ",
+    "you": "あなた",
+    "inPastYear": "{year}年に ",
+    "inYear": "{year}年に"
+  },
+  "landing": {
+    "subtitle": "ピークを追跡し、社区のものを探索し、新しいものを発見しましょう！",
+    "description": "エベレストからモンブランまで、世界で最もinspirasi的な山々を探検しましょう。すべての登頂の挑戦と冒険を受け入れる何千もの登山者に加わりましょう。",
+    "loginPrompt": "進捗を先のレベルに進めたいですか？",
+    "wikilocText": "Wikiloc、Strava、Garmin、またはSuuntoアカウントで登録して、すべてのルートで登ったピークを確認しましょう！",
+    "startExploring": "探検",
+    "forFullExperience": "完全な体験のために：",
+    "home": "ホーム",
+    "explore": "発見",
+    "map": "マップ",
+    "leaderboards": "チャレンジ",
+    "signIn": "ログイン",
+    "navIntro": "これらのボタンを使用してナビゲーションと探検を開始しましょう！",
+    "desktopWarning": {
+      "title": "Summitsはスマホで最適に動作します",
+      "subtitle": "完全な体験のためにはモバイルアプリをダウンロードしてください。"
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "あなたの記録",
+    "personalClimbingAchievements": "個人的な登山達成",
+    "seeAll": "すべて見る",
+    "highestPeak": "最高峰",
+    "ascent": "登頂",
+    "ascents": "登頂",
+    "otherAchievements": "その他の達成",
+    "viewPeak": "ピークを見る",
+    "emptyTitle": "旅を始めましょう",
+    "emptySubtitle": "最初の登頂を記録して、ここで個人的な記録を見ましょう！"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "あなたの最も困難なルート",
+    "mostDemandingChallenges": "最も 要求の厳しいチャレンジ",
+    "seeAll": "すべて見る",
+    "hardestRoute": "最も极端",
+    "elevationGain": "獲得",
+    "time": "時間",
+    "movingTime": "移動時間",
+    "distance": "距離",
+    "emptyTitle": "旅を始めましょう",
+    "emptySubtitle": "最初のルートを完了して、ここであなたの最も困難なチャレンジを見ましょう！"
+  },
+  "recentPeaks": {
+    "title": "最近の高さ",
+    "subtitle": "最近のピーク達成",
+    "filter": {
+      "community": "コミュニティ",
+      "following": "フォロー中",
+      "user": "あなた"
+    }
+  },
+  "recentRoutes": {
+    "title": "最近のルート",
+    "subtitle": "最近のルート完了",
+    "elevationGain": "海拔",
+    "time": "時間",
+    "distance": "距離",
+    "peaks": "ピーク",
+    "filter": {
+      "community": "コミュニティ",
+      "following": "フォロー中",
+      "user": "あなた"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "ブロックされたユーザーの統計は表示されません。",
+    "reportContent": "コンテンツを報告",
+    "reportUser": "ユーザーを報告",
+    "blockUser": "ユーザーをブロック",
+    "unblockUser": "ユーザーのブロックを解除",
+    "userBlocked": "ユーザーはブロック済み",
+    "contentReported": "コンテンツが報告されました",
+    "userReported": "ユーザーが報告されました",
+    "actionCompleted": "アクション完了",
+    "userBlockedMessage": "{userName}をブロックしました。彼らのコンテンツは非表示になります。",
+    "contentReportedMessage": "報告いただきありがとうございます。もうすぐ確認します。",
+    "userReportedMessage": "このユーザーの報告いただきありがとうございます。もうすぐ確認します。",
+    "actionCompletedMessage": "アクションが正常に完了しました。",
+    "unblockInfo": "このユーザーのブロックを解除できます。",
+    "blockInfo": "ユーザーをブロックすると、すべてのコンテンツが非表示になります。",
+    "blockedUser": "ブロックされたユーザー",
+    "blockedRoute": "ブロックされたルート",
+    "blockedProfile": "ブロックされたユーザー",
+    "blockedProfileMessage": "このユーザーをブロックしました。彼らのコンテンツはあなたに対して非表示です。"
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "世界の最新のルートとピーク",
+      "subtitle": "コミュニティメンバー、あなたの友人、またはあなたが完了した最新のルートとピークを視覚化"
+    },
+    "challenges": {
+      "title": "トップチャレンジ",
+      "subtitle": "最大の世界チャレンジを表示して完了",
+      "allPeaksDescriptionLoggedIn": "コミュニティが登ったすべての頂点を探索し、あなたの貢献を追跡しましょう！",
+      "allPeaksDescriptionGuest": "コミュニティが登ったすべての頂点を探索しましょう。登録して貢献を追跡しましょう！",
+      "statTotal": "合計",
+      "statCompleted": "登頂",
+      "statByMe": "あなた"
+    },
+    "showMore": "もっと表示",
+    "showLess": "閉じる"
+  },
+  "recentCommunityPeaks": {
+    "title": "コミュニティの最近のピーク",
+    "subtitle": "コミュニティが最近征服した頂点",
+    "elevation": "海拔",
+    "location": "場所"
+  },
+  "recentCommunityRoutes": {
+    "title": "コミュニティの最近のルート",
+    "subtitle": "コミュニティが最近完了したルート",
+    "elevationGain": "海拔",
+    "time": "時間",
+    "distance": "距離",
+    "peaks": "ピーク"
+  },
+  "weather": {
+    "title": "天気",
+    "weatherDataUnavailable": "天気データがありません",
+    "feelsLike": "体感温度",
+    "temperature": "気温",
+    "wind": "風",
+    "precipitation": "降水量",
+    "snow": "雪",
+    "uvIndex": "UVインデックス",
+    "sunrise": "日の出",
+    "sunset": "日の入り",
+    "hourlyForecast": "時間ごとの予報",
+    "closeHourlyForecast": "時間ごとの予報を閉じる",
+    "showHourlyForecastForToday": "今日の時間ごとの予報を表示",
+    "showHourlyForecastFor": "{date}の時間ごとの予報を表示",
+    "kmh": "km/h",
+    "mm": "mm",
+    "cm": "cm",
+    "hours": "時間"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "興味深い場所",
+    "noDataForPeak": "このピークのインフラデータがありません。",
+    "noNearbyWithin5km": "このピークの5km以内に近くのインフラが見つかりません。",
+    "allInfrastructure": "すべてのインフラ",
+    "location": "場所",
+    "details": "詳細",
+    "visitWebsite": "ウェブサイトを訪問",
+    "kmFromPeak": "km ピークから",
+    "openMaps": "マップを開く",
+    "viewInMaps": "マップで表示",
+    "category": {
+      "hut": "山小屋",
+      "shelter": "避難小屋",
+      "campsite": "キャンプ場",
+      "naturalFeature": "自然の特徴",
+      "waterSource": "水源",
+      "other": "その他"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "近くのピーク",
+    "noData": "近くのピークが見つかりません"
+  },
+  "userPeaks": {
+    "title": "あなたのピーク",
+    "userTitle": "{userName}のピーク",
+    "description": "{count}個の完了したピークのあなたの個人的コレクション。各頂点は旅、克服した挑戦、そして永遠に続く記憶を表します。",
+    "userDescription": "{userName}の{count}個の完了したピークの個人的コレクション。各頂点は旅、克服した挑戦、そして永遠に続く記憶を表します。",
+    "noPeaks": "まだピークを完了していません。冒険を始めましょう！",
+    "loading": "ピークを読み込み中...",
+    "error": "ピークの読み込みに失敗しました",
+    "addPeaks": "ピークを追加",
+    "timeline": "タイムライン",
+    "openPeak": "ピークを開く",
+    "summary": {
+      "baseText": "登頂しました",
+      "userBaseText": "{userName}は登頂しました",
+      "timeSingular": "回",
+      "timePlural": "回",
+      "in": "で",
+      "on": "に",
+      "and": "と",
+      "singleRoute": "{date}にルート{routeName}で{peakName}を{countText}登頂しました",
+      "twoRoutes": "{dates}に{routeNames}で{peakName}を{countText}登頂しました",
+      "multipleRoutes": "{dates}に{routeNames}で{peakName}を{countText}登頂しました",
+      "oneRoute": "1ルート",
+      "multipleRoutesCount": "{count}ルート",
+      "seeMore": "もっと見る",
+      "seeLess": "閉じる"
+    },
+    "grid": "グリッド",
+    "filters": "フィルター",
+    "advancedFilters": "高度なフィルター",
+    "searchPeaks": "ピークを検索",
+    "searchPlaceholder": "名前、国、地域で検索...",
+    "dateRange": "日付範囲",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "elevationRange": "海拔範囲",
+    "country": "国",
+    "region": "地域",
+    "allCountries": "すべての国",
+    "allRegions": "すべての地域",
+    "clearAll": "すべてクリア",
+    "applyFilters": "フィルターを適用",
+    "noResults": "フィルターに一致するピークが見つかりません。",
+    "peaks": "ピーク",
+    "showMore": "残り{count}個を表示",
+    "showLess": "閉じる",
+    "wrongPeak": "間違い？",
+    "deleteConfirmation": {
+      "title": "ピークを削除",
+      "message": "{peakName}を削除しますか？一度も登頂していないように表示されます",
+      "confirm": "削除",
+      "cancel": "キャンセル"
+    },
+    "yourAscensions": "あなたの登頂",
+    "peakDetails": "山頂の詳細",
+    "peakInfo": {
+      "title": "山頂情報",
+      "loading": "山頂情報を読み込み中...",
+      "error": "山頂情報の読み込みに失敗しました",
+      "ascensions": "登頂",
+      "unlinked": "未リンク",
+      "youAscended": "情報なし。",
+      "unknownRoute": "不明なルート",
+      "unlinkedPrompt": "リンクされていない登頂が{count}件あります。ルートまたは日付にリンクしてください：",
+      "linkToRoute": "ルート",
+      "selectRoute": "ルートを選択...",
+      "linkToDate": "日付",
+      "link": "リンク",
+      "editLink": "リンクを編集",
+      "moving": "移動中",
+      "deleteAscension": "登頂を削除",
+      "linkAscension": "登頂をリンク",
+      "deletePeak": "山頂を削除",
+      "confirmDeletePeak": "{peakName}を削除しますか？すべての登頂が削除されます。",
+      "confirmDeleteAscension": "この登頂を削除してもよろしいですか？",
+      "deleting": "削除中...",
+      "yesDelete": "はい、削除",
+      "cancel": "キャンセル",
+      "close": "閉じる",
+      "noAscensions": "登頂記録がありません"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "保存したピーク",
+    "description": "{count}個の保存したピークのあなたのコレクション。登りたい、または再訪したいピークを追跡します。",
+    "noPeaks": "まだピークを保存していません。探検を始めましょう！",
+    "loading": "保存したピークを読み込み中...",
+    "error": "保存したピークの読み込みに失敗しました",
+    "filters": "フィルター",
+    "advancedFilters": "高度なフィルター",
+    "searchPlaceholder": "名前、国、地域で検索...",
+    "dateRange": "日付範囲",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "elevationRange": "海拔範囲",
+    "country": "国",
+    "region": "地域",
+    "allCountries": "すべての国",
+    "allRegions": "すべての地域",
+    "clearAll": "すべてクリア",
+    "applyFilters": "フィルターを適用",
+    "noResults": "フィルターに一致する保存したピークが見つかりません。",
+    "sorting": {
+      "savedDate": "保存日"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "新しい順",
+      "savedDateOldest": "古い順"
+    }
+  },
+  "userSavedShelters": {
+    "title": "保存した避難小屋",
+    "totalLabel": "避難小屋合計",
+    "description": "{count}件の保存した避難小屋のコレクション。訪れたい避難小屋を記録しておきましょう。",
+    "noShelters": "まだ避難小屋を保存していません。探索を始めましょう！",
+    "loading": "保存した避難小屋を読み込み中...",
+    "error": "保存した避難小屋を読み込めませんでした",
+    "filters": "フィルター",
+    "advancedFilters": "詳細フィルター",
+    "searchPlaceholder": "名前、国、地域で検索...",
+    "dateRange": "日付範囲",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "elevationRange": "標高範囲",
+    "country": "国",
+    "region": "地域",
+    "allCountries": "すべての国",
+    "allRegions": "すべての地域",
+    "clearAll": "すべてクリア",
+    "applyFilters": "フィルターを適用",
+    "noResults": "条件に一致する保存した避難小屋が見つかりません。",
+    "typeFilter": "避難小屋のタイプ",
+    "typeOptions": {
+      "all": "すべてのタイプ"
+    },
+    "savedOn": "保存日",
+    "unsave": "避難小屋を削除",
+    "sorting": {
+      "savedDate": "保存日"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "新しい順",
+      "savedDateOldest": "古い順"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "このチャレンジでまだピークを完了していません。冒険を始めましょう！",
+    "loading": "読み込み中...",
+    "noSearchResults": "「{query}」のピークが見つかりません。別の検索語を試してください。",
+    "search": {
+      "placeholder": "名前、地域、または国でピークを検索..."
+    },
+    "filters": {
+      "label": "フィルター：",
+      "all": "すべて",
+      "completed": "完了",
+      "missing": "未完了"
+    },
+    "sorting": {
+      "label": "並べ替え：",
+      "name": "名前",
+      "elevation": "海拔",
+      "date": "日付",
+      "ascents": "登頂"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Z",
+      "nameDesc": "Z → A",
+      "elevationAsc": "低 → 高",
+      "elevationDesc": "高 → 低",
+      "dateNewest": "新しい順",
+      "dateOldest": "古い順",
+      "ascentsMost": "最多的登頂",
+      "ascentsLeast": "最少の登頂"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "ルートを削除",
+    "deleteConfirmTitle": "ルートを削除しますか？",
+    "deleteConfirmMessage": "本当にこのルートを削除しますか？ この操作は永続的であり、登頂したピーク数に影響します。",
+    "deleteSuccess": "ルートが正常に削除されました",
+    "deleteError": "ルートを削除できませんでした。もう一度お試しください。",
+    "unnamedRoute": "名称未設定のルート",
+    "metrics": {
+      "distance": "距離",
+      "elevationGain": "獲得標高",
+      "time": "タイム"
+    },
+    "title": "あなたのルート",
+    "userTitle": "{userName}のルート",
+    "description": "{totalRoutes}ルートを{totalPeaks}ピークを達成して完了しました。",
+    "userDescription": "{userName}は{totalRoutes}ルートを{totalPeaks}ピークを達成して完了しました。",
+    "routes": "ルート",
+    "addRoute": "ルートを追加",
+    "addRouteTitle": "GPXルートを追加",
+    "addRouteNameLabel": "ルート名",
+    "addRouteNamePlaceholder": "ルート名を入力",
+    "addRouteFileLabel": "GPXファイル",
+    "addRouteFilePlaceholder": "GPXファイルを選択",
+    "addRouteSubmit": "ルートを追加",
+    "addRouteSubmitting": "ルートを追加中...",
+    "addRouteErrors": {
+      "name": "ルート名を入力してください。",
+      "file": "GPXファイルを選択してください。",
+      "submit": "ルートの追加に失敗しました。もう一度お試しください。"
+    },
+    "searchPlaceholder": "ルートを検索...",
+    "filters": "フィルター",
+    "advancedFilters": "高度なフィルター",
+    "sortBy": "並べ替え",
+    "date": "日付",
+    "peaks": "ピーク",
+    "sortOptions": {
+      "dateNewest": "日付（新しい）",
+      "dateOldest": "日付（古い）",
+      "peaksMost": "最多的ピーク",
+      "peaksLeast": "最少のピーク"
+    },
+    "loadingRoutes": "ルートを読み込み中...",
+    "loadingMore": "もっとルートを読み込み中...",
+    "loadingCountries": "国と地域を読み込み中...",
+    "noResults": "条件に一致するルートが見つかりません。",
+    "endMessage": "ルートの終わりに達しました",
+    "paginationError": "もっとルートの読み込みに失敗しました",
+    "tryAgain": "再試行",
+    "clearAll": "すべてクリア",
+    "applyFilters": "フィルターを適用",
+    "dateRange": "日付範囲",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "country": "国",
+    "region": "地域",
+    "allCountries": "すべての国",
+    "allRegions": "すべての地域",
+    "peaksCount": "ピーク",
+    "noPeaksOnRoute": "このルートでピークを達成していません",
+    "seeOnMap": "マップで見る",
+    "ascent": "登頂",
+    "ascents": "登頂",
+    "peaksInRoute": "ルート内のピーク"
+  },
+  "addManualPeaks": {
+    "title": "手動でピークを追加",
+    "subtitle": "プロフィールにピークを発見して追加します。検索、フィルター、複数のピークを選択してルートに関連付けます。",
+    "listView": "リスト",
+    "mapView": "マップ",
+    "filters": "フィルター",
+    "peakName": "ピーク名",
+    "searchPlaceholder": "ピークを検索（2文字以上）...",
+    "elevation": "海拔",
+    "minElevation": "最低海拔（m）",
+    "maxElevation": "最高海拔（m）",
+    "country": "国",
+    "allCountries": "すべての国",
+    "region": "地域",
+    "allRegions": "すべての地域",
+    "clearFilters": "フィルターをクリア",
+    "loading": "ピークを読み込み中...",
+    "loadingMap": "マップを読み込み中...",
+    "noPeaks": "ピークが見つかりません。フィルターを調整してみてください。",
+    "mapPlaceholder": "マップがここに表示されます。ピークを選択してマップで表示します。",
+    "associatedRoute": "ルートに関連付け",
+    "selected": "選択済み",
+    "selectedCount_one": "{{count}}ピークを選択",
+    "selectedCount_other": "{{count}}ピークを選択",
+    "submit_one": "{{count}}ピークを追加",
+    "submit_other": "{{count}}ピークを追加",
+    "submitting": "ピークを追加中...",
+    "noSelection": "少なくとも1つのピークを選択してください。",
+    "fetchError": "ピークの読み込みに失敗しました。もう一度お試しください。",
+    "submitError": "ピークの追加に失敗しました。もう一度お試しください。",
+    "addSuccess_one": "{{count}}ピークが正常に追加されました！",
+    "addSuccess_other": "{{count}}ピークが正常に追加されました！",
+    "routeExistence": {
+      "question": "このピークは既存のルートに属しますか？",
+      "subtitle": "続行するオプションを選択",
+      "hasRoute": "はい、ルートを選択",
+      "noRoute": "いいえ、独立して追加",
+      "addWithDate": "日付をつけて追加"
+    },
+    "selectRoute": "{peakName}のルートを選択",
+    "routeAssociation": {
+      "title": "関連付けを確認",
+      "message": "{peakName}をルート{routeName}に関連付けますか？",
+      "confirm": "確認",
+      "cancel": "キャンセル"
+    },
+    "submitOptions": {
+      "title": "ピークを確認",
+      "date": "日付",
+      "routeHint": "ルートを紐付け",
+      "dateHint": "日付を設定"
+    }
+  },
+  "userStats": {
+    "title": "統計",
+    "activityType": "アクティビティタイプ",
+    "totalPeaks": "ピーク合計",
+    "totalRoutes": "ルート合計",
+    "peakLists": {
+      "title": "チャレンジ進捗",
+      "completedDescription": "{total}個中{completed}個ピークを達成しました。"
+    },
+    "statistics": "統計",
+    "globalStats": "グローバル統計",
+    "byActivity": "アクティビティ別",
+    "graph": "時間経過による進捗グラフ",
+    "openGraph": "クリックして詳細チャートを表示",
+    "viewInCharts": "チャートで表示",
+    "progressChart": "進捗チャート",
+    "rotate": "より良い表示のためにデバイスを回転",
+    "rank": {
+      "yourRank": "あなたのランク",
+      "rankDescription": "最も多くの合計ピークを持つ{totalUsers}人のユーザーの中で{rank}位",
+      "noRank": "ランクなし"
+    },
+    "moreInformation": "詳細情報",
+    "peakListsDescription": "下のいずれかのチャレンジをクリックして詳細にアクセス",
+    "statisticsDescription": "統計を視覚化",
+    "openGraphDescription": "開いてインタラクティブチャートを探索",
+    "metrics": {
+      "distance": "距離",
+      "elevationGain": "海拔獲得",
+      "time": "時間",
+      "totalTime": "合計時間",
+      "movingTime": "移動時間",
+      "peaks": "ピーク",
+      "routes": "ルート"
+    },
+    "timeAggregation": {
+      "daily": "ルート日",
+      "weekly": "週別",
+      "monthly": "月別",
+      "yearly": "年別",
+      "custom": "カスタム範囲"
+    },
+    "controls": {
+      "groupBy": "グループ化",
+      "activityType": "アクティビティタイプ",
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "apply": "適用"
+    },
+    "chart": {
+      "noDataAvailable": "このアクティビティにデータがありません"
+    },
+    "rotatePhone": "チャートを表示するには teléfonoを横方向に回転させてください",
+    "activityFilter": {
+      "all": "すべてのアクティビティ",
+      "unknown": "不明"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "登頂済みとして追加",
+    "title": "コミュニティ",
+    "completedBy": "登頂者",
+    "totalCompletions": "登頂合計",
+    "uniqueUsers": "ユニークなユーザー",
+    "timeSingle": "回",
+    "timePlural": "回",
+    "seeMore": "もっと見る",
+    "more": "もっと",
+    "yourProgress": "あなたの進捗",
+    "completed": "登頂",
+    "notCompleted": "未登頂",
+    "lastCompleted": "最後の登頂",
+    "youHaveCompleted": "あなたは登頂しました",
+    "routes": "ルート",
+    "peaks": "ピーク",
+    "filterAll": "すべて",
+    "filterClubRelated": "クラブ関連",
+    "filterMyClubs": "マイクラブ"
+  },
+  "listOverlay": {
+    "chooseList": "チャレンジを選択",
+    "completedLabel": "{completed}/{total}完了"
+  },
+  "exploreOverlay": {
+    "title": "左にドラッグ/スワイプ",
+    "subtitle": "インタラクティブマップを発見"
+  },
+  "og": {
+    "title": "Summits - 山頂を追跡",
+    "description": "登頂成就を追跡し、社区と山峰を共有し、世界中の他の登山者の登頂を発見します。"
+  },
+  "routeDetails": {
+    "downloadRoute": "ルートをダウンロード",
+    "sendToDevice": "デバイスに送信",
+    "showStats": "統計を表示",
+    "hideStats": "統計を非表示",
+    "shareRoute": "共有"
+  },
+  "routeAnimation": {
+    "title": "アニメーションを作成",
+    "createAnimation": "アニメーションを作成",
+    "description": "ルートの映画的な3Dフライオーバービデオを生成します。カメラはドラマチックなチェイスカム視点であなたの経路に従います。",
+    "hint": "地形が完全に読み込まれると録画が始まります。",
+    "duration": "ビデオの長さ",
+    "seconds": "秒",
+    "durationHint": "長い = より遅くより映画的",
+    "elevation": "海拔",
+    "elevationGain": "海拔獲得",
+    "distance": "距離",
+    "preparing": "3D地形を準備中...",
+    "recording": "録画中...",
+    "recordingHint": "animationが録画されています。お待ちください。タブを切り替えないでください。",
+    "complete": "アニメーション完了！ビデオのダウンロード準備ができました。",
+    "fileSize": "ファイルサイズ",
+    "download": "ビデオをダウンロード",
+    "start": "録画開始",
+    "retry": "再試行",
+    "error": "アニメーションの作成中にエラーが発生しました。",
+    "errorNoRoute": "アニメーションにルートデータがありません。",
+    "errorUnknown": "不明なエラーが発生しました。",
+    "notSupported": "お使いのブラウザではビデオ録画がサポートされていません。Chrome、Firefox、またはEdgeを試してください。",
+    "videoDownloaded": "ビデオがダウンロードされました",
+    "videoSavedToGallery": "ビデオがギャラリーに保存されました",
+    "speed": "速度",
+    "speedHint": "録画中に+/-ボタンを使用して速度を調整：1x → 3x → 5x → 10x → 0.5x → 1x",
+    "speedDurationHint": "ビデオの長さは選択した速度に依存します",
+    "save": "ギャラリーに保存"
+  },
+  "routeAssociation": {
+    "authRequired": "この山頂をルートに関連付けるにはログインしてください。",
+    "confirm": "確認",
+    "fetchError": "ルートを読み込めませんでした。",
+    "loading": "ルートを読み込み中...",
+    "noRoute": "スキップ（ルートなし）",
+    "noRoutes": "ルートが見つかりませんでした",
+    "peaks_one": "このルートに{count}つの山頂",
+    "peaks_other": "このルートに{count}つの山頂",
+    "subtitle": "{peakName}のルートを選択",
+    "title": "ルートを関連付ける"
+  },
+  "terms": {
+    "title": "Summits – 利用規約（外部プラットフォームデータの使用）",
+    "lastUpdated": "最終更新日：2025年10月",
+    "introduction": {
+      "title": "序論",
+      "content": "Summitsは、山頂登頂体験を追跡・共有するためのプラットフォームです。このサービスを提供するため、SummitsはGarmin Connect、Strava、Wikiloc（総称して「外部プラットフォーム」）を含むサードパーティプラットフォームと統合し、户外アクティビティデータをインポートして分析します。Summitsを使用し、外部プラットフォームアカウントで登録することで、データ使用に関する利用規約に同意します。"
+    },
+    "dataCollection": {
+      "title": "1. データ収集と処理",
+      "whatData": {
+        "title": "1.1 アクセスするデータ",
+        "intro": "外部プラットフォームアカウントをSummitsに接続すると、以下のタイプのデータにアクセスします：",
+        "fromWikiloc": "Wikilocから：",
+        "wikiloc": {
+          "activity": "アクティビティとルートデータ（GPXファイル、トラッキングログ）",
+          "timestamps": "アクティビティのタイムスタンプと日付",
+          "elevation": "海拔プロファイルと地理的座標",
+          "routeNames": "ルート名と説明",
+          "activityTypes": "アクティビティタイプ（ハイキング、登山など）",
+          "profile": "公開プロフィール情報"
+        },
+        "fromStrava": "Stravaから：",
+        "strava": {
+          "activity": "ルートとトラックを含むアクティビティデータ",
+          "timestamps": "アクティビティのタイムスタンプと期間",
+          "elevation": "海拔獲得、距離、期間の指標",
+          "coordinates": "地理的座標と海拔プロファイル",
+          "activityTypes": "アクティビティタイプとスポーツ",
+          "profile": "基本的なプロフィール情報（名前、ユーザー名、プロフィール写真）"
+        },
+        "fromGarmin": "Garmin Connectから：",
+        "garmin": {
+          "activity": "Garminデバイスからのアクティビティ記録",
+          "gps": "GPS追跡データとルート",
+          "elevation": "海拔、距離、時間データ",
+          "summaries": "アクティビティサマリーと統計",
+          "location": "地理的位置データ",
+          "profile": "基本的なプロフィール情報（名前、ユーザー名、プロフィール写真）"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 データの使用方法",
+        "intro": "外部プラットフォームのデータを使用して：",
+        "identifyPeaks": "どの山頂を登ったかを特定",
+        "trackProgress": "登山進捗を追跡",
+        "displayHistory": "インタラクティブマップで登頂履歴を表示",
+        "calculateStats": "登頂した山頂の総数とその他の統計を計算",
+        "enableSharing": "他のユーザーと達成を共有できるように（プライバシー設定に従う）",
+        "leaderboards": "コミュニティリーダーボードに統計を含める",
+        "analyzeRoutes": "ルートを分析し、あなたが登頂した地点を特定します"
+      }
+    },
+    "thirdParty": {
+      "title": "2. サードパーティプラットフォーム利用規約",
+      "compliance": {
+        "title": "2.1 外部プラットフォームポリシーの遵守",
+        "intro": "外部プラットフォームのアカウントをSummitsに接続することにより、お客様は以下の事項を認めるものとします：",
+        "readAgree": "各プラットフォームの利用規約を読み、遵守することに同意していること",
+        "apiTerms": "当社は、お客様が許可した権限および各プラットフォームのAPI規約に従ってのみデータにアクセスすること",
+        "devPolicies": "当社はGarmin、Strava、Wikilocの開発者ポリシーおよびプライバシーポリシーを遵守していること",
+        "noCredentials": "当社はお客様のログイン情報を共有しないこと",
+        "secureTokens": "アクセストークンを安全に保管し、アクティビティデータのインポートにのみ使用すること"
+      },
+      "scope": {
+        "title": "2.2 許可の範囲",
+        "intro": "Summitsを許可することにより、お客様は以下の権限を付与します：",
+        "readStore": "アクティビティデータの読み取り、保存、および処理",
+        "analyzeTransform": "登頂した山頂を特定するためのデータの分析および変換",
+        "notDo": {
+          "intro": "当社は以下のことは行いません：",
+          "modify": "お客様に代わってアクティビティを修正、削除、または投稿すること",
+          "share": "広告主または第三者とデータを共有すること（第4項に記載されている場合を除く）",
+          "sell": "お客様の個人データを販売すること"
+        }
+      },
+      "revocation": {
+        "title": "2.3 アクセスの取り消し",
+        "content": "お客様は、外部プラットフォームのアカウント設定からいつでもSummitsへのアクセスを取り消すことができます。取り消すと、新しいデータはインポートされなくなります。過去にインポートされたデータは、削除を要求しない限り保持されます。"
+      }
+    },
+    "dataStorage": {
+      "title": "3. データの保存とセキュリティ",
+      "retention": {
+        "title": "3.1 データの保存期間",
+        "active": "インポートされたデータは、Summitsアカウントが有効である間保存されます。",
+        "deleted": "削除されたアカウントおよびデータは、30日以内に完全に消去されます。",
+        "matching": "山頂のマッチング情報は、処理パフォーマンス向上のために保存されます。"
+      },
+      "security": {
+        "title": "3.2 データのセキュリティ",
+        "intro": "当社は、業界標準の対策を用いてお客様のデータを保護します。これには以下が含まれます：",
+        "encryption": "暗号化（HTTPS/TLSおよび保存時の暗号化）",
+        "access": "認可された人員のみに限定されたアクセス制御",
+        "infrastructure": "安全なクラウドストレージインフラ",
+        "updates": "定期的なセキュリティアップデートとパッチ適用"
+      },
+      "location": {
+        "title": "3.3 データの場所",
+        "content": "お客様のデータは、適用されるデータ保護法に準拠した地域のクラウドサーバーに保存されます。Summitsを利用することにより、お客様はこの転送と処理に同意したものとみなされます。"
+      }
+    },
+    "dataSharing": {
+      "title": "4. データの共有と開示",
+      "public": {
+        "title": "4.1 公開情報",
+        "intro": "プロフィールが公開設定の場合、他のユーザーは以下を閲覧できる場合があります：",
+        "statistics": "山頂の統計と登頂回数",
+        "username": "ユーザー名とプロフィール写真",
+        "rankings": "リーダーボードでのランキング",
+        "profile": "検索結果やリスト上のプロフィール"
+      },
+      "private": {
+        "title": "4.2 非公開情報",
+        "intro": "以下の情報は常に非公開のままです：",
+        "routes": "正確なルートトラックと座標",
+        "elevation": "詳細な高度プロファイル",
+        "times": "アクティビティの開始/終了時刻",
+        "email": "メールアドレスおよび個人識別情報",
+        "followers": "フォロワーおよびフォロー中のリスト（公開設定にしている場合を除く）"
+      },
+      "thirdParties": {
+        "title": "4.3 第三者とのデータ共有",
+        "noSell": "当社は個人データを販売しません。",
+        "aggregated": "分析または研究の目的で、集計され匿名化されたデータを共有する場合があります。",
+        "shareWith": "当社は、以下の場合にのみデータを共有します：",
+        "serviceProviders": "プラットフォーム運営を支援するサービスプロバイダー",
+        "authorities": "法律で要求された場合の当局",
+        "safety": "ユーザーの安全を確保するために必要な関係者"
+      }
+    },
+    "rights": {
+      "title": "5. ユーザーの権利と管理",
+      "correction": {
+        "title": "5.1 データの修正",
+        "content": "アプリ内で山頂特定の誤りを確認・報告できます。報告された内容は審査の上、更新されます。"
+      },
+      "deletion": {
+        "title": "5.2 アカウントの削除",
+        "content": "Summitsアカウントはいつでも削除できます。インポートされたすべてのデータおよびソーシャル接続は30日以内に削除されます。Summitsアカウントを削除しても、外部プラットフォームのアカウントには影響しません。"
+      },
+      "privacy": {
+        "title": "5.3 プライバシー設定",
+        "content": "アプリのプライバシー設定から、公開範囲、共有オプション、ソーシャル機能を直接管理できます。"
+      }
+    },
+    "accuracy": {
+      "title": "6. データの正確性と制限",
+      "peakIdentification": {
+        "title": "6.1 山頂の特定",
+        "algorithmic": "山頂の特定はアルゴリズムによるものであり、常に正確であるとは限りません。",
+        "errors": "今後の正確性向上のため、誤りを報告することができます。"
+      },
+      "routeData": {
+        "title": "6.2 ルートデータの品質",
+        "accuracy": "正確性は、外部プラットフォームからのGPSデータに依存します。",
+        "incomplete": "データの不足や不備は処理に影響を与える可能性があります。",
+        "delays": "大規模なデータセットの場合、処理に遅延が生じることがあります。"
+      },
+      "warranty": {
+        "title": "6.3 保証の免責",
+        "intro": "Summitsは、以下に関して一切の保証を行いません：",
+        "accuracy": "山頂またはルートデータの正確性や完全性",
+        "reliability": "外部プラットフォームAPIの信頼性",
+        "uptime": "サービスの稼働時間、または中断のないアクセス",
+        "disclaimer": "Summitsは、お客様自身の責任において利用するものとします。"
+      }
+    },
+    "changes": {
+      "title": "7. 利用規約の変更",
+      "modifications": {
+        "title": "7.1 修正",
+        "content": "当社はいつでも本利用規約を修正できるものとします。更新は、アプリ内またはウェブサイトに掲載された時点で有効となります。"
+      },
+      "continuedUse": {
+        "title": "7.2 利用の継続",
+        "content": "更新後の継続的な利用は、変更後の規約に同意したものとみなされます。同意されない場合は、利用を中止しアカウントを削除してください。"
+      }
+    },
+    "termination": {
+      "title": "8. サービスの中断と終了",
+      "serviceTermination": {
+        "title": "8.1 サービスの終了",
+        "intro": "以下の場合、アカウントを停止または終了することがあります：",
+        "violation": "本規約または外部プラットフォーム利用規約への違反",
+        "fraudulent": "不正または悪用行為",
+        "legal": "法的または規制上の要件"
+      },
+      "effect": {
+        "title": "8.2 終了の影響",
+        "content": "アクセス権は直ちに失効し、データは保存ポリシーに従って削除されます。"
+      }
+    },
+    "indemnification": {
+      "title": "9. 補償",
+      "intro": "お客様は、以下に起因して発生した一切の請求または損失からSummitsを免責し、補償することに同意するものとします：",
+      "violations": "本規約の違反",
+      "platformPolicies": "外部プラットフォームのポリシー違反",
+      "misuse": "不適切な使用、または不正なデータの提出",
+      "disputes": "他のユーザーとの紛争"
+    },
+    "liability": {
+      "title": "10. 責任の制限",
+      "intro": "法律で認められる最大限の範囲において：",
+      "asIs": "Summitsは「現状有姿」で提供され、いかなる保証も行いません。",
+      "notLiable": "当社は、間接的、付随的、または結果的な損害に対して責任を負いません。",
+      "platformDowntime": "当社は、外部プラットフォームのダウンタイムやAPIの変更に対して責任を負いません。"
+    },
+    "disputes": {
+      "title": "11. 紛争および準拠法",
+      "governingLaw": {
+        "title": "11.1 準拠法",
+        "content": "本規約は、法の抵触の原則を除き、作者の所在地（スペイン）の法律に準拠します。"
+      },
+      "resolution": {
+        "title": "11.2 紛争解決",
+        "negotiation": "誠実な協議",
+        "mediation": "協議が決裂した場合の調停",
+        "arbitration": "未解決の紛争に関する拘束力のある仲裁"
+      },
+      "classAction": {
+        "title": "11.3 集団訴訟の放棄",
+        "content": "すべての紛争は個別に解決されるものとし、集団訴訟は認められません。"
+      }
+    },
+    "contact": {
+      "title": "12. お問い合わせ情報",
+      "intro": "ご質問がある場合は、お問い合わせください：",
+      "email": "メール: cesc.riera@summitstracker.com",
+      "website": "ウェブサイト: summitstracker.com",
+      "support": "サポート: アプリ内のヘルプとサポート機能から利用可能"
+    },
+    "acknowledgment": {
+      "title": "13. 承諾",
+      "intro": "Summitsを利用し、Garmin、Strava、Wikilocアカウントを接続することにより、ユーザーは以下の事項を認めるものとします：",
+      "read": "本規約を読み、理解したこと",
+      "consent": "記載されたデータ利用に同意すること",
+      "capacity": "同意する法的能力を有していること",
+      "comply": "適用される法律を遵守すること",
+      "responsible": "自身のアカウントのセキュリティを維持する責任を負うこと",
+      "footer": "Summitsの利用を継続することにより、本利用規約に同意したものとみなされます。同意されない場合は、利用を中止しアカウントを削除してください。"
+    }
+  },
+  "privacy": {
+    "title": "Summits – プライバシーポリシー",
+    "lastUpdated": "最終更新日：2025年10月",
+    "introduction": {
+      "title": "1. 導入",
+      "content": "Summitsでは、プライバシーの保護に取り組んでいます。このプライバシーポリシーは、Summitsアプリを使用する際の個人情報の収集、使用、開示、保護方法について説明します。"
+    },
+    "dataController": {
+      "title": "2. データ管理者",
+      "content": "あなたの個人情報の保護に責任を負うデータ管理者は以下の通りです：",
+      "email": "メール: cesc.riera@summitstracker.com",
+      "website": "ウェブサイト: summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. 収集する情報",
+      "personalData": {
+        "title": "3.1 個人データ",
+        "intro": "アカウント作成時に以下を収集します：",
+        "account": "アカウント情報（メールアドレス、ユーザー名、パスワード）",
+        "profile": "プロフィール情報（氏名、プロフィール写真、自己紹介）",
+        "preferences": "アプリの設定と好み"
+      },
+      "activityData": {
+        "title": "3.2 外部プラットフォームからのアクティビティデータ",
+        "intro": "Wikiloc、Strava、Garminのアカウントを接続すると、以下を収集します：",
+        "fromWikiloc": "Wikilocから：",
+        "wikiloc": {
+          "activity": "アクティビティデータ（ルート、トラック、GPS座標）",
+          "timestamps": "タイムスタンプ（開始時間、終了時間、期間）",
+          "elevation": "高度データとプロファイル",
+          "routeNames": "ルート名と説明",
+          "activityTypes": "アクティビティタイプ（ハイキング、サイクリングなど）",
+          "profile": "公開プロフィール情報"
+        },
+        "fromStrava": "Stravaから：",
+        "strava": {
+          "activity": "アクティビティデータ（ルート、トラック、GPS座標）",
+          "timestamps": "タイムスタンプ（開始時間、終了時間、期間）",
+          "elevation": "高度データとプロファイル",
+          "coordinates": "GPS座標とルートトラック",
+          "activityTypes": "アクティビティタイプ（ランニング、サイクリング、ハイキングなど）",
+          "profile": "公開プロフィール情報"
+        },
+        "fromGarmin": "Garminから：",
+        "garmin": {
+          "activity": "Garmin Connectからのアクティビティ記録",
+          "gps": "GPSトラックと座標",
+          "elevation": "高度データと心拍数情報",
+          "summaries": "アクティビティの概要と統計",
+          "location": "地理的位置データ",
+          "profile": "公開プロフィール情報"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 技術情報",
+        "intro": "以下を自動的に収集します：",
+        "device": "デバイス情報（デバイス型番、OS、一意のデバイス識別子）",
+        "ip": "IPアドレスと位置データ",
+        "browser": "ブラウザの種類とバージョン",
+        "logs": "利用ログと分析データ"
+      }
+    },
+    "dataUsage": {
+      "title": "4. 情報の使用方法",
+      "purposes": {
+        "title": "4.1 処理目的",
+        "intro": "以下の目的で情報を使用します：",
+        "service": "本サービスの提供と維持",
+        "peakIdentification": "アクティビティデータから登頂した山頂を特定",
+        "progress": "進捗の追跡と統計の生成",
+        "statistics": "個人の統計と実績の計算および表示",
+        "community": "ソーシャル機能、リーダーボード、コミュニティ間での交流",
+        "communication": "通知、更新情報、サポート情報の送信",
+        "improvement": "本サービスの改善、パーソナライズ、および開発",
+        "security": "技術的問題やセキュリティ脅威の検出、防止、および対応"
+      },
+      "legalBasis": {
+        "title": "4.2 処理の法的根拠",
+        "intro": "以下の根拠に基づき個人データを処理します：",
+        "consent": "サードパーティアカウントを接続する際の同意",
+        "contract": "本サービスを提供するための契約の履行",
+        "legitimate": "本サービスの運営および改善における当社の正当な利益",
+        "legal": "法的義務の遵守"
+      }
+    },
+    "dataSharing": {
+      "title": "5. 情報の共有と開示",
+      "thirdParties": {
+        "title": "5.1 サードパーティサービスプロバイダー",
+        "intro": "以下を支援する信頼できるサービスプロバイダーと情報を共有する場合があります：",
+        "serviceProviders": "ホスティングおよびインフラストラクチャサービス",
+        "analytics": "分析およびパフォーマンス監視",
+        "cloud": "クラウドストレージおよびデータ処理"
+      },
+      "publicData": {
+        "title": "5.2 公開情報",
+        "intro": "以下の情報は公開される場合があります：",
+        "statistics": "集計された統計と実績",
+        "username": "ユーザー名と公開プロフィール",
+        "rankings": "リーダーボードでの順位",
+        "profile": "公開を選択したプロフィール情報"
+      },
+      "legal": {
+        "title": "5.3 法的要件",
+        "content": "法律、裁判所の命令、または政府機関によって要求された場合、あるいは当社の権利、財産、安全、またはユーザーを保護するために必要な場合、情報を開示することがあります。"
+      }
+    },
+    "dataStorage": {
+      "title": "6. データの保存とセキュリティ",
+      "location": {
+        "title": "6.1 データの場所",
+        "content": "データは欧州連合および米国の安全なサーバーに保存されます。"
+      },
+      "retention": {
+        "title": "6.2 保存期間",
+        "intro": "データは以下の期間保持されます：",
+        "active": "アカウントが有効である間、およびサービスの提供に必要な期間",
+        "deleted": "アカウント削除後最大30日間（その後、完全に削除されます）",
+        "legal": "適用される法律や規制で義務付けられている期間"
+      },
+      "security": {
+        "title": "6.3 セキュリティ対策",
+        "intro": "適切な技術的・組織的対策を講じています：",
+        "encryption": "転送中および保存時のデータの暗号化",
+        "access": "アクセス制御と認証メカニズム",
+        "infrastructure": "安全なインフラと定期的な監査",
+        "updates": "定期的なセキュリティアップデート"
+      }
+    },
+    "userRights": {
+      "title": "7. あなたの権利（GDPR/CCPA）",
+      "access": {
+        "title": "7.1 アクセス権",
+        "content": "自分の個人データについて情報の開示を求め、そのコピーを受け取る権利。"
+      },
+      "rectification": {
+        "title": "7.2 修正権",
+        "content": "不正確または不完全なデータの修正を求める権利。"
+      },
+      "erasure": {
+        "title": "7.3 消去権（忘れられる権利）",
+        "content": "データの削除を求める権利。アカウントはアプリ設定からいつでも削除できます。"
+      },
+      "restriction": {
+        "title": "7.4 制限権",
+        "content": "特定の条件下でデータの処理を制限するよう求める権利。"
+      },
+      "portability": {
+        "title": "7.5 ポータビリティ権",
+        "content": "構造化され、一般的に使用される形式でデータを受け取る権利。"
+      },
+      "objection": {
+        "title": "7.6 異議申立権",
+        "content": "正当な利益に基づく処理に対して異議を申し立てる権利。"
+      },
+      "withdraw": {
+        "title": "7.7 同意撤回権",
+        "content": "外部アカウントの接続解除やアカウント削除により、いつでも同意を撤回する権利。"
+      },
+      "complaint": {
+        "title": "7.8 苦情申立権",
+        "content": "権利が侵害されたと思われる場合、所在地のデータ保護当局に苦情を申し立てる権利。"
+      }
+    },
+    "cookies": {
+      "title": "8. クッキーとトラッキング",
+      "intro": "サービスの利用状況を追跡し、特定の情報を保持するためにクッキーを使用します。",
+      "types": {
+        "title": "8.1 クッキーの種類",
+        "essential": "サービスの動作に不可欠なクッキー",
+        "analytics": "利用状況を理解するための分析クッキー",
+        "functional": "お客様の設定を保存するための機能クッキー"
+      },
+      "management": {
+        "title": "8.2 管理方法",
+        "content": "ブラウザの設定でクッキーを制御できます。ただし、無効にすると一部の機能が制限される場合があります。"
+      }
+    },
+    "children": {
+      "title": "9. お子様のプライバシー",
+      "content": "当サービスは全年齢対象ですが、あらゆる年齢のユーザー、特にお子様のプライバシー保護に努めています。"
+    },
+    "international": {
+      "title": "10. 国際的なデータ転送",
+      "content": "情報は居住国以外の国で転送・処理される場合があります。適切な保護措置を確保します。"
+    },
+    "changes": {
+      "title": "11. ポリシーの変更",
+      "content": "本ポリシーを随時更新することがあります。変更内容は本ページへの掲載をもってお知らせします。"
+    },
+    "contact": {
+      "title": "12. お問い合わせ",
+      "intro": "プライバシーポリシーに関するご質問はこちらまで：",
+      "email": "メール: cesc.riera@summitstracker.com",
+      "website": "ウェブサイト: summitstracker.com",
+      "support": "サポート: アプリ内のヘルプ機能から利用可能"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "クラブチャレンジ",
+    "clubChallengeDescription": "このチャレンジはクラブに関連付けられており、クラブメンバーにのみ表示されます。",
+    "clubPrivateHelp": "クラブチャレンジは常にクラブメンバーに公開され、非公開にすることはできません。",
+    "createTitle": "チャレンジを作成",
+    "editTitle": "チャレンジを編集",
+    "name": "チャレンジ名",
+    "namePlaceholder": "チャレンジ名を入力...",
+    "description": "説明",
+    "descriptionPlaceholder": "このチャレンジは何についてですか？",
+    "isPrivate": "プライベートチャレンジ",
+    "privateHelp": "プライベートチャレンジはあなただけが閲覧できます。",
+    "challengeConstraints": "チャレンジの制限",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "dateRangeHelp": "期間を限定しない場合は、両方のフィールドを空のままにしてください。",
+    "maxDuration": "最大期間 (時間)",
+    "maxDurationPlaceholder": "例: 24",
+    "maxDurationHelp": "最初と最後の登頂の間に時間制限を設けない場合は空欄にしてください。",
+    "timeLimit": "制限時間",
+    "dateRange": "有効期間",
+    "starts": "開始",
+    "ends": "終了",
+    "primaryImage": "カバー画像",
+    "addImage": "カバー画像を追加",
+    "noImage": "画像が提供されていません",
+    "imageUrlPlaceholder": "画像のURLを貼り付け (例: https://...)",
+    "peaks": "山頂",
+    "addPeaks": "山頂を追加",
+    "selectPeaks": "山頂を選択",
+    "selectedPeaks": "選択された山頂",
+    "noPeaksSelected": "山頂が選択されていません。検索してチャレンジに追加する山頂を選択してください。",
+    "saveSuccess": "チャレンジを正常に保存しました！",
+    "saveError": "チャレンジの保存に失敗しました。もう一度お試しください。",
+    "loadError": "チャレンジの読み込みに失敗しました。もう一度お試しください。",
+    "validation": {
+      "nameRequired": "チャレンジ名は必須です。",
+      "descriptionRequired": "説明は必須です。",
+      "imageRequired": "カバー画像は必須です。",
+      "peaksRequired": "少なくとも1つの山頂を選択してください。",
+      "startDateInvalid": "有効な開始日を入力してください。",
+      "endDateInvalid": "有効な終了日を入力してください。",
+      "endDateBeforeStart": "終了日は開始日以降である必要があります。",
+      "maxDurationInvalid": "0より大きい有効な最大期間を入力してください。"
+    },
+    "challenges": "チャレンジ",
+    "available_challenges": "公開中のチャレンジ",
+    "searchPlaceholder": "タイトルまたは作成者で検索",
+    "emptySearchTitle": "チャレンジが見つかりません",
+    "emptySearchMessage": "別のタイトルまたは作成者名で試してください。",
+    "worldPeaks": "世界の山頂",
+    "worldPeaksDescription": "世界中のすべての山頂を探索する",
+    "join": "参加する",
+    "leave": "退出する",
+    "joined": "選択済み",
+    "deleteList": "チャレンジを削除",
+    "deleteSuccess": "チャレンジを削除しました",
+    "deleteError": "チャレンジの削除に失敗しました",
+    "deleteConfirmTitle": "チャレンジを削除しますか？",
+    "deleteConfirmMessage": "このチャレンジを削除してもよろしいですか？この操作は取り消せません。",
+    "inviteToChallenge": "チャレンジに招待",
+    "inviteHelp": "ユーザーを検索してチャレンジに招待します。"
+  },
+  "forceUpdate": {
+    "title": "新バージョンが利用可能です！",
+    "subtitle": "引き続きアプリをご利用いただくために、Summitsを最新バージョンにアップグレードしてください。",
+    "button": "今すぐ更新",
+    "version": "バージョン",
+    "continue": "更新せずに続行"
+  },
+  "appInstallBanner": {
+    "title": "ネイティブアプリを入手",
+    "subtitle": "Summitsをインストールして、より速く、より完全なモバイル体験をお楽しみください。",
+    "button": "アプリをインストール",
+    "dismiss": "バナーを閉じる",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "lastUpdate": {
+    "title": "避難小屋（シェルター）がSummitsに登場",
+    "close": "すごい！",
+    "refugios": {
+      "headline": "80,000+ の避難小屋",
+      "subtitle": "世界中の保存済み・無料の避難小屋がSummitsに登場。",
+      "findOnMap": "地図や探索ページで見つけられます。",
+      "addManually": "見つからない場合は、地図から手動で追加できます。",
+      "saveFavorites": "お気に入りに保存して、いつでもすぐにアクセスできます。",
+      "community": "ご協力いただけると大変ありがたく、コミュニティの助けになります。"
+    }
+  },
+  "clubs": {
+    "availableClubs": "利用可能なクラブ",
+    "common": {
+      "creator": "作成者"
+    },
+    "browse": {
+      "title": "クラブを検索",
+      "subtitle": "共有されたピークの進行状況に基づいて構築されたパブリックおよびプライベートなコミュニティを探索してください。",
+      "searchPlaceholder": "クラブを検索",
+      "searchPlaceholderUnified": "クラブや地域を検索...",
+      "emptyTitle": "まだクラブがありません",
+      "emptyMessage": "より広い検索を試すか、登山グループのために新しいクラブを作成してください。",
+      "emptySearchTitle": "クラブが見つかりませんでした",
+      "emptySearchMessage": "別のタイトルや地域を試してください。"
+    },
+    "details": {
+      "title": "クラブの詳細",
+      "statistics": "統計",
+      "restrictedTitle": "プライベートクラブのプレビュー",
+      "restrictedMessage": "承認されたメンバーのみが、このクラブのランキング、メンバー、およびアクティビティを表示できます。"
+    },
+    "myClubs": {
+      "title": "マイクラブ",
+      "subtitle": "作成したクラブ、参加したクラブ、またはアクセスをリクエストしたクラブを管理します。",
+      "created": "作成済み",
+      "joined": "参加済み",
+      "pending": "保留中",
+      "createdSection": "作成したクラブ",
+      "createdDescription": "あなたが所有し、完全に管理できるクラブ。",
+      "joinedSection": "参加しているクラブ",
+      "joinedDescription": "メンバー限定の進捗状況やアクティビティを確認できるクラブ。",
+      "pendingSection": "保留中のリクエスト",
+      "pendingDescription": "作成者の承認を待っているプライベートクラブ。",
+      "emptyTitle": "まだどのクラブにも所属していません",
+      "emptyMessage": "クラブを検索して参加するか、登山仲間のためにプライベートグループを作成してください。",
+      "emptySection": "このセクションにはまだクラブがありません。"
+    },
+    "create": {
+      "title": "クラブを作成",
+      "subtitle": "クラブのアイデンティティ、公開設定、およびメンバーが最初に目にするカバー画像を設定します。",
+      "submit": "クラブを作成"
+    },
+    "edit": {
+      "title": "クラブを編集"
+    },
+    "leaderboard": {
+      "subtitle": "どのクラブが最も急成長しており、最も多くのピーク進捗を記録しているかを確認します。"
+    },
+    "filters": {
+      "allVisibility": "すべての公開設定",
+      "period": "期間",
+      "sortBy": "並べ替え",
+      "highestClimb": "最高峰の登山",
+      "activity": "アクティビティ",
+      "allCategories": "すべてのカテゴリー",
+      "routes": "ルート",
+      "sort": "並び替え"
+    },
+    "period": {
+      "thisYear": "今年",
+      "lastYear": "昨年",
+      "allTime": "全期間",
+      "custom": "カスタム",
+      "dateFrom": "開始日",
+      "dateTo": "終了日"
+    },
+    "visibility": {
+      "public": "公開",
+      "private": "非公開"
+    },
+    "sort": {
+      "mostUsers": "メンバー数順",
+      "mostPeaks": "最多ピーク",
+      "mostDistance": "距離順",
+      "mostElevation": "獲得標高順",
+      "mostTime": "時間順",
+      "newest": "新しい順",
+      "oldest": "古い順",
+      "recentActivity": "最近のアクティビティ",
+      "joinedAt": "参加日",
+      "name": "名前",
+      "mostActiveLast30d": "過去30日間で最もアクティブ"
+    },
+    "metrics": {
+      "members": "メンバー",
+      "peaks": "ピーク",
+      "distinctPeaks": "ピーク",
+      "totalAscents": "総登頂数",
+      "highestPeak": "最高峰",
+      "recentDistinctPeaks": "最近のピーク",
+      "activeMembers30d": "アクティブ（30日）",
+      "totalRoutes": "ルート",
+      "distance": "距離",
+      "totalDistanceKm": "距離",
+      "totalElevationGain": "獲得標高",
+      "totalTime": "総時間",
+      "totalMovingTime": "移動時間",
+      "topMember": "トップメンバー"
+    },
+    "tabs": {
+      "summary": "概要",
+      "members": "メンバー",
+      "leaderboard": "ランキング",
+      "activity": "アクティビティ",
+      "requests": "リクエスト"
+    },
+    "activity": {
+      "allRoutes": "すべてのルート",
+      "withPeaks": "ピークあり",
+      "noPeak": "ピークなし",
+      "peaksDone": "このルートで完了したピーク",
+      "xMore": "件以上",
+      "latestRoutes": "クラブの最新ルート",
+      "empty": "アクティビティはまだありません。"
+    },
+    "challenges": {
+      "title": "クラブチャレンジ",
+      "subtitle": "このクラブに関連付けられたチャレンジはメンバーに表示されます。",
+      "membersOnly": "クラブチャレンジを表示および作成するには、このクラブに参加してください。",
+      "create": "チャレンジを作成",
+      "empty": "まだクラブチャレンジはありません。",
+      "emptyRestricted": "表示可能なチャレンジはありません。クラブに参加してメンバーチャレンジをアンロックしてください。",
+      "itemFallback": "チャレンジ",
+      "total": "合計",
+      "completed": "完了",
+      "viewProgress": "クラブチャレンジの進捗を表示"
+    },
+    "actions": {
+      "manageMyClubs": "マイクラブを管理",
+      "signInToJoin": "サインインして参加",
+      "joinClub": "クラブに参加",
+      "requestToJoin": "参加をリクエスト",
+      "requestPending": "リクエスト保留中",
+      "leaveClub": "クラブを脱退",
+      "editClub": "クラブを編集",
+      "manageClub": "クラブを管理",
+      "viewClub": "クラブを表示",
+      "cancelRequest": "リクエストをキャンセル",
+      "loadMore": "さらに読み込む",
+      "leaveConfirm": "このクラブを脱退しますか？ 後でいつでも再参加できます。",
+      "leaveConfirmTitle": "クラブを脱退",
+      "leaveConfirmMessage": "本当にクラブ '{name}' を脱退しますか？ 後でいつでも再参加できます。",
+      "joinConfirmTitle": "クラブに参加",
+      "joinConfirmMessage": "クラブ '{name}' に参加しますか？ ランキングやアクティビティが表示されるようになります。",
+      "removeMember": "削除",
+      "removeMemberConfirm": "このメンバーを削除しますか？",
+      "acceptRequest": "承認",
+      "rejectRequest": "拒否",
+      "deleteConfirmTitle": "クラブを削除しますか？",
+      "deleteConfirmMessage": "本当にこのクラブを削除しますか？ この操作は永続的であり、元に戻すことはできません。",
+      "deleteSuccess": "クラブが正常に削除されました",
+      "leave": "クラブを脱退",
+      "selectClub": "クラブを選択"
+    },
+    "badges": {
+      "creator": "作成者",
+      "member": "メンバー",
+      "requestPending": "保留中",
+      "privateClub": "プライベートクラブ",
+      "restricted": "制限あり"
+    },
+    "status": {
+      "joined": "参加済み",
+      "pending": "保留中"
+    },
+    "roles": {
+      "creator": "作成者",
+      "member": "メンバー"
+    },
+    "members": {
+      "joinedLabel": "参加日",
+      "none": "メンバーが見つかりませんでした",
+      "empty": "メンバーが見つかりませんでした"
+    },
+    "requests": {
+      "requestedOn": "リクエスト日",
+      "pending": "保留中のリクエスト",
+      "none": "保留中のリクエストはありません"
+    },
+    "messages": {
+      "actionFailed": "現在、このクラブを更新できません。",
+      "loadFailed": "現在、このクラブを読み込めません。",
+      "saveFailed": "このクラブを保存できませんでした。",
+      "deleteFailed": "このクラブを削除できませんでした。",
+      "imageFailed": "画像を読み込めませんでした。",
+      "leaveConfirmation": "このクラブを退会してもよろしいですか？"
+    },
+    "validation": {
+      "nameRequired": "クラブ名は必須です",
+      "descriptionRequired": "クラブの説明は必須です",
+      "visibilityRequired": "クラブの公開設定は必須です",
+      "imageRequired": "クラブのロゴが必要です",
+      "regionRequired": "クラブの地域が必要です"
+    },
+    "form": {
+      "image": "クラブのロゴ",
+      "changeImage": "ロゴを変更",
+      "uploadImage": "ロゴをアップロード",
+      "name": "クラブ名",
+      "namePlaceholder": "アルプス愛好会",
+      "description": "説明",
+      "descriptionPlaceholder": "クラブについて簡単に説明してください",
+      "visibility": "公開設定",
+      "region": "地域",
+      "regionPlaceholder": "国または地域を検索...",
+      "regionSearching": "検索中...",
+      "regionNoResults": "地域が見つかりませんでした",
+      "regionClear": "地域をクリア",
+      "previewTitle": "クラブのプレビュー",
+      "previewMessage": "ロゴを追加して、検索結果でクラブを識別しやすくしましょう。",
+      "cropDescription": "ロゴを配置してズームし、円形のアバターをプレビューします。",
+      "cropTitle": "クラブのロゴを調整",
+      "cropZoom": "ズーム"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "manualPeaks": {
+    "fetchError": "ピークを読み込めませんでした。もう一度お試しください。"
+  },
+  "offline": {
+    "banner": "オフラインです — 一部の機能が制限される場合があります",
+    "bannerCached": "オフライン - キャッシュ済みの地図データを利用できます",
+    "bannerNoCache": "オフライン - キャッシュ済みの地図データはありません",
+    "title": "オフラインマップ",
+    "area": "オフラインエリア",
+    "empty": "まだオフラインエリアがありません。地図のエリアをダウンロードすると、インターネット接続なしでも利用できます。",
+    "newArea": "新しいエリアをダウンロード",
+    "downloading": "ダウンロード中",
+    "ready": "準備完了",
+    "failed": "失敗しました",
+    "cancelled": "キャンセルされました",
+    "tiles": "タイル",
+    "zoom": "ズーム {min}-{max}",
+    "goTo": "エリアへ移動",
+    "delete": "削除",
+    "drawHint": "マップをタップして角のポイントを配置し、[完了] でエリアを閉じます。",
+    "undo": "元に戻す",
+    "clear": "クリア",
+    "finish": "完了",
+    "configName": "エリア名",
+    "namePlaceholder": "例: ハイタトラ山脈",
+    "maxZoomLabel": "最大ズーム (詳細)",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "ズーム17〜18はめったに必要なく、非常にコストがかかります。各レベルでダウンロードサイズが4倍になります。ズーム14が推奨の最大です。",
+    "estimate": "約{count}タイル (約{size})",
+    "eta": "残り約{eta}",
+    "keepOpen": "ダウンロード中はアプリを開いたままにしてください。閉じるとダウンロードが一時停止します。",
+    "redraw": "再描画",
+    "download": "エリアをダウンロード",
+    "starting": "開始中...",
+    "errorResolve": "マップのスタイルを解決できませんでした。オンラインであることを確認してください。",
+    "errorNoSources": "データソースを少なくとも1つ選択してください。",
+    "errorDownload": "ダウンロードに失敗しました。",
+    "deleteTitle": "オフラインエリアを削除しますか？",
+    "deleteMessage": "「{name}」を削除しますか？{tiles} 個のタイル（{size}）がこのデバイスから完全に削除されます。この操作は取り消せません。",
+    "deleteCancel": "キャンセル",
+    "deleteConfirm": "削除",
+    "deleting": "削除中..."
+  },
+  "peakChange": {
+    "createTitle": "新しいピークを提出",
+    "editTitle": "ピークを編集",
+    "successTitle": "ピークを提出しました",
+    "successMessage": "ピークは審査に送られました。3日以内に承認または却下されます。通知は届かないので、後で結果を確認してください。",
+    "successSubmessage": "ご質問がある場合は、プロフィールからお問い合わせください。",
+    "close": "閉じる",
+    "name": "名前",
+    "namePlaceholder": "ピーク名",
+    "englishName": "英語名",
+    "englishNamePlaceholder": "英語名（任意）",
+    "coordinates": "座標",
+    "latitude": "緯度",
+    "longitude": "経度",
+    "coordsEditHint": "空白の場合は現在の位置を保持",
+    "pickOnMap": "マップで選択",
+    "clickMapInstruction": "マップをクリックしてピークの位置を設定してください",
+    "acceptLocation": "確定",
+    "elevation": "標高（m）",
+    "elevationPlaceholder": "標高（メートル）",
+    "minZoomLevel": "最小ズームレベル",
+    "selectVisibility": "-- 表示範囲を選択 --",
+    "minZoomHelp": "数字が小さい＝ズームアウトした状態で表示（世界的な山）。数字が大きい＝ズームインした時のみ表示（地域の丘）。",
+    "wikipediaUrl": "Wikipedia URL",
+    "wikipediaPlaceholder": "https://ja.wikipedia.org/wiki/...",
+    "reason": "変更理由",
+    "reasonPlaceholder": "この申請の理由（任意）",
+    "image": "画像",
+    "chooseImage": "画像を選択",
+    "submitCreate": "審査に提出",
+    "submitEdit": "変更を審査に提出",
+    "submitting": "送信中...",
+    "errorPeakIdMissing": "ピークIDがありません",
+    "errorNameRequired": "名前は必須です",
+    "errorCoordinatesRequired": "座標は必須です",
+    "errorElevationRequired": "標高は必須です",
+    "errorMinZoomRequired": "最小ズームレベルは必須です",
+    "errorGeneric": "提出に失敗しました。もう一度お試しください。",
+    "tabPeak": "ピーク",
+    "tabShelter": "山小屋",
+    "currentData": "現在のデータ",
+    "versionName": "名前",
+    "versionElevation": "標高",
+    "versionWikipedia": "Wikipedia",
+    "versionWikipediaYes": "あり",
+    "mapButtonLabel": "新しいピークを提出",
+    "email": "メールアドレス（任意）",
+    "emailPlaceholder": "your@email.com",
+    "emailHelp": "リクエストが承認または却下された場合に通知を受けます"
+  },
+  "shelterChange": {
+    "createTitle": "新しい山小屋を提出",
+    "editTitle": "山小屋を編集",
+    "successTitle": "山小屋を提出しました",
+    "successMessage": "山小屋は審査に送られました。3日以内に承認または却下されます。通知は届かないので、後で結果を確認してください。",
+    "successSubmessage": "ご質問がある場合は、プロフィールからお問い合わせください。",
+    "close": "閉じる",
+    "name": "名前",
+    "namePlaceholder": "山小屋の名前",
+    "englishName": "英語名",
+    "englishNamePlaceholder": "英語名（任意）",
+    "shelterType": "山小屋のタイプ",
+    "selectType": "-- タイプを選択 --",
+    "coordinates": "座標",
+    "latitude": "緯度",
+    "longitude": "経度",
+    "coordsEditHint": "空白の場合は現在の位置を保持",
+    "pickOnMap": "マップで選択",
+    "acceptLocation": "確定",
+    "clickMapInstruction": "マップをクリックして山小屋の位置を設定してください",
+    "elevation": "標高（m）",
+    "elevationPlaceholder": "標高（メートル）",
+    "wikipediaUrl": "Wikipedia URL",
+    "wikipediaPlaceholder": "https://ja.wikipedia.org/wiki/...",
+    "tagsTitle": "設備とサービス",
+    "tagsHint": "この山小屋に該当する項目のみ入力してください",
+    "tags": {
+      "capacity": "収容人数",
+      "beds": "ベッド",
+      "toilets": "トイレ",
+      "drinking_water": "飲料水",
+      "fireplace": "暖炉",
+      "heating": "暖房",
+      "electricity": "電気",
+      "shower": "シャワー",
+      "kitchen": "キッチン",
+      "lit": "照明",
+      "outdoor_seating": "屋外席",
+      "picnic_table": "ピクニックテーブル",
+      "bench": "ベンチ",
+      "covered": "屋根付きエリア",
+      "pets": "ペット可",
+      "dog": "犬可",
+      "internet_access": "インターネット接続",
+      "smoking": "喫煙",
+      "website": "ウェブサイト",
+      "websitePlaceholder": "https://...",
+      "description": "説明",
+      "descriptionPlaceholder": "山小屋の簡単な説明"
+    },
+    "tagValues": {
+      "yes": "はい",
+      "no": "いいえ",
+      "wifi": "WiFi",
+      "outside": "屋外のみ",
+      "isolated": "孤立した場所"
+    },
+    "reason": "変更理由",
+    "reasonPlaceholder": "この申請の理由（任意）",
+    "email": "メールアドレス（任意）",
+    "emailPlaceholder": "your@email.com",
+    "emailHelp": "リクエストが承認または却下された場合に通知を受けます",
+    "image": "画像",
+    "chooseImage": "画像を選択",
+    "submitCreate": "山小屋を審査に提出",
+    "submitEdit": "変更を審査に提出",
+    "submitting": "送信中...",
+    "errorShelterIdMissing": "山小屋IDがありません",
+    "errorNameRequired": "名前は必須です",
+    "errorTypeRequired": "山小屋のタイプは必須です",
+    "errorCoordinatesRequired": "座標は必須です",
+    "errorGeneric": "提出に失敗しました。もう一度お試しください。",
+    "tabPeak": "ピーク",
+    "tabShelter": "山小屋"
+  },
+  "singleDatePicker": {
+    "chooseDate": "{label}を選択",
+    "close": "閉じる",
+    "apply": "適用"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "有人山小屋",
+      "wilderness_hut": "無人山小屋",
+      "shelter": "緊急避難所"
+    },
+    "intro": {
+      "default": "これは{type}です。",
+      "withOperator": "これは{operator}が管理する{type}です。",
+      "withHours": "{hours}に営業しています。",
+      "free": "無料です。",
+      "paid": "有料です。",
+      "paidAmount": "料金は{charge}です。",
+      "reservationsRequired": "予約が必要です。",
+      "reservationsOptional": "予約は任意です。",
+      "accessPublic": "アクセスは公開されています。",
+      "accessPrivate": "アクセスは非公開です。",
+      "accessMembers": "会員限定のアクセスです。"
+    },
+    "capacity": {
+      "bedsAndCapacity": "{beds}台のベッドがあり、{capacity}人の収容能力があります。",
+      "bedsOnly": "{beds}台のベッドがあります。",
+      "capacityOnly": "{capacity}人の収容能力があります。"
+    },
+    "services": {
+      "title": "設備：",
+      "toilets": "トイレ",
+      "drinking_water": "飲用水",
+      "fireplace": "暖炉",
+      "stove": "ストーブ",
+      "heating": "暖房",
+      "electricity": "電気",
+      "shower": "シャワー",
+      "kitchen": "キッチン",
+      "lit": "照明",
+      "internet": "インターネット",
+      "outdoor_seating": "屋外席",
+      "picnic_table": "ピクニックテーブル",
+      "bench": "ベンチ",
+      "covered": "屋根付きエリア",
+      "pets": "ペット可",
+      "smoking_free": "禁煙"
+    },
+    "website": "ウェブサイトを見る",
+    "noInfo": "この避難所の追加情報はありません。",
+    "nearbyShelters": "近くの山小屋",
+    "nearbySheltersNoData": "近くの山小屋が見つかりません",
+    "unnamedShelter": "名称未設定の山小屋",
+    "unknownShelter": "不明な山小屋",
+    "invalidShelterId": "山小屋IDが無効です",
+    "suggestEdit": "編集を提案",
+    "source": "出典: {source}",
+    "searchRoutesFor": "ルートを検索",
+    "findHikingRoutesOnWikiloc": "Wikilocでハイキングルートを見つける",
+    "openImageGallery": "画像ギャラリーを開く",
+    "previousImage": "前の画像",
+    "nextImage": "次の画像",
+    "searchRoutesAria": "Wikilocで{name}のルートを検索"
+  }
+}

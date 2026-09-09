@@ -1,0 +1,117 @@
+.report-block-popup__popup {
+  border: 2px solid #0a2540;
+}
+
+.report-block-popup__close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  }
+
+.report-block-popup__close-button:active {
+  background: var(--c-gray-100);
+  color: #374151;
+}
+
+.report-block-popup__content {
+  padding: 32px 24px 24px;
+  text-align: center;
+}
+
+.report-block-popup__icon-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.report-block-popup__icon {
+  color: #0a2540;
+  background: linear-gradient(135deg, #cfe1ff 0%, #a8c8ff 100%);
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(10, 37, 64, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-block-popup__title {
+  color: #0a2540;
+  margin: 0 0 12px 0;
+}
+
+.report-block-popup__message {
+  color: #6b7280;
+  margin: 0 0 32px 0;
+}
+
+.report-block-popup__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.report-block-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  }
+
+.report-block-popup__button--report {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.report-block-popup__button--report:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+}
+
+.report-block-popup__button--block {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.report-block-popup__button--block:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+.report-block-popup__button--unblock {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.report-block-popup__button--unblock:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.report-block-popup__info {
+  color: #6b7280;
+  margin: 0;
+}
+
+
+
+

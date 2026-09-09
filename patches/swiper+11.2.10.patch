@@ -1,0 +1,16 @@
+diff --git a/node_modules/swiper/modules/pagination.mjs b/node_modules/swiper/modules/pagination.mjs
+index daec073..20b521c 100644
+--- a/node_modules/swiper/modules/pagination.mjs
++++ b/node_modules/swiper/modules/pagination.mjs
+@@ -125,9 +125,9 @@ function Pagination(_ref) {
+       let lastIndex;
+       let midIndex;
+       if (params.dynamicBullets) {
+-        bulletSize = elementOuterSize(bullets[0], swiper.isHorizontal() ? 'width' : 'height', true);
++        bulletSize = Math.min( elementOuterSize(bullets[0], swiper.isHorizontal() ? 'width' : 'height', true), elementOuterSize(bullets[1], swiper.isHorizontal() ? 'width' : 'height', true));
+         el.forEach(subEl => {
+-          subEl.style[swiper.isHorizontal() ? 'width' : 'height'] = `${bulletSize * (params.dynamicMainBullets + 4)}px`;
++          subEl.style[swiper.isHorizontal() ? 'width' : 'height'] = `${ bulletSize * (params.dynamicMainBullets + 5) }px`;
+         });
+         if (params.dynamicMainBullets > 1 && previousIndex !== undefined) {
+           dynamicBulletIndex += current - (previousIndex || 0);

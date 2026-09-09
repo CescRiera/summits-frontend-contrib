@@ -1,0 +1,461 @@
+/* Block: listDetails */
+.listDetails {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px 24px 100px 24px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* =================================================================
+   HERO BANNER
+   ================================================================= */
+.listDetails__heroWrapper {
+  position: relative;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  min-width: 0;
+}
+
+.listDetails__hero {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--c-gray-900);
+  min-height: 320px;
+  height: 100%;
+}
+
+.listDetails__heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.45) 50%,
+      rgba(0, 0, 0, 0.65) 100%);
+  z-index: 1;
+}
+
+.listDetails__heroContent {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 32px 40px 32px;
+  width: stretch;
+}
+
+.listDetails__heroTitle {
+  color: white !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 0;
+}
+
+.listDetails__heroDescription {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 800px;
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.listDetails__heroCreator {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 5;
+}
+
+.listDetails__heroFollowBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: white;
+  transition: all 0.25s ease;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.listDetails__heroFollowBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.listDetails__heroFollowBtn--following {
+  background: rgba(10, 37, 64, 0.25);
+  border-color: #0a2540;
+  color: white;
+}
+
+.listDetails__heroFollowBtn--following:hover {
+  background: rgba(10, 37, 64, 0.35);
+}
+
+.listDetails__totalPeaksRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.listDetails__totalPeaksNumber {
+  color: white;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.listDetails__totalPeaksLabel {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.listDetails__heroActions {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.listDetails__filtersContainer {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Element: listDetails peaksSection */
+.listDetails__peaksSection {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.listDetails__userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(var(--rgb-black), 0.1);
+  flex-shrink: 0;
+}
+
+.listDetails__headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.listDetails__creatorBadge {
+  margin-top: -8px;
+  align-self: flex-start;
+}
+
+/* Element: listDetails header names */
+.listDetails__headerNames {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Element: listDetails header name */
+.listDetails__headerName {
+  color: var(--c-gray-900);
+}
+
+/* Element: listDetails filter navbar */
+.listDetails__filterNavbar {
+  background: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+/* Element: listDetails filter button */
+.listDetails__filterBtn {
+  background: var(--c-gray-50);
+  border: 2px solid var(--c-gray-200);
+  border-radius: 12px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64748b;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+/* Modifier: listDetails filter button hover */
+
+/* Modifier: listDetails filter button active */
+.listDetails__filterBtn--active {
+  background: #0a2540;
+  border-color: #0a2540;
+  color: white;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.3);
+}
+
+/* Element: listDetails peaks container */
+.listDetails__peaksContainer {
+  padding: 20px;
+  max-height: calc(100dvh - 300px);
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar for peaks container */
+.listDetails__peaksContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.listDetails__peaksContainer::-webkit-scrollbar-track {
+  background: var(--c-gray-100);
+  border-radius: 4px;
+}
+
+.listDetails__peaksContainer::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Element: listDetails peak card */
+.listDetails__peakCard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 20px rgba(var(--rgb-black), 0.15);
+}
+
+/* Modifier: listDetails peak card hover */
+
+/* Modifier: listDetails peak card completed */
+.listDetails__peakCard--completed {
+  border: 3px solid #22c55e;
+}
+
+/* Element: listDetails peak card overlay */
+.listDetails__peakCardOverlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(var(--rgb-black), 0.7) 0%,
+      rgba(var(--rgb-black), 0.4) 50%,
+      rgba(var(--rgb-black), 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  min-height: 200px;
+}
+
+/* Element: listDetails peak card content */
+.listDetails__peakCardContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Element: listDetails peak card icon */
+.listDetails__peakCardIcon {
+  background: rgba(var(--rgb-white), 0.2);
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  backdrop-filter: blur(5px);
+  flex-shrink: 0;
+}
+
+/* Element: listDetails peak card text */
+.listDetails__peakCardText {
+  flex: 1;
+  color: white;
+}
+
+/* Element: listDetails peak name */
+.listDetails__peakName {
+  margin: 0 0 6px 0;
+}
+
+/* Element: listDetails peak location */
+.listDetails__peakLocation {
+  opacity: 0.9;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Element: listDetails peak elevation */
+.listDetails__peakElevation {
+  opacity: 0.9;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Element: listDetails completion badge */
+.listDetails__completionBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #00ae21 0%, #00ae21 100%);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+/* Element: listDetails peak row */
+.listDetails__peakRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Element: listDetails peak column */
+.listDetails__peakColumn {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 0;
+}
+
+/* Element: listDetails loading container */
+.listDetails__loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Element: listDetails error container */
+.listDetails__errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Element: listDetails loading spinner */
+.listDetails__loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--c-gray-200);
+  border-top: 4px solid #0a2540;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Element: listDetails error container paragraph */
+.listDetails__errorContainer p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Element: listDetails retry button */
+.listDetails__retryButton {
+  background: #0a2540;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Modifier: listDetails retry button hover */
+/* Element: listDetails actions */
+.listDetails__actionBtn {
+  flex: 1;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.listDetails__actionBtn--secondary {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.listDetails__actionBtn--secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.listDetails__actionBtn--primary {
+  background: #0f172a;
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.3);
+}
+
+.listDetails__actionBtn--primary:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.4);
+}
+
+.listDetails__actionBtn:active {
+  transform: scale(0.98);
+}

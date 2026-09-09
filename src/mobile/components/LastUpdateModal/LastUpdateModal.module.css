@@ -1,0 +1,114 @@
+.last-update-modal__container {
+  padding: 2.5rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+}
+
+.last-update-modal__brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: var(--c-gray-900);
+}
+
+.last-update-modal__close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(var(--rgb-black), 0.05);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-gray-600);
+  transition: all 0.2s ease;
+}
+
+.last-update-modal__close-button:active {
+  transform: scale(0.9);
+  background: rgba(var(--rgb-black), 0.1);
+}
+
+.last-update-modal__header {
+  text-align: center;
+}
+
+.last-update-modal__title {
+  color: var(--c-gray-900);
+  margin: 0 0 0.4rem;
+}
+
+.last-update-modal__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, var(--c-gray-100) 0%, var(--c-gray-50) 100%);
+  border: 1px solid rgba(var(--rgb-black), 0.05);
+  border-radius: 20px;
+  padding: 1.75rem 1.25rem;
+}
+
+.last-update-modal__hero > svg {
+  color: var(--color-accent-dark);
+  flex-shrink: 0;
+}
+
+.last-update-modal__hero-title {
+  color: var(--c-gray-900);
+  margin: 0;
+}
+
+.last-update-modal__hero-subtitle {
+  color: var(--c-gray-600);
+  margin: 0;
+  max-width: 26rem;
+}
+
+.last-update-modal__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.last-update-modal__highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  color: var(--c-gray-700);
+}
+
+.last-update-modal__highlight svg {
+  color: var(--color-accent-dark);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.last-update-modal__community {
+  text-align: center;
+  color: var(--c-gray-600);
+  font-style: italic;
+  margin: 0;
+}
+
+.last-update-modal__cta-button {
+  background: var(--c-gray-900);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 0.8rem;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.last-update-modal__cta-button:active {
+  transform: scale(0.98);
+  background: var(--c-black);
+}

@@ -1,0 +1,119 @@
+.desktop-route-existence-confirmation__modal {
+  background: var(--c-white);
+  border-radius: 20px;
+  padding: 28px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 12px 32px rgba(var(--rgb-black), 0.12);
+  border: 1px solid var(--c-gray-200);
+}
+
+.desktop-route-existence-confirmation__content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.desktop-route-existence-confirmation__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktop-route-existence-confirmation__title {
+  color: var(--c-gray-900);
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  padding-left: 32px;
+}
+
+.desktop-route-existence-confirmation__close-btn {
+  background: transparent;
+  border: none;
+  color: var(--c-gray-500);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.desktop-route-existence-confirmation__close-btn:hover {
+  background: var(--c-gray-100);
+  color: var(--c-gray-700);
+}
+
+.desktop-route-existence-confirmation__close-btn:active {
+  transform: scale(0.95);
+}
+
+.desktop-route-existence-confirmation__peak-name {
+  color: var(--c-gray-900);
+  text-align: center;
+  margin: 0;
+}
+
+.desktop-route-existence-confirmation__subtitle {
+  color: var(--c-gray-600);
+  text-align: center;
+  margin: 0;
+}
+
+.desktop-route-existence-confirmation__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+.desktop-route-existence-confirmation__button {
+  flex: 1;
+  max-width: 200px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-route-existence-confirmation__button--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.desktop-route-existence-confirmation__button--primary:hover {
+  opacity: 0.9;
+}
+
+.desktop-route-existence-confirmation__button--secondary {
+  background: var(--c-gray-100);
+  color: var(--c-gray-900);
+  border: 1px solid var(--c-gray-200);
+}
+
+.desktop-route-existence-confirmation__button--secondary:hover {
+  opacity: 0.8;
+}
+
+.desktop-route-existence-confirmation__button--danger {
+  background: #db2727; /* Darker red */
+  color: white;
+}
+
+.desktop-route-existence-confirmation__button--danger:hover {
+  background: #b91c1c;
+}
+
+.desktop-route-existence-confirmation__button--danger:active {
+  transform: scale(0.98);
+}

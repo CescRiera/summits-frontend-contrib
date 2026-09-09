@@ -1,0 +1,52 @@
+/* ProfileCard.module.css - Square cards for Statistics and My Peaks */
+
+.profile-card {
+  background: rgba(var(--rgb-white), 0.55);
+  border: 1px solid rgba(15, 23, 42, 0.3);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  min-height: 140px;
+  flex: 1;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(var(--rgb-black), 0.1),
+    0 2px 4px -1px rgba(var(--rgb-black), 0.06);
+}
+
+.profile-card__number {
+  color: #0f172a;
+  opacity: 0.9;
+  text-align: center;
+  margin: 2px 0 auto 0;
+}
+
+.profile-card__icon {
+  color: #0f172a;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.profile-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-self: flex-start;
+}
+
+.profile-card__title {
+  color: #0f172a;
+  text-align: left;
+}
+
+.profile-card__subtitle {
+  color: rgba(15, 23, 42, 0.7);
+  text-align: left;
+}

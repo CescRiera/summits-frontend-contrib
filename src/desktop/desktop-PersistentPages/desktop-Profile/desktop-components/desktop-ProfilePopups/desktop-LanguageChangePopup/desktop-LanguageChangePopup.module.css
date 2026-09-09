@@ -1,0 +1,234 @@
+/* LanguageChangePopup.module.css - Language selection popup */
+
+.language-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background: rgba(var(--rgb-black), 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.language-popup__content {
+  background: rgba(var(--rgb-white), 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 80dvh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(var(--rgb-black), 0.1),
+    0 10px 10px -5px rgba(var(--rgb-black), 0.04);
+  backdrop-filter: blur(5px);
+  animation: language-popup__slide-in 0.2s ease-out;
+}
+
+@keyframes language-popup__slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.language-popup__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.language-popup__icon {
+  flex: 0 0 auto;
+}
+
+.language-popup__header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-popup__title {
+  color: #0f172a;
+}
+
+.language-popup__message {
+  color: #64748b;
+  margin: 0;
+}
+
+.language-popup__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.language-popup__item {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+  color: #0f172a;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.language-popup__item:hover:not(.language-popup__item--selected) {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.language-popup__item--selected {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent);
+  color: #0f172a;
+}
+
+.language-popup__item--selected:hover {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent-dark);
+}
+
+.language-popup__item-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.language-popup__item-flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.language-popup__item-name {
+  margin: 0;
+  color: inherit;
+}
+
+.language-popup__item-check {
+  color: #0f172a;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.language-popup__item--selected .language-popup__item-check {
+  opacity: 1;
+}
+
+.language-popup__actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.language-popup__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-popup__button--cancel {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  border: 1.5px solid rgba(15, 23, 42, 0.7);
+  cursor: pointer;
+}
+
+.language-popup__button--cancel:hover:not(:disabled) {
+  background: rgba(15, 23, 42, 0.15);
+  border-color: rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+}
+
+.language-popup__button--confirm {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-accent-dark);
+  cursor: pointer;
+}
+
+.language-popup__button--confirm:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.language-popup__button--confirm:active {
+  transform: translateY(0);
+}
+
+.language-popup__button--confirm:disabled {
+  background: #cbd5e1;
+  transform: none;
+  border: 1px solid #94a3b8;
+}
+
+.language-popup__loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: language-popup__spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes language-popup__spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 350px) {
+  .language-popup__content {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .language-popup__title {
+  }
+
+  .language-popup__message {
+  }
+
+  .language-popup__item {
+    padding: 10px 12px;
+    width: 100%;
+  }
+
+  .language-popup__actions {
+    flex-direction: column;
+  }
+
+  .language-popup__button {
+    width: 100%;
+  }
+}

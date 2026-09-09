@@ -1,0 +1,460 @@
+/* Recent Routes Section */
+.recent-routes {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Container and Scroll */
+.recent-routes__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recent-routes__scroll {
+  display: flex;
+  gap: 16px;
+  padding: 0px 16px 8px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.recent-routes__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Design */
+.recent-routes__card {
+  flex: 0 0 300px;
+  width: 300px;
+  max-width: 300px;
+  position: relative;
+  background: var(--c-white);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(var(--rgb-black), 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--c-gray-200);
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+
+.recent-routes__card:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12);
+}
+
+/* Content */
+.recent-routes__content {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header row */
+.recent-routes__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 12px 12px 0 12px;
+  position: relative;
+}
+
+.recent-routes__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recent-routes__user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.recent-routes__user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--c-gray-200);
+  flex-shrink: 0;
+}
+
+.recent-routes__user-avatar-placeholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--c-gray-200);
+  flex-shrink: 0;
+}
+
+.recent-routes__user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+  max-width: 140px;
+}
+
+.recent-routes__user-name {
+  color: var(--c-gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__activity-type {
+  color: var(--c-gray-900);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__device-model {
+  color: var(--c-gray-600);
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-routes__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-black);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 0px;
+  max-width: 140px;
+}
+
+.recent-routes__more-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Route name */
+.recent-routes__name {
+  color: var(--c-gray-900);
+  margin: 0;
+  padding: 0 12px 12px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Image section */
+.recent-routes__image-section {
+  position: relative;
+  width: 100%;
+  height: 170px; /* Increased by 50px */
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  background: var(--c-gray-100);
+}
+
+.recent-routes__image-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(var(--rgb-black), 0.5) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.recent-routes__secondsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.recent-routes__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.recent-routes__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--c-gray-200),
+    var(--c-gray-100)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* New Stats Overlay Styles */
+.recent-routes__stats-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 8px;
+  z-index: 10;
+  color: white;
+  background: linear-gradient(to top, rgba(var(--rgb-black), 0.5) 0%, transparent 100%);
+}
+
+.recent-routes__stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.recent-routes__stat-label {
+  text-transform: uppercase;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.recent-routes__stat-value {
+  white-space: nowrap;
+}
+
+.recent-routes__stat-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(var(--rgb-white), 0.3);
+  margin: 0 4px;
+}
+
+/* Loading Overlay - Appears over the entire scroll container */
+.recent-routes__loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(var(--rgb-white), 0.95);
+  display: flex;
+  gap: 16px;
+  padding: 0 16px 8px 16px;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 16px;
+}
+
+.recent-routes__container {
+  position: relative;
+}
+
+/* Loading and Error States */
+.recent-routes__loading,
+.recent-routes__error,
+.recent-routes__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recent-routes__spinner,
+.recent-routes__loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--c-gray-200);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer Skeleton Loading */
+@keyframes recent-routes__shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.recent-routes__skeleton-scroll {
+  display: flex;
+  gap: 16px;
+  padding: 0px 16px 8px 16px;
+  overflow: hidden;
+}
+
+.recent-routes__skeleton-card {
+  flex: 0 0 300px;
+  width: 300px;
+  background: var(--c-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(var(--rgb-black), 0.08);
+  border: 1px solid var(--c-gray-200);
+}
+
+.recent-routes__skeleton-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px 0 12px;
+}
+
+.recent-routes__skeleton-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-user-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.recent-routes__skeleton-user-name {
+  width: 80px;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-activity {
+  width: 50px;
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-title {
+  width: 65%;
+  height: 14px;
+  border-radius: 6px;
+  margin: 10px 12px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__skeleton-image {
+  width: 100%;
+  height: 170px;
+  background: linear-gradient(
+    90deg,
+    var(--c-gray-200) 25%,
+    var(--c-gray-100) 50%,
+    var(--c-gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: recent-routes__shimmer 1.5s infinite;
+}
+
+.recent-routes__empty-icon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.recent-routes__floating-icon {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+.recent-routes__empty h3 {
+  color: var(--c-gray-900);
+  margin: 0 0 8px 0;
+}
+
+.recent-routes__loading p,
+.recent-routes__error p,
+.recent-routes__empty p {
+  color: var(--c-gray-600);
+  margin: 0;
+}
+
+/* Focus styles for accessibility */
+.recent-routes__card:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+

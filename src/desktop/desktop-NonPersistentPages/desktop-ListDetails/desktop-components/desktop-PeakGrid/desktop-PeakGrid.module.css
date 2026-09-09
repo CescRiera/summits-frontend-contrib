@@ -1,0 +1,613 @@
+﻿/* PeakGrid.module.css - Peak Grid Component with BEM naming */
+
+/* Block: peakGrid */
+.peakGrid {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10px 1.32fr;
+  grid-template-rows: 2fr 10px 0.5fr 10px 2fr;
+  gap: 0;
+  border-radius: 12px;
+  contain: layout style paint;
+  opacity: 1;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+/* Element: peakGridItem */
+.peakGrid__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--c-gray-100);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1) translateZ(0);
+  contain: layout style paint;
+  will-change: transform;
+  box-shadow: 0px 4px 12px -2px rgba(var(--rgb-black), 0.15);
+  border: 2px solid transparent;
+}
+
+/* Modifier: peakGridItem completed */
+.peakGrid__item--completed {
+  border: 1px solid #22c55e;
+}
+
+/* Element: peakGridItem positioning - Irregular layout */
+.peakGrid__item--1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.peakGrid__item--2 {
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+
+.peakGrid__item--3 {
+  grid-column: 1;
+  grid-row: 3 / 6;
+}
+
+.peakGrid__item--4 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+/* Modifier: peakGrid mirrored - mirror the grid layout */
+.peakGrid--mirrored {
+  transform: scaleX(-1);
+}
+
+/* Counter-transform for all content inside mirrored grid to keep text readable */
+.peakGrid--mirrored * {
+  transform: scaleX(-1);
+}
+
+/* Element: peakGridContent */
+.peakGrid__content {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 12px;
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(var(--rgb-black), 0.4);
+  color: white;
+  z-index: 3;
+}
+
+/* Element: peakMainContent */
+.peakGrid__mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Element: peakTitleRow */
+.peakGrid__titleRow {
+  width: 100%;
+}
+
+/* Element: peakTitle */
+.peakGrid__title {
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Element: peakInfoRow */
+.peakGrid__infoRow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Element: peakElevationAndLocation */
+.peakGrid__elevationAndLocation {
+  display: inline-block;
+}
+
+/* Element: peakElevation */
+.peakGrid__elevation {
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.4);
+  display: inline;
+  margin-right: 8px;
+}
+
+/* Element: peakLocation */
+.peakGrid__location {
+  text-shadow: 0 1px 2px rgba(var(--rgb-black), 0.4);
+  opacity: 0.9;
+  white-space: normal;
+  display: inline;
+}
+
+/* Element: peakUserData */
+.peakGrid__userData {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Element: datesSection */
+.peakGrid__datesSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+/* Element: routeDate */
+.peakGrid__routeDate {
+  opacity: 0.8;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Element: moreDatesIndicator */
+.peakGrid__moreDatesIndicator {
+  opacity: 0.7;
+  background: rgba(var(--rgb-white), 0.2);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Element: ascentsSection */
+.peakGrid__ascentsSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Element: ascentsCount */
+.peakGrid__ascentsCount {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Element: ascentsLabel */
+.peakGrid__ascentsLabel {
+  opacity: 0.9;
+}
+
+/* Element: elevationIcon background */
+.peakGrid__elevationIconBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Element: elevationIcon inline */
+.peakGrid__elevationIconInline {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
+  margin-right: 6px;
+  vertical-align: text-bottom;
+}
+
+/* Element: imageContainer */
+.peakGrid__imageContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Element: peakGridImage */
+.peakGrid__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Element: imagePlaceholder */
+.peakGrid__imagePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,
+      var(--c-gray-100) 25%,
+      var(--c-gray-200) 25%,
+      var(--c-gray-200) 50%,
+      var(--c-gray-100) 50%,
+      var(--c-gray-100) 75%,
+      var(--c-gray-200) 75%);
+  background-size: 20px 20px;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Element: imageLoader */
+.peakGrid__imageLoader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--c-gray-100);
+  border-top: 3px solid var(--primary-border--dark, #3498db);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Element: optimizedImage */
+.peakGrid__optimizedImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* Element: noImageBackground */
+.peakGrid__noImageBackground {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      var(--primary-surface--subtle, var(--c-gray-50)) 0%,
+      var(--grayscale-surface--default, var(--c-gray-200)) 50%,
+      var(--primary-surface--subtle, var(--c-gray-50)) 100%);
+  position: relative;
+}
+
+/* Element: noImageBackground before pseudo-element */
+.peakGrid__noImageBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%,
+      rgba(var(--rgb-white), 0.3) 0%,
+      transparent 50%);
+}
+
+/* Element: gridsContainer */
+.peakGrid__gridsContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Modifier: gridsContainer transitioning */
+.peakGrid__gridsContainer--transitioning {
+  transition: none;
+}
+
+/* Modifier: gridsContainer loaded */
+.peakGrid__gridsContainer--loaded {
+  gap: 0;
+}
+
+/* Element: listContainer */
+.peakGrid__listContainer {
+  min-height: 400px;
+  padding: 0;
+  position: relative;
+}
+
+/* Modifier: listContainer loading */
+.peakGrid__listContainer--loading {
+  /* Prevent interaction during loading */
+  pointer-events: none;
+}
+
+.peakGrid__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  border-radius: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.peakGrid__overlayContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Element: table container */
+.peakGrid__tableContainer {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--c-gray-200);
+  overflow: hidden;
+  margin-top: 8px;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.peakGrid__tableContainer--transitioning {
+  opacity: 0.5;
+}
+
+.peakGrid__tableHeader {
+  display: grid;
+  grid-template-columns: 1.5fr 0.6fr 1fr 100px;
+  gap: 16px;
+  padding: 16px 24px;
+  background: rgba(241, 245, 249, 0.5);
+  border-bottom: 2px solid var(--c-gray-200);
+  color: #64748b;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+.peakGrid__tableHeader--withDate {
+  grid-template-columns: 1.5fr 0.6fr 1fr 0.6fr 100px;
+}
+
+/* Header Columns */
+
+.peakGrid__thElevation,
+.peakGrid__thLocation,
+.peakGrid__thDate,
+.peakGrid__thAction {
+  /* Inherits from grid parent */
+}
+
+.peakGrid__tableBody {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Element: noCompletedMessage */
+.peakGrid__noCompletedMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, var(--c-gray-50) 0%, var(--c-gray-200) 100%);
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Element: noCompletedMessage paragraph */
+.peakGrid__noCompletedMessage p {
+  color: #64748b;
+  margin: 0;
+}
+
+/* Element: noSearchResultsMessage */
+.peakGrid__noSearchResultsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, var(--c-gray-50) 0%, #e0f2fe 100%);
+  border: 2px solid #0ea5e9;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Element: noSearchResultsMessage paragraph */
+.peakGrid__noSearchResultsMessage p {
+  color: #0c4a6e;
+  margin: 0;
+}
+
+/* Element: contentLoadingSpinner */
+.peakGrid__contentLoadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+/* Element: loadingText */
+.peakGrid__loadingText {
+  color: #64748b;
+  margin: 0;
+}
+
+/* Element: loadingSpinner */
+.peakGrid__loadingSpinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Simple grid layouts for incomplete grids */
+
+/* Modifier: peakGrid single */
+.peakGrid--single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.peakGrid--single .peakGrid__item {
+  width: 100%;
+  height: 100%;
+}
+
+/* Modifier: peakGrid double */
+.peakGrid--double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 12px;
+  aspect-ratio: 2/1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.peakGrid--double .peakGrid__item {
+  width: 100%;
+  height: 100%;
+}
+
+/* Modifier: peakGrid triple */
+.peakGrid--triple {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  aspect-ratio: 2/2;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.peakGrid--triple .peakGrid__item:first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.peakGrid--triple .peakGrid__item:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.peakGrid--triple .peakGrid__item:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+/* Modifier: peakGrid quad */
+.peakGrid--quad {
+  /* Default grid layout */
+}
+
+/* Loading state for smoother transitions */
+.peakGrid__gridsContainer--transitioning .peakGrid {
+  transition: none;
+}
+
+/* Performance optimizations for grid items */
+.peakGrid__gridItemOptimized {
+  overflow: visible;
+  will-change: transform;
+}
+
+/* Completion badge for peaks */
+.peakGrid__completionBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #22c55e;
+  color: white;
+  border-radius: 12px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+
+/* Clamp grid content paragraph to 2 lines with ellipsis */
+.peakGrid__content p {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 350px) {
+  .peakGrid__content {
+    padding: 8px;
+  }
+
+
+  .peakGrid__elevationAndLocation {
+    gap: 6px;
+  }
+
+  .peakGrid__elevationIconInline {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px !important;
+  }
+
+
+  .peakGrid__routeDate {
+    padding: 3px 6px;
+  }
+
+  .peakGrid__ascentsCount {
+    padding: 3px 6px;
+  }
+
+  .peakGrid__userData {
+    gap: 4px;
+  }
+}

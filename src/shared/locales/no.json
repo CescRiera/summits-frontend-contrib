@@ -1,0 +1,2338 @@
+{
+  "common": {
+    "apply": "Bruk",
+    "details": "Detaljer",
+    "filters": "Filtre",
+    "seeRanking": "Se rangering",
+    "time": {
+      "years": "år",
+      "days": "dager",
+      "hours": "timer",
+      "minutes": "minutter",
+      "seconds": "sekunder"
+    },
+    "loading": "Laster...",
+    "loadingRouteData": "Vi laster rutedataene dine, dette kan ta noen sekunder",
+    "error": "Feil",
+    "retry": "Prøv igjen",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "delete": "Slett",
+    "edit": "Rediger",
+    "list": "Liste",
+    "map": "Kart",
+    "close": "Lukk",
+    "back": "Tilbake",
+    "goBack": "Gå tilbake",
+    "next": "Neste",
+    "previous": "Forrige",
+    "search": "Søk",
+    "searching": "Søker...",
+    "clear": "Tøm",
+    "filter": "Filtrer",
+    "sort": "Sorter",
+    "refresh": "Oppdater",
+    "min": "Min",
+    "max": "Maks",
+    "country": "Land",
+    "region": "Region",
+    "location": "Sted",
+    "chooseCountry": "Velg et land",
+    "chooseRegion": "Velg en region",
+    "allCountries": "Alle land",
+    "allRegions": "Alle regioner",
+    "seeAll": "Se alle",
+    "seeOnMap": "Se på kart",
+    "showLess": "Vis mindre",
+    "moreInfo": "Mer informasjon",
+    "create": "Opprett",
+    "follow": "Følg",
+    "following": "Følger",
+    "join": "Bli med",
+    "leave": "Forlat",
+    "seeMore": "Se mer",
+    "select": "Velg",
+    "send": "Send",
+    "timeUnits": {
+      "yearShort": "å",
+      "dayShort": "d",
+      "hourShort": "t",
+      "minuteShort": "m",
+      "secondShort": "s"
+    },
+    "ranking": "Rangering",
+    "share": "Share",
+    "deleting": "Sletter...",
+    "seeLess": "Vis mindre"
+  },
+  "desktopWarning": {
+    "title": "Last ned mobilversjonen av Summits",
+    "subtitle": "Nyt mobilversjonen av summits, skann QR-koden og følg trinnene du ser på landingssiden for å laste ned applikasjonen!",
+    "scanQR": "Skann denne QR-koden med mobilenheten din",
+    "mobileSubtitle": "Skann den tilsvarende QR-koden nedenfor basert på telefonens operativsystem og last ned appen på Android eller iOS for å spore toppene dine på farten!"
+  },
+  "auth": {
+    "loginRequired": {
+      "joinClub": "Logg inn for å bli med i en klubb.",
+      "title": "Pålogging kreves",
+      "message": "Vennligst logg inn for å se dine personlige topper på kartet.",
+      "viewCompletedPeaks": "Vennligst logg inn for å se fullførte og manglende topper.",
+      "filterPeaks": "Vennligst logg inn for å filtrere topper etter fullføringsstatus.",
+      "sortByDate": "Vennligst logg inn for å sortere topper etter fullføringsdato.",
+      "myPeaks": "Vennligst logg inn for å se dine personlige topper.",
+      "myRoutes": "Vennligst logg inn for å se dine personlige ruter.",
+      "followingMode": "Vennligst logg inn for å se nylig aktivitet fra brukere du følger.",
+      "savedPeaks": "Vennligst logg inn for å se dine lagrede topper.",
+      "savedShelters": "Vennligst logg inn for å se dine lagrede hytter.",
+      "followUser": "Vennligst logg inn for å følge brukere og se profilene deres.",
+      "joinChallenge": "Vennligst logg inn for å bli med i eller følge en utfordring.",
+      "cancel": "Avbryt",
+      "login": "Logg inn"
+    },
+    "welcome": "Velkommen til Summits",
+    "signIn": "Logg inn på kontoen din",
+    "email": "E-post",
+    "name": "Navn",
+    "password": "Passord",
+    "signInButton": "Logg inn",
+    "noAccount": "Har du ikke en konto? Registrer deg",
+    "signUp": "Registrer deg",
+    "signUpOrLogin": "Registrer deg / Logg inn",
+    "createAccount": "Opprett din konto",
+    "confirmPassword": "Bekreft passord",
+    "signUpButton": "Opprett konto",
+    "hasAccount": "Har du allerede en konto? Logg inn",
+    "fillAllFields": "Vennligst fyll ut alle felt",
+    "loginFailed": "Pålogging mislyktes",
+    "registrationFailed": "Registrering mislyktes",
+    "passwordsNotMatch": "Passordene samsvarer ikke",
+    "passwordMin": "Passordet må være minst 6 tegn.",
+    "acceptTerms": "Jeg godtar",
+    "termsOfService": "vilkårene og betingelsene",
+    "and": "og",
+    "privacyPolicy": "personvernerklæringen",
+    "acceptTermsRequired": "Du må godta vilkårene og betingelsene",
+    "receiveNotificationsOnPeaks": "Motta varsler når du fullfører topper",
+    "tosUrl": "/terms-of-service",
+    "privacyUrl": "/privacy-policy",
+    "registrationSuccess": "Konto opprettet! Vennligst logg inn.",
+    "stravaRegisteredSuccess": "Kontoen din er registrert med Strava. Vennligst logg inn.",
+    "backToSelection": "Tilbake til utvalg",
+    "backToLogin": "Tilbake til pålogging",
+    "emailVerification": {
+      "title": "Bekreft e-posten din",
+      "message": "Vi har sendt en 6-sifret bekreftelseskode til e-postadressen din. Vennligst sjekk innboksen og skriv inn koden nedenfor.",
+      "messageWithEmail": "Vi har sendt en 6-sifret bekreftelseskode til {email}. Vennligst sjekk innboksen og skriv inn koden nedenfor.",
+      "openGmail": "Åpne Gmail",
+      "success": "E-posten din er bekreftet! Kontoen din er nå klar til bruk.",
+      "authenticated": "Kontoen din er autentisert. Du kan nå logge inn.",
+      "verifying": "Bekrefter...",
+      "error": "E-postbekreftelse mislyktes. Koden kan ha utløpt eller er ugyldig. Vennligst prøv igjen eller kontakt support.",
+      "codePlaceholder": "Skriv inn 6-sifret kode",
+      "verifyButton": "Bekreft e-post",
+      "verifyingButton": "Bekrefter...",
+      "resendCode": "Send kode på nytt",
+      "resendSuccess": "Bekreftelseskode er sendt på nytt til e-posten din.",
+      "codeError": "Ugyldig eller utløpt bekreftelseskode",
+      "codeRequired": "Vennligst skriv inn den 6-sifrede koden",
+      "link": "Bekreft e-post?"
+    },
+    "forgotPassword": {
+      "title": "Glemt passord",
+      "link": "Glemt passord?",
+      "instructions": "Skriv inn e-postadressen din så sender vi deg en 6-sifret kode for å tilbakestille passordet ditt.",
+      "sendEmail": "Send tilbakestillingskode",
+      "success": "Hvis det finnes en konto med den e-postadressen, har vi sendt deg en passordtilbakestillingskode. Vennligst sjekk innboksen.",
+      "error": "Kunne ikke sende e-post for tilbakestilling av passord. Vennligst prøv igjen."
+    },
+    "resetPassword": {
+      "title": "Tilbakestill passord",
+      "instructions": "Vi har sendt en 6-sifret bekreftelseskode til e-postadressen din. Vennligst sjekk innboksen og skriv inn koden nedenfor.",
+      "messageWithEmail": "Vi har sendt en 6-sifret bekreftelseskode til {email}. Vennligst sjekk innboksen og skriv inn koden nedenfor.",
+      "codePlaceholder": "Skriv inn 6-sifret kode",
+      "codeRequired": "Vennligst skriv inn den 6-sifrede koden",
+      "emailRequired": "Vennligst skriv inn e-postadressen din",
+      "submit": "Tilbakestill passord",
+      "successTitle": "Passord tilbakestilt",
+      "successMessage": "Passordet ditt er tilbakestilt. Du kan nå logge inn med det nye passordet ditt.",
+      "error": "Kunne ikke tilbakestille passord. Koden kan ha utløpt eller være ugyldig. Vennligst be om en ny tilbakestillingskode.",
+      "resendCode": "Send kode på nytt",
+      "resendSuccess": "Passordtilbakestillingskode er sendt på nytt til e-posten din.",
+      "resendError": "Kunne ikke sende tilbakestillingskode på nytt. Vennligst prøv igjen.",
+      "invalidToken": "Ugyldig eller manglende tilbakestillingstoken. Vennligst be om en ny tilbakestillingskode."
+    },
+    "loginHint": "Velkommen tilbake! Skriv inn legitimasjonen din for å få tilgang til profilen din.",
+    "goToLogin": "Gå til pålogging",
+    "welcomeMessage": "Vennligst logg inn eller opprett en ny konto for å få tilgang til profilen din og synkronisere aktivitetene dine.",
+    "noAccountQuestion": "Har du ikke en konto?",
+    "hasAccountQuestion": "Har du allerede en konto?",
+    "or": "eller",
+    "orSignInWith": "eller logg inn med",
+    "loginWithStrava": "Logg inn med Strava",
+    "loginWithSuunto": "Logg inn med Suunto",
+    "chooseProvider": "Velg en leverandør for å opprette kontoen din:",
+    "backToProviderSelection": "Tilbake til leverandørvalg",
+    "wikiloc": {
+      "enterUsername": "Skriv inn et Wikiloc-brukernavn for å søke.",
+      "noUsers": "Ingen Wikiloc-brukere funnet med det navnet.",
+      "searchFailed": "Kunne ikke søke i Wikiloc-brukere.",
+      "selectUserToContinue": "Velg brukeren din for å fortsette",
+      "trails": "Løyper",
+      "selected": "Valgt"
+    },
+    "register": {
+      "title": "Opprett din konto",
+      "subtitle": "For å synkronisere toppene dine, kan du registrere deg med e-post eller koble til via Strava, Suunto, Garmin eller Wikiloc. Vi anbefaler Strava eller Suunto for den raskeste og enkleste oppsettsopplevelsen.",
+      "choosePlatform": "Velg din plattform",
+      "noPlatformOption": "Jeg har ikke en av disse kontoene",
+      "registerWith": "Registrer med",
+      "connectingToWikiloc": {
+        "before": "Jeg prøver å kontakte Wikiloc for å gjøre det mulig å registrere en",
+        "appName": "Summits",
+        "after": "konto ved hjelp av Wikiloc-kontoen din"
+      },
+      "connectingToStrava": {
+        "before": "Jeg prøver å kontakte Strava for å gjøre det mulig å registrere en",
+        "appName": "Summits",
+        "after": "konto ved hjelp av Strava-kontoen din"
+      },
+      "providerDescription": {
+        "wikiloc": "Synkroniser med Wikiloc for å spore fremgangen din på toppene",
+        "strava": "Synkroniser med Strava for å spore fremgangen din på toppene",
+        "garmin": "Synkroniser med Garmin Connect for å spore fremgangen din på toppene",
+        "default": "Opprett en Summits-konto med e-post og passord"
+      },
+      "default": {
+        "label": "E-post",
+        "title": "Opprett en Summits-konto"
+      },
+      "wikiloc": {
+        "label": "Wikiloc",
+        "title": "Registrer deg med Wikiloc",
+        "searchPlaceholder": "Søk etter Wikiloc-brukernavnet ditt",
+        "enterUsername": "Skriv inn et Wikiloc-brukernavn for å søke.",
+        "noUsers": "Ingen Wikiloc-brukere funnet med det navnet.",
+        "searchFailed": "Kunne ikke søke i Wikiloc-brukere.",
+        "warning": "Henting av ruter fra Wikiloc er MYE tregere enn med Strava, Garmin eller Suunto. Hvis du har en konto hos en av disse, bruk den!",
+        "trails": "Løyper",
+        "selected": "Valgt"
+      },
+      "strava": {
+        "label": "Strava",
+        "title": "Registrer deg med Strava",
+        "connecting": "Kobler til Strava...",
+        "submit": "Registrer deg med Strava",
+        "warning": "Strava har en grense for antall ruter som kan synkroniseres. Hvis du har en Garmin-konto med rutene dine, bør du vurdere å bruke den for bedre synkroniseringsmuligheter."
+      },
+      "garmin": {
+        "label": "Garmin Connect",
+        "title": "Registrer deg med Garmin Connect",
+        "connecting": "Registrerer med Garmin Connect...",
+        "submit": "Registrer deg med Garmin Connect",
+        "warning": "Garmin Connect har noen begrensninger. Hvis du ikke ser alle aktiviteter, kan du kontakte meg for hjelp."
+      },
+      "suunto": {
+        "label": "Suunto",
+        "title": "Registrer deg med Suunto",
+        "connecting": "Kobler til Suunto...",
+        "submit": "Fortsett med Suunto",
+        "warning": "Koble til Suunto-kontoen din for å synkronisere aktivitetene dine til Summits."
+      }
+    },
+    "strava": {
+      "error": {
+        "generic": "Det oppstod en feil under Strava-registrering. Vennligst prøv igjen.",
+        "emailAlreadyExists": "En konto med denne e-postadressen eksisterer allerede. Vennligst bruk en annen e-post eller logg inn.",
+        "accountAlreadyLinked": "Denne Strava-kontoen er allerede knyttet til en annen konto.",
+        "registrationFailed": "Registrering mislyktes. Vennligst prøv igjen.",
+        "emailCheckFailed": "E-postbekreftelse mislyktes. Vennligst prøv igjen.",
+        "internalError": "En intern feil oppstod. Vennligst prøv igjen senere."
+      }
+    },
+    "garmin": {
+      "error": {
+        "accountAlreadyLinked": "Denne Garmin-kontoen er allerede knyttet til en annen konto.",
+        "emailCheckFailed": "E-postbekreftelse mislyktes. Vennligst prøv igjen.",
+        "generic": "Det oppstod en feil under Garmin-registrering. Vennligst prøv igjen.",
+        "internalError": "En intern feil oppstod. Vennligst prøv igjen senere.",
+        "registrationFailed": "Registrering mislyktes. Vennligst prøv igjen."
+      }
+    },
+    "oauth": {
+      "error": {
+        "generic": "Det oppstod en feil under innlogging. Vennligst prøv igjen.",
+        "timeout": "Innloggingen tok for lang tid. Vennligst prøv igjen."
+      }
+    }
+  },
+  "navigation": {
+    "home": "Hjem",
+    "discover": "Oppdag",
+    "leaderboard": "Utfordringer",
+    "map": "Kart",
+    "profile": "Profil",
+    "contact": "Kontakt",
+    "userProfile": "Brukerprofil",
+    "routeDetails": "Rutedetaljer",
+    "peakDetails": "Toppdetaljer"
+  },
+  "contact": {
+    "getInTouchWithMe": "KONTAKT UTVIKLEREN",
+    "phoneNumber": "Telefonnummer",
+    "emailAddress": "E-postadresse",
+    "emailPlaceholder": "E-post"
+  },
+  "main": {
+    "totalPeaks": "Totalt antall topper",
+    "totalAscents": "Totalt antall bestigninger",
+    "scrapingMessage": "🔄 Laster fremdeles topper fra rutene dine...",
+    "failedToRefresh": "Kunne ikke oppdatere data",
+    "completedPeaksInList": "Du har fullført {completed} av {total} topper i denne utfordringen.",
+    "allPeaks": "Alle topper",
+    "loading": "Laster...",
+    "completed": "Fullført",
+    "seeMore": "Se mer",
+    "seeLess": "Se mindre",
+    "myPeaks": "Dine topper",
+    "swipeProgressHint": "Sveip for å utforske fremgangen din på tvers av ulike utfordringer",
+    "swipeDiscoverHint": "Sveip for å oppdage fantastiske utfordringer fra hele verden",
+    "yourHighestPeaks": "Dine høyeste topper",
+    "yourHighestPeaksDesc": "De høyeste fjelltoppene du har erobret i klatreturen din",
+    "communityHighestPeaks": "Samfunnets høyeste topper",
+    "communityHighestPeaksDesc": "De mest imponerende toppene nådd av våre samfunnsmedlemmer",
+    "loadNewPeaks": "Last nye topper",
+    "refreshUserData": "Oppdater brukerdata",
+    "scrapingInProgress": "Dette kan ta en stund hvis du har mange ruter, føl deg fri til å utforske resten av applikasjonen imens!",
+    "allPeaksList": {
+      "nameLoggedIn": "Din reise",
+      "nameGuest": "Oppdag verdens topper",
+      "descriptionLoggedIn": "Hver topp du når setter et varig preg på reisen din. Spor klatringene dine på tvers av ikoniske fjellkjeder fra Himalaya til Alpene – press deg selv utover grensene, ett skritt om gangen.",
+      "descriptionGuest": "Fra Everest til Mont Blanc, utforsk noen av verdens mest inspirerende fjell. Bli med tusenvis av klatrere som omfavner utfordringen og eventyret i hver bestigning – for det vi gjør i livet gjenlyder i evigheten."
+    }
+  },
+  "peakDetails": {
+    "description": "Beskrivelse",
+    "searchRoutesFor": "Søk etter ruter for",
+    "findHikingRoutesOnWikiloc": "Finn turstier på Wikiloc",
+    "expand": "Utvid",
+    "loadError": "Feil ved lasting av toppdetaljer"
+  },
+  "peaks": {
+    "count": "topper",
+    "noPeaksFound": "Ingen topper funnet",
+    "peakInfo": "Toppinformasjon",
+    "information": "Informasjon",
+    "elevation": "Høyde",
+    "description": "Beskrivelse",
+    "noDescription": "Ingen beskrivelse tilgjengelig",
+    "noPeaksNearCoordinates": "Ingen topper funnet i nærheten av disse koordinatene",
+    "images": "Bilder",
+    "userPeakDescriptionSingle": "Toppen {name} i region {region} i {country} du besteg den {dates} med ruten <b>{routes}</b>.",
+    "userPeakDescriptionMultiple": "Toppen {name} i region {region} i {country} du besteg på disse datoene: {dates} med disse rutene: <b>{routes}</b>."
+  },
+  "map": {
+    "noRoutes": "Ingen ruter tilgjengelig",
+    "loadingRoutes": "Laster ruter...",
+    "mapView": "Kartvisning",
+    "controls": {
+      "title": "Kartkontroller",
+      "globeView": "3D-globusvisning",
+      "outdoors": "Utendørs",
+      "satellite": "Satellitt",
+      "terrainView": "3D-terreng"
+    },
+    "visiblePeaks": {
+      "title": "Synlige topper",
+      "subtitle": "Resultater fra gjeldende visning og filtre",
+      "layerLabel": "Lag:",
+      "tilesLayerLabel": "Flislag",
+      "listLayerLabel": "Listelag",
+      "userLayerLabel": "Dine topper lag",
+      "enableHint": "Aktiver byttebryteren for å liste topper",
+      "empty": "Ingen topper ble oppdaget i gjeldende visning.",
+      "footer": "Oppdateres når kartet er i ro i 1 sekund.",
+      "loadMore": "Se {remaining} flere topper"
+    }
+  },
+  "profile": {
+    "clubs": {
+      "browseClubs": "Finn klubber",
+      "createClub": "Opprett klubb",
+      "myClubs": "Mine klubber",
+      "browseTitle": "Finn klubber",
+      "joinClub": "Bli med i klubb",
+      "myClubsDescription": "Klubber du er medlem av."
+    },
+    "userProfile": "Brukerprofil",
+    "settings": "Innstillinger",
+    "logout": "Logg ut",
+    "language": "Språk",
+    "about": "Om",
+    "version": "Versjon",
+    "statistics": "Statistikk",
+    "savedPeaks": "Lagrede topper",
+    "yourRoutes": "Rutene dine",
+    "yourPeaks": "Toppene dine",
+    "yourRoutesWithCount": "{count} ruter",
+    "yourPeaksWithCount": "{count} topper",
+    "savedPeaksWithCount": "{count} lagrede topper",
+    "savedShelters": "Lagrede hytter",
+    "savedSheltersWithCount": "{count} lagrede hytter",
+    "viewYourRoutes": "Se rutene dine",
+    "viewYourPeaks": "Se toppene dine",
+    "viewAllStats": "Se all statistikk",
+    "seeAllSavedPeaks": "Se alle lagrede topper",
+    "changeLanguage": "Endre språk",
+    "unitSystem": "Enhetssystem",
+    "unitSystemMessage": "Velg ditt foretrukne enhetssystem",
+    "metricSystem": "Metrisk (km, m)",
+    "imperialSystem": "Imperial (mi, ft)",
+    "helpTutorials": "Hjelp og veiledninger",
+    "needHelp": "Trenger du hjelp?",
+    "sendSuggestionsReportErrors": "Send forslag / Rapporter feil",
+    "contactDeveloper": "Kontakt utvikler",
+    "donate": "Doner",
+    "donateQuestion": "Donere?",
+    "donateTitle": "Støtt Summits",
+    "donateMessage": "Summits er et personlig prosjekt som ikke genererer noen fortjeneste og som jeg finansierer med mine egne penger. Enhver donasjon er verdsatt og vil bidra til å forbedre og vedlikeholde appen. Takk for at du bruker den!",
+    "donateButton": "Doner",
+    "donateAmount": "Beløp i EUR",
+    "donateAmountPlaceholder": "f.eks. 5.00",
+    "wikilocImport": "Importer fra Wikiloc",
+    "wikilocImportTitle": "Importer ruter fra Wikiloc",
+    "wikilocImportDescription": "Søk etter en Wikiloc-profil og importer alle rutene deres til kontoen din.",
+    "wikilocImportSearchPlaceholder": "Søk etter et Wikiloc-brukernavn...",
+    "wikilocImportButton": "Importer ruter",
+    "wikilocImportStarted": "Import startet! Du vil få fremdriftsoppdateringer via WebSocket.",
+    "wikilocImportQueued": "Du er #{position} i køen. Du vil få fremdriftsoppdateringer via WebSocket.",
+    "wikilocImportAlreadyInProgress": "Wikiloc-import er allerede i gang for denne brukeren.",
+    "wikilocImportServerBusy": "Serveren er opptatt. Prøv igjen om noen minutter.",
+    "wikilocImportCompleted": "Import fullført! {count} ruter behandlet.",
+    "wikilocImportError": "Import mislyktes. Prøv igjen.",
+    "wikilocNoUsersFound": "Fant ingen Wikiloc-brukere med det navnet.",
+    "wikilocSearchFailed": "Søk etter Wikiloc-brukere mislyktes.",
+    "wikilocEnterUsername": "Vennligst skriv inn et Wikiloc-brukernavn for å søke.",
+    "wikilocSelectUser": "Velg en bruker å importere ruter fra:",
+    "wikilocSelectedUser": "Valgt: {name}",
+    "deleteAccount": "Slett",
+    "accountSettings": "Kontoinnstillinger",
+    "nameRequired": "Navn er påkrevd",
+    "nameTooLong": "Navnet må være 100 tegn eller mindre",
+    "nameUpdateFailed": "Kunne ikke oppdatere navn",
+    "editName": "Rediger navn",
+    "saveName": "Lagre navn",
+    "cancelEditName": "Avbryt redigering av navn",
+    "logoutConfirmation": "Er du sikker på at du vil logge ut?",
+    "languageChangeMessage": "Velg ditt foretrukne språk",
+    "deleteAccountConfirmation": "Er du sikker på at du vil slette kontoen din? Denne handlingen kan ikke angres.",
+    "contactDeveloperMessage": "Kontakt utvikleren for støtte, feilrapporter eller generelle henvendelser.",
+    "suggestionsMessage": "Del ideene og forslagene dine for å bidra til å forbedre appen.",
+    "subject": "Emne",
+    "subjectPlaceholder": "Skriv inn et emne...",
+    "message": "Melding",
+    "messagePlaceholder": "Skriv inn meldingen din...",
+    "yourSuggestion": "Ditt forslag",
+    "suggestionPlaceholder": "Del ideene og forslagene dine...",
+    "sendMessage": "Send",
+    "sendSuggestion": "Send",
+    "suggestionSentSuccessfully": "Forslag sendt!",
+    "messageSentSuccessfully": "Meldingen din er sendt!",
+    "follows": {
+      "followers": "Følgere",
+      "following": "Følger",
+      "peaks": "Topper",
+      "followRequests": "Følgeforespørsler",
+      "noPendingRequests": "Ingen ventende forespørsler",
+      "noPendingRequestsMessage": "Du har ingen ventende følgeforespørsler for øyeblikket.",
+      "noFollowers": "Ingen følgere",
+      "noFollowersMessage": "Du har ingen følgere ennå.",
+      "notFollowingAnyone": "Følger ingen",
+      "notFollowingAnyoneMessage": "Du følger ingen ennå.",
+      "accept": "Aksepter",
+      "reject": "Avvis",
+      "unfollow": "Slutt å følge",
+      "loading": "Laster...",
+      "error": "Feil ved lasting av data",
+      "pendingRequests": "Ventende forespørsler"
+    },
+    "notifications": {
+      "notifications": "Varsler",
+      "notificationsEnabled": "Aktivert",
+      "notificationsDisabled": "Deaktivert",
+      "notificationsPermissionDenied": "Tillatelse nektet",
+      "notificationsNotSupported": "Ikke støttet",
+      "waitingForPermission": "Venter på tillatelse"
+    },
+    "privacy": {
+      "profileStatus": "Profilm status",
+      "public": "Offentlig",
+      "private": "Privat"
+    },
+    "challenges": {
+      "joinChallenge": "Bli med i utfordring",
+      "createChallenge": "Opprett utfordring",
+      "editMyChallenges": "Rediger mine utfordringer",
+      "browseTitle": "Bla gjennom utfordringer",
+      "follow": "Følg",
+      "following": "Følger",
+      "unfollowChallenge": "Slutt å følge utfordring",
+      "editChallenge": "Rediger utfordring",
+      "leave": "Forlat utfordring",
+      "leaveConfirmTitle": "Forlat utfordring",
+      "leaveConfirmMessage": "Vil du forlate utfordringen '{name}'? Fremgangen din vil ikke gå tapt og du kan bli med igjen når du vil.",
+      "noCreatedChallenges": "Du har ikke opprettet noen utfordringer ennå."
+    }
+  },
+  "externalProfile": {
+    "userClubs": "{userName}s klubber",
+    "unknownUser": "Ukjent bruker",
+    "userNotFound": "Bruker ikke funnet",
+    "userNotFoundMessage": "Brukeren du leter etter eksisterer ikke eller er fjernet.",
+    "follow": "Følg",
+    "following": "Følger",
+    "privateProfile": "Privat profil",
+    "privateProfileMessage": "Denne brukeren har satt profilen sin til privat. Følg dem for å se statistikken og aktiviteten deres.",
+    "rankTitle": "{userName}s rangering",
+    "rankDescription": "Rangert <strong>{rank}</strong> av <strong>{totalUsers}</strong> brukere med flest bestegne topper",
+    "userPeaks": "{userName}s topper",
+    "userRoutes": "{userName}s ruter",
+    "userPeaksWithCount": "{userName}s {count} topper",
+    "userRoutesWithCount": "{userName}s {count} ruter",
+    "userPeakLists": "{userName}s topputfordringer",
+    "peakListProgress": "{completed} / {total} fullført",
+    "performanceOverview": "Prestasjonsoversikt",
+    "distanceKm": "Distanse (km)",
+    "elevationM": "Høyde (m)",
+    "totalTime": "Total tid",
+    "peaksConquered": "Topper erobret",
+    "routesCompleted": "Ruter fullført",
+    "movingTime": "Bevegelsestid",
+    "viewStatsTitle": "Se {userName}s statistikk",
+    "viewStatsSubtitle": "Interaktive diagrammer og metrikker",
+    "requestPending": "Forespurt"
+  },
+  "help": {
+    "subtitle": "Lær hvordan du får mest mulig ut av Summits og oppdag alle funksjonene",
+    "faq": {
+      "installApp": {
+        "question": "Hvordan kan jeg installere appen?",
+        "answer": "For å installere Summits-appen, avhenger det av operativsystemet ditt (iOS eller Android) eller nettleserversjonen du bruker.\n\nNedenfor finner du installasjonsknappen og trinnene i henhold til enheten din (som vi gjør på landingssiden, men med et enklere design)"
+      },
+      "newPeaks": {
+        "question": "Topper fra nye ruter vises ikke",
+        "answer": "Hvis de nyeste toppene fra rutene dine ikke vises, prøv å bruke knappen på hjemskjermen (øverst til høyre) som sier \"Last flere topper\".\n\nHvis dette ikke fungerer eller det er noen feil, kan du kontakte meg fra profilen din, i \"Kontakt utvikler\"-delen."
+      },
+      "incorrectPeaks": {
+        "question": "Den viser at jeg har besteget topper jeg faktisk ikke har (eller omvendt)",
+        "answer": "For å beregne toppene dine, sjekker appen koordinatene til rutene dine og bestemmer punktene du har gått gjennom.\n\nPå grunn av den lave nøyaktigheten til høyde, er det ikke alltid mulig å fastslå med sikkerhet om du har besteget en topp eller bare passerte nær eller under den. Dette kan skje spesielt i områder med høy topptetthet, som Montserrat, der det kan virke som du har besteget topper du faktisk ikke har.\n\nI motsatt tilfelle – hvis du tror du har besteget en topp men den ikke vises – er det mulig at GPS-en feilet eller registrerte ruten med en liten feilmargin. Jeg anbefaler å se på ruten din på kartet og sjekke linjen som GPS-en registrerte.\n\nHvis du fortsatt tror det er en feil, kan du kontakte meg fra \"Kontakt utvikler\"-delen i profilen din."
+      },
+      "missingRoutes": {
+        "question": "Ikke alle rutene mine eller nye ruter jeg har gjort vises",
+        "answer": "For å unngå å analysere ruter unødvendig, analyserer Summits bare ruter fra spesifikke kategorier relatert til fjellaktiviteter (turer, klatring, terrengløp...). På denne måten unngår den en stor mengde ruter og analyserer ikke de som svært sannsynlig ikke har noen fjellaktivitet som: svømming, løping, sykling, treningssenter...\n\nFor å sikre at rutene dine vil bli analysert, sjekk at de har en gyldig type. Hvis du har problemer relatert til dette, kan du kontakte meg i \"Kontakt utvikler\"-delen."
+      },
+      "historicalData": {
+        "question": "Jeg kan ikke se mine historiske data (topper utført på tidligere ruter)",
+        "answer": "Det er noen problemer med tilbakeføringsdata. Vennligst bruk skjemaet nedenfor for å kontakte utvikleren."
+      }
+    },
+    "mapNavigation": {
+      "title": "Kartnavigasjon",
+      "pinchZoom": "Klyp for å zoome inn og ut på kartet",
+      "dragPan": "Dra for å panorere rundt på kartet",
+      "tapPeak": "Trykk på topper for å vise detaljer",
+      "layers": "Bytt mellom ulike kartlag"
+    },
+    "userFeatures": {
+      "title": "Brukerfunksjoner",
+      "savedPeaks": "Lagre favoritttoppene dine for rask tilgang",
+      "routes": "Opprett og administrer klatrerutene dine",
+      "statistics": "Spor klatrefremgangen din og prestasjonene dine",
+      "profile": "Administrer kontoen og preferansene dine"
+    },
+    "leaderboard": {
+      "title": "Rangeringer",
+      "ranking": "Konkurrer med andre klatrere over hele verden",
+      "categories": "Vis rangeringer etter ulike kategorier",
+      "filters": "Filtrer resultater etter land, region eller vanskelighetsgrad",
+      "achievements": "Lås opp prestasjoner og merker"
+    },
+    "settings": {
+      "title": "Innstillinger og preferanser",
+      "language": "Endre appspråket",
+      "notifications": "Administrer varslingspreferanser",
+      "privacy": "Kontroller personverninnstillingene dine",
+      "data": "Administrer dataene og kontoen din"
+    }
+  },
+  "errors": {
+    "networkError": "Nettverksfeil",
+    "serverError": "Serverfeil",
+    "timeoutError": "Tidsavbrudd for forespørsel",
+    "unknownError": "En ukjent feil oppstod"
+  },
+  "search": {
+    "searchPeaks": "Søk etter topper etter navn eller rute-ID...",
+    "searching": "Søker...",
+    "searchForPeaks": "Søk etter topper, brukere, regioner...",
+    "searchLabel": "Søk",
+    "closeSearch": "Lukk søk",
+    "elevationIcon": "Høydeikon",
+    "peaks": "topper",
+    "noPeaksOrUsersFound": "Ingen topper eller brukere funnet for \"{query}\"",
+    "noPeaksFound": "Ingen topper funnet for \"{query}\"",
+    "searchPeaksAndUsers": "Søk etter topper, brukere, regioner...",
+    "discoverPeaksAndUsers": "Oppdag fantastiske topper og koble med andre klatrere. Skriv et fjellnavn, region, land eller brukernavn for å komme i gang.",
+    "discoverPeaks": "Oppdag fantastiske topper over hele verden. Skriv et fjellnavn, region eller land for å komme i gang.",
+    "recentSearches": "Nylige søk",
+    "clearRecentSearches": "Tøm nylige søk",
+    "clearSearch": "Tøm søk"
+  },
+  "peaksList": {
+    "yourPeaks": "Dine topper",
+    "noPeaksMatchingSearch": "Ingen topper funnet som matcher søket ditt",
+    "noPeaksInRoutes": "Ingen topper funnet i rutene dine",
+    "loadingPeaksData": "Laster toppdata...",
+    "loadingPeaksMetadata": "Laster toppmetadata...",
+    "noPeaksDataAvailable": "Ingen toppdata tilgjengelig"
+  },
+  "gallery": {
+    "media": "Mediegalleri",
+    "noMedia": "Ingen medier tilgjengelig",
+    "videoError": "Feil ved lasting av video",
+    "photos": "Bilder",
+    "videos": "Videoer",
+    "video": "Video",
+    "photo": "Bilde",
+    "openVideoMessage": "Vil du se denne videoen på Pexels?",
+    "openVideo": "Se video",
+    "watchVideo": "Se video",
+    "viewOnPexels": "Vis på Pexels",
+    "addImage": "Legg til bilde",
+    "addImageSuccess": "Bildet ditt er sendt til vurdering. Det vil vises når det er godkjent.",
+    "addImageError": "Kunne ikke legge til bilde",
+    "replaceImage": "Erstatt bilde"
+  },
+  "filters": {
+    "filters": "Filtre",
+    "altitude": "Høyde",
+    "content": "Innhold",
+    "shelterType": "Hytte-type",
+    "modeAll": "Alle",
+    "modePeaks": "Topper",
+    "modeShelters": "Hytter",
+    "all": "Alle",
+    "location": "Sted",
+    "clear": "Tøm filtre",
+    "showFilters": "Vis filtre",
+    "hideFilters": "Skjul filtre",
+    "filterByElevation": "Filtrer etter høyde",
+    "nearbyPeaks": "Topper i nærheten",
+    "currentFilter": "Gjeldende filter",
+    "choosePeakList": "Velg utfordring",
+    "chooseListOfSummits": "Velg utfordring",
+    "yourPeaks": "Dine topper"
+  },
+  "leaderboard": {
+    "clubsTab": "Klubber",
+    "browseClubs": "Finn klubber",
+    "totalClubs": "Klubber",
+    "totalCountries": "Land",
+    "exploreClubs": "Utforsk klubber",
+    "clubsFilterPrefix": "Klubber med...",
+    "rank": "Rang",
+    "club": "Klubb",
+    "errorLoadingClubs": "Kunne ikke laste klubbrangeringen.",
+    "noClubsFound": "Ingen klubber funnet i denne kategorien.",
+    "clubsFilters": {
+      "most_users": "flest medlemmer",
+      "most_peaks": "flest topper",
+      "most_distance": "lengst distanse",
+      "most_elevation": "mest stigning",
+      "most_time": "mest tid",
+      "most_active_last_30d": "mest aktive (30 dager)",
+      "newest": "Nyeste"
+    },
+    "metrics": {
+      "member_count": "Medlemmer",
+      "distinct_peak_count": "Topper",
+      "total_distance_km": "Distanse",
+      "total_elevation_gain": "Stigning",
+      "total_moving_time": "Tid"
+    },
+    "clubsCategories": {
+      "mostPeaks": "Flest topper",
+      "mostDistance": "Lengst distanse",
+      "mostElevation": "Mest stigning",
+      "mostTime": "Mest tid",
+      "mostUsers": "Flest medlemmer"
+    },
+    "exploreChallenges": "Utforsk utfordringer",
+    "noFollowing": "Du følger ingen ennå.",
+    "title": "Utfordringer",
+    "peaksTab": "Topper",
+    "usersTab": "Brukere",
+    "listsTab": "Utfordringer",
+    "worldChallengeTab": "Verdensutfordring",
+    "userChallengesTab": "Brukerutfordringer",
+    "worldTab": "Verden",
+    "forYouTab": "For deg",
+    "totalWorldPeaks": "Totalt antall topper i verden",
+    "communityCompleted": "Fullført av samfunnet",
+    "youCompleted": "Fullført av deg",
+    "shortTotal": "Totalt",
+    "shortCommunity": "Samfunn",
+    "shortMe": "Deg",
+    "shortExpand": "Utvid",
+    "shortMinimize": "Lukk",
+    "sortByHighest": "Høyeste topper",
+    "sortByContributors": "Topp bidragsytere",
+    "expandMap": "Utvid kart",
+    "seeMoreAboutList": "Se mer om denne utfordringen",
+    "sortBy": "Sorter etter",
+    "activity": "Aktivitet",
+    "allActivities": "Alle aktiviteter",
+    "distance": "Distanse",
+    "elevation": "Høyde",
+    "routes": "Ruter",
+    "peaks": "Topper",
+    "peak": "Topp",
+    "time": "Tid",
+    "climbedBy": "Besteget av",
+    "seeAll": "Se alle",
+    "loadMorePeaks": "Last flere topper",
+    "loadMoreUsers": "Last flere brukere",
+    "loading": "Laster...",
+    "distanceChampion": "Distansemester",
+    "elevationMaster": "Høydemester",
+    "routeExplorer": "Ruteutforsker",
+    "peakConqueror": "Topp-erobrer",
+    "enduranceKing": "Utholdenhetskonge",
+    "topPerformer": "Topp presterende",
+    "listChampion": "Utfordringsmester",
+    "peakListParticipant": "Deltaker i utfordring",
+    "badges": {
+      "distanceChampion": "Distansemester",
+      "elevationMaster": "Høydemester",
+      "routeExplorer": "Ruteutforsker",
+      "peakConqueror": "Topp-erobrer",
+      "enduranceKing": "Utholdenhetskonge",
+      "topPerformer": "Topp presterende"
+    },
+    "filters": {
+      "sortBy": "Sorter etter",
+      "activity": "Aktivitet"
+    },
+    "completed": "Fullført",
+    "progress": "Fremgang",
+    "hours": "Timer",
+    "selectList": "Velg utfordring:",
+    "participants": "deltakere",
+    "peakLists": "Rangering for utfordringer",
+    "peakListsDescription": "Konkurrer med andre klatrere på ulike utfordringer",
+    "errorLoadingLists": "Kunne ikke laste utfordringer",
+    "noParticipants": "Ingen deltakere i denne utfordringen ennå. Vær den første til å bli med!",
+    "topPerformers": "Topp presterende",
+    "allRankings": "Alle rangeringer",
+    "noListSelected": "Velg en utfordring for å vise rangeringer",
+    "noMorePeaks": "Ingen flere topper å laste",
+    "noUsersFound": "Ingen brukere funnet",
+    "searchLocationPlaceholder": "Søk etter land eller region",
+    "noLocationsFound": "Ingen land eller regioner funnet for \"{query}\"",
+    "locationSearchLabel": "Søk etter sted",
+    "total": "Totalt",
+    "user": "Bruker",
+    "peakList": "Utfordring",
+    "tryAgain": "Prøv igjen",
+    "elevationGain": "H.økt",
+    "climbers": "Klatrere",
+    "topClimber": "Topp klatrer",
+    "unknown": "Ukjent",
+    "notAvailable": "-",
+    "more": "mer",
+    "location": "Sted",
+    "uniqueClimbers": "Unike klatrere",
+    "description": "En fellesskapsdrevet utfordring der du kan utforske toppfullføringer over hele verden, i landet ditt eller regionen din, mens du sporer dine personlige bidrag.",
+    "errorLoadingUsers": "Kunne ikke laste brukere",
+    "onlyMyPeaks": "Bare mine topper",
+    "community": "Samfunn",
+    "you": "Deg",
+    "inPastYear": "i {year} ",
+    "inYear": "i {year}"
+  },
+  "landing": {
+    "subtitle": "Spor toppene dine, utforsk samfunnets, og oppdag nye!",
+    "description": "Fra Everest til Mont Blanc, utforsk noen av verdens mest inspirerende fjell. Bli med tusenvis av klatrere som omfavner utfordringen og eventyret i hver bestigning – for det vi gjør i livet gjenlyder i evigheten.",
+    "loginPrompt": "Vil du ta fremgangen din videre?",
+    "wikilocText": "Registrer deg med Wikiloc-, Strava-, Garmin- eller Suunto-kontoen din for å se hvilke topper du har besteget i alle rutene dine!",
+    "startExploring": "Utforsk",
+    "forFullExperience": "For full opplevelse:",
+    "home": "Hjem",
+    "explore": "Oppdag",
+    "map": "Kart",
+    "leaderboards": "Utfordringer",
+    "signIn": "Logg inn",
+    "navIntro": "Bruk disse knappene for å begynne å navigere og utforske!",
+    "desktopWarning": {
+      "title": "Summits fungerer best på mobil",
+      "subtitle": "For full opplevelse, last ned mobilappen vår."
+    }
+  },
+  "highestPeaks": {
+    "yourRecords": "Dine rekorder",
+    "personalClimbingAchievements": "Personlige klatringsprestasjoner",
+    "seeAll": "Se alle",
+    "highestPeak": "Høyeste topp",
+    "ascent": "bestigning",
+    "ascents": "bestigninger",
+    "otherAchievements": "Andre prestasjoner",
+    "viewPeak": "Vis topp",
+    "emptyTitle": "Start din reise",
+    "emptySubtitle": "Loggfør din første klatring for å se personlige rekorder her!"
+  },
+  "highestRoutes": {
+    "yourHardestRoutes": "Dine hardest ruter",
+    "mostDemandingChallenges": "Mest krevende utfordringer",
+    "seeAll": "Se alle",
+    "hardestRoute": "Mest ekstrem",
+    "elevationGain": "H.økt",
+    "time": "Tid",
+    "movingTime": "Bevegelsestid",
+    "distance": "Distanse",
+    "emptyTitle": "Start din reise",
+    "emptySubtitle": "Fullfør din første rute for å se de hardest utfordringene her!"
+  },
+  "recentPeaks": {
+    "title": "Nylige topper",
+    "subtitle": "Siste toppfullføringer",
+    "filter": {
+      "community": "Samfunn",
+      "following": "Følger",
+      "user": "Deg"
+    }
+  },
+  "recentRoutes": {
+    "title": "Nylige ruter",
+    "subtitle": "Siste rute-fullføringer",
+    "elevationGain": "Høyde",
+    "time": "Tid",
+    "distance": "Distanse",
+    "peaks": "Topper",
+    "filter": {
+      "community": "Samfunn",
+      "following": "Følger",
+      "user": "Deg"
+    }
+  },
+  "reportBlock": {
+    "blockedStatsMessage": "Statistikk er skjult for blokkerte brukere.",
+    "reportContent": "Rapporter innhold",
+    "reportUser": "Rapporter bruker",
+    "blockUser": "Blokker bruker",
+    "unblockUser": "Avblokker bruker",
+    "userBlocked": "Bruker blokkert",
+    "contentReported": "Innhold rapportert",
+    "userReported": "Bruker rapportert",
+    "actionCompleted": "Handling fullført",
+    "userBlockedMessage": "Du har blokkert {userName}. Innholdet deres vil være skjult.",
+    "contentReportedMessage": "Takk for rapporten. Vi vil gjennomgå den snart.",
+    "userReportedMessage": "Takk for at du rapporterte denne brukeren. Vi vil gjennomgå det snart.",
+    "actionCompletedMessage": "Handlingen ble fullført.",
+    "unblockInfo": "Du kan avblokkere denne brukeren når som helst.",
+    "blockInfo": "Å blokkere en bruker vil skjule alt innholdet deres fra deg.",
+    "blockedUser": "Blokkert bruker",
+    "blockedRoute": "Blokkert rute",
+    "blockedProfile": "Blokkert bruker",
+    "blockedProfileMessage": "Du har blokkert denne brukeren. Innholdet deres er skjult for deg."
+  },
+  "home": {
+    "routesAndPeaks": {
+      "title": "Siste ruter og topper i verden",
+      "subtitle": "Visualiser siste ruter og topper fullført av samfunnsmedlemmer, vennene dine eller deg selv"
+    },
+    "challenges": {
+      "title": "Topp utfordringer",
+      "subtitle": "Vis og fullfør de største verdensutfordringene",
+      "allPeaksDescriptionLoggedIn": "Utforsk alle topper besteget av samfunnet og spor ditt bidrag!",
+      "allPeaksDescriptionGuest": "Utforsk alle topper besteget av samfunnet. Registrer deg for å spore ditt bidrag!",
+      "statTotal": "Totalt",
+      "statCompleted": "Besteget",
+      "statByMe": "Av deg"
+    },
+    "showMore": "Vis mer",
+    "showLess": "Vis mindre"
+  },
+  "recentCommunityPeaks": {
+    "title": "Nylige samfunnstopper",
+    "subtitle": "Siste topper erobret av samfunnet",
+    "elevation": "Høyde",
+    "location": "Sted"
+  },
+  "recentCommunityRoutes": {
+    "title": "Nylige samfunnsruter",
+    "subtitle": "Siste ruter fullført av samfunnet",
+    "elevationGain": "Høyde",
+    "time": "Tid",
+    "distance": "Distanse",
+    "peaks": "Topper"
+  },
+  "weather": {
+    "title": "Vær",
+    "weatherDataUnavailable": "Værdata utilgjengelig",
+    "feelsLike": "Føles som",
+    "temperature": "Temperatur",
+    "wind": "Vind",
+    "precipitation": "Nedbør",
+    "snow": "Snø",
+    "uvIndex": "UV-indeks",
+    "sunrise": "Soloppgang",
+    "sunset": "Solnedgang",
+    "hourlyForecast": "Time for time",
+    "closeHourlyForecast": "Lukk time for time-visning",
+    "showHourlyForecastForToday": "Vis time for time for i dag",
+    "showHourlyForecastFor": "Vis time for time for {date}",
+    "kmh": "km/t",
+    "mm": "mm",
+    "cm": "cm",
+    "hours": "t"
+  },
+  "infrastructure": {
+    "nearbyInfrastructure": "Severdigheter",
+    "noDataForPeak": "Ingen infrastrukturddata tilgjengelig for denne toppen.",
+    "noNearbyWithin5km": "Ingen nærliggende infrastruktur funnet innenfor 5 km av denne toppen.",
+    "allInfrastructure": "All infrastruktur",
+    "location": "Sted",
+    "details": "Detaljer",
+    "visitWebsite": "Besøk nettside",
+    "kmFromPeak": "km fra toppen",
+    "openMaps": "Åpne kart",
+    "viewInMaps": "Vis i kart",
+    "category": {
+      "hut": "Turisthytte",
+      "shelter": "Ly",
+      "campsite": "Campingplass",
+      "naturalFeature": "Naturlig kjennetegn",
+      "waterSource": "Vannkilde",
+      "other": "Annet"
+    }
+  },
+  "nearbyPeaks": {
+    "title": "Topper i nærheten",
+    "noData": "Ingen topper i nærheten funnet"
+  },
+  "userPeaks": {
+    "title": "Dine topper",
+    "userTitle": "{userName}s topper",
+    "description": "Din personlige samling av {count} fullførte topper. Hver topp representerer en reise, en utfordring overvunnet og et minne som vil vare evig.",
+    "userDescription": "{userName}s personlige samling av {count} fullførte topper. Hver topp representerer en reise, en utfordring overvunnet og et minne som vil vare evig.",
+    "noPeaks": "Du har ikke fullført noen topper ennå. Start ditt eventyr!",
+    "loading": "Laster toppene dine...",
+    "error": "Kunne ikke laste toppene dine",
+    "addPeaks": "Legg til topper",
+    "timeline": "Tidslinje",
+    "openPeak": "Åpne topp",
+    "summary": {
+      "baseText": "Du har fullført",
+      "userBaseText": "{userName} har fullført",
+      "timeSingular": "gang",
+      "timePlural": "ganger",
+      "in": "i",
+      "on": "på",
+      "and": "og",
+      "singleRoute": "Du har fullført {peakName} {countText} i {routeName} den {date}",
+      "twoRoutes": "Du har fullført {peakName} {countText} i {routeNames} den {dates}",
+      "multipleRoutes": "Du har fullført {peakName} {countText} i {routeNames} den {dates}",
+      "oneRoute": "1 rute",
+      "multipleRoutesCount": "{count} ruter",
+      "seeMore": "Se mer",
+      "seeLess": "Se mindre"
+    },
+    "grid": "Rutenett",
+    "filters": "Filtre",
+    "advancedFilters": "Avanserte filtre",
+    "searchPeaks": "Søk topper",
+    "searchPlaceholder": "Søk etter navn, land, region...",
+    "dateRange": "Datointervall",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "elevationRange": "Høydeintervall",
+    "country": "Land",
+    "region": "Region",
+    "allCountries": "Alle land",
+    "allRegions": "Alle regioner",
+    "clearAll": "Tøm alle",
+    "applyFilters": "Bruk filtre",
+    "noResults": "Ingen topper funnet som matcher filtrene dine.",
+    "peaks": "topper",
+    "showMore": "Vis {count} flere",
+    "showLess": "Vis mindre",
+    "wrongPeak": "Feil?",
+    "deleteConfirmation": {
+      "title": "Slett topp",
+      "message": "Vil du slette {peakName}? Det vil se ut som om du aldri har besteget det",
+      "confirm": "Slett",
+      "cancel": "Avbryt"
+    },
+    "yourAscensions": "Dine bestigninger",
+    "peakDetails": "Toppdetaljer",
+    "peakInfo": {
+      "title": "Toppinfo",
+      "loading": "Laster toppinfo...",
+      "error": "Kunne ikke laste toppinfo",
+      "ascensions": "Bestigninger",
+      "unlinked": "Ulenket",
+      "youAscended": "Ingen info.",
+      "unknownRoute": "Ukjent rute",
+      "unlinkedPrompt": "Du har {count} ulenkede bestigninger. Lenk dem til en rute eller dato:",
+      "linkToRoute": "Rute",
+      "selectRoute": "Velg en rute...",
+      "linkToDate": "Dato",
+      "link": "Lenk",
+      "editLink": "Rediger lenke",
+      "moving": "i bevegelse",
+      "deleteAscension": "Slett bestigning",
+      "linkAscension": "Lenk bestigning",
+      "deletePeak": "Slett topp",
+      "confirmDeletePeak": "Slette {peakName}? Dette vil fjerne alle bestigninger.",
+      "confirmDeleteAscension": "Er du sikker på at du vil slette denne bestigningen?",
+      "deleting": "Sletter...",
+      "yesDelete": "Ja, slett",
+      "cancel": "Avbryt",
+      "close": "Lukk",
+      "noAscensions": "Ingen bestigninger registrert"
+    }
+  },
+  "userSavedPeaks": {
+    "title": "Lagrede topper",
+    "description": "Din samling av {count} lagrede topper. Hold oversikt over topper du vil bestige eller besøke igjen.",
+    "noPeaks": "Du har ikke lagret noen topper ennå. Start å utforske!",
+    "loading": "Laster lagrede topper...",
+    "error": "Kunne ikke laste lagrede topper",
+    "filters": "Filtre",
+    "advancedFilters": "Avanserte filtre",
+    "searchPlaceholder": "Søk etter navn, land, region...",
+    "dateRange": "Datointervall",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "elevationRange": "Høydeintervall",
+    "country": "Land",
+    "region": "Region",
+    "allCountries": "Alle land",
+    "allRegions": "Alle regioner",
+    "clearAll": "Tøm alle",
+    "applyFilters": "Bruk filtre",
+    "noResults": "Ingen lagrede topper funnet som matcher filtrene dine.",
+    "sorting": {
+      "savedDate": "Lagringsdato"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Nyeste først",
+      "savedDateOldest": "Eldste først"
+    }
+  },
+  "userSavedShelters": {
+    "title": "Lagrede hytter",
+    "totalLabel": "Totalt antall hytter",
+    "description": "Samlingen din av {count} lagrede hytter. Hold oversikt over hytter du vil besøke.",
+    "noShelters": "Du har ikke lagret noen hytter ennå. Begynn å utforske!",
+    "loading": "Laster de lagrede hyttene dine...",
+    "error": "Kunne ikke laste de lagrede hyttene dine",
+    "filters": "Filtre",
+    "advancedFilters": "Avanserte filtre",
+    "searchPlaceholder": "Søk etter navn, land, region...",
+    "dateRange": "Datoområde",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "elevationRange": "Høydeområde",
+    "country": "Land",
+    "region": "Region",
+    "allCountries": "Alle land",
+    "allRegions": "Alle regioner",
+    "clearAll": "Tøm alt",
+    "applyFilters": "Bruk filtre",
+    "noResults": "Fant ingen lagrede hytter som samsvarer med filtrene dine.",
+    "typeFilter": "Hyttetype",
+    "typeOptions": {
+      "all": "Alle typer"
+    },
+    "savedOn": "Lagret",
+    "unsave": "Fjern hytte",
+    "sorting": {
+      "savedDate": "Lagringsdato"
+    },
+    "sortingOptions": {
+      "savedDateNewest": "Nyeste først",
+      "savedDateOldest": "Eldste først"
+    }
+  },
+  "listDetails": {
+    "title": "{listName}",
+    "userTitle": "{userName} - {listName}",
+    "noCompletedPeaks": "Du har ikke fullført noen topper i denne utfordringen ennå. Start ditt eventyr!",
+    "loading": "Laster...",
+    "noSearchResults": "Ingen topper funnet for \"{query}\". Prøv et annet søkeord.",
+    "search": {
+      "placeholder": "Søk etter topper etter navn, region eller land..."
+    },
+    "filters": {
+      "label": "Filter:",
+      "all": "Alle",
+      "completed": "Fullført",
+      "missing": "Manglende"
+    },
+    "sorting": {
+      "label": "Sorter:",
+      "name": "Navn",
+      "elevation": "Høyde",
+      "date": "Dato",
+      "ascents": "Bestigninger"
+    },
+    "sortingOptions": {
+      "nameAsc": "A → Å",
+      "nameDesc": "Å → A",
+      "elevationAsc": "Lav → Høy",
+      "elevationDesc": "Høy → Lav",
+      "dateNewest": "Nyeste først",
+      "dateOldest": "Eldste først",
+      "ascentsMost": "Flest bestigninger",
+      "ascentsLeast": "Færrest bestigninger"
+    }
+  },
+  "userRoutes": {
+    "deleteRoute": "Slett rute",
+    "deleteConfirmTitle": "Slett rute?",
+    "deleteConfirmMessage": "Er du sikker på at du vil slette denne ruten? Denne handlingen er permanent og vil redusere antall topper du har registrert.",
+    "deleteSuccess": "Ruten ble slettet",
+    "deleteError": "Kunne ikke slette ruten. Vennligst prøv igjen.",
+    "unnamedRoute": "Navnløs rute",
+    "metrics": {
+      "distance": "Distanse",
+      "elevationGain": "Høydeøkning",
+      "time": "Tid"
+    },
+    "title": "Rutene dine",
+    "userTitle": "{userName}s ruter",
+    "description": "Du har fullført {totalRoutes} ruter med {totalPeaks} totale topper besteget.",
+    "userDescription": "{userName} har fullført {totalRoutes} ruter med {totalPeaks} totale topper besteget.",
+    "routes": "Ruter",
+    "addRoute": "Legg til rute",
+    "addRouteTitle": "Legg til en GPX-rute",
+    "addRouteNameLabel": "Rutenavn",
+    "addRouteNamePlaceholder": "Skriv inn et rutenavn",
+    "addRouteFileLabel": "GPX-fil",
+    "addRouteFilePlaceholder": "Velg en GPX-fil",
+    "addRouteSubmit": "Legg til rute",
+    "addRouteSubmitting": "Legger til rute...",
+    "addRouteErrors": {
+      "name": "Vennligst skriv inn et rutenavn.",
+      "file": "Vennligst velg en GPX-fil.",
+      "submit": "Kunne ikke legge til rute. Prøv igjen."
+    },
+    "searchPlaceholder": "Søk ruter...",
+    "filters": "Filtre",
+    "advancedFilters": "Avanserte filtre",
+    "sortBy": "Sorter etter",
+    "date": "Dato",
+    "peaks": "Topper",
+    "sortOptions": {
+      "dateNewest": "Dato (nyeste)",
+      "dateOldest": "Dato (eldste)",
+      "peaksMost": "Flest topper",
+      "peaksLeast": "Færrest topper"
+    },
+    "loadingRoutes": "Laster ruter...",
+    "loadingMore": "Laster flere ruter...",
+    "loadingCountries": "Laster land og regioner...",
+    "noResults": "Ingen ruter funnet som matcher kriteriene dine.",
+    "endMessage": "Du har nådd slutten av rutene dine",
+    "paginationError": "Kunne ikke laste flere ruter",
+    "tryAgain": "Prøv igjen",
+    "clearAll": "Tøm alle",
+    "applyFilters": "Bruk filtre",
+    "dateRange": "Datointervall",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "country": "Land",
+    "region": "Region",
+    "allCountries": "Alle land",
+    "allRegions": "Alle regioner",
+    "peaksCount": "topper",
+    "noPeaksOnRoute": "Ingen topper ble besteget på denne ruten",
+    "seeOnMap": "Se på kart",
+    "ascent": "bestigning",
+    "ascents": "bestigninger",
+    "peaksInRoute": "Topper i ruten"
+  },
+  "addManualPeaks": {
+    "title": "Legg til topper manuelt",
+    "subtitle": "Oppdag og legg til topper i profilen din. Søk, filtrer, velg flere topper og knytt dem til rutene dine.",
+    "listView": "Liste",
+    "mapView": "Kart",
+    "filters": "Filtre",
+    "peakName": "Toppnavn",
+    "searchPlaceholder": "Søk topper (minst 2 tegn)...",
+    "elevation": "Høyde",
+    "minElevation": "Min høyde (m)",
+    "maxElevation": "Maks høyde (m)",
+    "country": "Land",
+    "allCountries": "Alle land",
+    "region": "Region",
+    "allRegions": "Alle regioner",
+    "clearFilters": "Tøm filtre",
+    "loading": "Laster topper...",
+    "loadingMap": "Laster kart...",
+    "noPeaks": "Ingen topper funnet. Prøv å justere filtrene.",
+    "mapPlaceholder": "Kart vil vises her. Velg topper for å se dem på kartet.",
+    "associatedRoute": "Tilknyttet rute",
+    "selected": "valgt",
+    "selectedCount_one": "{{count}} topp valgt",
+    "selectedCount_other": "{{count}} topper valgt",
+    "submit_one": "Legg til {{count}} topp",
+    "submit_other": "Legg til {{count}} topper",
+    "submitting": "Legger til topper...",
+    "noSelection": "Vennligst velg minst én topp.",
+    "fetchError": "Kunne ikke laste topper. Prøv igjen.",
+    "submitError": "Kunne ikke legge til topper. Prøv igjen.",
+    "addSuccess_one": "{{count}} topp lagt til!",
+    "addSuccess_other": "{{count}} topper lagt til!",
+    "routeExistence": {
+      "question": "Tilhører denne toppen en eksisterende rute?",
+      "subtitle": "Velg et alternativ for å fortsette",
+      "hasRoute": "Ja, velg en rute",
+      "noRoute": "Nei, legg til som frittstående",
+      "addWithDate": "Legg til med dato"
+    },
+    "selectRoute": "Velg en rute for {peakName}",
+    "routeAssociation": {
+      "title": "Bekreft tilknytning",
+      "message": "Vil du knytte {peakName} til ruten {routeName}?",
+      "confirm": "Bekreft",
+      "cancel": "Avbryt"
+    },
+    "submitOptions": {
+      "title": "Se over toppene dine",
+      "date": "Dato",
+      "routeHint": "koble til en rute",
+      "dateHint": "angi dato"
+    }
+  },
+  "userStats": {
+    "title": "Statistikk",
+    "activityType": "Aktivitetstype",
+    "totalPeaks": "Totalt antall topper",
+    "totalRoutes": "Totalt antall ruter",
+    "peakLists": {
+      "title": "Utfordringsfremgang",
+      "completedDescription": "Du fullførte {completed} av {total} topper."
+    },
+    "statistics": "Statistikk",
+    "globalStats": "Global statistikk",
+    "byActivity": "Etter aktivitet",
+    "graph": "Graf over fremgang over tid",
+    "openGraph": "Klikk for å vise detaljert diagram",
+    "viewInCharts": "Vis i diagrammer",
+    "progressChart": "Fremgangsgraf",
+    "rotate": "Roter enheten for bedre visning",
+    "rank": {
+      "yourRank": "Din rangering",
+      "rankDescription": "Du er bruker {rank} av {totalUsers} brukere med flest totale topper",
+      "noRank": "Ingen rangering"
+    },
+    "moreInformation": "Mer informasjon",
+    "peakListsDescription": "Klikk på en av utfordringene nedenfor for å se detaljene",
+    "statisticsDescription": "Visualiser statistikken din",
+    "openGraphDescription": "Åpne for å utforske det interaktive diagrammet",
+    "metrics": {
+      "distance": "Distanse",
+      "elevationGain": "Høydeøkning",
+      "time": "Tid",
+      "totalTime": "Total tid",
+      "movingTime": "Bevegelsestid",
+      "peaks": "Topper",
+      "routes": "Ruter"
+    },
+    "timeAggregation": {
+      "daily": "Rutedag",
+      "weekly": "Ukentlig",
+      "monthly": "Månedlig",
+      "yearly": "Årlig",
+      "custom": "Egendefinert periode"
+    },
+    "controls": {
+      "groupBy": "Grupper etter",
+      "activityType": "Aktivitetstype",
+      "startDate": "Startdato",
+      "endDate": "Sluttdato",
+      "apply": "Bruk"
+    },
+    "chart": {
+      "noDataAvailable": "Ingen data tilgjengelig for denne aktiviteten"
+    },
+    "rotatePhone": "Vennligst roter telefonen horisontalt for å se grafen",
+    "activityFilter": {
+      "all": "Alle aktiviteter",
+      "unknown": "Ukjent"
+    }
+  },
+  "communityInfo": {
+    "addAsAscended": "Marker som besteget",
+    "title": "Samfunn",
+    "completedBy": "Besteget av",
+    "totalCompletions": "Totale bestigninger",
+    "uniqueUsers": "Unike brukere",
+    "timeSingle": "gang",
+    "timePlural": "ganger",
+    "seeMore": "Se mer",
+    "more": "mer",
+    "yourProgress": "Din fremgang",
+    "completed": "Besteget",
+    "notCompleted": "Ikke besteget",
+    "lastCompleted": "Siste bestigning",
+    "youHaveCompleted": "Du har besteget",
+    "routes": "Ruter",
+    "peaks": "Topper",
+    "filterAll": "Alle",
+    "filterClubRelated": "Klubbrelatert",
+    "filterMyClubs": "Mine klubber"
+  },
+  "listOverlay": {
+    "chooseList": "Velg en utfordring",
+    "completedLabel": "{completed}/{total} fullført"
+  },
+  "exploreOverlay": {
+    "title": "Dra / Sveip til venstre",
+    "subtitle": "for å oppdage det interaktive kartet"
+  },
+  "og": {
+    "title": "Summits - Spor toppene dine",
+    "description": "Spor dine topp-prestasjoner, del topper med samfunnet og oppdag klatringer fra andre fjellklatrere over hele verden."
+  },
+  "routeDetails": {
+    "downloadRoute": "Last ned rute",
+    "sendToDevice": "Send til enhet",
+    "showStats": "Vis statistikk",
+    "hideStats": "Skjul statistikk",
+    "shareRoute": "Del"
+  },
+  "routeAnimation": {
+    "title": "Lag animasjon",
+    "createAnimation": "Lag animasjon",
+    "description": "Generer en cinematisk 3D-flyover-video av ruten din. Kameraet vil følge banen din med et dramatisk jakt-kameraperspektiv.",
+    "hint": "Opptaket starter etter at terrenget er fullt lastet.",
+    "duration": "Videolengde",
+    "seconds": "sek",
+    "durationHint": "Lengre = tregere og mer cinematisk",
+    "elevation": "Høyde",
+    "elevationGain": "Høydeøkning",
+    "distance": "Distanse",
+    "preparing": "Forbereder 3D-terreng...",
+    "recording": "Tar opp...",
+    "recordingHint": "Vennligst vent mens animasjonen blir tatt opp. Bytt ikke faner.",
+    "complete": "Animasjon fullført! Videoen din er klar til nedlasting.",
+    "fileSize": "Filstørrelse",
+    "download": "Last ned video",
+    "start": "Start opptak",
+    "retry": "Prøv igjen",
+    "error": "Det oppstod en feil ved oppretting av animasjonen.",
+    "errorNoRoute": "Ingen rutedata tilgjengelig for animasjon.",
+    "errorUnknown": "En ukjent feil oppstod.",
+    "notSupported": "Videoopptak er ikke støttet i nettleseren din. Prøv Chrome, Firefox eller Edge.",
+    "videoDownloaded": "Video lastet ned",
+    "videoSavedToGallery": "Video lagret i galleriet ditt",
+    "speed": "Hastighet",
+    "speedHint": "Bruk +/- knappene under opptak for å justere hastighet: 1x → 3x → 5x → 10x → 0.5x → 1x",
+    "speedDurationHint": "Videolengde avhenger av hastighetene du velger",
+    "save": "Lagre i galleriet"
+  },
+  "routeAssociation": {
+    "authRequired": "Logg inn for å knytte denne toppen til en rute.",
+    "confirm": "Bekreft",
+    "fetchError": "Kunne ikke laste inn rutene dine.",
+    "loading": "Laster ruter...",
+    "noRoute": "Hopp over (ingen rute)",
+    "noRoutes": "Ingen ruter funnet",
+    "peaks_one": "{count} topp på denne ruten",
+    "peaks_other": "{count} topper på denne ruten",
+    "subtitle": "Velg en rute for {peakName}",
+    "title": "Knytt rute"
+  },
+  "terms": {
+    "title": "Summits – Vilkår for bruk (Eksterne plattformdata)",
+    "lastUpdated": "Sist oppdatert: Oktober 2025",
+    "introduction": {
+      "title": "Introduksjon",
+      "content": "Summits er en plattform som hjelper deg med å spore og dele fjelltopp-bestigninger. For å tilby denne tjenesten, integrerer Summits med tredjepartsplattformer, inkludert Garmin Connect, Strava og Wikiloc (samlet kalt \"Eksterne plattformer\") for å importere og analysere aktivitetsdataene dine. Ved å bruke Summits og registrere deg med Eksterne plattform-kontoer, samtykker du til disse Vilkårene for bruk angående bruk av dataene dine."
+    },
+    "dataCollection": {
+      "title": "1. Datainnsamling og behandling",
+      "whatData": {
+        "title": "1.1 Hvilke data vi får tilgang til",
+        "intro": "Når du kobler Eksterne plattform-kontoer til Summits, får vi tilgang til følgende typer data:",
+        "fromWikiloc": "Fra Wikiloc:",
+        "wikiloc": {
+          "activity": "Aktivitets- og rutedata (GPX-filer, sporlogger)",
+          "timestamps": "Tidsstempler og datoer for aktiviteter",
+          "elevation": "Høydeprofiler og geografiske koordinater",
+          "routeNames": "Rutenavn og beskrivelser",
+          "activityTypes": "Aktivitetstyper (turer, klatring osv.)",
+          "profile": "Offentlig profilinformasjon"
+        },
+        "fromStrava": "Fra Strava:",
+        "strava": {
+          "activity": "Aktivitetsdata inkludert ruter og spor",
+          "timestamps": "Tidsstempler og aktivitetsvarigheter",
+          "elevation": "Høydeøkning, distanse og varighetsmålinger",
+          "coordinates": "Geografiske koordinater og høydeprofiler",
+          "activityTypes": "Aktivitetstyper og sport",
+          "profile": "Grunnleggende profilinformasjon (navn, brukernavn, profilbilde)"
+        },
+        "fromGarmin": "Fra Garmin Connect:",
+        "garmin": {
+          "activity": "Aktivitetsposter fra Garmin-enheter",
+          "gps": "GPS-sporingsdata og ruter",
+          "elevation": "Høyde, distanse og tidsdata",
+          "summaries": "Aktivitetssammendrag og statistikk",
+          "location": "Geografiske stedsdata",
+          "profile": "Grunnleggende profilinformasjon (navn, brukernavn, profilbilde)"
+        }
+      },
+      "howWeUse": {
+        "title": "1.2 Hvordan vi bruker dataene dine",
+        "intro": "Vi bruker data fra Eksterne plattformer til å:",
+        "identifyPeaks": "Identifisere hvilke fjelltopper du har besteget",
+        "trackProgress": "Spor fremgangen din i fjellklatring",
+        "displayHistory": "Vise klatringhistorikken din på interaktive kart",
+        "calculateStats": "Beregne totale topper besteget og annen statistikk",
+        "enableSharing": "Muliggjøre deling av prestasjoner med andre brukere (underlagt personverninnstillinger)",
+        "leaderboards": "Inkludere statistikken din i samfunnsrangeringer",
+        "analyzeRoutes": "Analysere og lagre rutene dine med identifiserte topper"
+      }
+    },
+    "thirdParty": {
+      "title": "2. Tredjeparts plattforms vilkår for bruk",
+      "compliance": {
+        "title": "2.1 Overholdelse av eksterne plattformretningslinjer",
+        "intro": "Ved å koble Eksterne plattform-kontoer til Summits, erkjenner du at:",
+        "readAgree": "Du har lest og samtykker til å overholde hver plattforms vilkår for bruk",
+        "apiTerms": "Vi får tilgang til dataene dine kun i henhold til tillatelsene du gir og hver plattforms API-vilkår",
+        "devPolicies": "Vi overholder Garmins, Strava og Wikiloc sine utvikler- og personvernregler",
+        "noCredentials": "Vi deler ikke påloggingsinformasjonen din",
+        "secureTokens": "Vi lagrer tilgangstokener sikkert og bruker dem kun til å importere aktivitetsdata"
+      },
+      "scope": {
+        "title": "2.2 Omfang av autorisasjon",
+        "intro": "Ved å autorisere Summits, gir du tillatelse til å:",
+        "readStore": "Lese, lagre og behandle aktivitetsdataene dine",
+        "analyzeTransform": "Analysere og transformere dataene dine for å identifisere topper",
+        "notDo": {
+          "intro": "Vi gjør ikke:",
+          "modify": "Endre, slette eller legge ut aktiviteter på dine vegne",
+          "share": "Dele dataene dine med annonsører eller tredjeparter (unntatt som beskrevet i seksjon 4)",
+          "sell": "Selge personlige dataene dine"
+        }
+      },
+      "revocation": {
+        "title": "2.3 Tilbakekalling av tilgang",
+        "content": "Du kan tilbakekalle Summits-tilgang når som helst via innstillingene for Eksterne plattform-kontoen din. Når tilgangen er tilbakekalt, vil ingen nye data bli importert. Tidligere importerte data forblir med mindre du ber om sletting."
+      }
+    },
+    "dataStorage": {
+      "title": "3. Datalagring og sikkerhet",
+      "retention": {
+        "title": "3.1 Dataoppbevaring",
+        "active": "Importerte data lagres så lenge Summits-kontoen din er aktiv.",
+        "deleted": "Slettede kontoer og data slettes permanent innen 30 dager.",
+        "matching": "Toppmatching-informasjon lagres for å forbedre behandlingsytelsen."
+      },
+      "security": {
+        "title": "3.2 Datasikkerhet",
+        "intro": "Vi beskytter dataene dine med bransjestandard tiltak, inkludert:",
+        "encryption": "Kryptering (HTTPS/TLS og i ro)",
+        "access": "Tilgangskontroller begrenset til autorisert personale",
+        "infrastructure": "Sikker skylagringsinfrastruktur",
+        "updates": "Regelmessige sikkerhetsoppdateringer og patcher"
+      },
+      "location": {
+        "title": "3.3 Datalokasjon",
+        "content": "Dataene dine lagres på skylservere i regioner som er i samsvar med gjeldende databeskyttelseslover. Ved å bruke Summits, samtykker du til denne overføringen og behandlingen."
+      }
+    },
+    "dataSharing": {
+      "title": "4. Datadeling og offentliggjøring",
+      "public": {
+        "title": "4.1 Offentlig informasjon",
+        "intro": "Hvis profilen din er offentlig, kan andre brukere se:",
+        "statistics": "Toppstatistikken din og fullføringsantall",
+        "username": "Brukernavnet ditt og profilbildet ditt",
+        "rankings": "Rangeringen din på rangeringer",
+        "profile": "Profilen din i søkeresultater og lister"
+      },
+      "private": {
+        "title": "4.2 Privat informasjon",
+        "intro": "Følgende forblir alltid privat:",
+        "routes": "Eksakte rutespor og koordinater",
+        "elevation": "Detaljerte høydeprofiler",
+        "times": "Aktivitets start/slutt-tider",
+        "email": "E-post og personlige identifikatorer",
+        "followers": "Lister over følgere og fulgte brukere (med mindre offentlig)"
+      },
+      "thirdParties": {
+        "title": "4.3 Datadeling med tredjeparter",
+        "noSell": "Vi selger ikke personlige data.",
+        "aggregated": "Vi kan dele aggregert, anonymisert data for analyse eller forskning.",
+        "shareWith": "Vi kan kun dele data med:",
+        "serviceProviders": "Tjenesteleverandører som støtter plattformdrift",
+        "authorities": "Myndigheter, når loven krever det",
+        "safety": "Relevante parter for å sikre brukersikkerhet"
+      }
+    },
+    "rights": {
+      "title": "5. Dine rettigheter og kontroller",
+      "correction": {
+        "title": "5.1 Datakorreksjon",
+        "content": "Du kan verifisere eller rapportere feilaktige toppidentifikasjoner i appen. Verifiserte rettelser vil bli gjennomgått og oppdatert."
+      },
+      "deletion": {
+        "title": "5.2 Kontosletting",
+        "content": "Du kan slette Summits-kontoen din når som helst. Alle importerte data og sosiale tilkoblinger vil bli fjernet innen 30 dager. Sletting av Summits-kontoen din påvirker ikke Eksterne plattform-kontoene dine."
+      },
+      "privacy": {
+        "title": "5.3 Personverninnstillinger",
+        "content": "Du kan administrere synlighet, delingsalternativer og sosiale funksjoner direkte i appens personverninnstillinger."
+      }
+    },
+    "accuracy": {
+      "title": "6. Dat nøyaktighet og begrensninger",
+      "peakIdentification": {
+        "title": "6.1 Toppidentifikasjon",
+        "algorithmic": "Toppidentifikasjon er algoritmisk og er kanskje ikke alltid nøyaktig.",
+        "errors": "Feil kan rapporteres for å forbedre fremtidig nøyaktighet."
+      },
+      "routeData": {
+        "title": "6.2 Rutedatakvalitet",
+        "accuracy": "Nøyaktigheten avhenger av GPS-dataene dine fra Eksterne plattformer.",
+        "incomplete": "Ufullstendige eller manglende data kan påvirke behandlingen.",
+        "delays": "Store datasett kan oppleve forsinkelser."
+      },
+      "warranty": {
+        "title": "6.3 Ansvarsfraskrivelse",
+        "intro": "Summits gir ingen garantier for:",
+        "accuracy": "Nøyaktighet eller fullstendighet av topp- eller rutedata",
+        "reliability": "Pålitelighet til Eksterne plattformers API-er",
+        "uptime": "Tjenestetilgjengelighet eller uavbrutt tilgang",
+        "disclaimer": "Bruk Summits på egen risiko."
+      }
+    },
+    "changes": {
+      "title": "7. Endringer i disse vilkårene",
+      "modifications": {
+        "title": "7.1 Endringer",
+        "content": "Vi kan endre disse vilkårene for bruk når som helst. Oppdateringer er gyldige ved publisering i appen eller på nettsiden vår."
+      },
+      "continuedUse": {
+        "title": "7.2 Fortsatt bruk",
+        "content": "Fortsettelse av bruk etter oppdateringer utgjør aksept. Hvis du er uenig, må du slutte å bruke tjenesten og slette kontoen din."
+      }
+    },
+    "termination": {
+      "title": "8. Opphør av tjeneste",
+      "serviceTermination": {
+        "title": "8.1 Tjenesteopphør",
+        "intro": "Vi kan suspendere eller avslutte kontoer for:",
+        "violation": "Brudd på disse vilkårene eller Eksterne plattformers vilkår",
+        "fraudulent": "Svindel eller misbrukende aktivitet",
+        "legal": "Lovmessige eller regulatoriske krav"
+      },
+      "effect": {
+        "title": "8.2 Effekt av opphør",
+        "content": "Tilgang vil bli opphevet umiddelbart, og data slettes i henhold til oppbevaringsregler."
+      }
+    },
+    "indemnification": {
+      "title": "9. Erstatning",
+      "intro": "Du samtykker i å holde Summits skadesløs for eventuelle krav eller tap som oppstår fra:",
+      "violations": "Brudd på disse vilkårene",
+      "platformPolicies": "Brudd på Eksterne plattformers retningslinjer",
+      "misuse": "Misbruk eller svindelaktig datainnsending",
+      "disputes": "Tvister med andre brukere"
+    },
+    "liability": {
+      "title": "10. Ansvarsbegrensning",
+      "intro": "I den grad det er tillatt etter gjeldende rett:",
+      "asIs": "Summits leveres \"som den er\" uten garantier.",
+      "notLiable": "Vi er ikke ansvarlige for indirekte, tilfeldige eller følgeskader.",
+      "platformDowntime": "Vi er ikke ansvarlige for nedetid eller API-endringer i Eksterne plattformer."
+    },
+    "disputes": {
+      "title": "11. Tvister og jurisdiksjon",
+      "governingLaw": {
+        "title": "11.1 Gjeldende lov",
+        "content": "Disse vilkårene er underlagt lovene i [DIN JURISDIKSJON], med unntak av konfliktregler."
+      },
+      "resolution": {
+        "title": "11.2 Tvisteløsning",
+        "negotiation": "God tro forhandlinger",
+        "mediation": "Meisling hvis forhandlinger mislykkes",
+        "arbitration": "Bindende voldgift for uløste tvister"
+      },
+      "classAction": {
+        "title": "11.3 Class Action Waiver",
+        "content": "Alle tvister må løses individuelt; ingen gruppesøksmål er tillatt."
+      }
+    },
+    "contact": {
+      "title": "12. Kontaktinformasjon",
+      "intro": "Hvis du har spørsmål, kontakt oss:",
+      "email": "E-post: cesc.riera@summitstracker.com",
+      "website": "Nettside: summitstracker.com",
+      "support": "Brukerstøtte: Tilgjengelig via innebygde hjelpe- og brukerstøttefunksjoner"
+    },
+    "acknowledgment": {
+      "title": "13. Erklæring",
+      "intro": "Ved å bruke Summits og koble Garmin-, Strava- eller Wikiloc-kontoer, har du:",
+      "read": "Lest og forstått disse vilkårene",
+      "consent": "Samtykket til den beskrevne databruken",
+      "capacity": "Den juridiske kapasiteten til å samtykke",
+      "comply": "Vil overholde gjeldende lover",
+      "responsible": "Er ansvarlig for å opprettholde sikkerheten til kontoene dine",
+      "footer": "Ved å fortsette å bruke Summits, samtykker du til disse vilkårene for bruk. Hvis du ikke samtykker, vennligst slutt å bruke tjenesten og slett kontoen din."
+    }
+  },
+  "privacy": {
+    "title": "Personvernerklæring",
+    "lastUpdated": "Sist oppdatert: Januar 2025",
+    "introduction": {
+      "title": "1. Introduksjon",
+      "content": "Summits (\"vi\", \"vår\" eller \"oss\") er forpliktet til å beskytte personvernet ditt. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker, offentliggjør og sikrer informasjonen din når du bruker mobilapplikasjonen og nettsiden vår (samlet kalt \"Tjenesten\"). Ved å bruke Tjenesten, samtykker du til datapraksis beskrevet i denne policyen."
+    },
+    "dataController": {
+      "title": "2. Behandlingsansvarlig",
+      "content": "Den behandlingsansvarlige for dine personopplysninger er:",
+      "email": "E-post: cesc.riera@summitstracker.com",
+      "website": "Nettside: summitstracker.com"
+    },
+    "dataCollection": {
+      "title": "3. Informasjon vi samler inn",
+      "personalData": {
+        "title": "3.1 Personlig informasjon",
+        "intro": "Når du oppretter en konto, samler vi inn:",
+        "account": "Kontoinformasjon (e-postadresse, brukernavn, passord)",
+        "profile": "Profilinformasjon (navn, profilbilde, biografi)",
+        "preferences": "Apppreferanser og innstillinger"
+      },
+      "activityData": {
+        "title": "3.2 Aktivitetsdata fra tredjeparts plattformer",
+        "intro": "Når du kobler kontoene dine fra Wikiloc, Strava eller Garmin, samler vi inn:",
+        "fromWikiloc": "Fra Wikiloc:",
+        "wikiloc": {
+          "activity": "Aktivitetsdata (ruter, spor, GPS-koordinater)",
+          "timestamps": "Aktivitetstidsstempler (starttid, sluttid, varighet)",
+          "elevation": "Høyledata og profiler",
+          "routeNames": "Rutenavn og beskrivelser",
+          "activityTypes": "Aktivitetstyper (turer, sykling osv.)",
+          "profile": "Offentlig profilinformasjon"
+        },
+        "fromStrava": "Fra Strava:",
+        "strava": {
+          "activity": "Aktivitetsdata (ruter, spor, GPS-koordinater)",
+          "timestamps": "Aktivitetstidsstempler (starttid, sluttid, varighet)",
+          "elevation": "Høyledata og profiler",
+          "coordinates": "GPS-koordinater og rutestier",
+          "activityTypes": "Aktivitetstyper (løping, sykling, turer osv.)",
+          "profile": "Offentlig profilinformasjon"
+        },
+        "fromGarmin": "Fra Garmin:",
+        "garmin": {
+          "activity": "Aktivitetsdata fra Garmin Connect",
+          "gps": "GPS-spor og koordinater",
+          "elevation": "Høyledata og pulsdata",
+          "summaries": "Aktivitetssammendrag og statistikk",
+          "location": "Stedsdata",
+          "profile": "Offentlig profilinformasjon"
+        }
+      },
+      "technicalData": {
+        "title": "3.3 Teknisk informasjon",
+        "intro": "Vi samler automatisk inn:",
+        "device": "Enhetsinformasjon (enhetstype, operativsystem, unike enhetsidentifikatorer)",
+        "ip": "IP-adresse og stedsdata",
+        "browser": "Nettlesertype og versjon",
+        "logs": "Brukslogger og analysedata"
+      }
+    },
+    "dataUsage": {
+      "title": "4. Hvordan vi bruker informasjonen din",
+      "purposes": {
+        "title": "4.1 Formål med behandling",
+        "intro": "Vi bruker informasjonen din til å:",
+        "service": "Tilby og vedlikeholde Tjenesten",
+        "peakIdentification": "Identifisere topper du har fullført fra aktivitetsdataene dine",
+        "progress": "Spor fremgangen din og generere statistikk",
+        "statistics": "Beregne og vise personlig statistikk og prestasjoner",
+        "community": "Muliggjøre sosiale funksjoner, rangeringer og samfunnsinteraksjoner",
+        "communication": "Sende deg varsler, oppdateringer og brukerstøtte",
+        "improvement": "Forbedre, tilpasse og utvikle Tjenesten",
+        "security": "Oppdage, forhindre og løse tekniske problemer og sikkerhetstrusler"
+      },
+      "legalBasis": {
+        "title": "4.2 Rettslig grunnlag for behandling",
+        "intro": "Vi behandler personopplysningene dine basert på:",
+        "consent": "Ditt samtykke når du kobler tredjepartskontoer",
+        "contract": "Oppfyllelse av kontrakten vår med deg for å tilby Tjenesten",
+        "legitimate": "Våre legitime interesser i å drive og forbedre Tjenesten",
+        "legal": "Overholdelse av juridiske forpliktelser"
+      }
+    },
+    "dataSharing": {
+      "title": "5. Datadeling og offentliggjøring",
+      "thirdParties": {
+        "title": "5.1 Tredjeparts tjenesteleverandører",
+        "intro": "Vi kan dele informasjonen din med betrodde tjenesteleverandører som hjelper oss med:",
+        "serviceProviders": "Hosting og infrastrukturtjenester",
+        "analytics": "Analyse og overvåking av ytelse",
+        "cloud": "Skylagring og databehandling"
+      },
+      "publicData": {
+        "title": "5.2 Offentlig informasjon",
+        "intro": "Følgende informasjon kan være offentlig synlig:",
+        "statistics": "Aggregert statistikk og prestasjoner",
+        "username": "Brukernavnet ditt og offentlig profil",
+        "rankings": "Din posisjon på rangeringer",
+        "profile": "Offentlig profilinformasjon du velger å dele"
+      },
+      "legal": {
+        "title": "5.3 Juridiske krav",
+        "content": "Vi kan offentliggjøre informasjonen din hvis loven, rettskjennelse eller offentlig myndighet krever det, eller for å beskytte våre rettigheter, eiendom eller sikkerhet, eller brukernes."
+      }
+    },
+    "dataStorage": {
+      "title": "6. Datalagring og sikkerhet",
+      "location": {
+        "title": "6.1 Datalokasjon",
+        "content": "Dataene dine lagres på sikre servere i Den europeiske union og USA. Ved å bruke Tjenesten, samtykker du til overføringen av dataene dine til disse stedene."
+      },
+      "retention": {
+        "title": "6.2 Dataoppbevaring",
+        "intro": "Vi oppbevarer dataene dine:",
+        "active": "Så lenge kontoen din er aktiv og så lenge det er nødvendig for å tilby Tjenesten",
+        "deleted": "I opptil 30 dager etter konto-sletting, hvoretter de permanent fjernes",
+        "legal": "Som krevet av gjeldende lover og forskrifter"
+      },
+      "security": {
+        "title": "6.3 Sikkerhetstiltak",
+        "intro": "Vi implementerer passende tekniske og organisatoriske tiltak for å beskytte dataene dine:",
+        "encryption": "Kryptering av data under overføring og i ro",
+        "access": "Tilgangskontroller og autentiseringsmekanismer",
+        "infrastructure": "Sikker infrastruktur og regelmessige sikkerhetsrevisjoner",
+        "updates": "Regelmessige sikkerhetsoppdateringer og patcher"
+      }
+    },
+    "userRights": {
+      "title": "7. Dine rettigheter (GDPR/CCPA)",
+      "access": {
+        "title": "7.1 Rett til innsyn",
+        "content": "Du har rett til å be om innsyn i personopplysningene dine og motta en kopi av dataene vi har om deg."
+      },
+      "rectification": {
+        "title": "7.2 Rett til retting",
+        "content": "Du kan be om korrigering av uriktige eller ufullstendige personopplysninger."
+      },
+      "erasure": {
+        "title": "7.3 Rett til sletting",
+        "content": "Du kan be om sletting av personopplysningene dine. Du kan slette kontoen din når som helst gjennom appinnstillingene."
+      },
+      "restriction": {
+        "title": "7.4 Rett til begrensning",
+        "content": "Du kan be om begrensning av behandlingen av personopplysningene dine under visse omstendigheter."
+      },
+      "portability": {
+        "title": "7.5 Rett til dataportabilitet",
+        "content": "Du kan be om en kopi av dataene dine i et strukturert, maskinlesbart format."
+      },
+      "objection": {
+        "title": "7.6 Rett til innvending",
+        "content": "Du kan protestere mot behandlingen av personopplysningene dine basert på legitime interesser."
+      },
+      "withdraw": {
+        "title": "7.7 Rett til å trekke samtykke",
+        "content": "Du kan trekke samtykket ditt når som helst ved å koble fra tredjepartskontoer eller slette kontoen din."
+      },
+      "complaint": {
+        "title": "7.8 Rett til å klage",
+        "content": "Du har rett til å sende en klage til det lokale datatilsynet hvis du mener at rettighetene dine er blitt krenket."
+      }
+    },
+    "cookies": {
+      "title": "8. Informasjonskapsler og sporingsteknologier",
+      "intro": "Vi bruker informasjonskapsler og lignende sporingsteknologier for å spore aktivitet på Tjenesten vår og lagre viss informasjon.",
+      "types": {
+        "title": "8.1 Typer informasjonskapsler",
+        "essential": "Nødvendige informasjonskapsler som kreves for at Tjenesten skal fungere",
+        "analytics": "Analyse-informasjonskapsler for å forstå hvordan brukere samhandler med Tjenesten",
+        "functional": "Funksjonelle informasjonskapsler for å huske preferansene dine"
+      },
+      "management": {
+        "title": "8.2 Administrasjon av informasjonskapsler",
+        "content": "Du kan kontrollere informasjonskapsler gjennom nettleserinnstillingene dine. Å deaktivere informasjonskapsler kan imidlertid påvirke funksjonaliteten til Tjenesten."
+      }
+    },
+    "children": {
+      "title": "9. Barns personvern",
+      "content": "Tjenesten vår kan brukes av barn i alle aldre. Vi er forpliktet til å beskytte personvernet til barn og alle brukere. Vi implementerer passende sikkerhetstiltak for å sikre sikkerheten og personvernet til barn som bruker Tjenesten vår. Hvis du har bekymringer om barnets bruk av Tjenesten vår, vennligst kontakt oss."
+    },
+    "international": {
+      "title": "10. Internasjonale dataoverføringer",
+      "content": "Informasjonen din kan bli overført til og behandlet i andre land enn bostedslandet ditt. Disse landene kan ha databeskyttelseslover som avviker fra de i landet ditt. Vi sikrer at passende tiltak er på plass for å beskytte dataene dine."
+    },
+    "changes": {
+      "title": "11. Endringer i denne personvernerklæringen",
+      "content": "Vi kan oppdatere denne personvernerklæringen fra tid til annen. Vi vil varsle deg om eventuelle endringer ved å legge ut den nye personvernerklæringen på denne siden og oppdatere \"Sist oppdatert\"-datoen. Du oppfordres til å gjennomgå denne personvernerklæringen periodisk."
+    },
+    "contact": {
+      "title": "12. Kontakt oss",
+      "intro": "Hvis du har spørsmål om denne personvernerklæringen eller ønsker å utøve rettighetene dine, vennligst kontakt oss:",
+      "email": "E-post: cesc.riera@summitstracker.com",
+      "website": "Nettside: summitstracker.com",
+      "support": "Brukerstøtte: Tilgjengelig via innebygde hjelpe- og brukerstøttefunksjoner"
+    }
+  },
+  "peakLists": {
+    "clubChallengeTitle": "Klubbutfordring",
+    "clubChallengeDescription": "Denne utfordringen er knyttet til en klubb og vil bare være synlig for medlemmene.",
+    "clubPrivateHelp": "Klubbutfordringer er alltid offentlige for klubbmedlemmer og kan ikke være private.",
+    "createTitle": "Opprett utfordring",
+    "editTitle": "Rediger utfordring",
+    "name": "Utfordringsnavn",
+    "namePlaceholder": "Skriv inn et navn for utfordringen din...",
+    "description": "Beskrivelse",
+    "descriptionPlaceholder": "Hva handler denne utfordringen om?",
+    "isPrivate": "Privat utfordring",
+    "privateHelp": "Private utfordringer er kun synlige for deg.",
+    "challengeConstraints": "Utfordringsbegrensninger",
+    "startDate": "Startdato",
+    "endDate": "Sluttdato",
+    "dateRangeHelp": "La begge datoene være tomme for å tillate enhver fullføringsdato.",
+    "maxDuration": "Maks varighet (timer)",
+    "maxDurationPlaceholder": "f.eks. 24",
+    "maxDurationHelp": "La stå tomt for ingen tidsbegrensning mellom første og siste topp.",
+    "timeLimit": "Tidsbegrensning",
+    "dateRange": "Gyldig",
+    "starts": "Starter",
+    "ends": "Slutter",
+    "primaryImage": "Omslagsbilde",
+    "addImage": "Legg til omslagsbilde",
+    "noImage": "Ingen bilde lagt til",
+    "imageUrlPlaceholder": "Lim inn en bilde-URL (f.eks. https://...)",
+    "peaks": "Topper",
+    "addPeaks": "Legg til topper",
+    "selectPeaks": "Velg topper",
+    "selectedPeaks": "Valgte topper",
+    "noPeaksSelected": "Ingen topper valgt ennå. Søk og velg topper for å legge dem til i utfordringen din.",
+    "saveSuccess": "Utfordring lagret!",
+    "saveError": "Kunne ikke lagre utfordring. Prøv igjen.",
+    "loadError": "Kunne ikke laste utfordring. Prøv igjen.",
+    "validation": {
+      "nameRequired": "Utfordringsnavn er påkrevd.",
+      "descriptionRequired": "Beskrivelse er påkrevd.",
+      "imageRequired": "Omslagsbilde er påkrevd.",
+      "peaksRequired": "Velg minst én topp.",
+      "startDateInvalid": "Skriv inn en gyldig startdato.",
+      "endDateInvalid": "Skriv inn en gyldig sluttdato.",
+      "endDateBeforeStart": "Sluttdato må være etter startdatoen.",
+      "maxDurationInvalid": "Skriv inn en gyldig maks varighet større enn 0."
+    },
+    "challenges": "Utfordringer",
+    "available_challenges": "tilgjengelige utfordringer",
+    "searchPlaceholder": "Søk etter tittel eller skaper",
+    "emptySearchTitle": "Ingen utfordringer funnet",
+    "emptySearchMessage": "Prøv en annen tittel eller skapernavn.",
+    "worldPeaks": "Verdenstopper",
+    "worldPeaksDescription": "Utforsk alle topper over hele verden",
+    "join": "Bli med",
+    "leave": "Forlat",
+    "joined": "Valgt",
+    "deleteList": "Slett utfordring",
+    "deleteSuccess": "Utfordring slettet",
+    "deleteError": "Kunne ikke slette utfordring",
+    "deleteConfirmTitle": "Slette utfordring?",
+    "deleteConfirmMessage": "Er du sikker på at du vil slette denne utfordringen? Denne handlingen kan ikke angres.",
+    "inviteToChallenge": "Inviter til utfordring",
+    "inviteHelp": "Søk etter brukere for å invitere dem til utfordringen din."
+  },
+  "forceUpdate": {
+    "title": "Ny versjon tilgjengelig!",
+    "subtitle": "Vennligst oppgrader til den nyeste versjonen av Summits for å fortsette å bruke appen.",
+    "button": "Oppdater nå",
+    "version": "Versjon",
+    "continue": "Fortsett uten oppdatering"
+  },
+  "appInstallBanner": {
+    "title": "Få native appen",
+    "subtitle": "Installer Summits for en raskere, mer komplett mobilopplevelse.",
+    "button": "Installer app",
+    "dismiss": "Lukk installasjonsbanner",
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "lastUpdate": {
+    "title": "Tilfluktssteder kommer til Summits",
+    "close": "Supert!",
+    "refugios": {
+      "headline": "80.000+ Tilfluktssteder",
+      "subtitle": "Lagrede og frie tilfluktssteder fra hele verden, nå på Summits.",
+      "findOnMap": "Finn dem på kartet eller på oppdag-siden.",
+      "addManually": "Mangler du en? Legg den til manuelt fra kartsiden.",
+      "saveFavorites": "Lagre dem i favoritter for å ha dem lett tilgjengelig.",
+      "community": "Ethvert bidrag settes pris på og hjelper fellesskapet."
+    }
+  },
+  "clubs": {
+    "availableClubs": "Tilgjengelige klubber",
+    "common": {
+      "creator": "Skaper"
+    },
+    "browse": {
+      "title": "Finn klubber",
+      "subtitle": "Utforsk offentlige og private fellesskap bygget rundt felles fremgang på fjelltopper.",
+      "searchPlaceholder": "Søk etter klubber",
+      "searchPlaceholderUnified": "Søk etter klubber eller regioner...",
+      "emptyTitle": "Ingen klubber ennå",
+      "emptyMessage": "Prøv et bredere søk eller opprett en ny klubb for turgruppen din.",
+      "emptySearchTitle": "Ingen klubber ble funnet",
+      "emptySearchMessage": "Prøv med en annen tittel eller region."
+    },
+    "details": {
+      "title": "Klubbdetaljer",
+      "statistics": "Statistikk",
+      "restrictedTitle": "Forhåndsvisning av privat klubb",
+      "restrictedMessage": "Bare godkjente medlemmer kan se rangering, medlemmer og aktivitet i denne klubben."
+    },
+    "myClubs": {
+      "title": "Mine klubber",
+      "subtitle": "Administrer klubbene du opprettet, ble med i eller ba om tilgang til.",
+      "created": "opprettet",
+      "joined": "ble med",
+      "pending": "venter",
+      "createdSection": "Opprettet av meg",
+      "createdDescription": "Klubber du eier og kan administrere fullt ut.",
+      "joinedSection": "Klubber jeg er medlem av",
+      "joinedDescription": "Klubber der du kan se fremgang og aktivitet begrenset til medlemmer.",
+      "pendingSection": "Venter på forespørsel",
+      "pendingDescription": "Private klubber som venter på godkjenning fra skaperen.",
+      "emptyTitle": "Du tilhører ingen klubber ennå",
+      "emptyMessage": "Finn klubber å bli med i, eller opprett en privat gruppe for turkameratene dine.",
+      "emptySection": "Ingen klubber i denne seksjonen foreløpig."
+    },
+    "create": {
+      "title": "Opprett klubb",
+      "subtitle": "Angi klubbens identitet, synlighet og forsidebildet medlemmene dine vil se først.",
+      "submit": "Opprett klubb"
+    },
+    "edit": {
+      "title": "Rediger klubb"
+    },
+    "leaderboard": {
+      "subtitle": "Se hvilke klubber som vokser raskest og registrerer mest fremgang."
+    },
+    "filters": {
+      "allVisibility": "All synlighet",
+      "period": "Periode",
+      "sortBy": "Sorter etter",
+      "highestClimb": "Høyeste klatring",
+      "activity": "Aktivitet",
+      "allCategories": "Alle kategorier",
+      "routes": "Ruter",
+      "sort": "Sorter etter"
+    },
+    "period": {
+      "thisYear": "I år",
+      "lastYear": "I fjor",
+      "allTime": "All tid",
+      "custom": "Egendefinert",
+      "dateFrom": "Fra",
+      "dateTo": "Til"
+    },
+    "visibility": {
+      "public": "Offentlig",
+      "private": "Privat"
+    },
+    "sort": {
+      "mostUsers": "Flest medlemmer",
+      "mostPeaks": "Flest topper",
+      "mostDistance": "Lengst distanse",
+      "mostElevation": "Mest stigning",
+      "mostTime": "Mest tid",
+      "newest": "Nyeste",
+      "oldest": "Eldste",
+      "recentActivity": "Nylig aktivitet",
+      "joinedAt": "Dato for medlemskap",
+      "name": "Navn",
+      "mostActiveLast30d": "Mest aktiv (30 dager)"
+    },
+    "metrics": {
+      "members": "Medlemmer",
+      "peaks": "Topper",
+      "distinctPeaks": "Topper",
+      "totalAscents": "Totale bestigninger",
+      "highestPeak": "Høyeste topp",
+      "recentDistinctPeaks": "Nylige topper",
+      "activeMembers30d": "Aktiv (30 dager)",
+      "totalRoutes": "Ruter",
+      "distance": "Distanse",
+      "totalDistanceKm": "Distanse",
+      "totalElevationGain": "Høydemeter",
+      "totalTime": "Total tid",
+      "totalMovingTime": "Bevegelsestid",
+      "topMember": "Toppmedlem"
+    },
+    "tabs": {
+      "summary": "Sammendrag",
+      "members": "Medlemmer",
+      "leaderboard": "Leaderboard",
+      "activity": "Aktivitet",
+      "requests": "Forespørsler"
+    },
+    "activity": {
+      "allRoutes": "Alle ruter",
+      "withPeaks": "Med topper",
+      "noPeak": "Uten topper",
+      "peaksDone": "Topper fullført på denne ruten",
+      "xMore": "flere",
+      "latestRoutes": "Siste ruter for klubben",
+      "empty": "Ingen aktivitet ennå."
+    },
+    "challenges": {
+      "title": "Klubbutfordringer",
+      "subtitle": "Utfordringer knyttet til denne klubben er synlige for medlemmer.",
+      "membersOnly": "Bli med i denne klubben for å se og opprette klubbutfordringer.",
+      "create": "Opprett utfordring",
+      "empty": "Ingen klubbutfordringer ennå.",
+      "emptyRestricted": "Ingen synlige utfordringer. Bli med i klubben for å låse opp medlemsutfordringer.",
+      "itemFallback": "Utfordring",
+      "total": "totalt",
+      "completed": "fullført",
+      "viewProgress": "Se fremdriften for klubbutfordringene"
+    },
+    "actions": {
+      "manageMyClubs": "Administrer mine klubber",
+      "signInToJoin": "Logg inn for å bli med",
+      "joinClub": "Bli med i klubb",
+      "requestToJoin": "Be om å bli med",
+      "requestPending": "Forespørsel venter",
+      "leaveClub": "Forlat klubb",
+      "editClub": "Rediger klubb",
+      "manageClub": "Administrer klubb",
+      "viewClub": "Se klubb",
+      "cancelRequest": "Avbryt forespørsel",
+      "loadMore": "Last mer",
+      "leaveConfirm": "Forlate denne klubben? Du kan alltid bli med igjen senere.",
+      "leaveConfirmTitle": "Forlat klubb",
+      "leaveConfirmMessage": "Er du sikker på at du vil forlate klubben '{name}'? Du kan alltid bli med igjen senere.",
+      "joinConfirmTitle": "Bli med i klubb",
+      "joinConfirmMessage": "Vil du bli med i klubben '{name}'? Du vil kunne se rangering og aktivitet.",
+      "removeMember": "Fjern",
+      "removeMemberConfirm": "Fjern dette medlemmet?",
+      "acceptRequest": "Aksepter",
+      "rejectRequest": "Avslå",
+      "deleteConfirmTitle": "Slett klubb?",
+      "deleteConfirmMessage": "Er du sikker på at du vil slette denne klubben? Denne handlingen er permanent.",
+      "deleteSuccess": "Klubben ble slettet",
+      "leave": "Forlat klubb",
+      "selectClub": "Velg en klubb"
+    },
+    "badges": {
+      "creator": "Skaper",
+      "member": "Medlem",
+      "requestPending": "Venter",
+      "privateClub": "Privat klubb",
+      "restricted": "Begrenset"
+    },
+    "status": {
+      "joined": "Ble med",
+      "pending": "Venter"
+    },
+    "roles": {
+      "creator": "Skaper",
+      "member": "Medlem"
+    },
+    "members": {
+      "joinedLabel": "Ble med",
+      "none": "Ingen medlemmer funnet",
+      "empty": "Ingen medlemmer funnet"
+    },
+    "requests": {
+      "requestedOn": "Forespurt den",
+      "pending": "Venter på forespørsel",
+      "none": "Ingen forespørsler venter"
+    },
+    "messages": {
+      "actionFailed": "Kunne ikke oppdatere klubben akkurat nå.",
+      "loadFailed": "Kunne ikke laste klubben akkurat nå.",
+      "saveFailed": "Kunne ikke lagre klubben.",
+      "deleteFailed": "Kunne ikke slette klubben.",
+      "imageFailed": "Kunne ikke lese bildet.",
+      "leaveConfirmation": "Er du sikker på at du vil forlate denne klubben?"
+    },
+    "validation": {
+      "nameRequired": "Klubbnavn er påkrevd",
+      "descriptionRequired": "Klubbeskrivelse er påkrevd",
+      "visibilityRequired": "Klubbsynlighet er påkrevd",
+      "imageRequired": "Klubblogomet er påkrevd",
+      "regionRequired": "Klubbregion er påkrevd"
+    },
+    "form": {
+      "image": "Klubblogomet",
+      "changeImage": "Endre logo",
+      "uploadImage": "Last opp logo",
+      "name": "Klubbnavn",
+      "namePlaceholder": "Tinderanglere",
+      "description": "Beskrivelse",
+      "descriptionPlaceholder": "Beskriv klubben din kort",
+      "visibility": "Synlighet",
+      "region": "Region",
+      "regionPlaceholder": "Søk etter et land eller en region...",
+      "regionSearching": "Søker...",
+      "regionNoResults": "Ingen regioner funnet",
+      "regionClear": "Fjern region",
+      "previewTitle": "Klubb-forhåndsvisning",
+      "previewMessage": "Legg til en logo for å gi klubben din en tydelig identitet i søkeresultatene.",
+      "cropDescription": "Posisjoner og zoom inn på logoen din for å forhåndsvise den sirkulære avataren.",
+      "cropTitle": "Juster klubb-logo",
+      "cropZoom": "Zoom"
+    },
+    "share": {
+      "text": "Join my club on Summits."
+    }
+  },
+  "manualPeaks": {
+    "fetchError": "Kunne ikke laste topper. Vennligst prøv igjen."
+  },
+  "offline": {
+    "banner": "Du er frakoblet — noen funksjoner kan være begrenset",
+    "bannerCached": "Frakoblet – hurtigbufrede kartdata tilgjengelig",
+    "bannerNoCache": "Frakoblet – ingen hurtigbufrede kartdata",
+    "title": "Frakoblede kart",
+    "area": "Frakoblet område",
+    "empty": "Ingen frakoblede områder ennå. Last ned et kartområde for å ha det tilgjengelig uten internettforbindelse.",
+    "newArea": "Last ned nytt område",
+    "downloading": "Laster ned",
+    "ready": "Klar",
+    "failed": "Mislyktes",
+    "cancelled": "Avbrutt",
+    "tiles": "fliser",
+    "zoom": "zoom {min}-{max}",
+    "goTo": "Gå til område",
+    "delete": "Slett",
+    "drawHint": "Trykk på kartet for å plassere hjørnepunkter, og trykk deretter på Ferdig for å lukke området.",
+    "undo": "Angre",
+    "clear": "Tøm",
+    "finish": "Ferdig",
+    "configName": "Områdenavn",
+    "namePlaceholder": "f.eks. Høye Tatra",
+    "maxZoomLabel": "Maks zoom (detalj)",
+    "zoomRange": "0 - {max}",
+    "zoomExpensive": "Zoom 17–18 er sjelden nødvendig og veldig dyrt – hvert nivå firedobler nedlastingsstørrelsen. Zoom 14 er anbefalt maksimum.",
+    "estimate": "~{count} fliser (~{size})",
+    "eta": "~{eta} igjen",
+    "keepOpen": "Hold appen åpen mens du laster ned – å lukke den setter nedlastingen på pause.",
+    "redraw": "Tegn om",
+    "download": "Last ned område",
+    "starting": "Starter...",
+    "errorResolve": "Kunne ikke løse kartstilen. Kontroller at du er på nett.",
+    "errorNoSources": "Velg minst én datakilde.",
+    "errorDownload": "Nedlasting mislyktes.",
+    "deleteTitle": "Slette offline-område?",
+    "deleteMessage": "Slette \"{name}\"? Dette fjerner permanent {tiles} fliser ({size}) fra denne enheten. Dette kan ikke angres.",
+    "deleteCancel": "Avbryt",
+    "deleteConfirm": "Slett",
+    "deleting": "Sletter..."
+  },
+  "peakChange": {
+    "createTitle": "Send inn ny topp",
+    "editTitle": "Rediger topp",
+    "successTitle": "Topp sendt inn",
+    "successMessage": "Toppen din er sendt til vurdering. Den vil bli godkjent eller avvist innen 3 dager. Du vil ikke motta et varsel, så sjekk tilbake senere for å se resultatet.",
+    "successSubmessage": "Hvis du har spørsmål, kontakt oss fra profilen din.",
+    "close": "Lukk",
+    "name": "Navn",
+    "namePlaceholder": "Toppnavn",
+    "englishName": "Engelsk navn",
+    "englishNamePlaceholder": "Engelsk navn (valgfritt)",
+    "coordinates": "Koordinater",
+    "latitude": "Breddegrad",
+    "longitude": "Lengdegrad",
+    "coordsEditHint": "La stå tom for å beholde gjeldende posisjon",
+    "pickOnMap": "Velg på kart",
+    "clickMapInstruction": "Klikk på kartet for å angi toppens plassering",
+    "acceptLocation": "Godta",
+    "elevation": "Høyde (m)",
+    "elevationPlaceholder": "Høyde i meter",
+    "minZoomLevel": "Min. zoomnivå",
+    "selectVisibility": "-- Velg synlighet --",
+    "minZoomHelp": "Lavere tall = vises når utzoomet (verdenstopper). Høyere tall = kun synlig når innzoomet (lokale åser).",
+    "wikipediaUrl": "Wikipedia-URL",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "reason": "Årsak til endring",
+    "reasonPlaceholder": "Valgfri årsak til denne forespørselen",
+    "image": "Bilde",
+    "chooseImage": "Velg bilde",
+    "submitCreate": "Send inn topp for vurdering",
+    "submitEdit": "Send inn endringer for vurdering",
+    "submitting": "Sender inn...",
+    "errorPeakIdMissing": "Topp-ID mangler",
+    "errorNameRequired": "Navn er påkrevd",
+    "errorCoordinatesRequired": "Koordinater er påkrevd",
+    "errorElevationRequired": "Høyde er påkrevd",
+    "errorMinZoomRequired": "Min. zoomnivå er påkrevd",
+    "errorGeneric": "Innsending mislyktes. Vennligst prøv igjen.",
+    "tabPeak": "Topp",
+    "tabShelter": "Hytte",
+    "currentData": "Gjeldende data",
+    "versionName": "Navn",
+    "versionElevation": "Høyde",
+    "versionWikipedia": "Wikipedia",
+    "versionWikipediaYes": "ja",
+    "mapButtonLabel": "Send inn ny topp",
+    "email": "E-post (valgfritt)",
+    "emailPlaceholder": "din@epost.no",
+    "emailHelp": "Få varsel når forespørselen din blir godkjent eller avslått"
+  },
+  "shelterChange": {
+    "createTitle": "Send inn ny hytte",
+    "editTitle": "Rediger hytte",
+    "successTitle": "Hytte sendt inn",
+    "successMessage": "Hytta di er sendt til vurdering. Den vil bli godkjent eller avvist innen 3 dager. Du vil ikke motta et varsel, så sjekk tilbake senere for å se resultatet.",
+    "successSubmessage": "Hvis du har spørsmål, kontakt oss fra profilen din.",
+    "close": "Lukk",
+    "name": "Navn",
+    "namePlaceholder": "Navn på hytta",
+    "englishName": "Engelsk navn",
+    "englishNamePlaceholder": "Engelsk navn (valgfritt)",
+    "shelterType": "Hyttetype",
+    "selectType": "-- Velg type --",
+    "coordinates": "Koordinater",
+    "latitude": "Breddegrad",
+    "longitude": "Lengdegrad",
+    "coordsEditHint": "La stå tom for å beholde gjeldende posisjon",
+    "pickOnMap": "Velg på kart",
+    "acceptLocation": "Godta",
+    "clickMapInstruction": "Klikk på kartet for å angi hyttens plassering",
+    "elevation": "Høyde (m)",
+    "elevationPlaceholder": "Høyde i meter",
+    "wikipediaUrl": "Wikipedia-URL",
+    "wikipediaPlaceholder": "https://en.wikipedia.org/wiki/...",
+    "tagsTitle": "Fasiliteter og tjenester",
+    "tagsHint": "Fyll inn bare det som gjelder for denne hytta",
+    "tags": {
+      "capacity": "Kapasitet (personer)",
+      "beds": "Senger",
+      "toilets": "Toaletter",
+      "drinking_water": "Drikkevann",
+      "fireplace": "Peis",
+      "heating": "Oppvarming",
+      "electricity": "Strøm",
+      "shower": "Dusj",
+      "kitchen": "Kjøkken",
+      "lit": "Belysning",
+      "outdoor_seating": "Uteservering",
+      "picnic_table": "Picnicbord",
+      "bench": "Benker",
+      "covered": "Overbygd område",
+      "pets": "Kjæledyr tillatt",
+      "dog": "Hunder tillatt",
+      "internet_access": "Internettilgang",
+      "smoking": "Røyking",
+      "website": "Nettside",
+      "websitePlaceholder": "https://...",
+      "description": "Beskrivelse",
+      "descriptionPlaceholder": "Kort beskrivelse av hytta"
+    },
+    "tagValues": {
+      "yes": "Ja",
+      "no": "Nei",
+      "wifi": "WiFi",
+      "outside": "Bare utendørs",
+      "isolated": "Isolert område"
+    },
+    "reason": "Årsak til endring",
+    "reasonPlaceholder": "Valgfri årsak til denne forespørselen",
+    "email": "E-post (valgfritt)",
+    "emailPlaceholder": "din@epost.no",
+    "emailHelp": "Få varsel når forespørselen din blir godkjent eller avslått",
+    "image": "Bilde",
+    "chooseImage": "Velg bilde",
+    "submitCreate": "Send inn hytte for vurdering",
+    "submitEdit": "Send inn endringer for vurdering",
+    "submitting": "Sender inn...",
+    "errorShelterIdMissing": "Hytte-ID mangler",
+    "errorNameRequired": "Navn er påkrevd",
+    "errorTypeRequired": "Hyttetype er påkrevd",
+    "errorCoordinatesRequired": "Koordinater er påkrevd",
+    "errorGeneric": "Innsending mislyktes. Vennligst prøv igjen.",
+    "tabPeak": "Topp",
+    "tabShelter": "Hytte"
+  },
+  "singleDatePicker": {
+    "chooseDate": "Velg {label}",
+    "close": "Lukk",
+    "apply": "Bruk"
+  },
+  "shelterDetails": {
+    "type": {
+      "alpine_hut": "betjent fjellhytte",
+      "wilderness_hut": "ubetjent fjellhytte",
+      "shelter": "nødhjem"
+    },
+    "intro": {
+      "default": "Dette er en {type}.",
+      "withOperator": "Dette er en {type} drevet av {operator}.",
+      "withHours": "Åpent {hours}.",
+      "free": "Det er gratis.",
+      "paid": "Det kreves betaling.",
+      "paidAmount": "Avgiften er {charge}.",
+      "reservationsRequired": "Reservasjon er påkrevd.",
+      "reservationsOptional": "Reservasjon er valgfritt.",
+      "accessPublic": "Adgangen er offentlig.",
+      "accessPrivate": "Adgangen er privat.",
+      "accessMembers": "Adgangen er kun for medlemmer."
+    },
+    "capacity": {
+      "bedsAndCapacity": "Det har {beds} sengeplasser med kapasitet for {capacity} personer.",
+      "bedsOnly": "Det har {beds} sengeplasser.",
+      "capacityOnly": "Det har kapasitet for {capacity} personer."
+    },
+    "services": {
+      "title": "Det tilbyr:",
+      "toilets": "toaletter",
+      "drinking_water": "drikkevann",
+      "fireplace": "peis",
+      "stove": "vedovn",
+      "heating": "oppvarming",
+      "electricity": "strøm",
+      "shower": "dusjer",
+      "kitchen": "kjøkken",
+      "lit": "belysning",
+      "internet": "internett-tilgang",
+      "outdoor_seating": "uteseter",
+      "picnic_table": "picnicbord",
+      "bench": "benker",
+      "covered": "overdekket område",
+      "pets": "kjæledyr tillatt",
+      "smoking_free": "røykfritt"
+    },
+    "website": "Besøk nettside",
+    "noInfo": "Ingen tilleggsinformasjon tilgjengelig for dette hiet.",
+    "nearbyShelters": "Hytter i nærheten",
+    "nearbySheltersNoData": "Ingen hytter i nærheten funnet",
+    "unnamedShelter": "Navnløs hytte",
+    "unknownShelter": "Ukjent hytte",
+    "invalidShelterId": "Ugyldig hytte-ID",
+    "suggestEdit": "Foreslå endring",
+    "source": "Kilde: {source}",
+    "searchRoutesFor": "Søk etter ruter for",
+    "findHikingRoutesOnWikiloc": "Finn turstier på Wikiloc",
+    "openImageGallery": "Åpne bildegalleri",
+    "previousImage": "Forrige bilde",
+    "nextImage": "Neste bilde",
+    "searchRoutesAria": "Søk etter ruter for {name} på Wikiloc"
+  }
+}

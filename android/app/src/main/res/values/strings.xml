@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Summits</string>
+    <string name="title_activity_main">Summits</string>
+    <string name="package_name">com.summitstracker.summits</string>
+    <string name="custom_url_scheme">com.summitstracker.summits</string>
+    <!-- Push notification channel ID for Android 8.0+ -->
+    <string name="default_notification_channel_id">summits_notifications</string>
+    <string name="title_activity_route_animation">Route Animation</string>
+</resources>

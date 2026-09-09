@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+/* Peak Header - Mobile Optimized */
+.peak-header {
+  padding: 16px;
+
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Details Section */
+.peak-header__details-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.peak-header__top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.peak-header__details-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Elevation Box - Left Side */
+.peak-header__elevation-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  background: var(--c-white);
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 100px;
+  min-height: 40px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(var(--rgb-black), 0.1);
+  transition: all 0.2s ease;
+}
+
+.peak-header__elevation-icon-small {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.peak-header__elevation-value-small {
+  color: var(--c-gray-900);
+}
+
+/* Location Block - Right Side */
+.peak-header__location-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  min-width: 0;
+  gap: 8px;
+  flex-shrink: 1;
+}
+
+.peak-header__location-icon {
+  display: flex;
+  align-items: center;
+}
+
+.peak-header__location-text {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.peak-header__location-city,
+.peak-header__location-region,
+.peak-header__location-country {
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.peak-header__location-city {
+  color: var(--c-gray-900);
+  max-width: 100%;
+}
+
+.peak-header__location-region {
+  font-style: italic;
+  color: var(--c-gray-600);
+  margin-left: 0.45em;
+  padding-right: 4px;
+}
+
+.peak-header__location-country {
+  font-style: normal;
+  color: var(--c-gray-400);
+  opacity: 0.85;
+  margin-left: 0.45em;
+}
+
+/* Utility Classes */
+.peak-header__detail-value {
+  color: var(--c-gray-900);
+  text-align: center;
+}
+
+.peak-header__no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--c-gray-400);
+  font-style: italic;
+  padding: 24px 16px;
+  background: var(--c-white);
+  border-radius: 8px;
+  border: 1px dashed var(--c-gray-200);
+  opacity: 0.7;
+}
+
+.peak-header__map-button {
+  min-height: 40px;
+  background: transparent;
+  color: var(--c-gray-900);
+  border: none;
+  transition: background 0.18s, box-shadow 0.18s;
+  padding: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  /* Gradient underline for button text */
+  position: relative;
+}
+
+.peak-header__map-button {
+  text-decoration: none; /* Remove default underline */
+}
+
+.peak-header__map-button-text {
+  /* If you use a class for the text, you can add this, otherwise ignore */
+  text-decoration: none;
+}
+
+.peak-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.peak-header__edit-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  color: var(--c-gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.peak-header__edit-btn:hover {
+  opacity: 1;
+  background: var(--c-gray-100);
+}

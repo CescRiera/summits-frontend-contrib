@@ -1,0 +1,106 @@
+.desktop-warning {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--c-gray-200);
+  border-bottom: 1px solid var(--c-gray-200);
+  min-height: 500px;
+}
+
+/* Left Section - Phone Mockup */
+.desktop-warning__left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 280px;
+  padding: 40px 20px;
+}
+
+.desktop-warning__phone-mockup {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+/* Right Section - Content and QR Codes */
+.desktop-warning__right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+  padding: 40px 48px;
+  justify-content: flex-start;
+}
+
+.desktop-warning__title {
+  margin: 0;
+  color: var(--c-gray-900);
+}
+
+.desktop-warning__subtitle {
+  margin: 0;
+  color: var(--c-gray-600);
+}
+
+/* QR Codes and Stores Container */
+.desktop-warning__qr-stores-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+/* Individual QR Store Item */
+.desktop-warning__qr-store-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.desktop-warning__qr-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  border-radius: 8px;
+}
+
+.desktop-warning__qr-image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Store Badge Button */
+.desktop-warning__store-badge {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.desktop-warning__store-badge:hover {
+  transform: scale(1.02);
+}
+
+.desktop-warning__store-image {
+  height: 80px;
+  width: 210px;
+  object-fit: contain;
+  display: block;
+}

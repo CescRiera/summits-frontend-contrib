@@ -1,0 +1,113 @@
+.explore-filters-modal__content {
+  overflow: hidden;
+}
+
+.explore-filters-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.explore-filters-modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #f4f4f5;
+  color: #52525b;
+}
+
+.explore-filters-modal__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 20px 20px;
+}
+
+.explore-filters-modal__section {
+  padding: 16px 0;
+  border-bottom: 1px solid #f4f4f5;
+}
+
+.explore-filters-modal__section:last-child {
+  border-bottom: none;
+}
+
+.explore-filters-modal__section-title {
+  color: #3f3f46;
+  margin-bottom: 14px;
+}
+
+.explore-filters-modal__cascade {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.explore-filters-modal__cascade-item {
+  width: 100%;
+}
+
+.explore-filters-modal__elevation-card {
+  padding: 0 4px;
+}
+
+.explore-filters-modal__elevation-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.explore-filters-modal__chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.explore-filters-modal__chip {
+  padding: 9px 16px;
+  border: 1.5px solid #e4e4e7;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #52525b;
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.explore-filters-modal__chip--active {
+  background: #5f7440;
+  border-color: #5f7440;
+  color: #ffffff;
+}
+
+.explore-filters-modal__footer {
+  display: flex;
+  gap: 12px;
+  padding: 14px 20px 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.explore-filters-modal__clear,
+.explore-filters-modal__apply {
+  flex: 1;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.explore-filters-modal__clear {
+  border: 1.5px solid #e4e4e7;
+  background: #ffffff;
+  color: #71717a;
+}
+
+.explore-filters-modal__apply {
+  border: none;
+  background: #5f7440;
+  color: #ffffff;
+}

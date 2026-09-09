@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+Every new component must include a folder with `name.tsx` and `name.module.css`-style CSS Module

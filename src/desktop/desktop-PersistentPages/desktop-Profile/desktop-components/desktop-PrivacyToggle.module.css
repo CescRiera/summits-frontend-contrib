@@ -1,0 +1,56 @@
+/* PrivacyToggle.module.css - Simple privacy toggle that looks like a menu item */
+
+.privacy-toggle {
+  background: rgba(var(--rgb-gray-50), 0.5);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  color: #0f172a;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.privacy-toggle:hover {
+  background: rgba(var(--rgb-gray-50), 1);
+  transform: translateX(4px);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.privacy-toggle:active {
+  transform: translateX(4px) scale(0.98);
+}
+
+.privacy-toggle:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.privacy-toggle__icon {
+  color: #0f172a;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.privacy-toggle__label {
+  flex: 1;
+  text-align: left;
+}
+
+.privacy-toggle__status {
+}
+
+.privacy-toggle__status--public {
+  color: #10b981;
+}
+
+.privacy-toggle__status--private {
+  color: #ef4444;
+}

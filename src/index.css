@@ -1,0 +1,47 @@
+/* Global safe-area handling */
+html,
+body,
+#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Use the modern small viewport unit to avoid Safari UI issues */
+html,
+body,
+#root {
+  min-height: 100dvh;
+}
+
+/* Fallback for browsers without svh support */
+@supports not (height: 100dvh) {
+  html,
+  body,
+  #root {
+    min-height: 100dvh;
+  }
+}
+
+/* Apply safe-area insets globally using CSS env() variables */
+body {
+}
+
+html {
+  background-color: var(--c-black);
+}
+
+/* Prevent background scroll when any modal is open */
+body.modal-open {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Utility to mark a viewport container explicitly */
+.app-viewport {
+  min-height: 100dvh;
+}
+
+

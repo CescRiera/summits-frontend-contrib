@@ -1,0 +1,67 @@
+.creator-badge {
+  --badge-bg: rgba(15, 23, 42, 0.75);
+  --badge-color: #ffffff;
+  --badge-border: rgba(255, 255, 255, 0.25);
+  --badge-avatar-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border-radius: 999px;
+  color: var(--badge-color);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.creator-badge--light {
+  --badge-bg: rgba(255, 255, 255, 0.92);
+  --badge-color: #0f172a;
+  --badge-border: rgba(15, 23, 42, 0.12);
+  backdrop-filter: none;
+}
+
+.creator-badge--sm {
+  --badge-avatar-size: 20px;
+}
+
+.creator-badge--md {
+  --badge-avatar-size: 24px;
+}
+
+.creator-badge--lg {
+  --badge-avatar-size: 28px;
+}
+
+.creator-badge__avatar {
+  width: var(--badge-avatar-size);
+  height: var(--badge-avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.creator-badge__initials {
+  width: var(--badge-avatar-size);
+  height: var(--badge-avatar-size);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.creator-badge__label {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .creator-badge__label {
+    max-width: 90px;
+  }
+}

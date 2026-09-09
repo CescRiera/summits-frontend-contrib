@@ -1,0 +1,72 @@
+/* PeakGrid.module.css */
+
+.peakGrid__container {
+  width: 100%;
+}
+
+.peakGrid__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 16px 0;
+}
+
+.peakGrid__list > *:not(:last-child) {
+  border-bottom: 1px solid var(--c-gray-200);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.peakGrid__list--transitioning {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.peakGrid__list--loaded {
+  opacity: 1;
+}
+
+.peakGrid__noCompletedMessage,
+.peakGrid__noSearchResultsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 20px;
+  background: white;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(var(--rgb-black), 0.05);
+}
+
+.peakGrid__noCompletedMessage p {
+  color: #64748b;
+}
+
+.peakGrid__noSearchResultsMessage p {
+  color: #0c4a6e;
+}
+
+.peakGrid__contentLoadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+.peakGrid__loadingText {
+  color: #64748b;
+  margin: 0;
+}
+
+.peakGrid__loadingSpinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

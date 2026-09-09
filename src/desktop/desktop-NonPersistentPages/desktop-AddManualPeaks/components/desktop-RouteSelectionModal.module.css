@@ -1,0 +1,102 @@
+.desktop-route-selection-modal__content {
+  background: var(--c-white);
+  border-radius: 20px;
+  width: 95%;
+  max-width: 1100px;
+  height: 85vh;
+  max-height: 850px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(var(--rgb-black), 0.2);
+  border: 1px solid var(--c-gray-200);
+}
+
+.desktop-route-selection-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--c-gray-200);
+  flex-shrink: 0;
+  background-color: var(--c-white);
+}
+
+.desktop-route-selection-modal__header h2 {
+  margin: 0;
+  color: var(--c-gray-900);
+  flex: 1;
+}
+
+.desktop-route-selection-modal__close {
+  background-color: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  cursor: pointer;
+  color: var(--c-gray-600);
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+  margin-left: 16px;
+}
+
+.desktop-route-selection-modal__close:hover {
+  background-color: var(--c-gray-100);
+  color: var(--c-gray-900);
+  transform: rotate(90deg);
+}
+
+.desktop-route-selection-modal__main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.desktop-route-selection-modal__filters-wrapper {
+  padding: 12px 28px;
+  border-bottom: 1px solid var(--c-gray-200);
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.desktop-route-selection-modal__routes-wrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.desktop-route-selection-modal__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 32px;
+  color: var(--c-gray-600);
+}
+
+.desktop-route-selection-modal__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 32px;
+}
+
+.desktop-route-selection-modal__retry {
+  padding: 12px 20px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.desktop-route-selection-modal__retry:hover {
+  opacity: 0.9;
+}

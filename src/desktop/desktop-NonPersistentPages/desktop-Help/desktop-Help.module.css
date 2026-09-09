@@ -1,0 +1,351 @@
+/* Help.module.css - Simple FAQ design */
+
+.help-page {
+  min-height: 100dvh;
+  padding: calc(16px + env(safe-area-inset-top)) 16px
+    calc(16px + env(safe-area-inset-bottom)) 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.help-page__header {
+  text-align: center;
+  margin: 50px 0 32px 0;
+}
+
+.help-page__title {
+  color: #0f172a;
+  margin: 0;
+}
+
+.help-page__faq {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.help-page__faq-item {
+  border-top: 1px solid var(--c-gray-200);
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+.help-page__faq-item:first-child {
+  border-top: 1px solid var(--c-gray-200);
+}
+
+.help-page__faq-item:last-child {
+  border-bottom: 1px solid var(--c-gray-200);
+}
+
+.help-page__faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.help-page__faq-question-text {
+  color: #0f172a;
+  flex: 1;
+}
+
+.help-page__faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+  padding: 0 0 0 0;
+}
+
+.help-page__faq-answer--open {
+  max-height: 1000px;
+  padding: 0 0 20px 0;
+}
+
+.help-page__faq-answer p {
+  margin: 0;
+  color: #475569;
+  white-space: pre-line;
+}
+
+/* Install content styles */
+.help-page__install-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-page__install-text {
+  margin: 0;
+  color: #475569;
+  white-space: pre-line;
+}
+
+.help-page__install-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
+}
+
+.help-page__install-button:hover {
+  background: #2563eb;
+}
+
+.help-page__install-button:disabled {
+  background: var(--c-gray-400);
+  opacity: 0.7;
+}
+
+/* Install steps styles */
+.help-page__install-steps {
+  background: var(--c-gray-50);
+  border: 1px solid var(--c-gray-200);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.help-page__back-button-steps {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: white;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+}
+
+.help-page__steps-title {
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.help-page__steps-subtitle {
+  color: #64748b;
+  margin: 0 0 20px 0;
+}
+
+.help-page__platform-toggle {
+  display: flex;
+  background: var(--c-gray-200);
+  border-radius: 6px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.help-page__toggle-option {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.help-page__toggle-option--active {
+  background: white;
+  color: #0f172a;
+  box-shadow: 0 1px 2px rgba(var(--rgb-black), 0.1);
+}
+
+.help-page__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-page__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.help-page__step-icon {
+  background: #3b82f6;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.help-page__step-number {
+  color: #0f172a;
+  min-width: 20px;
+  flex-shrink: 0;
+}
+
+.help-page__step-text {
+  color: #0f172a;
+  flex: 1;
+}
+
+.help-page__step-text strong {
+  color: #3b82f6;
+}
+
+/* Contact Form Styles */
+.help-page__contact {
+  margin-top: 48px;
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(var(--rgb-black), 0.1);
+}
+
+.help-page__contact-title {
+  color: #0f172a;
+  margin: 0 0 24px 0;
+}
+
+.help-page__contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.help-page__contact-field {
+  margin-bottom: 0;
+}
+
+.help-page__contact-input,
+.help-page__contact-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 4px;
+  color: #64748b;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.help-page__contact-input:focus,
+.help-page__contact-textarea:focus {
+  outline: none;
+  border-color: #3056d3;
+}
+
+.help-page__contact-textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.help-page__contact-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #3056d3;
+  background: #3056d3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.help-page__contact-button:hover:not(:disabled) {
+  background: rgba(48, 86, 211, 0.9);
+}
+
+.help-page__contact-button:disabled {
+  background: #cbd5e1;
+  border-color: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.help-page__contact-loading {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: help-page__spin 1s linear infinite;
+}
+
+@keyframes help-page__spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.help-page__contact-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  text-align: center;
+  gap: 24px;
+}
+
+.help-page__contact-success-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+  animation: help-page__success-scale 0.4s ease-out;
+}
+
+@keyframes help-page__success-scale {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.help-page__contact-success-message {
+  color: #059669;
+  animation: help-page__fade-in 0.5s ease-out;
+}
+
+@keyframes help-page__fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

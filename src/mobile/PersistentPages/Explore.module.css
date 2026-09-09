@@ -1,0 +1,324 @@
+/* Main Container */
+.explore__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 100%;
+  background: var(--c-gray-100);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Remove old header styles - now handled by SharedHeader */
+
+/* Filters Panel */
+.explore__filters {
+  position: fixed;
+  top: 112px;
+  left: 0;
+  right: 0;
+  z-index: 49;
+  background: var(--c-white);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.04);
+}
+
+.explore__filters--visible {
+  max-height: 350px;
+}
+
+.explore__filters-content {
+  padding: 16px;
+  overflow: visible; /* Ensure content can overflow */
+}
+
+/* Grid Container - Add bottom padding for navbar clearance */
+.explore__grid-container {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: calc(72px + env(safe-area-inset-top));
+  min-height: calc(100svh - (72px + env(safe-area-inset-top)));
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
+}
+
+.explore__grid-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Peak Cells */
+.explore__peak-cell {
+  overflow: hidden;
+  background: var(--c-gray-800);
+  border: 1px solid var(--c-gray-400);
+  box-sizing: border-box;
+}
+
+.explore__peak-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.explore__peak-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--rgb-black), 0.3);
+  z-index: 1;
+}
+
+.explore__peak-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.explore__peak-name {
+  color: var(--c-white);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  width: 100%;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 4px rgba(var(--rgb-black), 0.8);
+}
+
+/* Special cells allow 3 lines for peak names */
+.explore__peak-cell--special .explore__peak-name {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.explore__peak-details {
+  color: rgba(var(--rgb-white), 0.95);
+
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  text-shadow: 0 1px 3px rgba(var(--rgb-black), 0.8);
+}
+
+/* Special cells allow 3 lines for peak details */
+.explore__peak-cell--special .explore__peak-details {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.explore__peak-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  filter: drop-shadow(0 2px 4px rgba(var(--rgb-black), 0.6));
+}
+
+.explore__peak-elevation-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* User Rows */
+.explore__user-row {
+  background: var(--c-white);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--c-gray-400);
+  position: relative;
+}
+
+.explore__search-button {
+  width: 40px;
+  height: 40px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 8px;
+}
+
+.explore__user-more-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 8px;
+}
+
+.explore__user-more-button:active {
+  color: #374151;
+  transform: scale(0.95);
+}
+
+.explore__user-img-container {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.explore__user-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--c-gray-200);
+}
+
+.explore__user-img-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c-gray-200), var(--c-gray-100));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-gray-400);
+
+  border: 2px solid var(--c-gray-200);
+}
+
+.explore__user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.explore__user-name {
+  color: #1f2937;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.explore__user-peaks {
+  color: #6b7280;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Loading Spinner */
+.explore__loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.explore__loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.explore__no-results {
+  text-align: center;
+  padding: 60px 32px;
+  background: linear-gradient(135deg, var(--c-white), var(--c-gray-50));
+  margin: 32px 16px;
+  border-radius: 10px;
+}
+
+.explore__no-results-title {
+  color: var(--c-gray-900);
+  margin-bottom: 8px;
+}
+
+.explore__no-results-subtitle {
+  color: var(--c-gray-600);
+}
+
+.explore__end-message {
+  text-align: center;
+  padding: 32px;
+  margin-bottom: calc(74px + env(safe-area-inset-bottom));
+}
+
+.explore__end-message-text {
+  color: var(--c-gray-600);
+}
+
+/* Loading more section - Simple spinner */
+.explore__loading-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 24px calc(48px + env(safe-area-inset-bottom)) 24px;
+}
+
+.explore__loading-more span {
+  color: #64748b;
+}

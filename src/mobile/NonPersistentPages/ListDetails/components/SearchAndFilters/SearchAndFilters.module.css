@@ -1,0 +1,409 @@
+/* SearchAndFilters.module.css - Search and Filters Component with BEM naming */
+
+/* Block: searchAndFilters */
+.searchAndFilters {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--background-color, var(--c-gray-100));
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Element: searchWrapper */
+.searchAndFilters__searchWrapper {
+  width: 100%;
+}
+
+/* Element: searchInputContainer */
+.searchAndFilters__searchInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Element: searchIcon */
+.searchAndFilters__searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Element: searchInput */
+.searchAndFilters__searchInput {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 5px;
+  background-color: white;
+  color: #1e293b;
+  box-shadow: 0 2px 4px rgba(var(--rgb-black), 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  min-height: 48px;
+}
+
+/* Modifier: searchInput focused */
+.searchAndFilters__searchInput:focus {
+  outline: none;
+  border-color: #0a2540;
+  box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.1);
+}
+
+/* Element: searchInput placeholder */
+.searchAndFilters__searchInput::placeholder {
+  color: #94a3b8;
+}
+
+/* Element: searchClearButton */
+.searchAndFilters__searchClearButton {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  padding: 4px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+/* Modifier: searchClearButton hover */
+
+/* Modifier: searchClearButton active */
+.searchAndFilters__searchClearButton:active {
+  transform: scale(0.95);
+}
+
+/* Element: dropdownsRow */
+.searchAndFilters__dropdownsRow {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Element: sortDropdown */
+.searchAndFilters__sortDropdown {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Element: filterDropdown */
+.searchAndFilters__filterDropdown {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Element: dropdownButton */
+.searchAndFilters__dropdownButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 5px;
+  background-color: white;
+  color: #64748b;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-shadow: 0 2px 4px rgba(var(--rgb-black), 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.searchAndFilters__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.searchAndFilters__actionBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.searchAndFilters__actionBtn--secondary {
+  background: rgba(10, 37, 64, 0.1);
+  color: #0a2540;
+  border: 1px solid rgba(10, 37, 64, 0.2);
+}
+
+.searchAndFilters__actionBtn--primary {
+  background: #0a2540;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(10, 37, 64, 0.3);
+}
+
+.searchAndFilters__actionBtn:active {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+
+
+/* Modifier: dropdownButton for all filter */
+.searchAndFilters__dropdownButton--all {
+  border-color: #0a2540;
+  color: #0a2540;
+}
+
+/* Modifier: dropdownButton for completed filter */
+.searchAndFilters__dropdownButton--completed {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+/* Modifier: dropdownButton for missing filter */
+.searchAndFilters__dropdownButton--missing {
+  border-color: #f97316;
+  color: #f97316;
+}
+
+/* Element: dropdownButton span */
+.searchAndFilters__dropdownButton span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  min-width: 0;
+}
+
+/* Modifier: dropdownButton disabled */
+.searchAndFilters__dropdownButton:disabled {
+  opacity: 0.7;
+  transform: none;
+}
+
+/* Element: dropdownButton svg */
+.searchAndFilters__dropdownButton svg {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+/* Modifier: chevron rotated */
+.searchAndFilters__chevronRotated {
+  transform: rotate(180deg);
+}
+
+/* Modifier: chevron hidden */
+.searchAndFilters__chevronHidden {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+/* Element: loadingSpinner */
+.searchAndFilters__loadingSpinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Element: dropdownMenu */
+.searchAndFilters__dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid var(--c-gray-200);
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(var(--rgb-black), 0.15);
+  z-index: 1000;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  animation: dropdownSlideIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Element: dropdownSection */
+.searchAndFilters__dropdownSection {
+  border: none;
+}
+
+/* Modifier: dropdownSection last child */
+.searchAndFilters__dropdownSection:last-child {
+  border-bottom: none;
+}
+
+/* Element: dropdownTitle */
+.searchAndFilters__dropdownTitle {
+  padding: 12px 16px 8px;
+  color: #64748b;
+  text-transform: uppercase;
+  background: var(--c-gray-50);
+}
+
+/* Element: dropdownItem */
+.searchAndFilters__dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  outline: none;
+  box-shadow: none;
+  background: white;
+  color: #64748b;
+  text-align: left;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Element: dropdownItem before pseudo-element */
+.searchAndFilters__dropdownItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(10, 37, 64, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+/* Modifier: dropdownItem active */
+.searchAndFilters__dropdownItem--active {
+  background: #0a2540;
+  color: white;
+}
+
+/* Modifier: dropdownItem active before pseudo-element */
+.searchAndFilters__dropdownItem--active::before {
+  display: none;
+}
+
+/* Modifier: dropdownItem disabled */
+.searchAndFilters__dropdownItem--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Element: dropdownItem arrow */
+.searchAndFilters__arrow {
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+/* Element: filterIcon */
+.searchAndFilters__filterIcon {
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+/* Modifier: dropdownItem for all filter */
+.searchAndFilters__dropdownItem--all {
+  border-left: 3px solid #0a2540;
+}
+
+/* Modifier: dropdownItem for completed filter */
+.searchAndFilters__dropdownItem--completed {
+  border-left: 3px solid #22c55e;
+}
+
+/* Modifier: dropdownItem for missing filter */
+.searchAndFilters__dropdownItem--missing {
+  border-left: 3px solid #f97316;
+}
+
+/* Modifier: dropdownItem for all filter active */
+.searchAndFilters__dropdownItem--all.searchAndFilters__dropdownItem--active {
+  background: #0a2540;
+  color: white;
+}
+
+/* Modifier: dropdownItem for completed filter active */
+.searchAndFilters__dropdownItem--completed.searchAndFilters__dropdownItem--active {
+  background: #22c55e;
+  color: white;
+}
+
+/* Modifier: dropdownItem for missing filter active */
+.searchAndFilters__dropdownItem--missing.searchAndFilters__dropdownItem--active {
+  background: #f97316;
+  color: white;
+}
+
+/* Small screen adjustments */
+@media (max-width: 350px) {
+  .searchAndFilters {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .searchAndFilters__searchWrapper {
+    gap: 8px;
+  }
+
+  .searchAndFilters__searchInput {
+    padding: 10px 14px 10px 40px;
+    min-height: 44px;
+  }
+
+  .searchAndFilters__searchIcon {
+    left: 10px;
+  }
+
+   .searchAndFilters__searchClearButton {
+    right: 10px;
+  }
+}

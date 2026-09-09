@@ -1,0 +1,67 @@
+.routeMapContainer {
+  position: absolute;
+  inset: 0;
+  background: var(--c-black);
+}
+
+.mapContainer {
+  position: absolute;
+  inset: 0;
+}
+
+/* Mapbox controls styling */
+.mapboxgl-ctrl-group {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.15) !important;
+}
+
+.mapboxgl-ctrl-group button {
+  border-radius: 8px !important;
+}
+
+.mapboxgl-ctrl-zoom-in,
+.mapboxgl-ctrl-zoom-out {
+  background: rgba(var(--rgb-white), 0.9) !important;
+  color: #2c3e50 !important;
+}
+
+.mapboxgl-popup {
+  max-width: 300px !important;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.15) !important;
+  padding: 16px !important;
+}
+
+.mapboxgl-popup-close-button {
+  color: var(--c-gray-600) !important;
+  padding: 8px !important;
+}
+
+/* Compass — hidden when north, fades in on rotation/tilt */
+:global(.mapboxgl-ctrl-top-right) {
+  top: var(--compass-top, calc(env(safe-area-inset-top) + 142px));
+  right: 16px;
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+:global(.mapboxgl-ctrl-top-right:not([data-compass-visible="true"])) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group) {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  overflow: hidden;
+}
+
+:global(.mapboxgl-ctrl-top-right .mapboxgl-ctrl-group button) {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}

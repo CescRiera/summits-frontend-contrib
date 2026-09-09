@@ -1,0 +1,328 @@
+.modal-challenges__content {
+  width: 100%;
+  height: min(82dvh, 760px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 24px 24px 0 0;
+  background: #ffffff;
+  box-shadow: 0 -14px 40px rgba(15, 23, 42, 0.24);
+  will-change: transform, opacity;
+}
+
+.modal-challenges__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+}
+
+.modal-challenges__title-container {
+  min-width: 0;
+}
+
+.modal-challenges__title {
+  margin: 0;
+  color: #0f172a;
+}
+
+.modal-challenges__subtitle {
+  display: block;
+  margin-top: 2px;
+  color: #64748b;
+}
+
+.modal-challenges__close-button {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-challenges__close-button:active {
+  opacity: 0.65;
+}
+
+.modal-challenges__search {
+  padding: 0 14px 12px;
+}
+
+.modal-challenges__search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 14px;
+  background: rgba(248, 250, 252, 0.88);
+  color: #64748b;
+}
+
+.modal-challenges__search-input:focus-within {
+  border-color: rgba(var(--rgb-color-accent), 0.75);
+  box-shadow: 0 0 0 3px rgba(var(--rgb-color-accent), 0.14);
+}
+
+.modal-challenges__search-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+}
+
+.modal-challenges__search-input input:focus {
+  outline: none;
+}
+
+.modal-challenges__search-input input::placeholder {
+  color: #94a3b8;
+}
+
+.modal-challenges__search-clear {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.06);
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-challenges__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 12px calc(14px + env(safe-area-inset-bottom));
+  overscroll-behavior: contain;
+}
+
+.modal-challenges__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-challenges-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.modal-challenges-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-challenges-card__summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+.modal-challenges-card__image-wrap {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  box-shadow:
+    0 4px 12px rgba(var(--rgb-black), 0.18),
+    0 1px 4px rgba(var(--rgb-black), 0.12);
+  transition: box-shadow 0.2s ease;
+}
+
+.modal-challenges-card__image,
+.modal-challenges-card__image-fallback {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-challenges-card__image {
+  object-fit: cover;
+}
+
+.modal-challenges-card__image-fallback {
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+}
+
+.modal-challenges-card__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-challenges-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-challenges-card__title {
+  margin: 0;
+  color: #0f172a;
+  transition: color 0.2s ease;
+}
+
+.modal-challenges-card__meta-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: #475569;
+  transition: color 0.2s ease;
+}
+
+.modal-challenges-card__footer {
+  display: flex;
+  gap: 8px;
+  transition: border-color 0.2s ease;
+}
+
+
+
+.modal-challenges-card__action-button {
+  flex: 1;
+  height: 36px;
+  min-width: 0;
+  padding: 0 12px;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.modal-challenges-card__action-button--select {
+  background: rgba(15, 23, 42, 0.04);
+  color: #0f172a;
+}
+
+.modal-challenges-card__action-button--selected {
+  background: rgba(var(--rgb-color-accent), 0.22);
+  border-color: rgba(var(--rgb-color-accent), 1);
+  color: #0f172a;
+}
+
+.modal-challenges-card__action-button:not(.modal-challenges-card__action-button--select) {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.modal-challenges-card__action-button--joined {
+  background: rgba(var(--rgb-color-accent), 0.18);
+  color: #253041;
+}
+
+.modal-challenges-card__button-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.modal-challenges-card__action-button--joined .modal-challenges-card__button-spinner {
+  border-color: rgba(37, 48, 65, 0.2);
+  border-top-color: #253041;
+}
+
+.modal-challenges__loading-container,
+.modal-challenges__empty {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.modal-challenges__empty h3,
+.modal-challenges__empty p {
+  margin: 0;
+}
+
+.modal-challenges__empty {
+  color: #475569;
+}
+
+.modal-challenges__empty-btn {
+  min-width: 88px;
+  height: 34px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(var(--rgb-color-accent), 0.18);
+  color: #314158;
+}
+
+.modal-challenges__loading-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(15, 23, 42, 0.1);
+  border-top: 3px solid var(--color-accent-dark);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-challenges__loading-text {
+  color: #64748b;
+}
+
+.modal-challenges-card__creator {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 4px;
+}
+
+.modal-challenges-card__creator-image {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e2e8f0;
+}
+
+.modal-challenges-card__creator-name {
+  color: #475569;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

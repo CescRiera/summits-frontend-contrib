@@ -1,0 +1,10 @@
+# Native mobile projects are not needed for Vercel web deployments
+android
+ios
+
+# Local build outputs
+dist
+dev-dist
+
+# Local caches
+node_modules/.cache
