@@ -881,7 +881,6 @@
 
 .map-controls__filter-buttons {
   display: flex;
-  flex: 1;
   flex-wrap: nowrap;
   gap: 8px;
   pointer-events: auto;
