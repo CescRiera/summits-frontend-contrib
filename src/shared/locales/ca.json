@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "refugi de muntanya guardat",
-      "wilderness_hut": "refugi remot sense guardes",
-      "shelter": "refugi d'emergència"
+      "alpine_hut": "Refugi guardat",
+      "wilderness_hut": "Refugi lliure",
+      "shelter": "Refugi d'emergència"
     },
     "intro": {
       "default": "Això és un {type}.",

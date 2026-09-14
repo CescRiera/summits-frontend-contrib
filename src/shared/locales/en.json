@@ -2283,8 +2283,8 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "staffed mountain hut",
-      "wilderness_hut": "remote unmanned hut",
+      "alpine_hut": "Staffed hut",
+      "wilderness_hut": "Unmanned hut",
       "shelter": "Emergency shelter"
     },
     "intro": {

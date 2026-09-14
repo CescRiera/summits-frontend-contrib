@@ -2283,8 +2283,8 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "有人管理的山间小屋",
-      "wilderness_hut": "无人管理的偏远小屋",
+      "alpine_hut": "有人值守小屋",
+      "wilderness_hut": "无人值守小屋",
       "shelter": "紧急避难所"
     },
     "intro": {

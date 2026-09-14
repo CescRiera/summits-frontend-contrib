@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "горная хижина с присмотром",
-      "wilderness_hut": "отдалённая хижина без присмотра",
-      "shelter": "экстренный приют"
+      "alpine_hut": "Хижина с присмотром",
+      "wilderness_hut": "Хижина без присмотра",
+      "shelter": "Аварийный приют"
     },
     "intro": {
       "default": "Это {type}.",

@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "strzeżone schronisko górskie",
-      "wilderness_hut": "niestrzeżone schronisko górskie",
-      "shelter": "schronisko awaryjne"
+      "alpine_hut": "Schronisko strzeżone",
+      "wilderness_hut": "Schronisko niestrzeżone",
+      "shelter": "Schronisko awaryjne"
     },
     "intro": {
       "default": "To jest {type}.",

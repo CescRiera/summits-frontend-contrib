@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "refuge gardé",
-      "wilderness_hut": "refuge non gardé",
-      "shelter": "abri d'urgence"
+      "alpine_hut": "Refuge gardé",
+      "wilderness_hut": "Refuge non gardé",
+      "shelter": "Abri d'urgence"
     },
     "intro": {
       "default": "Il s'agit d'un {type}.",

@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "rifugio alpino gestito",
-      "wilderness_hut": "rifugio alpino non gestito",
-      "shelter": "riparo d'emergenza"
+      "alpine_hut": "Rifugio gestito",
+      "wilderness_hut": "Rifugio non gestito",
+      "shelter": "Riparo d'emergenza"
     },
     "intro": {
       "default": "Si tratta di un {type}.",

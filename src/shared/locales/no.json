@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "betjent fjellhytte",
-      "wilderness_hut": "ubetjent fjellhytte",
-      "shelter": "nødhjem"
+      "alpine_hut": "Betjent hytte",
+      "wilderness_hut": "Ubetjent hytte",
+      "shelter": "Nødhjem"
     },
     "intro": {
       "default": "Dette er en {type}.",

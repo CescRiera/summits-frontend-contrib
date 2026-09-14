@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "mandatu gabeko mendiko aterpea",
-      "wilderness_hut": "mandatu gabeko aterpe urruna",
-      "shelter": "larrialdiko aterpea"
+      "alpine_hut": "Aterpe zaindua",
+      "wilderness_hut": "Aterpe librea",
+      "shelter": "Larrialdiko aterpea"
     },
     "intro": {
       "default": "Hau da {type} bat.",

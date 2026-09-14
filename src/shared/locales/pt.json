@@ -2283,9 +2283,9 @@
   },
   "shelterDetails": {
     "type": {
-      "alpine_hut": "abrigo de montanha guardado",
-      "wilderness_hut": "abrigo remoto não guardado",
-      "shelter": "abrigo de emergência"
+      "alpine_hut": "Abrigo guardado",
+      "wilderness_hut": "Abrigo livre",
+      "shelter": "Abrigo de emergência"
     },
     "intro": {
       "default": "Este é um {type}.",
