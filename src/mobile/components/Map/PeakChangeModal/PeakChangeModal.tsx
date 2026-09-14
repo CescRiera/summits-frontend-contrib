@@ -224,7 +224,7 @@ const PeakChangeModal: React.FC<PeakChangeModalProps> = ({
   const isCreate = mode === "create";
 
   return (
-    <AppModal open={open} onClose={handleClose} variant="dialog" hidden={hidden} contentClassName={styles["peak-change-modal"]}>
+    <AppModal open={open} onClose={handleClose} variant="fullscreen" hidden={hidden} contentClassName={styles["peak-change-modal"]}>
       {success ? (
         <div className={styles["peak-change-modal__success-msg"]}>
           <h2 className={`${styles["peak-change-modal__success-title"]} typography-title-medium`}>

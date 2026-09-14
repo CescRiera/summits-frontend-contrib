@@ -302,7 +302,7 @@ const ShelterChangeModal: React.FC<ShelterChangeModalProps> = ({
   );
 
   return (
-    <AppModal open={open} onClose={handleClose} variant="dialog" hidden={hidden} contentClassName={styles["shelter-change-modal"]}>
+    <AppModal open={open} onClose={handleClose} variant="fullscreen" hidden={hidden} contentClassName={styles["shelter-change-modal"]}>
       {success ? (
         <div className={styles["shelter-change-modal__success-msg"]}>
           <h2 className={`${styles["shelter-change-modal__success-title"]} typography-title-medium`}>

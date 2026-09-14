@@ -339,7 +339,12 @@
       "globeView": "Widok 3D globusa",
       "outdoors": "Teren",
       "satellite": "Satelita",
-      "terrainView": "Teren 3D"
+      "terrainView": "Teren 3D",
+      "showPeaks": "Pokaż szczyty",
+      "hidePeaks": "Ukryj szczyty",
+      "showShelters": "Pokaż schroniska",
+      "hideShelters": "Ukryj schroniska",
+      "config": "Ustawienia mapy"
     },
     "visiblePeaks": {
       "title": "Widoczne szczyty",

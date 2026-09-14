@@ -339,7 +339,12 @@
       "globeView": "3D вид глобуса",
       "outdoors": "Снаружи",
       "satellite": "Спутник",
-      "terrainView": "3D рельеф"
+      "terrainView": "3D рельеф",
+      "showPeaks": "Показать вершины",
+      "hidePeaks": "Скрыть вершины",
+      "showShelters": "Показать убежища",
+      "hideShelters": "Скрыть убежища",
+      "config": "Настройки карты"
     },
     "visiblePeaks": {
       "title": "Видимые вершины",

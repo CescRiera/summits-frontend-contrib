@@ -339,7 +339,12 @@
       "globeView": "Vue Globe 3D",
       "outdoors": "Extérieur",
       "satellite": "Satellite",
-      "terrainView": "Terrain 3D"
+      "terrainView": "Terrain 3D",
+      "showPeaks": "Afficher les sommets",
+      "hidePeaks": "Masquer les sommets",
+      "showShelters": "Afficher les refuges",
+      "hideShelters": "Masquer les refuges",
+      "config": "Paramètres de la carte"
     },
     "visiblePeaks": {
       "title": "Sommets visibles",

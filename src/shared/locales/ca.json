@@ -339,7 +339,12 @@
       "globeView": "Vista de globus 3D",
       "outdoors": "Exterior",
       "satellite": "Satèl·lit",
-      "terrainView": "Terreny 3D"
+      "terrainView": "Terreny 3D",
+      "showPeaks": "Mostrar pics",
+      "hidePeaks": "Amagar pics",
+      "showShelters": "Mostrar refugis",
+      "hideShelters": "Amagar refugis",
+      "config": "Configuració del mapa"
     },
     "visiblePeaks": {
       "title": "Cims visibles",

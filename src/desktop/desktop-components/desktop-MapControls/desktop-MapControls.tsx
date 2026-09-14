@@ -365,6 +365,10 @@ interface MapControlsProps {
   selectedShelterId: number | null;
   selectedShelterData: ShelterData | null;
   onCloseShelterDetails: () => void;
+  isPeaksVisible: boolean;
+  onTogglePeaks: (enabled: boolean) => void;
+  isSheltersVisible: boolean;
+  onToggleShelters: (enabled: boolean) => void;
 }
 
 const MapControls: React.FC<MapControlsProps> = ({
@@ -387,6 +391,10 @@ const MapControls: React.FC<MapControlsProps> = ({
   selectedShelterId,
   selectedShelterData,
   onCloseShelterDetails,
+  isPeaksVisible,
+  onTogglePeaks,
+  isSheltersVisible,
+  onToggleShelters,
 }) => {
   const { formatMeters } = useUnitFormat();
   const { t } = useI18n();
@@ -1876,7 +1884,7 @@ const MapControls: React.FC<MapControlsProps> = ({
         )}
       </AnimatePresence>
 
-      {/* Bottom Left: MapLayers Icon */}
+      {/* Bottom Right: MapLayers Icon + Peaks/Shelters Toggles */}
       <div className={styles["map-controls__bottom-right"]}>
         <button
           className={styles["map-controls__create-peak-btn"]}
@@ -1887,6 +1895,36 @@ const MapControls: React.FC<MapControlsProps> = ({
           aria-label={t("peakChange.mapButtonLabel")}
         >
           <Plus size={20} />
+        </button>
+        <button
+          type="button"
+          className={`${styles["map-controls__toggle-btn"]} ${
+            isPeaksVisible ? "" : styles["map-controls__toggle-btn--off"]
+          }`}
+          onClick={() => onTogglePeaks(!isPeaksVisible)}
+          aria-pressed={isPeaksVisible}
+          title={
+            isPeaksVisible
+              ? t("map.controls.hidePeaks")
+              : t("map.controls.showPeaks")
+          }
+        >
+          <MountainIcon size={22} color={isPeaksVisible ? "#1f2937" : "#9ca3af"} />
+        </button>
+        <button
+          type="button"
+          className={`${styles["map-controls__toggle-btn"]} ${
+            isSheltersVisible ? "" : styles["map-controls__toggle-btn--off"]
+          }`}
+          onClick={() => onToggleShelters(!isSheltersVisible)}
+          aria-pressed={isSheltersVisible}
+          title={
+            isSheltersVisible
+              ? t("map.controls.hideShelters")
+              : t("map.controls.showShelters")
+          }
+        >
+          <ShelterIcon size={22} color={isSheltersVisible ? "#1f2937" : "#9ca3af"} />
         </button>
         <MapLayersDropdown
         onStyleChange={onStyleChange}

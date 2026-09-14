@@ -339,7 +339,12 @@
       "globeView": "3D Globe View",
       "outdoors": "Outdoors",
       "satellite": "Satellite",
-      "terrainView": "3D Terrain"
+      "terrainView": "3D Terrain",
+      "showPeaks": "Show peaks",
+      "hidePeaks": "Hide peaks",
+      "showShelters": "Show shelters",
+      "hideShelters": "Hide shelters",
+      "config": "Map settings"
     },
     "visiblePeaks": {
       "title": "Visible Peaks",

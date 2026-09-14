@@ -85,6 +85,16 @@ const Map: React.FC = () => {
     return savedTerrainEnabled !== null ? savedTerrainEnabled === "true" : true;
   };
 
+  const getInitialPeaksVisible = (): boolean => {
+    const saved = localStorage.getItem("peaksVisible");
+    return saved !== null ? saved === "true" : true;
+  };
+
+  const getInitialSheltersVisible = (): boolean => {
+    const saved = localStorage.getItem("sheltersVisible");
+    return saved !== null ? saved === "true" : true;
+  };
+
   // Refs
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
@@ -148,6 +158,12 @@ const Map: React.FC = () => {
   );
   const [isTerrainEnabled, setIsTerrainEnabled] = useState<boolean>(
     () => getInitialTerrainEnabled()
+  );
+  const [isPeaksVisible, setIsPeaksVisible] = useState<boolean>(
+    () => getInitialPeaksVisible()
+  );
+  const [isSheltersVisible, setIsSheltersVisible] = useState<boolean>(
+    () => getInitialSheltersVisible()
   );
   const [mapInstanceReady, setMapInstanceReady] = useState(false);
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -620,6 +636,41 @@ const Map: React.FC = () => {
     [clearVisiblePeaksTimer, scheduleVisiblePeaksRefresh]
   );
 
+  // Keep the layer manager in sync with the tile peaks/shelters visibility toggles
+  useEffect(() => {
+    layerManagerRef.current?.setPeaksVisible(isPeaksVisible);
+  }, [isPeaksVisible]);
+
+  useEffect(() => {
+    layerManagerRef.current?.setSheltersVisible(isSheltersVisible);
+  }, [isSheltersVisible]);
+
+  const handlePeaksToggle = useCallback(
+    (enabled: boolean) => {
+      trackEvent("map_layer_toggle", `peaks_${enabled ? "on" : "off"}`);
+      setIsPeaksVisible(enabled);
+      try {
+        localStorage.setItem("peaksVisible", enabled.toString());
+      } catch {
+        // Ignore storage write failures (e.g. private mode)
+      }
+    },
+    [trackEvent]
+  );
+
+  const handleSheltersToggle = useCallback(
+    (enabled: boolean) => {
+      trackEvent("map_layer_toggle", `shelters_${enabled ? "on" : "off"}`);
+      setIsSheltersVisible(enabled);
+      try {
+        localStorage.setItem("sheltersVisible", enabled.toString());
+      } catch {
+        // Ignore storage write failures (e.g. private mode)
+      }
+    },
+    [trackEvent]
+  );
+
   /**
    * Initialize map
    */
@@ -759,6 +810,10 @@ const Map: React.FC = () => {
 
     // Update layer manager's current style to match the initial style
     layerManagerRef.current.setCurrentStyle(initialStyleUrl);
+
+    // Restore peaks/shelters visibility from localStorage
+    layerManagerRef.current.setPeaksVisible(getInitialPeaksVisible());
+    layerManagerRef.current.setSheltersVisible(getInitialSheltersVisible());
 
     // Set initial elevation range
     layerManagerRef.current.setElevationRange(elevationRange);
@@ -1500,6 +1555,10 @@ const Map: React.FC = () => {
           selectedShelterId={selectedShelterId}
           selectedShelterData={selectedShelterData}
           onCloseShelterDetails={handleCloseShelterDetails}
+          isPeaksVisible={isPeaksVisible}
+          onTogglePeaks={handlePeaksToggle}
+          isSheltersVisible={isSheltersVisible}
+          onToggleShelters={handleSheltersToggle}
         />
       </div>
 

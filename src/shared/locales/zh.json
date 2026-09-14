@@ -339,7 +339,12 @@
       "globeView": "3D地球视图",
       "outdoors": "户外",
       "satellite": "卫星",
-      "terrainView": "3D地形"
+      "terrainView": "3D地形",
+      "showPeaks": "显示山峰",
+      "hidePeaks": "隐藏山峰",
+      "showShelters": "显示庇护所",
+      "hideShelters": "隐藏庇护所",
+      "config": "地图设置"
     },
     "visiblePeaks": {
       "title": "可见山峰",

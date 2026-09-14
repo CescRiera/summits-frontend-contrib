@@ -13,8 +13,8 @@
 }
 
 .layerButton {
-  background: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(var(--rgb-gray-300), 0.7);
   border-radius: 12px;
   padding: 12px;
   color: #1f2937;
@@ -306,8 +306,8 @@
 }
 
 .geolocationButton__button {
-  background: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(var(--rgb-gray-300), 0.7);
   border-radius: 50%;
   padding: 12px;
   color: #1f2937;

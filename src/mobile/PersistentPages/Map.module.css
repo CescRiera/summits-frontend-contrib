@@ -306,38 +306,69 @@
   background: var(--color-primary-darker, #0d47a1);
 }
 
-.map__nearby-toggle {
+.map__nearby-btn {
   position: absolute;
-  bottom: calc(80px + env(safe-area-inset-bottom));
-  left: 16px;
+  bottom: calc(188px + env(safe-area-inset-bottom));
+  right: 20px;
   z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map__nearby-btn--hidden {
+  opacity: 0;
+  transform: translateX(100px);
+  pointer-events: none;
+}
+
+.map__nearby-btn__button {
+  background: rgba(var(--rgb-white), 0.98);
+  border: 1px solid rgba(var(--rgb-gray-300), 0.7);
+  border-radius: 12px;
+  padding: 12px;
+  color: #1f2937;
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(var(--rgb-white), 0.9);
-  padding: 12px 14px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(var(--rgb-black), 0.1);
-  transition: all 0.3s ease;
-  pointer-events: auto;
-  user-select: none;
-  -webkit-user-select: none;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.08), 0 2px 8px rgba(var(--rgb-black), 0.05),
+    inset 0 1px 0 rgba(var(--rgb-white), 0.8);
+  position: relative;
+  overflow: hidden;
 }
 
-.map__nearby-toggle--hidden {
-  opacity: 0;
+.map__nearby-btn__button::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 2px;
+  background: #f43f5e;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(var(--rgb-white), 0.9), 0 1px 3px rgba(244, 63, 94, 0.4);
+  clip-path: inset(0% 0% 0% 0%);
+  transition: clip-path 0.55s cubic-bezier(0.22, 1, 0.36, 1);
   pointer-events: none;
-  transform: translateY(10px);
+  will-change: clip-path;
 }
 
-.map__checkbox {
-  width: 18px;
-  height: 18px;
-  accent-color: #5f7440;
+.map__nearby-btn__button--on::after {
+  clip-path: inset(100% 100% 0% 0%);
 }
 
-.map__label {
-  color: var(--c-gray-900);
+.map__nearby-btn__button > svg {
+  position: relative;
+  z-index: 1;
+}
+
+.map__nearby-btn__button:active {
+  transform: scale(0.95);
 }
 
 /* Peak Location Confirm Bar */
@@ -372,98 +403,6 @@
 
 .map__pick-confirm-accept:active {
   background: var(--color-primary-darker, #0d47a1);
-}
-
-/* Submit Peak Button */
-.map__submit-peak-btn {
-  position: absolute;
-  bottom: calc(188px + env(safe-area-inset-bottom));
-  right: 20px;
-  z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.map__submit-peak-btn--hidden {
-  opacity: 0;
-  transform: translateX(100px);
-  pointer-events: none;
-}
-
-.map__submit-peak-btn__button {
-  background: var(--color-accent);
-  border: 1px solid var(--color-accent);
-  border-radius: 50%;
-  padding: 12px;
-  color: #1f2937;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
-  width: 44px;
-  height: 44px;
-  box-sizing: border-box;
-  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.08), 0 2px 8px rgba(var(--rgb-black), 0.05),
-    inset 0 1px 0 rgba(var(--rgb-white), 0.8);
-  position: relative;
-  overflow: hidden;
-}
-
-.map__submit-peak-btn__button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.1) 0%,
-    rgba(16, 185, 129, 0.08) 100%
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: inherit;
-}
-
-.map__submit-peak-btn__button:active {
-  transform: scale(0.95);
-}
-
-/* Offline Maps Button (dark navy, distinct from submit-peak, left side) */
-.map__offline-btn {
-  position: absolute;
-  bottom: calc(134px + env(safe-area-inset-bottom));
-  left: 20px;
-  z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.map__offline-btn--hidden {
-  opacity: 0;
-  transform: translateX(-100px);
-  pointer-events: none;
-}
-
-.map__offline-btn__button {
-  background: var(--c-gray-800);
-  border: 1px solid var(--c-gray-800);
-  border-radius: 50%;
-  padding: 12px;
-  color: var(--c-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
-  width: 44px;
-  height: 44px;
-  box-sizing: border-box;
-  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12), 0 2px 8px rgba(var(--rgb-black), 0.08);
-}
-
-.map__offline-btn__button:active {
-  transform: scale(0.95);
 }
 
 /* Compass — hidden when north, fades in on rotation/tilt */

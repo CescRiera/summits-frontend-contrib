@@ -339,7 +339,12 @@
       "globeView": "3D-globusvisning",
       "outdoors": "Utendørs",
       "satellite": "Satellitt",
-      "terrainView": "3D-terreng"
+      "terrainView": "3D-terreng",
+      "showPeaks": "Vis topper",
+      "hidePeaks": "Skjul topper",
+      "showShelters": "Vis hytter",
+      "hideShelters": "Skjul hytter",
+      "config": "Kartinnstillinger"
     },
     "visiblePeaks": {
       "title": "Synlige topper",

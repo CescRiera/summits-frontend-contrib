@@ -8,7 +8,7 @@ import React, {
   Suspense,
 } from "react";
 import { useSearchParams, useLocation } from "react-router-dom";
-import { Plus, Crosshair, X, WifiOff } from "lucide-react";
+import { Crosshair, X } from "lucide-react";
 import mapboxgl from "mapbox-gl";
 import type { MapLayerMouseEvent, MapMouseEvent } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -20,6 +20,7 @@ import {
 } from "../components/Map/MapUtils";
 import { MapLayerManager } from "../components/Map/MapLayers";
 import LayerControl from "../components/Map/LayerControl";
+import MapConfigControl from "../components/Map/MapConfigControl/MapConfigControl";
 import { OfflineRegionsControl } from "../components/OfflineMap/OfflineRegionsControl";
 import MapHeader from "../components/MapHeader/MapHeader";
 import MapChallengesModal from "../components/Map/MapChallengesModal";
@@ -33,6 +34,7 @@ const ShelterDetailsMap = lazy(
   () => import("../components/Map/ShelterDetailsMap/ShelterDetailsMap")
 );
 import LoginRequiredPopup from "../components/LoginRequiredPopup";
+import MountainIcon from "../../shared/components/MountainIcon/MountainIcon";
 import { useNavbarVisibility } from "../context/NavbarVisibilityContext";
 import { useMapNavigation } from "../context/MapNavigationContext";
 import type { PeakData } from "../context/MapNavigationContext";
@@ -462,6 +464,16 @@ const Map: React.FC = () => {
     return savedTerrainEnabled !== null ? savedTerrainEnabled === "true" : true;
   };
 
+  const getInitialPeaksVisible = (): boolean => {
+    const saved = localStorage.getItem("peaksVisible");
+    return saved !== null ? saved === "true" : true;
+  };
+
+  const getInitialSheltersVisible = (): boolean => {
+    const saved = localStorage.getItem("sheltersVisible");
+    return saved !== null ? saved === "true" : true;
+  };
+
   // State
   const [selectedPeakId, setSelectedPeakId] = useState<number | null>(null);
   const [selectedShelterId, setSelectedShelterId] = useState<number | null>(null);
@@ -479,6 +491,12 @@ const Map: React.FC = () => {
   );
   const [isTerrainEnabled, setIsTerrainEnabled] = useState<boolean>(
     () => getInitialTerrainEnabled()
+  );
+  const [isPeaksVisible, setIsPeaksVisible] = useState<boolean>(
+    () => getInitialPeaksVisible()
+  );
+  const [isSheltersVisible, setIsSheltersVisible] = useState<boolean>(
+    () => getInitialSheltersVisible()
   );
   const isOnline = useOnlineStatus();
   const [isUIHidden, setIsUIHidden] = useState<boolean>(false);
@@ -716,6 +734,15 @@ const Map: React.FC = () => {
       layerManagerRef.current.setNearbyPeaksEnabled(isNearbyPeaksEnabled);
     }
   }, [isNearbyPeaksEnabled]);
+
+  // Keep the layer manager in sync with the tile peaks/shelters visibility toggles
+  useEffect(() => {
+    layerManagerRef.current?.setPeaksVisible(isPeaksVisible);
+  }, [isPeaksVisible]);
+
+  useEffect(() => {
+    layerManagerRef.current?.setSheltersVisible(isSheltersVisible);
+  }, [isSheltersVisible]);
 
   // URL params → map state (processes whenever URL params change)
   const [searchParams] = useSearchParams();
@@ -1272,6 +1299,10 @@ const Map: React.FC = () => {
 
     // Update layer manager's current style to match the initial style
     layerManagerRef.current.setCurrentStyle(initialStyleUrl);
+
+    // Restore peaks/shelters visibility from localStorage
+    layerManagerRef.current.setPeaksVisible(getInitialPeaksVisible());
+    layerManagerRef.current.setSheltersVisible(getInitialSheltersVisible());
 
     // Set initial elevation range
     layerManagerRef.current.setElevationRange(elevationRange);
@@ -1916,6 +1947,39 @@ const Map: React.FC = () => {
     }
   }, [trackEvent]);
 
+  /**
+   * Show/hide tile peaks (peak-symbols + peak-labels).
+   * Only affects the default tile peaks, not list/challenge or user peaks.
+   */
+  const handlePeaksToggle = useCallback(
+    (enabled: boolean) => {
+      trackEvent("map_layer_toggle", `peaks_${enabled ? "on" : "off"}`);
+      setIsPeaksVisible(enabled);
+      try {
+        localStorage.setItem("peaksVisible", enabled.toString());
+      } catch {
+        // Ignore storage write failures (e.g. private mode)
+      }
+    },
+    [trackEvent]
+  );
+
+  /**
+   * Show/hide tile shelters (shelter-symbols + shelter-labels).
+   */
+  const handleSheltersToggle = useCallback(
+    (enabled: boolean) => {
+      trackEvent("map_layer_toggle", `shelters_${enabled ? "on" : "off"}`);
+      setIsSheltersVisible(enabled);
+      try {
+        localStorage.setItem("sheltersVisible", enabled.toString());
+      } catch {
+        // Ignore storage write failures (e.g. private mode)
+      }
+    },
+    [trackEvent]
+  );
+
   // Show error state if WebGL is not available
   if (webglError) {
     return (
@@ -2039,32 +2103,39 @@ const Map: React.FC = () => {
         onAreaSelect={handleSearchAreaSelect}
       />
 
-      {/* Nearby Peaks Toggle - Bottom Left */}
+      {/* All Peaks Toggle (peaks icon) - top of right controls stack */}
       {(mapFilters.activeFilter.type === "user-peaks" ||
         mapFilters.activeFilter.type === "list-detail") && (
-        <label
-          className={`${styles["map__nearby-toggle"]} ${
-            isUIHidden || !!selectedPeakId
-              ? styles["map__nearby-toggle--hidden"]
+        <div
+          className={`${styles["map__nearby-btn"]} ${
+            isUIHidden || !!selectedPeakId || isPickingPeakLocation
+              ? styles["map__nearby-btn--hidden"]
               : ""
           }`}
         >
-          <input
-            type="checkbox"
-            checked={isNearbyPeaksEnabled}
-            onChange={(e) => {
-              const enabled = e.target.checked;
+          <button
+            type="button"
+            className={`${styles["map__nearby-btn__button"]} ${
+              isNearbyPeaksEnabled ? styles["map__nearby-btn__button--on"] : ""
+            }`}
+            onClick={() => {
+              const enabled = !isNearbyPeaksEnabled;
               setIsNearbyPeaksEnabled(enabled);
-              trackEvent("filter_change", `map_nearby_peaks_${enabled ? "on" : "off"}`);
+              trackEvent(
+                "filter_change",
+                `map_nearby_peaks_${enabled ? "on" : "off"}`
+              );
             }}
-            className={styles["map__checkbox"]}
-          />
-          <span
-            className={`${styles["map__label"]} typography-body-medium`}
+            aria-pressed={isNearbyPeaksEnabled}
+            aria-label={t("main.allPeaks")}
+            title={t("main.allPeaks")}
           >
-            {t("main.allPeaks")}
-          </span>
-        </label>
+            <MountainIcon
+              size={20}
+              color={isNearbyPeaksEnabled ? "#1f2937" : "#9ca3af"}
+            />
+          </button>
+        </div>
       )}
 
       {/* Peak Location Picker Overlay */}
@@ -2103,42 +2174,19 @@ const Map: React.FC = () => {
         </div>
       )}
 
-      {/* Submit Peak Button */}
-      <div
-        className={`${styles["map__submit-peak-btn"]} ${
-          isUIHidden || !!selectedPeakId || isPickingPeakLocation
-            ? styles["map__submit-peak-btn--hidden"]
-            : ""
-        }`}
-      >
-        <button
-          className={styles["map__submit-peak-btn__button"]}
-          onClick={() => {
-            setEntityTab("peak");
-            setShowCreateModal(true);
-          }}
-          aria-label={t("peakChange.mapButtonLabel")}
-        >
-          <Plus size={20} />
-        </button>
-      </div>
-
-      {/* Offline Maps Button */}
-      <div
-        className={`${styles["map__offline-btn"]} ${
-          isUIHidden || !!selectedPeakId || isPickingPeakLocation
-            ? styles["map__offline-btn--hidden"]
-            : ""
-        }`}
-      >
-        <button
-          className={styles["map__offline-btn__button"]}
-          onClick={() => setIsOfflineModalOpen(true)}
-          aria-label={t("offline.title")}
-        >
-          <WifiOff size={20} />
-        </button>
-      </div>
+      {/* Map config (add peak/shelter, offline zones, show/hide peaks & shelters) */}
+      <MapConfigControl
+        visible={!isUIHidden && !selectedPeakId && !isPickingPeakLocation}
+        peaksVisible={isPeaksVisible}
+        sheltersVisible={isSheltersVisible}
+        onTogglePeaks={() => handlePeaksToggle(!isPeaksVisible)}
+        onToggleShelters={() => handleSheltersToggle(!isSheltersVisible)}
+        onOpenOffline={() => setIsOfflineModalOpen(true)}
+        onOpenCreate={() => {
+          setEntityTab("peak");
+          setShowCreateModal(true);
+        }}
+      />
 
       {/* Peak Change Create Modal */}
       <PeakChangeModal

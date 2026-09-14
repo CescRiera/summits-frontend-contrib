@@ -339,7 +339,12 @@
       "globeView": "3D globo-ikuspegia",
       "outdoors": "Kanpoa",
       "satellite": "Satelitea",
-      "terrainView": "3D lurra"
+      "terrainView": "3D lurra",
+      "showPeaks": "Erakutsi tontorrak",
+      "hidePeaks": "Ezkutatu tontorrak",
+      "showShelters": "Erakutsi aterpeak",
+      "hideShelters": "Ezkutatu aterpeak",
+      "config": "Maparen ezarpenak"
     },
     "visiblePeaks": {
       "title": "Ikusgai dauden gailurrak",

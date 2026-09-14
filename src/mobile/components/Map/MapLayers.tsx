@@ -121,6 +121,8 @@ export class MapLayerManager {
   private currentListGeoJson: ListPeaksGeoJSONResponse | null = null;
   private currentVisualizationMode: "tile" | "user" | "list" = "tile";
   private isNearbyPeaksEnabled: boolean = false;
+  private isPeaksVisible: boolean = true;
+  private isSheltersVisible: boolean = true;
   private listPeakBaseFilters: Map<string, FilterSpecification> = new Map();
   private cachedExcludedIds: number[] = [];
   private lastExclusionSource: string | null = null;
@@ -367,13 +369,22 @@ export class MapLayerManager {
   private restoreVisualizationMode(): void {
     if (!this.isValid()) return;
 
-    const tileVisibility =
+    const baseTileVisibility =
       this.currentVisualizationMode === "tile" || this.isNearbyPeaksEnabled
         ? LAYER_VISIBILITY.VISIBLE
         : LAYER_VISIBILITY.NONE;
 
-    // Shelter layers always visible when tile peaks are visible
-    const shelterVisibility = tileVisibility;
+    // Tile peaks respect the separate "peaks visible" toggle (only tile peaks)
+    const tileVisibility =
+      baseTileVisibility === LAYER_VISIBILITY.VISIBLE && this.isPeaksVisible
+        ? LAYER_VISIBILITY.VISIBLE
+        : LAYER_VISIBILITY.NONE;
+
+    // Shelter layers respect the separate "shelters visible" toggle
+    const shelterVisibility =
+      baseTileVisibility === LAYER_VISIBILITY.VISIBLE && this.isSheltersVisible
+        ? LAYER_VISIBILITY.VISIBLE
+        : LAYER_VISIBILITY.NONE;
 
     switch (this.currentVisualizationMode) {
       case "user":
@@ -396,14 +407,8 @@ export class MapLayerManager {
         break;
       case "tile":
       default:
-        this.setLayersVisibility(
-          LAYER_IDS.TILE_PEAKS,
-          LAYER_VISIBILITY.VISIBLE
-        );
-        this.setLayersVisibility(
-          LAYER_IDS.TILE_SHELTERS,
-          LAYER_VISIBILITY.VISIBLE
-        );
+        this.setLayersVisibility(LAYER_IDS.TILE_PEAKS, tileVisibility);
+        this.setLayersVisibility(LAYER_IDS.TILE_SHELTERS, shelterVisibility);
         this.setLayersVisibility(LAYER_IDS.USER_PEAKS, LAYER_VISIBILITY.NONE);
         this.setLayersVisibility(LAYER_IDS.LIST_PEAKS, LAYER_VISIBILITY.NONE);
         break;
@@ -420,6 +425,25 @@ export class MapLayerManager {
     this.isNearbyPeaksEnabled = enabled;
     this.restoreVisualizationMode();
     // updateTileLayerFilters is called inside restoreVisualizationMode
+  }
+
+  /**
+   * Show/hide tile peaks (peak-symbols + peak-labels).
+   * Only affects the default tile peaks, not list/challenge or user peaks.
+   */
+  public setPeaksVisible(visible: boolean): void {
+    if (this.isPeaksVisible === visible) return;
+    this.isPeaksVisible = visible;
+    this.restoreVisualizationMode();
+  }
+
+  /**
+   * Show/hide tile shelters (shelter-symbols + shelter-labels).
+   */
+  public setSheltersVisible(visible: boolean): void {
+    if (this.isSheltersVisible === visible) return;
+    this.isSheltersVisible = visible;
+    this.restoreVisualizationMode();
   }
 
   /**

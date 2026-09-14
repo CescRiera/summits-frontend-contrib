@@ -339,7 +339,12 @@
       "globeView": "3D球体表示",
       "outdoors": "屋外",
       "satellite": "衛星",
-      "terrainView": "3D地形"
+      "terrainView": "3D地形",
+      "showPeaks": "山頂を表示",
+      "hidePeaks": "山頂を非表示",
+      "showShelters": "避難小屋を表示",
+      "hideShelters": "避難小屋を非表示",
+      "config": "地図設定"
     },
     "visiblePeaks": {
       "title": "表示可能なピーク",

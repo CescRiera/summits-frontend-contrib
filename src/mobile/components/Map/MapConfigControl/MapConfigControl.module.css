@@ -1,0 +1,118 @@
+.config {
+  position: absolute;
+  left: 20px;
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.config__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.config__menu-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(var(--rgb-gray-300), 0.6);
+  background: rgba(var(--rgb-white), 0.98);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12), 0 2px 8px rgba(var(--rgb-black), 0.08);
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.3s ease, background 0.3s ease;
+  outline: none;
+  overflow: hidden;
+}
+
+.config__menu-btn::before,
+.config__menu-btn::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+  will-change: clip-path;
+  transition: clip-path 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.config__menu-btn::before {
+  inset: 0;
+  background: linear-gradient(135deg, rgba(var(--rgb-gray-100), 0.95), rgba(var(--rgb-gray-200), 0.95));
+  clip-path: inset(100% 100% 0% 0%);
+}
+
+.config__menu-btn::after {
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 2px;
+  background: #f43f5e;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(var(--rgb-white), 0.9), 0 1px 3px rgba(244, 63, 94, 0.4);
+  z-index: 2;
+  clip-path: inset(100% 100% 0% 0%);
+}
+
+.config__menu-btn > svg {
+  position: relative;
+  z-index: 1;
+}
+
+.config__menu-btn:active {
+  transform: scale(0.92);
+}
+
+.config__menu-btn--off::before,
+.config__menu-btn--off::after {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.config__menu-btn--create {
+  background: rgba(var(--rgb-white), 0.98);
+  border-color: rgba(var(--rgb-gray-300), 0.6);
+  color: #1f2937;
+}
+
+.config__menu-btn--offline {
+  background: rgba(var(--rgb-white), 0.98);
+  border-color: rgba(var(--rgb-gray-300), 0.6);
+  color: #1f2937;
+}
+
+.config__toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(var(--rgb-gray-300), 0.7);
+  background: rgba(var(--rgb-white), 0.98);
+  box-shadow: 0 4px 16px rgba(var(--rgb-black), 0.12), 0 2px 8px rgba(var(--rgb-black), 0.08);
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.15s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+.config__toggle:active {
+  transform: scale(0.92);
+}
+
+.config__toggle--active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #1f2937;
+}
