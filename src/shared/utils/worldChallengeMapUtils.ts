@@ -301,7 +301,7 @@ export const PEAK_LABEL_PAINT: mapboxgl.SymbolPaint =
 
 export const CLUSTER_PAINT = {
   "circle-color": "#7D8A5B",
-  "circle-radius": ["step", ["get", "point_count"], 15, 10, 20, 50, 25, 100, 30],
+  "circle-radius": ["step", ["get", "point_count"], 14, 10, 17, 50, 21, 100, 25],
   "circle-stroke-width": 2,
   "circle-stroke-color": "#B5A48B",
 } as mapboxgl.CirclePaint;
@@ -409,7 +409,7 @@ export const initializeWorldChallengeLayers = (
         cluster: true,
         clusterMaxZoom: 11,
         clusterMinPoints: 5,
-        clusterRadius: 35,
+        clusterRadius: 60,
       });
     }
 

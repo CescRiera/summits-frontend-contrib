@@ -239,11 +239,6 @@ const AppInstallBanner: React.FC = () => {
     return null;
   }
 
-  const storeLabel =
-    platform === "ios"
-      ? t("appInstallBanner.appStore")
-      : t("appInstallBanner.googlePlay");
-
   return (
     <div
       className={styles["banner"]}
@@ -260,7 +255,6 @@ const AppInstallBanner: React.FC = () => {
       </div>
 
       <div className={styles["copy"]}>
-        <div className={`${styles["eyebrow"]} typography-label-small`}>{storeLabel}</div>
         <div className={`${styles["title"]} typography-title-small`}>
           {t("appInstallBanner.title")}
         </div>

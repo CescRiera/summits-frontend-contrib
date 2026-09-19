@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Plus, WifiOff, Settings } from "lucide-react";
+import { Plus, WifiOff, SlidersHorizontal } from "lucide-react";
 import MountainIcon from "../../../../shared/components/MountainIcon/MountainIcon";
 import ShelterIcon from "../../../../shared/components/ShelterIcon/ShelterIcon";
 import styles from "./MapConfigControl.module.css";
@@ -126,7 +126,7 @@ const MapConfigControl: React.FC<MapConfigControlProps> = ({
         aria-expanded={isOpen}
         aria-label={t("map.controls.config")}
       >
-        <Settings size={20} color="#1f2937" />
+        <SlidersHorizontal size={20} color="#1f2937" />
       </button>
     </div>
   );
