@@ -260,7 +260,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
   background: white;
   border-top: 1px solid var(--c-gray-100);
   box-shadow: 0 -10px 20px rgba(var(--rgb-black), 0.05);

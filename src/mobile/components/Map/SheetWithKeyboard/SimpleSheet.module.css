@@ -54,6 +54,7 @@
   /* Prevent pull-to-refresh when at top */
   overscroll-behavior-y: contain;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Header styles - entire header is draggable */

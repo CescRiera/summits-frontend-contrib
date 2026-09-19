@@ -137,7 +137,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  padding: 16px;
+  padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--c-gray-200);
   background-color: var(--c-gray-50);
   position: fixed;

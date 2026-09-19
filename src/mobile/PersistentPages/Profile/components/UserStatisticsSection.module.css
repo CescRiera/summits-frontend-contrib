@@ -331,11 +331,13 @@
   flex-direction: row;
   animation: fadeIn 0.3s ease;
   position: relative;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .userStats__modalHeader {
   position: absolute;
-  top: 8px;
+  top: calc(8px + env(safe-area-inset-top));
   left: 8px;
   z-index: 10;
 }
