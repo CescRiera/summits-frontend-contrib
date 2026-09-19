@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "提案を送信 / エラーを報告",
     "contactDeveloper": "開発者に連絡",
     "donate": "寄付",
-    "donateQuestion": "寄付する？",
+    "donateQuestion": "貢献してみませんか？",
     "donateTitle": "Summitsをサポート",
     "donateMessage": "Summitsは利益を生まない個人的なプロジェクトで、私自己的資金で賄っています。どのような寄付でも雰囲し、アプリの改善と維持に貢献します。使用していただきありがとうございます！",
     "donateButton": "寄付",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "チャレンジを退出",
       "leaveConfirmMessage": "'{name}'チャレンジを退出しますか？進捗は失われません。再参加できます。",
       "noCreatedChallenges": "まだチャレンジを作成していません。"
-    }
+    },
+    "helpResponseMessage": "アプリに関するご質問はいつでもご連絡ください。数時間以内にお返事します。",
+    "contribute": "Summitsに貢献する",
+    "contributeIntro": "Summitsは個人プロジェクトで、愛情を込めて作られ、非営利で、自分の資金で運営されています。よろしければ、成長と改善を手伝ってください。",
+    "contributeCollaboratorsTitle": "Summitsを広める",
+    "contributeCollaboratorsText": "アプリの宣伝を手伝ってくれるマーケティングやソーシャルメディア（TikTok/Instagram動画など）に携わる方を探しています。SummitsのSNSアカウントへのアクセスを提供します。",
+    "contributeContentTitle": "コンテンツを追加",
+    "contributeContentText": "写真がない山頂に写真を追加したり、地図にない新しい山頂や山小屋を追加したり、誤って設定されているものを修正したりすることでも貢献できます。",
+    "contributeDonateTitle": "寄付",
+    "contributeDonateText": "そして最も直接的な方法で支援したい場合は、サーバー費用を賄いアプリを改善し続けるための寄付をすることができます。",
+    "contributeContactTitle": "連絡する",
+    "contributeContactText": "質問や提案、他の方法での貢献があれば、メッセージを送ってください。数時間以内に返信します。",
+    "contributeContactPlaceholder": "メッセージを送ってください。数時間以内に返信します。"
   },
   "externalProfile": {
     "userClubs": "{userName}のクラブ",
@@ -1879,16 +1891,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "避難小屋（シェルター）がSummitsに登場",
-    "close": "すごい！",
-    "refugios": {
-      "headline": "80,000+ の避難小屋",
-      "subtitle": "世界中の保存済み・無料の避難小屋がSummitsに登場。",
-      "findOnMap": "地図や探索ページで見つけられます。",
-      "addManually": "見つからない場合は、地図から手動で追加できます。",
-      "saveFavorites": "お気に入りに保存して、いつでもすぐにアクセスできます。",
-      "community": "ご協力いただけると大変ありがたく、コミュニティの助けになります。"
-    }
+    "title": "更新情報",
+    "close": "最高！",
+    "offline": "インターネット接続なしでのアプリ利用を修正しました。",
+    "map": "マップ左下の設定ボタンで山頂や山小屋を非表示にできるようになりました。",
+    "contribute": "アプリのマーケティングとプロモーションを手伝ってくれる人を探しています。プロフィールから連絡できます。"
   },
   "clubs": {
     "availableClubs": "利用可能なクラブ",

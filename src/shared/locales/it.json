@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Invia suggerimenti / Segnala errori",
     "contactDeveloper": "Contatta lo Sviluppatore",
     "donate": "Dona",
-    "donateQuestion": "Dona?",
+    "donateQuestion": "Vuoi contribuire?",
     "donateTitle": "Sostieni Summits",
     "donateMessage": "Summits è un progetto personale che non genera alcun profitto e che mantengo con i miei soldi. Qualsiasi donazione sarà apprezzata e aiuterà a migliorare e mantenere l’app. Grazie per usarla!",
     "donateButton": "Dona",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Abbandona Sfida",
       "leaveConfirmMessage": "Vuoi abbandonare la sfida '{name}'? I tuoi progressi non andranno persi e potrai unirti di nuovo in qualsiasi momento.",
       "noCreatedChallenges": "Non hai ancora creato nessuna sfida."
-    }
+    },
+    "helpResponseMessage": "Contattami per qualsiasi aiuto con l'app. Riceverai una risposta entro poche ore al massimo.",
+    "contribute": "Contribuisci a Summits",
+    "contributeIntro": "Summits è un progetto personale, fatto con amore, senza scopo di lucro e mantenuto con le mie stesse risorse. Se vuoi, puoi aiutarmi a farlo crescere e migliorare.",
+    "contributeCollaboratorsTitle": "Promuovi Summits",
+    "contributeCollaboratorsText": "Cerco qualcuno che voglia far parte del progetto aiutando con il marketing o i social media (video TikTok/Instagram, ecc.) per promuovere l'app. Ti darò accesso ai profili social di Summits.",
+    "contributeContentTitle": "Aggiungi contenuti",
+    "contributeContentText": "Puoi anche contribuire aggiungendo foto a vette che non ne hanno, aggiungendo nuove vette o rifugi che non appaiono sulla mappa, o correggendo quelli posizionati male.",
+    "contributeDonateTitle": "Dona",
+    "contributeDonateText": "E se vuoi aiutare nel modo più diretto, puoi fare una donazione per aiutare a pagare il server e continuare a migliorare l'app.",
+    "contributeContactTitle": "Contattami",
+    "contributeContactText": "Se hai domande, suggerimenti o vuoi contribuire in altro modo, scrivimi e ti risponderò entro poche ore al massimo.",
+    "contributeContactPlaceholder": "Scrivimi un messaggio e ti risponderò in poche ore."
   },
   "externalProfile": {
     "userClubs": "Club di {userName}",
@@ -1879,16 +1891,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "I rifugi arrivano su Summits",
+    "title": "Novità",
     "close": "Fantastico!",
-    "refugios": {
-      "headline": "80.000+ Rifugi",
-      "subtitle": "Rifugi salvati e liberi da tutto il mondo, ora su Summits.",
-      "findOnMap": "Trovateli sulla mappa o nella pagina esplora.",
-      "addManually": "Ne manca uno? Aggiungilo manualmente dalla pagina della mappa.",
-      "saveFavorites": "Salvali nei preferiti per averli sempre a portata di mano.",
-      "community": "Ogni contributo è apprezzato e aiuta la comunità."
-    }
+    "offline": "Corretto l'uso dell'app senza connessione internet.",
+    "map": "Ora puoi nascondere vette o rifugi sulla mappa con il pulsante delle impostazioni (in basso a sinistra).",
+    "contribute": "Cerco qualcuno che mi aiuti con il marketing e la promozione dell'app. Puoi contattarmi dal tuo profilo."
   },
   "clubs": {
     "availableClubs": "Club disponibili",

@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Envoyer des suggestions / Signaler des erreurs",
     "contactDeveloper": "Contacter le Développeur",
     "donate": "Faire un don",
-    "donateQuestion": "Faire un don ?",
+    "donateQuestion": "Vous voulez contribuer ?",
     "donateTitle": "Soutenir Summits",
     "donateMessage": "Summits est un projet personnel qui ne génère aucun bénéfice et que je finance avec mon propre argent. Toute donation sera appréciée et aidera à améliorer et maintenir l’application. Merci de l’utiliser !",
     "donateButton": "Faire un don",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Quitter le Défi",
       "leaveConfirmMessage": "Voulez-vous quitter le défi '{name}' ? Vos progrès ne seront pas perdus et vous pourrez le rejoindre à tout moment.",
       "noCreatedChallenges": "Vous n'avez pas encore créé de défi."
-    }
+    },
+    "helpResponseMessage": "Contactez-moi pour toute aide concernant l'application. Vous aurez une réponse en quelques heures au maximum.",
+    "contribute": "Contribuer à Summits",
+    "contributeIntro": "Summits est un projet personnel, fait avec amour, sans but lucratif et financé par mes propres ressources. Si vous le souhaitez, vous pouvez m'aider à le faire grandir et à l'améliorer.",
+    "contributeCollaboratorsTitle": "Faire la promotion de Summits",
+    "contributeCollaboratorsText": "Je cherche une personne qui souhaite faire partie du projet en m'aidant avec le marketing ou les réseaux sociaux (vidéos TikTok/Instagram, etc.) pour faire connaître l'application. Je vous donnerai accès aux comptes de réseaux sociaux de Summits.",
+    "contributeContentTitle": "Ajouter du contenu",
+    "contributeContentText": "Vous pouvez aussi contribuer en ajoutant des photos sur des sommets qui n'en ont pas, en ajoutant de nouveaux sommets ou refuges qui n'apparaissent pas sur la carte, ou en corrigeant ceux qui sont mal placés.",
+    "contributeDonateTitle": "Faire un don",
+    "contributeDonateText": "Et si vous voulez aider de la façon la plus directe, vous pouvez faire un don pour aider à payer le serveur et continuer à améliorer l'application.",
+    "contributeContactTitle": "Me contacter",
+    "contributeContactText": "Si vous avez des questions, des suggestions ou si vous voulez contribuer d'une autre manière, écrivez-moi et je vous répondrai dans quelques heures au maximum.",
+    "contributeContactPlaceholder": "Écrivez-moi un message et je vous répondrai sous quelques heures."
   },
   "externalProfile": {
     "userClubs": "Clubs de {userName}",
@@ -2097,16 +2109,11 @@
     }
   },
   "lastUpdate": {
-    "title": "Les refuges arrivent sur Summits",
-    "close": "Super !",
-    "refugios": {
-      "headline": "80 000+ Refuges",
-      "subtitle": "Des refuges enregistrés et libres du monde entier, maintenant sur Summits.",
-      "findOnMap": "Trouvez-les sur la carte ou sur la page explorer.",
-      "addManually": "Il en manque un ? Ajoutez-le manuellement depuis la carte.",
-      "saveFavorites": "Ajoutez-les à vos favoris pour les garder à portée de main.",
-      "community": "Toute contribution est appréciée et aide la communauté."
-    }
+    "title": "Nouveautés",
+    "close": "Génial !",
+    "offline": "Correction de l'utilisation de l'application sans connexion internet.",
+    "map": "Vous pouvez désormais masquer les sommets ou les refuges sur la carte avec le bouton de réglages (en bas à gauche).",
+    "contribute": "Je cherche une personne pour m'aider avec le marketing et la promotion de l'application. Vous pouvez me contacter depuis votre profil."
   },
   "manualPeaks": {
     "fetchError": "Échec du chargement des sommets. Veuillez réessayer."

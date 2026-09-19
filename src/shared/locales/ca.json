@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Enviar suggeriments / Informar errors",
     "contactDeveloper": "Contactar desenvolupador",
     "donate": "Donar",
-    "donateQuestion": "Vols donar?",
+    "donateQuestion": "Vols contribuir?",
     "donateTitle": "Dona suport a Summits",
     "donateMessage": "Summits és un projecte personal que no genera cap benefici i que mantinc amb els meus diners. Qualsevol donació serà agraïda i ajudarà a millorar i mantenir l'aplicació. Gràcies per utilitzar-la!",
     "donateButton": "Donar",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Abandonar Repte",
       "leaveConfirmMessage": "Vols abandonar el repte '{name}'? Els teus progressos no es perdran i podràs tornar a unir-t'hi quan vulguis.",
       "noCreatedChallenges": "Encara no has creat cap repte."
-    }
+    },
+    "helpResponseMessage": "Contacta amb mi per a qualsevol ajuda amb l'aplicació. Rebràs una resposta en unes poques hores com a màxim.",
+    "contribute": "Contribuir a Summits",
+    "contributeIntro": "Summits és un projecte personal, fet amb estima, sense ànim de lucre i mantingut amb els meus propis recursos. Si vols, pots ajudar-me a fer-lo créixer i millorar.",
+    "contributeCollaboratorsTitle": "Promociona Summits",
+    "contributeCollaboratorsText": "Busco algú que vulgui formar part del projecte ajudant amb el màrqueting o les xarxes socials (vídeos de TikTok/Instagram, etc.) per donar a conèixer l'aplicació. Et donaré accés als comptes de xarxes socials de Summits.",
+    "contributeContentTitle": "Afegeix contingut",
+    "contributeContentText": "També pots contribuir afegint fotos a cims que no en tinguin cap, afegint nous cims o refugis que no apareguin al mapa, o corregint els que estiguin mal situats.",
+    "contributeDonateTitle": "Dona",
+    "contributeDonateText": "I si vols ajudar de la manera més directa, pots fer una donació per ajudar a pagar el servidor i poder continuar millorant l'aplicació.",
+    "contributeContactTitle": "Contacta amb mi",
+    "contributeContactText": "Si tens dubtes, suggeriments o vols contribuir d'una altra manera, escriu-me i et respondré en un termini d'unes poques hores com a màxim.",
+    "contributeContactPlaceholder": "Escriu-me un missatge i et respondré en unes hores."
   },
   "externalProfile": {
     "userClubs": "Clubs de {userName}",
@@ -2100,16 +2112,11 @@
     }
   },
   "lastUpdate": {
-    "title": "Els refugis arriben a Summits",
+    "title": "Novetats",
     "close": "Genial!",
-    "refugios": {
-      "headline": "80.000+ Refugis",
-      "subtitle": "Refugis guardats i lliures de tot el món, ara a Summits.",
-      "findOnMap": "Troba'ls al mapa o a la pàgina d'explorar.",
-      "addManually": "En falta algun? Afegeix-lo manualment des del mapa.",
-      "saveFavorites": "Desa'ls als favorits per tenir-los sempre a prop.",
-      "community": "Qualsevol aportació és apreciada i ajuda a la comunitat."
-    }
+    "offline": "Corregit l'ús de l'aplicació sense connexió a internet.",
+    "map": "Ara pots ocultar cims o refugis al mapa amb el botó de configuració (a baix a l'esquerra).",
+    "contribute": "Busco algú que m'ajudi amb el màrqueting i la promoció de l'aplicació. Pots contactar amb mi des del teu perfil."
   },
   "offline": {
     "banner": "Estàs fora de línia — algunes funcions poden estar limitades",

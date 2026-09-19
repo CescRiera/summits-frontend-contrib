@@ -38,8 +38,8 @@ import { useActivate } from "react-activation";
 import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
 import { useSearchParams } from "react-router-dom";
 import UserStatisticsSection from "./Profile/components/UserStatisticsSection";
-import ContactDeveloperPopup from "./Profile/components/ProfilePopups/ContactDeveloperPopup/ContactDeveloperPopup";
-import DonatePopup from "./Profile/components/ProfilePopups/DonatePopup/DonatePopup";
+import HelpPopup from "./Profile/components/ProfilePopups/HelpPopup/HelpPopup";
+import ContributePopup from "./Profile/components/ProfilePopups/ContributePopup/ContributePopup";
 import LanguageChangePopup from "./Profile/components/ProfilePopups/LanguageChangePopup/LanguageChangePopup";
 import UnitSystemPopup from "./Profile/components/ProfilePopups/UnitSystemPopup/UnitSystemPopup";
 import { formatStatInteger } from "../utils/numberFormatting";
@@ -72,8 +72,8 @@ const Profile: React.FC = () => {
   const [updatingName, setUpdatingName] = useState(false);
   const [stats, setStats] = useState<UserStatsResponse | null>(null);
   const [graph, setGraph] = useState<StatsGraphResponse | null>(null);
-  const [showContactPopup, setShowContactPopup] = useState(false);
-  const [showDonatePopup, setShowDonatePopup] = useState(false);
+  const [showHelpPopup, setShowHelpPopup] = useState(false);
+  const [showContributePopup, setShowContributePopup] = useState(false);
   const [showLanguagePopup, setShowLanguagePopup] = useState(false);
   const [showUnitSystemPopup, setShowUnitSystemPopup] = useState(false);
 
@@ -240,8 +240,8 @@ const Profile: React.FC = () => {
       setShowFollowersBox(false);
       setShowFollowingBox(false);
       setShowPendingBox(false);
-      setShowContactPopup(false);
-      setShowDonatePopup(false);
+      setShowHelpPopup(false);
+      setShowContributePopup(false);
       setShowLanguagePopup(false);
       setShowUnitSystemPopup(false);
     }
@@ -325,7 +325,7 @@ const Profile: React.FC = () => {
       return;
     }
 
-    setShowContactPopup(true);
+    setShowHelpPopup(true);
 
     const nextSearchParams = new URLSearchParams(searchParams);
     nextSearchParams.delete("help");
@@ -368,8 +368,8 @@ const Profile: React.FC = () => {
           <button
             className={`${styles["profile__help-link"]} typography-body-medium`}
             onClick={() => {
-              trackEvent("button_click", "profile_donate_open");
-              setShowDonatePopup(true);
+              trackEvent("button_click", "profile_contribute_open");
+              setShowContributePopup(true);
             }}
           >
             {t("profile.donateQuestion")}
@@ -378,19 +378,19 @@ const Profile: React.FC = () => {
             className={`${styles["profile__help-link"]} typography-body-medium`}
             onClick={() => {
               trackEvent("navigation", "profile_help_open");
-              setShowContactPopup(true);
+              setShowHelpPopup(true);
             }}
           >
             {t("profile.needHelp")}
           </button>
         </div>
-        <DonatePopup
-          isOpen={showDonatePopup}
-          onClose={() => setShowDonatePopup(false)}
+        <ContributePopup
+          isOpen={showContributePopup}
+          onClose={() => setShowContributePopup(false)}
         />
-        <ContactDeveloperPopup
-          isOpen={showContactPopup}
-          onClose={() => setShowContactPopup(false)}
+        <HelpPopup
+          isOpen={showHelpPopup}
+          onClose={() => setShowHelpPopup(false)}
         />
         <LanguageChangePopup
           isOpen={showLanguagePopup}
@@ -1058,9 +1058,9 @@ const Profile: React.FC = () => {
             />
           </div>
         </div>
-        <ContactDeveloperPopup
-          isOpen={showContactPopup}
-          onClose={() => setShowContactPopup(false)}
+        <HelpPopup
+          isOpen={showHelpPopup}
+          onClose={() => setShowHelpPopup(false)}
         />
     </div>
   );

@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Bidali iradokizunak / Jakinarazi erroreak",
     "contactDeveloper": "Jarri harremanetan garatzailearekin",
     "donate": "Dohaintza egin",
-    "donateQuestion": "Dohaintza egin?",
+    "donateQuestion": "Lagundu nahi duzu?",
     "donateTitle": "Lagundu Summits-i",
     "donateMessage": "Summits nire diru propioarekin finantzatzen dudan irabazi pertsonaleko proiektu bat da. Edozein dohaintza eskertzen da eta aplikazioa hobetzen eta mantentzen lagunduko du. Eskerrik asko erabiltzeagatik!",
     "donateButton": "Dohaintza egin",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Utzi erronka",
       "leaveConfirmMessage": "Utzi nahi duzu '{name}' erronka? Zure aurrerapenak ez dira galduko eta edozein momentutan berriro batu zaitezke.",
       "noCreatedChallenges": "Oraindik ez duzu erronkarik sortu."
-    }
+    },
+    "helpResponseMessage": "Jarri harremanetan nirekin aplikazioari buruzko edozein laguntzatarako. Erantzun bat jasoko duzu gehienez pare bat orduetan.",
+    "contribute": "Lagundu Summits-i",
+    "contributeIntro": "Summits maitasunez egina, irabazi asmorik gabea eta nire baliabide propioekin mantendua den proiektu pertsonala da. Nahi baduzu, lagundu diezadakezu hazten eta hobetzen.",
+    "contributeCollaboratorsTitle": "Sustatu Summits",
+    "contributeCollaboratorsText": "Proiektuaren parte izan nahi duen norbaiten bila nabil, marketina edo sare sozialak (TikTok/Instagram bideoak, etab.) lagunduz aplikazioa ezagutarazteko. Summits-en sare sozialetako kontuetarako sarbidea emango dizut.",
+    "contributeContentTitle": "Gehitu edukia",
+    "contributeContentText": "Honen bidez ere lagun dezakezu: gailurretan argazkirik ez dutenei argazkiak gehituz, mapan agertzen ez diren gailur edo aterpe berriak gehituz, edo gaizki kokatuta daudenak zuzenduz.",
+    "contributeDonateTitle": "Dohaintza",
+    "contributeDonateText": "Eta zuzenean lagundu nahi baduzu, dohaintza bat egin dezakezu zerbitzaria ordaintzen eta aplikazioa hobetzen jarraitzeko.",
+    "contributeContactTitle": "Jarri nirekin harremanetan",
+    "contributeContactText": "Galderarik, iradokizunik edo beste modu batean lagundu nahi baduzu, idatz iezadazu eta gehienez pare bat ordu barru erantzungo dizut.",
+    "contributeContactPlaceholder": "Idatzi iezadazu mezu bat eta pare bat ordutan erantzungo dizut."
   },
   "externalProfile": {
     "userClubs": "{userName}-(r)en klubak",
@@ -2097,16 +2109,11 @@
     }
   },
   "lastUpdate": {
-    "title": "Aterpeak Summits-era heltzen dira",
-    "close": "Onena!",
-    "refugios": {
-      "headline": "80.000+ Aterpe",
-      "subtitle": "Gordeta eta libre dauden aterpeak mundu osoan, orain Summits-en.",
-      "findOnMap": "Aurkitu maparen edo arakatu orriaren bidez.",
-      "addManually": "Falta da bat? Gehitu eskuz maparen orritik.",
-      "saveFavorites": "Gorde gogokoetan beti eskura izateko.",
-      "community": "Edozein ekarpen estimatzen da eta komunitateari laguntzen dio."
-    }
+    "title": "Berriak",
+    "close": "Bikain!",
+    "offline": "Internetera konexiorik gabe aplikazioa erabiltzea konponduta.",
+    "map": "Orain gailurrak edo aterpeak ezkuta ditzakezu mapan ezarpen-botoiarekin (ezkerrean, behean).",
+    "contribute": "Marketinean eta aplikazioaren sustapenean lagunduko didan norbaiten bila nabil. Nirekin harremanetan jar zaitezke zure profiletik."
   },
   "manualPeaks": {
     "fetchError": "Ezin izan dira tontorrak kargatu. Saiatu berriro."

@@ -5,20 +5,19 @@ import {
   LogOut,
   Trash2,
   MessageSquare,
-  Mail,
-  DollarSign,
   Ruler,
   Download,
 } from "lucide-react";
+import MountainIcon from "../../../../shared/components/MountainIcon/MountainIcon";
 import { useI18n } from "../../../../shared/context/I18nContext";
 import { useAnalytics } from "../../../../shared/context/AnalyticsContext";
 import LogoutPopup from "./ProfilePopups/LogoutPopup/LogoutPopup";
 import LanguageChangePopup from "./ProfilePopups/LanguageChangePopup/LanguageChangePopup";
 import UnitSystemPopup from "./ProfilePopups/UnitSystemPopup/UnitSystemPopup";
 import DeleteAccountPopup from "./ProfilePopups/DeleteAccountPopup/DeleteAccountPopup";
-import ContactDeveloperPopup from "./ProfilePopups/ContactDeveloperPopup/ContactDeveloperPopup";
+import HelpPopup from "./ProfilePopups/HelpPopup/HelpPopup";
 import SuggestionsPopup from "./ProfilePopups/SuggestionsPopup/SuggestionsPopup";
-import DonatePopup from "./ProfilePopups/DonatePopup/DonatePopup";
+import ContributePopup from "./ProfilePopups/ContributePopup/ContributePopup";
 import WikilocImportPopup from "./ProfilePopups/WikilocImportPopup/WikilocImportPopup";
 import PrivacyToggle from "./PrivacyToggle";
 import NotificationToggle from "./NotificationToggle";
@@ -48,15 +47,15 @@ const ProfileMenu: React.FC<ProfileMenuProps> = ({
   const [showLogoutPopup, setShowLogoutPopup] = useState(false);
   const [showLanguagePopup, setShowLanguagePopup] = useState(false);
   const [showDeleteAccountPopup, setShowDeleteAccountPopup] = useState(false);
-  const [showContactPopup, setShowContactPopup] = useState(false);
+  const [showHelpPopup, setShowHelpPopup] = useState(false);
   const [showSuggestionsPopup, setShowSuggestionsPopup] = useState(false);
-  const [showDonatePopup, setShowDonatePopup] = useState(false);
+  const [showContributePopup, setShowContributePopup] = useState(false);
   const [showUnitSystemPopup, setShowUnitSystemPopup] = useState(false);
   const [showWikilocImportPopup, setShowWikilocImportPopup] = useState(false);
 
   const handleHelp = () => {
     trackEvent("button_click", "profile_menu_help");
-    setShowContactPopup(true);
+    setShowHelpPopup(true);
   };
 
   const handleLogout = () => {
@@ -108,20 +107,11 @@ const ProfileMenu: React.FC<ProfileMenuProps> = ({
       className: styles["menu-item"],
     },
     {
-      icon: <Mail size={20} />,
-      label: t("profile.contactDeveloper"),
+      icon: <MountainIcon size={20} />,
+      label: t("profile.contribute"),
       onClick: () => {
-        trackEvent("button_click", "profile_menu_contact");
-        setShowContactPopup(true);
-      },
-      className: styles["menu-item"],
-    },
-    {
-      icon: <DollarSign size={20} />,
-      label: t("profile.donate"),
-      onClick: () => {
-        trackEvent("button_click", "profile_menu_donate");
-        setShowDonatePopup(true);
+        trackEvent("button_click", "profile_menu_contribute");
+        setShowContributePopup(true);
       },
       className: styles["menu-item"],
     },
@@ -218,9 +208,9 @@ const ProfileMenu: React.FC<ProfileMenuProps> = ({
         onConfirm={onDeleteAccount}
       />
 
-      <ContactDeveloperPopup
-        isOpen={showContactPopup}
-        onClose={() => setShowContactPopup(false)}
+      <HelpPopup
+        isOpen={showHelpPopup}
+        onClose={() => setShowHelpPopup(false)}
       />
 
       <SuggestionsPopup
@@ -228,9 +218,9 @@ const ProfileMenu: React.FC<ProfileMenuProps> = ({
         onClose={() => setShowSuggestionsPopup(false)}
       />
 
-      <DonatePopup
-        isOpen={showDonatePopup}
-        onClose={() => setShowDonatePopup(false)}
+      <ContributePopup
+        isOpen={showContributePopup}
+        onClose={() => setShowContributePopup(false)}
       />
 
       <WikilocImportPopup

@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Wyślij sugestie / Zgłoś błędy",
     "contactDeveloper": "Skontaktuj się z programistą",
     "donate": "Przekaż darowiznę",
-    "donateQuestion": "Przekazać darowiznę?",
+    "donateQuestion": "Chcesz się zaangażować?",
     "donateTitle": "Wesprzyj Summits",
     "donateMessage": "Summits to osobisty projekt, który nie generuje zysku i który finansuję z własnych pieniędzy. Każda darowizna będzie pomocna i pomoże udoskonalić i utrzymać aplikację. Dziękuję za korzystanie z niej!",
     "donateButton": "Przekaż darowiznę",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Opuść wyzwanie",
       "leaveConfirmMessage": "Czy chcesz opuścić wyzwanie '{name}'? Twoje postępy nie zostaną utracone i możesz dołączyć ponownie w dowolnym momencie.",
       "noCreatedChallenges": "Nie utworzyłeś jeszcze żadnych wyzwań."
-    }
+    },
+    "helpResponseMessage": "Skontaktuj się ze mną w sprawie jakiejkolwiek pomocy z aplikacją. Odpowiedź otrzymasz w maksymalnie kilka godzin.",
+    "contribute": "Współtwórz Summits",
+    "contributeIntro": "Summits to projekt osobisty, stworzony z miłością, non-profit i utrzymywany z moich własnych środków. Jeśli chcesz, możesz pomóc mi w jego rozwoju i ulepszaniu.",
+    "contributeCollaboratorsTitle": "Promuj Summits",
+    "contributeCollaboratorsText": "Szukam osoby, która chciałaby włączyć się do projektu, pomagając w marketingu lub mediach społecznościowych (filmy TikTok/Instagram itp.), aby promować aplikację. Dam Ci dostęp do kont mediów społecznościowych Summits.",
+    "contributeContentTitle": "Dodawaj treści",
+    "contributeContentText": "Możesz również pomóc, dodając zdjęcia do szczytów, które ich nie mają, dodając nowe szczyty lub schroniska, których nie ma na mapie, albo poprawiając te, które są źle oznaczone.",
+    "contributeDonateTitle": "Wesprzyj",
+    "contributeDonateText": "A jeśli chcesz pomóc w najprostszy sposób, możesz dokonać darowizny, aby pomóc w opłaceniu serwera i ciągłym ulepszaniu aplikacji.",
+    "contributeContactTitle": "Skontaktuj się ze mną",
+    "contributeContactText": "Jeśli masz pytania, sugestie lub chcesz przyczynić się w inny sposób, napisz do mnie, a odpowiem Ci w ciągu maksymalnie kilku godzin.",
+    "contributeContactPlaceholder": "Napisz do mnie, a odpowiem w ciągu kilku godzin."
   },
   "externalProfile": {
     "userClubs": "Kluby użytkownika {userName}",
@@ -1879,16 +1891,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "Schroniska pojawiają się w Summits",
-    "close": "Świetnie!",
-    "refugios": {
-      "headline": "80 000+ Schronisk",
-      "subtitle": "Zapisane i wolne schroniska z całego świata, teraz w Summits.",
-      "findOnMap": "Znajdź je na mapie lub na stronie odkrywania.",
-      "addManually": "Brakuje któregoś? Dodaj go ręcznie ze strony mapy.",
-      "saveFavorites": "Zapisz je w ulubionych, aby mieć je zawsze pod ręką.",
-      "community": "Każdy wkład jest doceniany i pomaga społeczności."
-    }
+    "title": "Co nowego",
+    "close": "Super!",
+    "offline": "Poprawiono korzystanie z aplikacji bez połączenia z internetem.",
+    "map": "Teraz możesz ukrywać szczyty lub schroniska na mapie przyciskiem ustawień (na dole po lewej).",
+    "contribute": "Szukam osoby, która pomoże mi w marketingu i promocji aplikacji. Możesz się ze mną skontaktować przez swój profil."
   },
   "clubs": {
     "availableClubs": "Dostępne kluby",

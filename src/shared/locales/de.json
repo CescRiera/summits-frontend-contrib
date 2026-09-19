@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Vorschläge senden / Fehler melden",
     "contactDeveloper": "Entwickler kontaktieren",
     "donate": "Spenden",
-    "donateQuestion": "Spenden?",
+    "donateQuestion": "Möchtest du beitragen?",
     "donateTitle": "Summits unterstützen",
     "donateMessage": "Summits ist ein persönliches Projekt, das keinen Gewinn erzielt und das ich aus eigener Tasche finanziere. Jede Spende wird geschätzt und hilft, die App zu verbessern und zu pflegen. Danke, dass Sie sie nutzen!",
     "donateButton": "Spenden",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Herausforderung verlassen",
       "leaveConfirmMessage": "Möchten Sie die Herausforderung '{name}' verlassen? Ihr Fortschritt geht nicht verloren und Sie können jederzeit wieder beitreten.",
       "noCreatedChallenges": "Sie haben noch keine Herausforderungen erstellt."
-    }
+    },
+    "helpResponseMessage": "Kontaktiere mich bei Fragen zur App. Du bekommst innerhalb von maximal ein paar Stunden eine Antwort.",
+    "contribute": "Zu Summits beitragen",
+    "contributeIntro": "Summits ist ein persönliches Projekt, mit Liebe gemacht, gemeinnützig und mit meinen eigenen Ressourcen finanziert. Wenn du möchtest, kannst du mir helfen, es wachsen zu lassen und zu verbessern.",
+    "contributeCollaboratorsTitle": "Summits bewerben",
+    "contributeCollaboratorsText": "Ich suche jemanden, der Teil des Projekts werden möchte und beim Marketing oder in den sozialen Medien (TikTok/Instagram-Videos usw.) hilft, um die App bekannt zu machen. Ich gebe dir Zugang zu den Social-Media-Konten von Summits.",
+    "contributeContentTitle": "Inhalte hinzufügen",
+    "contributeContentText": "Du kannst auch beitragen, indem du Fotos zu Gipfeln hinzufügst, die keines haben, neue Gipfel oder Hütten hinzufügst, die nicht auf der Karte sind, oder solche korrigierst, die falsch platziert sind.",
+    "contributeDonateTitle": "Spenden",
+    "contributeDonateText": "Und wenn du auf direkteste Weise helfen möchtest, kannst du spenden, um den Server zu finanzieren und die App weiter zu verbessern.",
+    "contributeContactTitle": "Kontakt",
+    "contributeContactText": "Wenn du Fragen, Anregungen hast oder auf andere Weise beitragen möchtest, schreib mir und ich melde mich innerhalb von maximal ein paar Stunden bei dir.",
+    "contributeContactPlaceholder": "Schreib mir eine Nachricht und ich melde mich in ein paar Stunden."
   },
   "externalProfile": {
     "userClubs": "{userName}s Clubs",
@@ -2097,16 +2109,11 @@
     }
   },
   "lastUpdate": {
-    "title": "Schutzhütten kommen zu Summits",
+    "title": "Neuigkeiten",
     "close": "Super!",
-    "refugios": {
-      "headline": "80.000+ Schutzhütten",
-      "subtitle": "Gespeicherte und freie Schutzhütten aus aller Welt, jetzt in Summits.",
-      "findOnMap": "Finde sie auf der Karte oder auf der Entdecken-Seite.",
-      "addManually": "Fehlt eines? Füge es manuell von der Kartenseite hinzu.",
-      "saveFavorites": "Speichere sie in deinen Favoriten, um sie griffbereit zu haben.",
-      "community": "Jeder Beitrag wird geschätzt und hilft der Community."
-    }
+    "offline": "Offline-Nutzung der App wurde korrigiert.",
+    "map": "Du kannst jetzt Gipfel oder Hütten auf der Karte mit der Schaltfläche unten links ausblenden.",
+    "contribute": "Ich suche jemanden, der mir beim Marketing und der Vermarktung der App hilft. Du kannst mich über dein Profil kontaktieren."
   },
   "manualPeaks": {
     "fetchError": "Gipfel konnten nicht geladen werden. Bitte versuche es erneut."

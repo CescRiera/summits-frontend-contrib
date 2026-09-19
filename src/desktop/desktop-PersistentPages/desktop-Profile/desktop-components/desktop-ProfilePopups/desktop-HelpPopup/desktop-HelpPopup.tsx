@@ -3,17 +3,14 @@ import { useI18n } from "../../../../../../shared/context/I18nContext";
 import { useAuth } from "../../../../../../shared/context/AuthContext";
 import { contactDeveloper } from "../../../../../../shared/api/endpoints/user";
 import AppModal from "../../../../../../shared/components/AppModal";
-import styles from "./ContactDeveloperPopup.module.css";
+import styles from "./desktop-HelpPopup.module.css";
 
-interface ContactDeveloperPopupProps {
+interface HelpPopupProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
-  isOpen,
-  onClose,
-}) => {
+const HelpPopup: React.FC<HelpPopupProps> = ({ isOpen, onClose }) => {
   const { t } = useI18n();
   const { user } = useAuth();
   const [email, setEmail] = useState(() => {
@@ -53,7 +50,6 @@ const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
       }, 2000);
     } catch (error) {
       console.error("Failed to send message:", error);
-      // You might want to show an error message to the user here
     } finally {
       setIsLoading(false);
     }
@@ -76,45 +72,52 @@ const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
       open={isOpen}
       onClose={onClose}
       variant="dialog"
-      contentClassName={styles["contact-popup__content"]}
-      ariaLabel={t("profile.contactDeveloper")}
+      contentClassName={styles["help-popup__content"]}
+      ariaLabel={t("profile.helpTutorials")}
     >
-
-        <div className={styles["contact-popup__header"]}>
-          <div className={styles["contact-popup__header-text"]}>
+      <div>
+        <div className={styles["help-popup__header"]}>
+          <div className={styles["help-popup__header-text"]}>
             <h2
-              className={`${styles["contact-popup__title"]} typography-title-medium`}
+              className={`${styles["help-popup__title"]} typography-desktop-body-small`}
             >
-              {t("profile.contactDeveloper")}
+              {t("profile.helpTutorials")}
             </h2>
+            <p
+              className={`${styles["help-popup__message"]} typography-desktop-label-medium`}
+            >
+              {t("profile.helpResponseMessage")}
+            </p>
           </div>
         </div>
 
-        <div className={styles["contact-popup__contact-info"]}>
-          <div className={styles["contact-popup__contact-item"]}>
-            <span className="typography-body-small">
+        <div className={styles["help-popup__contact-info"]}>
+          <div className={styles["help-popup__contact-item"]}>
+            <span className="typography-desktop-label-medium">
               cesc.riera@summitstracker.com
             </span>
           </div>
-          <div className={styles["contact-popup__contact-item"]}>
-            <span className="typography-body-small">+34 644748764</span>
+          <div className={styles["help-popup__contact-item"]}>
+            <span className="typography-desktop-label-medium">
+              +34 644748764
+            </span>
           </div>
         </div>
 
         {showSuccess ? (
-          <div className={styles["contact-popup__success"]}>
-            <div className={styles["contact-popup__success-message"]}>
+          <div className={styles["help-popup__success"]}>
+            <div className={styles["help-popup__success-message"]}>
               {t("profile.messageSentSuccessfully")}
             </div>
           </div>
         ) : (
           <form
             onSubmit={handleSubmit}
-            className={styles["contact-popup__form"]}
+            className={styles["help-popup__form"]}
           >
-            <div className={styles["contact-popup__field"]}>
+            <div className={styles["help-popup__field"]}>
               <label
-                className={`${styles["contact-popup__label"]} typography-label-medium`}
+                className={`${styles["help-popup__label"]} typography-desktop-label-medium`}
               >
                 {t("contact.emailAddress") || "Email"}
               </label>
@@ -122,15 +125,15 @@ const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className={styles["contact-popup__input"]}
+                className={styles["help-popup__input"]}
                 placeholder={t("contact.emailPlaceholder") || "Email"}
                 required
               />
             </div>
 
-            <div className={styles["contact-popup__field"]}>
+            <div className={styles["help-popup__field"]}>
               <label
-                className={`${styles["contact-popup__label"]} typography-label-medium`}
+                className={`${styles["help-popup__label"]} typography-desktop-label-medium`}
               >
                 {t("profile.subject")}
               </label>
@@ -138,32 +141,32 @@ const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
                 type="text"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className={styles["contact-popup__input"]}
+                className={styles["help-popup__input"]}
                 placeholder={t("profile.subjectPlaceholder")}
                 required
               />
             </div>
 
-            <div className={styles["contact-popup__field"]}>
+            <div className={styles["help-popup__field"]}>
               <label
-                className={`${styles["contact-popup__label"]} typography-label-medium`}
+                className={`${styles["help-popup__label"]} typography-desktop-label-medium`}
               >
                 {t("profile.message")}
               </label>
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className={styles["contact-popup__textarea"]}
+                className={styles["help-popup__textarea"]}
                 placeholder={t("profile.messagePlaceholder")}
                 rows={4}
                 required
               />
             </div>
 
-            <div className={styles["contact-popup__actions"]}>
+            <div className={styles["help-popup__actions"]}>
               <button
                 type="button"
-                className={`${styles["contact-popup__button"]} ${styles["contact-popup__button--cancel"]} typography-button-medium`}
+                className={`${styles["help-popup__button"]} ${styles["help-popup__button--cancel"]} typography-desktop-button-medium`}
                 onClick={handleCancel}
                 disabled={isLoading}
               >
@@ -171,22 +174,20 @@ const ContactDeveloperPopup: React.FC<ContactDeveloperPopupProps> = ({
               </button>
               <button
                 type="submit"
-                className={`${styles["contact-popup__button"]} ${styles["contact-popup__button--submit"]} typography-button-medium`}
+                className={`${styles["help-popup__button"]} ${styles["help-popup__button--submit"]} typography-desktop-button-medium`}
                 disabled={isLoading || !subject.trim() || !message.trim() || !email.trim()}
               >
                 {isLoading && (
-                  <span
-                    className={styles["contact-popup__loading-spinner"]}
-                  ></span>
+                  <span className={styles["help-popup__loading-spinner"]}></span>
                 )}
                 {t("profile.sendMessage")}
               </button>
             </div>
           </form>
         )}
-
+      </div>
     </AppModal>
   );
 };
 
-export default ContactDeveloperPopup;
+export default HelpPopup;

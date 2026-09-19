@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Search, Plus, Heart, X } from "lucide-react";
+import { Heart, Settings, WifiOff, X } from "lucide-react";
 import MountainIcon from "../../../shared/components/MountainIcon/MountainIcon";
-import ShelterIcon from "../../../shared/components/ShelterIcon/ShelterIcon";
 import AppModal from "../../../shared/components/AppModal";
 import styles from "./desktop-LastUpdateModal.module.css";
 import { useI18n } from "../../../shared/context/I18nContext";
 
 const LANDING_COMPLETED_KEY = "cimloc_landing_completed";
-const LAST_UPDATE_SEEN_KEY = "cimloc_last_update_seen_offline_wikiloc_release_2_5";
+const LAST_UPDATE_SEEN_KEY = "cimloc_last_update_seen_release_2_6";
 
 const DesktopLastUpdateModal: React.FC = () => {
   const { t } = useI18n();
@@ -44,37 +43,27 @@ const DesktopLastUpdateModal: React.FC = () => {
           <MountainIcon size={48} />
         </div>
         <div className={styles["headerText"]}>
-          <h2 className={`${styles["title"]} typography-desktop-title-medium`}>{t("lastUpdate.title")}</h2>
+          <h2 className={`${styles["title"]} typography-desktop-title-large`}>{t("lastUpdate.title")}</h2>
         </div>
-      </div>
-
-      <div className={styles["hero"]}>
-        <ShelterIcon size={64} />
-        <h3 className={`${styles["heroTitle"]} typography-desktop-title-medium`}>{t("lastUpdate.refugios.headline")}</h3>
-        <p className={`${styles["heroSubtitle"]} typography-desktop-label-medium`}>{t("lastUpdate.refugios.subtitle")}</p>
       </div>
 
       <div className={styles["highlights"]}>
         <div className={styles["highlight"]}>
-          <Search size={18} />
-          <span>{t("lastUpdate.refugios.findOnMap")}</span>
+          <WifiOff size={18} />
+          <span className={`${styles["highlightText"]} typography-desktop-body-medium`}>{t("lastUpdate.offline")}</span>
         </div>
         <div className={styles["highlight"]}>
-          <Plus size={18} />
-          <span>{t("lastUpdate.refugios.addManually")}</span>
+          <Settings size={18} />
+          <span className={`${styles["highlightText"]} typography-desktop-body-medium`}>{t("lastUpdate.map")}</span>
         </div>
         <div className={styles["highlight"]}>
           <Heart size={18} />
-          <span>{t("lastUpdate.refugios.saveFavorites")}</span>
+          <span className={`${styles["highlightText"]} typography-desktop-body-medium`}>{t("lastUpdate.contribute")}</span>
         </div>
       </div>
 
-      <p className={`${styles["community"]} typography-desktop-label-medium`}>{t("lastUpdate.refugios.community")}</p>
-
       <div className={styles["footer"]}>
-        <div className={`${styles["navbarHint"]} typography-desktop-label-small`}></div>
-
-        <button className={`${styles["ctaButton"]} typography-desktop-button-small`} onClick={handleClose}>
+        <button className={`${styles["ctaButton"]} typography-desktop-button-medium`} onClick={handleClose}>
           {t("lastUpdate.close")}
         </button>
       </div>

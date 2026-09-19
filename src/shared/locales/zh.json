@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "发送建议 / 报告错误",
     "contactDeveloper": "联系开发者",
     "donate": "捐赠",
-    "donateQuestion": "捐赠？",
+    "donateQuestion": "想要贡献吗？",
     "donateTitle": "支持Summits",
     "donateMessage": "Summits是一个不产生利润的个人项目，由我自掏腰包资助。任何捐赠都将不胜感激，并将帮助改进和维护应用程序。感谢您的使用！",
     "donateButton": "捐赠",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "离开挑战",
       "leaveConfirmMessage": "您想要离开'{name}'挑战吗？您的进度不会丢失，您可以随时重新加入。",
       "noCreatedChallenges": "您还没有创建任何挑战。"
-    }
+    },
+    "helpResponseMessage": "如果您对应用有任何疑问，请随时与我联系。最多几个小时内您就会收到回复。",
+    "contribute": "为 Summits 做贡献",
+    "contributeIntro": "Summits 是一个个人项目，用心打造，非营利，由我自己的资源维护。如果您愿意，可以帮助我让它不断成长和改进。",
+    "contributeCollaboratorsTitle": "推广 Summits",
+    "contributeCollaboratorsText": "我在寻找愿意加入这个项目的人，帮助做营销或社交媒体（TikTok/Instagram 视频等）来推广这款应用。我会给您 Summits 社交媒体账号的访问权限。",
+    "contributeContentTitle": "添加内容",
+    "contributeContentText": "您还可以为没有照片的山峰添加照片，添加地图上没有的新山峰或避难所，或者修正标记有误的地方。",
+    "contributeDonateTitle": "捐赠",
+    "contributeDonateText": "如果您想以最直接的方式帮助，可以捐赠，帮助支付服务器费用并继续改进应用。",
+    "contributeContactTitle": "联系我",
+    "contributeContactText": "如果您有疑问、建议或想以其他方式贡献，请给我留言，我会在最多几个小时内回复。",
+    "contributeContactPlaceholder": "给我留言，我会在几小时内回复。"
   },
   "externalProfile": {
     "userClubs": "{userName} 的俱乐部",
@@ -1879,16 +1891,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "避难小屋登陆 Summits",
+    "title": "更新内容",
     "close": "太棒了！",
-    "refugios": {
-      "headline": "80,000+ 个避难小屋",
-      "subtitle": "来自世界各地的已保存和免费避难小屋，现已上线 Summits。",
-      "findOnMap": "在地图或探索页面上找到它们。",
-      "addManually": "缺少一个？你可以从地图页面手动添加。",
-      "saveFavorites": "将它们保存到收藏夹，随时快速访问。",
-      "community": "任何贡献都备受感谢，并有助于社区发展。"
-    }
+    "offline": "修复了无网络连接时使用应用的问题。",
+    "map": "现在你可以通过地图左下角的设置按钮隐藏山峰或避难所。",
+    "contribute": "我在寻找帮助我负责应用营销和推广的人。你可以从个人资料中联系我。"
   },
   "clubs": {
     "availableClubs": "可用俱乐部",

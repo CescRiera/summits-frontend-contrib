@@ -59,8 +59,8 @@ import {
 import { useUnitFormat } from "../../shared/hooks/useUnitFormat";
 import { useSearchParams } from "react-router-dom";
 import CreatorBadge from "../../shared/components/CreatorBadge/CreatorBadge";
-import ContactDeveloperPopup from "./desktop-Profile/desktop-components/desktop-ProfilePopups/desktop-ContactDeveloperPopup/desktop-ContactDeveloperPopup.tsx";
-import DonatePopup from "./desktop-Profile/desktop-components/desktop-ProfilePopups/desktop-DonatePopup/desktop-DonatePopup.tsx";
+import HelpPopup from "./desktop-Profile/desktop-components/desktop-ProfilePopups/desktop-HelpPopup/desktop-HelpPopup.tsx";
+import ContributePopup from "./desktop-Profile/desktop-components/desktop-ProfilePopups/desktop-ContributePopup/desktop-ContributePopup.tsx";
 import { useMyClubs } from "../../shared/hooks/clubs/useClubs";
 import { normalizeMyClubsResponse } from "../../shared/utils/clubResponse";
 import { getLocationFromHierarchy } from "../../shared/utils/adminHierarchy";
@@ -97,8 +97,8 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
   const [editChallengesModalOpen, setEditChallengesModalOpen] = useState(false);
   const [joinClubsModalOpen, setJoinClubsModalOpen] = useState(false);
   const [manageClubsModalOpen, setManageClubsModalOpen] = useState(false);
-  const [showContactPopup, setShowContactPopup] = useState(false);
-  const [showDonatePopup, setShowDonatePopup] = useState(false);
+  const [showHelpPopup, setShowHelpPopup] = useState(false);
+  const [showContributePopup, setShowContributePopup] = useState(false);
 
   const [isChallengesCollapsed, setIsChallengesCollapsed] = useState(() => {
     const stored = localStorage.getItem("profile_challenges_collapsed");
@@ -438,7 +438,7 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
       return;
     }
 
-    setShowContactPopup(true);
+    setShowHelpPopup(true);
 
     const nextSearchParams = new URLSearchParams(searchParams);
     nextSearchParams.delete("help");
@@ -459,8 +459,8 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
               <button
                 className={`${styles["profile__help-link"]} typography-desktop-body-small`}
                 onClick={() => {
-                  trackEvent("button_click", "profile_desktop_donate_open");
-                  setShowDonatePopup(true);
+                  trackEvent("button_click", "profile_desktop_contribute_open");
+                  setShowContributePopup(true);
                 }}
               >
                 {t("profile.donateQuestion")}
@@ -469,7 +469,7 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
                 className={`${styles["profile__help-link"]} typography-desktop-body-small`}
                 onClick={() => {
                   trackEvent("navigation", "profile_desktop_help_open");
-                  setShowContactPopup(true);
+                  setShowHelpPopup(true);
                 }}
               >
                 {t("profile.needHelp")}
@@ -477,13 +477,13 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
             </div>
           )}
         />
-        <DonatePopup
-          isOpen={showDonatePopup}
-          onClose={() => setShowDonatePopup(false)}
+        <ContributePopup
+          isOpen={showContributePopup}
+          onClose={() => setShowContributePopup(false)}
         />
-        <ContactDeveloperPopup
-          isOpen={showContactPopup}
-          onClose={() => setShowContactPopup(false)}
+        <HelpPopup
+          isOpen={showHelpPopup}
+          onClose={() => setShowHelpPopup(false)}
         />
       </>
     );
@@ -1754,9 +1754,9 @@ const Profile: React.FC<{ registerMode?: boolean }> = ({ registerMode }) => {
         </div>
       )}
 
-      <ContactDeveloperPopup
-        isOpen={showContactPopup}
-        onClose={() => setShowContactPopup(false)}
+      <HelpPopup
+        isOpen={showHelpPopup}
+        onClose={() => setShowHelpPopup(false)}
       />
     </div>
   );

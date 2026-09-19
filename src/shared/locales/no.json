@@ -397,7 +397,7 @@
     "sendSuggestionsReportErrors": "Send forslag / Rapporter feil",
     "contactDeveloper": "Kontakt utvikler",
     "donate": "Doner",
-    "donateQuestion": "Donere?",
+    "donateQuestion": "Vil du bidra?",
     "donateTitle": "Støtt Summits",
     "donateMessage": "Summits er et personlig prosjekt som ikke genererer noen fortjeneste og som jeg finansierer med mine egne penger. Enhver donasjon er verdsatt og vil bidra til å forbedre og vedlikeholde appen. Takk for at du bruker den!",
     "donateButton": "Doner",
@@ -486,7 +486,19 @@
       "leaveConfirmTitle": "Forlat utfordring",
       "leaveConfirmMessage": "Vil du forlate utfordringen '{name}'? Fremgangen din vil ikke gå tapt og du kan bli med igjen når du vil.",
       "noCreatedChallenges": "Du har ikke opprettet noen utfordringer ennå."
-    }
+    },
+    "helpResponseMessage": "Kontakt meg for all hjelp med appen. Du får svar innen maksimalt et par timer.",
+    "contribute": "Bidra til Summits",
+    "contributeIntro": "Summits er et personlig prosjekt, laget med kjærlighet, ideelt og finansiert med mine egne ressurser. Hvis du vil, kan du hjelpe meg med å la det vokse og bli bedre.",
+    "contributeCollaboratorsTitle": "Markedsfør Summits",
+    "contributeCollaboratorsText": "Jeg leter etter noen som vil være en del av prosjektet og hjelpe til med markedsføring eller sosiale medier (TikTok/Instagram-videoer osv.) for å gjøre appen kjent. Jeg gir deg tilgang til Summits' sosiale medier-kontoer.",
+    "contributeContentTitle": "Legg til innhold",
+    "contributeContentText": "Du kan også bidra ved å legge til bilder på topper som ikke har noen, legge til nye topper eller hytter som ikke finnes på kartet, eller rette opp de som er feilplassert.",
+    "contributeDonateTitle": "Doner",
+    "contributeDonateText": "Og hvis du vil hjelpe på den mest direkte måten, kan du donere for å hjelpe med å betale for serveren og fortsette å forbedre appen.",
+    "contributeContactTitle": "Kontakt meg",
+    "contributeContactText": "Hvis du har spørsmål, forslag eller vil bidra på en annen måte, skriv til meg, så svarer jeg innen maksimalt et par timer.",
+    "contributeContactPlaceholder": "Skriv en melding, så svarer jeg i løpet av noen timer."
   },
   "externalProfile": {
     "userClubs": "{userName}s klubber",
@@ -1879,16 +1891,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "Tilfluktssteder kommer til Summits",
+    "title": "Nytt",
     "close": "Supert!",
-    "refugios": {
-      "headline": "80.000+ Tilfluktssteder",
-      "subtitle": "Lagrede og frie tilfluktssteder fra hele verden, nå på Summits.",
-      "findOnMap": "Finn dem på kartet eller på oppdag-siden.",
-      "addManually": "Mangler du en? Legg den til manuelt fra kartsiden.",
-      "saveFavorites": "Lagre dem i favoritter for å ha dem lett tilgjengelig.",
-      "community": "Ethvert bidrag settes pris på og hjelper fellesskapet."
-    }
+    "offline": "Rettet bruk av appen uten internettforbindelse.",
+    "map": "Nå kan du skjule topper eller hytter på kartet med innstillingsknappen (nede til venstre).",
+    "contribute": "Jeg leter etter noen som kan hjelpe meg med markedsføring og promotering av appen. Du kan kontakte meg fra profilen din."
   },
   "clubs": {
     "availableClubs": "Tilgjengelige klubber",

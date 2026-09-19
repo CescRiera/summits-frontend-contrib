@@ -389,7 +389,7 @@
     "sendSuggestionsReportErrors": "Send suggestions / Report errors",
     "contactDeveloper": "Contact developer",
     "donate": "Donate",
-    "donateQuestion": "Donate?",
+    "donateQuestion": "Want to contribute?",
     "donateTitle": "Support Summits",
     "donateMessage": "Summits is a personal project that generates no profit and that I fund with my own money. Any donation is appreciated and will help improve and maintain the app. Thanks for using it!",
     "donateButton": "Donate",
@@ -486,7 +486,19 @@
       "browseTitle": "Browse Clubs",
       "joinClub": "Join Club",
       "myClubsDescription": "Clubs you are a member of."
-    }
+    },
+    "helpResponseMessage": "Contact me for any help with the app. You'll get a response within a few hours at most.",
+    "contribute": "Contribute to Summits",
+    "contributeIntro": "Summits is a personal project, built with love, non-profit and maintained with my own resources. If you'd like, you can help me keep it growing and improving.",
+    "contributeCollaboratorsTitle": "Promote Summits",
+    "contributeCollaboratorsText": "I'm looking for someone who wants to be part of the project helping with marketing or social media (TikTok/Instagram videos, etc.) to promote the app. I'll give you access to Summits' social media accounts.",
+    "contributeContentTitle": "Add content",
+    "contributeContentText": "You can also contribute by adding photos to peaks that don't have one, adding new peaks or shelters that aren't on the map, or fixing the ones that are wrongly placed.",
+    "contributeDonateTitle": "Donate",
+    "contributeDonateText": "And if you want to help in the most direct way, you can make a donation to help pay for the server and keep improving the app.",
+    "contributeContactTitle": "Contact me",
+    "contributeContactText": "If you have questions, suggestions or want to contribute in another way, write to me and I'll get back to you within a few hours at most.",
+    "contributeContactPlaceholder": "Write me a message and I'll reply within a few hours."
   },
   "clubs": {
     "availableClubs": "Available clubs",
@@ -743,15 +755,15 @@
       },
       "newPeaks": {
         "question": "New route peaks don't appear",
-        "answer": "If the most recent peaks from your routes don't appear, try using the button on the home screen (top right) that says \"Load more peaks\".\n\nIf this doesn't work or there's any error, you can contact me from your profile, in the \"Contact developer\" section."
+        "answer": "If the most recent peaks from your routes don't appear, try using the button on the home screen (top right) that says \"Load more peaks\".\n\nIf this doesn't work or there's any error, you can contact me from your profile, in the \"Help & Tutorials\" section."
       },
       "incorrectPeaks": {
         "question": "It shows I've climbed peaks I haven't actually climbed (or vice versa)",
-        "answer": "To calculate your peaks, the app checks the coordinates of your routes and determines the points you've passed through.\n\nDue to the low accuracy of altitude, it's not always possible to establish with certainty whether you've climbed a peak or simply passed near or below it. This can happen especially in areas with high peak density, like Montserrat, where it may seem you've climbed peaks you actually haven't.\n\nIn the opposite case —if you think you've climbed a peak but it doesn't appear—, it's possible that the GPS failed or recorded the route with a small margin of error. I recommend viewing your route on the map and checking the line that the GPS recorded.\n\nIf you still think it's an error, you can contact me from the \"Contact developer\" section in your profile."
+        "answer": "To calculate your peaks, the app checks the coordinates of your routes and determines the points you've passed through.\n\nDue to the low accuracy of altitude, it's not always possible to establish with certainty whether you've climbed a peak or simply passed near or below it. This can happen especially in areas with high peak density, like Montserrat, where it may seem you've climbed peaks you actually haven't.\n\nIn the opposite case —if you think you've climbed a peak but it doesn't appear—, it's possible that the GPS failed or recorded the route with a small margin of error. I recommend viewing your route on the map and checking the line that the GPS recorded.\n\nIf you still think it's an error, you can contact me from the \"Help & Tutorials\" section in your profile."
       },
       "missingRoutes": {
         "question": "Not all my routes or new routes I've done appear",
-        "answer": "To avoid analyzing routes unnecessarily, Summits only analyzes routes from specific categories related to mountain activities (hiking, mountaineering, trail running...). This way, it avoids a large load of routes and doesn't analyze those that very likely don't have any mountain activity such as: swimming, running, cycling, gym...\n\nTo ensure your routes will be analyzed, check that they have a valid type. If you have any problems related to this, you can contact me in the \"Contact developer\" section."
+        "answer": "To avoid analyzing routes unnecessarily, Summits only analyzes routes from specific categories related to mountain activities (hiking, mountaineering, trail running...). This way, it avoids a large load of routes and doesn't analyze those that very likely don't have any mountain activity such as: swimming, running, cycling, gym...\n\nTo ensure your routes will be analyzed, check that they have a valid type. If you have any problems related to this, you can contact me in the \"Help & Tutorials\" section."
       },
       "historicalData": {
         "question": "I cannot see my historical data (peaks done on past routes)",
@@ -2100,16 +2112,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "Shelters are coming to Summits",
+    "title": "What's new",
     "close": "Awesome!",
-    "refugios": {
-      "headline": "80,000+ Shelters",
-      "subtitle": "Saved and free shelters from all over the world, now on Summits.",
-      "findOnMap": "Find them on the map or the explore page.",
-      "addManually": "Missing one? Add it manually from the map page.",
-      "saveFavorites": "Save them to your favorites to keep them close.",
-      "community": "Any contribution is appreciated and helps the community."
-    }
+    "offline": "Fixed using the app without an internet connection.",
+    "map": "You can now hide peaks or shelters on the map with the settings button (bottom left).",
+    "contribute": "I'm looking for someone to help me with marketing and promoting the app. You can contact me from your profile."
   },
   "offline": {
     "banner": "You're offline - some features may be limited",

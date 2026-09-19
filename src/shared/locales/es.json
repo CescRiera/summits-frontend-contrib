@@ -411,7 +411,7 @@
     "sendSuggestionsReportErrors": "Enviar sugerencias / Reportar errores",
     "contactDeveloper": "Contactar desarrollador",
     "donate": "Donar",
-    "donateQuestion": "¿Donar?",
+    "donateQuestion": "¿Quieres contribuir?",
     "donateTitle": "Apoya a Summits",
     "donateMessage": "Summits es un proyecto personal que no genera beneficios y que mantengo con mi propio dinero. Cualquier donación será apreciada y ayudará a mejorar y mantener la aplicación. ¡Gracias por usarla!",
     "donateButton": "Donar",
@@ -486,7 +486,19 @@
       "profileStatus": "Estado del Perfil",
       "public": "Público",
       "private": "Privado"
-    }
+    },
+    "helpResponseMessage": "Contacta conmigo para cualquier ayuda con la aplicación. Recibirás una respuesta en unas pocas horas como máximo.",
+    "contribute": "Contribuir a Summits",
+    "contributeIntro": "Summits es un proyecto personal, hecho con cariño, sin ánimo de lucro y mantenido con mis propios recursos. Si quieres, puedes ayudarme a que siga creciendo y mejorando.",
+    "contributeCollaboratorsTitle": "Promociona Summits",
+    "contributeCollaboratorsText": "Busco a alguien que quiera formar parte del proyecto ayudando con el marketing o las redes sociales (vídeos de TikTok/Instagram, etc.) para dar a conocer la app. Te daré acceso a las cuentas de redes sociales de Summits.",
+    "contributeContentTitle": "Añade contenido",
+    "contributeContentText": "También puedes contribuir añadiendo fotos a picos que no tengan ninguna, añadiendo nuevos picos o refugios que no aparezcan en el mapa, o corrigiendo los que estén mal situados.",
+    "contributeDonateTitle": "Dona",
+    "contributeDonateText": "Y si quieres ayudar de la forma más directa, puedes hacer una donación para ayudar a pagar el servidor y poder seguir mejorando la aplicación.",
+    "contributeContactTitle": "Contacta conmigo",
+    "contributeContactText": "Si tienes dudas, sugerencias o quieres contribuir de otra forma, escríbeme y te responderé en un plazo de unas pocas horas como máximo.",
+    "contributeContactPlaceholder": "Escríbeme un mensaje y te responderé en unas horas."
   },
   "externalProfile": {
     "userClubs": "Clubes de {userName}",
@@ -525,15 +537,15 @@
       },
       "newPeaks": {
         "question": "No me aparecen los picos de rutas nuevas",
-        "answer": "Si no te aparecen los picos más recientes de tus rutas, prueba usar el botón en la pantalla de inicio (arriba a la derecha) que dice \"Cargar más picos\".\n\nSi esto no funciona o hay algún error, puedes contactarme desde tu perfil, en el apartado \"Contactar desarrollador\"."
+        "answer": "Si no te aparecen los picos más recientes de tus rutas, prueba usar el botón en la pantalla de inicio (arriba a la derecha) que dice \"Cargar más picos\".\n\nSi esto no funciona o hay algún error, puedes contactarme desde tu perfil, en el apartado \"Ayuda y Tutoriales\"."
       },
       "incorrectPeaks": {
         "question": "Me aparece que he subido picos que realmente no he subido (o viceversa)",
-        "answer": "Para calcular tus picos, la aplicación comprueba las coordenadas de tus rutas y determina por los puntos por donde has pasado.\n\nDebido a la baja precisión de la altitud, no siempre se puede establecer con exactitud si has subido un pico o simplemente has pasado cerca o por debajo. Esto puede pasar especialmente en zonas con mucha densidad de picos, como Montserrat, donde puede parecer que has subido picos que en realidad no has escalado.\n\nEn el caso contrario —si crees que has subido un pico pero no aparece—, es posible que el GPS haya fallado o haya registrado la ruta con un pequeño margen de error. Te recomiendo visualizar tu ruta en el mapa y comprobar la línea que ha registrado el GPS.\n\nSi aún así crees que es un error, puedes contactarme desde el apartado \"Contactar desarrollador\" de tu perfil."
+        "answer": "Para calcular tus picos, la aplicación comprueba las coordenadas de tus rutas y determina por los puntos por donde has pasado.\n\nDebido a la baja precisión de la altitud, no siempre se puede establecer con exactitud si has subido un pico o simplemente has pasado cerca o por debajo. Esto puede pasar especialmente en zonas con mucha densidad de picos, como Montserrat, donde puede parecer que has subido picos que en realidad no has escalado.\n\nEn el caso contrario —si crees que has subido un pico pero no aparece—, es posible que el GPS haya fallado o haya registrado la ruta con un pequeño margen de error. Te recomiendo visualizar tu ruta en el mapa y comprobar la línea que ha registrado el GPS.\n\nSi aún así crees que es un error, puedes contactarme desde el apartado \"Ayuda y Tutoriales\" de tu perfil."
       },
       "missingRoutes": {
         "question": "No me aparecen todas mis rutas o rutas nuevas que he hecho",
-        "answer": "Para evitar analizar rutas innecesariamente, Summits solo analiza rutas de categorías concretas relacionadas con actividades de montaña (senderismo, alpinismo, trail running...). De esta manera, se evita una gran carga de rutas y no se analizan aquellas que muy probablemente no tengan ninguna actividad de montaña como por ejemplo: natación, running, bicicleta, gimnasio...\n\nPara asegurarte de que tus rutas serán analizadas, comprueba que tienen un tipo válido. Si tienes algún problema relacionado con esto, puedes contactarme en el apartado \"Contactar desarrollador\"."
+        "answer": "Para evitar analizar rutas innecesariamente, Summits solo analiza rutas de categorías concretas relacionadas con actividades de montaña (senderismo, alpinismo, trail running...). De esta manera, se evita una gran carga de rutas y no se analizan aquellas que muy probablemente no tengan ninguna actividad de montaña como por ejemplo: natación, running, bicicleta, gimnasio...\n\nPara asegurarte de que tus rutas serán analizadas, comprueba que tienen un tipo válido. Si tienes algún problema relacionado con esto, puedes contactarme en el apartado \"Ayuda y Tutoriales\"."
       },
       "historicalData": {
         "question": "No puedo ver mis datos históricos (picos hechos en rutas pasadas)",
@@ -2097,16 +2109,11 @@
     "googlePlay": "Google Play"
   },
   "lastUpdate": {
-    "title": "Llegan a Summits los refugios",
+    "title": "Novedades",
     "close": "¡Genial!",
-    "refugios": {
-      "headline": "80.000+ Refugios",
-      "subtitle": "Refugios guardados y libres por todo el mundo, ahora en Summits.",
-      "findOnMap": "Encuéntralos en el mapa o en la página de explorar.",
-      "addManually": "¿Falta alguno? Añádelo manualmente desde el mapa.",
-      "saveFavorites": "Guárdalos en favoritos para tenerlos siempre a mano.",
-      "community": "Cualquier aportación es apreciada y ayuda a la comunidad."
-    }
+    "offline": "Corregido el uso de la aplicación sin conexión a internet.",
+    "map": "Ahora puedes ocultar picos o refugios en el mapa con el botón de ajustes (abajo a la izquierda).",
+    "contribute": "Busco a alguien que me ayude con el marketing y la promoción de la aplicación. Puedes contactar conmigo desde tu perfil."
   },
   "manualPeaks": {
     "fetchError": "Error al cargar las cimas. Por favor, inténtalo de nuevo."
