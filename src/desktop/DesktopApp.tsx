@@ -31,6 +31,7 @@ import StructuredData from "../shared/components/StructuredData/StructuredData";
 import Navbar from "./desktop-PersistentPages/desktop-Navbar.tsx";
 import DesktopLastUpdateModal from "./desktop-components/desktop-LastUpdateModal/desktop-LastUpdateModal";
 import { useAnalytics } from "../shared/context/AnalyticsContext";
+import { useQrScanTracking } from "../shared/hooks/useQrScanTracking";
 
 // Component to render Navbar on all pages
 function ConditionalNavbar() {
@@ -41,6 +42,7 @@ function AppRoutes() {
   const location = useLocation();
   const { trackEvent } = useAnalytics();
   const [refreshKey, setRefreshKey] = useState(0);
+  useQrScanTracking();
 
   // Listen for refresh event
   useEffect(() => {

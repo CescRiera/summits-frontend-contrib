@@ -51,6 +51,7 @@ import {
   deepLinkToRoute,
 } from "../shared/utils/deepLinkHandler";
 import { useNativePullToRefresh } from "./hooks/useNativePullToRefresh";
+import { useQrScanTracking } from "../shared/hooks/useQrScanTracking";
 import { CURRENT_APP_VERSION } from "../shared/constants/appVersion";
 
 function NavbarWrapper() {
@@ -108,6 +109,7 @@ function AppRoutes() {
   );
 
   useNativePullToRefresh(location.pathname, location.search);
+  useQrScanTracking();
 
   // Listen for refresh event
   useEffect(() => {
