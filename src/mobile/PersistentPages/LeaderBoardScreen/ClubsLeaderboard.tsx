@@ -5,10 +5,13 @@ import {
   Users,
   CalendarRange,
   X,
+  Plus,
 } from "lucide-react";
 
 import { useI18n } from "../../../shared/context/I18nContext";
+import { useAuth } from "../../../shared/context/AuthContext";
 import { useAnalytics } from "../../../shared/context/AnalyticsContext";
+import LoginRequiredPopup from "../../components/LoginRequiredPopup/LoginRequiredPopup";
 import {
   useClubsLeaderboard,
 } from "../../../shared/hooks/clubs/useClubs";
@@ -187,10 +190,12 @@ const ClubItem: React.FC<ClubItemProps> = ({
 const ClubsLeaderboard: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useI18n();
+  const { user } = useAuth();
   const { trackEvent } = useAnalytics();
 
   const [selectedCategoryId, setSelectedCategoryId] = useState<ClubsLeaderboardSortBy>("most_users");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
   const [isDateFilterModalOpen, setIsDateFilterModalOpen] = useState(false);
   const observerRef = useRef<HTMLDivElement>(null);
 
@@ -317,6 +322,16 @@ const ClubsLeaderboard: React.FC = () => {
     });
   };
 
+  const handleCreateClub = () => {
+    if (user) {
+      trackEvent("button_click", "clubs_leaderboard_create_club");
+      navigate("/clubs/create");
+    } else {
+      trackEvent("interaction", "clubs_leaderboard_create_club_login_required");
+      setIsLoginPopupOpen(true);
+    }
+  };
+
   return (
     <div className={styles["clubs-leaderboard"]}>
       <div className={styles["clubs-leaderboard__challenge-summary"]}>
@@ -351,6 +366,13 @@ const ClubsLeaderboard: React.FC = () => {
             }}
           >
             {t("leaderboard.exploreClubs") || "Explore Clubs"}
+          </button>
+          <button
+            className={`${styles["clubs-leaderboard__action-btn"]} ${styles["clubs-leaderboard__action-btn--secondary"]} typography-button-medium`}
+            onClick={handleCreateClub}
+          >
+            <Plus size={16} style={{ marginRight: "8px" }} />{" "}
+            {t("clubs.create.title") || "Create club"}
           </button>
         </div>
       </div>
@@ -448,6 +470,15 @@ const ClubsLeaderboard: React.FC = () => {
       <JoinClubsModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+      />
+
+      <LoginRequiredPopup
+        isOpen={isLoginPopupOpen}
+        onClose={() => {
+          trackEvent("interaction", "clubs_leaderboard_login_popup_close");
+          setIsLoginPopupOpen(false);
+        }}
+        message="auth.loginRequired.createClub"
       />
 
       <AppModal

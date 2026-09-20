@@ -147,6 +147,18 @@
   box-shadow: 0 4px 12px rgba(var(--color-accent-rgb), 0.2);
 }
 
+.clubs-leaderboard__action-btn--secondary {
+  background: var(--color-surface-variant);
+  color: var(--c-gray-900);
+  border: 1px solid var(--c-gray-200);
+}
+
+.clubs-leaderboard__action-btn--primary:active,
+.clubs-leaderboard__action-btn--secondary:active {
+  transform: scale(0.98);
+  filter: brightness(0.9);
+}
+
 /* =================================================================
    TABLE CONTENT
    ================================================================= */

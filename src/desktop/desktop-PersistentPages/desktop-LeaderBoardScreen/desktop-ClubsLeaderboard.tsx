@@ -1,9 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Trophy, Users, CalendarRange, X } from "lucide-react";
+import { Trophy, Users, CalendarRange, X, Plus } from "lucide-react";
 import { useI18n } from "../../../shared/context/I18nContext";
-
+import { useAuth } from "../../../shared/context/AuthContext";
 import { useAnalytics } from "../../../shared/context/AnalyticsContext";
+import LoginRequiredPopup from "../../desktop-components/desktop-LoginRequiredPopup/desktop-LoginRequiredPopup";
 import { getLocationFromHierarchy } from "../../../shared/utils/adminHierarchy";
 
 import {
@@ -133,13 +134,14 @@ const TableRowSkeleton = () => (
 const DesktopClubsLeaderboard: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useI18n();
-
+  const { user } = useAuth();
   const { trackEvent } = useAnalytics();
   const { formatStatDistance, formatStatElevationGain } = useUnitFormat();
 
   const [selectedCategoryId, setSelectedCategoryId] =
     useState<ClubsLeaderboardSortBy>("most_users");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
   const [isDateFilterModalOpen, setIsDateFilterModalOpen] = useState(false);
 
   const defaultDateRange = getPresetRange("this_year");
@@ -238,6 +240,16 @@ const DesktopClubsLeaderboard: React.FC = () => {
     });
   };
 
+  const handleCreateClub = () => {
+    if (user) {
+      trackEvent("interaction", "desktop_clubs_leaderboard_create_club");
+      navigate("/clubs/create");
+    } else {
+      trackEvent("interaction", "desktop_clubs_leaderboard_create_club_login_required");
+      setIsLoginPopupOpen(true);
+    }
+  };
+
   const getMetricLabel = (metric: MetricKey) => {
     switch (metric) {
       case "member_count":
@@ -330,16 +342,26 @@ const DesktopClubsLeaderboard: React.FC = () => {
               </strong>
             </article>
           </div>
-          <button
-            type="button"
-            className={`${styles["clubs-leaderboard__browse-button"]} typography-desktop-button-small`}
-            onClick={() => {
-              trackEvent("interaction", "desktop_clubs_leaderboard_open_browse_modal");
-              setIsModalOpen(true);
-            }}
-          >
-            {t("leaderboard.browseClubs") || "Browse clubs"}
-          </button>
+          <div className={styles["clubs-leaderboard__browse-actions"]}>
+            <button
+              type="button"
+              className={`${styles["clubs-leaderboard__browse-button"]} typography-desktop-button-small`}
+              onClick={() => {
+                trackEvent("interaction", "desktop_clubs_leaderboard_open_browse_modal");
+                setIsModalOpen(true);
+              }}
+            >
+              {t("leaderboard.browseClubs") || "Browse clubs"}
+            </button>
+            <button
+              type="button"
+              className={`${styles["clubs-leaderboard__browse-button"]} ${styles["clubs-leaderboard__browse-button--secondary"]} typography-desktop-button-small`}
+              onClick={handleCreateClub}
+            >
+              <Plus size={16} style={{ marginRight: "8px" }} />{" "}
+              {t("clubs.create.title") || "Create club"}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -513,6 +535,15 @@ const DesktopClubsLeaderboard: React.FC = () => {
       {isModalOpen ? (
         <JoinClubsModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       ) : null}
+
+      <LoginRequiredPopup
+        isOpen={isLoginPopupOpen}
+        onClose={() => {
+          trackEvent("interaction", "desktop_clubs_leaderboard_login_popup_close");
+          setIsLoginPopupOpen(false);
+        }}
+        message="auth.loginRequired.createClub"
+      />
 
       <AppModal
         open={isDateFilterModalOpen}

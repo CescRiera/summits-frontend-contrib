@@ -107,6 +107,24 @@
   transition: all 0.2s ease;
 }
 
+.clubs-leaderboard__browse-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.clubs-leaderboard__browse-button--secondary {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  box-shadow: none;
+}
+
+.clubs-leaderboard__browse-button--secondary:hover {
+  background: rgba(15, 23, 42, 0.04);
+}
+
 
 
 .clubs-leaderboard__button {
