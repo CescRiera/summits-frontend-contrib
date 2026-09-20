@@ -17,6 +17,35 @@ const sanitizeCampaign = (value: string | null): string =>
   (value ?? "unknown").trim().slice(0, 100) || "unknown";
 
 /**
+ * Coarse, permission-free location signals. No GPS prompt:
+ * - tz e.g. "Europe/Madrid" (~country/region level)
+ * - locale e.g. "ca-ES" (language-region hint)
+ * Precise coords via navigator.geolocation would pop a permission
+ * dialog on landing, so deliberately not used here.
+ */
+const getCoarseLocation = (): { tz: string; locale: string } => {
+  let tz = "unknown";
+  let locale = "unknown";
+  try {
+    tz =
+      Intl.DateTimeFormat().resolvedOptions().timeZone || "unknown";
+  } catch {
+    tz = "unknown";
+  }
+  try {
+    locale =
+      (typeof navigator !== "undefined" &&
+        (navigator.language ||
+          (navigator as Navigator & { userLanguage?: string })
+            .userLanguage)) ||
+      "unknown";
+  } catch {
+    locale = "unknown";
+  }
+  return { tz: tz.slice(0, 100), locale: locale.slice(0, 20) };
+};
+
+/**
  * Tracks QR promo landings once, then strips UTM params from the URL.
  *
  * Example QR url:
@@ -25,8 +54,10 @@ const sanitizeCampaign = (value: string | null): string =>
  * - Must be mounted inside a <BrowserRouter> (uses location + navigate).
  * - Cleans utm_* via navigate(replace) so back button stays clean and
  *   the URL can't be re-counted / re-shared with campaign params.
- * - Fires trackEvent("qr_scan", campaign) mobile-only, once per campaign
+ * - Fires trackEvent("qr_scan", value) mobile-only, once per campaign
  *   per tab (sessionStorage), after the analytics session is ready.
+ *   value is JSON: {campaign, medium, tz, locale} — tz/locale give a
+ *   coarse country hint with no permission prompt.
  */
 export function useQrScanTracking() {
   const location = useLocation();
@@ -71,8 +102,9 @@ export function useQrScanTracking() {
     if (!raw) return;
 
     try {
-      const parsed = JSON.parse(raw) as { campaign?: string };
+      const parsed = JSON.parse(raw) as { campaign?: string; medium?: string };
       const campaign = sanitizeCampaign(parsed.campaign ?? null);
+      const medium = sanitizeCampaign(parsed.medium ?? null);
 
       if (sessionStorage.getItem(`qr_scan:${campaign}`)) {
         sessionStorage.removeItem(PENDING_KEY);
@@ -82,7 +114,11 @@ export function useQrScanTracking() {
       firedRef.current = true;
       sessionStorage.setItem(`qr_scan:${campaign}`, "1");
       sessionStorage.removeItem(PENDING_KEY);
-      void trackEvent("qr_scan", campaign);
+      const { tz, locale } = getCoarseLocation();
+      void trackEvent(
+        "qr_scan",
+        JSON.stringify({ campaign, medium, tz, locale })
+      );
     } catch {
       sessionStorage.removeItem(PENDING_KEY);
     }
