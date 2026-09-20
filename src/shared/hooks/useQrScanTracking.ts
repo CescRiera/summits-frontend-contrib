@@ -17,33 +17,116 @@ const sanitizeCampaign = (value: string | null): string =>
   (value ?? "unknown").trim().slice(0, 100) || "unknown";
 
 /**
- * Coarse, permission-free location signals. No GPS prompt:
- * - tz e.g. "Europe/Madrid" (~country/region level)
- * - locale e.g. "ca-ES" (language-region hint)
- * Precise coords via navigator.geolocation would pop a permission
- * dialog on landing, so deliberately not used here.
+ * General-area coordinates (~11km grid), never triggering a permission
+ * prompt on landing:
+ * 1. GPS, but ONLY if permission was already granted elsewhere in the
+ *    app (map geolocate). Otherwise skipped — no dialog is ever shown.
+ * 2. IP-based lookup fallback (city-level accuracy, no permission needed).
+ * Coords are rounded to 1 decimal so the value holds an area, not a point.
  */
-const getCoarseLocation = (): { tz: string; locale: string } => {
-  let tz = "unknown";
-  let locale = "unknown";
+interface CoarseCoords {
+  lat: number;
+  lon: number;
+  geo_src: "gps" | "ip";
+  country?: string;
+}
+
+const round1 = (n: number): number => Math.round(n * 10) / 10;
+
+const getPositionIfPermitted = (): Promise<CoarseCoords | null> =>
+  new Promise((resolve) => {
+    try {
+      if (
+        typeof navigator === "undefined" ||
+        !navigator.geolocation ||
+        !navigator.permissions?.query
+      ) {
+        resolve(null);
+        return;
+      }
+      let settled = false;
+      const done = (v: CoarseCoords | null) => {
+        if (!settled) {
+          settled = true;
+          resolve(v);
+        }
+      };
+      const timer = window.setTimeout(() => done(null), 5000);
+      navigator.permissions
+        .query({
+          name: "geolocation" as PermissionName,
+        })
+        .then((status) => {
+          // Never prompt from a promo landing — only reuse a prior grant.
+          if (status.state !== "granted") {
+            window.clearTimeout(timer);
+            done(null);
+            return;
+          }
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              window.clearTimeout(timer);
+              const { latitude, longitude } = pos.coords;
+              if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
+                done(null);
+                return;
+              }
+              done({ lat: round1(latitude), lon: round1(longitude), geo_src: "gps" });
+            },
+            () => {
+              window.clearTimeout(timer);
+              done(null);
+            },
+            { maximumAge: 3600000, timeout: 4500 }
+          );
+        })
+        .catch(() => {
+          window.clearTimeout(timer);
+          done(null);
+        });
+    } catch {
+      resolve(null);
+    }
+  });
+
+const getCoordsFromIp = async (): Promise<CoarseCoords | null> => {
   try {
-    tz =
-      Intl.DateTimeFormat().resolvedOptions().timeZone || "unknown";
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), 2500);
+    const res = await fetch(
+      "https://ipwho.is/?fields=success,country,latitude,longitude",
+      { signal: controller.signal }
+    );
+    window.clearTimeout(timer);
+    if (!res.ok) return null;
+    const data = (await res.json()) as {
+      success?: boolean;
+      country?: string;
+      latitude?: number;
+      longitude?: number;
+    };
+    if (
+      data.success !== true ||
+      !Number.isFinite(data.latitude) ||
+      !Number.isFinite(data.longitude)
+    ) {
+      return null;
+    }
+    return {
+      lat: round1(data.latitude as number),
+      lon: round1(data.longitude as number),
+      geo_src: "ip",
+      ...(typeof data.country === "string" && data.country
+        ? { country: data.country.slice(0, 100) }
+        : {}),
+    };
   } catch {
-    tz = "unknown";
+    return null;
   }
-  try {
-    locale =
-      (typeof navigator !== "undefined" &&
-        (navigator.language ||
-          (navigator as Navigator & { userLanguage?: string })
-            .userLanguage)) ||
-      "unknown";
-  } catch {
-    locale = "unknown";
-  }
-  return { tz: tz.slice(0, 100), locale: locale.slice(0, 20) };
 };
+
+const getCoarseCoords = async (): Promise<CoarseCoords | null> =>
+  (await getPositionIfPermitted()) ?? (await getCoordsFromIp());
 
 /**
  * Tracks QR promo landings once, then strips UTM params from the URL.
@@ -56,8 +139,9 @@ const getCoarseLocation = (): { tz: string; locale: string } => {
  *   the URL can't be re-counted / re-shared with campaign params.
  * - Fires trackEvent("qr_scan", value) mobile-only, once per campaign
  *   per tab (sessionStorage), after the analytics session is ready.
- *   value is JSON: {campaign, medium, tz, locale} — tz/locale give a
- *   coarse country hint with no permission prompt.
+ *   value is JSON: {campaign, medium, lat, lon, geo_src, country?} —
+ *   coords rounded to ~11km so it's an area, never a precise point,
+ *   and no permission dialog is ever triggered.
  */
 export function useQrScanTracking() {
   const location = useLocation();
@@ -101,26 +185,42 @@ export function useQrScanTracking() {
     const raw = sessionStorage.getItem(PENDING_KEY);
     if (!raw) return;
 
+    let campaign: string;
+    let medium: string;
     try {
       const parsed = JSON.parse(raw) as { campaign?: string; medium?: string };
-      const campaign = sanitizeCampaign(parsed.campaign ?? null);
-      const medium = sanitizeCampaign(parsed.medium ?? null);
-
-      if (sessionStorage.getItem(`qr_scan:${campaign}`)) {
-        sessionStorage.removeItem(PENDING_KEY);
-        return;
-      }
-
-      firedRef.current = true;
-      sessionStorage.setItem(`qr_scan:${campaign}`, "1");
-      sessionStorage.removeItem(PENDING_KEY);
-      const { tz, locale } = getCoarseLocation();
-      void trackEvent(
-        "qr_scan",
-        JSON.stringify({ campaign, medium, tz, locale })
-      );
+      campaign = sanitizeCampaign(parsed.campaign ?? null);
+      medium = sanitizeCampaign(parsed.medium ?? null);
     } catch {
       sessionStorage.removeItem(PENDING_KEY);
+      return;
     }
+
+    if (sessionStorage.getItem(`qr_scan:${campaign}`)) {
+      sessionStorage.removeItem(PENDING_KEY);
+      return;
+    }
+
+    firedRef.current = true;
+    let cancelled = false;
+
+    void (async () => {
+      const coords = await getCoarseCoords();
+      if (cancelled) return;
+      sessionStorage.setItem(`qr_scan:${campaign}`, "1");
+      sessionStorage.removeItem(PENDING_KEY);
+      void trackEvent(
+        "qr_scan",
+        JSON.stringify({
+          campaign,
+          medium,
+          ...(coords ?? { lat: null, lon: null, geo_src: "unknown" }),
+        })
+      );
+    })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [isMobile, isInitialized, sessionId, trackEvent]);
 }
